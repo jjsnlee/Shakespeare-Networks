@@ -9,7 +9,7 @@ def get_root_dir():
         print full_currdir
         m = path_re.search(full_currdir)
         if not m:
-            raise Exception('Cannot find the SKPN directory in the path.')
+            raise Exception('Cannot find the py-server directory in the path.')
         _root_dir = m.group(1)
         print 'Root Directory:', _root_dir
     return _root_dir
