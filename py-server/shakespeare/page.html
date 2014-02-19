@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Shakespeare</title>
+<script src="/html/angular-1.2.9/angular.js"></script>
+<script>
+var shPlays = angular.module('shPlays', [], function($locationProvider) {
+  $locationProvider.html5Mode(true);
+});
+
+shPlays.controller('play', function($scope, $http, $location, $window) {
+  $scope.all_plays = __ALL_PLAYS__;
+  $scope.showPopup = 0;
+  $scope.showSideBar = 0;
+  
+  var selectedPlay = '__PLAY__';
+  for (var i=0,len=$scope.all_plays.length; i<len; i++) {
+    if( selectedPlay===$scope.all_plays[i].value ) {
+      $scope.selectedPlay = $scope.all_plays[i];
+      break;
+    }
+  }
+  
+  if($scope.selectedPlay) {
+	$http.get('/shakespeare/play/'+$scope.selectedPlay.value).success(function(data) {
+	  $scope.play_content = data;
+	});
+  };
+  
+  $scope.sceneImgClicked = function(evt) {
+    $scope.showImgPopup = 1;
+    $scope.selected_graph_img_f = evt.currentTarget.src;
+  };
+  
+  $scope.doSubmit = function() {
+	var selectedIdx = document.forms[0].play.value;
+	var selectedPlay = $scope.all_plays[selectedIdx].value;
+	var forceRegen = $location.search()['force_regen'];
+	$window.location.href = '/shakespeare/?play='+selectedPlay+'&force_regen='+forceRegen;
+	//$http.get('/shakespeare/play/'+selectedPlay).success(function(data) {
+	//  $scope.play_content = data;
+	//});
+  }
+});
+</script>
+</head>
+
+<body ng-app="shPlays" ng-controller="play">
+<form>
+<input type="hidden" name="new" value="1">
+<table border=1 cellpadding=3 cellspacing=3>
+<tr>
+  <td>Play:</td>
+  <td>
+    <select name="play" ng-model="selectedPlay"
+      ng-options="p as p.label for p in all_plays" 
+      ng-change="doSubmit()">
+    </select>
+  </td>
+</tr>
+</table>
+&nbsp;<br>&nbsp;<br>
+
+<div ng-show="selectedPlay!=null">
+
+<div ng-show="showImgPopup===1"
+     style="width:40%; height:80%; overflow:auto; position:absolute; top:10%; left:30%; 
+            border:3px solid #eee;
+            background: white"> <!-- rgba(255, 255, 255, 1.0) -->
+  <table border=0 cellpadding=0 cellspacing=0 width="100%">
+    <tr><td align="right"><div ng-click="showImgPopup=0">Close</div></td></tr>
+    <tr><td><img ng-src="{{selected_graph_img_f}}" width="100%"></td></tr>
+  </table>
+</div>
+
+<table border=1 cellpadding=0 cellspacing=0>
+<tr>
+  <td colspan="100%">
+    <b>{{play_content.title}}</b> ({{play_content.year}})
+  </td>
+</tr>
+<tr>
+  <td width="20%" valign="top" ng-show="showSideBar===1">
+    <table cellpadding=1 cellspacing=1 border=0 width="100%">
+    <tr><td colspan="100%" align="right"><div ng-click="showSideBar=0"><<</div></td></tr>
+    <tr><td colspan="100%" align="left"><b>Characters:</b></td></tr>
+    <tr ng-repeat="char in play_content.characters">
+      <td>{{char}}</td>
+    </tr>
+    </table>
+  </td>
+  <td width="1%" valign="top" ng-show="showSideBar===0">
+    <div ng-click="showSideBar=1">>></div>
+  </td>
+  <td valign="top">
+  <table border=1 cellpadding=1 cellspacing=1>
+	<tr ng-repeat="act in play_content.acts">
+	  <td ng-repeat="scene in act">
+	    <img ng-src="/{{scene.graph_img_f}}" ng-click="sceneImgClicked($event)" 
+	         width="100%" border="0" />
+	  </td>
+	</tr>
+  </table>
+  </td>
+</tr>
+</table>
+
+{{play_content}}
+
+</div>
+
+</form>
+</body>
+</html>
