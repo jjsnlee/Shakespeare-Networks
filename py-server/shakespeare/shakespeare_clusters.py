@@ -12,7 +12,7 @@ sys.path.append(join(rootdir, 'py-external/pcibook'))
 sys.path.append(join(rootdir, 'py-external//word_cloud'))
 sys.path.append(join(rootdir, 'py-external/external'))
 #sys.path.append('..')
-import nmf
+#import nmf
 
 import datetime, time
 def get_ts():

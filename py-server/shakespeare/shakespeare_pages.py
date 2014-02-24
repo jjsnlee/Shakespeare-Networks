@@ -20,10 +20,10 @@ def view_page(req):
         if force_img_regen:
             _play_data = init_play(sld_play, 1)
 
-    html = create_html(sld_play)
+    html = _create_html(sld_play)
     return HttpResponse(html)
 
-def create_html(play):
+def _create_html(play):
     data_ctx = get_plays_ctx()
     plays = sorted(data_ctx.plays, key=itemgetter(1))
     print 'play:', play
@@ -34,7 +34,7 @@ def create_html(play):
     return html
 
 def get_play(req):
-    """Return JSON representation for the play"""
+    """ JSON representation for the play """
     try:
         path = req.path
         play = path.split('/')[-1]
@@ -84,16 +84,15 @@ class PlayJSONEncoder(JSONEncoder):
         
         return d
 
-def init_play(sld_play, force_img_regen, basedir=''):
+def init_play(play_name, force_img_regen, basedir=''):
     play_data_ctx = get_plays_ctx()
 
-    if sld_play not in play_data_ctx.map_by_alias:
-        raise Exception('Can''t find play [%s].' % sld_play)
+    if play_name not in play_data_ctx.map_by_alias:
+        raise Exception('Can''t find play [%s].' % play_name)
     
-    graph_of_play = play_data_ctx.load_play(sld_play)
-    title = play_data_ctx.map_by_alias.get(sld_play)
+    graph_of_play = play_data_ctx.load_play(play_name)
+    title = play_data_ctx.map_by_alias.get(play_name)
 
-    graph_of_play.create_graph()
     play = graph_of_play.play
     rslt = { 'img' : [], 'scenes' : [], 'play' : play }
     print play.title, '\n\t', play.toc_as_str()
@@ -117,7 +116,7 @@ def init_play(sld_play, force_img_regen, basedir=''):
 def main():
     play = 'King Lear'
     #play = "A Midsummer Night's Dream"
-    html = create_html(play, basedir='../', absroot=False, force_img_regen=False, incl_hdr=False)
+    html = _create_html(play, basedir='../', absroot=False, force_img_regen=False, incl_hdr=False)
     #print 'HTML:', html
     tmpfile = 'tmp.html'
     with open(tmpfile, 'w') as fh:

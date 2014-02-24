@@ -1,47 +1,84 @@
 from unittest import TestCase
 from plays_n_graphs import Play, Scene, ShakespearePlayGraph
+import networkx as nx
+
+nolines = lambda c: ['Line %i' % (i+1) for i in range(c)]
+
+def plot_test_graph(key, graph):
+    import matplotlib.pyplot as plt
+    from plays_n_graphs import draw_graph
+    plt.figure(figsize=(8,5))
+    draw_graph(key, graph)
+    plt.show()
 
 class PlaysAndGraphsTest(TestCase):
 
-    def test_process_data(self):
-        tplay = Play('Test Play')
-        sc = Scene(tplay, 'Act I', 'Scene I', 'A castle', None)
-        
-        nolines = lambda c: ['Line %i' % (i+1) for i in range(c)]
-
+    def _create_scene1(self, test_play):
+        sc = Scene(test_play, 'Act I', 'Scene 1', 'A castle', None)
         sc.add_dialogue('Char 1', nolines(3))
         sc.add_dialogue('Char 2', nolines(50))
         sc.add_dialogue('Char 1', nolines(3))
-        
         for _i in range(20):
             sc.add_dialogue('Char 3', nolines(3))
             sc.add_dialogue('Char 4', nolines(3))
-        
-        tplay.add_scene(sc)
-        
-        png = ShakespearePlayGraph(tplay)
-        png.create_graph()
+        test_play.add_scene(sc)
+        return sc
+    
+    def _create_scene2(self, test_play):
+        sc = Scene(test_play, 'Act II', 'Scene 2', 'Another room', None)
+        sc.add_dialogue('Char 2', nolines(20))
+        sc.add_dialogue('Char 1', nolines(10))
+        sc.add_dialogue('Char 5', nolines(30))
+        test_play.add_scene(sc)
+        return sc
+
+    def test_process_data(self):
+        test_play = Play('Test Play')
+        scene1 = self._create_scene1(test_play)
+        scene2 = self._create_scene2(test_play)
+
+        # this actually needs to be initialized
+        png = ShakespearePlayGraph(test_play)
         
         #print 'sc.graph:', sc.graph
-        G = sc.graph
+        G = png.graphs[scene1.act+'_'+scene1.scene]
+        self.assertEqual(G, scene1.graph, 'Make sure both graph instances reference the same object')
         #print nx.degree(G)
         #print nx.connected_components(G)
         
         print G.degree(weight='weight')
-        
         chars = G.nodes()
-        self.assertEquals(set(['Char 1', 'Char 2', 'Char 3', 'Char 4']), set(chars))
-        
+        self.assertEqual(set(['Char 1', 'Char 2', 'Char 3', 'Char 4']), set(chars))
+        self.assertEqual(G.node['Char 1']['nlines'], 6)
+        self.assertEqual(G.node['Char 2']['nlines'], 50)
+        self.assertEqual(G.node['Char 3']['nlines'], 3*20)
+        self.assertEqual(G.node['Char 4']['nlines'], 3*20)
         edges = G.edges(data=True)
-        
+
         #print 'chars:', chars
         print 'edges:', edges
-        
         print 'Char 1 edges:', G.edges('Char 1', data=True)
+        
+        #plot_test_graph(str(scene), scene.graph)
 
-        import matplotlib.pyplot as plt
-        from plays_n_graphs import draw_graph
-        plt.figure(figsize=(8,5))
-        draw_graph(str(sc), sc.graph)
-        plt.show()
+        G = png.totalG
+        print G
+        
+        chars = G.nodes()
+        self.assertEqual(set(['Char 1', 'Char 2', 'Char 3', 'Char 4', 'Char 5']), set(chars))
+        self.assertEqual(G.node['Char 1']['nlines'], 6  + 10)
+        self.assertEqual(G.node['Char 2']['nlines'], 50 + 20)
+        self.assertEqual(G.node['Char 3']['nlines'], 3*20)
+        self.assertEqual(G.node['Char 4']['nlines'], 3*20)
+        self.assertEqual(G.node['Char 5']['nlines'], 30)
+        plot_test_graph('totalG', G)
+        
+#        # New Scenario
+#        test_play = Play('Test Play')
+#        scene = self._create_scene1(test_play)
+#        test_play.add_scene(scene)
+#        scene = self._create_scene2(test_play)
+#        test_play.add_scene(scene)
+#        png = ShakespearePlayGraph(test_play)
+        
         

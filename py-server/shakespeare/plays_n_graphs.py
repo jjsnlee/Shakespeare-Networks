@@ -37,7 +37,6 @@ class ShakespearePlayCtx:
         play.type = plays_cfg.classifications[title]
         play.year = plays_cfg.vintage[title]
         
-        self.play_details[play_alias] = ShakespearePlayGraph(play)
         basedir = self.basedir
         toc_file = join(basedir, play_alias, 'index.html')
         print 'Processing', title
@@ -99,6 +98,7 @@ class ShakespearePlayCtx:
                 Sc = play.scenes_idx[act+'_'+sc]
                 Sc.add_dialogue(speaker, lines)
 
+        self.play_details[play_alias] = ShakespearePlayGraph(play)
         return self.play_details[play_alias]
 
 # hack to aliases where they are known
@@ -107,11 +107,14 @@ _repl_speakers = { 'LEAR' : 'KING LEAR' }
 class ShakespearePlayGraph:
     def __init__(self, play):
         self.play = play
-        self.graphs = {}
-
-    def create_graph(self):
+        self.graphs = OrderedDict()
+        self.__init()
+        self._totalG = None
+    
+    def __init(self):
         #print self.play.title, '\n\t', self.play.toc_as_str()
         for sc in self.play.scenes:
+            # probably want to make these MultiGraphs
             G = nx.Graph()
             self.graphs[sc.act+'_'+sc.scene] = sc.graph = G
 
@@ -127,6 +130,21 @@ class ShakespearePlayGraph:
                     G.add_weighted_edges_from([(prev_speaker, speaker, w+1)])
                 prev_speaker = speaker
 
+    @property
+    def totalG(self):
+        if self._totalG is None:
+            totalG = nx.Graph()
+            for G_ in self.graphs.values():
+                totalG = nx.compose(totalG, G_)
+
+                for speaker in G_.nodes():
+                    if speaker not in totalG.node:
+                        totalG.add_node(speaker, nlines=0)
+                    totalG.node[speaker]['nlines'] += G_.node[speaker]['nlines']
+                
+            self._totalG = totalG
+        return self._totalG
+
 #from networkx.readwrite.json_graph import node_link_data    
 def draw_graph(scene, G):
     """
@@ -137,7 +155,7 @@ def draw_graph(scene, G):
     """
     
     #print 'json repr:', node_link_data(G)
-    print 'G.nlines:', [(n, G.node[n]['nlines']) for n in G]
+    print 'nlines:', [(n, G.node[n]['nlines']) for n in G]
 
     plt.title(str(scene))
     plt.xticks([])

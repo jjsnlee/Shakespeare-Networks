@@ -80,11 +80,20 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 </tr>
 <tr>
   <td width="20%" valign="top" ng-show="showSideBar===1">
+    
     <table cellpadding=1 cellspacing=1 border=0 width="100%">
-    <tr><td colspan="100%" align="right"><div ng-click="showSideBar=0"><<</div></td></tr>
-    <tr><td colspan="100%" align="left"><b>Characters:</b></td></tr>
+    <tr>
+      <td colspan="100%" align="right"><div ng-click="showSideBar=0"><<</div></td>
+    </tr>
+    <tr>
+      <td align="left"><b>Characters</b></td>
+      <td><b>Lines</b></td>
+      <td><b>Edges</b></td>
+    </tr>
     <tr ng-repeat="char in play_content.characters">
       <td>{{char}}</td>
+      <td> - </td>
+      <td> - </td>
     </tr>
     </table>
   </td>
