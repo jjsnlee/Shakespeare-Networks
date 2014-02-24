@@ -135,12 +135,15 @@ class ShakespearePlayGraph:
         if self._totalG is None:
             totalG = nx.Graph()
             for G_ in self.graphs.values():
-                totalG = nx.compose(totalG, G_)
+                origTG = totalG
+                totalG = nx.compose(origTG, G_)
 
                 for speaker in G_.nodes():
-                    if speaker not in totalG.node:
-                        totalG.add_node(speaker, nlines=0)
-                    totalG.node[speaker]['nlines'] += G_.node[speaker]['nlines']
+                    # only need to do this if the character spoke before. 
+                    # otherwise take the value from the new node
+                    if speaker in origTG.node:
+                        totalG.node[speaker]['nlines'] = \
+                            G_.node[speaker]['nlines'] + origTG.node[speaker]['nlines']
                 
             self._totalG = totalG
         return self._totalG

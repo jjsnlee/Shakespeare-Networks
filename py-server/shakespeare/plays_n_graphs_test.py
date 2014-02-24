@@ -34,8 +34,8 @@ class PlaysAndGraphsTest(TestCase):
 
     def test_process_data(self):
         test_play = Play('Test Play')
-        scene1 = self._create_scene1(test_play)
-        scene2 = self._create_scene2(test_play)
+        scene1  = self._create_scene1(test_play)
+        _scene2 = self._create_scene2(test_play)
 
         # this actually needs to be initialized
         png = ShakespearePlayGraph(test_play)
@@ -43,7 +43,6 @@ class PlaysAndGraphsTest(TestCase):
         #print 'sc.graph:', sc.graph
         G = png.graphs[scene1.act+'_'+scene1.scene]
         self.assertEqual(G, scene1.graph, 'Make sure both graph instances reference the same object')
-        #print nx.degree(G)
         #print nx.connected_components(G)
         
         print G.degree(weight='weight')
@@ -53,25 +52,38 @@ class PlaysAndGraphsTest(TestCase):
         self.assertEqual(G.node['Char 2']['nlines'], 50)
         self.assertEqual(G.node['Char 3']['nlines'], 3*20)
         self.assertEqual(G.node['Char 4']['nlines'], 3*20)
-        edges = G.edges(data=True)
 
-        #print 'chars:', chars
+        degrees = nx.degree(G)
+        self.assertEqual(degrees['Char 1'], 2)
+        self.assertEqual(degrees['Char 2'], 1)
+        self.assertEqual(degrees['Char 3'], 2)
+        self.assertEqual(degrees['Char 4'], 1)
+
+        edges = G.edges(data=True)
         print 'edges:', edges
         print 'Char 1 edges:', G.edges('Char 1', data=True)
         
         #plot_test_graph(str(scene), scene.graph)
 
-        G = png.totalG
-        print G
+        tG = png.totalG
+        print tG
         
-        chars = G.nodes()
+        chars = tG.nodes()
         self.assertEqual(set(['Char 1', 'Char 2', 'Char 3', 'Char 4', 'Char 5']), set(chars))
-        self.assertEqual(G.node['Char 1']['nlines'], 6  + 10)
-        self.assertEqual(G.node['Char 2']['nlines'], 50 + 20)
-        self.assertEqual(G.node['Char 3']['nlines'], 3*20)
-        self.assertEqual(G.node['Char 4']['nlines'], 3*20)
-        self.assertEqual(G.node['Char 5']['nlines'], 30)
-        plot_test_graph('totalG', G)
+        self.assertEqual(tG.node['Char 1']['nlines'], 6  + 10)
+        self.assertEqual(tG.node['Char 2']['nlines'], 50 + 20)
+        self.assertEqual(tG.node['Char 3']['nlines'], 3*20)
+        self.assertEqual(tG.node['Char 4']['nlines'], 3*20)
+        self.assertEqual(tG.node['Char 5']['nlines'], 30)
+        #plot_test_graph('totalG', tG)
+        
+        tDegrees = nx.degree(tG)
+        print 'degree:', tDegrees 
+        self.assertEqual(tDegrees['Char 1'], 3)
+        self.assertEqual(tDegrees['Char 2'], 1)
+        self.assertEqual(tDegrees['Char 3'], 2)
+        self.assertEqual(tDegrees['Char 4'], 1)
+        self.assertEqual(tDegrees['Char 5'], 1)
         
 #        # New Scenario
 #        test_play = Play('Test Play')
