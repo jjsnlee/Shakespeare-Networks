@@ -39,8 +39,8 @@ def get_play(req):
         path = req.path
         play = path.split('/')[-1]
         #print 'REQUEST:\n', play
-        play_data = init_play(play, False)
-        json_rslt = json.dumps(play_data['play'], ensure_ascii=False, cls=PlayJSONEncoder)
+        graph_of_play = init_play(play, False)
+        json_rslt = json.dumps(graph_of_play.play, ensure_ascii=False, cls=PlayJSONEncoder)
         return HttpResponse(json_rslt, content_type='application/json')
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
@@ -94,16 +94,16 @@ def init_play(play_name, force_img_regen, basedir=''):
     title = play_data_ctx.map_by_alias.get(play_name)
 
     play = graph_of_play.play
-    rslt = { 'img' : [], 'scenes' : [], 'play' : play }
+    #rslt = { 'img' : [], 'scenes' : [], 'play' : play }
     print play.title, '\n\t', play.toc_as_str()
     
     if not os.path.exists('%simgs/' % basedir):
         os.makedirs('%simgs/' % basedir)
 
     for sc in play.scenes:
-        arr = '<option value="%s,%s">Act %s Sc %s %s</option>' \
-            % (sc.act, sc.scene, sc.act, sc.scene, sc.location)
-        rslt['scenes'].append(arr)
+        #arr = '<option value="%s,%s">Act %s Sc %s %s</option>' \
+        #    % (sc.act, sc.scene, sc.act, sc.scene, sc.location)
+        #rslt['scenes'].append(arr)
         #print sc
         sc.graph_img_f = '%simgs/%s_%s_%s.png' % (basedir, title, sc.act, sc.scene)
         if not os.path.exists(sc.graph_img_f) or force_img_regen:
@@ -111,7 +111,7 @@ def init_play(play_name, force_img_regen, basedir=''):
             draw_graph(str(sc), sc.graph)
             plt.savefig(sc.graph_img_f)
 
-    return rslt
+    return graph_of_play
 
 def main():
     play = 'King Lear'
