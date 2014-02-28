@@ -39,8 +39,8 @@ def get_play(req):
         path = req.path
         play = path.split('/')[-1]
         #print 'REQUEST:\n', play
-        graph_of_play = init_play(play, False)
-        json_rslt = json.dumps(graph_of_play.play, ensure_ascii=False, cls=PlayJSONEncoder)
+        play = init_play(play, False)
+        json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONEncoder)
         return HttpResponse(json_rslt, content_type='application/json')
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
@@ -90,10 +90,9 @@ def init_play(play_name, force_img_regen, basedir=''):
     if play_name not in play_data_ctx.map_by_alias:
         raise Exception('Can''t find play [%s].' % play_name)
     
-    graph_of_play = play_data_ctx.load_play(play_name)
+    play = play_data_ctx.load_play(play_name)
     title = play_data_ctx.map_by_alias.get(play_name)
 
-    play = graph_of_play.play
     #rslt = { 'img' : [], 'scenes' : [], 'play' : play }
     print play.title, '\n\t', play.toc_as_str()
     
@@ -111,7 +110,7 @@ def init_play(play_name, force_img_regen, basedir=''):
             draw_graph(str(sc), sc.graph)
             plt.savefig(sc.graph_img_f)
 
-    return graph_of_play
+    return play
 
 def main():
     play = 'King Lear'

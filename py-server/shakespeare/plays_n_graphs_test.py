@@ -1,5 +1,5 @@
 from unittest import TestCase
-from plays_n_graphs import Play, Scene, ShakespearePlayGraph
+from plays_n_graphs import Play, Scene, _init_graphs
 import networkx as nx
 
 nolines = lambda c: ['Line %i' % (i+1) for i in range(c)]
@@ -23,7 +23,7 @@ class PlaysAndGraphsTest(TestCase):
             sc.add_dialogue('Char 4', nolines(3))
         test_play.add_scene(sc)
         return sc
-    
+        
     def _create_scene2(self, test_play):
         sc = Scene(test_play, 'Act II', 'Scene 2', 'Another room', None)
         sc.add_dialogue('Char 2', nolines(20))
@@ -32,16 +32,17 @@ class PlaysAndGraphsTest(TestCase):
         test_play.add_scene(sc)
         return sc
 
-    def test_process_data(self):
+    def test_init_graphs(self):
         test_play = Play('Test Play')
         scene1  = self._create_scene1(test_play)
         _scene2 = self._create_scene2(test_play)
 
         # this actually needs to be initialized
-        png = ShakespearePlayGraph(test_play)
+        _init_graphs(test_play)
         
         #print 'sc.graph:', sc.graph
-        G = png.graphs[scene1.act+'_'+scene1.scene]
+        G = test_play.scenes_idx[scene1.act+'_'+scene1.scene].graph
+        #G = test_play.scenes_idx[0].G
         self.assertEqual(G, scene1.graph, 'Make sure both graph instances reference the same object')
         #print nx.connected_components(G)
         
@@ -53,11 +54,11 @@ class PlaysAndGraphsTest(TestCase):
         self.assertEqual(G.node['Char 3']['nlines'], 3*20)
         self.assertEqual(G.node['Char 4']['nlines'], 3*20)
 
-        degrees = nx.degree(G)
-        self.assertEqual(degrees['Char 1'], 2)
-        self.assertEqual(degrees['Char 2'], 1)
-        self.assertEqual(degrees['Char 3'], 2)
-        self.assertEqual(degrees['Char 4'], 1)
+        cnxs = nx.degree(G)
+        self.assertEqual(cnxs['Char 1'], 2)
+        self.assertEqual(cnxs['Char 2'], 1)
+        self.assertEqual(cnxs['Char 3'], 2)
+        self.assertEqual(cnxs['Char 4'], 1)
 
         edges = G.edges(data=True)
         print 'edges:', edges
@@ -65,7 +66,7 @@ class PlaysAndGraphsTest(TestCase):
         
         #plot_test_graph(str(scene), scene.graph)
 
-        tG = png.totalG
+        tG = test_play.totalG
         print tG
         
         chars = tG.nodes()
@@ -77,13 +78,13 @@ class PlaysAndGraphsTest(TestCase):
         self.assertEqual(tG.node['Char 5']['nlines'], 30)
         #plot_test_graph('totalG', tG)
         
-        tDegrees = nx.degree(tG)
-        print 'degree:', tDegrees 
-        self.assertEqual(tDegrees['Char 1'], 3)
-        self.assertEqual(tDegrees['Char 2'], 1)
-        self.assertEqual(tDegrees['Char 3'], 2)
-        self.assertEqual(tDegrees['Char 4'], 1)
-        self.assertEqual(tDegrees['Char 5'], 1)
+        tCnxs = nx.degree(tG)
+        print 'degree:', tCnxs 
+        self.assertEqual(tCnxs['Char 1'], 3)
+        self.assertEqual(tCnxs['Char 2'], 1)
+        self.assertEqual(tCnxs['Char 3'], 2)
+        self.assertEqual(tCnxs['Char 4'], 1)
+        self.assertEqual(tCnxs['Char 5'], 1)
         
 #        # New Scenario
 #        test_play = Play('Test Play')

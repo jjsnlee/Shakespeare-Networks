@@ -55,17 +55,17 @@ class ShakespearePlayCtx:
             for r in rs:
                 act, sc, html, loc = r
                 play.add_scene(Scene(play, act, sc, loc, html))
-            
+
             rs = re.findall(prologue_ptn, x)
             for r in rs:
                 act, html, loc = r
                 play.add_scene(Scene(play, act, '0', loc, html))
-        
+
             rs = re.findall(prologue_ptn2, x)
             for r in rs:
                 sc, html, loc = r
                 play.add_scene(Scene(play, '0', sc, loc, html))
-        
+
             rs = re.findall(prologue_ptn3, x)
             for r in rs:
                 html, loc = r
@@ -98,55 +98,30 @@ class ShakespearePlayCtx:
                 Sc = play.scenes_idx[act+'_'+sc]
                 Sc.add_dialogue(speaker, lines)
 
-        self.play_details[play_alias] = ShakespearePlayGraph(play)
+        self.play_details[play_alias] = _init_graphs(play)
         return self.play_details[play_alias]
 
 # hack to aliases where they are known
 _repl_speakers = { 'LEAR' : 'KING LEAR' }
 
-class ShakespearePlayGraph:
-    def __init__(self, play):
-        self.play = play
-        self.graphs = OrderedDict()
-        self.__init()
-        self._totalG = None
-    
-    def __init(self):
-        #print self.play.title, '\n\t', self.play.toc_as_str()
-        for sc in self.play.scenes:
-            # probably want to make these MultiGraphs
-            G = nx.Graph()
-            self.graphs[sc.act+'_'+sc.scene] = sc.graph = G
+def _init_graphs(play):
+    #print self.play.title, '\n\t', self.play.toc_as_str()
+    for sc in play.scenes:
+        # probably want to make these MultiGraphs
+        G = sc.graph = nx.Graph()
 
-            prev_speaker = None
-            for speaker, lines in sc.dialogues:
-                if speaker not in G.node:
-                    G.add_node(speaker, nlines=0)
-                
-                G.node[speaker]['nlines'] += len(lines)
-                if prev_speaker:
-                    edge = G.get_edge_data(prev_speaker, speaker, {})
-                    w = edge.get('weight', 0)
-                    G.add_weighted_edges_from([(prev_speaker, speaker, w+1)])
-                prev_speaker = speaker
-
-    @property
-    def totalG(self):
-        if self._totalG is None:
-            totalG = nx.Graph()
-            for G_ in self.graphs.values():
-                origTG = totalG
-                totalG = nx.compose(origTG, G_)
-
-                for speaker in G_.nodes():
-                    # only need to do this if the character spoke before. 
-                    # otherwise take the value from the new node
-                    if speaker in origTG.node:
-                        totalG.node[speaker]['nlines'] = \
-                            G_.node[speaker]['nlines'] + origTG.node[speaker]['nlines']
-                
-            self._totalG = totalG
-        return self._totalG
+        prev_speaker = None
+        for speaker, lines in sc.dialogues:
+            if speaker not in G.node:
+                G.add_node(speaker, nlines=0)
+            
+            G.node[speaker]['nlines'] += len(lines)
+            if prev_speaker:
+                edge = G.get_edge_data(prev_speaker, speaker, {})
+                w = edge.get('weight', 0)
+                G.add_weighted_edges_from([(prev_speaker, speaker, w+1)])
+            prev_speaker = speaker
+    return play
 
 #from networkx.readwrite.json_graph import node_link_data    
 def draw_graph(scene, G):
@@ -169,7 +144,8 @@ def draw_graph(scene, G):
     #pos = nx.shell_layout(G)
     #pos = nx.spectral_layout(G)
     
-    node_size=[int(G.node[n]['nlines'])**2 for n in G]
+    node_size = [int(G.node[n]['nlines'])**2 for n in G]
+    #node_size = [int(G.node[n]['nlines']) for n in G]
 
     c = 'b'
     nx.draw_networkx_edges(G, pos, edge_color=c, width=1, alpha=0.5)
@@ -187,23 +163,6 @@ def draw_graph(scene, G):
 
     nx.draw_networkx_labels(G, pos_lbls, alpha=0.5)
 
-# not sure if this is used for anything
-#def draw_graph_nscenes(play):
-#    x = 0
-#    # Iterate through the Acts, Scenes
-#    for i, sc in enumerate(play.scenes):
-#        #if not(i > 16 and i < 28):
-#        if i > 0:
-#            break
-#        print sc
-#        x += 1
-#        #plt.subplot(4,3,x)
-#        #plt.axis('off')
-#        #plt.axis('tight')
-#        draw_graph(sc)
-#    #probably just want to write each Act to a file
-#    plt.show()
-
 class Play:
     def __init__(self, title):
         self.title = title
@@ -212,6 +171,7 @@ class Play:
         self.scenes_idx = {}
         self.characters = OrderedDict()
         self.year = None
+        self._totalG = None
         #self.html = ''
     @property
     def clean_lines(self):
@@ -221,6 +181,26 @@ class Play:
             c = self.characters[name]
             lines.extend(c.clean_lines)
         return lines
+
+    @property
+    def totalG(self):
+        if self._totalG is None:
+            totalG = nx.Graph()
+            for sc in self.scenes:
+                G_ = sc.graph
+                origTG = totalG
+                totalG = nx.compose(origTG, G_)
+
+                for speaker in G_.nodes():
+                    # only need to do this if the character spoke before. 
+                    # otherwise take the value from the new node
+                    if speaker in origTG.node:
+                        totalG.node[speaker]['nlines'] = \
+                            G_.node[speaker]['nlines'] + origTG.node[speaker]['nlines']
+                
+            self._totalG = totalG
+        return self._totalG
+
     def add_scene(self, scene):
         self.scenes.append(scene)
         self.scenes_idx[scene.act+'_'+scene.scene] = scene
