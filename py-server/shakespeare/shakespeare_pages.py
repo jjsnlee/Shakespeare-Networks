@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import os, json, traceback
 from operator import itemgetter
 from json.encoder import JSONEncoder
+import networkx as nx
 
 try:
     from django.http import HttpResponse
@@ -66,7 +67,17 @@ class PlayJSONEncoder(JSONEncoder):
                     acts.append(curr_scenes)
                 curr_scenes.append(scene)
             d['acts'] = acts
-            d['characters'] = obj.characters.keys() 
+            d['characters'] = characters = obj.characters.keys()
+            d['char_data'] = char_data = {}
+            
+            playG = obj.totalG
+            cnxs = nx.degree(playG)
+            for c in characters:
+                char_data[c] = \
+                {
+                 'nlines' : playG.node[c]['nlines'],
+                 'nedges' : cnxs[c]
+                }
             
         elif isinstance(obj, Scene):
             d = self.from_keys(obj, ('act', 'scene', 'location', 'graph_img_f'))
@@ -93,7 +104,6 @@ def init_play(play_name, force_img_regen, basedir=''):
     play = play_data_ctx.load_play(play_name)
     title = play_data_ctx.map_by_alias.get(play_name)
 
-    #rslt = { 'img' : [], 'scenes' : [], 'play' : play }
     print play.title, '\n\t', play.toc_as_str()
     
     if not os.path.exists('%simgs/' % basedir):

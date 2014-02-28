@@ -124,7 +124,7 @@ def _init_graphs(play):
     return play
 
 #from networkx.readwrite.json_graph import node_link_data    
-def draw_graph(scene, G):
+def draw_graph(scene_title, G):
     """
     Draw the graph, the node size will be based on the number of lines squared 
     the character spoke in that scene, indicating their dominance/activity.
@@ -135,7 +135,7 @@ def draw_graph(scene, G):
     #print 'json repr:', node_link_data(G)
     print 'nlines:', [(n, G.node[n]['nlines']) for n in G]
 
-    plt.title(str(scene))
+    plt.title(str(scene_title))
     plt.xticks([])
     plt.yticks([])
     

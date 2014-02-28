@@ -87,13 +87,13 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     </tr>
     <tr>
       <td align="left"><b>Characters</b></td>
-      <td><b>Lines</b></td>
-      <td><b>Edges</b></td>
+      <td align="right"><b>Lines</b></td>
+      <td align="right"><b>Edges</b></td>
     </tr>
     <tr ng-repeat="char in play_content.characters">
       <td>{{char}}</td>
-      <td> - </td>
-      <td> - </td>
+      <td align="right">{{play_content.char_data[char].nlines}}</td>
+      <td align="right">{{play_content.char_data[char].nedges}}</td>
     </tr>
     </table>
   </td>
