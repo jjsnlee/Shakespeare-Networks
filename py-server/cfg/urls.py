@@ -20,12 +20,8 @@ def view_static(req):
     return HttpResponse(data)
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'shakespeare.views.home', name='home'),
-    # url(r'^shakespeare/', include('shakespeare.foo.urls')),
     ('^shakespeare/$', shakespeare_pages.view_page),
     ('^shakespeare/play/.*$', shakespeare_pages.get_play),
-    
     ('^imgs/.*\.png$', view_imgs),
     ('^html/.*$', view_static),
     
