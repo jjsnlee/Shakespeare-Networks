@@ -5,6 +5,44 @@
 <script>
 var shPlays = angular.module('shPlays', [], function($locationProvider) {
   $locationProvider.html5Mode(true);
+}).
+directive('myDraggable', function($document) {
+  // Example from: http://docs.angularjs.org/guide/directive
+  return function(scope, element, attr) {
+    var divElmt = element[0]; // the div tag
+    // get the actual position of the image 
+    var startX = x = divElmt.offsetLeft, startY = y = divElmt.offsetTop; 
+ 
+    element.css({
+      //position: 'relative',
+      //border: '1px solid red',
+      //backgroundColor: 'lightgrey',
+      cursor: 'pointer'
+    });
+ 
+    element.on('mousedown', function(event) {
+      // Prevent default dragging of selected content
+      event.preventDefault();
+      startX = event.pageX - x;
+      startY = event.pageY - y;
+      $document.on('mousemove', mousemove);
+      $document.on('mouseup', mouseup);
+    });
+
+    function mousemove(event) {
+      y = event.pageY - startY;
+      x = event.pageX - startX;
+      element.css({
+        top:  y + 'px',
+        left: x + 'px'
+      });
+    }
+ 
+    function mouseup() {
+      $document.unbind('mousemove', mousemove);
+      $document.unbind('mouseup', mouseup);
+    }
+  };
 });
 
 shPlays.controller('play', function($scope, $http, $location, $window) {
@@ -62,12 +100,12 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 
 <div ng-show="selectedPlay!=null">
 
-<div ng-show="showImgPopup===1"
+<div my-draggable ng-show="showImgPopup===1"
      style="width:40%; height:80%; overflow:auto; position:absolute; top:10%; left:30%; 
             border:3px solid #eee;
             background: white"> <!-- rgba(255, 255, 255, 1.0) -->
   <table border=0 cellpadding=0 cellspacing=0 width="100%">
-    <tr><td align="right"><div ng-click="showImgPopup=0">Close</div></td></tr>
+    <tr><td align="right"><button ng-click="showImgPopup=0">Close</button></td></tr>
     <tr><td><img ng-src="{{selected_graph_img_f}}" width="100%"></td></tr>
   </table>
 </div>
