@@ -109,11 +109,10 @@ def init_play(play_name, force_img_regen, basedir=''):
     if not os.path.exists('%simgs/' % basedir):
         os.makedirs('%simgs/' % basedir)
 
+    # somewhere in here this message is cropping up occasionally
+    #objc[5300]: Object 0x100306b70 of class __NSArrayI autoreleased with no pool in place - just leaking - break on objc_autoreleaseNoPool() to debug
+
     for sc in play.scenes:
-        #arr = '<option value="%s,%s">Act %s Sc %s %s</option>' \
-        #    % (sc.act, sc.scene, sc.act, sc.scene, sc.location)
-        #rslt['scenes'].append(arr)
-        #print sc
         sc.graph_img_f = '%simgs/%s_%s_%s.png' % (basedir, title, sc.act, sc.scene)
         if not os.path.exists(sc.graph_img_f) or force_img_regen:
             plt.figure(figsize=(8,5))

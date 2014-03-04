@@ -158,8 +158,8 @@ def draw_graph(scene_title, G):
     pos_lbls = pos.copy()
     if len(pos_lbls) > 1:
         for k in pos_lbls.keys():
-            pos_lbls[k] += [0.01, 0.01]
-            #pos_lbls[k] += [0.05, 0.03]
+            #pos_lbls[k] += [0.01, 0.01]
+            pos_lbls[k] += [0.05, 0.03]
 
     nx.draw_networkx_labels(G, pos_lbls, alpha=0.5)
 
@@ -184,10 +184,13 @@ class Play:
 
     @property
     def totalG(self):
-        if self._totalG is None:
+        if not self._totalG:
+            print 'Calculating total G?'
             totalG = nx.Graph()
             for sc in self.scenes:
-                G_ = sc.graph
+                # for some reason without the copy the size of the 
+                # nodes would blow up. need to see why this is...
+                G_ = sc.graph.copy()
                 origTG = totalG
                 totalG = nx.compose(origTG, G_)
 
@@ -199,7 +202,7 @@ class Play:
                             G_.node[speaker]['nlines'] + origTG.node[speaker]['nlines']
                 
             self._totalG = totalG
-        return self._totalG
+        return self._totalG.copy()
 
     def add_scene(self, scene):
         self.scenes.append(scene)
