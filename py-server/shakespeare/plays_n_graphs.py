@@ -158,8 +158,8 @@ def draw_graph(scene_title, G):
     pos_lbls = pos.copy()
     if len(pos_lbls) > 1:
         for k in pos_lbls.keys():
-            #pos_lbls[k] += [0.01, 0.01]
-            pos_lbls[k] += [0.05, 0.03]
+            pos_lbls[k] += [0.01, 0.02]
+            #pos_lbls[k] += [0.05, 0.03]
 
     nx.draw_networkx_labels(G, pos_lbls, alpha=0.5)
 

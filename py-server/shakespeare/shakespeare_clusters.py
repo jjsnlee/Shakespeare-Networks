@@ -9,7 +9,7 @@ from os.path import join
 rootdir = helper.get_root_dir()
 import sys
 sys.path.append(join(rootdir, 'py-external/pcibook'))
-sys.path.append(join(rootdir, 'py-external//word_cloud'))
+sys.path.append(join(rootdir, 'py-external/word_cloud'))
 sys.path.append(join(rootdir, 'py-external/external'))
 #sys.path.append('..')
 #import nmf

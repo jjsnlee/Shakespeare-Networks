@@ -72,24 +72,52 @@ class PlayJSONEncoder(JSONEncoder):
             
             playG = obj.totalG
             cnxs = nx.degree(playG)
-            for c in characters:
+            for idx, c in enumerate(characters):
+                nlines = playG.node[c]['nlines']
+                ratio = 0
+                if cnxs[c] > 0:
+                    ratio = round(float(nlines) / cnxs[c], 2)
+                
                 char_data[c] = \
                 {
-                 'nlines' : playG.node[c]['nlines'],
-                 'nedges' : cnxs[c]
+                 'nlines'     : nlines,
+                 'nedges'     : cnxs[c],
+                 'ratio'      : ratio,
+                 'appearance' : idx
                 }
             
         elif isinstance(obj, Scene):
             d = self.from_keys(obj, ('act', 'scene', 'location', 'graph_img_f'))
+            d['char_data'] = char_data = {}
+            
             dmat = obj.dialogue_matrix
             #d['dialogue_matrix'] = dmat
-            d['lines'] = obj.clean_lines
+            # skip this for now...
+            #d['lines'] = obj.clean_lines
+            
+            # May want to extract this so that we only do this when 
+            # necessary for plays
+            sceneG = obj.graph
+            cnxs = nx.degree(sceneG)
+            for c in sceneG.node:
+                nlines = sceneG.node[c]['nlines']
+                ratio = 0
+                if cnxs[c] > 0:
+                    ratio = round(float(nlines) / cnxs[c], 2)
+                char_data[c] = \
+                {
+                 'nlines'     : nlines,
+                 'nedges'     : cnxs[c],
+                 'ratio'      : ratio
+                }
             
         elif isinstance(obj, Character):
             d = self.from_keys(obj, ('name', 'clean_lines'))
+        
         elif isinstance(obj, Line):
             #d = self.from_keys(obj, ('lineno', 'line'))
             d = repr(obj)
+
         else:
             d = obj.__dict__.copy()
         
@@ -101,9 +129,7 @@ def init_play(play_name, force_img_regen, basedir=''):
     if play_name not in play_data_ctx.map_by_alias:
         raise Exception('Can''t find play [%s].' % play_name)
     
-    play = play_data_ctx.load_play(play_name)
-    title = play_data_ctx.map_by_alias.get(play_name)
-
+    play  = play_data_ctx.load_play(play_name)
     print play.title, '\n\t', play.toc_as_str()
     
     if not os.path.exists('%simgs/' % basedir):
@@ -112,12 +138,20 @@ def init_play(play_name, force_img_regen, basedir=''):
     # somewhere in here this message is cropping up occasionally
     #objc[5300]: Object 0x100306b70 of class __NSArrayI autoreleased with no pool in place - just leaking - break on objc_autoreleaseNoPool() to debug
 
+    # /usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py:412: 
+    # RuntimeWarning: More than 20 figures have been opened. Figures created through the 
+    # pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed 
+    # and may consume too much memory. (To control this warning, see the rcParam 
+    # `figure.max_num_figures`).
+
+    full_title = play_data_ctx.map_by_alias.get(play_name)
     for sc in play.scenes:
-        sc.graph_img_f = '%simgs/%s_%s_%s.png' % (basedir, title, sc.act, sc.scene)
+        sc.graph_img_f = '%simgs/%s_%s_%s.png' % (basedir, full_title, sc.act, sc.scene)
         if not os.path.exists(sc.graph_img_f) or force_img_regen:
             plt.figure(figsize=(8,5))
             draw_graph(str(sc), sc.graph)
             plt.savefig(sc.graph_img_f)
+            plt.close()
 
     return play
 
