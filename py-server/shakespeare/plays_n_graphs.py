@@ -21,7 +21,7 @@ class ShakespearePlayCtx:
     def __init__(self):
         self.basedir = join(helper.get_root_dir(), 'data/shakespeare/')
         # Will be a list of play tuples ('[key]', '[Title]')
-        self.plays = list(plays_cfg.plays)
+        self.plays = list(plays_cfg.shakespeare['plays'])
         print 'Plays:\n', pformat(self.plays)
         self.play_details = {}
         
@@ -34,8 +34,8 @@ class ShakespearePlayCtx:
 
         title = self.map_by_alias[play_alias]
         play = Play(title)
-        play.type = plays_cfg.classifications[title]
-        play.year = plays_cfg.vintage[title]
+        play.type = plays_cfg.shakespeare['classifications'][title]
+        play.year = plays_cfg.shakespeare['vintage'][title]
         
         basedir = self.basedir
         toc_file = join(basedir, play_alias, 'index.html')
@@ -167,10 +167,11 @@ class Play:
     def __init__(self, title):
         self.title = title
         self.type = '' # Comedy, Tragedy, History
-        self.scenes = []
         self.scenes_idx = {}
         self.characters = OrderedDict()
         self.year = None
+
+        self._scenes = None
         self._totalG = None
         #self.html = ''
     @property
@@ -204,8 +205,17 @@ class Play:
             self._totalG = totalG
         return self._totalG.copy()
 
+    @property
+    def scenes(self):
+        if self._scenes is None:
+            sc_keys = self.scenes_idx.keys()
+            sc_keys = sorted(sc_keys)
+            print 'sc_keys:', sc_keys
+            self._scenes = [self.scenes_idx[sc] for sc in sc_keys]
+        return self._scenes
+
     def add_scene(self, scene):
-        self.scenes.append(scene)
+        #self.scenes.append(scene)
         self.scenes_idx[scene.act+'_'+scene.scene] = scene
     def toc_as_str(self):
         return '\n\t'.join(map(str, self.scenes))

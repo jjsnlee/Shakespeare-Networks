@@ -1,5 +1,5 @@
 
-plays = [
+shakespeare_plays = [
     # Will use this as the key/value pair
     ('allswell', "All's Well That Ends Well"),
     ('asyoulikeit', 'As You Like It'),
@@ -136,5 +136,8 @@ def _get_years():
         'Titus Andronicus' : '1593-94 / 1594',
     }
 
-classifications = _get_classifications()
-vintage = _get_years()
+shakespeare = {
+    'plays'           : shakespeare_plays,
+    'classifications' : _get_classifications(),
+    'vintage'         : _get_years()
+}
