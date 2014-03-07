@@ -16,17 +16,37 @@ def get_plays_ctx(reload_ctx=False):
         _ALL_PLAYS = ShakespearePlayCtx() 
     return _ALL_PLAYS
 
-class ShakespearePlayCtx:
-
-    def __init__(self):
-        self.basedir = join(helper.get_root_dir(), 'data/shakespeare/')
+class RootPlayCtx(object):
+    def __init__(self, datadir, cfg):
+        self.basedir = join(helper.get_root_dir(), datadir)
         # Will be a list of play tuples ('[key]', '[Title]')
         self.plays = list(plays_cfg.shakespeare['plays'])
         print 'Plays:\n', pformat(self.plays)
         self.play_details = {}
-        
         self.map_by_alias = dict(self.plays)
         self.map_by_title = dict([(v,k) for k,v in self.plays])
+
+class MarlowePlayCtx(RootPlayCtx):
+    def __init__(self):
+        super(MarlowePlayCtx, self).__init__('data/marlowe/', plays_cfg.marlowe)
+    def load_play(self, play_alias):    
+        if play_alias in self.play_details:
+            return self.play_details[play_alias]
+        title = self.map_by_alias[play_alias]
+        play = Play(title)
+        
+        full_file = toc_file.replace('index.html', 'full.html')
+        with open(full_file) as f:
+            x = ''.join(f.readlines())
+            play.add_scene(Scene(play, act, sc, loc, html))
+        
+        self.play_details[play_alias] = _init_graphs(play)
+        return self.play_details[play_alias]
+
+class ShakespearePlayCtx(RootPlayCtx):
+
+    def __init__(self):
+        super(ShakespearePlayCtx, self).__init__('data/shakespeare/', plays_cfg.shakespeare)
 
     def load_play(self, play_alias):
         if play_alias in self.play_details:

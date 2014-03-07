@@ -40,6 +40,12 @@ shakespeare_plays = [
     ('titus', 'Titus Andronicus')
 ]
 
+marlowe_plays = [
+    ('dido', 'The Tragedy of Dido Queene of Carthage'),
+    ('faustus', 'The Tragical History of Dr. Faustus'),
+    ('malta', 'The Jew of Malta')
+]
+
 def _get_classifications():
     _comedies = dict.fromkeys([
                     "All's Well That Ends Well",
@@ -140,4 +146,7 @@ shakespeare = {
     'plays'           : shakespeare_plays,
     'classifications' : _get_classifications(),
     'vintage'         : _get_years()
+}
+marlowe = {
+    'plays' : marlowe_plays,
 }
