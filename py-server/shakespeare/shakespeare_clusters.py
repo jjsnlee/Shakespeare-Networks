@@ -30,6 +30,13 @@ def get_ctx_from_plays(plays):
     return prc_ctx
 
 def _get_stopwords():
+    from nltk.corpus import stopwords
+    stopwds = set(stopwords.words('english'))
+    addl_stopwords_file = join(helper.get_root_dir(), 'data/stopwords')
+    with open(addl_stopwords_file) as fh:
+        more_stopwds = [s.strip() for s in fh.readlines() if not s.startswith('#')]
+        stopwds = stopwds.union(more_stopwds)
+    
     addl_stopwds = set([
         'thee', 'thy', 'thou', 'hath', 'shall', 'doth', 'dost', 'prithee', 'tis', 'ye', 'ay', 'hast',
         'says', 'good', 'sir',
@@ -40,7 +47,7 @@ def _get_stopwords():
         #'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 
         'ten'
     ])
-    stopwds = helper.get_stopwords()
+
     stopwds = stopwds.union(addl_stopwds)
     return stopwds
 
