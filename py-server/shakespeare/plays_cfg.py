@@ -40,12 +40,6 @@ shakespeare_plays = [
     ('titus', 'Titus Andronicus')
 ]
 
-marlowe_plays = [
-    ('dido', 'The Tragedy of Dido Queene of Carthage'),
-    ('faustus', 'The Tragical History of Dr. Faustus'),
-    ('malta', 'The Jew of Malta')
-]
-
 def _get_classifications():
     _comedies = dict.fromkeys([
                     "All's Well That Ends Well",
@@ -147,6 +141,34 @@ shakespeare = {
     'classifications' : _get_classifications(),
     'vintage'         : _get_years()
 }
+
+# Dido, Queen of Carthage (c.1586) (possibly co-written with Thomas Nashe)
+# Tamburlaine, part 1 (c.1587)
+# Tamburlaine, part 2 (c.1587Ð1588)
+# The Jew of Malta (c.1589)
+# Doctor Faustus (c.1589, or, c.1593)
+# Edward II (c.1592)
+# The Massacre at Paris (c.1593)
+
+marlowe_plays = [
+    ('dido',           'Dido, Queene of Carthage'),
+    ('faustus',        'Doctor Faustus'),
+    ('tamburlaine_1',  'Tamburlaine, Part I'),
+    ('tamburlaine_2',  'Tamburlaine, Part II'),
+    ('massacre_paris', 'The Massacre at Paris'),
+    ('edwardii',       'Edward II'),
+    ('malta',          'The Jew of Malta')
+]
+
 marlowe = {
     'plays' : marlowe_plays,
+    'years' : {
+        'faustus'        : '1589',
+        'dido'           : '1586',
+        'tamburlaine_1'  : '1587',
+        'tamburlaine_2'  : '1587-88',
+        'malta'          : '1589',
+        'massacre_paris' : '1593',
+        'edwardii'       : '1592'
+    }
 }
