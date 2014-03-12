@@ -144,7 +144,7 @@ shakespeare = {
 
 # Dido, Queen of Carthage (c.1586) (possibly co-written with Thomas Nashe)
 # Tamburlaine, part 1 (c.1587)
-# Tamburlaine, part 2 (c.1587Ð1588)
+# Tamburlaine, part 2 (c.1587 - 1588)
 # The Jew of Malta (c.1589)
 # Doctor Faustus (c.1589, or, c.1593)
 # Edward II (c.1592)
