@@ -1,12 +1,15 @@
 <html>
 <head>
 <title>Shakespeare</title>
-<script src="/html/angular-1.2.9/angular.js"></script>
+<script src="/js/angular-1.2.9/angular.js"></script>
+<script src="/js/Highcharts-3.0.10/js/highcharts.js"></script>
+
 <script>
 var shPlays = angular.module('shPlays', [], function($locationProvider) {
   $locationProvider.html5Mode(true);
-}).
-directive('myDraggable', function($document) {
+});
+
+shPlays.directive('myDraggable', function($document) {
   // Example from: http://docs.angularjs.org/guide/directive
   return function(scope, element, attr) {
     var divElmt = element[0]; // the div tag
@@ -45,10 +48,17 @@ directive('myDraggable', function($document) {
   };
 });
 
+shPlays.directive('myDraggable', function($document) {
+  return function(scope, element, attr) {
+    
+  };
+});
+
+
 shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.all_plays = __ALL_PLAYS__;
   $scope.showPopup = 0;
-  $scope.showSideBar = 0;
+  $scope.showSideBar = 1;
   
   // The entire play if no scene is selected, in which case it will be
   // just for the specific scene
@@ -162,6 +172,9 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 	    <img ng-src="/{{scene.graph_img_f}}" ng-click="sceneImgOpen($event, scene)" 
 	         width="100%" border="0" />
 	  </td>
+	</tr>
+	<tr>
+	  <td colspan="100%">Ok</td>
 	</tr>
   </table>
   </td>

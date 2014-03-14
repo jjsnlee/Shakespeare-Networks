@@ -23,7 +23,7 @@ urlpatterns = patterns('',
     ('^shakespeare/$', shakespeare_pages.view_page),
     ('^shakespeare/play/.*$', shakespeare_pages.get_play),
     ('^imgs/.*\.png$', view_imgs),
-    ('^html/.*$', view_static),
+    ('^js/.*$', view_static),
     
     # Uncomment the admin/doc line below to enable admin documentation:
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
