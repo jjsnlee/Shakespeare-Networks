@@ -1,5 +1,4 @@
-from plays_n_graphs import get_plays_ctx, draw_graph
-import matplotlib.pyplot as plt
+from plays_n_graphs import get_plays_ctx, init_play
 import os, json, traceback
 from operator import itemgetter
 from json.encoder import JSONEncoder
@@ -20,7 +19,7 @@ def view_page(req):
         force_img_regen = qry_str.get('force_regen', False) == '1'
         if force_img_regen:
             _play_data = init_play(sld_play, 1)
-
+    
     html = _create_html(sld_play)
     return HttpResponse(html)
 
@@ -122,38 +121,6 @@ class PlayJSONEncoder(JSONEncoder):
             d = obj.__dict__.copy()
         
         return d
-
-def init_play(play_name, force_img_regen, basedir=''):
-    play_data_ctx = get_plays_ctx()
-
-    if play_name not in play_data_ctx.map_by_alias:
-        raise Exception('Can''t find play [%s].' % play_name)
-    
-    play  = play_data_ctx.load_play(play_name)
-    print play.title, '\n\t', play.toc_as_str()
-    
-    if not os.path.exists('%simgs/' % basedir):
-        os.makedirs('%simgs/' % basedir)
-
-    # somewhere in here this message is cropping up occasionally
-    #objc[5300]: Object 0x100306b70 of class __NSArrayI autoreleased with no pool in place - just leaking - break on objc_autoreleaseNoPool() to debug
-
-    # /usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py:412: 
-    # RuntimeWarning: More than 20 figures have been opened. Figures created through the 
-    # pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed 
-    # and may consume too much memory. (To control this warning, see the rcParam 
-    # `figure.max_num_figures`).
-
-    full_title = play_data_ctx.map_by_alias.get(play_name)
-    for sc in play.scenes:
-        sc.graph_img_f = '%simgs/%s_%s_%s.png' % (basedir, full_title, sc.act, sc.scene)
-        if not os.path.exists(sc.graph_img_f) or force_img_regen:
-            plt.figure(figsize=(8,5))
-            draw_graph(str(sc), sc.graph)
-            plt.savefig(sc.graph_img_f)
-            plt.close()
-
-    return play
 
 def main():
     play = 'King Lear'

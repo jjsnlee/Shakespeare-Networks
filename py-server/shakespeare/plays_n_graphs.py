@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import plays_cfg
 import pandas as pd
 import numpy as np
+import os
 from pprint import pformat
 from os.path import join
 from collections import OrderedDict
@@ -29,13 +30,14 @@ class RootPlayCtx(object):
 class MarlowePlayCtx(RootPlayCtx):
     def __init__(self):
         super(MarlowePlayCtx, self).__init__('data/marlowe/', plays_cfg.marlowe)
+
     def load_play(self, play_alias):    
         if play_alias in self.play_details:
             return self.play_details[play_alias]
         title = self.map_by_alias[play_alias]
         play = Play(title)
         
-        full_file = toc_file.replace('index.html', 'full.html')
+        full_file = join(self.basedir, play_alias+'.html')
         with open(full_file) as f:
             x = ''.join(f.readlines())
             play.add_scene(Scene(play, act, sc, loc, html))
@@ -141,6 +143,40 @@ def _init_graphs(play):
                 w = edge.get('weight', 0)
                 G.add_weighted_edges_from([(prev_speaker, speaker, w+1)])
             prev_speaker = speaker
+    return play
+
+def init_play(play_name, force_img_regen, basedir=''):
+    play_data_ctx = get_plays_ctx()
+
+    if play_name not in play_data_ctx.map_by_alias:
+        raise Exception('Can''t find play [%s].' % play_name)
+    
+    play  = play_data_ctx.load_play(play_name)
+    print play.title, '\n\t', play.toc_as_str()
+    
+    web_root_dir = join(basedir, 'imgs/')
+    
+    if not os.path.exists(web_root_dir):
+        os.makedirs(web_root_dir)
+
+    # somewhere this message is cropping up occasionally
+    #objc[5300]: Object 0x100306b70 of class __NSArrayI autoreleased with no pool in place - just leaking - break on objc_autoreleaseNoPool() to debug
+
+    # /usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py:412: 
+    # RuntimeWarning: More than 20 figures have been opened. Figures created through the 
+    # pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed 
+    # and may consume too much memory. (To control this warning, see the rcParam 
+    # `figure.max_num_figures`).
+
+    full_title = play_data_ctx.map_by_alias.get(play_name)
+    for sc in play.scenes:
+        sc.graph_img_f = join(web_root_dir, '%s_%s_%s.png' % (full_title, sc.act, sc.scene))
+        if not os.path.exists(sc.graph_img_f) or force_img_regen:
+            plt.figure(figsize=(8,5))
+            draw_graph(str(sc), sc.graph)
+            plt.savefig(sc.graph_img_f)
+            plt.close()
+
     return play
 
 #from networkx.readwrite.json_graph import node_link_data    
