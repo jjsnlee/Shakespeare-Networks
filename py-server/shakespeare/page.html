@@ -1,69 +1,29 @@
 <html>
 <head>
 <title>Shakespeare</title>
-<script src="/js/angular-1.2.9/angular.js"></script>
-<script src="/js/Highcharts-3.0.10/js/highcharts.js"></script>
+<script type="text/javascript" src="/js/angular-1.2.9/angular.js"></script>
+<!-- jQuery is required for HighCharts -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts.src.js"></script>
+<script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts-more.src.js"></script>
+<script type="text/javascript" src="/js/lib/underscore-min-1.5.0.js"></script>
+<script type="text/javascript" src="/js/plays.js"></script>
 
 <script>
-var shPlays = angular.module('shPlays', [], function($locationProvider) {
-  $locationProvider.html5Mode(true);
-});
-
-shPlays.directive('myDraggable', function($document) {
-  // Example from: http://docs.angularjs.org/guide/directive
-  return function(scope, element, attr) {
-    var divElmt = element[0]; // the div tag
-    // get the actual position of the image 
-    var startX = x = divElmt.offsetLeft, startY = y = divElmt.offsetTop; 
- 
-    element.css({
-      //position: 'relative',
-      //border: '1px solid red',
-      //backgroundColor: 'lightgrey',
-      cursor: 'pointer'
-    });
- 
-    element.on('mousedown', function(event) {
-      // Prevent default dragging of selected content
-      event.preventDefault();
-      startX = event.pageX - x;
-      startY = event.pageY - y;
-      $document.on('mousemove', mousemove);
-      $document.on('mouseup', mouseup);
-    });
-
-    function mousemove(event) {
-      y = event.pageY - startY;
-      x = event.pageX - startX;
-      element.css({
-        top:  y + 'px',
-        left: x + 'px'
-      });
-    }
- 
-    function mouseup() {
-      $document.unbind('mousemove', mousemove);
-      $document.unbind('mouseup', mouseup);
-    }
-  };
-});
-
-shPlays.directive('myDraggable', function($document) {
-  return function(scope, element, attr) {
-    
-  };
-});
-
-
 shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.all_plays = __ALL_PLAYS__;
   $scope.showPopup = 0;
   $scope.showSideBar = 1;
+  $scope.showChart = 0;
   
   // The entire play if no scene is selected, in which case it will be
   // just for the specific scene
   $scope.characters = []; 
   $scope.char_data = {};
+  
+  // Keep track of the positions of each of the popups.  
+  // Otherwise there will be some jumping of the div elements
+  $scope.popupPosn = {};
   
   var selectedPlay = '__PLAY__';
   for (var i=0,len=$scope.all_plays.length; i<len; i++) {
@@ -74,11 +34,11 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   }
   
   if($scope.selectedPlay) {
-	$http.get('/shakespeare/play/'+$scope.selectedPlay.value).success(function(data) {
-	  $scope.play_content = data;
-	  $scope.characters   = data.characters; 
-      $scope.char_data    = data.char_data;
-	});
+		$http.get('/shakespeare/play/'+$scope.selectedPlay.value).success(function(data) {
+		  $scope.play_content = data;
+		  $scope.characters   = data.characters; 
+	    $scope.char_data    = data.char_data;
+		});
   };
   
   $scope.sceneImgOpen = function(evt, scene) {
@@ -93,18 +53,23 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     $scope.characters   = $scope.play_content.characters;
     $scope.char_data    = $scope.play_content.char_data;
   };
-    
+
   $scope.doSubmit = function() {
-	var selectedIdx  = document.forms[0].play.value;
-	var selectedPlay = $scope.all_plays[selectedIdx].value;
-	var forceRegen   = $location.search()['force_regen'];
-	$window.location.href = '/shakespeare/?play='+selectedPlay+'&force_regen='+forceRegen;
-	//$http.get('/shakespeare/play/'+selectedPlay).success(function(data) {
-	//  $scope.play_content = data;
-	//});
-  }
+		var selectedIdx  = document.forms[0].play.value;
+		var selectedPlay = $scope.all_plays[selectedIdx].value;
+		var forceRegen   = $location.search()['force_regen'];
+		$window.location.href = '/shakespeare/?play='+selectedPlay+'&force_regen='+forceRegen;
+		//$http.get('/shakespeare/play/'+selectedPlay).success(function(data) {
+		//  $scope.play_content = data;
+		//});
+  };
+
+  $scope.doShowChart = function() {
+    $scope.showChart = 1;
+  };
 });
 </script>
+
 </head>
 
 <body ng-app="shPlays" ng-controller="play">
@@ -125,7 +90,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 
 <div ng-show="selectedPlay!=null">
 
-<div my-draggable ng-show="showImgPopup===1"
+<div my-draggable id="scenePopup" ng-show="showImgPopup===1"
      style="width:40%; height:80%; overflow:auto; position:absolute; top:10%; left:30%; 
             border:3px solid #eee;
             background: white"> <!-- rgba(255, 255, 255, 1.0) -->
@@ -133,6 +98,19 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     <tr><td align="right"><button ng-click="sceneImgClose()">Close</button></td></tr>
     <tr><td><img ng-src="{{selected_graph_img_f}}" width="100%"></td></tr>
   </table>
+</div>
+
+<div my-draggable id="charPopup" ng-show="showChart===1" 
+	style="min-width: 60%; 
+				height: 450px; 
+				position:absolute;
+				top:10%; left:30%;
+				border:3px solid #eee;
+				background: white;
+				margin: 10px auto">
+
+	<div align="right"><button ng-click="showChart=0">Close</button></div><br>
+	<div character-chart></div>
 </div>
 
 <table border=1 cellpadding=0 cellspacing=0>
@@ -146,7 +124,9 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     
     <table cellpadding=1 cellspacing=1 border=0 width="100%">
     <tr>
-      <td colspan="100%" align="right"><div ng-click="showSideBar=0"><<</div></td>
+      <td colspan="100%" align="right">
+        <button ng-click="showSideBar=0"><<</button>
+      </td>
     </tr>
     <tr>
       <td align="left"><b>Characters</b></td>
@@ -163,20 +143,28 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     </table>
   </td>
   <td width="1%" valign="top" ng-show="showSideBar===0">
-    <div ng-click="showSideBar=1">>></div>
+    <button ng-click="showSideBar=1">>></button>
   </td>
   <td valign="top">
-  <table border=1 cellpadding=1 cellspacing=1>
-	<tr ng-repeat="act in play_content.acts">
-	  <td ng-repeat="scene in act">
-	    <img ng-src="/{{scene.graph_img_f}}" ng-click="sceneImgOpen($event, scene)" 
-	         width="100%" border="0" />
-	  </td>
-	</tr>
-	<tr>
-	  <td colspan="100%">Ok</td>
-	</tr>
-  </table>
+	  <table border=1 cellpadding=1 cellspacing=1>
+		<tr ng-repeat="act in play_content.acts">
+		  <td ng-repeat="scene in act">
+		    <img ng-src="/{{scene.graph_img_f}}" ng-click="sceneImgOpen($event, scene)" 
+		         width="100%" border="0" />
+		  </td>
+		</tr>
+	  </table>
+    
+    <br>&nbsp;<br>&nbsp;
+    
+	  <table border=0 cellpadding=1 cellspacing=1>
+		<tr>
+		  <td colspan="100%">
+		    <a ng-click="showChart=1" style="text-decoration:underline; cursor:pointer">Show Line Chart</a>
+		  </td>
+		</tr>
+		</table>
+
   </td>
 </tr>
 </table>
