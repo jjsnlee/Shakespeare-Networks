@@ -1,6 +1,14 @@
 <html>
 <head>
 <title>Shakespeare</title>
+
+<style type="text/css" id="page-css">
+body {
+    //font-family: arial,helvetica,clean,sans-serif; 
+    font-size: 12px;
+}
+</style>
+
 <script type="text/javascript" src="/js/angular-1.2.9/angular.js"></script>
 <!-- jQuery is required for HighCharts -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -9,7 +17,7 @@
 <script type="text/javascript" src="/js/lib/underscore-min-1.5.0.js"></script>
 <script type="text/javascript" src="/js/plays.js"></script>
 
-<script>
+<script type="text/javascript">
 shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.all_plays = __ALL_PLAYS__;
   $scope.showPopup = 0;
@@ -25,7 +33,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   // Otherwise there will be some jumping of the div elements
   $scope.popupPosn = {};
   
-  var selectedPlay = '__PLAY__';
+  var selectedPlay = $location.search()['play'];
   for (var i=0,len=$scope.all_plays.length; i<len; i++) {
     if( selectedPlay===$scope.all_plays[i].value ) {
       $scope.selectedPlay = $scope.all_plays[i];
@@ -58,6 +66,8 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 		var selectedIdx  = document.forms[0].play.value;
 		var selectedPlay = $scope.all_plays[selectedIdx].value;
 		var forceRegen   = $location.search()['force_regen'];
+		if(forceRegen==null)
+		  forceRegen = 0;
 		$window.location.href = '/shakespeare/?play='+selectedPlay+'&force_regen='+forceRegen;
 		//$http.get('/shakespeare/play/'+selectedPlay).success(function(data) {
 		//  $scope.play_content = data;
@@ -75,9 +85,9 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 <body ng-app="shPlays" ng-controller="play">
 <form>
 <input type="hidden" name="new" value="1">
-<table border=1 cellpadding=3 cellspacing=3>
+<table border=0 cellpadding=1 cellspacing=1>
 <tr>
-  <td>Play:</td>
+  <td><b>Play:</b></td>
   <td>
     <select name="play" ng-model="selectedPlay"
       ng-options="p as p.label for p in all_plays" 
