@@ -145,7 +145,7 @@ def _init_graphs(play):
             prev_speaker = speaker
     return play
 
-def init_play(play_name, force_img_regen, basedir=''):
+def init_play(play_name, force_img_regen):
     play_data_ctx = get_plays_ctx()
 
     if play_name not in play_data_ctx.map_by_alias:
@@ -154,10 +154,9 @@ def init_play(play_name, force_img_regen, basedir=''):
     play  = play_data_ctx.load_play(play_name)
     print play.title, '\n\t', play.toc_as_str()
     
-    web_root_dir = join(basedir, 'imgs/')
-    
-    if not os.path.exists(web_root_dir):
-        os.makedirs(web_root_dir)
+    img_root_dir = 'imgs/'
+    server_basedir = helper.get_dynamic_rootdir()
+    helper.ensure_path(join(server_basedir, img_root_dir))
 
     # somewhere this message is cropping up occasionally
     #objc[5300]: Object 0x100306b70 of class __NSArrayI autoreleased with no pool in place - just leaking - break on objc_autoreleaseNoPool() to debug
@@ -168,13 +167,16 @@ def init_play(play_name, force_img_regen, basedir=''):
     # and may consume too much memory. (To control this warning, see the rcParam 
     # `figure.max_num_figures`).
 
-    full_title = play_data_ctx.map_by_alias.get(play_name)
+    #full_title = play_data_ctx.map_by_alias.get(play_name)
     for sc in play.scenes:
-        sc.graph_img_f = join(web_root_dir, '%s_%s_%s.png' % (full_title, sc.act, sc.scene))
-        if not os.path.exists(sc.graph_img_f) or force_img_regen:
+        sc.graph_img_f = join(img_root_dir, '%s_%s_%s.png' % (play_name, sc.act, sc.scene))
+        
+        img_path = join(server_basedir, sc.graph_img_f)
+
+        if not os.path.exists(img_path) or force_img_regen:
             plt.figure(figsize=(8,5))
             draw_graph(str(sc), sc.graph)
-            plt.savefig(sc.graph_img_f)
+            plt.savefig(img_path)
             plt.close()
 
     return play

@@ -1,14 +1,16 @@
 import shakespeare_clusters as sc
-import clusters, nmf
+import plays_n_graphs as png
+from pcibook import nmf, clusters
 
 def main():
     """
     maybe:
         - reduce the sample size by removing characters with x # of lines
     """
-    plays = sc.plays_n_graphs.get_plays()
-    prc_ctx = sc.get_ctx_from_plays(plays)
-    sc.preproc_data(prc_ctx, by='Char') # by='Play'
+    play_ctx = png.get_plays_ctx()
+    
+    prc_ctx = sc.ProcessCtxt(play_ctx)
+    sc.preproc_data(prc_ctx, by='Play') # by='Char'
     mat = sc.process_data(prc_ctx, max_df=.8) # ngram data frame
 
     #-- 

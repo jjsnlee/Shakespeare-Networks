@@ -14,6 +14,13 @@ def get_root_dir():
         print 'Root Directory:', _root_dir
     return _root_dir
 
+def get_dynamic_rootdir():
+    return os.path.join(get_root_dir(), 'data/dynamic')
+
+def ensure_path(d):
+    if not os.path.exists(d):
+        os.makedirs(d)
+
 if __name__ == '__main__':
     _root_dir = None
     get_root_dir()

@@ -40,32 +40,53 @@ def get_play(req):
         play = path.split('/')[-1]
         #print 'REQUEST:\n', play
         play = init_play(play, False)
-        json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONEncoder)
+        json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONMetadataEncoder)
         return HttpResponse(json_rslt, content_type='application/json')
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
         st = traceback.format_exc()
         print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
 
-class PlayJSONEncoder(JSONEncoder):
-
+class PlayEncoderBase(JSONEncoder):
     def from_keys(self, obj, keys):
         return dict([(k,getattr(obj,k)) for k in keys])
-    
+    def get_acts_from_play(self, play):
+        acts = []
+        curr_act = curr_scenes = None
+        for scene in play.scenes:
+            if curr_act != scene.act:
+                curr_act = scene.act
+                curr_scenes = []
+                acts.append(curr_scenes)
+            curr_scenes.append(scene)
+        return acts
+
+class PlayJSONContentEncoder(PlayEncoderBase):
     def default(self, obj):
         from plays_n_graphs import Play, Scene, Character, Line
+        d = {}        
+        if isinstance(obj, Play):
+            d['acts'] = self.get_acts_from_play(obj)
+        elif isinstance(obj, Scene):
+            d = self.from_keys(obj, ('act', 'scene', 'location'))
+            d['lines'] = obj.clean_lines
+        elif isinstance(obj, Character):
+            d = self.from_keys(obj, ('name', 'clean_lines'))
+        
+        elif isinstance(obj, Line):
+            #d = self.from_keys(obj, ('lineno', 'line'))
+            d = repr(obj)
+
+        return d
+
+class PlayJSONMetadataEncoder(PlayEncoderBase):
+
+    def default(self, obj):
+        from plays_n_graphs import Play, Scene
 
         if isinstance(obj, Play):
             d = self.from_keys(obj, ('title', 'year'))
-            acts = []
-            curr_act = curr_scenes = None
-            for scene in obj.scenes:
-                if curr_act != scene.act:
-                    curr_act = scene.act
-                    curr_scenes = []
-                    acts.append(curr_scenes)
-                curr_scenes.append(scene)
-            d['acts'] = acts
+            d['acts'] = self.get_acts_from_play(obj)
             d['characters'] = characters = obj.characters.keys()
             d['char_data'] = char_data = {}
             
@@ -79,17 +100,17 @@ class PlayJSONEncoder(JSONEncoder):
                 
                 char_data[c] = \
                 {
-                 'nlines'     : nlines,
-                 'nedges'     : cnxs[c],
-                 'ratio'      : ratio,
-                 'appearance' : idx
+                 'nlines'    : nlines,
+                 'nedges'    : cnxs[c],
+                 'ratio'     : ratio,
+                 'order_app' : idx
                 }
             
         elif isinstance(obj, Scene):
             d = self.from_keys(obj, ('act', 'scene', 'location', 'graph_img_f'))
             d['char_data'] = char_data = {}
             
-            dmat = obj.dialogue_matrix
+            #dmat = obj.dialogue_matrix
             #d['dialogue_matrix'] = dmat
             # skip this for now...
             #d['lines'] = obj.clean_lines
@@ -110,13 +131,6 @@ class PlayJSONEncoder(JSONEncoder):
                  'ratio'      : ratio
                 }
             
-        elif isinstance(obj, Character):
-            d = self.from_keys(obj, ('name', 'clean_lines'))
-        
-        elif isinstance(obj, Line):
-            #d = self.from_keys(obj, ('lineno', 'line'))
-            d = repr(obj)
-
         else:
             d = obj.__dict__.copy()
         

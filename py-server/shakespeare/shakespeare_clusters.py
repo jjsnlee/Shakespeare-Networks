@@ -2,32 +2,29 @@ import plays_n_graphs
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-#from pprint import pformat
+
 
 import helper
 from os.path import join
 rootdir = helper.get_root_dir()
 import sys
-sys.path.append(join(rootdir, 'py-external/pcibook'))
-sys.path.append(join(rootdir, 'py-external/word_cloud'))
-sys.path.append(join(rootdir, 'py-external/external'))
+sys.path.append(join(rootdir, 'py-external'))
+#sys.path.append(join(rootdir, 'py-external/word_cloud'))
+#sys.path.append(join(rootdir, 'py-external/external'))
 #sys.path.append('..')
-#import nmf
+
+from pcibook import nmf
 
 import datetime, time
 def get_ts():
     ts = time.time()
     return datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 
-def get_ctx_from_plays(plays):
-    chars_per_play = {}
-    for play_name in plays:
-        p = plays[play_name]
-        chars_per_play[play_name] = set(p.characters.keys())
-        #print pformat(p.characters.values())
-    prc_ctx = ProcessCtxt(plays)
-    prc_ctx.chars_per_play = chars_per_play
-    return prc_ctx
+#def get_ctx_from_plays(play_ctx):
+#    #print pformat(p.characters.values())
+#    prc_ctx = ProcessCtxt(plays)
+#    prc_ctx.chars_per_play = chars_per_play
+#    return prc_ctx
 
 def _get_stopwords():
     from nltk.corpus import stopwords
@@ -52,11 +49,17 @@ def _get_stopwords():
     return stopwds
 
 class ProcessCtxt:
-    def __init__(self, plays):
-        self.plays = plays
+    def __init__(self, play_ctx):
+        chars_per_play = {}
+        for play_alias in play_ctx.map_by_alias:
+            p = play_ctx.load_play(play_alias)
+            chars_per_play[play_alias] = set(p.characters.keys())
+        
+        self.plays = play_ctx.play_details
         self.reset()
-        self.chars_per_play = {}
+        self.chars_per_play = chars_per_play
         self.documents = [] # plays, characters, etc
+
     def reset(self):
         self.pruned_characters = {}
         self.pruned_max_terms = []

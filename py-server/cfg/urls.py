@@ -2,6 +2,8 @@ from django.conf.urls import patterns #, include, url
 from django.http import HttpResponse
 #from django.views.generic.simple import direct_to_template
 from shakespeare import shakespeare_pages
+import helper
+from os.path import join
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -10,6 +12,7 @@ from shakespeare import shakespeare_pages
 def view_imgs(req):
     img = req.path
     img = img.replace('/', '', 1)
+    img = join(helper.get_dynamic_rootdir(), img)
     image_data = open(img, "rb").read()
     return HttpResponse(image_data, mimetype="image/png")
 
