@@ -145,13 +145,13 @@ def _init_graphs(play):
             prev_speaker = speaker
     return play
 
-def init_play(play_name, force_img_regen):
+def init_play(play_alias, force_img_regen):
     play_data_ctx = get_plays_ctx()
 
-    if play_name not in play_data_ctx.map_by_alias:
-        raise Exception('Can''t find play [%s].' % play_name)
+    if play_alias not in play_data_ctx.map_by_alias:
+        raise Exception('Can''t find play [%s].' % play_alias)
     
-    play  = play_data_ctx.load_play(play_name)
+    play  = play_data_ctx.load_play(play_alias)
     print play.title, '\n\t', play.toc_as_str()
     
     img_root_dir = 'imgs/'
@@ -167,12 +167,11 @@ def init_play(play_name, force_img_regen):
     # and may consume too much memory. (To control this warning, see the rcParam 
     # `figure.max_num_figures`).
 
-    #full_title = play_data_ctx.map_by_alias.get(play_name)
+    #full_title = play_data_ctx.map_by_alias.get(play_alias)
     for sc in play.scenes:
-        sc.graph_img_f = join(img_root_dir, '%s_%s_%s.png' % (play_name, sc.act, sc.scene))
+        sc.graph_img_f = join(img_root_dir, '%s_%s_%s.png' % (play_alias, sc.act, sc.scene))
         
         img_path = join(server_basedir, sc.graph_img_f)
-
         if not os.path.exists(img_path) or force_img_regen:
             plt.figure(figsize=(8,5))
             draw_graph(str(sc), sc.graph)
@@ -308,6 +307,9 @@ class Scene:
         
         self.graph = None
         self.graph_img_f = None
+
+        # ideally shouldn't be in here...
+        #self.graph_img_f = join(img_root_dir, '%s_%s_%s.png' % (play.title, act, scene))
 
     def add_dialogue(self, speaker, lines):
         self.dialogues.append((speaker, lines))
