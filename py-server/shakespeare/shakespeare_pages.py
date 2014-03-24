@@ -1,8 +1,9 @@
-from plays_n_graphs import get_plays_ctx, init_play
 import os, json, traceback
 from operator import itemgetter
-from json.encoder import JSONEncoder
-import networkx as nx
+from os.path import join
+import helper
+from plays_n_graphs import get_plays_ctx, init_play
+from plays_transform import PlayJSONMetadataEncoder
 
 try:
     from django.http import HttpResponse
@@ -33,108 +34,55 @@ def _create_html(play):
     html = html.replace('__PLAY__', play)
     return html
 
-def get_play(req):
-    """ JSON representation for the play """
+def get_corpus_data(req):
     try:
         path = req.path
-        play = path.split('/')[-1]
-        #print 'REQUEST:\n', play
-        play = init_play(play, False)
-        json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONMetadataEncoder)
-        return HttpResponse(json_rslt, content_type='application/json')
+        info = path.split('/')[-1]
+        if info == 'lineCounts':
+            play_data_ctx = get_plays_ctx()
+            plays = play_data_ctx.plays
+
+            all_plays_json = []
+            for play_alias, _ in plays:
+                fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
+                if not os.path.exists(fname):
+                    print 'File path [%s] doesn\'t exist!' % fname
+                play_json = open(fname, 'r').read()
+                all_plays_json.append(play_json)
+
+            all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
+            
+            return HttpResponse(all_json_rslt, content_type='application/json')
+        
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
         st = traceback.format_exc()
         print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
 
-class PlayEncoderBase(JSONEncoder):
-    def from_keys(self, obj, keys):
-        return dict([(k,getattr(obj,k)) for k in keys])
-    def get_acts_from_play(self, play):
-        acts = []
-        curr_act = curr_scenes = None
-        for scene in play.scenes:
-            if curr_act != scene.act:
-                curr_act = scene.act
-                curr_scenes = []
-                acts.append(curr_scenes)
-            curr_scenes.append(scene)
-        return acts
+DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
-class PlayJSONContentEncoder(PlayEncoderBase):
-    def default(self, obj):
-        from plays_n_graphs import Play, Scene, Character, Line
-        d = {}        
-        if isinstance(obj, Play):
-            d['acts'] = self.get_acts_from_play(obj)
-        elif isinstance(obj, Scene):
-            d = self.from_keys(obj, ('act', 'scene', 'location'))
-            d['lines'] = obj.clean_lines
-        elif isinstance(obj, Character):
-            d = self.from_keys(obj, ('name', 'clean_lines'))
+def get_play_data(req):
+    """ JSON representation for the play """
+    try:
+        path = req.path
+        play_alias = path.split('/')[-1]
+        #print 'REQUEST:\n', play_alias
         
-        elif isinstance(obj, Line):
-            #d = self.from_keys(obj, ('lineno', 'line'))
-            d = repr(obj)
+        # Probably want to streamline this, so we take the existing files where possible...
+        play = init_play(play_alias, False)
+        json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONMetadataEncoder)
 
-        return d
-
-class PlayJSONMetadataEncoder(PlayEncoderBase):
-
-    def default(self, obj):
-        from plays_n_graphs import Play, Scene
-
-        if isinstance(obj, Play):
-            d = self.from_keys(obj, ('title', 'year'))
-            d['acts'] = self.get_acts_from_play(obj)
-            d['characters'] = characters = obj.characters.keys()
-            d['char_data'] = char_data = {}
-            
-            playG = obj.totalG
-            cnxs = nx.degree(playG)
-            for idx, c in enumerate(characters):
-                nlines = playG.node[c]['nlines']
-                ratio = 0
-                if cnxs[c] > 0:
-                    ratio = round(float(nlines) / cnxs[c], 2)
-                
-                char_data[c] = \
-                {
-                 'nlines'    : nlines,
-                 'nedges'    : cnxs[c],
-                 'ratio'     : ratio,
-                 'order_app' : idx
-                }
-            
-        elif isinstance(obj, Scene):
-            d = self.from_keys(obj, ('act', 'scene', 'location', 'graph_img_f'))
-            d['char_data'] = char_data = {}
-            
-            #dmat = obj.dialogue_matrix
-            #d['dialogue_matrix'] = dmat
-            # skip this for now...
-            #d['lines'] = obj.clean_lines
-            
-            # May want to extract this so that we only do this when 
-            # necessary for plays
-            sceneG = obj.graph
-            cnxs = nx.degree(sceneG)
-            for c in sceneG.node:
-                nlines = sceneG.node[c]['nlines']
-                ratio = 0
-                if cnxs[c] > 0:
-                    ratio = round(float(nlines) / cnxs[c], 2)
-                char_data[c] = \
-                {
-                 'nlines'     : nlines,
-                 'nedges'     : cnxs[c],
-                 'ratio'      : ratio
-                }
-            
-        else:
-            d = obj.__dict__.copy()
-        
-        return d
+#        fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
+#        print 'Loading json from %s' % fname
+#        if not os.path.exists(fname):
+#            print 'File path doesn\'t exist!'
+#        play_json = open(fname, 'r').read()
+#        json_rslt = json.loads(play_json)
+        return HttpResponse(json_rslt, content_type='application/json')
+    except Exception as e:
+        # Without the explicit error handling the JSON error gets swallowed
+        st = traceback.format_exc()
+        print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
 
 def main():
     play = 'King Lear'
