@@ -43,14 +43,15 @@ def get_corpus_data(req):
             play_data_ctx = get_plays_ctx()
             plays = play_data_ctx.plays
 
-            all_plays_json = []
+            all_plays_json = {}
             for play_alias, _ in plays:
                 fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
                 if not os.path.exists(fname):
                     print 'File path [%s] doesn\'t exist!' % fname
                 play_json = json.loads(open(fname, 'r').read())
                 
-                all_plays_json.append({play_alias : play_json['char_data']})
+                #all_plays_json.append({play_alias : play_json['char_data']})
+                all_plays_json[play_alias] = play_json['char_data']
 
             all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
             return HttpResponse(all_json_rslt, content_type='application/json')

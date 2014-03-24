@@ -39,7 +39,7 @@ body {
 
 <script type="text/javascript">
 shPlays.controller('play', function($scope, $http, $location, $window) {
-  $scope.all_plays = __ALL_PLAYS__;
+  $scope.allPlays = __ALL_PLAYS__;
   $scope.showPopup = 0;
   $scope.showSideBar = 1;
   $scope.showCurrPlayChart = 0;
@@ -48,16 +48,18 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   // The entire play if no scene is selected, in which case it will be
   // just for the specific scene
   $scope.characters = []; 
-  $scope.char_data = {};
+  $scope.charData = {};
+  
+  $scope.allPlaysData = {};
   
   // Keep track of the positions of each of the popups.  
   // Otherwise there will be some jumping of the div elements
   $scope.popupPosn = {};
   
   var selectedPlay = $location.search()['play'];
-  for (var i=0,len=$scope.all_plays.length; i<len; i++) {
-    if( selectedPlay===$scope.all_plays[i].value ) {
-      $scope.selectedPlay = $scope.all_plays[i];
+  for (var i=0,len=$scope.allPlays.length; i<len; i++) {
+    if( selectedPlay===$scope.allPlays[i].value ) {
+      $scope.selectedPlay = $scope.allPlays[i];
       break;
     }
   }
@@ -66,40 +68,37 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 		$http.get('/shakespeare/play/'+$scope.selectedPlay.value).success(function(data) {
 		  $scope.play_content = data;
 		  $scope.characters   = data.characters; 
-	    $scope.char_data    = data.char_data;
+	    $scope.charData     = data.char_data;
 		});
   };
   
   $scope.sceneImgOpen = function(evt, scene) {
     $scope.showImgPopup = 1;
     $scope.selected_graph_img_f = evt.currentTarget.src;
-    $scope.characters = Object.keys(scene.char_data);
-    $scope.char_data  = scene.char_data;
+    $scope.characters = Object.keys(scene.charData);
+    $scope.charData   = scene.charData;
   };
 
   $scope.sceneImgClose = function(evt) {
     $scope.showImgPopup = 0;
     $scope.characters   = $scope.play_content.characters;
-    $scope.char_data    = $scope.play_content.char_data;
+    $scope.charData     = $scope.play_content.char_data;
   };
 
   $scope.doSubmit = function() {
 		var selectedIdx  = document.forms[0].play.value;
-		var selectedPlay = $scope.all_plays[selectedIdx].value;
+		var selectedPlay = $scope.allPlays[selectedIdx].value;
 		var forceRegen   = $location.search()['force_regen'];
 		if(forceRegen==null)
 		  forceRegen = 0;
 		$window.location.href = '/shakespeare/?play='+selectedPlay+'&force_regen='+forceRegen;
-		//$http.get('/shakespeare/play/'+selectedPlay).success(function(data) {
-		//  $scope.play_content = data;
-		//});
   };
   
   $scope.enableAllPlaysChart = function() {
     $http.get('/shakespeare/all/lineCounts').success(function(data) {
-      $scope.all_play_data = data;
+      $scope.allPlaysData = data;
+      $scope.showAllPlaysChart = 1;
     });
-    $scope.showAllPlaysChart = 1;
   };
 });
 </script>
@@ -113,7 +112,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   <td><b>Play:</b></td>
   <td>
     <select name="play" ng-model="selectedPlay"
-      ng-options="p as p.label for p in all_plays" 
+      ng-options="p as p.label for p in allPlays" 
       ng-change="doSubmit()">
     </select>
   </td>
@@ -126,10 +125,10 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 </div>
 
 <div my-draggable id="allPlaysCharPopup" ng-show="showAllPlaysChart===1" class="chartDiv">
-<!-- background: white; opacity:1.0;-->				
 	<div align="right"><button ng-click="showAllPlaysChart=0">Close</button></div><br>
-	{{all_play_data}}
 	<div all-plays-chart></div>
+  &nbsp;<br>&nbsp;<br>
+	<!--{{allPlaysData}}-->
 </div>
 
 <div ng-show="selectedPlay!=null">
@@ -169,9 +168,9 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     </tr>
     <tr ng-repeat="char in characters">
       <td>{{char}}</td>
-      <td align="right">{{char_data[char].nlines}}</td>
-      <td align="right">{{char_data[char].nedges}}</td>
-      <!-- <td align="right">{{char_data[char].ratio}}</td> -->
+      <td align="right">{{charData[char].nlines}}</td>
+      <td align="right">{{charData[char].nedges}}</td>
+      <!-- <td align="right">{{charData[char].ratio}}</td> -->
     </tr>
     </table>
   </td>

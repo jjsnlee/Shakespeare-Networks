@@ -57,7 +57,7 @@ function createChartDirective(directiveName, toggleVar, renderChartFn) {
 		replace: true,
 		/*scope: {
 		  items: '='
-		  //char_data : '='
+		  //charData : '='
 		},*/
 		controller: function ($scope, $element, $attrs) {
 		  console.log(directiveName + ' controller...');
@@ -92,8 +92,8 @@ shPlays.directive('allPlaysChart', function($document) {
 function createSinglePlayCharChart(scope, containerName) {
   console.log('Rendering Single Play...');
 
-  var charMap = scope.play_content.char_data;
-  var characters = _.sortBy(scope.play_content.characters, function(c) { 
+  var charMap = scope.charData;
+  var characters = _.sortBy(scope.characters, function(c) { 
     return -1*charMap[c].nlines; 
   });
   var charlines = characters.map(function(c) {
@@ -137,14 +137,65 @@ function createSinglePlayCharChart(scope, containerName) {
 
 function createAllPlaysCharChart(scope, containerName) {
   console.log('Rendering All Plays 1...');
+  var allPlaysData = scope.allPlaysData;
+  var playChars = {};
   
-  var characters = _.sortBy(scope.play_content.characters, function(c) { 
-    return -1*charMap[c].nlines; 
+  var playLines = Object.keys(allPlaysData).map(function(playAlias) {
+    var playCharacters = allPlaysData[playAlias];
+    
+    var characters = _.sortBy(Object.keys(playCharacters), function(characterName) { 
+      return -1*playCharacters[characterName].nlines; 
+    });
+    playChars[playAlias] = characters; 
+        
+    return {
+      name : playAlias,
+	    data : characters.map(function(characterName, idx) {
+        //return [idx, Math.log(playCharacters[characterName].nlines)];
+        return [idx, playCharacters[characterName].nlines];
+	    })
+	  };
   });
-  var charlines = characters.map(function(c) {
-    return charMap[c].nlines;
-  });  
-  //$scope.play_content = data;
-  //$scope.characters   = data.characters; 
-  //$scope.char_data    = data.char_data;
+  
+  var chart = new  Highcharts.Chart({
+    chart: {
+		  type: 'spline',
+		  renderTo : containerName,
+		  //zoomType: 'x',
+		},
+		title: {
+		  text: 'Plays / Characters'
+		},
+		subtitle: {
+		  text: 'Irregular time data in Highcharts JS'
+		},
+		xAxis: {
+      /*type: 'datetime',
+                dateTimeLabelFormats: { // don't display the dummy year
+                    month: '%e. %b',
+                    year: '%b'
+                }*/		
+			type: 'int',
+			max : 10
+		},
+		yAxis: {
+			title: {
+			  text: 'Total number of lines'
+			},
+			min: 0,
+			//type: 'logarithmic',
+      //minorTickInterval: 0.1
+			//max : 1700
+		},
+		tooltip: {
+			formatter: function() {
+		    return '<b>'+ this.series.name +'</b><br/>'
+		    //+Highcharts.dateFormat('%e. %b', this.x) +': '+ this.y +' m';
+		    ;
+			}
+		},
+		series: playLines
+  });
+  
+  //chart.yAxis[0].setExtremes(500, 1700);
 }
