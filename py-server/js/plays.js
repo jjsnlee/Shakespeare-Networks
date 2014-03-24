@@ -51,7 +51,8 @@ function addDnD(document, scope, element, attr) {
 	}
 };
 
-shPlays.directive('characterChart', function($document) {
+function createChartDirective(directiveName, toggleVar, renderChartFn) {
+  var containerName = directiveName+'Container'
   return { 
 		replace: true,
 		/*scope: {
@@ -59,23 +60,39 @@ shPlays.directive('characterChart', function($document) {
 		  //char_data : '='
 		},*/
 		controller: function ($scope, $element, $attrs) {
-		  console.log('Controller...');
+		  console.log(directiveName + ' controller...');
 		},
-		template: '<div id="container" style="margin: 0 auto">not working</div>',
+		template: '<div id="'+containerName+'" style="margin: 0 auto">not working</div>',
 		link: function (scope, element, attr) {
-		  scope.$watch("showChart", function (newValue) {
-			  if(scope.showChart===1) {
-			    createChart(scope);
+		  scope.$watch(toggleVar, function (newValue) {
+			  if(scope[toggleVar]===1) {
+			    renderChartFn(scope, containerName);
 			  }
 			}, true);
     }
   };
+}
+
+shPlays.directive('characterChart', function($document) {
+  var directiveName = 'characterChart';
+  var toggleVar = 'showCurrPlayChart';
+  return createChartDirective(directiveName, toggleVar, function(scope, containerName) {
+     createSinglePlayCharChart(scope, containerName);
+  }); 
 });
 
-function createChart(scope) {
-  console.log('Rendering 1...');
+shPlays.directive('allPlaysChart', function($document) {
+  var directiveName = 'allPlaysChart';
+  var toggleVar = 'showAllPlaysChart';
+  return createChartDirective(directiveName, toggleVar, function(scope, containerName) {
+     createAllPlaysCharChart(scope, containerName);
+  }); 
+});
 
-  var charMap = scope.play_content.char_data;  
+function createSinglePlayCharChart(scope, containerName) {
+  console.log('Rendering Single Play...');
+
+  var charMap = scope.play_content.char_data;
   var characters = _.sortBy(scope.play_content.characters, function(c) { 
     return -1*charMap[c].nlines; 
   });
@@ -86,7 +103,7 @@ function createChart(scope) {
 	var chart = new Highcharts.Chart({
 		chart: {
 			type : 'column',
-			renderTo : 'container',
+			renderTo : containerName,
 		},
 		title: {
 		  text: 'Characters'
@@ -95,7 +112,7 @@ function createChart(scope) {
       categories : characters,
       labels : { 
         rotation: -45,
-        align : 'right' 
+        align : 'right'
       }
     },
 		yAxis: {
@@ -117,3 +134,17 @@ function createChart(scope) {
 	});  
 }
 
+
+function createAllPlaysCharChart(scope, containerName) {
+  console.log('Rendering All Plays 1...');
+  
+  var characters = _.sortBy(scope.play_content.characters, function(c) { 
+    return -1*charMap[c].nlines; 
+  });
+  var charlines = characters.map(function(c) {
+    return charMap[c].nlines;
+  });  
+  //$scope.play_content = data;
+  //$scope.characters   = data.characters; 
+  //$scope.char_data    = data.char_data;
+}

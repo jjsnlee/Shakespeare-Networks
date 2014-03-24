@@ -24,10 +24,11 @@ def view_static(req):
 
 urlpatterns = patterns('',
     ('^shakespeare/$', shakespeare_pages.view_page),
-    ('^shakespeare/play/.*$', shakespeare_pages.get_play),
+    ('^shakespeare/all/', shakespeare_pages.get_corpus_data),
+    ('^shakespeare/play/', shakespeare_pages.get_play_data),
     ('^imgs/.*\.png$', view_imgs),
     ('^js/.*$', view_static),
-    
+
     # Uncomment the admin/doc line below to enable admin documentation:
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

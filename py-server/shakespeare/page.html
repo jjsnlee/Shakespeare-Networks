@@ -7,6 +7,26 @@ body {
     //font-family: arial,helvetica,clean,sans-serif; 
     font-size: 12px;
 }
+
+.imgDiv {
+  width:40%; height:80%; 
+  position:absolute; 
+  top:10%; left:30%; 
+  border:3px solid #eee;
+  overflow:auto; 
+  background: white   
+}
+
+.chartDiv {
+  min-width: 60%; 
+	height: 450px; 
+	position:absolute;
+	top:10%; left:30%;
+	border:3px solid #eee;
+	background:rgba(265,265,265,1); 
+	overflow:auto; 
+	margin: 10px auto
+}
 </style>
 
 <script type="text/javascript" src="/js/angular-1.2.9/angular.js"></script>
@@ -22,7 +42,8 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.all_plays = __ALL_PLAYS__;
   $scope.showPopup = 0;
   $scope.showSideBar = 1;
-  $scope.showChart = 0;
+  $scope.showCurrPlayChart = 0;
+  $scope.showAllPlaysChart = 0;
   
   // The entire play if no scene is selected, in which case it will be
   // just for the specific scene
@@ -73,9 +94,12 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 		//  $scope.play_content = data;
 		//});
   };
-
-  $scope.doShowChart = function() {
-    $scope.showChart = 1;
+  
+  $scope.enableAllPlaysChart = function() {
+    $http.get('/shakespeare/all/lineCounts').success(function(data) {
+      $scope.all_play_data = data;
+    });
+    $scope.showAllPlaysChart = 1;
   };
 });
 </script>
@@ -84,7 +108,6 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 
 <body ng-app="shPlays" ng-controller="play">
 <form>
-<input type="hidden" name="new" value="1">
 <table border=0 cellpadding=1 cellspacing=1>
 <tr>
   <td><b>Play:</b></td>
@@ -98,28 +121,28 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 </table>
 &nbsp;<br>&nbsp;<br>
 
+<div id="rh_nav" style="position:absolute; top:1%; right:1%;">
+<a ng-click="enableAllPlaysChart()" style="text-decoration:underline; cursor:pointer">Plays</a>
+</div>
+
+<div my-draggable id="allPlaysCharPopup" ng-show="showAllPlaysChart===1" class="chartDiv">
+<!-- background: white; opacity:1.0;-->				
+	<div align="right"><button ng-click="showAllPlaysChart=0">Close</button></div><br>
+	{{all_play_data}}
+	<div all-plays-chart></div>
+</div>
+
 <div ng-show="selectedPlay!=null">
 
-<div my-draggable id="scenePopup" ng-show="showImgPopup===1"
-     style="width:40%; height:80%; overflow:auto; position:absolute; top:10%; left:30%; 
-            border:3px solid #eee;
-            background: white"> <!-- rgba(255, 255, 255, 1.0) -->
+<div my-draggable id="scenePopup" ng-show="showImgPopup===1" class="imgDiv">
   <table border=0 cellpadding=0 cellspacing=0 width="100%">
     <tr><td align="right"><button ng-click="sceneImgClose()">Close</button></td></tr>
     <tr><td><img ng-src="{{selected_graph_img_f}}" width="100%"></td></tr>
   </table>
 </div>
 
-<div my-draggable id="charPopup" ng-show="showChart===1" 
-	style="min-width: 60%; 
-				height: 450px; 
-				position:absolute;
-				top:10%; left:30%;
-				border:3px solid #eee;
-				background: white;
-				margin: 10px auto">
-
-	<div align="right"><button ng-click="showChart=0">Close</button></div><br>
+<div my-draggable id="currPlayCharPopup" ng-show="showCurrPlayChart===1" class="chartDiv">
+	<div align="right"><button ng-click="showCurrPlayChart=0">Close</button></div><br>
 	<div character-chart></div>
 </div>
 
@@ -170,7 +193,8 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 	  <table border=0 cellpadding=1 cellspacing=1>
 		<tr>
 		  <td colspan="100%">
-		    <a ng-click="showChart=1" style="text-decoration:underline; cursor:pointer">Show Line Chart</a>
+		    <a ng-click="showCurrPlayChart=1" style="text-decoration:underline; cursor:pointer">
+		      Character Lines Chart</a>
 		  </td>
 		</tr>
 		</table>

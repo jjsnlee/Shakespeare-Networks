@@ -38,6 +38,7 @@ def get_corpus_data(req):
     try:
         path = req.path
         info = path.split('/')[-1]
+        print 'info:', info
         if info == 'lineCounts':
             play_data_ctx = get_plays_ctx()
             plays = play_data_ctx.plays
@@ -47,11 +48,11 @@ def get_corpus_data(req):
                 fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
                 if not os.path.exists(fname):
                     print 'File path [%s] doesn\'t exist!' % fname
-                play_json = open(fname, 'r').read()
-                all_plays_json.append(play_json)
+                play_json = json.loads(open(fname, 'r').read())
+                
+                all_plays_json.append({play_alias : play_json['char_data']})
 
             all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
-            
             return HttpResponse(all_json_rslt, content_type='application/json')
         
     except Exception as e:
