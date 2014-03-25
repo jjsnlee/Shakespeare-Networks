@@ -84,7 +84,7 @@ class PlayJSONMetadataEncoder(PlayEncoderBase):
         from plays_n_graphs import Play, Scene
 
         if isinstance(obj, Play):
-            d = self.from_keys(obj, ('title', 'year'))
+            d = self.from_keys(obj, ('title', 'year', 'type'))
             d['acts'] = self.get_acts_from_play(obj)
             d['characters'] = characters = obj.characters.keys()
             d['char_data'] = char_data = {}
