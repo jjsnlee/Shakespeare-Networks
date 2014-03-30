@@ -53,62 +53,66 @@ function addDnD(document, scope, element, attr) {
 };
 
 function createChartDirective(directiveName, toggleVar, renderChartFn) {
-  var containerName = directiveName+'Container'
-  return { 
-		replace: true,
-		/*scope: {
-		  items: '='
-		  //charData : '='
-		},*/
-		controller: function ($scope, $element, $attrs) {
-		  console.log(directiveName + ' controller...');
-		},
-		template: '<div id="'+containerName+'" style="margin: 0 auto">not working</div>',
-		link: function (scope, element, attr) {
-		  scope.$watch(toggleVar, function (newValue) {
-			  if(scope[toggleVar]!==0) {
-			    renderChartFn(scope, containerName, scope[toggleVar]);
-			  }
-			}, true);
-    }
-  };
-}
+  shPlays.directive(directiveName, function($document) {
+	  var containerName = directiveName+'Container'
+	  return { 
+			replace: true,
+			/*scope: {
+			  items: '='
+			  //charData : '='
+			},*/
+			controller: function ($scope, $element, $attrs) {
+			  console.log(directiveName + ' controller...');
+			},
+			template: '<div id="'+containerName+'" style="margin: 0 auto">not working</div>',
+			link: function (scope, element, attr) {
+			  scope.$watch(toggleVar, function (newValue) {
+				  if(scope[toggleVar]!==0) {
+				    renderChartFn(scope, containerName, scope[toggleVar]);
+				  }
+				}, true);
+	    }
+	  };
+	});
+};
 
-shPlays.directive('characterChart', function($document) {
-  var directiveName = 'characterChart';
-  var toggleVar = 'showCurrPlayChart';
-  return createChartDirective(directiveName, toggleVar, function(scope, containerName, whichMetric) {
-    if(whichMetric==='By Lines')
-      createSinglePlayCharChart(scope, containerName, 'nlines', 'Lines');
-    else if(whichMetric==='By Edges')
-      createSinglePlayCharChart(scope, containerName, 'nedges', 'Edges');
-  }); 
-});
+createChartDirective('characterChart', 'showCurrPlayChart', function(scope, containerName, whichMetric) {
+  var charMap = scope.charData;
+  var characters = scope.characters;
+  
+  var initChartFn = wu.curry(createSinglePlayCharChart, charMap, characters, containerName);
 
-shPlays.directive('allPlaysChart', function($document) {
-  var directiveName = 'allPlaysChart';
-  var toggleVar = 'whichChart';
-  return createChartDirective(directiveName, toggleVar, function(scope, containerName, whichChart) {
-    if(whichChart=='Top Characters (Lines)') {
-      createAllPlaysCharChart(scope, containerName, 'nlines', '% of Total Lines');
-    }
-    else if(whichChart=='Top Characters (Edges)') {
-      createAllPlaysCharChart(scope, containerName, 'nedges', '% of Total Edges');
-    }
-    else if(scope[toggleVar]==='All Plays (Lines)') {
-		  createAllPlaysSplineChart(scope, containerName, 'nlines', '% of Total Lines');
-		}
-    else if(scope[toggleVar]==='All Plays (Edges)') {
-		  createAllPlaysSplineChart(scope, containerName, 'nedges', '% of Total Edges');
-		}
-  }); 
-});
+	if(whichMetric==='By Lines')
+	  initChartFn('nlines', 'Lines');
+	else if(whichMetric==='By Edges')
+	  initChartFn('nedges', 'Edges');
+  }
+);
 
-function createSinglePlayCharChart(scope, containerName, whichMetric) {
+createChartDirective('allPlaysChart', 'whichChart', function(scope, containerName, whichChart) {
+  
+  var allPlaysData = scope.allPlaysData;
+  var initColChart = wu.curry(createAllPlaysCharChart, allPlaysData, containerName);
+  var initSplineChart = wu.curry(createAllPlaysSplineChart, allPlaysData, containerName);
+
+	if(whichChart=='Top Characters (Lines)') {
+	  initColChart('nlines', '% of Total Lines');
+	}
+	else if(whichChart=='Top Characters (Edges)') {
+	  initColChart('nedges', '% of Total Edges');
+	}
+	else if(whichChart==='All Plays (Lines)') {
+		  initSplineChart('nlines', '% of Total Lines');
+	}
+	else if(whichChart==='All Plays (Edges)') {
+		  initSplineChart('nedges', '% of Total Edges');
+	}
+}); 
+
+function createSinglePlayCharChart(charMap, characters, containerName, whichMetric) {
   console.log('Rendering Single Play...');
 
-  var charMap = scope.charData;
-  var characters = _.sortBy(scope.characters, function(c) { 
+  var characters = _.sortBy(characters, function(c) { 
     return -1*charMap[c][whichMetric]; 
   });
   var charAggr = characters.map(function(c) {
@@ -121,7 +125,7 @@ function createSinglePlayCharChart(scope, containerName, whichMetric) {
 function mapAllPLaysByLines(allPlaysData, whichMetric) {
   var playChars = {};
   return Object.keys(allPlaysData).map(function(playAlias) {
-    var playCharacters = allPlaysData[playAlias];
+    var playCharacters = allPlaysData[playAlias].chardata;
     var nTotal = 0; 
     var characters = _.sortBy(Object.keys(playCharacters), function(characterName) {
       var charAggr = playCharacters[characterName][whichMetric];
@@ -134,7 +138,7 @@ function mapAllPLaysByLines(allPlaysData, whichMetric) {
       name : playAlias,
 	    data : characters.map(function(characterName, idx) {
         //return [idx, Math.log(playCharacters[characterName].nlines)];
-        return [idx+1, playCharacters[characterName][whichMetric] / nTotal];
+        return [idx+1, playCharacters[characterName][whichMetric] / nTotal, characterName];
 	    })
 	  };
   });
@@ -144,7 +148,7 @@ function mapAllChars(allPlaysData, mapByField) {
   var playCharAggr = {};
   
   $.each(Object.keys(allPlaysData), function(idx, playAlias) {
-    var playCharacters = allPlaysData[playAlias];
+    var playCharacters = allPlaysData[playAlias].chardata;
     var nTotal = 0; 
     
     $.each(Object.keys(playCharacters), function(idx, characterName) {
@@ -169,9 +173,8 @@ function mapAllChars(allPlaysData, mapByField) {
   };
 }
 
-function createAllPlaysCharChart(scope, containerName, whichMetric, Label) {
+function createAllPlaysCharChart(allPlaysData, containerName, whichMetric, Label) {
   console.log('Rendering All Plays 1...');
-  var allPlaysData = scope.allPlaysData;
   
   var playCharAggr = mapAllChars(allPlaysData, whichMetric);
   var characters = playCharAggr.characters.slice(0, 30);
@@ -211,14 +214,13 @@ function createColumnChart(containerName, categories, singleSeries, title, YAxis
 		legend: {
 		  enabled: false
 		},
-		/*tooltip: {
+		tooltip: {
 			formatter: function() {
-			  return 'Hello!'
-		    //return '<b>'+ this.series.name +'</b><br/>'
+		    return '<b>'+ this.key +'</b><br/>' + Math.round(this.y*10000)/100 + '%'
 		    //+Highcharts.dateFormat('%e. %b', this.x) +': '+ this.y +' m';
 		    ;
 			}
-		},*/
+		},
 		plotOptions: {
 			column: {
 				//pointPadding: 0.2,
@@ -229,10 +231,16 @@ function createColumnChart(containerName, categories, singleSeries, title, YAxis
 	});
 }
 
-function createAllPlaysSplineChart(scope, containerName, whichMetric, label) {
+function createAllPlaysSplineChart(allPlaysData, containerName, whichMetric, label) {
   
-  var allPlaysData = scope.allPlaysData;
   var playLines = mapAllPLaysByLines(allPlaysData, whichMetric);
+  var charNames = {};
+  playLines.map(function(playData) {
+    var playName = playData.name;
+    charNames[playName] = playData.data.map(function(charData) {
+      return charData[2]; // characterName
+    })
+  });
   
   var chart = new  Highcharts.Chart({
     chart: {
@@ -260,7 +268,12 @@ function createAllPlaysSplineChart(scope, containerName, whichMetric, label) {
 		},
 		tooltip: {
 			formatter: function() {
-		    return '<b>'+ this.series.name +'</b><br/>'
+			  var playAlias = this.series.name;
+			  var charIdx = this.key;
+			  var charName = charNames[playAlias][charIdx-1];
+			
+		    return '<b>'+ playAlias +'</b><br/>' +
+		           '<b>'+ charName +'</b><br/>' + Math.round(this.y*10000)/100 + '%'
 		    //+Highcharts.dateFormat('%e. %b', this.x) +': '+ this.y +' m';
 		    ;
 			}
