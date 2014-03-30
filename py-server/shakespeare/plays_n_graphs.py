@@ -124,7 +124,11 @@ class ShakespearePlayCtx(RootPlayCtx):
         return self.play_details[play_alias]
 
 # hack to aliases where they are known
-_repl_speakers = { 'LEAR' : 'KING LEAR' }
+_repl_speakers = { 
+  'LEAR' : 'KING LEAR',
+  'GLOUCESTER' : 'GLOUCESTER / KING RICHARD III',
+  'KING RICHARD III' : 'GLOUCESTER / KING RICHARD III', 
+}
 
 def _init_graphs(play):
     #print self.play.title, '\n\t', self.play.toc_as_str()
