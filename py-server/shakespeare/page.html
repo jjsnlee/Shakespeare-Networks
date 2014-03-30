@@ -43,7 +43,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.showPopup = 0;
   $scope.showSideBar = 1;
   $scope.showCurrPlayChart = 0;
-  $scope.showAllPlaysChart = 0;
+  //$scope.showAllPlaysChart = 0;
   $scope.sortField = 'order_app';
   
   // The entire play if no scene is selected, in which case it will be
@@ -109,12 +109,13 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     return char_data.order_app;
   };
   
-  $scope.enableAllPlaysChart = function() {
+/*  $scope.enableAllPlaysChart = function() {
     $http.get('/shakespeare/corpus/lineCounts').success(function(data) {
       $scope.allPlaysData = data;
       $scope.showAllPlaysChart = 1;
     });
-  };
+  };*/
+
 });
 </script>
 
@@ -138,9 +139,13 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 <div id="rh_nav" style="position:absolute; top:1%; right:1%;">
 <!-- Oddly with the html5Mode directive hrefs don't work, w/o the target! -->
 <a ng-href="/shakespeare/otherCharts" target="_self">Other Charts</a>
-<br>&nbsp;<br>
-<a ng-click="showCurrPlayChart=1" style="text-decoration:underline; cursor:pointer">
-  Chart: # of Lines Per Character</a>
+<br>
+<a ng-click="showCurrPlayChart='By Lines'" style="text-decoration:underline; cursor:pointer">
+  Lines By Character
+</a><br>
+<a ng-click="showCurrPlayChart='By Edges'" style="text-decoration:underline; cursor:pointer">
+  Edges By Character
+</a>
 </div>
 
 <div ng-show="selectedPlay!=null">
@@ -152,7 +157,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   </table>
 </div>
 
-<div my-draggable id="currPlayCharPopup" ng-show="showCurrPlayChart===1" class="chartDiv">
+<div my-draggable id="currPlayCharPopup" ng-show="showCurrPlayChart!==0" class="chartDiv">
 	<div align="right"><button ng-click="showCurrPlayChart=0">Close</button></div><br>
 	<div character-chart></div>
 </div>

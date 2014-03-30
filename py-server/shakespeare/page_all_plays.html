@@ -34,6 +34,8 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.whichChart = 0;
   $scope.allPlaysData = null;
   
+  //$scope.chartAllPlaysWhichMetric = 'nlines';
+  
   // Keep track of the positions of each of the popups.  
   // Otherwise there will be some jumping of the div elements
   //$scope.popupPosn = {};
@@ -50,7 +52,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     }
   };
   
-  $scope.enableAllPlaysChart('Top Characters');
+  $scope.enableAllPlaysChart('Top Characters (Lines)');
 });
 </script>
 </head>
@@ -64,11 +66,17 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 <table class="sectionDiv" width="90%" border=1 cellpadding=0 cellspacing=0>
 <tr>
   <td width="20%" valign="top">
-	  <a ng-click="enableAllPlaysChart('Top Characters')" 
-	    style="text-decoration:underline; cursor:pointer">Top Characters</a><br>
+	  <a ng-click="enableAllPlaysChart('Top Characters (Lines)')" 
+	    style="text-decoration:underline; cursor:pointer">Top Characters (Lines)</a><br>
 	  
-	  <a ng-click="enableAllPlaysChart('All Plays')" 
-	    style="text-decoration:underline; cursor:pointer">All Plays</a><br>
+	  <a ng-click="enableAllPlaysChart('Top Characters (Edges)')" 
+	    style="text-decoration:underline; cursor:pointer">Top Characters (Edges)</a><br>	  
+	  
+	  <a ng-click="enableAllPlaysChart('All Plays (Lines)')" 
+	    style="text-decoration:underline; cursor:pointer">All Plays (Lines)</a><br>
+
+	  <a ng-click="enableAllPlaysChart('All Plays (Edges)')" 
+	    style="text-decoration:underline; cursor:pointer">All Plays (Edges)</a><br>
   </td>
   <td valign="top">
 		<div id="allPlaysCharPopup" class="chartDiv">
