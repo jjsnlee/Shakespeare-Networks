@@ -23,16 +23,16 @@ body {
 </style>
 
 <script type="text/javascript" src="/js/angular-1.2.9/angular.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts.src.js"></script>
-<script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts-more.src.js"></script>
-<script type="text/javascript" src="/js/lib/underscore-min-1.5.0.js"></script>
 <script type="text/javascript" src="/js/plays.js"></script>
 
 <script type="text/javascript">
 shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.whichChart = 0;
   $scope.allPlaysData = null;
+
+  $scope.genreTragedy = true;  
+  $scope.genreComedy = true;
+  $scope.genreHistory = true;
   
   //$scope.chartAllPlaysWhichMetric = 'nlines';
   
@@ -66,6 +66,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 <table class="sectionDiv" width="90%" border=1 cellpadding=0 cellspacing=0>
 <tr>
   <td width="20%" valign="top">
+    
 	  <a ng-click="enableAllPlaysChart('Top Characters (Lines)')" 
 	    style="text-decoration:underline; cursor:pointer">Top Characters (Lines)</a><br>
 	  
@@ -77,6 +78,14 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 
 	  <a ng-click="enableAllPlaysChart('All Plays (Edges)')" 
 	    style="text-decoration:underline; cursor:pointer">All Plays (Edges)</a><br>
+
+    <div style="padding-top: 20px">
+      Filter by Genre:<br>
+      <input type="checkbox" ng-model="genreTragedy">Tragedy<br>
+      <input type="checkbox" ng-model="genreComedy">Comedy<br>
+      <input type="checkbox" ng-model="genreHistory">History<br>
+	  </div>
+	   
   </td>
   <td valign="top">
 		<div id="allPlaysCharPopup" class="chartDiv">
@@ -86,6 +95,12 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   </td>
 </tr>
 </table>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts.src.js"></script>
+<script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts-more.src.js"></script>
+<script type="text/javascript" src="/js/lib/underscore-min-1.5.0.js"></script>
+<script type="text/javascript" src="/js/lib/wu-0.1.8.min.js"></script>
 
 </body>
 </html>

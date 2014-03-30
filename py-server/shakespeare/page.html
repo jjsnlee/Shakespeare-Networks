@@ -35,6 +35,7 @@ body {
 <script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts.src.js"></script>
 <script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts-more.src.js"></script>
 <script type="text/javascript" src="/js/lib/underscore-min-1.5.0.js"></script>
+<script type="text/javascript" src="/js/lib/wu-0.1.8.min.js"></script>
 <script type="text/javascript" src="/js/plays.js"></script>
 
 <script type="text/javascript">
@@ -43,7 +44,6 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.showPopup = 0;
   $scope.showSideBar = 1;
   $scope.showCurrPlayChart = 0;
-  //$scope.showAllPlaysChart = 0;
   $scope.sortField = 'order_app';
   
   // The entire play if no scene is selected, in which case it will be
@@ -108,14 +108,6 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 
     return char_data.order_app;
   };
-  
-/*  $scope.enableAllPlaysChart = function() {
-    $http.get('/shakespeare/corpus/lineCounts').success(function(data) {
-      $scope.allPlaysData = data;
-      $scope.showAllPlaysChart = 1;
-    });
-  };*/
-
 });
 </script>
 
