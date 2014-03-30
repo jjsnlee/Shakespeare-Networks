@@ -10,31 +10,36 @@ try:
 except:
     print "Couldn't find Django, maybe ok..."
 
-def view_page(req):
-    qry_str = req.REQUEST
-    print 'REQUEST:\n', qry_str
-    sld_play = qry_str.get('play', '')
+def get_page_html(req):
+    path = req.path
+    info = path.split('/')[-1]
+    print 'path:', path
     
-    force_img_regen = False
-    if sld_play:
-        force_img_regen = qry_str.get('force_regen', False) == '1'
-        if force_img_regen:
-            _play_data = init_play(sld_play, 1)
+    if info == 'otherCharts':
+        html = open('shakespeare/page_all_plays.html', 'r').read()
     
-    html = _create_html(sld_play)
+    else:
+        qry_str = req.REQUEST
+        print 'REQUEST:\n', qry_str
+        sld_play = qry_str.get('play', '')
+        print 'play:', sld_play
+        force_img_regen = False
+        if sld_play:
+            force_img_regen = qry_str.get('force_regen', False) == '1'
+            if force_img_regen:
+                _play_data = init_play(sld_play, 1)
+
+        data_ctx = get_plays_ctx()
+        plays = sorted(data_ctx.plays, key=itemgetter(1))
+        all_plays = json.dumps([{'value':p[0],'label':p[1]} for p in plays])
+        html = open('shakespeare/page.html', 'r').read()
+
+        # Should get rid of this...
+        html = html.replace('__ALL_PLAYS__', all_plays)
+
     return HttpResponse(html)
 
-def _create_html(play):
-    data_ctx = get_plays_ctx()
-    plays = sorted(data_ctx.plays, key=itemgetter(1))
-    print 'play:', play
-    all_plays = json.dumps([{'value':p[0],'label':p[1]} for p in plays])
-    html = open('shakespeare/page.html', 'r').read()
-    html = html.replace('__ALL_PLAYS__', all_plays)
-    html = html.replace('__PLAY__', play)
-    return html
-
-def get_corpus_data(req):
+def get_corpus_data_json(req):
     try:
         path = req.path
         info = path.split('/')[-1]
@@ -63,7 +68,7 @@ def get_corpus_data(req):
 
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
-def get_play_data(req):
+def get_play_data_json(req):
     """ JSON representation for the play """
     try:
         path = req.path

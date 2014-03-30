@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Shakespeare</title>
+
+<style type="text/css" id="page-css">
+body {
+  font-size: 12px;
+}
+
+.choicesDiv {
+  position:absolute;
+  top:10%; left:1%;
+}
+
+.chartDiv {
+  min-width: 60%; 
+	#height: 450px; 
+	position:absolute;
+	top:10%; left:30%;
+	border:3px solid #eee;
+	background:rgba(265,265,265,1); 
+	overflow:auto; 
+	margin: 10px auto
+}
+</style>
+
+<script type="text/javascript" src="/js/angular-1.2.9/angular.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts.src.js"></script>
+<script type="text/javascript" src="/js/Highcharts-3.0.10/highcharts-more.src.js"></script>
+<script type="text/javascript" src="/js/lib/underscore-min-1.5.0.js"></script>
+<script type="text/javascript" src="/js/plays.js"></script>
+
+<script type="text/javascript">
+shPlays.controller('play', function($scope, $http, $location, $window) {
+  $scope.showAllPlaysChart = 0;
+  $scope.allPlaysData = null;
+  
+  // Keep track of the positions of each of the popups.  
+  // Otherwise there will be some jumping of the div elements
+  //$scope.popupPosn = {};
+  
+  $scope.enableAllPlaysChart = function(whichChart) {
+    if($scope.allPlaysData == null) {
+	    $http.get('/shakespeare/corpus/lineCounts').success(function(data) {
+	      $scope.allPlaysData = data;
+	      $scope.showAllPlaysChart = whichChart;
+	    });
+    }
+    else {
+      $scope.showAllPlaysChart = whichChart;
+    }
+  };
+  
+  $scope.enableAllPlaysChart('Top Characters');
+});
+</script>
+</head>
+
+<body ng-app="shPlays" ng-controller="play">
+
+<div id="rh_nav" style="position:absolute; top:1%; right:1%;">
+  <a href="/shakespeare" target="_self">Plays</a>
+</div>
+
+<div class="choicesDiv">
+  <a ng-click="enableAllPlaysChart('Top Characters')" 
+    style="text-decoration:underline; cursor:pointer">Top Characters</a><br>
+  
+  <a ng-click="enableAllPlaysChart('All Plays')" 
+    style="text-decoration:underline; cursor:pointer">All Plays</a><br>
+</div>
+
+<div id="allPlaysCharPopup" ng-show="showAllPlaysChart!==0" class="chartDiv">
+	<!--<div align="right"><button ng-click="showAllPlaysChart=0">Close</button></div><br>-->
+	<div all-plays-chart></div>
+  &nbsp;<br>&nbsp;<br>
+</div>
+
+</body>
+
+</html>

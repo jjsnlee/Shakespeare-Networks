@@ -44,6 +44,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.showSideBar = 1;
   $scope.showCurrPlayChart = 0;
   $scope.showAllPlaysChart = 0;
+  $scope.sortField = 'order_app';
   
   // The entire play if no scene is selected, in which case it will be
   // just for the specific scene
@@ -75,8 +76,8 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.sceneImgOpen = function(evt, scene) {
     $scope.showImgPopup = 1;
     $scope.selected_graph_img_f = evt.currentTarget.src;
-    $scope.characters = Object.keys(scene.charData);
-    $scope.charData   = scene.charData;
+    $scope.characters = Object.keys(scene.char_data);
+    $scope.charData   = scene.char_data;
   };
 
   $scope.sceneImgClose = function(evt) {
@@ -94,8 +95,22 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 		$window.location.href = '/shakespeare/?play='+selectedPlay+'&force_regen='+forceRegen;
   };
   
+  $scope.LHSSortFn = function(character) {
+    if($scope.sortField === 'char')
+      return character;
+
+    var char_data = $scope.charData[character];  
+     
+    if($scope.sortField === 'lines')
+      return char_data.nlines;
+    if($scope.sortField === 'edges')
+      return char_data.nedges;
+
+    return char_data.order_app;
+  };
+  
   $scope.enableAllPlaysChart = function() {
-    $http.get('/shakespeare/all/lineCounts').success(function(data) {
+    $http.get('/shakespeare/corpus/lineCounts').success(function(data) {
       $scope.allPlaysData = data;
       $scope.showAllPlaysChart = 1;
     });
@@ -121,14 +136,11 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 &nbsp;<br>&nbsp;<br>
 
 <div id="rh_nav" style="position:absolute; top:1%; right:1%;">
-<a ng-click="enableAllPlaysChart()" style="text-decoration:underline; cursor:pointer">Plays</a>
-</div>
-
-<div my-draggable id="allPlaysCharPopup" ng-show="showAllPlaysChart===1" class="chartDiv">
-	<div align="right"><button ng-click="showAllPlaysChart=0">Close</button></div><br>
-	<div all-plays-chart></div>
-  &nbsp;<br>&nbsp;<br>
-	<!--{{allPlaysData}}-->
+<!-- Oddly with the html5Mode directive hrefs don't work, w/o the target! -->
+<a ng-href="/shakespeare/otherCharts" target="_self">Other Charts</a>
+<br>&nbsp;<br>
+<a ng-click="showCurrPlayChart=1" style="text-decoration:underline; cursor:pointer">
+  Chart: # of Lines Per Character</a>
 </div>
 
 <div ng-show="selectedPlay!=null">
@@ -153,7 +165,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 </tr>
 <tr>
   <td width="20%" valign="top" ng-show="showSideBar===1">
-    
+
     <table cellpadding=1 cellspacing=1 border=0 width="100%">
     <tr>
       <td colspan="100%" align="right">
@@ -161,16 +173,15 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
       </td>
     </tr>
     <tr>
-      <td align="left"><b>Characters</b></td>
-      <td align="right"><b>Lines</b></td>
-      <td align="right"><b>Edges</b></td>
-      <!-- <td align="right"><b>Ratio</b></td> -->
+      <td align="left"><b><a href="" ng-click="sortField='char'; reverse=!reverse">Characters</a> 
+        (<a href="" ng-click="sortField='order_app'; reverse=!reverse">OA</a>)</b></td>
+      <td align="right"><b><a href="" ng-click="sortField='lines'; reverse=!reverse">Lines</a></b></td>
+      <td align="right"><b><a href="" ng-click="sortField='edges'; reverse=!reverse">Edges</a></b></td>
     </tr>
-    <tr ng-repeat="char in characters">
+    <tr ng-repeat="char in characters | orderBy:LHSSortFn:reverse">
       <td>{{char}}</td>
       <td align="right">{{charData[char].nlines}}</td>
       <td align="right">{{charData[char].nedges}}</td>
-      <!-- <td align="right">{{charData[char].ratio}}</td> -->
     </tr>
     </table>
   </td>
@@ -186,17 +197,6 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 		  </td>
 		</tr>
 	  </table>
-    
-    <br>&nbsp;<br>&nbsp;
-    
-	  <table border=0 cellpadding=1 cellspacing=1>
-		<tr>
-		  <td colspan="100%">
-		    <a ng-click="showCurrPlayChart=1" style="text-decoration:underline; cursor:pointer">
-		      Character Lines Chart</a>
-		  </td>
-		</tr>
-		</table>
 
   </td>
 </tr>
