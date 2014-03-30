@@ -66,11 +66,15 @@ function createChartDirective(directiveName, toggleVar, renderChartFn) {
 			},
 			template: '<div id="'+containerName+'" style="margin: 0 auto">not working</div>',
 			link: function (scope, element, attr) {
-			  scope.$watch(toggleVar, function (newValue) {
+			  
+			  function refreshEvt(newValue) {
 				  if(scope[toggleVar]!==0) {
 				    renderChartFn(scope, containerName, scope[toggleVar]);
 				  }
-				}, true);
+				};
+			  scope.$watch(toggleVar, refreshEvt, true);
+        // better way of doing this? 
+			  scope.$watch('refreshToggle', refreshEvt, true);
 	    }
 	  };
 	});
@@ -81,33 +85,32 @@ createChartDirective('characterChart', 'showCurrPlayChart', function(scope, cont
   var characters = scope.characters;
   
   var initChartFn = wu.curry(createSinglePlayCharChart, charMap, characters, containerName);
-
-	if(whichMetric==='By Lines')
-	  initChartFn('nlines', 'Lines');
-	else if(whichMetric==='By Edges')
-	  initChartFn('nedges', 'Edges');
-  }
-);
+  switch(whichMetric) {
+    case 'By Lines': initChartFn('nlines', 'Lines'); break;
+    case 'By Edges': initChartFn('nedges', 'Edges'); break;
+  };
+});
 
 createChartDirective('allPlaysChart', 'whichChart', function(scope, containerName, whichChart) {
   
   var allPlaysData = scope.allPlaysData;
-  var initColChart = wu.curry(createAllPlaysCharChart, allPlaysData, containerName);
-  var initSplineChart = wu.curry(createAllPlaysSplineChart, allPlaysData, containerName);
+  function isActivePlay(playAlias) {
+    var playData = allPlaysData[playAlias];
+    return (playData.genre=='Comedy' && scope.genreComedy) 
+        || (playData.genre=='History' && scope.genreHistory)
+        || (playData.genre=='Tragedy' && scope.genreTragedy);
+  };
 
-	if(whichChart=='Top Characters (Lines)') {
-	  initColChart('nlines', '% of Total Lines');
-	}
-	else if(whichChart=='Top Characters (Edges)') {
-	  initColChart('nedges', '% of Total Edges');
-	}
-	else if(whichChart==='All Plays (Lines)') {
-		  initSplineChart('nlines', '% of Total Lines');
-	}
-	else if(whichChart==='All Plays (Edges)') {
-		  initSplineChart('nedges', '% of Total Edges');
-	}
-}); 
+  var initColChart = wu.curry(createAllPlaysCharChart, allPlaysData, containerName, isActivePlay);
+  var initSplineChart = wu.curry(createAllPlaysSplineChart, allPlaysData, containerName, isActivePlay);
+
+  switch(whichChart) {
+    case 'Top Characters (Lines)' : initColChart('nlines', '% of Total Lines'); break;
+    case 'Top Characters (Edges)' : initColChart('nedges', '% of Total Edges'); break;
+    case 'All Plays (Lines)'      : initSplineChart('nlines', '% of Total Lines'); break;
+    case 'All Plays (Edges)'      : initSplineChart('nedges', '% of Total Edges'); break;
+  };
+});
 
 function createSinglePlayCharChart(charMap, characters, containerName, whichMetric) {
   console.log('Rendering Single Play...');
@@ -122,7 +125,7 @@ function createSinglePlayCharChart(charMap, characters, containerName, whichMetr
   createColumnChart(containerName, characters, charAggr, 'Characters');
 }
 
-function mapAllPLaysByLines(allPlaysData, whichMetric) {
+function mapAllPlaysByMetric(allPlaysData, whichMetric) {
   var playChars = {};
   return Object.keys(allPlaysData).map(function(playAlias) {
     var playCharacters = allPlaysData[playAlias].chardata;
@@ -173,7 +176,7 @@ function mapAllChars(allPlaysData, mapByField) {
   };
 }
 
-function createAllPlaysCharChart(allPlaysData, containerName, whichMetric, Label) {
+function createAllPlaysCharChart(allPlaysData, containerName, isActivePlay, whichMetric, Label) {
   console.log('Rendering All Plays 1...');
   
   var playCharAggr = mapAllChars(allPlaysData, whichMetric);
@@ -231,11 +234,16 @@ function createColumnChart(containerName, categories, singleSeries, title, YAxis
 	});
 }
 
-function createAllPlaysSplineChart(allPlaysData, containerName, whichMetric, label) {
+function createAllPlaysSplineChart(allPlaysData, containerName, isActivePlay, whichMetric, label) {
   
-  var playLines = mapAllPLaysByLines(allPlaysData, whichMetric);
+  var playAggrData = mapAllPlaysByMetric(allPlaysData, whichMetric).map(function(playData) {
+    if(!isActivePlay(playData.name))
+      playData.visible = false;
+    return playData;
+  });
+
   var charNames = {};
-  playLines.map(function(playData) {
+  playAggrData.map(function(playData) {
     var playName = playData.name;
     charNames[playName] = playData.data.map(function(charData) {
       return charData[2]; // characterName
@@ -247,6 +255,7 @@ function createAllPlaysSplineChart(allPlaysData, containerName, whichMetric, lab
 		  type: 'spline',
 		  renderTo : containerName,
 		  zoomType: 'x',
+		  height : '650'
 		},
 		title: {
 		  text: 'Plays / Characters'
@@ -278,7 +287,7 @@ function createAllPlaysSplineChart(allPlaysData, containerName, whichMetric, lab
 		    ;
 			}
 		},
-		series: playLines
+		series: playAggrData
   });
   //chart.yAxis[0].setExtremes(500, 1700);
 }  

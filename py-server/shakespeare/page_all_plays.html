@@ -33,6 +33,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.genreTragedy = true;  
   $scope.genreComedy = true;
   $scope.genreHistory = true;
+  $scope.refreshToggle = 0;
   
   //$scope.chartAllPlaysWhichMetric = 'nlines';
   
@@ -50,6 +51,11 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     else {
       $scope.whichChart = whichChart;
     }
+  };
+  
+  $scope.flipRefreshToggle = function() {
+    // apparently can't do this inline in the ng-click
+    $scope.refreshToggle = ~$scope.refreshToggle;
   };
   
   $scope.enableAllPlaysChart('Top Characters (Lines)');
@@ -84,8 +90,9 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
       <input type="checkbox" ng-model="genreTragedy">Tragedy<br>
       <input type="checkbox" ng-model="genreComedy">Comedy<br>
       <input type="checkbox" ng-model="genreHistory">History<br>
+      <button ng-click="flipRefreshToggle()">Refresh</button>
 	  </div>
-	   
+ 
   </td>
   <td valign="top">
 		<div id="allPlaysCharPopup" class="chartDiv">
