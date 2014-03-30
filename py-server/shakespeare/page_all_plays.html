@@ -4,19 +4,17 @@
 
 <style type="text/css" id="page-css">
 body {
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.choicesDiv {
-  position:absolute;
-  top:10%; left:1%;
+.sectionDiv {
+  position: absolute;
+  top: 5%;
+  left: 5%;
 }
 
 .chartDiv {
   min-width: 60%; 
-	#height: 450px; 
-	position:absolute;
-	top:10%; left:30%;
 	border:3px solid #eee;
 	background:rgba(265,265,265,1); 
 	overflow:auto; 
@@ -33,7 +31,7 @@ body {
 
 <script type="text/javascript">
 shPlays.controller('play', function($scope, $http, $location, $window) {
-  $scope.showAllPlaysChart = 0;
+  $scope.whichChart = 0;
   $scope.allPlaysData = null;
   
   // Keep track of the positions of each of the popups.  
@@ -44,11 +42,11 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     if($scope.allPlaysData == null) {
 	    $http.get('/shakespeare/corpus/lineCounts').success(function(data) {
 	      $scope.allPlaysData = data;
-	      $scope.showAllPlaysChart = whichChart;
+	      $scope.whichChart = whichChart;
 	    });
     }
     else {
-      $scope.showAllPlaysChart = whichChart;
+      $scope.whichChart = whichChart;
     }
   };
   
@@ -63,20 +61,23 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   <a href="/shakespeare" target="_self">Plays</a>
 </div>
 
-<div class="choicesDiv">
-  <a ng-click="enableAllPlaysChart('Top Characters')" 
-    style="text-decoration:underline; cursor:pointer">Top Characters</a><br>
-  
-  <a ng-click="enableAllPlaysChart('All Plays')" 
-    style="text-decoration:underline; cursor:pointer">All Plays</a><br>
-</div>
-
-<div id="allPlaysCharPopup" ng-show="showAllPlaysChart!==0" class="chartDiv">
-	<!--<div align="right"><button ng-click="showAllPlaysChart=0">Close</button></div><br>-->
-	<div all-plays-chart></div>
-  &nbsp;<br>&nbsp;<br>
-</div>
+<table class="sectionDiv" width="90%" border=1 cellpadding=0 cellspacing=0>
+<tr>
+  <td width="20%" valign="top">
+	  <a ng-click="enableAllPlaysChart('Top Characters')" 
+	    style="text-decoration:underline; cursor:pointer">Top Characters</a><br>
+	  
+	  <a ng-click="enableAllPlaysChart('All Plays')" 
+	    style="text-decoration:underline; cursor:pointer">All Plays</a><br>
+  </td>
+  <td valign="top">
+		<div id="allPlaysCharPopup" class="chartDiv">
+			<div all-plays-chart></div>
+		  &nbsp;<br>&nbsp;<br>
+		</div>
+  </td>
+</tr>
+</table>
 
 </body>
-
 </html>
