@@ -5,7 +5,7 @@ import re
 
 def transform_chekhov_plays():
     basedir = join(helper.get_root_dir(), 'data/chekhov')
-    full_file = join(basedir, 'gutenberg_plays_second_series.html')
+    full_file = join(basedir, '_gutenberg_plays_second_series.html')
     with open(full_file) as f:
         all_plays = ''.join(f.readlines())
 
@@ -22,7 +22,7 @@ def transform_chekhov_plays():
 </body>
 </html>
 '''
-    
+
     for play in plays:
         hdrs = play.findAll('h2')
         title = hdrs[0].text
@@ -47,12 +47,16 @@ def transform_chekhov_plays():
             html = templ % (title, title, '\n'.join(content))
             fh.write(html.encode('utf8'))
 
-char_line_re = re.compile('^[A-Z]+\.')
+char_line_re = re.compile(r'^([A-Z][^.]+)\.(.+)$', re.S)
 
 def write_line(line, actno, sceneno, lineno):
     line = line.replace('\n', '<br>\n')
-    if char_line_re.match(line):
-        out = '<a name=%d.%d.%d>%s</a><br>' % (actno, sceneno, lineno[0], line)
+    m = char_line_re.match(line) 
+    #if char_line_re.match(line, re.S):
+    if m:
+        speaker, dialogue = m.groups()
+        out = '<a name=%d.%d.%d><b>%s.</b>%s</a><br>' % (actno, sceneno, lineno[0], speaker, dialogue)
+        #out = '<a name=%d.%d.%d>%s</a><br>' % (actno, sceneno, lineno[0], line)
         lineno[0] += 1
     else:
         out = '<p>%s</p>' % line

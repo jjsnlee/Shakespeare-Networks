@@ -3,15 +3,13 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 import helper
 from os.path import join
 rootdir = helper.get_root_dir()
+
 import sys
-sys.path.append(join(rootdir, 'py-external'))
-#sys.path.append(join(rootdir, 'py-external/word_cloud'))
-#sys.path.append(join(rootdir, 'py-external/external'))
-#sys.path.append('..')
+if join(rootdir, 'py-external') not in sys.path:
+    sys.path.append(join(rootdir, 'py-external'))
 
 from pcibook import nmf
 
@@ -64,36 +62,29 @@ class ProcessCtxt:
         self.pruned_characters = {}
         self.pruned_max_terms = []
 
-def preproc_data(prc_ctx, plays_to_filter=None, by='Play'):
-    """
-    get all the characters, the key should be name and play
-    then all their lines, and relationships?
-    it could be an interesting game of clustering
-    """
-    plays = prc_ctx.plays.values()
-    if plays_to_filter:
-        plays_to_filter = set(plays_to_filter)
-        plays = [k for k in plays if k.title in plays_to_filter]
-    prc_ctx.reset()
+    def preproc(self, plays_to_filter=None, by='Play'):
+        """
+        get all the characters, the key should be name and play
+        then all their lines, and relationships?
+        it could be an interesting game of clustering
+        """
+        plays = self.plays.values()
+        if plays_to_filter:
+            plays_to_filter = set(plays_to_filter)
+            plays = [k for k in plays if k.title in plays_to_filter]
+        self.reset()
+        
+        if by == 'Play':
+            self.documents = plays
+        
+        if by == 'Char':
+            clines = []
+            for p in plays:
+                clines.extend(p.characters.values())
+            self.documents = clines
 
-    if by == 'Play':
-        prc_ctx.documents = plays
-    if by == 'Char':
-        clines = []
-        for p in plays:
-            clines.extend(p.characters.values())
-        prc_ctx.documents = clines
-
-def process_data(prc_ctx,
-                 min_df = 2, # in at least 2 documents
-                 max_df = 1.0,
-                 minlines = 10,
-                 raw = False
-                 ):
-    stopwds = _get_stopwords()
-    
+def get_character_names(prc_ctx):
     #name_d = helper.init_name_dict()
-    
     all_c_in_play = set()
     for play_name in prc_ctx.plays.keys():
         # Only characters in ALL CAPS are considered major, do not 
@@ -106,9 +97,9 @@ def process_data(prc_ctx,
             v = prc_ctx.pruned_characters.setdefault(c, set())
             v.add(play_name)
         all_c_in_play.update(c_in_play)
-    
-    #import PorterStemmer
+    return all_c_in_play
 
+def get_doc_content(prc_ctx, minlines=10):
     doc_titles   = []
     docs_content = []
     for doc in prc_ctx.documents:
@@ -123,7 +114,21 @@ def process_data(prc_ctx,
         lines = lines.lower()
         docs_content.append(lines)
         doc_titles.append(str(doc))
+    return doc_titles, docs_content
     
+def process_data(prc_ctx,
+                 min_df=2, # in at least 2 documents
+                 max_df=1.0,
+                 minlines=10,
+                 raw = False
+                 ):
+    stopwds = _get_stopwords()
+    all_c_in_play = get_character_names(prc_ctx)
+    
+    #import PorterStemmer
+    
+    doc_titles, docs_content = get_doc_content(prc_ctx, minlines=minlines)
+
     from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
     if raw: 
         vectorizer = CountVectorizer
@@ -152,7 +157,6 @@ def process_data(prc_ctx,
 #    keep = np.array([n.split(' ')[-1] not in stopwds for n in ngs.columns])
 #    ngs = ngs.T[keep]
 #    ngdf = pd.DataFrame.join(uni, ngs.T)
-
     # Remove terms which show up frequently
 #    ngdf = ngdf.replace(0, float('Nan'))
 #    nzero_cnts = ngdf.count()
@@ -167,9 +171,33 @@ def process_data(prc_ctx,
     # Keep as is to have the terms on the index
     return ngdf
 
-def runs_lda(mat):
+def create_lda_corpus(docs):
+#    from gensim.corpora import dictionary
+#    class MyCorpus(object):
+#        def __iter__(self):
+#            for doc in doc_content:
+#                #doc_nm = mat.index[idx]
+#                yield dictionary.doc2bow(doc)
+#    return MyCorpus()
+    from gensim.corpora import Dictionary
+    from gensim.utils import simple_preprocess
+    prcd_docs = [simple_preprocess(doc) for doc in docs]
+    dictionary = Dictionary(prcd_docs)
+    # odd API
+    return [[dictionary.doc2bow(doc) for doc in prcd_docs], dictionary]
+
+
+def create_lda_corpus_with_mat(mat):
+    class MyCorpus(object):
+        def __iter__(self):
+            for idx in range(len(mat.index)):
+                #doc_nm = mat.index[idx]
+                yield mat.ix[idx]
+    return MyCorpus()
+
+def runs_lda(corpus):
     from gensim.models.ldamodel import LdaModel
-    lda = LdaModel(mat, num_topics=10)
+    lda = LdaModel(corpus, num_topics=10)
     return lda
 
 def runs_multi_nmf(mat, nruns=5, pc=16, iters=100):

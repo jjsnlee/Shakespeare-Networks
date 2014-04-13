@@ -14,10 +14,13 @@ try:
 except:
     logger.warn("Couldn't find Django, maybe ok...")
 
-def get_page_html(req):
+def get_page_html(req, play_set):
     path = req.path
     info = path.split('/')[-1]
     print 'path:', path
+    
+    if play_set not in ['shakespeare', 'chekhov']:
+        raise Exception('Invalid content [%s].' % play_set)
     
     if info == 'otherCharts':
         html = open('shakespeare/page_all_plays.html', 'r').read()
@@ -32,9 +35,9 @@ def get_page_html(req):
         if sld_play:
             force_img_regen = qry_str.get('force_regen', False) == '1'
             if force_img_regen:
-                _play_data = init_play(sld_play, 1)
+                _play_data = init_play(play_set, sld_play, 1)
 
-        data_ctx = get_plays_ctx()
+        data_ctx = get_plays_ctx(play_set)
         plays = sorted(data_ctx.plays, key=itemgetter(1))
         all_plays = json.dumps([{'value':p[0],'label':p[1]} for p in plays])
         html = open('shakespeare/page.html', 'r').read()
@@ -44,13 +47,13 @@ def get_page_html(req):
 
     return HttpResponse(html)
 
-def get_corpus_data_json(req):
+def get_corpus_data_json(req, play_set):
     try:
         path = req.path
         info = path.split('/')[-1]
         print 'info:', info
         if info == 'lineCounts':
-            play_data_ctx = get_plays_ctx()
+            play_data_ctx = get_plays_ctx(play_set)
             plays = play_data_ctx.plays
 
             all_plays_json = {}
@@ -76,7 +79,7 @@ def get_corpus_data_json(req):
 
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
-def get_play_data_json(req):
+def get_play_data_json(req, play_set):
     """ JSON representation for the play """
     try:
         path = req.path
@@ -84,35 +87,29 @@ def get_play_data_json(req):
         #print 'REQUEST:\n', play_alias
         
         # Probably want to streamline this, so we take the existing files where possible...
-        play = init_play(play_alias, False)
+        play = init_play(play_set, play_alias, False)
         json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONMetadataEncoder)
-
-#        fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
-#        print 'Loading json from %s' % fname
-#        if not os.path.exists(fname):
-#            print 'File path doesn\'t exist!'
-#        play_json = open(fname, 'r').read()
-#        json_rslt = json.loads(play_json)
         return HttpResponse(json_rslt, content_type='application/json')
+
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
         st = traceback.format_exc()
         #print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
         logger.error('Problem parsing [%s]:\n%s\n%s', req, e, st)
 
-def main():
-    play = 'King Lear'
-    #play = "A Midsummer Night's Dream"
-    html = _create_html(play, basedir='../', absroot=False, force_img_regen=False, incl_hdr=False)
-    #print 'HTML:', html
-    tmpfile = 'tmp.html'
-    with open(tmpfile, 'w') as fh:
-        fh.writelines(html)
-
-    import webbrowser
-    lcl_url = 'file://'+os.path.abspath(tmpfile)
-    print 'Opening', lcl_url
-    webbrowser.open_new_tab(lcl_url)
-
-if (__name__=="__main__"):
-    main()
+#def main():
+#    play = 'King Lear'
+#    #play = "A Midsummer Night's Dream"
+#    html = _create_html(play, basedir='../', absroot=False, force_img_regen=False, incl_hdr=False)
+#    #print 'HTML:', html
+#    tmpfile = 'tmp.html'
+#    with open(tmpfile, 'w') as fh:
+#        fh.writelines(html)
+#
+#    import webbrowser
+#    lcl_url = 'file://'+os.path.abspath(tmpfile)
+#    print 'Opening', lcl_url
+#    webbrowser.open_new_tab(lcl_url)
+#
+#if (__name__=="__main__"):
+#    main()

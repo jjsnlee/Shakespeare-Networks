@@ -23,11 +23,14 @@ def view_static(req):
     return HttpResponse(data)
 
 urlpatterns = patterns('',
-    ('^shakespeare/$', shakespeare_pages.get_page_html),
-    ('^shakespeare/otherCharts$', shakespeare_pages.get_page_html),
     
-    ('^shakespeare/corpus/', shakespeare_pages.get_corpus_data_json),
-    ('^shakespeare/play/', shakespeare_pages.get_play_data_json),
+    # figure out how to do this right...
+    ('^(shakespeare|chekhov)/$', shakespeare_pages.get_page_html),
+    ('^(shakespeare|chekhov)/otherCharts$', shakespeare_pages.get_page_html),
+    
+    ('^(shakespeare|chekhov)/corpus/', shakespeare_pages.get_corpus_data_json),
+    ('^(shakespeare|chekhov)/play/', shakespeare_pages.get_play_data_json),
+
     ('^imgs/.*\.png$', view_imgs),
     ('^js/.*$', view_static),
 

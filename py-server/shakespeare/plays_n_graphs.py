@@ -13,11 +13,13 @@ from collections import OrderedDict
 logger = logging.getLogger('shakespeare.plays_n_graphs')
 
 _ALL_PLAYS = None
-def get_plays_ctx(reload_ctx=False):
+def get_plays_ctx(plays_set, reload_ctx=False):
     global _ALL_PLAYS
     if _ALL_PLAYS is None or reload_ctx:
-        _ALL_PLAYS = ShakespearePlayCtx() 
-    return _ALL_PLAYS
+        _ALL_PLAYS = {}
+        _ALL_PLAYS['shakespeare'] = ShakespearePlayCtx()
+        _ALL_PLAYS['chekhov'] = ChekhovPlayCtx() 
+    return _ALL_PLAYS[plays_set]
 
 class RootPlayCtx(object):
     def __init__(self, datadir, cfg):
@@ -30,10 +32,23 @@ class RootPlayCtx(object):
         self.map_by_alias = dict(self.plays)
         self.map_by_title = dict([(v,k) for k,v in self.plays])
 
+    def get_play(self, play_alias):
+        if play_alias in self.play_details:
+            return self.play_details[play_alias]
+
+        title = self.map_by_alias[play_alias]
+        play = Play(title)
+        self._load_play(play, play_alias)
+        self.play_details[play_alias] = _init_graphs(play)
+        return self.play_details[play_alias]
+
+    def _load_play(self, play, play_alias):
+        pass
+
 class MarlowePlayCtx(RootPlayCtx):
     def __init__(self):
         super(MarlowePlayCtx, self).__init__('data/marlowe/', plays_cfg.marlowe)
-#    def load_play(self, play_alias):    
+#    def load_play(self, play_alias):
 #        if play_alias in self.play_details:
 #            return self.play_details[play_alias]
 #        title = self.map_by_alias[play_alias]
@@ -49,57 +64,34 @@ class ChekhovPlayCtx(RootPlayCtx):
     def __init__(self):
         super(ChekhovPlayCtx, self).__init__('data/chekhov/', plays_cfg.chekhov)
 
-        from BeautifulSoup import BeautifulSoup
-        full_file = join(self.basedir, 'gutenberg_plays_second_series.html')
-        with open(full_file) as f:
-            all_plays = ''.join(f.readlines())
+    def _load_play(self, play, play_alias):
+        fname = join(self.basedir, play.title+'.html')
+        with open(fname) as f:
+            x = ''.join(f.readlines())
+        #print 'initialing Chekhov play'
+        curr_act = None
+        #play_dialogue_ptn = '<A NAME=\d+><b>([^<]+?)\.{0,1}</b></a>(.+?(?:</body>|</blockquote>))'
+        play_dialogue_ptn = '<A NAME=(\d+).(\d+).(\d+)><b>(.+?)\.</b>(.+?)</a>'
+        rs = re.finditer(play_dialogue_ptn, x, re.S|re.I)
+        for r in rs:
+            act, sc, lineno, speaker, dialogue = r.groups()
+            
+            if curr_act is None or curr_act.act != act:
+                print 'act, sc:',act, sc, speaker
+                
+                curr_act = Scene(play, act, sc, None, None)
+                play.add_scene(curr_act)
 
-        soup = BeautifulSoup(all_plays)
-        self.content = soup.findAll('div', {'class':'play'})
-
-    def load_play(self, play_alias):    
-        if play_alias in self.play_details:
-            return self.play_details[play_alias]
-        title = self.map_by_alias[play_alias]
-
-        play = Play(title)
-        
-        self.play_details[play_alias] = _init_graphs(play)
-        return self.play_details[play_alias]
-
-def parse_chekhov_play(play):
-    hdrs = play.findAll('h2')
-    title = hdrs[0].text
-    print 'title:', title
-    scenes = []
-    if len(hdrs) > 1:
-        soup_scenes = hdrs[1:]
-        nscenes = len(soup_scenes)
-        for i in range(nscenes):
-            sc = soup_scenes[i]
-            next_sc = soup_scenes[min(i+1, nscenes-1)]
-            scenes.append([])
-            for para in sc.findNextSiblings(['p', 'h2']):
-                if para == next_sc:
-                    break
-                scenes[i].append(para.text)
-    else:
-        scenes.append([])
-        for para in sc.findNextSiblings(['p', 'h2']):
-            scenes[i].append(para.text)
-    return scenes
+            dialogue = dialogue.strip()
+            curr_act.add_dialogue(speaker, [dialogue])
 
 class ShakespearePlayCtx(RootPlayCtx):
 
     def __init__(self):
         super(ShakespearePlayCtx, self).__init__('data/shakespeare/', plays_cfg.shakespeare)
 
-    def load_play(self, play_alias):
-        if play_alias in self.play_details:
-            return self.play_details[play_alias]
-
-        title = self.map_by_alias[play_alias]
-        play = Play(title)
+    def _load_play(self, play, play_alias):
+        title = play.title
         play.type = plays_cfg.shakespeare['classifications'][title]
         play.year = plays_cfg.shakespeare['vintage'][title]
         
@@ -164,8 +156,8 @@ class ShakespearePlayCtx(RootPlayCtx):
                 Sc = play.scenes_idx[act+'_'+sc]
                 Sc.add_dialogue(speaker, lines)
 
-        self.play_details[play_alias] = _init_graphs(play)
-        return self.play_details[play_alias]
+#        self.play_details[play_alias] = _init_graphs(play)
+#        return self.play_details[play_alias]
 
 # hack to aliases where they are known
 _repl_speakers = { 
@@ -193,13 +185,14 @@ def _init_graphs(play):
             prev_speaker = speaker
     return play
 
-def init_play(play_alias, force_img_regen):
-    play_data_ctx = get_plays_ctx()
+def init_play(plays_set, play_alias, force_img_regen):
+    
+    play_data_ctx = get_plays_ctx(plays_set)
 
     if play_alias not in play_data_ctx.map_by_alias:
         raise Exception('Can''t find play [%s].' % play_alias)
     
-    play  = play_data_ctx.load_play(play_alias)
+    play  = play_data_ctx.get_play(play_alias)
     logger.debug('%s\n\t%s', play.title, play.toc_as_str())
     
     img_root_dir = 'imgs/'
@@ -454,20 +447,11 @@ def main(title_to_run=''):
         toc_file, title = p
         if not (title == title_to_run):
             continue
-        ctx.load_play( toc_file)
+        ctx.get_play( toc_file)
     #print pformat(plays)
     for play_graph in ctx.play_details.values():
         play_graph.create_graph()
         #draw_graph_nscenes(play_graph.play)
-
-#def get_plays():
-#    info = get_list_of_works()
-#    for toc_file, title in info['plays']:
-#        load_play(info, toc_file, title)
-#    return info['play_details']
-#problematic_plays = \
-#set([#'Pericles, Prince of Tyre',
-#     ])
 
 if (__name__=="__main__"):
     main()

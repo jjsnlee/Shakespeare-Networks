@@ -22,15 +22,16 @@ DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False):
     from plays_n_graphs import get_plays_ctx, init_play
     import json
-    data_ctx = get_plays_ctx()
+    data_ctx = get_plays_ctx('shakespeare')
     plays = data_ctx.plays
+    play_set = 'shakespeare'
     
     basedir = DYNAMIC_ASSETS_BASEDIR
     helper.ensure_path(join(basedir, 'json'))
     for play_alias, _ in plays:
         print play_alias
         if gen_md or gen_lines:
-            play = init_play(play_alias, False)
+            play = init_play(play_set, play_alias, False)
             
             if gen_md:
                 json_rslt = json.dumps(play, ensure_ascii=False,
@@ -47,7 +48,7 @@ def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False):
                     fh.write(json_rslt)
         
         if gen_imgs:
-            init_play(play_alias, True)
+            init_play(play_set, play_alias, True)
 
 class PlayEncoderBase(JSONEncoder):
     def from_keys(self, obj, keys):

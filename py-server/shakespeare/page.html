@@ -45,6 +45,20 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.showSideBar = 1;
   $scope.showCurrPlayChart = 0;
   $scope.sortField = 'order_app';
+
+  $scope.allPlaySets = [
+	  {"value": "shakespeare", "label": "Shakespeare", 'default' : 'hamlet'},
+	  {"value": "chekhov", "label": "Chekhov", 'default' : 'cherry_orchard'}
+  ];
+  
+  // Initialize to a default
+  for(var i=0,len=$scope.allPlaySets.length; i<len; i++) {
+    var playSet = $scope.allPlaySets[i];
+    if($location.path().indexOf(playSet.value) == 1) {
+      $scope.selectedPlaySet = playSet;
+      break;
+    }
+  }
   
   // The entire play if no scene is selected, in which case it will be
   // just for the specific scene
@@ -58,15 +72,22 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.popupPosn = {};
   
   var selectedPlay = $location.search()['play'];
-  for (var i=0,len=$scope.allPlays.length; i<len; i++) {
-    if( selectedPlay===$scope.allPlays[i].value ) {
+  if(!selectedPlay)
+    selectedPlay = $scope.selectedPlaySet.default;
+
+  for(var i=0,len=$scope.allPlays.length; i<len; i++) {
+    if(selectedPlay===$scope.allPlays[i].value) {
       $scope.selectedPlay = $scope.allPlays[i];
       break;
     }
   }
   
+  function getURLRoot() {
+    return '/'+$scope.selectedPlaySet.value;
+  }
+  
   if($scope.selectedPlay) {
-		$http.get('/shakespeare/play/'+$scope.selectedPlay.value).success(function(data) {
+		$http.get(getURLRoot()+'/play/'+$scope.selectedPlay.value).success(function(data) {
 		  $scope.play_content = data;
 		  $scope.characters   = data.characters; 
 	    $scope.charData     = data.char_data;
@@ -85,14 +106,19 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     $scope.characters   = $scope.play_content.characters;
     $scope.charData     = $scope.play_content.char_data;
   };
+  
+  $scope.submitSet = function() {
+		$window.location.href = getURLRoot();
+  };  
 
-  $scope.doSubmit = function() {
-		var selectedIdx  = document.forms[0].play.value;
-		var selectedPlay = $scope.allPlays[selectedIdx].value;
+  $scope.submitPlay = function() {
+		//var selectedIdx  = document.forms[0].play.value;
+		//var selectedPlay = $scope.allPlays[selectedIdx].value;
+		var selectedPlay = $scope.selectedPlay.value;
 		var forceRegen   = $location.search()['force_regen'];
 		if(forceRegen==null)
 		  forceRegen = 0;
-		$window.location.href = '/shakespeare/?play='+selectedPlay+'&force_regen='+forceRegen;
+		$window.location.href = getURLRoot()+'/?play='+selectedPlay+'&force_regen='+forceRegen;
   };
   
   $scope.LHSSortFn = function(character) {
@@ -117,11 +143,21 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 <form>
 <table border=0 cellpadding=1 cellspacing=1>
 <tr>
+  <td><b>Playwright:</b></td>
+  <td>
+    <select name="playSet" ng-model="selectedPlaySet"
+      ng-options="p as p.label for p in allPlaySets" 
+      ng-change="submitSet()">
+    </select>
+  </td>
+</tr>
+
+<tr>
   <td><b>Play:</b></td>
   <td>
     <select name="play" ng-model="selectedPlay"
       ng-options="p as p.label for p in allPlays" 
-      ng-change="doSubmit()">
+      ng-change="submitPlay()">
     </select>
   </td>
 </tr>
