@@ -172,3 +172,17 @@ marlowe = {
         'edwardii'       : '1592'
     }
 }
+
+chekhov = {
+    'plays' : [
+        ('high_road',      'ON THE HIGH ROAD'),
+        ('proposal',       'THE PROPOSAL'),
+        ('wedding',        'THE WEDDING'),
+        ('bear',           'THE BEAR'),
+        ('tragedian',      'A TRAGEDIAN IN SPITE OF HIMSELF'),
+        ('anniversary',    'THE ANNIVERSARY'),
+        ('three_sisters',  'THE THREE SISTERS'),
+        ('cherry_orchard', 'THE CHERRY ORCHARD'),
+    ]
+}    
+    

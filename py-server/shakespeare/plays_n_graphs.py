@@ -5,10 +5,12 @@ import matplotlib.pyplot as plt
 import plays_cfg
 import pandas as pd
 import numpy as np
-import os
+import os, logging
 from pprint import pformat
 from os.path import join
 from collections import OrderedDict
+
+logger = logging.getLogger('shakespeare.plays_n_graphs')
 
 _ALL_PLAYS = None
 def get_plays_ctx(reload_ctx=False):
@@ -21,8 +23,9 @@ class RootPlayCtx(object):
     def __init__(self, datadir, cfg):
         self.basedir = join(helper.get_root_dir(), datadir)
         # Will be a list of play tuples ('[key]', '[Title]')
-        self.plays = list(plays_cfg.shakespeare['plays'])
-        print 'Plays:\n', pformat(self.plays)
+        self.plays = list(cfg['plays'])
+        if logger.isEnabledFor(logging.DEBUG):
+            logger.debug('Plays: %s', pformat(self.plays))
         self.play_details = {}
         self.map_by_alias = dict(self.plays)
         self.map_by_title = dict([(v,k) for k,v in self.plays])
@@ -30,20 +33,61 @@ class RootPlayCtx(object):
 class MarlowePlayCtx(RootPlayCtx):
     def __init__(self):
         super(MarlowePlayCtx, self).__init__('data/marlowe/', plays_cfg.marlowe)
+#    def load_play(self, play_alias):    
+#        if play_alias in self.play_details:
+#            return self.play_details[play_alias]
+#        title = self.map_by_alias[play_alias]
+#        play = Play(title)
+#        full_file = join(self.basedir, play_alias+'.html')
+#        with open(full_file) as f:
+#            x = ''.join(f.readlines())
+#            #play.add_scene(Scene(play, act, sc, loc, html))
+#        self.play_details[play_alias] = _init_graphs(play)
+#        return self.play_details[play_alias]
+
+class ChekhovPlayCtx(RootPlayCtx):
+    def __init__(self):
+        super(ChekhovPlayCtx, self).__init__('data/chekhov/', plays_cfg.chekhov)
+
+        from BeautifulSoup import BeautifulSoup
+        full_file = join(self.basedir, 'gutenberg_plays_second_series.html')
+        with open(full_file) as f:
+            all_plays = ''.join(f.readlines())
+
+        soup = BeautifulSoup(all_plays)
+        self.content = soup.findAll('div', {'class':'play'})
 
     def load_play(self, play_alias):    
         if play_alias in self.play_details:
             return self.play_details[play_alias]
         title = self.map_by_alias[play_alias]
+
         play = Play(title)
-        
-        full_file = join(self.basedir, play_alias+'.html')
-        with open(full_file) as f:
-            x = ''.join(f.readlines())
-            play.add_scene(Scene(play, act, sc, loc, html))
         
         self.play_details[play_alias] = _init_graphs(play)
         return self.play_details[play_alias]
+
+def parse_chekhov_play(play):
+    hdrs = play.findAll('h2')
+    title = hdrs[0].text
+    print 'title:', title
+    scenes = []
+    if len(hdrs) > 1:
+        soup_scenes = hdrs[1:]
+        nscenes = len(soup_scenes)
+        for i in range(nscenes):
+            sc = soup_scenes[i]
+            next_sc = soup_scenes[min(i+1, nscenes-1)]
+            scenes.append([])
+            for para in sc.findNextSiblings(['p', 'h2']):
+                if para == next_sc:
+                    break
+                scenes[i].append(para.text)
+    else:
+        scenes.append([])
+        for para in sc.findNextSiblings(['p', 'h2']):
+            scenes[i].append(para.text)
+    return scenes
 
 class ShakespearePlayCtx(RootPlayCtx):
 
@@ -61,7 +105,7 @@ class ShakespearePlayCtx(RootPlayCtx):
         
         basedir = self.basedir
         toc_file = join(basedir, play_alias, 'index.html')
-        print 'Processing', title
+        logger.debug('Processing [%s]', title)
         
         # would be good to combine these
         acts_ptn = 'Act (\d+), Scene (\d+): <a href="([^\"]+)">([^>]+)</a>'
@@ -156,7 +200,7 @@ def init_play(play_alias, force_img_regen):
         raise Exception('Can''t find play [%s].' % play_alias)
     
     play  = play_data_ctx.load_play(play_alias)
-    print play.title, '\n\t', play.toc_as_str()
+    logger.debug('%s\n\t%s', play.title, play.toc_as_str())
     
     img_root_dir = 'imgs/'
     server_basedir = helper.get_dynamic_rootdir()
@@ -194,7 +238,8 @@ def draw_graph(scene_title, G):
     """
     
     #print 'json repr:', node_link_data(G)
-    print 'nlines:', [(n, G.node[n]['nlines']) for n in G]
+    if logger.isEnabledFor(logging.DEBUG):
+        logger.debug('nlines: %s', [(n, G.node[n]['nlines']) for n in G])
 
     plt.title(str(scene_title))
     plt.xticks([])
@@ -215,7 +260,8 @@ def draw_graph(scene_title, G):
     nx.draw_networkx_nodes(G, pos, node_size=5, node_color='k')
 
     # would be good to have a little "judder" b/n nodes
-    # need to fix the label spacing
+    # need to fix the label spacing, or should figure it 
+    # out based on the size of the entire graph...
     pos_lbls = pos.copy()
     if len(pos_lbls) > 1:
         for k in pos_lbls.keys():
@@ -247,7 +293,7 @@ class Play:
     @property
     def totalG(self):
         if not self._totalG:
-            print 'Calculating total G?'
+            #print 'Calculating total G?'
             totalG = nx.Graph()
             for sc in self.scenes:
                 # for some reason without the copy the size of the 
@@ -271,7 +317,7 @@ class Play:
         if self._scenes is None:
             sc_keys = self.scenes_idx.keys()
             sc_keys = sorted(sc_keys)
-            print 'sc_keys:', sc_keys
+            logger.debug('sc_keys: %s', sc_keys)
             self._scenes = [self.scenes_idx[sc] for sc in sc_keys]
         return self._scenes
 
