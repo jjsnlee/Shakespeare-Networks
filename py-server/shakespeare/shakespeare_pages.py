@@ -4,11 +4,15 @@ from os.path import join
 import helper
 from plays_n_graphs import get_plays_ctx, init_play
 from plays_transform import PlayJSONMetadataEncoder
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('shakespeare.shakespeare_pages')
 
 try:
     from django.http import HttpResponse
 except:
-    print "Couldn't find Django, maybe ok..."
+    logger.warn("Couldn't find Django, maybe ok...")
 
 def get_page_html(req):
     path = req.path
@@ -20,9 +24,10 @@ def get_page_html(req):
     
     else:
         qry_str = req.REQUEST
-        print 'REQUEST:\n', qry_str
+        logger.debug('REQUEST: %s', qry_str)
         sld_play = qry_str.get('play', '')
-        print 'play:', sld_play
+        logger.debug('play: %s', sld_play)
+
         force_img_regen = False
         if sld_play:
             force_img_regen = qry_str.get('force_regen', False) == '1'
@@ -52,7 +57,7 @@ def get_corpus_data_json(req):
             for play_alias, _ in plays:
                 fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
                 if not os.path.exists(fname):
-                    print 'File path [%s] doesn\'t exist!' % fname
+                    logger.warn('File path [%s] doesn\'t exist!', fname)
                 play_json = json.loads(open(fname, 'r').read())
                 all_plays_json[play_alias] = {
                     'chardata' : play_json['char_data'],
@@ -66,7 +71,8 @@ def get_corpus_data_json(req):
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
         st = traceback.format_exc()
-        print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
+        #print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
+        logger.error('Problem parsing [%s]:\n%s\n%s', req, e, st)
 
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
@@ -91,7 +97,8 @@ def get_play_data_json(req):
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
         st = traceback.format_exc()
-        print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
+        #print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
+        logger.error('Problem parsing [%s]:\n%s\n%s', req, e, st)
 
 def main():
     play = 'King Lear'
