@@ -112,8 +112,6 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   };  
 
   $scope.submitPlay = function() {
-		//var selectedIdx  = document.forms[0].play.value;
-		//var selectedPlay = $scope.allPlays[selectedIdx].value;
 		var selectedPlay = $scope.selectedPlay.value;
 		var forceRegen   = $location.search()['force_regen'];
 		if(forceRegen==null)
@@ -147,7 +145,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   <td>
     <select name="playSet" ng-model="selectedPlaySet"
       ng-options="p as p.label for p in allPlaySets" 
-      ng-change="submitSet()">
+      ng-change="submitSet()" style="width:200px">
     </select>
   </td>
 </tr>
@@ -157,7 +155,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   <td>
     <select name="play" ng-model="selectedPlay"
       ng-options="p as p.label for p in allPlays" 
-      ng-change="submitPlay()">
+      ng-change="submitPlay()" style="width:200px">
     </select>
   </td>
 </tr>
