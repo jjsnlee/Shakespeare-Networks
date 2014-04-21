@@ -65,25 +65,26 @@ class ChekhovPlayCtx(RootPlayCtx):
         super(ChekhovPlayCtx, self).__init__('data/chekhov/', plays_cfg.chekhov)
 
     def _load_play(self, play, play_alias):
+        from nltk import sent_tokenize 
         fname = join(self.basedir, play.title+'.html')
         with open(fname) as f:
             x = ''.join(f.readlines())
-        #print 'initialing Chekhov play'
         curr_act = None
         #play_dialogue_ptn = '<A NAME=\d+><b>([^<]+?)\.{0,1}</b></a>(.+?(?:</body>|</blockquote>))'
         play_dialogue_ptn = '<A NAME=(\d+).(\d+).(\d+)><b>(.+?)\.</b>(.+?)</a>'
         rs = re.finditer(play_dialogue_ptn, x, re.S|re.I)
         for r in rs:
-            act, sc, lineno, speaker, dialogue = r.groups()
+            act, sc, _lineno, speaker, dialogue = r.groups()
             
-            if curr_act is None or curr_act.act != act:
+            if curr_act is None or curr_act.act != act or curr_act.scene != sc:
                 print 'act, sc:',act, sc, speaker
                 
                 curr_act = Scene(play, act, sc, None, None)
                 play.add_scene(curr_act)
 
             dialogue = dialogue.strip()
-            curr_act.add_dialogue(speaker, [dialogue])
+            dialogue = dialogue.replace('<br>', '')
+            curr_act.add_dialogue(speaker, sent_tokenize(dialogue))
 
 class ShakespearePlayCtx(RootPlayCtx):
 
@@ -155,9 +156,6 @@ class ShakespearePlayCtx(RootPlayCtx):
                 act, sc = a_s.groups()
                 Sc = play.scenes_idx[act+'_'+sc]
                 Sc.add_dialogue(speaker, lines)
-
-#        self.play_details[play_alias] = _init_graphs(play)
-#        return self.play_details[play_alias]
 
 # hack to aliases where they are known
 _repl_speakers = { 
