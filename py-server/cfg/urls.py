@@ -32,7 +32,7 @@ urlpatterns = patterns('',
     ('^(shakespeare|chekhov)/play/', shakespeare_pages.get_play_data_json),
 
     ('^imgs/.*\.png$', view_imgs),
-    ('^js/.*$', view_static),
+    ('^lib/.*$', view_static),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
