@@ -1,0 +1,157 @@
+{
+  "addTopTwenty": true, 
+  "doubleClickTopic": null, 
+  "highlightedTerm": "", 
+  "highlightedTopic": null, 
+  "normColumns": true, 
+  "numAffinityTerms": 50, 
+  "numSalientTerms": 0, 
+  "selectedTopics": {}, 
+  "sortType": "", 
+  "topicIndex": [
+    {
+      "color": "default", 
+      "id": 0, 
+      "name": "Topic 1", 
+      "position": 0, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 1, 
+      "name": "Topic 2", 
+      "position": 1, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 2, 
+      "name": "Topic 3", 
+      "position": 2, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 3, 
+      "name": "Topic 4", 
+      "position": 3, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 4, 
+      "name": "Topic 5", 
+      "position": 4, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 5, 
+      "name": "Topic 6", 
+      "position": 5, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 6, 
+      "name": "Topic 7", 
+      "position": 6, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 7, 
+      "name": "Topic 8", 
+      "position": 7, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 8, 
+      "name": "Topic 9", 
+      "position": 8, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 9, 
+      "name": "Topic 10", 
+      "position": 9, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 10, 
+      "name": "Topic 11", 
+      "position": 10, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 11, 
+      "name": "Topic 12", 
+      "position": 11, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 12, 
+      "name": "Topic 13", 
+      "position": 12, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 13, 
+      "name": "Topic 14", 
+      "position": 13, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 14, 
+      "name": "Topic 15", 
+      "position": 14, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 15, 
+      "name": "Topic 16", 
+      "position": 15, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 16, 
+      "name": "Topic 17", 
+      "position": 16, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 17, 
+      "name": "Topic 18", 
+      "position": 17, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 18, 
+      "name": "Topic 19", 
+      "position": 18, 
+      "selected": false
+    }, 
+    {
+      "color": "default", 
+      "id": 19, 
+      "name": "Topic 20", 
+      "position": 19, 
+      "selected": false
+    }
+  ], 
+  "topicLabels": [], 
+  "totalTerms": 50, 
+  "version": 0, 
+  "visibleTerms": []
+}
