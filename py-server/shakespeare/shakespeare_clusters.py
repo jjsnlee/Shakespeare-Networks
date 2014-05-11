@@ -172,20 +172,32 @@ def process_data(prc_ctx,
     return ngdf
 
 def create_lda_corpus(docs):
-#    from gensim.corpora import dictionary
-#    class MyCorpus(object):
-#        def __iter__(self):
-#            for doc in doc_content:
-#                #doc_nm = mat.index[idx]
-#                yield dictionary.doc2bow(doc)
-#    return MyCorpus()
     from gensim.corpora import Dictionary
     from gensim.utils import simple_preprocess
     prcd_docs = [simple_preprocess(doc) for doc in docs]
     dictionary = Dictionary(prcd_docs)
+
+    stopwds = _get_stopwords()
+    # remove stop words and words that appear only once
+    stop_ids = [dictionary.token2id[stopword] for stopword in stopwds
+                if stopword in dictionary.token2id]
+    once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.iteritems() if docfreq == 1]
+    dictionary.filter_tokens(stop_ids + once_ids) # remove stop words and words that appear only once
+    #dictionary.filter_tokens(stop_ids)
+    dictionary.compactify()
+    
     # odd API
     return [[dictionary.doc2bow(doc) for doc in prcd_docs], dictionary]
 
+def print_lda_results(lda, corpus, docs):
+    doc_results = lda[corpus]
+    for idx, doc_rslt in enumerate(doc_results):
+        character = docs[idx]
+        print '*'*80
+        print character
+        for topic, score in doc_rslt:
+            print '\ttopic %d, score: %s' % (topic, score)
+            print '\t', lda.show_topic(topic)
 
 def create_lda_corpus_with_mat(mat):
     class MyCorpus(object):

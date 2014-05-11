@@ -38,7 +38,7 @@ def main():
 
 def doLDA(prc_ctx):
     from gensim.models.ldamodel import LdaModel
-    _doc_titles, docs_content = sc.get_doc_content(prc_ctx)
+    doc_titles, docs_content = sc.get_doc_content(prc_ctx)
     
     import logging
     #logger = logging.getLogger('gensim.models.ldamodel')
@@ -47,9 +47,13 @@ def doLDA(prc_ctx):
     logging.basicConfig(level=logging.DEBUG)
     
     corpus, dictionary  = sc.create_lda_corpus(docs_content)
-    # trigger the id2token creation
+    # MANDATORY! to trigger the id2token creation
     dictionary[0]
-    lda = LdaModel(corpus, num_topics=10, id2word=dictionary.id2token)
+    lda = LdaModel(corpus, num_topics=10, id2word=dictionary.id2token, passes=50)
+    
+    doc_results = lda[corpus]
+
+       
     
     from gensim.models.tfidfmodel import TfidfModel
     tfidf_model = TfidfModel( )

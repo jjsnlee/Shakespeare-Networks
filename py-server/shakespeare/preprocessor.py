@@ -37,7 +37,7 @@ def transform_chekhov_plays():
                 act_nm = act_hdrs[i].text
                 content.append('<h3>%s</h3>'%act_nm)
                 for line in act:
-                    content.append(write_line(line, i+1, hard_coded_scene, lineno))
+                    content.append(write_line(line, hard_coded_scene, i+1, lineno))
         else:
             for line in hdrs[0].findNextSiblings(['p']):
                 content.append(write_line(line.text, 1, 1, lineno))
