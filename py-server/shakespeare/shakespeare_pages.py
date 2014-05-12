@@ -49,9 +49,13 @@ def get_page_html(req, play_set):
 
 def get_corpus_data_json(req, play_set):
     try:
-        path = req.path
-        info = path.split('/')[-1]
+        path_elmts = filter(None, req.path.split('/'))
+        info = None
+        if len(path_elmts) > 2:
+            info = path_elmts[2] # expect format '/shakespeare/corpus/lineCounts'
+
         print 'info:', info
+
         if info == 'lineCounts':
             play_data_ctx = get_plays_ctx(play_set)
             plays = play_data_ctx.plays
@@ -70,6 +74,15 @@ def get_corpus_data_json(req, play_set):
 
             all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
             return HttpResponse(all_json_rslt, content_type='application/json')
+
+        elif info == 'LDA':
+            which_json = path_elmts[3]
+            if which_json == 'seriated-parameters.json':
+                pass
+            elif which_json == 'filtered-parameters.json':
+                pass
+            elif which_json == 'global-term_freqs.json':
+                pass
         
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
@@ -80,11 +93,17 @@ def get_corpus_data_json(req, play_set):
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
 def get_play_data_json(req, play_set):
-    """ JSON representation for the play """
+    """ 
+    JSON representation for the play. This is for the initial load of
+    the play and its scenes, and I believe the scenes will have the basic 
+    
+    """
     try:
-        path = req.path
-        play_alias = path.split('/')[-1]
-        #print 'REQUEST:\n', play_alias
+        path_elmts = filter(None, req.path.split('/'))
+        play_alias = path_elmts[2] # expect format '/shakespeare/play/hamlet' 
+        
+        #play_alias = path.split('/')[-1]
+        print 'REQUEST:', play_alias, path_elmts
         
         # Probably want to streamline this, so we take the existing files where possible...
         play = init_play(play_set, play_alias, False)
