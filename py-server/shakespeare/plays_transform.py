@@ -19,7 +19,7 @@ def transform(play_html):
 
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
-def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False):
+def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, limit_plays=[]):
     from plays_n_graphs import get_plays_ctx, init_play
     import json
     data_ctx = get_plays_ctx('shakespeare')
@@ -28,8 +28,11 @@ def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False):
     
     basedir = DYNAMIC_ASSETS_BASEDIR
     helper.ensure_path(join(basedir, 'json'))
+    limit_plays = set(limit_plays)
     for play_alias, _ in plays:
-        print play_alias
+        if limit_plays and play_alias not in limit_plays:
+            continue
+        print 'Processing play:', play_alias
         if gen_md or gen_lines:
             play = init_play(play_set, play_alias, False)
             
