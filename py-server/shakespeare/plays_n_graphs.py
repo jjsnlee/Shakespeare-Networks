@@ -128,7 +128,9 @@ class ShakespearePlayCtx(RootPlayCtx):
             rs = re.findall(prologue_ptn3, x)
             for r in rs:
                 html, loc = r
-                play.add_scene(Scene(play, '0', '0', loc, html))    
+                play.add_scene(Scene(play, '0', '0', loc, html))
+        
+        play_repl_chars = _repl_speakers.get(play, {})  
         
         # Remove trailing : from the character's name's as well
         play_dialogue_ptn = '<A NAME=speech\d+><b>([^<]+?):{0,1}</b></a>(.+?(?:</body>|</blockquote>))'
@@ -140,7 +142,7 @@ class ShakespearePlayCtx(RootPlayCtx):
                 speaker, dialogue = r.groups()
                 
                 # FIXME hack to rename characters... 
-                speaker = _repl_speakers.get(speaker, speaker)
+                speaker = play_repl_chars.get(speaker, speaker)
                 
                 dialogue = dialogue.replace('<blockquote>',  '')
                 dialogue = dialogue.replace('</blockquote>', '')
@@ -159,9 +161,9 @@ class ShakespearePlayCtx(RootPlayCtx):
 
 # hack to aliases where they are known
 _repl_speakers = { 
-  'LEAR' : 'KING LEAR',
-  'GLOUCESTER' : 'GLOUCESTER / KING RICHARD III',
-  'KING RICHARD III' : 'GLOUCESTER / KING RICHARD III', 
+  'lear'       : { 'LEAR' : 'KING LEAR' },
+  'richardiii' : { 'GLOUCESTER' : 'GLOUCESTER / KING RICHARD III',
+                   'KING RICHARD III' : 'GLOUCESTER / KING RICHARD III' } 
 }
 
 def _init_graphs(play):
