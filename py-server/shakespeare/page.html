@@ -95,17 +95,27 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 		});
   };
   
-  $scope.sceneImgOpen = function(evt, scene) {
-    $scope.showImgPopup = 1;
+  $scope.sceneOpen = function(evt, scene) {
+    $scope.showScenePopup = 1;
     $scope.selected_graph_img_f = evt.currentTarget.src;
     $scope.characters = Object.keys(scene.char_data);
     $scope.charData   = scene.char_data;
+    
+    // probably should have a Scene key to pass on
+    /*
+    var sceneContentURL = getURLRoot()+'/play/'+$scope.selectedPlay.value+
+        scene.act+'/'+scene.scene+'/content'; 
+    $http.get(sceneContentURL).success(function(data) {
+      $scope.selected_scene_text  = 'Text';
+    });
+    */
   };
 
-  $scope.sceneImgClose = function(evt) {
-    $scope.showImgPopup = 0;
-    $scope.characters   = $scope.play_content.characters;
-    $scope.charData     = $scope.play_content.char_data;
+  $scope.sceneClose = function(evt) {
+    $scope.showScenePopup = 0;
+    $scope.characters     = $scope.play_content.characters;
+    $scope.charData       = $scope.play_content.char_data;
+    $scope.selected_scene_text  = '';
   };
   
   $scope.submitSet = function() {
@@ -117,6 +127,8 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 		var forceRegen   = $location.search()['force_regen'];
 		if(forceRegen==null)
 		  forceRegen = 0;
+		// If want to retain state around a specific Play, when switching to another, 
+		// then would need to change this so as not to do a new request.
 		$window.location.href = getURLRoot()+'/?play='+selectedPlay+'&force_regen='+forceRegen;
   };
   
@@ -177,10 +189,11 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 
 <div ng-show="selectedPlay!=null">
 
-<div my-draggable id="scenePopup" ng-show="showImgPopup===1" class="imgDiv">
+<div my-draggable id="scenePopup" ng-show="showScenePopup===1" class="imgDiv">
   <table border=0 cellpadding=0 cellspacing=0 width="100%">
-    <tr><td align="right"><button ng-click="sceneImgClose()">Close</button></td></tr>
+    <tr><td align="right"><button ng-click="sceneClose()">Close</button></td></tr>
     <tr><td><img ng-src="{{selected_graph_img_f}}" width="100%"></td></tr>
+    <tr><td>{{selected_scene_text}}</td></tr>
   </table>
 </div>
 
@@ -224,7 +237,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 	  <table border=1 cellpadding=1 cellspacing=1>
 		<tr ng-repeat="act in play_content.acts">
 		  <td ng-repeat="scene in act">
-		    <img ng-src="/{{scene.graph_img_f}}" ng-click="sceneImgOpen($event, scene)" 
+		    <img ng-src="/{{scene.graph_img_f}}" ng-click="sceneOpen($event, scene)" 
 		         width="100%" border="0" />
 		  </td>
 		</tr>
