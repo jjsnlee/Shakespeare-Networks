@@ -50,7 +50,7 @@ class ProcessCtxt:
     def __init__(self, play_ctx):
         chars_per_play = {}
         for play_alias in play_ctx.map_by_alias:
-            p = play_ctx.load_play(play_alias)
+            p = play_ctx.get_play(play_alias)
             chars_per_play[play_alias] = set(p.characters.keys())
         
         self.plays = play_ctx.play_details
