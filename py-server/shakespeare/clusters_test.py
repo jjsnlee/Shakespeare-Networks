@@ -1,5 +1,5 @@
 from unittest import TestCase
-import shakespeare_clusters as sc
+from shakespeare import clusters as sc
 from plays_n_graphs import Line, Play, Character
 import pandas as pd
 

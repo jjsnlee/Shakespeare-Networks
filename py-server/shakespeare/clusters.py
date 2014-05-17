@@ -2,12 +2,15 @@ import plays_n_graphs
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import json, sys, os
+import logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('shakespeare.shakespeare_pages')
 
 import helper
 from os.path import join
 rootdir = helper.get_root_dir()
 
-import sys
 if join(rootdir, 'py-external') not in sys.path:
     sys.path.append(join(rootdir, 'py-external'))
 
@@ -17,6 +20,9 @@ import datetime, time
 def get_ts():
     ts = time.time()
     return datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+
+def get_lda_base_dir():
+    return join(helper.get_dynamic_rootdir(), 'lda')
 
 #def get_ctx_from_plays(play_ctx):
 #    #print pformat(p.characters.values())
@@ -171,23 +177,68 @@ def process_data(prc_ctx,
     # Keep as is to have the terms on the index
     return ngdf
 
-def create_lda_corpus(docs):
-    from gensim.corpora import Dictionary
-    from gensim.utils import simple_preprocess
-    prcd_docs = [simple_preprocess(doc) for doc in docs]
-    dictionary = Dictionary(prcd_docs)
+from gensim.corpora import Dictionary
+from gensim.utils import simple_preprocess #, SaveLoad
 
-    stopwds = _get_stopwords()
-    # remove stop words and words that appear only once
-    stop_ids = [dictionary.token2id[stopword] for stopword in stopwds
-                if stopword in dictionary.token2id]
-    once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.iteritems() if docfreq == 1]
-    dictionary.filter_tokens(stop_ids + once_ids) # remove stop words and words that appear only once
-    #dictionary.filter_tokens(stop_ids)
-    dictionary.compactify()
-    
-    # odd API
-    return [[dictionary.doc2bow(doc) for doc in prcd_docs], dictionary]
+class LDAContext:
+    def __init__(self, doc_nms, doc_content, from_cache=None):
+        self.doc_names = doc_nms
+        self.doc_content = doc_content
+        
+        if from_cache is None:
+            prcd_docs = [simple_preprocess(doc) for doc in doc_content]
+            dictionary = Dictionary(prcd_docs)
+            stopwds = _get_stopwords()
+            # remove stop words and words that appear only once
+            stop_ids = [dictionary.token2id[stopword] for stopword in stopwds
+                        if stopword in dictionary.token2id]
+            once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.iteritems() if docfreq == 1]
+            dictionary.filter_tokens(stop_ids + once_ids) # remove stop words and words that appear only once
+            #dictionary.filter_tokens(stop_ids)
+            dictionary.compactify()
+            # MANDATORY! to trigger the id2token creation
+            dictionary[0]
+            self.dictionary = dictionary
+            self.corpus = [dictionary.doc2bow(doc) for doc in prcd_docs]
+        else:
+            self.dictionary = from_cache['dictionary']
+            self.corpus = from_cache['corpus']
+
+    lda_dict_fname = 'lda.dict'
+    lda_corpus_data = 'corpus_data.json'
+
+    def save_corpus(self, basedir=get_lda_base_dir()):
+        # corpus is just a BOW, do i need to save that? or just the doc_titles and content?
+        self.dictionary.save(join(basedir, self.lda_dict_fname))
+        
+        data = \
+        {
+         'corpus' : self.corpus,
+         'doc_titles'   : self.doc_titles,
+         'docs_content' : self.docs_content
+        }
+        
+        json_rslt = json.dumps(data, ensure_ascii=False, #cls=PlayJSONMetadataEncoder, 
+                               indent=True)
+        fname = join(basedir, self.lda_corpus_data) 
+        with open(fname, 'w') as fh:
+            fh.write(json_rslt)
+
+    @classmethod
+    def load_corpus(cls, basedir=get_lda_base_dir()):
+        fname = join(basedir, cls.lda_corpus_data)
+        if not os.path.exists(fname):
+            logger.warn('File path [%s] doesn\'t exist!', fname)
+        lda_json = json.loads(open(fname, 'r').read())
+        dictionary = Dictionary.load(join(basedir, cls.lda_dict_fname))
+        
+        doc_nms = lda_json['doc_titles']
+        doc_content = lda_json['docs_content']
+        lda_json['dictionary'] = dictionary
+        return LDAContext(doc_nms, doc_content, from_cache=lda_json)
+
+class LDAResults:
+    pass
 
 def print_lda_results(lda, corpus, docs):
     doc_results = lda[corpus]
