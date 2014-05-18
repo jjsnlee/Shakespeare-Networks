@@ -6,7 +6,7 @@ import argparse
 import ConfigParser
 import logging
 
-from api_utils import ModelAPI, SaliencyAPI, SeriationAPI, ClientAPI
+from api_utils import Client
 
 class PrepareDataForClient( object ):
 	"""
@@ -31,31 +31,29 @@ class PrepareDataForClient( object ):
 	    'term-info.txt'
 	"""
 	
-	def __init__( self, logging_level ):
+	def __init__(self, logging_level=logging.DEBUG):
 		self.logger = logging.getLogger( 'PrepareDataForClient' )
 		self.logger.setLevel( logging_level )
 		handler = logging.StreamHandler( sys.stderr )
 		handler.setLevel( logging_level )
 		self.logger.addHandler( handler )
 	
-	def execute( self, data_path ):
-		
-		assert data_path is not None
+	def execute( self, model, saliency, seriation ):
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
 		self.logger.info( 'Preparing data for client...'                                                     )
-		self.logger.info( '    data_path = %s', data_path                                                    )
+		#self.logger.info( '    data_path = %s', data_path                                                    )
 		
 		self.logger.info( 'Connecting to data...' )
-		self.model = ModelAPI( data_path )
-		self.saliency = SaliencyAPI( data_path )
-		self.seriation = SeriationAPI( data_path )
-		self.client = ClientAPI( data_path )
+		self.model = model
+		self.saliency = saliency
+		self.seriation = seriation
+		self.client = Client()
 		
-		self.logger.info( 'Reading data from disk...' )
-		self.model.read()
-		self.saliency.read()
-		self.seriation.read()
+# 		self.logger.info( 'Reading data from disk...' )
+# 		self.model.read()
+# 		self.saliency.read()
+# 		self.seriation.read()
 
 		self.logger.info( 'Preparing parameters for seriated matrix...' )
 		self.prepareSeriatedParameters()
@@ -64,10 +62,10 @@ class PrepareDataForClient( object ):
 		self.prepareFilteredParameters()
 		
 		self.logger.info( 'Preparing global term freqs...' )
-		self. prepareGlobalTermFreqs()
+		self.prepareGlobalTermFreqs()
 		
-		self.logger.info( 'Writing data to disk...' )
-		self.client.write()
+# 		self.logger.info( 'Writing data to disk...' )
+# 		self.client.write()
 
 	def prepareSeriatedParameters( self ):
 		topic_index = self.model.topic_index

@@ -52,7 +52,7 @@ def _get_stopwords():
     stopwds = stopwds.union(addl_stopwds)
     return stopwds
 
-class ProcessCtxt:
+class ProcessCtxt(object):
     def __init__(self, play_ctx):
         chars_per_play = {}
         for play_alias in play_ctx.map_by_alias:
@@ -180,7 +180,7 @@ def process_data(prc_ctx,
 from gensim.corpora import Dictionary
 from gensim.utils import simple_preprocess #, SaveLoad
 
-class LDAContext:
+class LDAContext(object):
     def __init__(self, doc_nms, doc_content, from_cache=None):
         self.doc_names = doc_nms
         self.doc_content = doc_content
@@ -203,7 +203,10 @@ class LDAContext:
         else:
             self.dictionary = from_cache['dictionary']
             self.corpus = from_cache['corpus']
-
+    
+    def get_terms(self):
+        return self.dictionary.id2token.values()
+ 
     lda_dict_fname = 'lda.dict'
     lda_corpus_data = 'corpus_data.json'
 
@@ -214,8 +217,8 @@ class LDAContext:
         data = \
         {
          'corpus' : self.corpus,
-         'doc_titles'   : self.doc_titles,
-         'docs_content' : self.docs_content
+         'doc_titles'   : self.doc_names,
+         'docs_content' : self.doc_content
         }
         
         json_rslt = json.dumps(data, ensure_ascii=False, #cls=PlayJSONMetadataEncoder, 
@@ -237,7 +240,7 @@ class LDAContext:
         lda_json['dictionary'] = dictionary
         return LDAContext(doc_nms, doc_content, from_cache=lda_json)
 
-class LDAResults:
+class LDAResults(object):
     pass
 
 def print_lda_results(lda, corpus, docs):

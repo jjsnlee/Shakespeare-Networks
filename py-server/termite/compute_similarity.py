@@ -7,8 +7,7 @@ import ConfigParser
 import logging
 
 import math
-import itertools
-from api_utils import TokensAPI, SimilarityAPI
+from api_utils import Similarity
 
 class ComputeSimilarity( object ):
 	"""
@@ -21,30 +20,30 @@ class ComputeSimilarity( object ):
 	DEFAULT_SLIDING_WINDOW_SIZE = 10
 	MAX_FREQ = 100.0
 	
-	def __init__( self, logging_level ):
+	def __init__(self, logging_level=logging.DEBUG):
 		self.logger = logging.getLogger( 'ComputeSimilarity' )
 		self.logger.setLevel( logging_level )
 		handler = logging.StreamHandler( sys.stderr )
 		handler.setLevel( logging_level )
 		self.logger.addHandler( handler )
 	
-	def execute( self, data_path, sliding_window_size = None ):
+	def execute( self, tokens, sliding_window_size = None ):
 		
-		assert data_path is not None
+		#assert data_path is not None
 		if sliding_window_size is None:
 			sliding_window_size = ComputeSimilarity.DEFAULT_SLIDING_WINDOW_SIZE
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
 		self.logger.info( 'Computing term similarity...'                                                     )
-		self.logger.info( '    data_path = %s', data_path                                                    )
+		#self.logger.info( '    data_path = %s', data_path                                                    )
 		self.logger.info( '    sliding_window_size = %d', sliding_window_size                                )
 		
 		self.logger.info( 'Connecting to data...' )
-		self.tokens = TokensAPI( data_path )
-		self.similarity = SimilarityAPI( data_path )
+		self.tokens = tokens #TokensAPI( data_path )
+		self.similarity = Similarity()
 		
-		self.logger.info( 'Reading data from disk...' )
-		self.tokens.read()
+# 		self.logger.info( 'Reading data from disk...' )
+# 		self.tokens.read()
 		
 		self.logger.info( 'Computing document co-occurrence...' )
 		self.computeDocumentCooccurrence()
@@ -66,8 +65,8 @@ class ComputeSimilarity( object ):
 		
 		self.combineSimilarityMatrices()
 		
-		self.logger.info( 'Writing data to disk...' )
-		self.similarity.write()
+# 		self.logger.info( 'Writing data to disk...' )
+# 		self.similarity.write()
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
 	

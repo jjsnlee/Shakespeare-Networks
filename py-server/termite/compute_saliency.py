@@ -7,7 +7,7 @@ import ConfigParser
 import logging
 
 import math
-from api_utils import ModelAPI, SaliencyAPI
+from api_utils import Saliency
 
 class ComputeSaliency( object ):
 	"""
@@ -34,35 +34,33 @@ class ComputeSaliency( object ):
 	    'topic-info.json'
 	"""
 	
-	def __init__( self, logging_level ):
+	def __init__(self, logging_level=logging.DEBUG):
 		self.logger = logging.getLogger( 'ComputeSaliency' )
 		self.logger.setLevel( logging_level )
 		handler = logging.StreamHandler( sys.stderr )
 		handler.setLevel( logging_level )
 		self.logger.addHandler( handler )
 	
-	def execute( self, data_path ):
-		
-		assert data_path is not None
+	def execute(self, model):
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
 		self.logger.info( 'Computing term saliency...'                                                       )
-		self.logger.info( '    data_path = %s', data_path                                                    )
+#		self.logger.info( '    data_path = %s', data_path                                                    )
 		
 		self.logger.info( 'Connecting to data...' )
-		self.model = ModelAPI( data_path )
-		self.saliency = SaliencyAPI( data_path )
+		self.model = model
+		self.saliency = Saliency()
 		
 		self.logger.info( 'Reading data from disk...' )
-		self.model.read()
+		#self.model.read()
 		
 		self.logger.info( 'Computing...' )
 		self.computeTopicInfo()
 		self.computeTermInfo()
 		self.rankResults()
 		
-		self.logger.info( 'Writing data to disk...' )
-		self.saliency.write()
+# 		self.logger.info( 'Writing data to disk...' )
+# 		self.saliency.write()
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
 	

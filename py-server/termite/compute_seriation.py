@@ -8,7 +8,7 @@ import logging
 
 import time
 from operator import itemgetter
-from api_utils import SaliencyAPI, SimilarityAPI, SeriationAPI
+from api_utils import Seriation
 
 class ComputeSeriation( object ):
 	"""Seriation algorithm.
@@ -22,32 +22,32 @@ class ComputeSeriation( object ):
 	
 	DEFAULT_NUM_SERIATED_TERMS = 100
 	
-	def __init__( self, logging_level ):
+	def __init__(self, logging_level=logging.DEBUG):
 		self.logger = logging.getLogger( 'ComputeSeriation' )
 		self.logger.setLevel( logging_level )
 		handler = logging.StreamHandler( sys.stderr )
 		handler.setLevel( logging_level )
 		self.logger.addHandler( handler )
 	
-	def execute( self, data_path, numSeriatedTerms = None ):
+	def execute(self, saliency, similarity, numSeriatedTerms = None ):
 		
-		assert data_path is not None
+		#assert data_path is not None
 		if numSeriatedTerms is None:
 			numSeriatedTerms = ComputeSeriation.DEFAULT_NUM_SERIATED_TERMS
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
 		self.logger.info( 'Computing term seriation...'                                                      )
-		self.logger.info( '    data_path = %s', data_path                                                    )
+		#self.logger.info( '    data_path = %s', data_path                                                    )
 		self.logger.info( '    number_of_seriated_terms = %d', numSeriatedTerms                              )
 		
 		self.logger.info( 'Connecting to data...' )
-		self.saliency = SaliencyAPI( data_path )
-		self.similarity = SimilarityAPI( data_path )
-		self.seriation = SeriationAPI( data_path )
+		self.saliency = saliency
+		self.similarity = similarity
+		self.seriation = Seriation()
 		
-		self.logger.info( 'Reading data from disk...' )
-		self.saliency.read()
-		self.similarity.read()
+# 		self.logger.info( 'Reading data from disk...' )
+# 		self.saliency.read()
+# 		self.similarity.read()
 		
 		self.logger.info( 'Reshaping saliency data...' )
 		self.reshape()
@@ -55,8 +55,8 @@ class ComputeSeriation( object ):
 		self.logger.info( 'Computing seriation...' )
 		self.compute( numSeriatedTerms )
 		
-		self.logger.info( 'Writing data to disk...' )
-		self.seriation.write()
+# 		self.logger.info( 'Writing data to disk...' )
+# 		self.seriation.write()
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
 	

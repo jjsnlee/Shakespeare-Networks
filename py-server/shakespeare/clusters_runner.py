@@ -1,9 +1,9 @@
 from shakespeare import clusters as sc
-from shakespeare.clusters import LDAContext
+from shakespeare.clusters import LDAContext, get_lda_base_dir
 import plays_n_graphs as png
 from pcibook import nmf, clusters
 from os.path import join
-import json
+#import json
 from gensim.models.ldamodel import LdaModel
 
 def main():
@@ -17,6 +17,10 @@ def main():
     #sc.preproc_data(prc_ctx, by='Play') # by='Char'
     
     prc_ctx.preproc(by='Char') # by='Char'
+    
+    lda_ctxt = LDAContext.load_corpus()
+    lda = LdaModel.load('../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda')
+    prepare_json(lda, lda_ctxt)
 
 def doLDA(prc_ctx):
     doc_titles, docs_content = sc.get_doc_content(prc_ctx)
@@ -34,74 +38,103 @@ def doLDA(prc_ctx):
     lda = run_n_save_lda(lda_ctxt)
     sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
 
-import pandas as pd
-def prepare_json(dataset_nm, which_json):
+def prepare_json(lda, lda_ctxt):
+    #lda = LdaModel.load(dataset_nm)
+    #lda_ctxt = LDAContext.load_corpus()
+    #import pandas as pd
+    #df = pd.DataFrame(lda.state.sstats, columns=lda_ctxt.get_terms())
+    from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, \
+        ComputeSeriation, PrepareDataForClient, ClientRWer, SaliencyRWer, SimilarityRWer
+    
+    basepath = get_lda_base_dir()
+    
+    model = Model()
+    model.term_topic_matrix = lda.state.sstats.T 
+    model.topic_count = lda.num_topics
+    model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(model.topic_count))
+    model.term_index = lda_ctxt.get_terms()
+    model.term_count = len(model.term_index)
+    
+    tokens = Tokens()
+    tokens.data = dict([(t, c) for t,c in zip(lda_ctxt.doc_names, lda_ctxt.doc_content)])
+    
+    saliency_calc = ComputeSaliency()
+    saliency_calc.execute(model)
+
+    saliency = saliency_calc.saliency
+    SaliencyRWer.write(saliency, basepath)
+    
+    similarity_calc = ComputeSimilarity()
+    similarity_calc.execute(tokens)
+
+    similarity = similarity_calc.similarity
+    SimilarityRWer.write(similarity, basepath)
+    
+    seriation_calc = ComputeSeriation()
+    seriation_calc.execute(saliency, similarity)
+    
+    prep_client = PrepareDataForClient()
+    prep_client.execute(model, saliency, seriation_calc.seriation)
+    
+    ClientRWer.write(prep_client, basepath)
+
     # N = topics
     # T - top terms (~400)
     # V - vocabulary
-    lda = LdaModel.load(dataset_nm)
-
-    lda_ctxt = LDAContext.load_corpus()
-    terms = lda_ctxt.dictionary.id2token.values()
-    df = pd.DataFrame(lda.state.sstats, columns=terms)
-    
-    ntopics = lda.num_topics
-
+    #ntopics = lda.num_topics
     # topicIndex (1..N)
     # topicMapping (1..N)
     # termIndex (1..T)
     # matrix (T x N)
-    topic_mapping = range(ntopics)
-    topic_index = map(lambda n: 'Topic %d' % n+1, topic_mapping) 
-
-    term_index = None
-    matrix = None
-
-    # termOrderMap (1..T)
-    # termRankMap (1..T)
-    # termDistinctivenessMap (1..V?)
-    # termSailiencyMap (1..V)
-    term_order_map = None
-    term_rank_map = None
-    term_distinctiveness_map = None
-    term_saliency_map = None
-    
-    # termFreqMap (1..V)
-    term_frequency_map = None
-    
-    if which_json == 'seriated-parameters.json':
-        json_out = \
-        {
-        'topicIndex'   : topic_index,
-        'topicMapping' : topic_mapping,
-        'termIndex'    : term_index,
-        'matrix'       : matrix
-        }
-    elif which_json == 'filtered-parameters.json':
-        json_out = \
-        {
-        'termOrderMap' : term_order_map,
-        'termRankMap'  : term_rank_map,
-        'termDistinctivenessMap' : term_distinctiveness_map,
-        'termSailiencyMap'       : term_saliency_map 
-        }
-    elif which_json == 'global-term_freqs.json':
-        # same as in the seriated-parameters.json
-        # topicIndex (1..N)
-        # topicMapping (1..N)
-        # termIndex (1..T)
-        # matrix (T x N)
-        
-        json_out = \
-        {
-        'topicIndex'   : topic_index,
-        'topicMapping' : topic_mapping,
-        'termIndex'    : term_index,
-        'matrix'       : matrix,
-        'termFreqMap'  : term_frequency_map
-        }
-    
-    return json.dumps(json_out, ensure_ascii=False)
+    #topic_mapping = range(ntopics)
+    #topic_index = map(lambda n: 'Topic %d' % n+1, topic_mapping) 
+#     term_index = None
+#     matrix = None
+# 
+#     # termOrderMap (1..T)
+#     # termRankMap (1..T)
+#     # termDistinctivenessMap (1..V?)
+#     # termSailiencyMap (1..V)
+#     term_order_map = None
+#     term_rank_map = None
+#     term_distinctiveness_map = None
+#     term_saliency_map = None
+#     
+#     # termFreqMap (1..V)
+#     term_frequency_map = None
+#     
+#     if which_json == 'seriated-parameters.json':
+#         json_out = \
+#         {
+#         'topicIndex'   : topic_index,
+#         'topicMapping' : topic_mapping,
+#         'termIndex'    : term_index,
+#         'matrix'       : matrix
+#         }
+#     elif which_json == 'filtered-parameters.json':
+#         json_out = \
+#         {
+#         'termOrderMap' : term_order_map,
+#         'termRankMap'  : term_rank_map,
+#         'termDistinctivenessMap' : term_distinctiveness_map,
+#         'termSailiencyMap'       : term_saliency_map 
+#         }
+#     elif which_json == 'global-term_freqs.json':
+#         # same as in the seriated-parameters.json
+#         # topicIndex (1..N)
+#         # topicMapping (1..N)
+#         # termIndex (1..T)
+#         # matrix (T x N)
+#         
+#         json_out = \
+#         {
+#         'topicIndex'   : topic_index,
+#         'topicMapping' : topic_mapping,
+#         'termIndex'    : term_index,
+#         'matrix'       : matrix,
+#         'termFreqMap'  : term_frequency_map
+#         }
+#     return json.dumps(json_out, ensure_ascii=False)
 
 def run_n_save_lda(lda_ctxt, ntopics=50, npasses=50):
     corpus = lda_ctxt.corpus 

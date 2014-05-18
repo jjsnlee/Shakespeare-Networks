@@ -1,91 +1,139 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import re
-import json
+# import re
+# import json
 from io_utils import CheckAndMakeDirs
 from io_utils import ReadAsList, ReadAsVector, ReadAsMatrix, ReadAsSparseVector, ReadAsSparseMatrix, ReadAsJson
 from io_utils import WriteAsList, WriteAsVector, WriteAsMatrix, WriteAsSparseVector, WriteAsSparseMatrix, WriteAsJson, WriteAsTabDelimited
 from utf8_utils import UnicodeReader, UnicodeWriter
 
-class DocumentsAPI( object ):
+class Documents( object ):
 	ACCEPTABLE_FORMATS = frozenset( [ 'file' ] )
-	
 	def __init__( self, format, path ):
-		assert format in DocumentsAPI.ACCEPTABLE_FORMATS
+		assert format in Documents.ACCEPTABLE_FORMATS
 		self.format = format
-		self.path = path
-		self.data = []
-	
-	def read( self ):
 		self.data = {}
-		filename = self.path
-		with open( filename, 'r' ) as f:
-			lines = f.read().decode( 'utf-8', 'ignore' ).splitlines()
-			for line in lines:
-				docID, docContent = line.split( '\t' )
-				self.data[ docID ] = docContent
+	
+class Tokens(object):
+	def __init__(self):
+		self.data = {}
 
-class TokensAPI( object ):
-	SUBFOLDER = 'tokens'
-	TOKENS = 'tokens.txt'
-	
-	def __init__( self, path ):
-		self.path = '{}/{}/'.format( path, TokensAPI.SUBFOLDER )
-		self.data = {}
-	
-	def read( self ):
-		self.data = {}
-		filename = self.path + TokensAPI.TOKENS
-		with open( filename, 'r' ) as f:
-			lines = UnicodeReader( f )
-			for ( docID, docTokens ) in lines:
-				self.data[ docID ] = docTokens.split( ' ' )
-	
-	def write( self ):
-		CheckAndMakeDirs( self.path )
-		filename = self.path + TokensAPI.TOKENS
-		with open( filename, 'w' ) as f:
-			writer = UnicodeWriter( f )
-			for ( docID, docTokens ) in self.data.iteritems():
-				writer.writerow( [ docID, ' '.join(docTokens) ] )
-
-class ModelAPI( object ):
-	SUBFOLDER = 'model'
-	TOPIC_INDEX = 'topic-index.txt'
-	TERM_INDEX = 'term-index.txt'
-	TERM_TOPIC_MATRIX = 'term-topic-matrix.txt'
-	
-	def __init__( self, path ):
-		self.path = '{}/{}/'.format( path, ModelAPI.SUBFOLDER )
+class Model(object):
+	def __init__(self):
 		self.topic_index = []
 		self.term_index = []
 		self.topic_count = 0
 		self.term_count = 0
 		self.term_topic_matrix = []
-	
-	def read( self ):
-		self.topic_index = ReadAsList( self.path + ModelAPI.TOPIC_INDEX )
-		self.term_index = ReadAsList( self.path + ModelAPI.TERM_INDEX )
-		self.term_topic_matrix = ReadAsMatrix( self.path + ModelAPI.TERM_TOPIC_MATRIX )
-		self.verify()
-	
-	def verify( self ):
-		self.topic_count = len( self.topic_index )
-		self.term_count = len( self.term_index )
-		
-		assert self.term_count == len( self.term_topic_matrix )
-		for row in self.term_topic_matrix:
-			assert self.topic_count == len(row)
-	
-	def write( self ):
-		self.verify()
-		CheckAndMakeDirs( self.path )
-		WriteAsList( self.topic_index, self.path + ModelAPI.TOPIC_INDEX )
-		WriteAsList( self.term_index, self.path + ModelAPI.TERM_INDEX )
-		WriteAsMatrix( self.term_topic_matrix, self.path + ModelAPI.TERM_TOPIC_MATRIX )
 
-class SaliencyAPI( object ):
+class Saliency(object):
+	def __init__(self):
+		self.term_info = {}
+		self.topic_info = {}
+
+class Similarity(object):
+	def __init__(self):
+		self.document_occurrence = {}
+		self.document_cooccurrence = {}
+		self.window_occurrence = {}
+		self.window_cooccurrence = {}
+		self.unigram_counts = {}
+		self.bigram_counts = {}
+		self.document_g2 = {}
+		self.window_g2 = {}
+		self.collcation_g2 = {}
+		self.combined_g2 = {}
+
+class Client(object):
+	def __init__(self):
+		self.seriated_parameters = {}
+		self.filtered_parameters = {}
+		self.global_term_freqs = {}
+
+class Seriation(object):
+	def __init__(self):
+		self.term_ordering = []
+		self.term_iter_index = []
+
+class DocumentRWer(object):
+	@classmethod
+	def read(cls, path):
+		#self.data = {}
+		docs = Documents()
+		filename = path
+		with open( filename, 'r' ) as f:
+			lines = f.read().decode( 'utf-8', 'ignore' ).splitlines()
+			for line in lines:
+				docID, docContent = line.split( '\t' )
+				docs.data[ docID ] = docContent
+		return docs
+
+def dumpObjects(path, tokens, model, saliency, similarity, seriation):
+	TokensRWer.write(path, tokens)
+	ModelRWer.write(path, model)
+	SaliencyRWer.write(path, saliency)
+	SimilarityRWer.write(path, similarity)
+	SeriationRWer.write(path, seriation)
+
+class TokensRWer(object):
+	SUBFOLDER = 'tokens'
+	TOKENS = 'tokens.txt'
+	@classmethod
+	def read(cls, path):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER)
+		tkns = Tokens()
+		tkns.data = {}
+		filename = tkns.path + cls.TOKENS
+		with open( filename, 'r' ) as f:
+			lines = UnicodeReader( f )
+			for ( docID, docTokens ) in lines:
+				tkns.data[ docID ] = docTokens.split( ' ' )
+	
+	@classmethod
+	def write(cls, path, tokens):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		CheckAndMakeDirs( path )
+		filename = path + cls.TOKENS
+		with open( filename, 'w' ) as f:
+			writer = UnicodeWriter( f )
+			for ( docID, docTokens ) in tokens.data.iteritems():
+				writer.writerow( [ docID, ' '.join(docTokens) ] )
+
+class ModelRWer(object):
+	SUBFOLDER = 'model'
+	TOPIC_INDEX = 'topic-index.txt'
+	TERM_INDEX = 'term-index.txt'
+	TERM_TOPIC_MATRIX = 'term-topic-matrix.txt'
+	
+	@classmethod
+	def read(cls, path):
+		path = '{}/{}/'.format(path, cls.SUBFOLDER )
+		model = Model()
+		model.topic_index = ReadAsList( path + cls.TOPIC_INDEX )
+		model.term_index = ReadAsList( path + cls.TERM_INDEX )
+		model.term_topic_matrix = ReadAsMatrix( path + cls.TERM_TOPIC_MATRIX )
+		cls.verify(model)
+		return model
+	
+	@classmethod
+	def verify(cls, model):
+		model.topic_count = len( model.topic_index )
+		model.term_count = len( model.term_index )
+		assert model.term_count == len( model.term_topic_matrix )
+		for row in model.term_topic_matrix:
+			assert model.topic_count == len(row)
+	
+	@classmethod
+	def write(cls, model, path):
+		cls.verify(model)
+		path = '{}/{}/'.format(path, cls.SUBFOLDER )
+		CheckAndMakeDirs( path )
+		WriteAsList( model.topic_index, path + cls.TOPIC_INDEX )
+		WriteAsList( model.term_index, path + cls.TERM_INDEX )
+		WriteAsMatrix( model.term_topic_matrix, path + cls.TERM_TOPIC_MATRIX )
+		
+class SaliencyRWer(object):
 	SUBFOLDER = 'saliency'
 	TOPIC_WEIGHTS = 'topic-info.json'
 	TOPIC_WEIGHTS_TXT = 'topic-info.txt'
@@ -93,24 +141,23 @@ class SaliencyAPI( object ):
 	TERM_SALIENCY = 'term-info.json'
 	TERM_SALIENCY_TXT = 'term-info.txt'
 	TERM_SALIENCY_FIELDS = [ 'topic', 'weight' ]
-	
-	def __init__( self, path ):
-		self.path = '{}/{}/'.format( path, SaliencyAPI.SUBFOLDER )
-		self.term_info = {}
-		self.topic_info = {}
-	
-	def read( self ):
-		self.term_info = ReadAsJson( self.path + SaliencyAPI.TERM_SALIENCY )
-		self.topic_info = ReadAsJson( self.path + SaliencyAPI.TOPIC_WEIGHTS )
-	
-	def write( self ):
-		CheckAndMakeDirs( self.path )
-		WriteAsJson( self.term_info, self.path + SaliencyAPI.TERM_SALIENCY )
-		WriteAsTabDelimited( self.term_info, self.path + SaliencyAPI.TERM_SALIENCY_TXT, SaliencyAPI.TOPIC_WEIGHTS_FIELDS )
-		WriteAsJson( self.topic_info, self.path + SaliencyAPI.TOPIC_WEIGHTS )
-		WriteAsTabDelimited( self.topic_info, self.path + SaliencyAPI.TOPIC_WEIGHTS_TXT, SaliencyAPI.TERM_SALIENCY_FIELDS )
+	@classmethod
+	def read( cls, path ):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		saliency = Saliency()
+		saliency.term_info = ReadAsJson( path + cls.TERM_SALIENCY )
+		saliency.topic_info = ReadAsJson( path + cls.TOPIC_WEIGHTS )
+		return saliency
+	@classmethod
+	def write( cls, saliency, path ):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		CheckAndMakeDirs( path )
+		WriteAsJson( saliency.term_info, path + cls.TERM_SALIENCY )
+		WriteAsTabDelimited( saliency.term_info, path + cls.TERM_SALIENCY_TXT, cls.TOPIC_WEIGHTS_FIELDS )
+		WriteAsJson( saliency.topic_info, path + cls.TOPIC_WEIGHTS )
+		WriteAsTabDelimited( saliency.topic_info, path + cls.TOPIC_WEIGHTS_TXT, cls.TERM_SALIENCY_FIELDS )
 
-class SimilarityAPI( object ):
+class SimilarityRWer(object):
 	SUBFOLDER = 'similarity'
 	DOCUMENT_OCCURRENCE = 'document-occurrence.txt'
 	DOCUMENT_COOCCURRENCE = 'document-cooccurrence.txt'
@@ -122,83 +169,71 @@ class SimilarityAPI( object ):
 	WINDOW_G2 = 'window-g2.txt'
 	COLLOCATAPIN_G2 = 'collocation-g2.txt'
 	COMBINED_G2 = 'combined-g2.txt'
-	
-	def __init__( self, path ):
-		self.path = '{}/{}/'.format( path, SimilarityAPI.SUBFOLDER )
-		self.document_occurrence = {}
-		self.document_cooccurrence = {}
-		self.window_occurrence = {}
-		self.window_cooccurrence = {}
-		self.unigram_counts = {}
-		self.bigram_counts = {}
-		self.document_g2 = {}
-		self.window_g2 = {}
-		self.collcation_g2 = {}
-		self.combined_g2 = {}
-	
-	def read( self ):
-#		self.document_occurrence = ReadAsSparseVector( self.path + SimilarityAPI.DOCUMENT_OCCURRENCE )
-#		self.document_cooccurrence = ReadAsSparseMatrix( self.path + SimilarityAPI.DOCUMENT_COOCCURRENCE )
-#		self.window_occurrence = ReadAsSparseVector( self.path + SimilarityAPI.WINDOW_OCCURRENCE )
-#		self.window_cooccurrence = ReadAsSparseMatrix( self.path + SimilarityAPI.WINDOW_COOCCURRENCE )
-#		self.unigram_counts = ReadAsSparseVector( self.path + SimilarityAPI.UNIGRAM_COUNTS )
-#		self.bigram_counts = ReadAsSparseMatrix( self.path + SimilarityAPI.BIGRAM_COUNTS )
-#		self.document_g2 = ReadAsSparseMatrix( self.path + SimilarityAPI.DOCUMENT_G2 )
-#		self.window_g2 = ReadAsSparseMatrix( self.path + SimilarityAPI.WINDOW_G2 )
-#		self.collocation_g2 = ReadAsSparseMatrix( self.path + SimilarityAPI.COLLOCATAPIN_G2 )
-		self.combined_g2 = ReadAsSparseMatrix( self.path + SimilarityAPI.COMBINED_G2 )
-	
-	def write( self ):
-		CheckAndMakeDirs( self.path )
-#		WriteAsSparseVector( self.document_occurrence, self.path + SimilarityAPI.DOCUMENT_OCCURRENCE )
-#		WriteAsSparseMatrix( self.document_cooccurrence, self.path + SimilarityAPI.DOCUMENT_COOCCURRENCE )
-#		WriteAsSparseVector( self.window_occurrence, self.path + SimilarityAPI.WINDOW_OCCURRENCE )
-#		WriteAsSparseMatrix( self.window_cooccurrence, self.path + SimilarityAPI.WINDOW_COOCCURRENCE )
-#		WriteAsSparseVector( self.unigram_counts, self.path + SimilarityAPI.UNIGRAM_COUNTS )
-#		WriteAsSparseMatrix( self.bigram_counts, self.path + SimilarityAPI.BIGRAM_COUNTS )
-#		WriteAsSparseMatrix( self.document_g2, self.path + SimilarityAPI.DOCUMENT_G2 )
-#		WriteAsSparseMatrix( self.window_g2, self.path + SimilarityAPI.WINDOW_G2 )
-#		WriteAsSparseMatrix( self.collocation_g2, self.path + SimilarityAPI.COLLOCATAPIN_G2 )
-		WriteAsSparseMatrix( self.combined_g2, self.path + SimilarityAPI.COMBINED_G2 )
+	@classmethod
+	def read( cls, path ):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		similarity = Similarity()
+#		similarity.document_occurrence = ReadAsSparseVector( path + cls.DOCUMENT_OCCURRENCE )
+#		similarity.document_cooccurrence = ReadAsSparseMatrix( path + cls.DOCUMENT_COOCCURRENCE )
+#		similarity.window_occurrence = ReadAsSparseVector( path + cls.WINDOW_OCCURRENCE )
+#		similarity.window_cooccurrence = ReadAsSparseMatrix( path + cls.WINDOW_COOCCURRENCE )
+#		similarity.unigram_counts = ReadAsSparseVector( path + cls.UNIGRAM_COUNTS )
+#		similarity.bigram_counts = ReadAsSparseMatrix( path + cls.BIGRAM_COUNTS )
+#		similarity.document_g2 = ReadAsSparseMatrix( path + cls.DOCUMENT_G2 )
+#		similarity.window_g2 = ReadAsSparseMatrix( path + cls.WINDOW_G2 )
+#		similarity.collocation_g2 = ReadAsSparseMatrix( path + cls.COLLOCATAPIN_G2 )
+		similarity.combined_g2 = ReadAsSparseMatrix( path + cls.COMBINED_G2 )
+		return similarity
+	@classmethod
+	def write( cls, similarity, path ):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		CheckAndMakeDirs( path )
+#		WriteAsSparseVector( similarity.document_occurrence, path + cls.DOCUMENT_OCCURRENCE )
+#		WriteAsSparseMatrix( similarity.document_cooccurrence, path + cls.DOCUMENT_COOCCURRENCE )
+#		WriteAsSparseVector( similarity.window_occurrence, path + cls.WINDOW_OCCURRENCE )
+#		WriteAsSparseMatrix( similarity.window_cooccurrence, path + cls.WINDOW_COOCCURRENCE )
+#		WriteAsSparseVector( similarity.unigram_counts, path + cls.UNIGRAM_COUNTS )
+#		WriteAsSparseMatrix( similarity.bigram_counts, path + cls.BIGRAM_COUNTS )
+#		WriteAsSparseMatrix( similarity.document_g2, path + cls.DOCUMENT_G2 )
+#		WriteAsSparseMatrix( similarity.window_g2, path + cls.WINDOW_G2 )
+#		WriteAsSparseMatrix( similarity.collocation_g2, path + cls.COLLOCATAPIN_G2 )
+		WriteAsSparseMatrix( similarity.combined_g2, path + cls.COMBINED_G2 )
 
-class SeriationAPI( object ):
+class SeriationRWer(object):
 	SUBFOLDER = 'seriation'
 	TERM_ORDERING = 'term-ordering.txt'
 	TERM_ITER_INDEX = 'term-iter-index.txt'
-	
-	def __init__( self, path ):
-		self.path = '{}/{}/'.format( path, SeriationAPI.SUBFOLDER )
-		self.term_ordering = []
-		self.term_iter_index = []
-	
-	def read( self ):
-		self.term_ordering = ReadAsList( self.path + SeriationAPI.TERM_ORDERING )
-		self.term_iter_index = ReadAsList( self.path + SeriationAPI.TERM_ITER_INDEX )
-	
-	def write( self ):
-		CheckAndMakeDirs( self.path )
-		WriteAsList( self.term_ordering, self.path + SeriationAPI.TERM_ORDERING )
-		WriteAsList( self.term_iter_index, self.path + SeriationAPI.TERM_ITER_INDEX )
+	@classmethod	
+	def read( cls, path ):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		ser = Seriation()
+		ser.term_ordering = ReadAsList( cls.path + cls.TERM_ORDERING )
+		ser.term_iter_index = ReadAsList( cls.path + cls.TERM_ITER_INDEX )
+		return ser
+	@classmethod
+	def write( cls, ser, path ):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		CheckAndMakeDirs( path )
+		WriteAsList( ser.term_ordering, path + cls.TERM_ORDERING )
+		WriteAsList( ser.term_iter_index, path + cls.TERM_ITER_INDEX )
 
-class ClientAPI( object ):
+class ClientRWer(object):
 	SUBFOLDER = 'public_html/data'
 	SERIATED_PARAMETERS = 'seriated-parameters.json'
 	FILTERED_PARAMETERS = 'filtered-parameters.json'
 	GLOBAL_TERM_FREQS = 'global-term-freqs.json'
-	
-	def __init__( self, path ):
-		self.path = '{}/{}/'.format( path, ClientAPI.SUBFOLDER )
-		self.seriated_parameters = {}
-		self.filtered_parameters = {}
-		self.global_term_freqs = {}
-	
-	def read( self ):
-		self.seriated_parameters = ReadAsJson( self.path + ClientAPI.SERIATED_PARAMETERS )
-		self.filtered_parameters = ReadAsJson( self.path + ClientAPI.FILTERED_PARAMETERS )
-		self.global_term_freqs = ReadAsJson( self.path + ClientAPI.GLOBAL_TERM_FREQS )
-	
-	def write( self ):
-		CheckAndMakeDirs( self.path )
-		WriteAsJson( self.seriated_parameters, self.path + ClientAPI.SERIATED_PARAMETERS )
-		WriteAsJson( self.filtered_parameters, self.path + ClientAPI.FILTERED_PARAMETERS )
-		WriteAsJson( self.global_term_freqs, self.path + ClientAPI.GLOBAL_TERM_FREQS )
+	@classmethod
+	def read( cls, path ):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		client = Client()
+		client.seriated_parameters = ReadAsJson( path + cls.SERIATED_PARAMETERS )
+		client.filtered_parameters = ReadAsJson( path + cls.FILTERED_PARAMETERS )
+		client.global_term_freqs = ReadAsJson( path + cls.GLOBAL_TERM_FREQS )
+		return client
+	@classmethod
+	def write( cls, client, path ):
+		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		CheckAndMakeDirs( path )
+		WriteAsJson( client.seriated_parameters, path + cls.SERIATED_PARAMETERS )
+		WriteAsJson( client.filtered_parameters, path + cls.FILTERED_PARAMETERS )
+		WriteAsJson( client.global_term_freqs, path + cls.GLOBAL_TERM_FREQS )
