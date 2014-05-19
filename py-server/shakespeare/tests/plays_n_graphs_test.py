@@ -1,12 +1,12 @@
 from unittest import TestCase
-from plays_n_graphs import Play, Scene, _init_graphs
+from shakespeare.plays_n_graphs import Play, Scene, _init_graphs
 import networkx as nx
 
 nolines = lambda c: ['Line %i' % (i+1) for i in range(c)]
 
 def plot_test_graph(key, graph):
     import matplotlib.pyplot as plt
-    from plays_n_graphs import draw_graph
+    from shakespeare.plays_n_graphs import draw_graph
     plt.figure(figsize=(8,5))
     draw_graph(key, graph)
     plt.show()

@@ -1,6 +1,6 @@
 from unittest import TestCase
 from shakespeare import clusters as sc
-from plays_n_graphs import Line, Play, Character
+from shakespeare.plays_n_graphs import Line, Play, Character
 import pandas as pd
 
 class ShakespeareClustersTest(TestCase):
