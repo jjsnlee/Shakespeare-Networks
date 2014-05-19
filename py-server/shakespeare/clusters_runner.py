@@ -20,7 +20,6 @@ def main():
     
     lda_ctxt = LDAContext.load_corpus()
     lda = LdaModel.load('../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda')
-    #prepare_json(lda, lda_ctxt)
     td = TermiteData(lda, lda_ctxt)
     #td.saliency()
     #td.similarity()
@@ -62,7 +61,7 @@ class TermiteData(object):
         self.model = model
 
         tokens = Tokens()
-        tokens.data = dict(self.docs_zipped())
+        tokens.data = dict(self.docs_tokenized_zipped())
         self.tokens = tokens
         
         self._saliency = None
@@ -70,7 +69,10 @@ class TermiteData(object):
         self._seriation = None
     
     def docs_zipped(self):
-        return [(t, c) for t,c in zip(self.lda_ctxt.doc_names, self.lda_ctxt.doc_content)]
+        return [(t, c) for t,c in zip(self.lda_ctxt.doc_names, self.lda_ctxt.doc_contents)]
+
+    def docs_tokenized_zipped(self):
+        return [(t, c) for t,c in zip(self.lda_ctxt.doc_names, self.lda_ctxt.doc_contents_tokenized)]
 
     @property
     def saliency(self):

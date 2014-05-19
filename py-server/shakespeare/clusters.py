@@ -181,13 +181,13 @@ from gensim.corpora import Dictionary
 from gensim.utils import simple_preprocess #, SaveLoad
 
 class LDAContext(object):
-    def __init__(self, doc_nms, doc_content, from_cache=None):
+    def __init__(self, doc_nms, doc_contents, from_cache=None):
         self.doc_names = doc_nms
-        self.doc_content = doc_content
+        self.doc_contents = doc_contents
+        self.doc_contents_tokenized = [simple_preprocess(doc) for doc in doc_contents]
         
         if from_cache is None:
-            prcd_docs = [simple_preprocess(doc) for doc in doc_content]
-            dictionary = Dictionary(prcd_docs)
+            dictionary = Dictionary(self.doc_contents_tokenized)
             stopwds = _get_stopwords()
             # remove stop words and words that appear only once
             stop_ids = [dictionary.token2id[stopword] for stopword in stopwds
@@ -199,7 +199,7 @@ class LDAContext(object):
             # MANDATORY! to trigger the id2token creation
             dictionary[0]
             self.dictionary = dictionary
-            self.corpus = [dictionary.doc2bow(doc) for doc in prcd_docs]
+            self.corpus = [dictionary.doc2bow(doc) for doc in self.doc_contents_tokenized]
         else:
             self.dictionary = from_cache['dictionary']
             self.corpus = from_cache['corpus']
@@ -218,7 +218,7 @@ class LDAContext(object):
         {
          'corpus' : self.corpus,
          'doc_titles'   : self.doc_names,
-         'docs_content' : self.doc_content
+         'doc_contents' : self.doc_contents
         }
         
         json_rslt = json.dumps(data, ensure_ascii=False, #cls=PlayJSONMetadataEncoder, 
@@ -236,9 +236,9 @@ class LDAContext(object):
         dictionary = Dictionary.load(join(basedir, cls.lda_dict_fname))
         
         doc_nms = lda_json['doc_titles']
-        doc_content = lda_json['docs_content']
+        doc_contents = lda_json['doc_contents']
         lda_json['dictionary'] = dictionary
-        return LDAContext(doc_nms, doc_content, from_cache=lda_json)
+        return LDAContext(doc_nms, doc_contents, from_cache=lda_json)
 
 class LDAResults(object):
     pass
