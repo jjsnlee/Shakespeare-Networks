@@ -20,7 +20,12 @@ def main():
     
     lda_ctxt = LDAContext.load_corpus()
     lda = LdaModel.load('../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda')
-    prepare_json(lda, lda_ctxt)
+    #prepare_json(lda, lda_ctxt)
+    td = TermiteData(lda, lda_ctxt)
+    #td.saliency()
+    #td.similarity()
+    td.seriation()
+    
 
 def doLDA(prc_ctx):
     doc_titles, docs_content = sc.get_doc_content(prc_ctx)
@@ -38,45 +43,69 @@ def doLDA(prc_ctx):
     lda = run_n_save_lda(lda_ctxt)
     sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
 
-def prepare_json(lda, lda_ctxt):
+from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, \
+    ComputeSeriation, PrepareDataForClient, \
+    ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer
+
+class TermiteData(object):
+    def __init__(self, lda, lda_ctxt, from_cache=False):
+        self.lda = lda
+        self.lda_ctxt = lda_ctxt
+        self.basepath = get_lda_base_dir()
+
+        model = Model()
+        model.term_topic_matrix = lda.state.sstats.T 
+        model.topic_count = lda.num_topics
+        model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(model.topic_count))
+        model.term_index = lda_ctxt.get_terms()
+        model.term_count = len(model.term_index)
+        self.model = model
+
+        tokens = Tokens()
+        tokens.data = dict(self.docs_zipped())
+        self.tokens = tokens
+        
+        self._saliency = None
+        self._similarity = None
+        self._seriation = None
+    
+    def docs_zipped(self):
+        return [(t, c) for t,c in zip(self.lda_ctxt.doc_names, self.lda_ctxt.doc_content)]
+
+    @property
+    def saliency(self):
+        if self._saliency is None:
+            saliency_calc = ComputeSaliency()
+            saliency_calc.execute(self.model)
+            self._saliency = saliency_calc.saliency
+            SaliencyRWer.write(self._saliency, self.basepath) 
+        return self._saliency
+    @property
+    def similarity(self):
+        if self._similarity is None:
+            similarity_calc = ComputeSimilarity()
+            similarity_calc.execute(self.tokens)
+            self._similarity = similarity_calc.similarity
+            SimilarityRWer.write(self._similarity, self.basepath)
+        return self._similarity
+    @property
+    def seriation(self):
+        if self._seriation is None:
+            seriation_calc = ComputeSeriation()
+            seriation_calc.execute(self.saliency, self.similarity)
+            self._seriation = seriation_calc.seriation
+            SeriationRWer.write()
+        return self._seriation
+    def data_for_client(self):
+        prep_client = PrepareDataForClient()
+        prep_client.execute(self.model, self.saliency, self.seriation)
+        ClientRWer.write(prep_client, self.basepath)
+
+#def prepare_json(lda, lda_ctxt):
     #lda = LdaModel.load(dataset_nm)
     #lda_ctxt = LDAContext.load_corpus()
     #import pandas as pd
     #df = pd.DataFrame(lda.state.sstats, columns=lda_ctxt.get_terms())
-    from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, \
-        ComputeSeriation, PrepareDataForClient, ClientRWer, SaliencyRWer, SimilarityRWer
-    
-    basepath = get_lda_base_dir()
-    
-    model = Model()
-    model.term_topic_matrix = lda.state.sstats.T 
-    model.topic_count = lda.num_topics
-    model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(model.topic_count))
-    model.term_index = lda_ctxt.get_terms()
-    model.term_count = len(model.term_index)
-    
-    tokens = Tokens()
-    tokens.data = dict([(t, c) for t,c in zip(lda_ctxt.doc_names, lda_ctxt.doc_content)])
-    
-    saliency_calc = ComputeSaliency()
-    saliency_calc.execute(model)
-
-    saliency = saliency_calc.saliency
-    SaliencyRWer.write(saliency, basepath)
-    
-    similarity_calc = ComputeSimilarity()
-    similarity_calc.execute(tokens)
-
-    similarity = similarity_calc.similarity
-    SimilarityRWer.write(similarity, basepath)
-    
-    seriation_calc = ComputeSeriation()
-    seriation_calc.execute(saliency, similarity)
-    
-    prep_client = PrepareDataForClient()
-    prep_client.execute(model, saliency, seriation_calc.seriation)
-    
-    ClientRWer.write(prep_client, basepath)
 
     # N = topics
     # T - top terms (~400)
