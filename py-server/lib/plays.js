@@ -201,13 +201,13 @@ function createColumnChart(containerName, categories, singleSeries, title, YAxis
 		title: {
 		  text: title
 		},
-    xAxis: {
-      categories : categories,
-      labels : {
-        rotation: -45,
-        align : 'right'
-      },
-    },
+		xAxis: {
+		  categories : categories,
+		  labels : {
+		    rotation: -45,
+		    align : 'right'
+		  },
+		},
 		yAxis: {
 			min: 0,
 			title: {
