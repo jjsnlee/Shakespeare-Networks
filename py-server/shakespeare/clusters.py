@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import json, sys, os
 import logging
-from itertools import chain
+from gensim.models.ldamodel import LdaModel
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger('shakespeare.shakespeare_pages')
@@ -242,10 +242,20 @@ class LDAContext(object):
         lda_json['dictionary'] = dictionary
         return LDAContext(doc_nms, doc_contents, from_cache=lda_json)
 
+CACHED_LDA_CTXS = {}
+def get_lda_ctxt(lda_key, reload_ctx=False):
+    global CACHED_LDA_CTXS
+    if lda_key not in CACHED_LDA_CTXS or reload_ctx:
+        lda_ctxt = LDAContext.load_corpus()
+        lda = LdaModel.load(lda_key)
+        lda_result = LDAResult(lda, lda_ctxt)
+        CACHED_LDA_CTXS[lda_key] = lda_result
+    return CACHED_LDA_CTXS[lda_key]
+
 # def get_docs_per_topic(lda, lda_ctxt):
 #     # http://stackoverflow.com/questions/20984841/topic-distribution-how-do-we-see-which-document-belong-to-which-topic-after-doi
 #     corpus_scores = lda[lda_ctxt.corpus]
-#     
+#     from itertools import chain
 #     # Find the threshold, let's set the threshold to be 1/#clusters,
 #     # To prove that the threshold is sane, we average the sum of all probabilities:
 #     all_scores = list(chain(*[[score for _topic, score in topic] \
@@ -262,7 +272,7 @@ class LDAContext(object):
 #     cluster2 = [j for i,j in zip(corpus_scores, doc_nms) if i[1][1] > threshold]
 #     cluster3 = [j for i,j in zip(corpus_scores, doc_nms) if i[2][1] > threshold]
 
-class LDAResults(object):
+class LDAResult(object):
     def __init__(self, lda, lda_ctxt):
         self.lda = lda 
         self.lda_ctxt = lda_ctxt
@@ -306,7 +316,6 @@ def create_lda_corpus_with_mat(mat):
     return MyCorpus()
 
 def runs_lda(corpus):
-    from gensim.models.ldamodel import LdaModel
     lda = LdaModel(corpus, num_topics=10)
     return lda
 

@@ -1,26 +1,27 @@
 from shakespeare import clusters as sc
-from shakespeare.clusters import LDAContext, get_lda_base_dir
+from shakespeare.clusters import LDAContext, LDAResult, get_lda_base_dir, get_lda_ctxt
 import plays_n_graphs as png
 from pcibook import nmf, clusters
 from os.path import join
 #import json
 from gensim.models.ldamodel import LdaModel
 
-def main():
+def main(train_new=False):
     """
     maybe:
         - reduce the sample size by removing characters with x # of lines
     """
-    play_ctx = png.get_plays_ctx('shakespeare')
     
-    prc_ctx = sc.ProcessCtxt(play_ctx)
-    #sc.preproc_data(prc_ctx, by='Play') # by='Char'
-    
-    prc_ctx.preproc(by='Char') # by='Char'
-    
-    lda_ctxt = LDAContext.load_corpus()
-    lda = LdaModel.load('../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda')
-    td = TermiteData(lda, lda_ctxt)
+    if train_new:
+        play_ctx = png.get_plays_ctx('shakespeare')
+        prc_ctx = sc.ProcessCtxt(play_ctx)
+        prc_ctx.preproc(by='Char') # by='Char'
+        lda_rslt = doLDA(prc_ctx)
+    else:
+        lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
+        lda_rslt = get_lda_ctxt(lda_key)
+
+    td = TermiteData(lda_rslt)
     #td.saliency()
     #td.similarity()
     #td.seriation()
@@ -41,14 +42,18 @@ def doLDA(prc_ctx):
     
     # Do this N number of times
     lda = run_n_save_lda(lda_ctxt)
-    sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
+    return LDAResult(lda, lda_ctxt)
+    #sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
 
 from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, \
     ComputeSeriation, PrepareDataForClient, \
     ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer
 
 class TermiteData(object):
-    def __init__(self, lda, lda_ctxt, from_cache=False):
+    def __init__(self, lda_rslt, from_cache=False):
+        lda = lda_rslt.lda
+        lda_ctxt = lda.lda_ctxt
+        
         self.lda = lda
         self.lda_ctxt = lda_ctxt
         self.basepath = get_lda_base_dir()

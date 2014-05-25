@@ -4,6 +4,7 @@ from os.path import join
 import helper
 from plays_n_graphs import get_plays_ctx, init_play
 from plays_transform import PlayJSONMetadataEncoder
+from clusters import get_lda_ctxt
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
@@ -55,9 +56,9 @@ def get_corpus_data_json(req, play_set):
             info = path_elmts[2] # expect format '/shakespeare/corpus/lineCounts'
 
         print 'info:', info
+        play_data_ctx = get_plays_ctx(play_set)
 
         if info == 'lineCounts':
-            play_data_ctx = get_plays_ctx(play_set)
             plays = play_data_ctx.plays
 
             all_plays_json = {}
@@ -75,14 +76,24 @@ def get_corpus_data_json(req, play_set):
             all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
             return HttpResponse(all_json_rslt, content_type='application/json')
 
-        elif info == 'LDA':
-            which_json = path_elmts[3]
-            if which_json == 'seriated-parameters.json':
-                pass
-            elif which_json == 'filtered-parameters.json':
-                pass
-            elif which_json == 'global-term_freqs.json':
-                pass
+        elif info == 'ldatopics':
+            which_topic = path_elmts[3]
+
+            print 'which_topic:', which_topic
+            lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
+            lda_rslt = get_lda_ctxt(lda_key)
+            topic_info = lda_rslt.docs_per_topic[int(which_topic)]
+            print 'topic_info:', topic_info
+            
+            topic_json = json.dumps(topic_info, ensure_ascii=False)
+            return HttpResponse(topic_json, content_type='application/json')
+            
+#             if which_json == 'seriated-parameters.json':
+#                 pass
+#             elif which_json == 'filtered-parameters.json':
+#                 pass
+#             elif which_json == 'global-term_freqs.json':
+#                 pass
         
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
