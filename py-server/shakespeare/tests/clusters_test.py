@@ -15,12 +15,28 @@ class ShakespeareClustersTest(TestCase):
         tplay.characters = { char1.name : char1 }
 
         x = { tplay.title : tplay }
-        ngdf = sc.process_data(x, minlines=0)
+        prc_ctx = sc.ProcessCtxt(x)
+        ngdf = sc.process_data(prc_ctx, minlines=0)
         
         #print cnts
 
         self.assertEquals(ngdf.index, ['Test Play'])
         #self.assertEquals(cnts.to_dict(), {'hello' : 1})
+        
+    def test_lda_context(self):
+        doc_nms = ['Doc 1', 'Doc 2', 'Doc 3', 'Doc 4']
+        doc_content = \
+        [
+         'where is lord helicanus? he can resolve you.',
+         'where is lord helicanus? he can resolve you.', 
+         'how now! how now! do you hear this? content.',
+         'how now! how now! do you hear this? content.'
+        ]
+        lda_ctx = sc.LDAContext(doc_nms, doc_content)
+        print 'lda_ctx:', lda_ctx.corpus
+
+    def test_lda_results(self):
+        pass
 
     def test_make_matrices(self):
         ngrams = [ 
@@ -33,17 +49,17 @@ class ShakespeareClustersTest(TestCase):
         ngdf = pd.DataFrame(ngrams, index=docs)
         
         # words in 70% or less of the docs
-        mat = sc.make_matrices(ngdf, max_threshold=.7)
+        mat = sc.make_matricesXXX(ngdf, max_threshold=.7)
         
         self.assertEquals(['ok', 'test'], mat.columns.tolist())
         self.assertEquals({'ok':2, 'test':2}, mat[mat>0].count().to_dict())
         self.assertEquals({'ok':5, 'test':2}, mat.sum().to_dict())
         
-        mat = sc.make_matrices(ngdf, min_cnt=1, max_threshold=.5)
+        mat = sc.make_matricesXXX(ngdf, min_cnt=1, max_threshold=.5)
         self.assertEquals({'bye':1}, mat[mat>0].count().to_dict())
         self.assertEquals({'bye':3}, mat.sum().to_dict())
         
-        mat = sc.make_matrices(ngdf, min_cnt=3, max_threshold=1.)
+        mat = sc.make_matricesXXX(ngdf, min_cnt=3, max_threshold=1.)
         self.assertEquals({'hello':3}, mat[mat>0].count().to_dict())
         self.assertEquals({'hello':5}, mat.sum().to_dict())
         

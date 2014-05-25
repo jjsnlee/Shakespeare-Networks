@@ -23,8 +23,9 @@ def main():
     td = TermiteData(lda, lda_ctxt)
     #td.saliency()
     #td.similarity()
-    td.seriation()
-    
+    #td.seriation()
+
+    return td
 
 def doLDA(prc_ctx):
     doc_titles, docs_content = sc.get_doc_content(prc_ctx)
@@ -96,19 +97,26 @@ class TermiteData(object):
             seriation_calc = ComputeSeriation()
             seriation_calc.execute(self.saliency, self.similarity)
             self._seriation = seriation_calc.seriation
-            SeriationRWer.write()
+            SeriationRWer.write(self._seriation, self.basepath)
         return self._seriation
     def data_for_client(self):
         prep_client = PrepareDataForClient()
         prep_client.execute(self.model, self.saliency, self.seriation)
-        ClientRWer.write(prep_client, self.basepath)
+        ClientRWer.write(prep_client.client, self.basepath)
+
+    def load(self, which):
+        if which=='saliency':
+            self._saliency = SaliencyRWer.read(self.basepath)
+        elif which=='seriation':
+            self._seriation = SeriationRWer.read(self.basepath)
+        elif which=='similarity':
+            self._similarity = SimilarityRWer.read(self.basepath)
 
 #def prepare_json(lda, lda_ctxt):
     #lda = LdaModel.load(dataset_nm)
     #lda_ctxt = LDAContext.load_corpus()
     #import pandas as pd
     #df = pd.DataFrame(lda.state.sstats, columns=lda_ctxt.get_terms())
-
     # N = topics
     # T - top terms (~400)
     # V - vocabulary

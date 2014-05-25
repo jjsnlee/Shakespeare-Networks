@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import json, sys, os
 import logging
+from itertools import chain
+
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger('shakespeare.shakespeare_pages')
 
@@ -240,18 +242,60 @@ class LDAContext(object):
         lda_json['dictionary'] = dictionary
         return LDAContext(doc_nms, doc_contents, from_cache=lda_json)
 
-class LDAResults(object):
-    pass
+# def get_docs_per_topic(lda, lda_ctxt):
+#     # http://stackoverflow.com/questions/20984841/topic-distribution-how-do-we-see-which-document-belong-to-which-topic-after-doi
+#     corpus_scores = lda[lda_ctxt.corpus]
+#     
+#     # Find the threshold, let's set the threshold to be 1/#clusters,
+#     # To prove that the threshold is sane, we average the sum of all probabilities:
+#     all_scores = list(chain(*[[score for _topic, score in topic] \
+#                               for topic in [doc_score for doc_score in corpus_scores]]))
+#     threshold = np.mean(all_scores)
+#     print threshold
+#     docs_per_cluster = \
+#     dict([
+#      (n, [x for x in n]) 
+#      for n in range(lda.num_topics)
+#     ])
+    #doc_nms = lda_ctxt.doc_names
+#     cluster1 = [j for i,j in zip(corpus_scores, doc_nms) if i[0][1] > threshold]
+#     cluster2 = [j for i,j in zip(corpus_scores, doc_nms) if i[1][1] > threshold]
+#     cluster3 = [j for i,j in zip(corpus_scores, doc_nms) if i[2][1] > threshold]
 
-def print_lda_results(lda, corpus, docs):
-    doc_results = lda[corpus]
-    for idx, doc_rslt in enumerate(doc_results):
-        character = docs[idx]
-        print '*'*80
-        print character
-        for topic, score in doc_rslt:
-            print '\ttopic %d, score: %s' % (topic, score)
-            print '\t', lda.show_topic(topic)
+class LDAResults(object):
+    def __init__(self, lda, lda_ctxt):
+        self.lda = lda 
+        self.lda_ctxt = lda_ctxt
+        self._docs_per_topic = None
+
+    @property
+    def doc_names(self):
+        return self.lda_ctxt.doc_names
+    @property
+    def corpus(self):
+        return self.lda_ctxt.corpus
+    @property
+    def docs_per_topic(self):
+        if self._docs_per_topic is None:
+            d = {}
+            corpus_scores = self.lda[self.corpus]
+            for scores, doc_nm in zip(corpus_scores, self.doc_names):
+                #print 'j:', doc_nm, 'i:', i
+                for score in scores:
+                    topic = score[0]
+                    d.setdefault(topic, []).append((doc_nm, score[1]))
+            self._docs_per_topic = d
+        return self._docs_per_topic
+    
+    def print_lda_results(self):
+        doc_results = self.lda[self.corpus]
+        for idx, doc_rslt in enumerate(doc_results):
+            character = self.doc_names[idx]
+            print '*'*80
+            print character
+            for topic, score in doc_rslt:
+                print '\ttopic %d, score: %s' % (topic, score)
+                print '\t', self.lda.show_topic(topic)
 
 def create_lda_corpus_with_mat(mat):
     class MyCorpus(object):
