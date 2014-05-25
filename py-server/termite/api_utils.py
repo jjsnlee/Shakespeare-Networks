@@ -42,7 +42,7 @@ class Similarity(object):
 		self.bigram_counts = {}
 		self.document_g2 = {}
 		self.window_g2 = {}
-		self.collcation_g2 = {}
+		self.collocation_g2 = {}
 		self.combined_g2 = {}
 
 class Client(object):
@@ -170,33 +170,35 @@ class SimilarityRWer(object):
 	COLLOCATAPIN_G2 = 'collocation-g2.txt'
 	COMBINED_G2 = 'combined-g2.txt'
 	@classmethod
-	def read( cls, path ):
+	def read(cls, path, read_all=False):
 		path = '{}/{}/'.format( path, cls.SUBFOLDER )
 		similarity = Similarity()
-#		similarity.document_occurrence = ReadAsSparseVector( path + cls.DOCUMENT_OCCURRENCE )
-#		similarity.document_cooccurrence = ReadAsSparseMatrix( path + cls.DOCUMENT_COOCCURRENCE )
-#		similarity.window_occurrence = ReadAsSparseVector( path + cls.WINDOW_OCCURRENCE )
-#		similarity.window_cooccurrence = ReadAsSparseMatrix( path + cls.WINDOW_COOCCURRENCE )
-#		similarity.unigram_counts = ReadAsSparseVector( path + cls.UNIGRAM_COUNTS )
-#		similarity.bigram_counts = ReadAsSparseMatrix( path + cls.BIGRAM_COUNTS )
-#		similarity.document_g2 = ReadAsSparseMatrix( path + cls.DOCUMENT_G2 )
-#		similarity.window_g2 = ReadAsSparseMatrix( path + cls.WINDOW_G2 )
-#		similarity.collocation_g2 = ReadAsSparseMatrix( path + cls.COLLOCATAPIN_G2 )
+		if read_all:
+			similarity.document_occurrence = ReadAsSparseVector( path + cls.DOCUMENT_OCCURRENCE )
+			similarity.document_cooccurrence = ReadAsSparseMatrix( path + cls.DOCUMENT_COOCCURRENCE )
+			similarity.window_occurrence = ReadAsSparseVector( path + cls.WINDOW_OCCURRENCE )
+			similarity.window_cooccurrence = ReadAsSparseMatrix( path + cls.WINDOW_COOCCURRENCE )
+			similarity.unigram_counts = ReadAsSparseVector( path + cls.UNIGRAM_COUNTS )
+			similarity.bigram_counts = ReadAsSparseMatrix( path + cls.BIGRAM_COUNTS )
+			similarity.document_g2 = ReadAsSparseMatrix( path + cls.DOCUMENT_G2 )
+			similarity.window_g2 = ReadAsSparseMatrix( path + cls.WINDOW_G2 )
+			similarity.collocation_g2 = ReadAsSparseMatrix( path + cls.COLLOCATAPIN_G2 )
 		similarity.combined_g2 = ReadAsSparseMatrix( path + cls.COMBINED_G2 )
 		return similarity
 	@classmethod
-	def write( cls, similarity, path ):
+	def write(cls, similarity, path, write_all=False):
 		path = '{}/{}/'.format( path, cls.SUBFOLDER )
 		CheckAndMakeDirs( path )
-#		WriteAsSparseVector( similarity.document_occurrence, path + cls.DOCUMENT_OCCURRENCE )
-#		WriteAsSparseMatrix( similarity.document_cooccurrence, path + cls.DOCUMENT_COOCCURRENCE )
-#		WriteAsSparseVector( similarity.window_occurrence, path + cls.WINDOW_OCCURRENCE )
-#		WriteAsSparseMatrix( similarity.window_cooccurrence, path + cls.WINDOW_COOCCURRENCE )
-#		WriteAsSparseVector( similarity.unigram_counts, path + cls.UNIGRAM_COUNTS )
-#		WriteAsSparseMatrix( similarity.bigram_counts, path + cls.BIGRAM_COUNTS )
-#		WriteAsSparseMatrix( similarity.document_g2, path + cls.DOCUMENT_G2 )
-#		WriteAsSparseMatrix( similarity.window_g2, path + cls.WINDOW_G2 )
-#		WriteAsSparseMatrix( similarity.collocation_g2, path + cls.COLLOCATAPIN_G2 )
+		if write_all:
+			WriteAsSparseVector( similarity.document_occurrence, path + cls.DOCUMENT_OCCURRENCE )
+			WriteAsSparseMatrix( similarity.document_cooccurrence, path + cls.DOCUMENT_COOCCURRENCE )
+			WriteAsSparseVector( similarity.window_occurrence, path + cls.WINDOW_OCCURRENCE )
+			WriteAsSparseMatrix( similarity.window_cooccurrence, path + cls.WINDOW_COOCCURRENCE )
+			WriteAsSparseVector( similarity.unigram_counts, path + cls.UNIGRAM_COUNTS )
+			WriteAsSparseMatrix( similarity.bigram_counts, path + cls.BIGRAM_COUNTS )
+			WriteAsSparseMatrix( similarity.document_g2, path + cls.DOCUMENT_G2 )
+			WriteAsSparseMatrix( similarity.window_g2, path + cls.WINDOW_G2 )
+			WriteAsSparseMatrix( similarity.collocation_g2, path + cls.COLLOCATAPIN_G2 )
 		WriteAsSparseMatrix( similarity.combined_g2, path + cls.COMBINED_G2 )
 
 class SeriationRWer(object):

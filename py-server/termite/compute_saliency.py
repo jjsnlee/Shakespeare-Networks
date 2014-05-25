@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
 import argparse
 import ConfigParser
 import logging
 
 import math
 from api_utils import Saliency
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('termite')
 
 class ComputeSaliency( object ):
 	"""
@@ -35,11 +37,12 @@ class ComputeSaliency( object ):
 	"""
 	
 	def __init__(self, logging_level=logging.DEBUG):
-		self.logger = logging.getLogger( 'ComputeSaliency' )
-		self.logger.setLevel( logging_level )
-		handler = logging.StreamHandler( sys.stderr )
-		handler.setLevel( logging_level )
-		self.logger.addHandler( handler )
+		self.logger = logger
+# 		self.logger = logging.getLogger( 'ComputeSaliency' )
+# 		self.logger.setLevel( logging_level )
+# 		handler = logging.StreamHandler( sys.stderr )
+# 		handler.setLevel( logging_level )
+# 		self.logger.addHandler( handler )
 	
 	def execute(self, model):
 		
@@ -51,7 +54,7 @@ class ComputeSaliency( object ):
 		self.model = model
 		self.saliency = Saliency()
 		
-		self.logger.info( 'Reading data from disk...' )
+		#self.logger.info( 'Reading data from disk...' )
 		#self.model.read()
 		
 		self.logger.info( 'Computing...' )

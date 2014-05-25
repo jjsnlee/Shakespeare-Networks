@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
 import argparse
 import ConfigParser
 import logging
@@ -9,6 +8,9 @@ import logging
 import time
 from operator import itemgetter
 from api_utils import Seriation
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('termite')
 
 class ComputeSeriation( object ):
 	"""Seriation algorithm.
@@ -23,11 +25,12 @@ class ComputeSeriation( object ):
 	DEFAULT_NUM_SERIATED_TERMS = 100
 	
 	def __init__(self, logging_level=logging.DEBUG):
-		self.logger = logging.getLogger( 'ComputeSeriation' )
-		self.logger.setLevel( logging_level )
-		handler = logging.StreamHandler( sys.stderr )
-		handler.setLevel( logging_level )
-		self.logger.addHandler( handler )
+		self.logger = logger
+# 		self.logger = logging.getLogger( 'ComputeSeriation' )
+# 		self.logger.setLevel( logging_level )
+# 		handler = logging.StreamHandler( sys.stderr )
+# 		handler.setLevel( logging_level )
+# 		self.logger.addHandler( handler )
 	
 	def execute(self, saliency, similarity, numSeriatedTerms = None ):
 		

@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
 import argparse
 import ConfigParser
 import logging
 
 from api_utils import Client
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('termite')
 
 class PrepareDataForClient( object ):
 	"""
@@ -31,12 +33,13 @@ class PrepareDataForClient( object ):
 	    'term-info.txt'
 	"""
 	
-	def __init__(self, logging_level=logging.DEBUG):
-		self.logger = logging.getLogger( 'PrepareDataForClient' )
-		self.logger.setLevel( logging_level )
-		handler = logging.StreamHandler( sys.stderr )
-		handler.setLevel( logging_level )
-		self.logger.addHandler( handler )
+	def __init__(self):
+		self.logger = logger
+# 		self.logger = logging.getLogger( 'PrepareDataForClient' )
+# 		self.logger.setLevel( logging_level )
+# 		handler = logging.StreamHandler( sys.stderr )
+# 		handler.setLevel( logging_level )
+# 		self.logger.addHandler( handler )
 	
 	def execute( self, model, saliency, seriation ):
 		
@@ -74,10 +77,12 @@ class PrepareDataForClient( object ):
 		term_ordering = self.seriation.term_ordering
 		term_topic_submatrix = []
 		term_subindex = []
+		print '------ A'
 		for term in term_ordering:
 			if term in term_index:
 				index = term_index.index( term )
-				term_topic_submatrix.append( term_topic_matrix[ index ] )
+				# b/c numpy arrays aren't json serializable
+				term_topic_submatrix.append( [x for x in term_topic_matrix[ index ]] )
 				term_subindex.append( term )
 			else:
 				self.logger.info( 'ERROR: Term (%s) does not appear in the list of seriated terms', term )
@@ -111,7 +116,8 @@ class PrepareDataForClient( object ):
 		for term in term_ordering:
 			if term in term_index:
 				index = term_index.index( term )
-				term_topic_submatrix.append( term_topic_matrix[ index ] )
+				# b/c numpy arrays aren't json serializable
+				term_topic_submatrix.append( [x for x in term_topic_matrix[ index ]] )
 				term_subindex.append( term )
 			else:
 				self.logger.info( 'ERROR: Term (%s) does not appear in the list of seriated terms', term )

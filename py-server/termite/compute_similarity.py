@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
 import argparse
 import ConfigParser
 import logging
 
 import math
 from api_utils import Similarity
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('termite')
 
 class ComputeSimilarity( object ):
 	"""
@@ -21,11 +23,12 @@ class ComputeSimilarity( object ):
 	MAX_FREQ = 100.0
 	
 	def __init__(self, logging_level=logging.DEBUG):
-		self.logger = logging.getLogger( 'ComputeSimilarity' )
-		self.logger.setLevel( logging_level )
-		handler = logging.StreamHandler( sys.stderr )
-		handler.setLevel( logging_level )
-		self.logger.addHandler( handler )
+		self.logger = logger
+# 		self.logger = logging.getLogger( 'ComputeSimilarity' )
+# 		self.logger.setLevel( logging_level )
+# 		handler = logging.StreamHandler( sys.stderr )
+# 		handler.setLevel( logging_level )
+# 		self.logger.addHandler( handler )
 	
 	def execute( self, tokens, sliding_window_size = None ):
 		
