@@ -6,13 +6,17 @@
 	<title>Termite | Topic Model Visualization</title>
 	<link href="termite.css" rel="stylesheet" type="text/css"/>
 	<link href="InteractionObjects.css" rel="stylesheet" type="text/css"/>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script type="text/javascript" src="/lib/underscore-min-1.5.0.js"></script>
-	<!--<script type="text/javascript" src="../lib/underscore.min.js"></script>-->
-	<script type="text/javascript" src="../lib/backbone.min.js"></script>
-	<script type="text/javascript" src="../lib/d3.v3.min.js"></script> 
-	<script type="text/javascript" src="../lib/html5slider.min.js"></script>
+
+	<script type="text/javascript" src="/static/lib/angular-1.2.9/angular.js"></script>
+	<script type="text/javascript" src="AngShowDocs.js"></script>
 	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="/static/lib/underscore-min-1.5.0.js"></script>
+	<script type="text/javascript" src="/static/lib/backbone.min.js"></script>
+	<script type="text/javascript" src="/static/lib/d3.v3.min.js"></script> 
+	<script type="text/javascript" src="/static/lib/html5slider.min.js"></script>
+
 	<script type="text/javascript" src="FullTermTopicProbabilityModel.js"></script>
 	<script type="text/javascript" src="SeriatedTermTopicProbabilityModel.js"></script>
 	<script type="text/javascript" src="FilteredTermTopicProbabilityModel.js"></script>
@@ -23,6 +27,7 @@
 	<script type="text/javascript" src="UserControlViews.js"></script>
 	<script type="text/javascript" src="StateModel.js"></script>
 	<script type="text/javascript" src="QueryString.js"></script>
+
 <script type="text/javascript">
 
 /**
@@ -94,11 +99,13 @@ function init()
 	
 	seriatedTermTopicProbabilityModel = new SeriatedTermTopicProbabilityModel();
 	filteredTermTopicProbabilityModel = new FilteredTermTopicProbabilityModel();
-	termFrequencyModel = new TermFrequencyModel();
-	
-	seriatedTermTopicProbabilityModel.url = "../data/seriated-parameters.json";
-	filteredTermTopicProbabilityModel.url = "../data/filtered-parameters.json";
-	termFrequencyModel.url = "../data/global-term-freqs.json";
+	termFrequencyModel = new TermFrequencyModel();	
+
+  //basedir = '../data/';
+  basedir = '../data-shakespeare/';	
+	seriatedTermTopicProbabilityModel.url = basedir+"seriated-parameters.json";
+	filteredTermTopicProbabilityModel.url = basedir+"filtered-parameters.json";
+	termFrequencyModel.url = basedir+"global-term-freqs.json";
 	
 	termTopicMatrixView = new TermTopicMatrixView( {el: "div.termTopicMatrixContainer"} );
 	termFrequencyView = new TermFrequencyView( {el: "div.termFrequencyContainer"} );
@@ -191,14 +198,10 @@ function init()
 }
 </script>
 </head>
-<body onload="init()">
+<body onload="init()" ng-app="termiteTopics">
 <div id="pageBackground">
 	<div id="pageFrame">
 		<div id="pageHeader">
-			<div id="pageLogo" class="headerObject">
-				<span class="title">Termite</span><span class="subtitle"> | Topic Model Visualization</span><br/>
-				<span class="credits">Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group</span><br/>
-			</div>
 			<div id="pageControl" class="headerObject">
 				<table cellspacing="5">
 					<tr>
@@ -217,7 +220,14 @@ function init()
 								Show top:
 								<input class="SalientNumTermsSlider" style="display:inline; width: 160px; vertical-align: -5px;" type="range" max="100" min="0" value="0"/>
 								<div class="SalientNumTermsView" style="display:inline-block">0</div> 
-								terms by saliency.</div>
+								terms by saliency.
+							</div>
+						</td>
+						<td style="vertical-align: top">
+							<div class="line">
+								Add top twenty terms for clicked topics
+								<input type="checkbox" class="TopTwentyAddition" style="display:inline-block"></div> 
+							</div>
 							<div class="line">
 								Always showing terms: 
 								<input class="UserDefinedTermsBox" style="display:inline; width: 200px; vertical-align: -2px" type="text"/>
@@ -228,18 +238,16 @@ function init()
 								<div class="UnfoundTermsView" style="display:inline-block; visibility:hidden"></div>
 							</div>
 						</td>
-						<td style="vertical-align: top">										
-							<div class="line">
-								Add top twenty terms for clicked topics
-								<input type="checkbox" class="TopTwentyAddition" style="display:inline-block"></div> 
-							</div>
-							<div class="line">
+						<td style="vertical-align: top">
+              <div class="line">
 								Sorting by: 
 								<div class="SortDescription" style="display:inline-block">default</div> 
 							</div>
 							<div class="line">
 								(Double click topic label to sort by topic.)
 							</div>
+						</td>
+						<td style="vertical-align: top">
 							<div class="line">
 								<button type="button" class="clearAll" style="width: 150px">Clear all topic selections</button>
 							</div>
@@ -252,10 +260,13 @@ function init()
 			</div>
 		</div>
 		<div id="pageContent">
-			<table>
+			<table border=1 !width="100%">
 				<tr>
 					<td style="vertical-align: top"><div class="termTopicMatrixContainer"></div></td>
 					<td><div class="termFrequencyContainer"></div></td>
+					<td ng-controller="content">
+						{{topDocsForTopic}}
+					</td>
 				</tr>
 			</table>
 			<div id="pageDetails">
@@ -264,6 +275,8 @@ function init()
 			</div>
 		</div>
 		<div id="pageFooter">
+        Termite | Topic Model Visualization<br/>
+				<span class="credits">Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group</span><br/>		
 			http://termite.stanford.edu | Version 1.1
 		</div>
 	</div>
