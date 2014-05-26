@@ -3,19 +3,20 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Termite | Topic Model Visualization</title>
+	<title>Shakespare | Termite | Topic Model Visualization</title>
 	<link href="termite.css" rel="stylesheet" type="text/css"/>
 	<link href="InteractionObjects.css" rel="stylesheet" type="text/css"/>
 
-	<script type="text/javascript" src="/static/lib/angular-1.2.9/angular.js"></script>
-	<script type="text/javascript" src="AngShowDocs.js"></script>
-	
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/lib/ext/angular-1.2.9/angular.js"></script>
+	
+	<script type="text/javascript" src="/static/lib/ang-dnd.js"></script>
+	<script type="text/javascript" src="AngShowDocs.js"></script>
 
-	<script type="text/javascript" src="/static/lib/underscore-min-1.5.0.js"></script>
-	<script type="text/javascript" src="/static/lib/backbone.min.js"></script>
-	<script type="text/javascript" src="/static/lib/d3.v3.min.js"></script> 
-	<script type="text/javascript" src="/static/lib/html5slider.min.js"></script>
+	<script type="text/javascript" src="/static/lib/ext/underscore-min-1.5.0.js"></script>
+	<script type="text/javascript" src="/static/lib/ext/backbone.min.js"></script>
+	<script type="text/javascript" src="/static/lib/ext/d3.v3.min.js"></script> 
+	<script type="text/javascript" src="/static/lib/ext/html5slider.min.js"></script>
 
 	<script type="text/javascript" src="FullTermTopicProbabilityModel.js"></script>
 	<script type="text/javascript" src="SeriatedTermTopicProbabilityModel.js"></script>
@@ -60,6 +61,7 @@ var generateSparseMatrix = function() {
 	sparseMatrix = sparseMatrix.sort( function(a,b) { return b.value - a.value } );
 	return sparseMatrix;
 };
+
 /**
  * Returns a column-first representation of a row-first matrix
  * 
@@ -163,6 +165,7 @@ function init()
 		filteredTermTopicProbabilityModel.listenTo( stateModel, "color:topic", filteredTermTopicProbabilityModel.selectTopic, filteredTermTopicProbabilityModel);
 		termFrequencyModel.listenTo( stateModel, "color:topic", termFrequencyModel.selectTopic, termFrequencyModel);
 		sortDescription.listenTo( stateModel, "change:sortType change:doubleClickTopic" , sortDescription.render );
+		
 	});
 	
 	// initialize all events that listen to filtered model
@@ -189,17 +192,30 @@ function init()
 	stateModel.listenTo( termTopicMatrixView, "mouseover:topic mouseout:topic", stateModel.setHighlightedTopic );
 	stateModel.listenTo( termTopicMatrixView, "mouseover:term mouseout:term", stateModel.setHighlightedTerm );
 	stateModel.listenTo( termFrequencyView, "mouseover:term mouseout:term", stateModel.setHighlightedTerm );
-	stateModel.listenTo( termTopicMatrixView, "doubleClick:topic", stateModel.setDoubleClickTopic );	
+	stateModel.listenTo( termTopicMatrixView, "doubleClick:topic", stateModel.setDoubleClickTopic );
 	stateModel.listenTo( termTopicMatrixView, "click:topic", stateModel.selectTopic );
-
+	// http://backbonejs.org/#Events-listenTo: 
+	// 	object.listenTo(other, event, callback)
+	
 	// being loading process
 	stateModel.loadStatesFromQueryString();
 	initColorObjects(null);
 }
+
+termiteTopics.controller('msgCtrl', function($scope, termiteMsgService) {
+	init();
+	stateModel.listenTo( termTopicMatrixView, "click:topic", function(topicIndex) {
+		console.log('topicIndex' + topicIndex);
+		//console.log( termTopicMatrixView.parentModel );
+		var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex]
+		termiteMsgService.setTopic(topicIndex, topicLabel);
+	} );
+});
+
 </script>
 </head>
-<body onload="init()" ng-app="termiteTopics">
-<div id="pageBackground">
+<body ng-app="termiteTopicDisplay">
+<div id="pageBackground" ng-controller="msgCtrl">
 	<div id="pageFrame">
 		<div id="pageHeader">
 			<div id="pageControl" class="headerObject">
@@ -259,13 +275,23 @@ function init()
 				</table>
 			</div>
 		</div>
-		<div id="pageContent">
-			<table border=1 !width="100%">
+		<div id="pageContent" ng-controller="contentCtrl">
+			<table border=0 !width="100%">
 				<tr>
+					<!-- Frequent terms -->
+					<td style="vertical-align: top"><div class="termFrequencyContainer"></div></td>
+
+					<!-- Main matrix -->
 					<td style="vertical-align: top"><div class="termTopicMatrixContainer"></div></td>
-					<td><div class="termFrequencyContainer"></div></td>
-					<td ng-controller="content">
-						{{topDocsForTopic}}
+					<!-- Related documents -->
+					<td style="vertical-align: top" ng-cloak>
+						<span style="color: #666; font-family: Verdana; font-size: 8pt;">{{selectedTopic}}</span>
+						<table border=1 cellpadding=1 cellspacing=0 width=250 ng-show="topDocsForTopic != []">
+						<tr ng-repeat="doc in topDocsForTopic" style="color: #666; font-family: Verdana; font-size: 8pt;">
+							<td><a href="{{doc.url}}">{{doc.char}}</a></td>
+							<td>{{doc.score}}</td>
+						</tr>
+					  </table>
 					</td>
 				</tr>
 			</table>
@@ -274,6 +300,10 @@ function init()
 				<p>The area of a circle is proportional to a word's frequency in a topic.</p>
 			</div>
 		</div>
+
+		<div id="" ng-show="">
+		</div>
+
 		<div id="pageFooter">
         Termite | Topic Model Visualization<br/>
 				<span class="credits">Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group</span><br/>		
