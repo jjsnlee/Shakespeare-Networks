@@ -77,6 +77,7 @@ def get_corpus_data_json(req, play_set):
             return HttpResponse(all_json_rslt, content_type='application/json')
 
         elif info == 'ldatopics':
+            #'/shakespeare/corpus/ldatopics'
             which_topic = path_elmts[3]
 
             print 'which_topic:', which_topic
@@ -94,6 +95,12 @@ def get_corpus_data_json(req, play_set):
 #                 pass
 #             elif which_json == 'global-term_freqs.json':
 #                 pass
+
+        elif info == 'characters':
+            #'/shakespeare/corpus/characters/[charKey]'
+            char_key = path_elmts[3]
+            #play_data_ctx = get_plays_ctx(play_set)
+            print 'char_key:', char_key
         
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed

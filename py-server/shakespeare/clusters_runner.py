@@ -3,7 +3,6 @@ from shakespeare.clusters import LDAContext, LDAResult, get_lda_base_dir, get_ld
 import plays_n_graphs as png
 from pcibook import nmf, clusters
 from os.path import join
-#import json
 from gensim.models.ldamodel import LdaModel
 
 def main(train_new=False):
@@ -14,7 +13,7 @@ def main(train_new=False):
     
     if train_new:
         play_ctx = png.get_plays_ctx('shakespeare')
-        prc_ctx = sc.ProcessCtxt(play_ctx)
+        prc_ctx = sc.ClustersCtxt(play_ctx)
         prc_ctx.preproc(by='Char') # by='Char'
         lda_rslt = doLDA(prc_ctx)
     else:
@@ -44,6 +43,19 @@ def doLDA(prc_ctx):
     lda = run_n_save_lda(lda_ctxt)
     return LDAResult(lda, lda_ctxt)
     #sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
+
+def run_n_save_lda(lda_ctxt, ntopics=50, npasses=50):
+    corpus = lda_ctxt.corpus 
+    dictionary = lda_ctxt.dictionary
+    lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
+    from datetime import datetime
+    t = datetime.now()
+    fname = '%s_%s_%s.lda' % (t, ntopics, npasses)
+    lda.save(join(sc.get_lda_base_dir(), fname))
+    return lda
+#     doc_results = lda[corpus]
+#     from gensim.models.tfidfmodel import TfidfModel
+#     tfidf_model = TfidfModel( )
 
 from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, \
     ComputeSeriation, PrepareDataForClient, \
@@ -179,20 +191,6 @@ class TermiteData(object):
 #         'termFreqMap'  : term_frequency_map
 #         }
 #     return json.dumps(json_out, ensure_ascii=False)
-
-def run_n_save_lda(lda_ctxt, ntopics=50, npasses=50):
-    corpus = lda_ctxt.corpus 
-    dictionary = lda_ctxt.dictionary
-    lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
-    from datetime import datetime
-    t = datetime.now()
-    fname = '%s_%s_%s.lda' % (t, ntopics, npasses)
-    lda.save(join(sc.get_lda_base_dir(), fname))
-    return lda
-    
-#     doc_results = lda[corpus]
-#     from gensim.models.tfidfmodel import TfidfModel
-#     tfidf_model = TfidfModel( )
 
 def doNMF(prc_ctx):
     #-- NMF

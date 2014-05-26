@@ -26,12 +26,6 @@ def get_ts():
 def get_lda_base_dir():
     return join(helper.get_dynamic_rootdir(), 'lda')
 
-#def get_ctx_from_plays(play_ctx):
-#    #print pformat(p.characters.values())
-#    prc_ctx = ProcessCtxt(plays)
-#    prc_ctx.chars_per_play = chars_per_play
-#    return prc_ctx
-
 def _get_stopwords():
     from nltk.corpus import stopwords
     stopwds = set(stopwords.words('english'))
@@ -54,8 +48,11 @@ def _get_stopwords():
     stopwds = stopwds.union(addl_stopwds)
     return stopwds
 
-class ProcessCtxt(object):
+class ClustersCtxt(object):
     def __init__(self, play_ctx):
+        from plays_n_graphs import RootPlayCtx
+        assert(isinstance(play_ctx, RootPlayCtx))
+        
         chars_per_play = {}
         for play_alias in play_ctx.map_by_alias:
             p = play_ctx.get_play(play_alias)
@@ -65,6 +62,8 @@ class ProcessCtxt(object):
         self.reset()
         self.chars_per_play = chars_per_play
         self.documents = [] # plays, characters, etc
+        # remove documents: scenes/characters with very few lines
+        #self.min_lines_per_doc = 10
 
     def reset(self):
         self.pruned_characters = {}
@@ -114,7 +113,7 @@ def get_doc_content(prc_ctx, minlines=10):
         lines = doc.clean_lines
         # remove documents: scenes/characters with very few lines
         if len(lines) < minlines:
-            print 'Skipping', str(doc)
+            logger.info('Skipping [%s] since it had too few lines.', str(doc))
             continue
         lines = ' '.join([li.spoken_line for li in lines])
         lines = lines.replace('--', ' ') # for now just replace these...
@@ -128,9 +127,10 @@ def process_data(prc_ctx,
                  min_df=2, # in at least 2 documents
                  max_df=1.0,
                  minlines=10,
-                 raw = False
+                 raw = False,
+                 stopwords=_get_stopwords()
                  ):
-    stopwds = _get_stopwords()
+    
     all_c_in_play = get_character_names(prc_ctx)
     
     #import PorterStemmer
@@ -147,7 +147,7 @@ def process_data(prc_ctx,
     cv = vectorizer(min_df=min_df,
                     max_df=max_df,
                     charset_error="ignore",
-                    stop_words=stopwds|all_c_in_play, 
+                    stop_words=stopwords|all_c_in_play, 
                     )
     
     cnts = cv.fit_transform(docs_content).toarray()
@@ -315,9 +315,9 @@ def create_lda_corpus_with_mat(mat):
                 yield mat.ix[idx]
     return MyCorpus()
 
-def runs_lda(corpus):
-    lda = LdaModel(corpus, num_topics=10)
-    return lda
+# def runs_lda(corpus):
+#     lda = LdaModel(corpus, num_topics=10)
+#     return lda
 
 def runs_multi_nmf(mat, nruns=5, pc=16, iters=100):
     runs = []

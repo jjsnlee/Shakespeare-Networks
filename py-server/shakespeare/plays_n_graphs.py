@@ -31,6 +31,8 @@ class RootPlayCtx(object):
         self.play_details = {}
         self.map_by_alias = dict(self.plays)
         self.map_by_title = dict([(v,k) for k,v in self.plays])
+        # set ths to bypass during testing
+        self.do_init_graphs = True
 
     def get_play(self, play_alias):
         if play_alias in self.play_details:
@@ -39,7 +41,9 @@ class RootPlayCtx(object):
         title = self.map_by_alias[play_alias]
         play = Play(title)
         self._load_play(play, play_alias)
-        self.play_details[play_alias] = _init_graphs(play)
+        self.play_details[play_alias] = play
+        if self.do_init_graphs:
+            _init_graphs(play)
         return self.play_details[play_alias]
 
     def _load_play(self, play, play_alias):
