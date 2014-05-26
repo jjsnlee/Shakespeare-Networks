@@ -9,7 +9,7 @@ div, p {
 }
 
 #pageBackground {
- padding: 20px;
+ /* padding: 20px; */
 }
 #pageFrame {
  border: 1px solid #999;
@@ -55,7 +55,7 @@ div, p {
  height: 20px;
 }
 #pageContent {
- padding: 20px 40px;
+ /*padding: 20px 40px;*/
  background-color: #fff;
 }
 #pageDetails {

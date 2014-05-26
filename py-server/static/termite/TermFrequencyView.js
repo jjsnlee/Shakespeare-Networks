@@ -34,8 +34,9 @@ var HISTOGRAM_ENCODING_PARAMETERS = {
 var HISTORGRAM_CONTAINER_PADDING = {
 	left_separation: 10,
 	top: 60,
-	left: 130, 
-	right: 20,
+	//left: 130,
+	left: 80, 
+	right: 0,
 	bottom: 60,
 	width: 150,
 	fullWidth : function() { return this.left + this.right + this.width },
@@ -115,20 +116,20 @@ TermFrequencyView.prototype.prepareStackedBars = function() {
     });
 	
 	var stackedTransformer = d3.layout.stack();
-    var stackedData = stackedTransformer(remapped);
-    
-    // update totalOffsets (for highlighting use)
-    this.totalOffsets = [];
-    if(stackedData.length > 0){
-    	for( var j = 0; j < stackedData[0].length; j++){
-    		var sum = 0.0;
-    		for( var i = 0; i < stackedData.length; i++){
-    			sum += stackedData[i][j].y;
-    		}
-    		this.totalOffsets[j] = sum;
-    	}
-    }
-    return stackedData;
+	var stackedData = stackedTransformer(remapped);
+	
+	// update totalOffsets (for highlighting use)
+	this.totalOffsets = [];
+	if(stackedData.length > 0){
+		for( var j = 0; j < stackedData[0].length; j++){
+			var sum = 0.0;
+			for( var i = 0; i < stackedData.length; i++){
+				sum += stackedData[i][j].y;
+			}
+			this.totalOffsets[j] = sum;
+		}
+	}
+	return stackedData;
 };
 
 /** 

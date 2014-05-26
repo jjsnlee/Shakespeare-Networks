@@ -13,12 +13,17 @@
 var MATRIX_CONTAINER_PADDING = {
 	left_separation: 8,
 	top_separation: 5,
-	left: 110,
+	//left: 110,
+	left: 80,
 	right: 20,
 	top: 60,
 	bottom: 60,
-	fullWidth : function( numTopics ) { return this.left + this.right + MATRIX_ENCODING_PARAMETERS.packing() * numTopics },
-	fullHeight : function( numTopics, numTerms ) { return this.top + this.bottom + MATRIX_ENCODING_PARAMETERS.packing() * numTerms }
+	fullWidth : function( numTopics ) { 
+		return this.left + this.right + MATRIX_ENCODING_PARAMETERS.packing() * numTopics 
+	},
+	fullHeight : function( numTopics, numTerms ) { 
+		return this.top + this.bottom + MATRIX_ENCODING_PARAMETERS.packing() * numTerms 
+	}
 };
 	
 var MATRIX_ENCODING_PARAMETERS = {
