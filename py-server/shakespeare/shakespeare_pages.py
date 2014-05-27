@@ -2,7 +2,7 @@ import os, json, traceback
 from operator import itemgetter
 from os.path import join
 import helper
-from plays_n_graphs import get_plays_ctx, init_play
+from plays_n_graphs import get_plays_ctx, init_play_imgs
 from plays_transform import PlayJSONMetadataEncoder
 from clusters import get_lda_ctxt
 import logging
@@ -32,13 +32,15 @@ def get_page_html(req, play_set):
         sld_play = qry_str.get('play', '')
         logger.debug('play: %s', sld_play)
 
+        data_ctx = get_plays_ctx(play_set)
+
         force_img_regen = False
         if sld_play:
             force_img_regen = qry_str.get('force_regen', False) == '1'
             if force_img_regen:
-                _play_data = init_play(play_set, sld_play, 1)
+                play = data_ctx.get_play(sld_play)
+                _play_data = init_play_imgs(play, sld_play, 1)
 
-        data_ctx = get_plays_ctx(play_set)
         plays = sorted(data_ctx.plays, key=itemgetter(1))
         all_plays = json.dumps([{'value':p[0],'label':p[1]} for p in plays])
         html = open('shakespeare/page.html', 'r').read()
@@ -55,7 +57,7 @@ def get_corpus_data_json(req, play_set):
         if len(path_elmts) > 2:
             info = path_elmts[2] # expect format '/shakespeare/corpus/lineCounts'
 
-        print 'info:', info
+        logger.debug('info: %s', info)
         play_data_ctx = get_plays_ctx(play_set)
 
         if info == 'lineCounts':
@@ -80,11 +82,11 @@ def get_corpus_data_json(req, play_set):
             #'/shakespeare/corpus/ldatopics'
             which_topic = path_elmts[3]
 
-            print 'which_topic:', which_topic
+            logger.debug('which_topic: %s', which_topic)
             lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
             lda_rslt = get_lda_ctxt(lda_key)
             topic_info = lda_rslt.docs_per_topic[int(which_topic)]
-            print 'topic_info:', topic_info
+            logger.debug('topic_info: %s', topic_info)
             
             topic_json = json.dumps(topic_info, ensure_ascii=False)
             return HttpResponse(topic_json, content_type='application/json')
@@ -99,8 +101,26 @@ def get_corpus_data_json(req, play_set):
         elif info == 'characters':
             #'/shakespeare/corpus/characters/[charKey]'
             char_key = path_elmts[3]
-            #play_data_ctx = get_plays_ctx(play_set)
-            print 'char_key:', char_key
+            
+            char_nm, title = char_key.split(' in ')
+            logger.debug('title: %s, char_nm: %s', title, char_nm)
+            
+            # need to get play alias by the title
+            alias = play_data_ctx.map_by_title.get(title)
+            logger.debug('play alias: %s', alias)
+            
+            play = play_data_ctx.get_play(alias)
+            # then the character
+            char = play.characters.get(char_nm)
+            char_data = \
+            {
+             'character'   : char_nm,
+             'play'        : title,
+             'doc_name'    : char_key,
+             'doc_content' : [str(li) for li in char.clean_lines]
+            }
+            char_json = json.dumps(char_data, ensure_ascii=False)
+            return HttpResponse(char_json, content_type='application/json')
         
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed
@@ -114,19 +134,38 @@ def get_play_data_json(req, play_set):
     """ 
     JSON representation for the play. This is for the initial load of
     the play and its scenes, and I believe the scenes will have the basic 
-    
     """
     try:
         path_elmts = filter(None, req.path.split('/'))
-        play_alias = path_elmts[2] # expect format '/shakespeare/play/hamlet' 
         
-        #play_alias = path.split('/')[-1]
-        print 'REQUEST:', play_alias, path_elmts
+        # expect format '/shakespeare/play/{play_alias}/{?act}/{?scene}/?content'
         
-        # Probably want to streamline this, so we take the existing files where possible...
-        play = init_play(play_set, play_alias, False)
-        json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONMetadataEncoder)
-        return HttpResponse(json_rslt, content_type='application/json')
+        play_alias = path_elmts[2] # i.e, '/shakespeare/play/hamlet' 
+        logger.debug('REQUEST: [%s], [%s]', play_alias, path_elmts)
+        
+        play_data_ctx = get_plays_ctx(play_set)
+        play = play_data_ctx.get_play(play_alias)
+        
+        if path_elmts[-1] == 'content':
+            act_num = path_elmts[-3]
+            scene_num = path_elmts[-2]
+            scene = play.get_scene(act_num, scene_num)
+            scene_data = \
+            {
+             'title'    : play.title,
+             'act'     : act_num, 
+             'scene'   : scene_num,
+             'content' : [{'speaker' : char_lines[0], 
+                           'lines'   : [str(line) for line in char_lines[1]]} for char_lines in scene.clean_lines]
+            }
+            json_rslt = json.dumps(scene_data, ensure_ascii=False)
+            return HttpResponse(json_rslt, content_type='application/json')
+        
+        else:
+            # Probably want to streamline this, so we take the existing files where possible...
+            init_play_imgs(play, play_alias, False)
+            json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONMetadataEncoder)
+            return HttpResponse(json_rslt, content_type='application/json')
 
     except Exception as e:
         # Without the explicit error handling the JSON error gets swallowed

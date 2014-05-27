@@ -4,8 +4,8 @@
 
 <style type="text/css" id="page-css">
 body {
-    //font-family: arial,helvetica,clean,sans-serif; 
-    font-size: 12px;
+	//font-family: arial,helvetica,clean,sans-serif; 
+	font-size: 12px;
 }
 
 .imgDiv {
@@ -13,8 +13,13 @@ body {
   position:absolute; 
   top:10%; left:30%; 
   border:3px solid #eee;
-  overflow:auto; 
   background: white   
+}
+
+.contentDiv {
+	border: solid 2px #eee; 
+	overflow:auto; 
+	height: 400px;
 }
 
 .chartDiv {
@@ -22,9 +27,9 @@ body {
 	height: 450px; 
 	position:absolute;
 	top:10%; left:30%;
+	overflow:auto;
 	border:3px solid #eee;
 	background:rgba(265,265,265,1); 
-	overflow:auto; 
 	margin: 10px auto
 }
 </style>
@@ -72,7 +77,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   
   // Keep track of the positions of each of the popups.  
   // Otherwise there will be some jumping of the div elements
-  $scope.popupPosn = {};
+  //$scope.popupPosn = {};
   
   var selectedPlay = $location.search()['play'];
   if(!selectedPlay)
@@ -105,10 +110,10 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     
     // probably should have a Scene key to pass on
     var sceneContentURL = getURLRoot()+'/play/'+$scope.selectedPlay.value+
-        scene.act+'/'+scene.scene+'/content'; 
+        '/'+scene.act+'/'+scene.scene+'/content'; 
 
     $http.get(sceneContentURL).success(function(data) {
-      $scope.selected_scene_text  = 'Text';
+      $scope.selected_scene_text = data.content;
     });
   };
 
@@ -194,7 +199,19 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   <table border=0 cellpadding=0 cellspacing=0 width="100%">
     <tr><td align="right"><button ng-click="sceneClose()">Close</button></td></tr>
     <tr><td><img ng-src="{{selected_graph_img_f}}" width="100%"></td></tr>
-    <tr><td>{{selected_scene_text}}</td></tr>
+    <tr>
+    	<td style="vertical-align: top">
+    	<div class="contentDiv">
+    	<span ng-repeat="speaker_lines in selected_scene_text" style="color: #666; font-family: Verdana; font-size: 8pt;">
+    		<p><b>{{speaker_lines.speaker}}:</b><br>
+    		<span ng-repeat="line in speaker_lines.lines track by $index">
+					{{line}}<br>
+    		</span>
+    		</p>
+			</span>
+			</div>
+    	</td>
+    </tr>
   </table>
 </div>
 
@@ -248,9 +265,11 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 </tr>
 </table>
 
+<!--
 <div style="font-size: 10px">
 {{play_content}}
 </div>
+-->
 
 </div>
 

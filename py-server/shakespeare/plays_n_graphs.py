@@ -189,14 +189,11 @@ def _init_graphs(play):
             prev_speaker = speaker
     return play
 
-def init_play(plays_set, play_alias, force_img_regen):
-    
-    play_data_ctx = get_plays_ctx(plays_set)
-
-    if play_alias not in play_data_ctx.map_by_alias:
-        raise Exception('Can''t find play [%s].' % play_alias)
-    
-    play  = play_data_ctx.get_play(play_alias)
+def init_play_imgs(play, play_alias, force_img_regen):
+#     play_data_ctx = get_plays_ctx(plays_set)
+#     if play_alias not in play_data_ctx.map_by_alias:
+#         raise Exception('Can''t find play [%s].' % play_alias)
+#     play  = play_data_ctx.get_play(play_alias)
     logger.debug('%s\n\t%s', play.title, play.toc_as_str())
     
     img_root_dir = 'imgs/'
@@ -308,6 +305,12 @@ class Play:
                 
             self._totalG = totalG
         return self._totalG.copy()
+
+    def get_scene(self, act_num, scene_num):
+        scene = self.scenes_idx.get(act_num+'_'+scene_num)
+        if scene is None:
+            logger.error('In the play [%s], there is no Act %s, Sc %s.', self.title, act_num, scene_num)
+        return scene
 
     @property
     def scenes(self):

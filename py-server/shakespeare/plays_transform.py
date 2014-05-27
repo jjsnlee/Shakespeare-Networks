@@ -20,11 +20,18 @@ def transform(play_html):
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
 def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, limit_plays=[]):
-    from plays_n_graphs import get_plays_ctx, init_play
+    """
+    gen_imgs  : generate png images 
+    gen_md    : generate the metadata as json
+    gen_lines : generate the content (of the plays) as json
+    limit_plays : subset of plays to generate files
+    """
+
+    from plays_n_graphs import get_plays_ctx, init_play_imgs
     import json
     data_ctx = get_plays_ctx('shakespeare')
     plays = data_ctx.plays
-    play_set = 'shakespeare'
+    #play_set = 'shakespeare'
     
     basedir = DYNAMIC_ASSETS_BASEDIR
     helper.ensure_path(join(basedir, 'json'))
@@ -33,8 +40,9 @@ def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, li
         if limit_plays and play_alias not in limit_plays:
             continue
         print 'Processing play:', play_alias
+        play = data_ctx.get_play(play_alias)
         if gen_md or gen_lines:
-            play = init_play(play_set, play_alias, False)
+            #play = init_play(play_set, play_alias, False)
             
             if gen_md:
                 json_rslt = json.dumps(play, ensure_ascii=False,
@@ -51,7 +59,7 @@ def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, li
                     fh.write(json_rslt)
         
         if gen_imgs:
-            init_play(play_set, play_alias, True)
+            init_play_imgs(play, play_alias, True)
 
 class PlayEncoderBase(JSONEncoder):
     def from_keys(self, obj, keys):
