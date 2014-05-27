@@ -96,6 +96,7 @@ class ShakespearePlayCtx(RootPlayCtx):
         super(ShakespearePlayCtx, self).__init__('data/shakespeare/', plays_cfg.shakespeare)
 
     def _load_play(self, play, play_alias):
+        assert(isinstance(play, Play))
         title = play.title
         play.type = plays_cfg.shakespeare['classifications'][title]
         play.year = plays_cfg.shakespeare['vintage'][title]
@@ -134,7 +135,8 @@ class ShakespearePlayCtx(RootPlayCtx):
                 html, loc = r
                 play.add_scene(Scene(play, '0', '0', loc, html))
         
-        play_repl_chars = _repl_speakers.get(play, {})  
+        play_repl_chars = _repl_speakers.get(play_alias, {})
+        logger.debug('play_repl_chars: [%s]', play_repl_chars)
         
         # Remove trailing : from the character's name's as well
         play_dialogue_ptn = '<A NAME=speech\d+><b>([^<]+?):{0,1}</b></a>(.+?(?:</body>|</blockquote>))'
@@ -146,7 +148,10 @@ class ShakespearePlayCtx(RootPlayCtx):
                 speaker, dialogue = r.groups()
                 
                 # FIXME hack to rename characters... 
-                speaker = play_repl_chars.get(speaker, speaker)
+                #speaker = play_repl_chars.get(speaker, speaker)
+                if speaker in play_repl_chars:
+                    logger.debug('Replacing [%s] with [%s]', speaker, play_repl_chars[speaker])
+                    speaker = play_repl_chars[speaker]
                 
                 dialogue = dialogue.replace('<blockquote>',  '')
                 dialogue = dialogue.replace('</blockquote>', '')
@@ -190,10 +195,7 @@ def _init_graphs(play):
     return play
 
 def init_play_imgs(play, play_alias, force_img_regen):
-#     play_data_ctx = get_plays_ctx(plays_set)
-#     if play_alias not in play_data_ctx.map_by_alias:
-#         raise Exception('Can''t find play [%s].' % play_alias)
-#     play  = play_data_ctx.get_play(play_alias)
+    assert(isinstance(play, Play))
     logger.debug('%s\n\t%s', play.title, play.toc_as_str())
     
     img_root_dir = 'imgs/'
