@@ -3,6 +3,10 @@ function addDnD(document, scope, element, attr) {
 	var divElmt = element[0]; // the div tag
 	// get the actual position of the image 
 
+  // Keep track of the positions of each of the popups.  
+  // Otherwise there will be some jumping of the div elements
+  scope.popupPosn = {};
+  
 	var popupPosn = scope.popupPosn[divElmt.id] = {
 	  startX : divElmt.offsetLeft, 
 	  startY : divElmt.offsetTop

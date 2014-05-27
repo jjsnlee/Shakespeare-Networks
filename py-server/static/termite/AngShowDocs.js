@@ -26,6 +26,18 @@ termiteTopics.service('termiteMsgService', function() {
 termiteTopics.controller('contentCtrl', function($scope, $http, termiteMsgService) {
 	$scope.topDocsForTopic = [];
 	$scope.selectedTopic = null;
+	$scope.showTopicDetails = 0;
+	
+	$scope.getDocContent = function(charNm) {
+		console.log('charNm: '+charNm);
+		$scope.showTopicDetails = 1;
+		
+		$http.get('/shakespeare/corpus/characters/'+charNm).success(function(data) {
+			console.log('data: '+data);
+			$scope.docName    = data.doc_name;
+			$scope.docContent = data.doc_content;
+    });
+	};
 
 	$scope.getSelected = function(topicIndex, topicLabel) {
 		console.log('Got msg about topicIndex: ' + topicIndex);
@@ -35,8 +47,8 @@ termiteTopics.controller('contentCtrl', function($scope, $http, termiteMsgServic
 			data = data.map(function(c) {
     		return {
     			'char'  : c[0], 
-    			'score' : c[1].toFixed(6), 
-    			'url'   : ''
+    			'score' : c[1].toFixed(6) 
+    			//'url'   : 'ABC'
     		}
   		});
 			$scope.topDocsForTopic = _.sortBy(data, function(c) { 
