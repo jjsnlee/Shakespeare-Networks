@@ -69,15 +69,15 @@ createChartDirective('allPlaysChart', 'whichChart', function(scope, containerNam
   };
 });
 
-function testClick() {
-	console.log('ABCD');
-}
+//function testClick() {
+//	console.log('ABCD');
+//}
 
 function createAllPlaysOneSummary(allPlaysData, containerName, isActivePlay) {
   console.log('allPlaysData: '+allPlaysData);
   var playsPerRow = 4;
   var currRow=0, currCol=0;
-  var templ = '<table width="100%">';
+  var templ = '<table width="100%" border="1" cellpadding="0" cellspacing="0">';
 
   var activePlaysKeys = wu(Object.keys(allPlaysData)).filter(function(playAlias) {
     return isActivePlay(playAlias)
