@@ -134,21 +134,25 @@ class ShakespearePlayCtx(RootPlayCtx):
             for r in rs:
                 html, loc = r
                 play.add_scene(Scene(play, '0', '0', loc, html))
-        
-        play_repl_chars = _repl_speakers.get(play_alias, {})
-        logger.debug('play_repl_chars: [%s]', play_repl_chars)
-        
+
         # Remove trailing : from the character's name's as well
         play_dialogue_ptn = '<A NAME=speech\d+><b>([^<]+?):{0,1}</b></a>(.+?(?:</body>|</blockquote>))'
         full_file = toc_file.replace('index.html', 'full.html')
         with open(full_file) as f:
             x = ''.join(f.readlines())
+            
+            # separate this out for testing...
+            play_repl_chars = _repl_speakers.get(play_alias, {})
+            logger.debug('play_repl_chars: [%s]', play_repl_chars)            
+
+            # there is a bug where 2 characters speak together
+            # only one of them gets picked up in the graph, 
+            # and the other is written out as ([,N,O)
             rs = re.finditer(play_dialogue_ptn, x, re.S)
             for r in rs:
                 speaker, dialogue = r.groups()
                 
                 # FIXME hack to rename characters... 
-                #speaker = play_repl_chars.get(speaker, speaker)
                 if speaker in play_repl_chars:
                     logger.debug('Replacing [%s] with [%s]', speaker, play_repl_chars[speaker])
                     speaker = play_repl_chars[speaker]
@@ -171,6 +175,8 @@ class ShakespearePlayCtx(RootPlayCtx):
 # hack to aliases where they are known
 _repl_speakers = { 
   'lear'       : { 'LEAR' : 'KING LEAR' },
+  'henryviii'  : { 'KATHARINE' : 'QUEEN KATHARINE / KATHARINE',
+                   'QUEEN KATHARINE' : 'QUEEN KATHARINE / KATHARINE', },
   'richardiii' : { 'GLOUCESTER' : 'GLOUCESTER / KING RICHARD III',
                    'KING RICHARD III' : 'GLOUCESTER / KING RICHARD III' } 
 }
