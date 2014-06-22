@@ -10,37 +10,35 @@ shPlays.directive('myDraggable', function($document) {
 });
 
 function createChartDirective(directiveName, toggleVar, renderChartFn) {
-  shPlays.directive(directiveName, function($document) {
-	  var containerName = directiveName+'Container'
-	  return { 
-			replace: true,
-			/*scope: {
-			  items: '='
-			  //charData : '='
-			},*/
-			controller: function ($scope, $element, $attrs) {
-			  console.log(directiveName + ' controller...');
-			},
-			template: '<div id="'+containerName+'" style="margin: 0 auto">not working</div>',
-			link: function (scope, element, attr) {
-			  
-			  function refreshEvt(newValue) {
-				  if(scope[toggleVar]!==0) {
-				    renderChartFn(scope, containerName, scope[toggleVar]);
-				  }
+	shPlays.directive(directiveName, function($document) {
+		var containerName = directiveName+'Container'
+		return { 
+		  replace: true,
+		  /*scope: {
+			items: '='
+			//charData : '='
+		  },*/
+		  controller: function ($scope, $element, $attrs) {
+		  	console.log(directiveName + ' controller...');
+		  },
+		  template: '<div id="'+containerName+'" style="margin: 0 auto">Loading...</div>',
+		  link: function (scope, element, attr) {
+				function refreshEvt(newValue) {
+					if(scope[toggleVar]!==0) {
+						renderChartFn(scope, containerName, scope[toggleVar]);
+					}
 				};
-			  scope.$watch(toggleVar, refreshEvt, true);
-        // better way of doing this? 
-			  scope.$watch('refreshToggle', refreshEvt, true);
-	    }
-	  };
-	});
+				scope.$watch(toggleVar, refreshEvt, true);
+				// better way of doing this? 
+				scope.$watch('refreshToggle', refreshEvt, true);
+		  }
+		};
+  });
 };
 
 createChartDirective('characterChart', 'showCurrPlayChart', function(scope, containerName, whichMetric) {
   var charMap = scope.charData;
   var characters = scope.characters;
-  
   var initChartFn = wu.curry(createSinglePlayCharChart, charMap, characters, containerName);
   switch(whichMetric) {
     case 'By Lines': initChartFn('nlines', 'Lines'); break;
@@ -58,19 +56,70 @@ createChartDirective('allPlaysChart', 'whichChart', function(scope, containerNam
         || (playData.genre=='Tragedy' && scope.genreTragedy);
   };
 
+  var initSummary = wu.curry(createAllPlaysOneSummary, allPlaysData, containerName, isActivePlay);
   var initColChart = wu.curry(createAllPlaysCharChart, allPlaysData, containerName, isActivePlay);
   var initSplineChart = wu.curry(createAllPlaysSplineChart, allPlaysData, containerName, isActivePlay);
 
   switch(whichChart) {
-    case 'Top Characters (Lines)' : initColChart('nlines', '% of Total Lines'); break;
-    case 'Top Characters (Edges)' : initColChart('nedges', '% of Total Edges'); break;
-    case 'All Plays (Lines)'      : initSplineChart('nlines', '% of Total Lines'); break;
-    case 'All Plays (Edges)'      : initSplineChart('nedges', '% of Total Edges'); break;
+  	case 'All Plays - One Summary' : initSummary(); break;
+    case 'Top Characters (Lines)'  : initColChart('nlines', '% of Total Lines'); break;
+    case 'Top Characters (Edges)'  : initColChart('nedges', '% of Total Edges'); break;
+    case 'All Plays (Lines)'       : initSplineChart('nlines', '% of Total Lines'); break;
+    case 'All Plays (Edges)'       : initSplineChart('nedges', '% of Total Edges'); break;
   };
 });
 
-function createSinglePlayCharChart(charMap, characters, containerName, whichMetric) {
+function testClick() {
+	console.log('ABCD');
+}
+
+function createAllPlaysOneSummary(allPlaysData, containerName, isActivePlay) {
+  console.log('allPlaysData: '+allPlaysData);
+  var playsPerRow = 4;
+  var currRow=0, currCol=0;
+  var templ = '<table width="100%">';
+
+  var activePlaysKeys = wu(Object.keys(allPlaysData)).filter(function(playAlias) {
+    return isActivePlay(playAlias)
+  }).toArray();
+  
+  $.each(activePlaysKeys, function(idx, playAlias) {
+  	if(idx % playsPerRow == 0) {
+  		if(idx>0)
+  			templ+='</tr>';
+  		templ+='<tr>';
+  	}
+		var playContainerName = '_'+playAlias; 
+		templ+='<td width="25%"><div style="height:200px" ng-click="testClick()" id="' 
+			+ playContainerName +'">' + playAlias + '</div></td>';
+  });
+  
+  templ+='</table>';
+  $('div#'+containerName).html(templ);
+  
+  $.each(activePlaysKeys, function(idx, playAlias) {
+  	var playData = allPlaysData[playAlias];
+  	var charMap = playData.chardata;
+		var characters = Object.keys(charMap);
+		var playContainerName = '_'+playAlias;
+		//var title = '<a ng-click="testClick()>'+playAlias+'</a>'
+		var title = playAlias
+
+		chartOptions = {
+			xAxisLabels : { enabled: false },
+	  	title : title
+		}
+		
+		createSinglePlayCharChart(charMap, characters, playContainerName, 'nlines', chartOptions);
+  });
+}
+
+function createSinglePlayCharChart(charMap, characters, containerName, whichMetric, chartOptions) {
   console.log('Rendering Single Play...');
+  if(!chartOptions)
+  	chartOptions = {}
+  if(!chartOptions.title)
+  	chartOptions.title = 'Characters';
 
   var characters = _.sortBy(characters, function(c) { 
     return -1*charMap[c][whichMetric]; 
@@ -78,8 +127,15 @@ function createSinglePlayCharChart(charMap, characters, containerName, whichMetr
   var charAggr = characters.map(function(c) {
     return charMap[c][whichMetric];
   });
+
+	var seriesTotal = wu(charAggr).reduce(function(n, m) { return n+m });
+	chartOptions.tooltip = {
+		formatter: function() {
+	    return '<b>'+ this.key +'</b><br/>' + this.y + ' of ' + seriesTotal +' lines (' + Math.round(100*this.y/seriesTotal)+'%)' 
+		}
+	};
   
-  createColumnChart(containerName, characters, charAggr, 'Characters');
+  createColumnChart(containerName, characters, charAggr, chartOptions);
 }
 
 function mapAllPlaysByMetric(allPlaysData, whichMetric) {
@@ -124,12 +180,12 @@ function mapAllChars(allPlaysData, mapByField) {
   });
   
   var characters = _.sortBy(Object.keys(playCharAggr), function(charAlias) {
-	  return -1*playCharAggr[charAlias]; 
-	});
+    return -1*playCharAggr[charAlias]; 
+  });
   
-	return {
-	  characters : characters, 
-	  fieldAggr : playCharAggr
+  return {
+		characters : characters, 
+		fieldAggr : playCharAggr
   };
 }
 
@@ -137,18 +193,45 @@ function createAllPlaysCharChart(allPlaysData, containerName, isActivePlay, whic
   console.log('Rendering All Plays 1...');
   
   var playCharAggr = mapAllChars(allPlaysData, whichMetric);
-  var characters = playCharAggr.characters.slice(0, 30);
+  var characters = playCharAggr.characters.slice(0, 70);
   
   var aggrData = characters.map(function(c) {
     return playCharAggr.fieldAggr[c];
   });
   
-  createColumnChart(containerName, characters, aggrData, 'Top Characters', Label);
+  chartOptions = {
+  	title : 'Top Characters', 
+  	YAxisLabel : Label 
+  }
+  
+  createColumnChart(containerName, characters, aggrData, chartOptions);
 };
 
-function createColumnChart(containerName, categories, singleSeries, title, YAxisLabel) {
-  if(!YAxisLabel)
+function createColumnChart(containerName, categories, singleSeries, chartOptions) {
+
+	if(!chartOptions)
+		chartOptions = {};
+	
+	YAxisLabel = chartOptions.YAxisLabel;
+	title = chartOptions.title;
+	xAxisLabels = chartOptions.xAxisLabels;
+	tooltip = chartOptions.tooltip;
+	
+	if(!tooltip)
+		tooltip = {
+			formatter: function() {
+		    return '<b>'+ this.key +'</b><br/>' + Math.round(this.y*10000)/100 + '%';
+			}
+		};
+	
+	if(!YAxisLabel)
     YAxisLabel = 'Lines';
+
+	if(!xAxisLabels)
+  	xAxisLabels = {
+			rotation: -45,
+			align : 'right'
+		};
 	
 	var chart = new Highcharts.Chart({
 		chart: {
@@ -156,14 +239,12 @@ function createColumnChart(containerName, categories, singleSeries, title, YAxis
 			renderTo : containerName,
 		},
 		title: {
-		  text: title
+		  text: title,
+		  //useHTML:true
 		},
 		xAxis: {
 		  categories : categories,
-		  labels : {
-		    rotation: -45,
-		    align : 'right'
-		  },
+		  labels : xAxisLabels
 		},
 		yAxis: {
 			min: 0,
@@ -174,13 +255,8 @@ function createColumnChart(containerName, categories, singleSeries, title, YAxis
 		legend: {
 		  enabled: false
 		},
-		tooltip: {
-			formatter: function() {
-		    return '<b>'+ this.key +'</b><br/>' + Math.round(this.y*10000)/100 + '%'
-		    //+Highcharts.dateFormat('%e. %b', this.x) +': '+ this.y +' m';
-		    ;
-			}
-		},
+		tooltip: tooltip,
+
 		plotOptions: {
 			column: {
 				//pointPadding: 0.2,
@@ -188,7 +264,13 @@ function createColumnChart(containerName, categories, singleSeries, title, YAxis
 			}
 		},
 		series: [ { name : 'A', data : singleSeries } ]
-	});
+	}
+//	,function(chart){
+//    $('.highcharts-title').click(function(){
+//        console.log('aaaa');
+//    });
+//	}
+	);
 }
 
 function createAllPlaysSplineChart(allPlaysData, containerName, isActivePlay, whichMetric, label) {
@@ -229,7 +311,7 @@ function createAllPlaysSplineChart(allPlaysData, containerName, isActivePlay, wh
 			},
 			min: 0,
 			//type: 'logarithmic',
-      //minorTickInterval: 0.1
+			//minorTickInterval: 0.1
 			//max : 1700
 		},
 		tooltip: {

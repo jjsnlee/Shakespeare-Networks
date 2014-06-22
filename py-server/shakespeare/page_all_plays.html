@@ -72,7 +72,10 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 <table class="sectionDiv" width="90%" border=1 cellpadding=0 cellspacing=0>
 <tr>
   <td width="20%" valign="top">
-    
+
+	  <a ng-click="enableAllPlaysChart('All Plays - One Summary')" 
+	    style="text-decoration:underline; cursor:pointer">All Plays - Summary</a><br>    
+
 	  <a ng-click="enableAllPlaysChart('Top Characters (Lines)')" 
 	    style="text-decoration:underline; cursor:pointer">Top Characters (Lines)</a><br>
 	  
