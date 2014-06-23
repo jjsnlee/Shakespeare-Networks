@@ -1,0 +1,1075 @@
+{
+ "title": "Romeo and Juliet", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/romeo_juliet_1_0.png", 
+    "char_data": {}, 
+    "location": "PROLOGUE", 
+    "scene": "0", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_1_1.png", 
+    "char_data": {
+     "First Citizen": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "SAMPSON": {
+      "ratio": 11.33, 
+      "nlines": 34, 
+      "nedges": 3
+     }, 
+     "TYBALT": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "LADY CAPULET": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "ROMEO": {
+      "ratio": 66.0, 
+      "nlines": 66, 
+      "nedges": 1
+     }, 
+     "MONTAGUE": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "LADY MONTAGUE": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "GREGORY": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "ABRAHAM": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "PRINCE": {
+      "ratio": 12.0, 
+      "nlines": 24, 
+      "nedges": 2
+     }, 
+     "BENVOLIO": {
+      "ratio": 10.8, 
+      "nlines": 54, 
+      "nedges": 5
+     }, 
+     "CAPULET": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Verona. A public place.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_1_2.png", 
+    "char_data": {
+     "PARIS": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "Servant": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }, 
+     "CAPULET": {
+      "ratio": 18.0, 
+      "nlines": 36, 
+      "nedges": 2
+     }, 
+     "BENVOLIO": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "ROMEO": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_1_3.png", 
+    "char_data": {
+     "Servant": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Nurse": {
+      "ratio": 31.5, 
+      "nlines": 63, 
+      "nedges": 2
+     }, 
+     "LADY CAPULET": {
+      "ratio": 12.67, 
+      "nlines": 38, 
+      "nedges": 3
+     }, 
+     "JULIET": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A room in Capulet's house.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_1_4.png", 
+    "char_data": {
+     "MERCUTIO": {
+      "ratio": 36.5, 
+      "nlines": 73, 
+      "nedges": 2
+     }, 
+     "BENVOLIO": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "ROMEO": {
+      "ratio": 17.0, 
+      "nlines": 34, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "4", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_1_5.png", 
+    "char_data": {
+     "Second Capulet": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "First Servant": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "Servant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Second Servant": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "ROMEO": {
+      "ratio": 4.67, 
+      "nlines": 28, 
+      "nedges": 6
+     }, 
+     "TYBALT": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "Nurse": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "CAPULET": {
+      "ratio": 11.6, 
+      "nlines": 58, 
+      "nedges": 5
+     }, 
+     "BENVOLIO": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "JULIET": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A hall in Capulet's house.", 
+    "scene": "5", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/romeo_juliet_2_0.png", 
+    "char_data": {
+     "Chorus": {
+      "ratio": 0, 
+      "nlines": 15, 
+      "nedges": 0
+     }
+    }, 
+    "location": "PROLOGUE", 
+    "scene": "0", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_2_1.png", 
+    "char_data": {
+     "MERCUTIO": {
+      "ratio": 34.0, 
+      "nlines": 34, 
+      "nedges": 1
+     }, 
+     "BENVOLIO": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "ROMEO": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A lane by the wall of Capulet's orchard.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_2_2.png", 
+    "char_data": {
+     "Nurse": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "ROMEO": {
+      "ratio": 92.0, 
+      "nlines": 92, 
+      "nedges": 1
+     }, 
+     "JULIET": {
+      "ratio": 59.5, 
+      "nlines": 119, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Capulet's orchard.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_2_3.png", 
+    "char_data": {
+     "FRIAR LAURENCE": {
+      "ratio": 74.0, 
+      "nlines": 74, 
+      "nedges": 1
+     }, 
+     "ROMEO": {
+      "ratio": 25.0, 
+      "nlines": 25, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Friar Laurence's cell.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_2_4.png", 
+    "char_data": {
+     "MERCUTIO": {
+      "ratio": 30.67, 
+      "nlines": 92, 
+      "nedges": 3
+     }, 
+     "ROMEO": {
+      "ratio": 15.67, 
+      "nlines": 47, 
+      "nedges": 3
+     }, 
+     "Nurse": {
+      "ratio": 12.0, 
+      "nlines": 48, 
+      "nedges": 4
+     }, 
+     "PETER": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "NURSE": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "BENVOLIO": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "4", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_2_5.png", 
+    "char_data": {
+     "Nurse": {
+      "ratio": 37.0, 
+      "nlines": 37, 
+      "nedges": 1
+     }, 
+     "JULIET": {
+      "ratio": 46.0, 
+      "nlines": 46, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Capulet's orchard.", 
+    "scene": "5", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_2_6.png", 
+    "char_data": {
+     "ROMEO": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "FRIAR LAURENCE": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "JULIET": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Friar Laurence's cell.", 
+    "scene": "6", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/romeo_juliet_3_1.png", 
+    "char_data": {
+     "MERCUTIO": {
+      "ratio": 24.0, 
+      "nlines": 72, 
+      "nedges": 3
+     }, 
+     "First Citizen": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "TYBALT": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "LADY CAPULET": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "ROMEO": {
+      "ratio": 13.33, 
+      "nlines": 40, 
+      "nedges": 3
+     }, 
+     "MONTAGUE": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "PRINCE": {
+      "ratio": 4.25, 
+      "nlines": 17, 
+      "nedges": 4
+     }, 
+     "BENVOLIO": {
+      "ratio": 11.0, 
+      "nlines": 55, 
+      "nedges": 5
+     }
+    }, 
+    "location": "A public place.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_3_2.png", 
+    "char_data": {
+     "Nurse": {
+      "ratio": 32.0, 
+      "nlines": 32, 
+      "nedges": 1
+     }, 
+     "JULIET": {
+      "ratio": 118.0, 
+      "nlines": 118, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Capulet's orchard.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_3_3.png", 
+    "char_data": {
+     "Nurse": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "FRIAR LAURENCE": {
+      "ratio": 45.5, 
+      "nlines": 91, 
+      "nedges": 2
+     }, 
+     "ROMEO": {
+      "ratio": 37.0, 
+      "nlines": 74, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Friar Laurence's cell.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_3_4.png", 
+    "char_data": {
+     "PARIS": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "LADY CAPULET": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "CAPULET": {
+      "ratio": 16.0, 
+      "nlines": 32, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in Capulet's house.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_3_5.png", 
+    "char_data": {
+     "Nurse": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }, 
+     "ROMEO": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }, 
+     "LADY CAPULET": {
+      "ratio": 19.5, 
+      "nlines": 39, 
+      "nedges": 2
+     }, 
+     "JULIET": {
+      "ratio": 26.75, 
+      "nlines": 107, 
+      "nedges": 4
+     }, 
+     "CAPULET": {
+      "ratio": 21.67, 
+      "nlines": 65, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Capulet's orchard.", 
+    "scene": "5", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/romeo_juliet_4_1.png", 
+    "char_data": {
+     "PARIS": {
+      "ratio": 12.0, 
+      "nlines": 24, 
+      "nedges": 2
+     }, 
+     "FRIAR LAURENCE": {
+      "ratio": 28.5, 
+      "nlines": 57, 
+      "nedges": 2
+     }, 
+     "JULIET": {
+      "ratio": 24.5, 
+      "nlines": 49, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Friar Laurence's cell.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_4_2.png", 
+    "char_data": {
+     "LADY CAPULET": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Second Servant": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "Nurse": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "CAPULET": {
+      "ratio": 6.0, 
+      "nlines": 30, 
+      "nedges": 5
+     }, 
+     "LADY  CAPULET": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "JULIET": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Hall in Capulet's house.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_4_3.png", 
+    "char_data": {
+     "LADY CAPULET": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "JULIET": {
+      "ratio": 59.0, 
+      "nlines": 59, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Juliet's chamber.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_4_4.png", 
+    "char_data": {
+     "LADY CAPULET": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Nurse": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "First Servant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Second Servant": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "CAPULET": {
+      "ratio": 6.5, 
+      "nlines": 26, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Hall in Capulet's house.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_4_5.png", 
+    "char_data": {
+     "Musician": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Third Musician": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "PARIS": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "FRIAR LAURENCE": {
+      "ratio": 13.0, 
+      "nlines": 26, 
+      "nedges": 2
+     }, 
+     "LADY CAPULET": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "Second Musician": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "First Musician": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "Nurse": {
+      "ratio": 7.75, 
+      "nlines": 31, 
+      "nedges": 4
+     }, 
+     "PETER": {
+      "ratio": 7.0, 
+      "nlines": 28, 
+      "nedges": 4
+     }, 
+     "CAPULET": {
+      "ratio": 7.25, 
+      "nlines": 29, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Juliet's chamber.", 
+    "scene": "5", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/romeo_juliet_5_1.png", 
+    "char_data": {
+     "BALTHASAR": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "Apothecary": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "ROMEO": {
+      "ratio": 38.0, 
+      "nlines": 76, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Mantua. A street.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_5_2.png", 
+    "char_data": {
+     "FRIAR JOHN": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }, 
+     "FRIAR LAURENCE": {
+      "ratio": 18.0, 
+      "nlines": 18, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Friar Laurence's cell.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/romeo_juliet_5_3.png", 
+    "char_data": {
+     "PARIS": {
+      "ratio": 19.5, 
+      "nlines": 39, 
+      "nedges": 2
+     }, 
+     "Third Watchman": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "FRIAR LAURENCE": {
+      "ratio": 20.0, 
+      "nlines": 80, 
+      "nedges": 4
+     }, 
+     "Second Watchman": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "JULIET": {
+      "ratio": 7.0, 
+      "nlines": 21, 
+      "nedges": 3
+     }, 
+     "ROMEO": {
+      "ratio": 22.25, 
+      "nlines": 89, 
+      "nedges": 4
+     }, 
+     "MONTAGUE": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "BALTHASAR": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "LADY CAPULET": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "First Watchman": {
+      "ratio": 3.67, 
+      "nlines": 22, 
+      "nedges": 6
+     }, 
+     "PAGE": {
+      "ratio": 2.2, 
+      "nlines": 11, 
+      "nedges": 5
+     }, 
+     "PRINCE": {
+      "ratio": 5.71, 
+      "nlines": 40, 
+      "nedges": 7
+     }, 
+     "CAPULET": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A churchyard; in it a tomb belonging to the Capulets.", 
+    "scene": "3", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "SAMPSON", 
+  "GREGORY", 
+  "ABRAHAM", 
+  "BENVOLIO", 
+  "TYBALT", 
+  "First Citizen", 
+  "CAPULET", 
+  "LADY CAPULET", 
+  "MONTAGUE", 
+  "LADY MONTAGUE", 
+  "PRINCE", 
+  "ROMEO", 
+  "PARIS", 
+  "Servant", 
+  "Nurse", 
+  "JULIET", 
+  "MERCUTIO", 
+  "First Servant", 
+  "Second Servant", 
+  "Second Capulet", 
+  "Chorus", 
+  "FRIAR LAURENCE", 
+  "PETER", 
+  "NURSE", 
+  "LADY  CAPULET", 
+  "First Musician", 
+  "Second Musician", 
+  "Musician", 
+  "Third Musician", 
+  "BALTHASAR", 
+  "Apothecary", 
+  "FRIAR JOHN", 
+  "PAGE", 
+  "First Watchman", 
+  "Second Watchman", 
+  "Third Watchman"
+ ], 
+ "year": "1594-95 / 1597", 
+ "char_data": {
+  "Second Capulet": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 19
+  }, 
+  "SAMPSON": {
+   "ratio": 11.33, 
+   "nlines": 34, 
+   "nedges": 3, 
+   "order_app": 0
+  }, 
+  "TYBALT": {
+   "ratio": 8.0, 
+   "nlines": 40, 
+   "nedges": 5, 
+   "order_app": 4
+  }, 
+  "LADY CAPULET": {
+   "ratio": 17.14, 
+   "nlines": 120, 
+   "nedges": 7, 
+   "order_app": 7
+  }, 
+  "Second Servant": {
+   "ratio": 7.0, 
+   "nlines": 14, 
+   "nedges": 2, 
+   "order_app": 18
+  }, 
+  "MONTAGUE": {
+   "ratio": 10.75, 
+   "nlines": 43, 
+   "nedges": 4, 
+   "order_app": 8
+  }, 
+  "Nurse": {
+   "ratio": 28.7, 
+   "nlines": 287, 
+   "nedges": 10, 
+   "order_app": 14
+  }, 
+  "First Watchman": {
+   "ratio": 3.67, 
+   "nlines": 22, 
+   "nedges": 6, 
+   "order_app": 33
+  }, 
+  "NURSE": {
+   "ratio": 9.0, 
+   "nlines": 9, 
+   "nedges": 1, 
+   "order_app": 23
+  }, 
+  "CAPULET": {
+   "ratio": 18.13, 
+   "nlines": 290, 
+   "nedges": 16, 
+   "order_app": 6
+  }, 
+  "Second Musician": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 26
+  }, 
+  "Second Watchman": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 34
+  }, 
+  "Musician": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 27
+  }, 
+  "ROMEO": {
+   "ratio": 49.46, 
+   "nlines": 643, 
+   "nedges": 13, 
+   "order_app": 11
+  }, 
+  "PARIS": {
+   "ratio": 11.0, 
+   "nlines": 77, 
+   "nedges": 7, 
+   "order_app": 12
+  }, 
+  "PETER": {
+   "ratio": 6.8, 
+   "nlines": 34, 
+   "nedges": 5, 
+   "order_app": 22
+  }, 
+  "LADY MONTAGUE": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 9
+  }, 
+  "MERCUTIO": {
+   "ratio": 67.75, 
+   "nlines": 271, 
+   "nedges": 4, 
+   "order_app": 16
+  }, 
+  "First Citizen": {
+   "ratio": 2.0, 
+   "nlines": 8, 
+   "nedges": 4, 
+   "order_app": 5
+  }, 
+  "Servant": {
+   "ratio": 5.0, 
+   "nlines": 25, 
+   "nedges": 5, 
+   "order_app": 13
+  }, 
+  "FRIAR JOHN": {
+   "ratio": 15.0, 
+   "nlines": 15, 
+   "nedges": 1, 
+   "order_app": 31
+  }, 
+  "FRIAR LAURENCE": {
+   "ratio": 40.67, 
+   "nlines": 366, 
+   "nedges": 9, 
+   "order_app": 21
+  }, 
+  "Third Watchman": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 35
+  }, 
+  "Chorus": {
+   "ratio": 0, 
+   "nlines": 15, 
+   "nedges": 0, 
+   "order_app": 20
+  }, 
+  "First Musician": {
+   "ratio": 2.5, 
+   "nlines": 10, 
+   "nedges": 4, 
+   "order_app": 25
+  }, 
+  "Third Musician": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 28
+  }, 
+  "GREGORY": {
+   "ratio": 10.0, 
+   "nlines": 20, 
+   "nedges": 2, 
+   "order_app": 1
+  }, 
+  "ABRAHAM": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 2
+  }, 
+  "PRINCE": {
+   "ratio": 8.1, 
+   "nlines": 81, 
+   "nedges": 10, 
+   "order_app": 10
+  }, 
+  "JULIET": {
+   "ratio": 63.0, 
+   "nlines": 567, 
+   "nedges": 9, 
+   "order_app": 15
+  }, 
+  "First Servant": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 17
+  }, 
+  "PAGE": {
+   "ratio": 2.2, 
+   "nlines": 11, 
+   "nedges": 5, 
+   "order_app": 32
+  }, 
+  "BALTHASAR": {
+   "ratio": 11.0, 
+   "nlines": 33, 
+   "nedges": 3, 
+   "order_app": 29
+  }, 
+  "Apothecary": {
+   "ratio": 7.0, 
+   "nlines": 7, 
+   "nedges": 1, 
+   "order_app": 30
+  }, 
+  "LADY  CAPULET": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 24
+  }, 
+  "BENVOLIO": {
+   "ratio": 15.18, 
+   "nlines": 167, 
+   "nedges": 11, 
+   "order_app": 3
+  }
+ }, 
+ "type": "Tragedy"
+}

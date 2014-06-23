@@ -1,0 +1,717 @@
+{
+ "title": "Measure for Measure", 
+ "acts": [
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "DUKE": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "DUKE VINCENTIO": {
+      "ratio": 33.5, 
+      "nlines": 67, 
+      "nedges": 2
+     }, 
+     "ESCALUS": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }
+    }, 
+    "location": "An apartment in the DUKE'S palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LUCIO": {
+      "ratio": 13.75, 
+      "nlines": 55, 
+      "nedges": 4
+     }, 
+     "First Gentleman": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "CLAUDIO": {
+      "ratio": 19.67, 
+      "nlines": 59, 
+      "nedges": 3
+     }, 
+     "POMPEY": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }, 
+     "MISTRESS OVERDONE": {
+      "ratio": 5.75, 
+      "nlines": 23, 
+      "nedges": 4
+     }, 
+     "Provost": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "Second Gentleman": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A Street.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "DUKE VINCENTIO": {
+      "ratio": 52.0, 
+      "nlines": 52, 
+      "nedges": 1
+     }, 
+     "FRIAR THOMAS": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A monastery.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LUCIO": {
+      "ratio": 63.0, 
+      "nlines": 63, 
+      "nedges": 1
+     }, 
+     "ISABELLA": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "FRANCISCA": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A nunnery.", 
+    "scene": "4", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 8.75, 
+      "nlines": 35, 
+      "nedges": 4
+     }, 
+     "FROTH": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "Justice": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "POMPHEY": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "ESCALUS": {
+      "ratio": 17.0, 
+      "nlines": 102, 
+      "nedges": 6
+     }, 
+     "POMPEY": {
+      "ratio": 18.5, 
+      "nlines": 74, 
+      "nedges": 4
+     }, 
+     "Provost": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "ELBOW": {
+      "ratio": 17.33, 
+      "nlines": 52, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A hall In ANGELO's house.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Servant": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "ANGELO": {
+      "ratio": 22.75, 
+      "nlines": 91, 
+      "nedges": 4
+     }, 
+     "Provost": {
+      "ratio": 5.5, 
+      "nlines": 22, 
+      "nedges": 4
+     }, 
+     "ISABELLA": {
+      "ratio": 31.67, 
+      "nlines": 95, 
+      "nedges": 3
+     }, 
+     "LUCIO": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another room in the same.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "DUKE VINCENTIO": {
+      "ratio": 13.0, 
+      "nlines": 26, 
+      "nedges": 2
+     }, 
+     "Provost": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "JULIET": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in a prison.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 62.0, 
+      "nlines": 124, 
+      "nedges": 2
+     }, 
+     "Servant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "ISABELLA": {
+      "ratio": 79.0, 
+      "nlines": 79, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in ANGELO's house.", 
+    "scene": "4", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "DUKE VINCENTIO": {
+      "ratio": 45.0, 
+      "nlines": 135, 
+      "nedges": 3
+     }, 
+     "ISABELLA": {
+      "ratio": 31.0, 
+      "nlines": 93, 
+      "nedges": 3
+     }, 
+     "Provost": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "CLAUDIO": {
+      "ratio": 27.5, 
+      "nlines": 55, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in the prison.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LUCIO": {
+      "ratio": 31.33, 
+      "nlines": 94, 
+      "nedges": 3
+     }, 
+     "DUKE VINCENTIO": {
+      "ratio": 27.75, 
+      "nlines": 111, 
+      "nedges": 4
+     }, 
+     "ESCALUS": {
+      "ratio": 10.67, 
+      "nlines": 32, 
+      "nedges": 3
+     }, 
+     "POMPEY": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "MISTRESS OVERDONE": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "Provost": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "ELBOW": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The street before the prison.", 
+    "scene": "2", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "DUKE VINCENTIO": {
+      "ratio": 20.5, 
+      "nlines": 41, 
+      "nedges": 2
+     }, 
+     "ISABELLA": {
+      "ratio": 12.5, 
+      "nlines": 25, 
+      "nedges": 2
+     }, 
+     "MARIANA": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The moated grange at ST. LUKE's.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "DUKE VINCENTIO": {
+      "ratio": 45.0, 
+      "nlines": 90, 
+      "nedges": 2
+     }, 
+     "CLAUDIO": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "POMPEY": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "Provost": {
+      "ratio": 19.4, 
+      "nlines": 97, 
+      "nedges": 5
+     }, 
+     "Messenger": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "ABHORSON": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in the prison.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LUCIO": {
+      "ratio": 21.0, 
+      "nlines": 21, 
+      "nedges": 1
+     }, 
+     "ISABELLA": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "BARNARDINE": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "DUKE VINCENTIO": {
+      "ratio": 17.0, 
+      "nlines": 85, 
+      "nedges": 5
+     }, 
+     "POMPEY": {
+      "ratio": 16.0, 
+      "nlines": 32, 
+      "nedges": 2
+     }, 
+     "Provost": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "ABHORSON": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another room in the same.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 29.0, 
+      "nlines": 29, 
+      "nedges": 1
+     }, 
+     "ESCALUS": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in ANGELO's house.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "FRIAR PETER": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "DUKE VINCENTIO": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Fields without the town.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "FRIAR PETER": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "ISABELLA": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "MARIANA": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Street near the city gate.", 
+    "scene": "6", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 9.2, 
+      "nlines": 46, 
+      "nedges": 5
+     }, 
+     "LUCIO": {
+      "ratio": 9.83, 
+      "nlines": 59, 
+      "nedges": 6
+     }, 
+     "ISABELLA": {
+      "ratio": 17.8, 
+      "nlines": 89, 
+      "nedges": 5
+     }, 
+     "MARIANA": {
+      "ratio": 13.75, 
+      "nlines": 55, 
+      "nedges": 4
+     }, 
+     "DUKE VINCENTIO": {
+      "ratio": 38.14, 
+      "nlines": 267, 
+      "nedges": 7
+     }, 
+     "ESCALUS": {
+      "ratio": 14.33, 
+      "nlines": 43, 
+      "nedges": 3
+     }, 
+     "Provost": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "FRIAR PETER": {
+      "ratio": 9.67, 
+      "nlines": 29, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The city gate.", 
+    "scene": "1", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "DUKE VINCENTIO", 
+  "ESCALUS", 
+  "ANGELO", 
+  "DUKE", 
+  "LUCIO", 
+  "First Gentleman", 
+  "Second Gentleman", 
+  "MISTRESS OVERDONE", 
+  "POMPEY", 
+  "CLAUDIO", 
+  "Provost", 
+  "FRIAR THOMAS", 
+  "ISABELLA", 
+  "FRANCISCA", 
+  "ELBOW", 
+  "FROTH", 
+  "POMPHEY", 
+  "Justice", 
+  "Servant", 
+  "JULIET", 
+  "MARIANA", 
+  "ABHORSON", 
+  "Messenger", 
+  "BARNARDINE", 
+  "FRIAR PETER"
+ ], 
+ "year": "1604-05 / 1623", 
+ "char_data": {
+  "DUKE": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 3
+  }, 
+  "BARNARDINE": {
+   "ratio": 5.0, 
+   "nlines": 15, 
+   "nedges": 3, 
+   "order_app": 23
+  }, 
+  "Justice": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 17
+  }, 
+  "First Gentleman": {
+   "ratio": 7.33, 
+   "nlines": 22, 
+   "nedges": 3, 
+   "order_app": 5
+  }, 
+  "POMPEY": {
+   "ratio": 14.82, 
+   "nlines": 163, 
+   "nedges": 11, 
+   "order_app": 8
+  }, 
+  "Messenger": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 22
+  }, 
+  "ELBOW": {
+   "ratio": 13.6, 
+   "nlines": 68, 
+   "nedges": 5, 
+   "order_app": 14
+  }, 
+  "ISABELLA": {
+   "ratio": 53.63, 
+   "nlines": 429, 
+   "nedges": 8, 
+   "order_app": 12
+  }, 
+  "DUKE VINCENTIO": {
+   "ratio": 59.27, 
+   "nlines": 889, 
+   "nedges": 15, 
+   "order_app": 0
+  }, 
+  "ESCALUS": {
+   "ratio": 17.82, 
+   "nlines": 196, 
+   "nedges": 11, 
+   "order_app": 1
+  }, 
+  "FRIAR THOMAS": {
+   "ratio": 6.0, 
+   "nlines": 6, 
+   "nedges": 1, 
+   "order_app": 11
+  }, 
+  "CLAUDIO": {
+   "ratio": 23.4, 
+   "nlines": 117, 
+   "nedges": 5, 
+   "order_app": 9
+  }, 
+  "MISTRESS OVERDONE": {
+   "ratio": 5.0, 
+   "nlines": 30, 
+   "nedges": 6, 
+   "order_app": 7
+  }, 
+  "POMPHEY": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 16
+  }, 
+  "Servant": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 18
+  }, 
+  "FRIAR PETER": {
+   "ratio": 13.0, 
+   "nlines": 39, 
+   "nedges": 3, 
+   "order_app": 24
+  }, 
+  "ABHORSON": {
+   "ratio": 5.25, 
+   "nlines": 21, 
+   "nedges": 4, 
+   "order_app": 21
+  }, 
+  "JULIET": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 19
+  }, 
+  "ANGELO": {
+   "ratio": 37.44, 
+   "nlines": 337, 
+   "nedges": 9, 
+   "order_app": 2
+  }, 
+  "LUCIO": {
+   "ratio": 23.85, 
+   "nlines": 310, 
+   "nedges": 13, 
+   "order_app": 4
+  }, 
+  "FROTH": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 15
+  }, 
+  "MARIANA": {
+   "ratio": 18.75, 
+   "nlines": 75, 
+   "nedges": 4, 
+   "order_app": 20
+  }, 
+  "FRANCISCA": {
+   "ratio": 10.0, 
+   "nlines": 10, 
+   "nedges": 1, 
+   "order_app": 13
+  }, 
+  "Provost": {
+   "ratio": 15.0, 
+   "nlines": 180, 
+   "nedges": 12, 
+   "order_app": 10
+  }, 
+  "Second Gentleman": {
+   "ratio": 3.33, 
+   "nlines": 10, 
+   "nedges": 3, 
+   "order_app": 6
+  }
+ }, 
+ "type": "Comedy"
+}

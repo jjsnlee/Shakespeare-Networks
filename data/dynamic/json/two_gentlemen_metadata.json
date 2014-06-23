@@ -1,0 +1,640 @@
+{
+ "title": "Two Gentlemen of Verona", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/two_gentlemen_1_1.png", 
+    "char_data": {
+     "PROTEUS": {
+      "ratio": 30.5, 
+      "nlines": 61, 
+      "nedges": 2
+     }, 
+     "SPEED": {
+      "ratio": 43.0, 
+      "nlines": 43, 
+      "nedges": 1
+     }, 
+     "VALENTINE": {
+      "ratio": 44.0, 
+      "nlines": 44, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Verona. An open place.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_1_2.png", 
+    "char_data": {
+     "LUCETTA": {
+      "ratio": 57.0, 
+      "nlines": 57, 
+      "nedges": 1
+     }, 
+     "JULIA": {
+      "ratio": 94.0, 
+      "nlines": 94, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. Garden of JULIA's house.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_1_3.png", 
+    "char_data": {
+     "ANTONIO": {
+      "ratio": 18.5, 
+      "nlines": 37, 
+      "nedges": 2
+     }, 
+     "PROTEUS": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "PANTHINO": {
+      "ratio": 14.0, 
+      "nlines": 28, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. ANTONIO's house.", 
+    "scene": "3", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/two_gentlemen_2_1.png", 
+    "char_data": {
+     "SILVIA": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "SPEED": {
+      "ratio": 45.0, 
+      "nlines": 90, 
+      "nedges": 2
+     }, 
+     "VALENTINE": {
+      "ratio": 28.5, 
+      "nlines": 57, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Milan. The DUKE's palace.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_2_2.png", 
+    "char_data": {
+     "PROTEUS": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "JULIA": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "PANTHINO": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Verona. JULIA'S house.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_2_3.png", 
+    "char_data": {
+     "LAUNCE": {
+      "ratio": 46.0, 
+      "nlines": 46, 
+      "nedges": 1
+     }, 
+     "PANTHINO": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. A street.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_2_4.png", 
+    "char_data": {
+     "DUKE": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }, 
+     "SILVIA": {
+      "ratio": 4.8, 
+      "nlines": 24, 
+      "nedges": 5
+     }, 
+     "VALENTINE": {
+      "ratio": 22.0, 
+      "nlines": 110, 
+      "nedges": 5
+     }, 
+     "PROTEUS": {
+      "ratio": 17.67, 
+      "nlines": 53, 
+      "nedges": 3
+     }, 
+     "SPEED": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "THURIO": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Milan. The DUKE's palace.", 
+    "scene": "4", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_2_5.png", 
+    "char_data": {
+     "LAUNCE": {
+      "ratio": 29.0, 
+      "nlines": 29, 
+      "nedges": 1
+     }, 
+     "SPEED": {
+      "ratio": 22.0, 
+      "nlines": 22, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. A street.", 
+    "scene": "5", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_2_6.png", 
+    "char_data": {
+     "PROTEUS": {
+      "ratio": 0, 
+      "nlines": 44, 
+      "nedges": 0
+     }
+    }, 
+    "location": "The same. The DUKE'S palace.", 
+    "scene": "6", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_2_7.png", 
+    "char_data": {
+     "LUCETTA": {
+      "ratio": 18.0, 
+      "nlines": 18, 
+      "nedges": 1
+     }, 
+     "JULIA": {
+      "ratio": 73.0, 
+      "nlines": 73, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Verona. JULIA'S house.", 
+    "scene": "7", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/two_gentlemen_3_1.png", 
+    "char_data": {
+     "DUKE": {
+      "ratio": 52.5, 
+      "nlines": 105, 
+      "nedges": 2
+     }, 
+     "LAUNCE": {
+      "ratio": 28.33, 
+      "nlines": 85, 
+      "nedges": 3
+     }, 
+     "PROTEUS": {
+      "ratio": 25.67, 
+      "nlines": 77, 
+      "nedges": 3
+     }, 
+     "SPEED": {
+      "ratio": 37.0, 
+      "nlines": 37, 
+      "nedges": 1
+     }, 
+     "VALENTINE": {
+      "ratio": 26.33, 
+      "nlines": 79, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Milan. The DUKE's palace.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_3_2.png", 
+    "char_data": {
+     "DUKE": {
+      "ratio": 22.0, 
+      "nlines": 44, 
+      "nedges": 2
+     }, 
+     "PROTEUS": {
+      "ratio": 21.0, 
+      "nlines": 42, 
+      "nedges": 2
+     }, 
+     "THURIO": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. The DUKE's palace.", 
+    "scene": "2", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/two_gentlemen_4_1.png", 
+    "char_data": {
+     "Third Outlaw": {
+      "ratio": 5.25, 
+      "nlines": 21, 
+      "nedges": 4
+     }, 
+     "SPEED": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "Second Outlaw": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "First Outlaw": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "VALENTINE": {
+      "ratio": 5.75, 
+      "nlines": 23, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The frontiers of Mantua. A forest.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_4_2.png", 
+    "char_data": {
+     "Host": {
+      "ratio": 9.5, 
+      "nlines": 38, 
+      "nedges": 4
+     }, 
+     "PROTEUS": {
+      "ratio": 14.67, 
+      "nlines": 44, 
+      "nedges": 3
+     }, 
+     "SILVIA": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "JULIA": {
+      "ratio": 9.33, 
+      "nlines": 28, 
+      "nedges": 3
+     }, 
+     "THURIO": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Milan. Outside the DUKE's palace, under SILVIA's chamber.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_4_3.png", 
+    "char_data": {
+     "EGLAMOUR": {
+      "ratio": 19.0, 
+      "nlines": 19, 
+      "nedges": 1
+     }, 
+     "SILVIA": {
+      "ratio": 33.0, 
+      "nlines": 33, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_4_4.png", 
+    "char_data": {
+     "LAUNCE": {
+      "ratio": 49.0, 
+      "nlines": 49, 
+      "nedges": 1
+     }, 
+     "PROTEUS": {
+      "ratio": 17.0, 
+      "nlines": 34, 
+      "nedges": 2
+     }, 
+     "SILVIA": {
+      "ratio": 30.0, 
+      "nlines": 30, 
+      "nedges": 1
+     }, 
+     "JULIA": {
+      "ratio": 50.5, 
+      "nlines": 101, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "4", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/two_gentlemen_5_1.png", 
+    "char_data": {
+     "EGLAMOUR": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "SILVIA": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Milan. An abbey.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_5_2.png", 
+    "char_data": {
+     "DUKE": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "PROTEUS": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "JULIA": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "THURIO": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same. The DUKE's palace.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_5_3.png", 
+    "char_data": {
+     "SILVIA": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Second Outlaw": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "First Outlaw": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "Third Outlaw": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The frontiers of Mantua. The forest.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/two_gentlemen_5_4.png", 
+    "char_data": {
+     "DUKE": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "SILVIA": {
+      "ratio": 7.0, 
+      "nlines": 21, 
+      "nedges": 3
+     }, 
+     "JULIA": {
+      "ratio": 5.25, 
+      "nlines": 21, 
+      "nedges": 4
+     }, 
+     "VALENTINE": {
+      "ratio": 12.67, 
+      "nlines": 76, 
+      "nedges": 6
+     }, 
+     "Outlaws": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "PROTEUS": {
+      "ratio": 13.67, 
+      "nlines": 41, 
+      "nedges": 3
+     }, 
+     "THURIO": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the forest.", 
+    "scene": "4", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "VALENTINE", 
+  "PROTEUS", 
+  "SPEED", 
+  "JULIA", 
+  "LUCETTA", 
+  "ANTONIO", 
+  "PANTHINO", 
+  "SILVIA", 
+  "LAUNCE", 
+  "THURIO", 
+  "DUKE", 
+  "First Outlaw", 
+  "Second Outlaw", 
+  "Third Outlaw", 
+  "Host", 
+  "EGLAMOUR", 
+  "Outlaws"
+ ], 
+ "year": "1594-95 / 1623", 
+ "char_data": {
+  "DUKE": {
+   "ratio": 41.4, 
+   "nlines": 207, 
+   "nedges": 5, 
+   "order_app": 10
+  }, 
+  "Outlaws": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 16
+  }, 
+  "SILVIA": {
+   "ratio": 18.0, 
+   "nlines": 162, 
+   "nedges": 9, 
+   "order_app": 7
+  }, 
+  "JULIA": {
+   "ratio": 42.0, 
+   "nlines": 336, 
+   "nedges": 8, 
+   "order_app": 3
+  }, 
+  "ANTONIO": {
+   "ratio": 18.5, 
+   "nlines": 37, 
+   "nedges": 2, 
+   "order_app": 5
+  }, 
+  "Second Outlaw": {
+   "ratio": 4.0, 
+   "nlines": 16, 
+   "nedges": 4, 
+   "order_app": 12
+  }, 
+  "Host": {
+   "ratio": 9.5, 
+   "nlines": 38, 
+   "nedges": 4, 
+   "order_app": 14
+  }, 
+  "PROTEUS": {
+   "ratio": 51.44, 
+   "nlines": 463, 
+   "nedges": 9, 
+   "order_app": 1
+  }, 
+  "First Outlaw": {
+   "ratio": 4.2, 
+   "nlines": 21, 
+   "nedges": 5, 
+   "order_app": 11
+  }, 
+  "PANTHINO": {
+   "ratio": 14.33, 
+   "nlines": 43, 
+   "nedges": 3, 
+   "order_app": 6
+  }, 
+  "EGLAMOUR": {
+   "ratio": 31.0, 
+   "nlines": 31, 
+   "nedges": 1, 
+   "order_app": 15
+  }, 
+  "LUCETTA": {
+   "ratio": 75.0, 
+   "nlines": 75, 
+   "nedges": 1, 
+   "order_app": 4
+  }, 
+  "VALENTINE": {
+   "ratio": 35.36, 
+   "nlines": 389, 
+   "nedges": 11, 
+   "order_app": 0
+  }, 
+  "SPEED": {
+   "ratio": 33.17, 
+   "nlines": 199, 
+   "nedges": 6, 
+   "order_app": 2
+  }, 
+  "LAUNCE": {
+   "ratio": 52.25, 
+   "nlines": 209, 
+   "nedges": 4, 
+   "order_app": 8
+  }, 
+  "Third Outlaw": {
+   "ratio": 6.5, 
+   "nlines": 26, 
+   "nedges": 4, 
+   "order_app": 13
+  }, 
+  "THURIO": {
+   "ratio": 10.0, 
+   "nlines": 60, 
+   "nedges": 6, 
+   "order_app": 9
+  }
+ }, 
+ "type": "Comedy"
+}

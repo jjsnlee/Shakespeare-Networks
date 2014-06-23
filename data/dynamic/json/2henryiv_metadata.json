@@ -1,0 +1,1007 @@
+{
+ "title": "Henry IV, part 2", 
+ "acts": [
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "RUMOUR": {
+      "ratio": 0, 
+      "nlines": 42, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Induction", 
+    "scene": "0", 
+    "act": "0"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "TRAVERS": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "NORTHUMBERLAND": {
+      "ratio": 29.67, 
+      "nlines": 89, 
+      "nedges": 3
+     }, 
+     "LORD BARDOLPH": {
+      "ratio": 11.0, 
+      "nlines": 44, 
+      "nedges": 4
+     }, 
+     "Porter": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "MORTON": {
+      "ratio": 39.0, 
+      "nlines": 78, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Servant": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "FALSTAFF": {
+      "ratio": 55.25, 
+      "nlines": 221, 
+      "nedges": 4
+     }, 
+     "Page": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. A street.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ARCHBISHOP OF YORK": {
+      "ratio": 11.33, 
+      "nlines": 34, 
+      "nedges": 3
+     }, 
+     "MOWBRAY": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "LORD BARDOLPH": {
+      "ratio": 23.0, 
+      "nlines": 46, 
+      "nedges": 2
+     }, 
+     "HASTINGS": {
+      "ratio": 9.67, 
+      "nlines": 29, 
+      "nedges": 3
+     }
+    }, 
+    "location": "York. The Archbishop's palace.", 
+    "scene": "3", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "FALSTAFF": {
+      "ratio": 15.6, 
+      "nlines": 78, 
+      "nedges": 5
+     }, 
+     "MISTRESS QUICKLY": {
+      "ratio": 17.6, 
+      "nlines": 88, 
+      "nedges": 5
+     }, 
+     "SNARE": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "FANG": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "GOWER": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. A street.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "POINS": {
+      "ratio": 29.0, 
+      "nlines": 58, 
+      "nedges": 2
+     }, 
+     "PRINCE HENRY": {
+      "ratio": 28.0, 
+      "nlines": 84, 
+      "nedges": 3
+     }, 
+     "BARDOLPH": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "Page": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. Another street.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "NORTHUMBERLAND": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }, 
+     "LADY PERCY": {
+      "ratio": 46.0, 
+      "nlines": 46, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Warkworth. Before the castle.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "POINS": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "MISTRESS QUICKLY": {
+      "ratio": 14.33, 
+      "nlines": 86, 
+      "nedges": 6
+     }, 
+     "DOLL TEARSHEET": {
+      "ratio": 8.88, 
+      "nlines": 71, 
+      "nedges": 8
+     }, 
+     "BARDOLPH": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "PETO": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "First Drawer": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "FALSTAFF": {
+      "ratio": 16.14, 
+      "nlines": 113, 
+      "nedges": 7
+     }, 
+     "Second Drawer": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "PRINCE HENRY": {
+      "ratio": 7.6, 
+      "nlines": 38, 
+      "nedges": 5
+     }, 
+     "PISTOL": {
+      "ratio": 7.2, 
+      "nlines": 36, 
+      "nedges": 5
+     }, 
+     "Page": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. The Boar's-head Tavern in Eastcheap.", 
+    "scene": "4", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING HENRY IV": {
+      "ratio": 84.0, 
+      "nlines": 84, 
+      "nedges": 1
+     }, 
+     "WARWICK": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Westminster. The palace.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "BARDOLPH": {
+      "ratio": 3.5, 
+      "nlines": 21, 
+      "nedges": 6
+     }, 
+     "WART": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "SHALLOW": {
+      "ratio": 16.43, 
+      "nlines": 115, 
+      "nedges": 7
+     }, 
+     "BULLCALF": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "MOULDY": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "FALSTAFF": {
+      "ratio": 15.63, 
+      "nlines": 125, 
+      "nedges": 8
+     }, 
+     "SHADOW": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "FEEBLE": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "SILENCE": {
+      "ratio": 3.5, 
+      "nlines": 14, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Gloucestershire. Before SHALLOW'S house.", 
+    "scene": "2", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ARCHBISHOP OF YORK": {
+      "ratio": 31.33, 
+      "nlines": 94, 
+      "nedges": 3
+     }, 
+     "MOWBRAY": {
+      "ratio": 11.25, 
+      "nlines": 45, 
+      "nedges": 4
+     }, 
+     "Messenger": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "WESTMORELAND": {
+      "ratio": 27.0, 
+      "nlines": 81, 
+      "nedges": 3
+     }, 
+     "HASTINGS": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Yorkshire. Gaultree Forest.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LANCASTER": {
+      "ratio": 17.75, 
+      "nlines": 71, 
+      "nedges": 4
+     }, 
+     "ARCHBISHOP OF YORK": {
+      "ratio": 6.5, 
+      "nlines": 26, 
+      "nedges": 4
+     }, 
+     "MOWBRAY": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "WESTMORELAND": {
+      "ratio": 4.5, 
+      "nlines": 18, 
+      "nedges": 4
+     }, 
+     "HASTINGS": {
+      "ratio": 3.5, 
+      "nlines": 14, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Another part of the forest.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LANCASTER": {
+      "ratio": 8.33, 
+      "nlines": 25, 
+      "nedges": 3
+     }, 
+     "FALSTAFF": {
+      "ratio": 34.67, 
+      "nlines": 104, 
+      "nedges": 3
+     }, 
+     "COLEVILE": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "BARDOLPH": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "WESTMORELAND": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another part of the forest.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING HENRY IV": {
+      "ratio": 16.0, 
+      "nlines": 80, 
+      "nedges": 5
+     }, 
+     "CLARENCE": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "WESTMORELAND": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 4.5, 
+      "nlines": 18, 
+      "nedges": 4
+     }, 
+     "HARCOURT": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Westminster. The Jerusalem Chamber.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LANCASTER": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "KING HENRY IV": {
+      "ratio": 28.8, 
+      "nlines": 144, 
+      "nedges": 5
+     }, 
+     "CLARENCE": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 4.25, 
+      "nlines": 17, 
+      "nedges": 4
+     }, 
+     "PRINCE HENRY": {
+      "ratio": 21.0, 
+      "nlines": 84, 
+      "nedges": 4
+     }, 
+     "GLOUCESTER": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another chamber.", 
+    "scene": "5", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "BARDOLPH": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "FALSTAFF": {
+      "ratio": 32.0, 
+      "nlines": 32, 
+      "nedges": 1
+     }, 
+     "SHALLOW": {
+      "ratio": 10.0, 
+      "nlines": 30, 
+      "nedges": 3
+     }, 
+     "DAVY": {
+      "ratio": 24.0, 
+      "nlines": 24, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Gloucestershire. SHALLOW'S house.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LANCASTER": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "Princes": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "CLARENCE": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "KING HENRY V": {
+      "ratio": 25.5, 
+      "nlines": 102, 
+      "nedges": 4
+     }, 
+     "WARWICK": {
+      "ratio": 5.2, 
+      "nlines": 26, 
+      "nedges": 5
+     }, 
+     "GLOUCESTER": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Westminster. The palace.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "BARDOLPH": {
+      "ratio": 1.25, 
+      "nlines": 5, 
+      "nedges": 4
+     }, 
+     "SHALLOW": {
+      "ratio": 7.2, 
+      "nlines": 36, 
+      "nedges": 5
+     }, 
+     "DAVY": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "FALSTAFF": {
+      "ratio": 6.8, 
+      "nlines": 34, 
+      "nedges": 5
+     }, 
+     "PISTOL": {
+      "ratio": 7.0, 
+      "nlines": 28, 
+      "nedges": 4
+     }, 
+     "SILENCE": {
+      "ratio": 8.5, 
+      "nlines": 34, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Gloucestershire. SHALLOW'S orchard.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "MISTRESS QUICKLY": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "First Beadle": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "DOLL TEARSHEET": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. A street.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LANCASTER": {
+      "ratio": 17.0, 
+      "nlines": 51, 
+      "nedges": 3
+     }, 
+     "KING HENRY IV": {
+      "ratio": 28.0, 
+      "nlines": 28, 
+      "nedges": 1
+     }, 
+     "First Groom": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "SHALLOW": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "Second Groom": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "FALSTAFF": {
+      "ratio": 6.67, 
+      "nlines": 40, 
+      "nedges": 6
+     }, 
+     "PISTOL": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A public place near Westminster Abbey.", 
+    "scene": "5", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "RUMOUR", 
+  "LORD BARDOLPH", 
+  "Porter", 
+  "NORTHUMBERLAND", 
+  "TRAVERS", 
+  "MORTON", 
+  "FALSTAFF", 
+  "Page", 
+  "Servant", 
+  "ARCHBISHOP OF YORK", 
+  "MOWBRAY", 
+  "HASTINGS", 
+  "MISTRESS QUICKLY", 
+  "FANG", 
+  "SNARE", 
+  "GOWER", 
+  "PRINCE HENRY", 
+  "POINS", 
+  "BARDOLPH", 
+  "LADY PERCY", 
+  "First Drawer", 
+  "Second Drawer", 
+  "DOLL TEARSHEET", 
+  "PISTOL", 
+  "PETO", 
+  "KING HENRY IV", 
+  "WARWICK", 
+  "SHALLOW", 
+  "SILENCE", 
+  "SHADOW", 
+  "MOULDY", 
+  "WART", 
+  "FEEBLE", 
+  "BULLCALF", 
+  "Messenger", 
+  "WESTMORELAND", 
+  "LANCASTER", 
+  "COLEVILE", 
+  "GLOUCESTER", 
+  "CLARENCE", 
+  "HARCOURT", 
+  "DAVY", 
+  "KING HENRY V", 
+  "Princes", 
+  "First Beadle", 
+  "First Groom", 
+  "Second Groom"
+ ], 
+ "year": "1597-98 / 1600", 
+ "char_data": {
+  "TRAVERS": {
+   "ratio": 8.0, 
+   "nlines": 16, 
+   "nedges": 2, 
+   "order_app": 4
+  }, 
+  "SHALLOW": {
+   "ratio": 21.44, 
+   "nlines": 193, 
+   "nedges": 9, 
+   "order_app": 27
+  }, 
+  "WARWICK": {
+   "ratio": 10.22, 
+   "nlines": 92, 
+   "nedges": 9, 
+   "order_app": 26
+  }, 
+  "DAVY": {
+   "ratio": 9.25, 
+   "nlines": 37, 
+   "nedges": 4, 
+   "order_app": 41
+  }, 
+  "FALSTAFF": {
+   "ratio": 31.13, 
+   "nlines": 747, 
+   "nedges": 24, 
+   "order_app": 6
+  }, 
+  "Messenger": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 34
+  }, 
+  "LADY PERCY": {
+   "ratio": 46.0, 
+   "nlines": 46, 
+   "nedges": 1, 
+   "order_app": 19
+  }, 
+  "SHADOW": {
+   "ratio": 1.67, 
+   "nlines": 5, 
+   "nedges": 3, 
+   "order_app": 29
+  }, 
+  "FEEBLE": {
+   "ratio": 4.0, 
+   "nlines": 12, 
+   "nedges": 3, 
+   "order_app": 32
+  }, 
+  "Porter": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 2
+  }, 
+  "Princes": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 43
+  }, 
+  "POINS": {
+   "ratio": 17.0, 
+   "nlines": 68, 
+   "nedges": 4, 
+   "order_app": 17
+  }, 
+  "KING HENRY IV": {
+   "ratio": 42.0, 
+   "nlines": 336, 
+   "nedges": 8, 
+   "order_app": 25
+  }, 
+  "MISTRESS QUICKLY": {
+   "ratio": 16.73, 
+   "nlines": 184, 
+   "nedges": 11, 
+   "order_app": 12
+  }, 
+  "FANG": {
+   "ratio": 2.33, 
+   "nlines": 7, 
+   "nedges": 3, 
+   "order_app": 13
+  }, 
+  "ARCHBISHOP OF YORK": {
+   "ratio": 30.8, 
+   "nlines": 154, 
+   "nedges": 5, 
+   "order_app": 9
+  }, 
+  "MOWBRAY": {
+   "ratio": 11.8, 
+   "nlines": 59, 
+   "nedges": 5, 
+   "order_app": 10
+  }, 
+  "NORTHUMBERLAND": {
+   "ratio": 19.33, 
+   "nlines": 116, 
+   "nedges": 6, 
+   "order_app": 3
+  }, 
+  "MOULDY": {
+   "ratio": 4.0, 
+   "nlines": 12, 
+   "nedges": 3, 
+   "order_app": 30
+  }, 
+  "First Beadle": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 44
+  }, 
+  "WESTMORELAND": {
+   "ratio": 15.86, 
+   "nlines": 111, 
+   "nedges": 7, 
+   "order_app": 35
+  }, 
+  "SNARE": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 14
+  }, 
+  "PISTOL": {
+   "ratio": 10.13, 
+   "nlines": 81, 
+   "nedges": 8, 
+   "order_app": 23
+  }, 
+  "First Drawer": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "HASTINGS": {
+   "ratio": 9.83, 
+   "nlines": 59, 
+   "nedges": 6, 
+   "order_app": 11
+  }, 
+  "LANCASTER": {
+   "ratio": 11.92, 
+   "nlines": 155, 
+   "nedges": 13, 
+   "order_app": 36
+  }, 
+  "DOLL TEARSHEET": {
+   "ratio": 9.22, 
+   "nlines": 83, 
+   "nedges": 9, 
+   "order_app": 22
+  }, 
+  "CLARENCE": {
+   "ratio": 4.67, 
+   "nlines": 28, 
+   "nedges": 6, 
+   "order_app": 39
+  }, 
+  "Servant": {
+   "ratio": 3.75, 
+   "nlines": 15, 
+   "nedges": 4, 
+   "order_app": 8
+  }, 
+  "WART": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 31
+  }, 
+  "BULLCALF": {
+   "ratio": 4.67, 
+   "nlines": 14, 
+   "nedges": 3, 
+   "order_app": 33
+  }, 
+  "Second Groom": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 46
+  }, 
+  "PRINCE HENRY": {
+   "ratio": 18.73, 
+   "nlines": 206, 
+   "nedges": 11, 
+   "order_app": 16
+  }, 
+  "MORTON": {
+   "ratio": 39.0, 
+   "nlines": 78, 
+   "nedges": 2, 
+   "order_app": 5
+  }, 
+  "Page": {
+   "ratio": 4.83, 
+   "nlines": 29, 
+   "nedges": 6, 
+   "order_app": 7
+  }, 
+  "SILENCE": {
+   "ratio": 8.0, 
+   "nlines": 48, 
+   "nedges": 6, 
+   "order_app": 28
+  }, 
+  "RUMOUR": {
+   "ratio": 0, 
+   "nlines": 42, 
+   "nedges": 0, 
+   "order_app": 0
+  }, 
+  "COLEVILE": {
+   "ratio": 4.0, 
+   "nlines": 8, 
+   "nedges": 2, 
+   "order_app": 37
+  }, 
+  "BARDOLPH": {
+   "ratio": 3.92, 
+   "nlines": 51, 
+   "nedges": 13, 
+   "order_app": 18
+  }, 
+  "KING HENRY V": {
+   "ratio": 25.5, 
+   "nlines": 102, 
+   "nedges": 4, 
+   "order_app": 42
+  }, 
+  "LORD BARDOLPH": {
+   "ratio": 15.0, 
+   "nlines": 90, 
+   "nedges": 6, 
+   "order_app": 1
+  }, 
+  "PETO": {
+   "ratio": 6.0, 
+   "nlines": 6, 
+   "nedges": 1, 
+   "order_app": 24
+  }, 
+  "Second Drawer": {
+   "ratio": 6.5, 
+   "nlines": 13, 
+   "nedges": 2, 
+   "order_app": 21
+  }, 
+  "HARCOURT": {
+   "ratio": 8.0, 
+   "nlines": 8, 
+   "nedges": 1, 
+   "order_app": 40
+  }, 
+  "First Groom": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 45
+  }, 
+  "GOWER": {
+   "ratio": 10.0, 
+   "nlines": 10, 
+   "nedges": 1, 
+   "order_app": 15
+  }, 
+  "GLOUCESTER": {
+   "ratio": 3.6, 
+   "nlines": 18, 
+   "nedges": 5, 
+   "order_app": 38
+  }
+ }, 
+ "type": "History"
+}

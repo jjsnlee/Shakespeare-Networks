@@ -1,0 +1,959 @@
+{
+ "title": "Henry VIII", 
+ "acts": [
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {}, 
+    "location": "PROLOGUE", 
+    "scene": "0", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "NORFOLK": {
+      "ratio": 35.33, 
+      "nlines": 106, 
+      "nedges": 3
+     }, 
+     "ABERGAVENNY": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }, 
+     "BRANDON": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 24.0, 
+      "nlines": 120, 
+      "nedges": 5
+     }, 
+     "Sergeant": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "CARDINAL WOLSEY": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "First Secretary": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. An ante-chamber in the palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "NORFOLK": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "KING HENRY VIII": {
+      "ratio": 20.25, 
+      "nlines": 81, 
+      "nedges": 4
+     }, 
+     "CARDINAL WOLSEY": {
+      "ratio": 15.0, 
+      "nlines": 45, 
+      "nedges": 3
+     }, 
+     "QUEEN KATHARINE / KATHARINE": {
+      "ratio": 13.5, 
+      "nlines": 54, 
+      "nedges": 4
+     }, 
+     "Surveyor": {
+      "ratio": 20.33, 
+      "nlines": 61, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same. The council-chamber.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "SANDS": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "Chamberlain": {
+      "ratio": 18.0, 
+      "nlines": 36, 
+      "nedges": 2
+     }, 
+     "LOVELL": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }
+    }, 
+    "location": "An ante-chamber in the palace.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING HENRY VIII": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "CARDINAL WOLSEY": {
+      "ratio": 9.4, 
+      "nlines": 47, 
+      "nedges": 5
+     }, 
+     "Servant": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "LOVELL": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "SANDS": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "ANNE": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "GUILDFORD": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "Chamberlain": {
+      "ratio": 6.0, 
+      "nlines": 30, 
+      "nedges": 5
+     }
+    }, 
+    "location": "A Hall in York Place.", 
+    "scene": "4", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "VAUX": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Second Gentleman": {
+      "ratio": 22.0, 
+      "nlines": 44, 
+      "nedges": 2
+     }, 
+     "First Gentleman": {
+      "ratio": 34.5, 
+      "nlines": 69, 
+      "nedges": 2
+     }, 
+     "LOVELL": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 18.75, 
+      "nlines": 75, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Westminster. A street.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING HENRY VIII": {
+      "ratio": 8.6, 
+      "nlines": 43, 
+      "nedges": 5
+     }, 
+     "NORFOLK": {
+      "ratio": 13.67, 
+      "nlines": 41, 
+      "nedges": 3
+     }, 
+     "GARDINER": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "SUFFOLK": {
+      "ratio": 4.5, 
+      "nlines": 18, 
+      "nedges": 4
+     }, 
+     "CARDINAL WOLSEY": {
+      "ratio": 8.25, 
+      "nlines": 33, 
+      "nedges": 4
+     }, 
+     "CARDINAL CAMPEIUS": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "Chamberlain": {
+      "ratio": 14.0, 
+      "nlines": 28, 
+      "nedges": 2
+     }
+    }, 
+    "location": "An ante-chamber in the palace.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ANNE": {
+      "ratio": 14.5, 
+      "nlines": 58, 
+      "nedges": 4
+     }, 
+     "Old Lady": {
+      "ratio": 24.5, 
+      "nlines": 49, 
+      "nedges": 2
+     }, 
+     "Chamberlain": {
+      "ratio": 12.5, 
+      "nlines": 25, 
+      "nedges": 2
+     }
+    }, 
+    "location": "An ante-chamber of the QUEEN'S apartments.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LINCOLN": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "KING HENRY VIII": {
+      "ratio": 16.0, 
+      "nlines": 96, 
+      "nedges": 6
+     }, 
+     "CARDINAL WOLSEY": {
+      "ratio": 12.0, 
+      "nlines": 48, 
+      "nedges": 4
+     }, 
+     "Scribe": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }, 
+     "QUEEN KATHARINE / KATHARINE": {
+      "ratio": 17.8, 
+      "nlines": 89, 
+      "nedges": 5
+     }, 
+     "Crier": {
+      "ratio": 1.0, 
+      "nlines": 4, 
+      "nedges": 4
+     }, 
+     "CARDINAL CAMPEIUS": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "GRIFFITH": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A hall in Black-Friars.", 
+    "scene": "4", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CARDINAL CAMPEIUS": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "Gentleman": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "CARDINAL WOLSEY": {
+      "ratio": 20.0, 
+      "nlines": 40, 
+      "nedges": 2
+     }, 
+     "QUEEN KATHARINE / KATHARINE": {
+      "ratio": 28.2, 
+      "nlines": 141, 
+      "nedges": 5
+     }
+    }, 
+    "location": "London. QUEEN KATHARINE's apartments.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "SURREY": {
+      "ratio": 16.2, 
+      "nlines": 81, 
+      "nedges": 5
+     }, 
+     "KING HENRY VIII": {
+      "ratio": 16.0, 
+      "nlines": 64, 
+      "nedges": 4
+     }, 
+     "NORFOLK": {
+      "ratio": 11.0, 
+      "nlines": 55, 
+      "nedges": 5
+     }, 
+     "SUFFOLK": {
+      "ratio": 12.8, 
+      "nlines": 64, 
+      "nedges": 5
+     }, 
+     "CARDINAL WOLSEY": {
+      "ratio": 46.8, 
+      "nlines": 234, 
+      "nedges": 5
+     }, 
+     "CROMWELL": {
+      "ratio": 29.0, 
+      "nlines": 29, 
+      "nedges": 1
+     }, 
+     "Chamberlain": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Ante-chamber to KING HENRY VIII's apartment.", 
+    "scene": "2", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Second Gentleman": {
+      "ratio": 19.25, 
+      "nlines": 77, 
+      "nedges": 4
+     }, 
+     "First Gentleman": {
+      "ratio": 10.5, 
+      "nlines": 42, 
+      "nedges": 4
+     }, 
+     "Third Gentleman": {
+      "ratio": 19.0, 
+      "nlines": 57, 
+      "nedges": 3
+     }, 
+     "Both": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A street in Westminster.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "PATIENCE": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "GRIFFITH": {
+      "ratio": 19.67, 
+      "nlines": 59, 
+      "nedges": 3
+     }, 
+     "QUEEN KATHARINE / KATHARINE": {
+      "ratio": 29.75, 
+      "nlines": 119, 
+      "nedges": 4
+     }, 
+     "CAPUCIUS": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Kimbolton.", 
+    "scene": "2", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Boy": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "KING HENRY VIII": {
+      "ratio": 15.33, 
+      "nlines": 92, 
+      "nedges": 6
+     }, 
+     "GARDINER": {
+      "ratio": 21.0, 
+      "nlines": 42, 
+      "nedges": 2
+     }, 
+     "Gentleman": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "LOVELL": {
+      "ratio": 11.33, 
+      "nlines": 34, 
+      "nedges": 3
+     }, 
+     "DENNY": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "CRANMER": {
+      "ratio": 21.0, 
+      "nlines": 21, 
+      "nedges": 1
+     }, 
+     "SUFFOLK": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "Old Lady": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. A gallery in the palace.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Keeper": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "DOCTOR BUTTS": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "CRANMER": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }, 
+     "KING HENRY VIII": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Before the council-chamber. Pursuivants, Pages,  & c.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "SURREY": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }, 
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "KING HENRY VIII": {
+      "ratio": 13.25, 
+      "nlines": 53, 
+      "nedges": 4
+     }, 
+     "NORFOLK": {
+      "ratio": 1.0, 
+      "nlines": 4, 
+      "nedges": 4
+     }, 
+     "Chancellor": {
+      "ratio": 5.33, 
+      "nlines": 32, 
+      "nedges": 6
+     }, 
+     "GARDINER": {
+      "ratio": 8.0, 
+      "nlines": 48, 
+      "nedges": 6
+     }, 
+     "SUFFOLK": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "CRANMER": {
+      "ratio": 8.6, 
+      "nlines": 43, 
+      "nedges": 5
+     }, 
+     "Keeper": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "CROMWELL": {
+      "ratio": 7.0, 
+      "nlines": 21, 
+      "nedges": 3
+     }, 
+     "Chamberlain": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The Council-Chamber.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Chamberlain": {
+      "ratio": 18.0, 
+      "nlines": 18, 
+      "nedges": 1
+     }, 
+     "Porter": {
+      "ratio": 9.75, 
+      "nlines": 39, 
+      "nedges": 4
+     }, 
+     "Man": {
+      "ratio": 42.0, 
+      "nlines": 42, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The palace yard.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Garter": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "KING HENRY VIII": {
+      "ratio": 41.0, 
+      "nlines": 41, 
+      "nedges": 1
+     }, 
+     "CRANMER": {
+      "ratio": 28.0, 
+      "nlines": 56, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The palace.", 
+    "scene": "5", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "BUCKINGHAM", 
+  "NORFOLK", 
+  "ABERGAVENNY", 
+  "CARDINAL WOLSEY", 
+  "First Secretary", 
+  "BRANDON", 
+  "Sergeant", 
+  "KING HENRY VIII", 
+  "QUEEN KATHARINE / KATHARINE", 
+  "Surveyor", 
+  "Chamberlain", 
+  "SANDS", 
+  "LOVELL", 
+  "GUILDFORD", 
+  "ANNE", 
+  "Servant", 
+  "First Gentleman", 
+  "Second Gentleman", 
+  "VAUX", 
+  "SUFFOLK", 
+  "CARDINAL CAMPEIUS", 
+  "GARDINER", 
+  "Old Lady", 
+  "Scribe", 
+  "Crier", 
+  "GRIFFITH", 
+  "LINCOLN", 
+  "Gentleman", 
+  "SURREY", 
+  "CROMWELL", 
+  "Third Gentleman", 
+  "Both", 
+  "PATIENCE", 
+  "Messenger", 
+  "CAPUCIUS", 
+  "Boy", 
+  "DENNY", 
+  "CRANMER", 
+  "Keeper", 
+  "DOCTOR BUTTS", 
+  "Chancellor", 
+  "All", 
+  "Porter", 
+  "Man", 
+  "Garter"
+ ], 
+ "year": "1612-13 / 1623", 
+ "char_data": {
+  "Boy": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 35
+  }, 
+  "ABERGAVENNY": {
+   "ratio": 6.0, 
+   "nlines": 18, 
+   "nedges": 3, 
+   "order_app": 2
+  }, 
+  "Gentleman": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 27
+  }, 
+  "QUEEN KATHARINE / KATHARINE": {
+   "ratio": 31.0, 
+   "nlines": 403, 
+   "nedges": 13, 
+   "order_app": 8
+  }, 
+  "BRANDON": {
+   "ratio": 5.0, 
+   "nlines": 15, 
+   "nedges": 3, 
+   "order_app": 5
+  }, 
+  "BUCKINGHAM": {
+   "ratio": 21.67, 
+   "nlines": 195, 
+   "nedges": 9, 
+   "order_app": 0
+  }, 
+  "Messenger": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 33
+  }, 
+  "Sergeant": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 6
+  }, 
+  "Chamberlain": {
+   "ratio": 12.08, 
+   "nlines": 157, 
+   "nedges": 13, 
+   "order_app": 10
+  }, 
+  "Porter": {
+   "ratio": 9.75, 
+   "nlines": 39, 
+   "nedges": 4, 
+   "order_app": 42
+  }, 
+  "KING HENRY VIII": {
+   "ratio": 26.63, 
+   "nlines": 506, 
+   "nedges": 19, 
+   "order_app": 7
+  }, 
+  "CARDINAL WOLSEY": {
+   "ratio": 28.31, 
+   "nlines": 453, 
+   "nedges": 16, 
+   "order_app": 3
+  }, 
+  "Third Gentleman": {
+   "ratio": 19.0, 
+   "nlines": 57, 
+   "nedges": 3, 
+   "order_app": 30
+  }, 
+  "First Gentleman": {
+   "ratio": 22.2, 
+   "nlines": 111, 
+   "nedges": 5, 
+   "order_app": 16
+  }, 
+  "VAUX": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 18
+  }, 
+  "CRANMER": {
+   "ratio": 17.38, 
+   "nlines": 139, 
+   "nedges": 8, 
+   "order_app": 37
+  }, 
+  "Keeper": {
+   "ratio": 2.0, 
+   "nlines": 8, 
+   "nedges": 4, 
+   "order_app": 38
+  }, 
+  "ANNE": {
+   "ratio": 12.4, 
+   "nlines": 62, 
+   "nedges": 5, 
+   "order_app": 14
+  }, 
+  "CROMWELL": {
+   "ratio": 12.5, 
+   "nlines": 50, 
+   "nedges": 4, 
+   "order_app": 29
+  }, 
+  "CARDINAL CAMPEIUS": {
+   "ratio": 17.67, 
+   "nlines": 53, 
+   "nedges": 3, 
+   "order_app": 20
+  }, 
+  "Man": {
+   "ratio": 42.0, 
+   "nlines": 42, 
+   "nedges": 1, 
+   "order_app": 43
+  }, 
+  "SURREY": {
+   "ratio": 16.6, 
+   "nlines": 83, 
+   "nedges": 5, 
+   "order_app": 28
+  }, 
+  "Both": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 31
+  }, 
+  "LINCOLN": {
+   "ratio": 8.0, 
+   "nlines": 8, 
+   "nedges": 1, 
+   "order_app": 26
+  }, 
+  "NORFOLK": {
+   "ratio": 19.55, 
+   "nlines": 215, 
+   "nedges": 11, 
+   "order_app": 1
+  }, 
+  "Servant": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 15
+  }, 
+  "GARDINER": {
+   "ratio": 10.33, 
+   "nlines": 93, 
+   "nedges": 9, 
+   "order_app": 21
+  }, 
+  "PATIENCE": {
+   "ratio": 2.67, 
+   "nlines": 8, 
+   "nedges": 3, 
+   "order_app": 32
+  }, 
+  "Old Lady": {
+   "ratio": 16.75, 
+   "nlines": 67, 
+   "nedges": 4, 
+   "order_app": 22
+  }, 
+  "First Secretary": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 4
+  }, 
+  "GRIFFITH": {
+   "ratio": 15.0, 
+   "nlines": 60, 
+   "nedges": 4, 
+   "order_app": 25
+  }, 
+  "All": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 41
+  }, 
+  "DOCTOR BUTTS": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 39
+  }, 
+  "Garter": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 44
+  }, 
+  "LOVELL": {
+   "ratio": 8.88, 
+   "nlines": 71, 
+   "nedges": 8, 
+   "order_app": 12
+  }, 
+  "SUFFOLK": {
+   "ratio": 13.57, 
+   "nlines": 95, 
+   "nedges": 7, 
+   "order_app": 19
+  }, 
+  "Crier": {
+   "ratio": 1.0, 
+   "nlines": 4, 
+   "nedges": 4, 
+   "order_app": 24
+  }, 
+  "Surveyor": {
+   "ratio": 20.33, 
+   "nlines": 61, 
+   "nedges": 3, 
+   "order_app": 9
+  }, 
+  "SANDS": {
+   "ratio": 13.0, 
+   "nlines": 52, 
+   "nedges": 4, 
+   "order_app": 11
+  }, 
+  "CAPUCIUS": {
+   "ratio": 11.0, 
+   "nlines": 11, 
+   "nedges": 1, 
+   "order_app": 34
+  }, 
+  "Chancellor": {
+   "ratio": 5.33, 
+   "nlines": 32, 
+   "nedges": 6, 
+   "order_app": 40
+  }, 
+  "DENNY": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 36
+  }, 
+  "Second Gentleman": {
+   "ratio": 24.2, 
+   "nlines": 121, 
+   "nedges": 5, 
+   "order_app": 17
+  }, 
+  "GUILDFORD": {
+   "ratio": 10.0, 
+   "nlines": 10, 
+   "nedges": 1, 
+   "order_app": 13
+  }, 
+  "Scribe": {
+   "ratio": 0.67, 
+   "nlines": 2, 
+   "nedges": 3, 
+   "order_app": 23
+  }
+ }, 
+ "type": "History"
+}

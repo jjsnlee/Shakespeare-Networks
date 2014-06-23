@@ -1,0 +1,1518 @@
+{
+ "title": "Henry VI, part 2", 
+ "acts": [
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ALL": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 5.4, 
+      "nlines": 27, 
+      "nedges": 5
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "SUFFOLK": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "CARDINAL": {
+      "ratio": 8.0, 
+      "nlines": 32, 
+      "nedges": 4
+     }, 
+     "YORK": {
+      "ratio": 18.67, 
+      "nlines": 56, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "SOMERSET": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 12.4, 
+      "nlines": 62, 
+      "nedges": 5
+     }, 
+     "SALISBURY": {
+      "ratio": 7.25, 
+      "nlines": 29, 
+      "nedges": 4
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "DUCHESS": {
+      "ratio": 27.0, 
+      "nlines": 54, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 13.0, 
+      "nlines": 26, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "HUME": {
+      "ratio": 29.0, 
+      "nlines": 29, 
+      "nedges": 1
+     }
+    }, 
+    "location": "GLOUCESTER'S house.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ALL": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "KING HENRY VI": {
+      "ratio": 2.0, 
+      "nlines": 10, 
+      "nedges": 5
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 7.5, 
+      "nlines": 60, 
+      "nedges": 8
+     }, 
+     "SUFFOLK": {
+      "ratio": 5.44, 
+      "nlines": 49, 
+      "nedges": 9
+     }, 
+     "DUCHESS": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 2.0, 
+      "nlines": 10, 
+      "nedges": 5
+     }, 
+     "Second Petitioner": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "SALISBURY": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "CARDINAL": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "YORK": {
+      "ratio": 2.5, 
+      "nlines": 15, 
+      "nedges": 6
+     }, 
+     "WARWICK": {
+      "ratio": 1.33, 
+      "nlines": 8, 
+      "nedges": 6
+     }, 
+     "HORNER": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "First Petitioner": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "SOMERSET": {
+      "ratio": 0.83, 
+      "nlines": 5, 
+      "nedges": 6
+     }, 
+     "PETER": {
+      "ratio": 2.33, 
+      "nlines": 14, 
+      "nedges": 6
+     }, 
+     "GLOUCESTER": {
+      "ratio": 3.67, 
+      "nlines": 22, 
+      "nedges": 6
+     }
+    }, 
+    "location": "The palace.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "MARGARET JOURDAIN": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "BOLINGBROKE": {
+      "ratio": 7.25, 
+      "nlines": 29, 
+      "nedges": 4
+     }, 
+     "DUCHESS": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "YORK": {
+      "ratio": 12.0, 
+      "nlines": 36, 
+      "nedges": 3
+     }, 
+     "Spirit": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "HUME": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "GLOUCESTER's garden.", 
+    "scene": "4", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING HENRY VI": {
+      "ratio": 5.57, 
+      "nlines": 39, 
+      "nedges": 7
+     }, 
+     "Wife": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "Beadle": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "SUFFOLK": {
+      "ratio": 2.17, 
+      "nlines": 13, 
+      "nedges": 6
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "CARDINAL": {
+      "ratio": 4.83, 
+      "nlines": 29, 
+      "nedges": 6
+     }, 
+     "Townsman": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "SIMPCOX": {
+      "ratio": 3.71, 
+      "nlines": 26, 
+      "nedges": 7
+     }, 
+     "Mayor": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER": {
+      "ratio": 8.78, 
+      "nlines": 79, 
+      "nedges": 9
+     }
+    }, 
+    "location": "Saint Alban's.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "BOTH": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "SALISBURY": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "YORK": {
+      "ratio": 19.67, 
+      "nlines": 59, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. YORK'S garden.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "GLOUCESTER": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "YORK": {
+      "ratio": 2.33, 
+      "nlines": 14, 
+      "nedges": 6
+     }, 
+     "KING HENRY VI": {
+      "ratio": 5.6, 
+      "nlines": 28, 
+      "nedges": 5
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 3.0, 
+      "nlines": 12, 
+      "nedges": 4
+     }, 
+     "SUFFOLK": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "DUCHESS": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "First Neighbour": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "SALISBURY": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "HORNER": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "PETER": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "Third Neighbour": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Second Neighbour": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A hall of justice.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "DUCHESS": {
+      "ratio": 19.0, 
+      "nlines": 57, 
+      "nedges": 3
+     }, 
+     "Sheriff": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Servant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Herald": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Servants": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "STANLEY": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 7.33, 
+      "nlines": 44, 
+      "nedges": 6
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "4", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING HENRY VI": {
+      "ratio": 7.33, 
+      "nlines": 44, 
+      "nedges": 6
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 11.5, 
+      "nlines": 69, 
+      "nedges": 6
+     }, 
+     "SUFFOLK": {
+      "ratio": 12.6, 
+      "nlines": 63, 
+      "nedges": 5
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 1.25, 
+      "nlines": 5, 
+      "nedges": 4
+     }, 
+     "CARDINAL": {
+      "ratio": 4.29, 
+      "nlines": 30, 
+      "nedges": 7
+     }, 
+     "YORK": {
+      "ratio": 12.38, 
+      "nlines": 99, 
+      "nedges": 8
+     }, 
+     "SOMERSET": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "Post": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 11.83, 
+      "nlines": 71, 
+      "nedges": 6
+     }
+    }, 
+    "location": "The Abbey at Bury St. Edmund's.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "First Murder": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "VAUX": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 21.83, 
+      "nlines": 131, 
+      "nedges": 6
+     }, 
+     "KING HENRY VI": {
+      "ratio": 20.25, 
+      "nlines": 81, 
+      "nedges": 4
+     }, 
+     "Commons": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "SUFFOLK": {
+      "ratio": 14.57, 
+      "nlines": 102, 
+      "nedges": 7
+     }, 
+     "First Murderer": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "CARDINAL": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "SALISBURY": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "WARWICK": {
+      "ratio": 22.0, 
+      "nlines": 66, 
+      "nedges": 3
+     }, 
+     "SOMERSET": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Second Murderer": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Bury St. Edmund's. A room of state.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING HENRY VI": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "CARDINAL": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "SALISBURY": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "WARWICK": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A bedchamber.", 
+    "scene": "3", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "WHITMORE": {
+      "ratio": 5.25, 
+      "nlines": 21, 
+      "nedges": 4
+     }, 
+     "First Gentleman": {
+      "ratio": 1.6, 
+      "nlines": 8, 
+      "nedges": 5
+     }, 
+     "SUFFOLK": {
+      "ratio": 19.67, 
+      "nlines": 59, 
+      "nedges": 3
+     }, 
+     "Master": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Second Gentleman": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Captain": {
+      "ratio": 16.5, 
+      "nlines": 66, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The coast of Kent.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "IDEN": {
+      "ratio": 43.0, 
+      "nlines": 43, 
+      "nedges": 1
+     }, 
+     "CADE": {
+      "ratio": 45.0, 
+      "nlines": 45, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Kent. IDEN's garden.", 
+    "scene": "10", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ALL": {
+      "ratio": 1.25, 
+      "nlines": 5, 
+      "nedges": 4
+     }, 
+     "HOLLAND": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "Clerk": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "SIR HUMPHREY": {
+      "ratio": 4.25, 
+      "nlines": 17, 
+      "nedges": 4
+     }, 
+     "SMITH": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "BEVIS": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }, 
+     "DICK": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "MICHAEL": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "CADE": {
+      "ratio": 10.11, 
+      "nlines": 91, 
+      "nedges": 9
+     }, 
+     "CLERK": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "WILLIAM STAFFORD": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Blackheath.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "DICK": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "CADE": {
+      "ratio": 16.0, 
+      "nlines": 16, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another part of Blackheath.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "QUEEN MARGARET": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "SAY": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "Messenger": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "KING HENRY VI": {
+      "ratio": 4.25, 
+      "nlines": 17, 
+      "nedges": 4
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "First Citizen": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "SCALES": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. The Tower.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Soldier": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "DICK": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "SMITH": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "CADE": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. Cannon Street.", 
+    "scene": "6", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ALL": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "HOLLAND": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "BEVIS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "DICK": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "SMITH": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "SAY": {
+      "ratio": 10.25, 
+      "nlines": 41, 
+      "nedges": 4
+     }, 
+     "Messenger": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "CADE": {
+      "ratio": 11.17, 
+      "nlines": 67, 
+      "nedges": 6
+     }
+    }, 
+    "location": "London. Smithfield.", 
+    "scene": "7", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "BUCKINGHAM": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "ALL": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "CADE": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "CLIFFORD": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Southwark.", 
+    "scene": "8", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ALL": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 6.8, 
+      "nlines": 34, 
+      "nedges": 5
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "SOMERSET": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "CLIFFORD": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Kenilworth Castle.", 
+    "scene": "9", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "IDEN": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "RICHARD": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "KING HENRY VI": {
+      "ratio": 5.67, 
+      "nlines": 34, 
+      "nedges": 6
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "CLIFFORD": {
+      "ratio": 3.67, 
+      "nlines": 22, 
+      "nedges": 6
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "EDWARD": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "YORK": {
+      "ratio": 13.86, 
+      "nlines": 97, 
+      "nedges": 7
+     }, 
+     "WARWICK": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "SOMERSET": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "YOUNG CLIFFORD": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "SALISBURY": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Fields between Dartford and Blackheath.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "RICHARD": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "YOUNG CLIFFORD": {
+      "ratio": 15.67, 
+      "nlines": 47, 
+      "nedges": 3
+     }, 
+     "YORK": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "CLIFFORD": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Saint Alban's.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "SALISBURY": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "YORK": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "RICHARD": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "WARWICK": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Fields near St. Alban's.", 
+    "scene": "3", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "SUFFOLK", 
+  "KING HENRY VI", 
+  "QUEEN MARGARET", 
+  "ALL", 
+  "GLOUCESTER", 
+  "CARDINAL", 
+  "SALISBURY", 
+  "WARWICK", 
+  "YORK", 
+  "BUCKINGHAM", 
+  "SOMERSET", 
+  "DUCHESS", 
+  "Messenger", 
+  "HUME", 
+  "First Petitioner", 
+  "Second Petitioner", 
+  "PETER", 
+  "HORNER", 
+  "BOLINGBROKE", 
+  "Spirit", 
+  "MARGARET JOURDAIN", 
+  "Townsman", 
+  "SIMPCOX", 
+  "Wife", 
+  "Mayor", 
+  "Beadle", 
+  "BOTH", 
+  "First Neighbour", 
+  "Second Neighbour", 
+  "Third Neighbour", 
+  "Servants", 
+  "Servant", 
+  "Herald", 
+  "Sheriff", 
+  "STANLEY", 
+  "Post", 
+  "First Murderer", 
+  "Second Murderer", 
+  "First Murder", 
+  "Commons", 
+  "VAUX", 
+  "Captain", 
+  "First Gentleman", 
+  "Master", 
+  "Second Gentleman", 
+  "WHITMORE", 
+  "BEVIS", 
+  "HOLLAND", 
+  "CADE", 
+  "DICK", 
+  "SMITH", 
+  "Clerk", 
+  "CLERK", 
+  "MICHAEL", 
+  "SIR HUMPHREY", 
+  "WILLIAM STAFFORD", 
+  "SAY", 
+  "SCALES", 
+  "First Citizen", 
+  "Soldier", 
+  "CLIFFORD", 
+  "IDEN", 
+  "EDWARD", 
+  "RICHARD", 
+  "YOUNG CLIFFORD"
+ ], 
+ "year": "1590-91 / 1594?", 
+ "char_data": {
+  "IDEN": {
+   "ratio": 13.5, 
+   "nlines": 54, 
+   "nedges": 4, 
+   "order_app": 61
+  }, 
+  "DICK": {
+   "ratio": 7.2, 
+   "nlines": 36, 
+   "nedges": 5, 
+   "order_app": 49
+  }, 
+  "HOLLAND": {
+   "ratio": 4.75, 
+   "nlines": 19, 
+   "nedges": 4, 
+   "order_app": 47
+  }, 
+  "Sheriff": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 33
+  }, 
+  "Clerk": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 51
+  }, 
+  "BOLINGBROKE": {
+   "ratio": 7.25, 
+   "nlines": 29, 
+   "nedges": 4, 
+   "order_app": 18
+  }, 
+  "SMITH": {
+   "ratio": 3.75, 
+   "nlines": 15, 
+   "nedges": 4, 
+   "order_app": 50
+  }, 
+  "CLERK": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 52
+  }, 
+  "BUCKINGHAM": {
+   "ratio": 5.93, 
+   "nlines": 83, 
+   "nedges": 14, 
+   "order_app": 9
+  }, 
+  "Second Neighbour": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 28
+  }, 
+  "Messenger": {
+   "ratio": 5.33, 
+   "nlines": 32, 
+   "nedges": 6, 
+   "order_app": 12
+  }, 
+  "CADE": {
+   "ratio": 18.79, 
+   "nlines": 263, 
+   "nedges": 14, 
+   "order_app": 48
+  }, 
+  "WARWICK": {
+   "ratio": 13.9, 
+   "nlines": 139, 
+   "nedges": 10, 
+   "order_app": 7
+  }, 
+  "BOTH": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 26
+  }, 
+  "RICHARD": {
+   "ratio": 4.67, 
+   "nlines": 28, 
+   "nedges": 6, 
+   "order_app": 63
+  }, 
+  "KING HENRY VI": {
+   "ratio": 16.6, 
+   "nlines": 332, 
+   "nedges": 20, 
+   "order_app": 1
+  }, 
+  "WHITMORE": {
+   "ratio": 5.25, 
+   "nlines": 21, 
+   "nedges": 4, 
+   "order_app": 45
+  }, 
+  "BEVIS": {
+   "ratio": 7.0, 
+   "nlines": 14, 
+   "nedges": 2, 
+   "order_app": 46
+  }, 
+  "First Murder": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 38
+  }, 
+  "First Gentleman": {
+   "ratio": 1.6, 
+   "nlines": 8, 
+   "nedges": 5, 
+   "order_app": 42
+  }, 
+  "First Murderer": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 36
+  }, 
+  "Second Murderer": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 37
+  }, 
+  "DUCHESS": {
+   "ratio": 13.78, 
+   "nlines": 124, 
+   "nedges": 9, 
+   "order_app": 11
+  }, 
+  "VAUX": {
+   "ratio": 11.0, 
+   "nlines": 11, 
+   "nedges": 1, 
+   "order_app": 40
+  }, 
+  "SAY": {
+   "ratio": 7.14, 
+   "nlines": 50, 
+   "nedges": 7, 
+   "order_app": 56
+  }, 
+  "Third Neighbour": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 29
+  }, 
+  "Master": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 43
+  }, 
+  "HORNER": {
+   "ratio": 4.0, 
+   "nlines": 24, 
+   "nedges": 6, 
+   "order_app": 17
+  }, 
+  "STANLEY": {
+   "ratio": 3.5, 
+   "nlines": 7, 
+   "nedges": 2, 
+   "order_app": 34
+  }, 
+  "SOMERSET": {
+   "ratio": 3.13, 
+   "nlines": 25, 
+   "nedges": 8, 
+   "order_app": 10
+  }, 
+  "PETER": {
+   "ratio": 3.13, 
+   "nlines": 25, 
+   "nedges": 8, 
+   "order_app": 16
+  }, 
+  "Spirit": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 19
+  }, 
+  "HUME": {
+   "ratio": 16.0, 
+   "nlines": 32, 
+   "nedges": 2, 
+   "order_app": 13
+  }, 
+  "SCALES": {
+   "ratio": 9.0, 
+   "nlines": 9, 
+   "nedges": 1, 
+   "order_app": 57
+  }, 
+  "First Citizen": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 58
+  }, 
+  "Wife": {
+   "ratio": 2.0, 
+   "nlines": 8, 
+   "nedges": 4, 
+   "order_app": 23
+  }, 
+  "Servant": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 31
+  }, 
+  "MICHAEL": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 53
+  }, 
+  "Commons": {
+   "ratio": 1.0, 
+   "nlines": 3, 
+   "nedges": 3, 
+   "order_app": 39
+  }, 
+  "Herald": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 32
+  }, 
+  "First Neighbour": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 27
+  }, 
+  "Second Petitioner": {
+   "ratio": 2.0, 
+   "nlines": 6, 
+   "nedges": 3, 
+   "order_app": 15
+  }, 
+  "YORK": {
+   "ratio": 19.29, 
+   "nlines": 405, 
+   "nedges": 21, 
+   "order_app": 8
+  }, 
+  "Servants": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 30
+  }, 
+  "Second Gentleman": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 44
+  }, 
+  "Post": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 35
+  }, 
+  "WILLIAM STAFFORD": {
+   "ratio": 2.33, 
+   "nlines": 7, 
+   "nedges": 3, 
+   "order_app": 55
+  }, 
+  "CLIFFORD": {
+   "ratio": 7.25, 
+   "nlines": 58, 
+   "nedges": 8, 
+   "order_app": 60
+  }, 
+  "ALL": {
+   "ratio": 1.89, 
+   "nlines": 17, 
+   "nedges": 9, 
+   "order_app": 3
+  }, 
+  "Captain": {
+   "ratio": 16.5, 
+   "nlines": 66, 
+   "nedges": 4, 
+   "order_app": 41
+  }, 
+  "Soldier": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 59
+  }, 
+  "SIR HUMPHREY": {
+   "ratio": 4.25, 
+   "nlines": 17, 
+   "nedges": 4, 
+   "order_app": 54
+  }, 
+  "QUEEN MARGARET": {
+   "ratio": 18.33, 
+   "nlines": 330, 
+   "nedges": 18, 
+   "order_app": 2
+  }, 
+  "MARGARET JOURDAIN": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 20
+  }, 
+  "Beadle": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 25
+  }, 
+  "SUFFOLK": {
+   "ratio": 16.21, 
+   "nlines": 308, 
+   "nedges": 19, 
+   "order_app": 0
+  }, 
+  "YOUNG CLIFFORD": {
+   "ratio": 12.5, 
+   "nlines": 50, 
+   "nedges": 4, 
+   "order_app": 64
+  }, 
+  "EDWARD": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 62
+  }, 
+  "CARDINAL": {
+   "ratio": 10.09, 
+   "nlines": 111, 
+   "nedges": 11, 
+   "order_app": 5
+  }, 
+  "SALISBURY": {
+   "ratio": 8.64, 
+   "nlines": 95, 
+   "nedges": 11, 
+   "order_app": 6
+  }, 
+  "SIMPCOX": {
+   "ratio": 3.71, 
+   "nlines": 26, 
+   "nedges": 7, 
+   "order_app": 22
+  }, 
+  "First Petitioner": {
+   "ratio": 2.67, 
+   "nlines": 8, 
+   "nedges": 3, 
+   "order_app": 14
+  }, 
+  "GLOUCESTER": {
+   "ratio": 15.24, 
+   "nlines": 320, 
+   "nedges": 21, 
+   "order_app": 4
+  }, 
+  "Mayor": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 24
+  }, 
+  "Townsman": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 21
+  }
+ }, 
+ "type": "History"
+}

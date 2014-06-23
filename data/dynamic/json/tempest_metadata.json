@@ -1,0 +1,521 @@
+{
+ "title": "The Tempest", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/tempest_1_1.png", 
+    "char_data": {
+     "SEBASTIAN": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "ALONSO": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "GONZALO": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "ANTONIO": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "Master": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "Boatswain": {
+      "ratio": 5.5, 
+      "nlines": 33, 
+      "nedges": 6
+     }, 
+     "Mariners": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "On a ship at sea: a tempestuous noise", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/tempest_1_2.png", 
+    "char_data": {
+     "PROSPERO": {
+      "ratio": 93.25, 
+      "nlines": 373, 
+      "nedges": 4
+     }, 
+     "ARIEL": {
+      "ratio": 71.0, 
+      "nlines": 71, 
+      "nedges": 1
+     }, 
+     "FERDINAND": {
+      "ratio": 14.0, 
+      "nlines": 56, 
+      "nedges": 4
+     }, 
+     "CALIBAN": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }, 
+     "MIRANDA": {
+      "ratio": 43.5, 
+      "nlines": 87, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The island. Before PROSPERO'S cell.", 
+    "scene": "2", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/tempest_2_1.png", 
+    "char_data": {
+     "FRANCISCO": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "ALONSO": {
+      "ratio": 5.2, 
+      "nlines": 26, 
+      "nedges": 5
+     }, 
+     "GONZALO": {
+      "ratio": 22.5, 
+      "nlines": 90, 
+      "nedges": 4
+     }, 
+     "ANTONIO": {
+      "ratio": 25.2, 
+      "nlines": 126, 
+      "nedges": 5
+     }, 
+     "ARIEL": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "ADRIAN": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "SEBASTIAN": {
+      "ratio": 19.6, 
+      "nlines": 98, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Another part of the island.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/tempest_2_2.png", 
+    "char_data": {
+     "CALIBAN": {
+      "ratio": 28.5, 
+      "nlines": 57, 
+      "nedges": 2
+     }, 
+     "TRINCULO": {
+      "ratio": 29.0, 
+      "nlines": 58, 
+      "nedges": 2
+     }, 
+     "STEPHANO": {
+      "ratio": 40.5, 
+      "nlines": 81, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the island.", 
+    "scene": "2", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/tempest_3_1.png", 
+    "char_data": {
+     "PROSPERO": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "FERDINAND": {
+      "ratio": 30.5, 
+      "nlines": 61, 
+      "nedges": 2
+     }, 
+     "MIRANDA": {
+      "ratio": 22.5, 
+      "nlines": 45, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before PROSPERO'S Cell.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/tempest_3_2.png", 
+    "char_data": {
+     "ARIEL": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "CALIBAN": {
+      "ratio": 20.67, 
+      "nlines": 62, 
+      "nedges": 3
+     }, 
+     "TRINCULO": {
+      "ratio": 15.0, 
+      "nlines": 30, 
+      "nedges": 2
+     }, 
+     "STEPHANO": {
+      "ratio": 20.0, 
+      "nlines": 60, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another part of the island.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/tempest_3_3.png", 
+    "char_data": {
+     "FRANCISCO": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "ALONSO": {
+      "ratio": 5.6, 
+      "nlines": 28, 
+      "nedges": 5
+     }, 
+     "GONZALO": {
+      "ratio": 7.25, 
+      "nlines": 29, 
+      "nedges": 4
+     }, 
+     "ANTONIO": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "PROSPERO": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }, 
+     "ADRIAN": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "SEBASTIAN": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "ARIEL": {
+      "ratio": 16.5, 
+      "nlines": 33, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the island.", 
+    "scene": "3", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/tempest_4_1.png", 
+    "char_data": {
+     "IRIS": {
+      "ratio": 22.0, 
+      "nlines": 44, 
+      "nedges": 2
+     }, 
+     "CERES": {
+      "ratio": 8.33, 
+      "nlines": 25, 
+      "nedges": 3
+     }, 
+     "JUNO": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "PROSPERO": {
+      "ratio": 18.17, 
+      "nlines": 109, 
+      "nedges": 6
+     }, 
+     "CALIBAN": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }, 
+     "ARIEL": {
+      "ratio": 32.0, 
+      "nlines": 32, 
+      "nedges": 1
+     }, 
+     "MIRANDA": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "FERDINAND": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }, 
+     "TRINCULO": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "STEPHANO": {
+      "ratio": 8.33, 
+      "nlines": 25, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Before PROSPERO'S cell.", 
+    "scene": "1", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/tempest_5_1.png", 
+    "char_data": {
+     "GONZALO": {
+      "ratio": 6.5, 
+      "nlines": 26, 
+      "nedges": 4
+     }, 
+     "PROSPERO": {
+      "ratio": 22.6, 
+      "nlines": 226, 
+      "nedges": 10
+     }, 
+     "CALIBAN": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "ANTONIO": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "ARIEL": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "ALONSO": {
+      "ratio": 6.33, 
+      "nlines": 57, 
+      "nedges": 9
+     }, 
+     "MIRANDA": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "Boatswain": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "FERDINAND": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "SEBASTIAN": {
+      "ratio": 1.29, 
+      "nlines": 9, 
+      "nedges": 7
+     }, 
+     "TRINCULO": {
+      "ratio": 1.25, 
+      "nlines": 5, 
+      "nedges": 4
+     }, 
+     "STEPHANO": {
+      "ratio": 1.25, 
+      "nlines": 5, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Before PROSPERO'S cell.", 
+    "scene": "1", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "Master", 
+  "Boatswain", 
+  "ALONSO", 
+  "ANTONIO", 
+  "GONZALO", 
+  "SEBASTIAN", 
+  "Mariners", 
+  "MIRANDA", 
+  "PROSPERO", 
+  "ARIEL", 
+  "CALIBAN", 
+  "FERDINAND", 
+  "ADRIAN", 
+  "FRANCISCO", 
+  "TRINCULO", 
+  "STEPHANO", 
+  "IRIS", 
+  "CERES", 
+  "JUNO"
+ ], 
+ "year": "1611-12 / 1623", 
+ "char_data": {
+  "IRIS": {
+   "ratio": 22.0, 
+   "nlines": 44, 
+   "nedges": 2, 
+   "order_app": 16
+  }, 
+  "Mariners": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 6
+  }, 
+  "CERES": {
+   "ratio": 8.33, 
+   "nlines": 25, 
+   "nedges": 3, 
+   "order_app": 17
+  }, 
+  "JUNO": {
+   "ratio": 2.67, 
+   "nlines": 8, 
+   "nedges": 3, 
+   "order_app": 18
+  }, 
+  "ADRIAN": {
+   "ratio": 4.33, 
+   "nlines": 13, 
+   "nedges": 3, 
+   "order_app": 12
+  }, 
+  "ALONSO": {
+   "ratio": 9.42, 
+   "nlines": 113, 
+   "nedges": 12, 
+   "order_app": 2
+  }, 
+  "TRINCULO": {
+   "ratio": 27.0, 
+   "nlines": 108, 
+   "nedges": 4, 
+   "order_app": 14
+  }, 
+  "GONZALO": {
+   "ratio": 24.14, 
+   "nlines": 169, 
+   "nedges": 7, 
+   "order_app": 4
+  }, 
+  "ANTONIO": {
+   "ratio": 21.43, 
+   "nlines": 150, 
+   "nedges": 7, 
+   "order_app": 3
+  }, 
+  "PROSPERO": {
+   "ratio": 56.54, 
+   "nlines": 735, 
+   "nedges": 13, 
+   "order_app": 8
+  }, 
+  "FRANCISCO": {
+   "ratio": 3.67, 
+   "nlines": 11, 
+   "nedges": 3, 
+   "order_app": 13
+  }, 
+  "Master": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 0
+  }, 
+  "STEPHANO": {
+   "ratio": 28.5, 
+   "nlines": 171, 
+   "nedges": 6, 
+   "order_app": 15
+  }, 
+  "MIRANDA": {
+   "ratio": 47.0, 
+   "nlines": 141, 
+   "nedges": 3, 
+   "order_app": 7
+  }, 
+  "Boatswain": {
+   "ratio": 7.14, 
+   "nlines": 50, 
+   "nedges": 7, 
+   "order_app": 1
+  }, 
+  "FERDINAND": {
+   "ratio": 22.57, 
+   "nlines": 158, 
+   "nedges": 7, 
+   "order_app": 11
+  }, 
+  "SEBASTIAN": {
+   "ratio": 10.42, 
+   "nlines": 125, 
+   "nedges": 12, 
+   "order_app": 5
+  }, 
+  "CALIBAN": {
+   "ratio": 29.67, 
+   "nlines": 178, 
+   "nedges": 6, 
+   "order_app": 10
+  }, 
+  "ARIEL": {
+   "ratio": 22.13, 
+   "nlines": 177, 
+   "nedges": 8, 
+   "order_app": 9
+  }
+ }, 
+ "type": "Comedy"
+}

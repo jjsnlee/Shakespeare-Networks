@@ -1,0 +1,1090 @@
+{
+ "title": "Julius Caesar", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/julius_caesar_1_1.png", 
+    "char_data": {
+     "FLAVIUS": {
+      "ratio": 9.33, 
+      "nlines": 28, 
+      "nedges": 3
+     }, 
+     "Second Commoner": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "First Commoner": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "MARULLUS": {
+      "ratio": 10.33, 
+      "nlines": 31, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Rome. A street.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_1_2.png", 
+    "char_data": {
+     "CASCA": {
+      "ratio": 21.67, 
+      "nlines": 65, 
+      "nedges": 3
+     }, 
+     "CASSIUS": {
+      "ratio": 49.33, 
+      "nlines": 148, 
+      "nedges": 3
+     }, 
+     "CALPURNIA": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "CAESAR": {
+      "ratio": 7.0, 
+      "nlines": 42, 
+      "nedges": 6
+     }, 
+     "Soothsayer": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "ANTONY": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "BRUTUS": {
+      "ratio": 24.33, 
+      "nlines": 73, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A public place.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_1_3.png", 
+    "char_data": {
+     "CINNA": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "CASCA": {
+      "ratio": 29.5, 
+      "nlines": 59, 
+      "nedges": 2
+     }, 
+     "CICERO": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "CASSIUS": {
+      "ratio": 50.0, 
+      "nlines": 100, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. A street.", 
+    "scene": "3", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/julius_caesar_2_1.png", 
+    "char_data": {
+     "DECIUS BRUTUS": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "CASCA": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "PORTIA": {
+      "ratio": 62.0, 
+      "nlines": 62, 
+      "nedges": 1
+     }, 
+     "CINNA": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "LIGARIUS": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }, 
+     "CASSIUS": {
+      "ratio": 9.5, 
+      "nlines": 38, 
+      "nedges": 4
+     }, 
+     "METELLUS CIMBER": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "LUCIUS": {
+      "ratio": 21.0, 
+      "nlines": 21, 
+      "nedges": 1
+     }, 
+     "TREBONIUS": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 24.38, 
+      "nlines": 195, 
+      "nedges": 8
+     }
+    }, 
+    "location": "Rome. BRUTUS's orchard.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_2_2.png", 
+    "char_data": {
+     "DECIUS BRUTUS": {
+      "ratio": 25.0, 
+      "nlines": 25, 
+      "nedges": 1
+     }, 
+     "CALPURNIA": {
+      "ratio": 13.0, 
+      "nlines": 26, 
+      "nedges": 2
+     }, 
+     "Servant": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "TREBONIUS": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "PUBLIUS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "ANTONY": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "CAESAR": {
+      "ratio": 11.14, 
+      "nlines": 78, 
+      "nedges": 7
+     }
+    }, 
+    "location": "CAESAR's house.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_2_3.png", 
+    "char_data": {
+     "ARTEMIDORUS": {
+      "ratio": 0, 
+      "nlines": 16, 
+      "nedges": 0
+     }
+    }, 
+    "location": "A street near the Capitol.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_2_4.png", 
+    "char_data": {
+     "Soothsayer": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }, 
+     "LUCIUS": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "PORTIA": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the same street, before the house of BRUTUS.", 
+    "scene": "4", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/julius_caesar_3_1.png", 
+    "char_data": {
+     "DECIUS BRUTUS": {
+      "ratio": 1.4, 
+      "nlines": 7, 
+      "nedges": 5
+     }, 
+     "CASCA": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "CAESAR": {
+      "ratio": 2.67, 
+      "nlines": 24, 
+      "nedges": 9
+     }, 
+     "TREBONIUS": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "Servant": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "CASSIUS": {
+      "ratio": 6.6, 
+      "nlines": 66, 
+      "nedges": 10
+     }, 
+     "ARTEMIDORUS": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "CINNA": {
+      "ratio": 1.25, 
+      "nlines": 5, 
+      "nedges": 4
+     }, 
+     "PUBLIUS": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "METELLUS CIMBER": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "POPILIUS": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "Soothsayer": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "ANTONY": {
+      "ratio": 33.33, 
+      "nlines": 100, 
+      "nedges": 3
+     }, 
+     "BRUTUS": {
+      "ratio": 8.3, 
+      "nlines": 83, 
+      "nedges": 10
+     }
+    }, 
+    "location": "Rome. Before the Capitol; the Senate sitting above.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_3_2.png", 
+    "char_data": {
+     "All": {
+      "ratio": 2.0, 
+      "nlines": 10, 
+      "nedges": 5
+     }, 
+     "First Citizen": {
+      "ratio": 3.0, 
+      "nlines": 18, 
+      "nedges": 6
+     }, 
+     "Servant": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "Citizens": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Second Citizen": {
+      "ratio": 2.83, 
+      "nlines": 17, 
+      "nedges": 6
+     }, 
+     "Fourth Citizen": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "ANTONY": {
+      "ratio": 18.88, 
+      "nlines": 151, 
+      "nedges": 8
+     }, 
+     "BRUTUS": {
+      "ratio": 10.6, 
+      "nlines": 53, 
+      "nedges": 5
+     }, 
+     "Third Citizen": {
+      "ratio": 3.4, 
+      "nlines": 17, 
+      "nedges": 5
+     }, 
+     "Several Citizens": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The Forum.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_3_3.png", 
+    "char_data": {
+     "Second Citizen": {
+      "ratio": 1.25, 
+      "nlines": 5, 
+      "nedges": 4
+     }, 
+     "First Citizen": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "CINNA THE POET": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "Third Citizen": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "Fourth Citizen": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "3", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/julius_caesar_4_1.png", 
+    "char_data": {
+     "OCTAVIUS": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "ANTONY": {
+      "ratio": 19.0, 
+      "nlines": 38, 
+      "nedges": 2
+     }, 
+     "LEPIDUS": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A house in Rome.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_4_2.png", 
+    "char_data": {
+     "First Soldier": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Second Soldier": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "CASSIUS": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "PINDARUS": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "Third Soldier": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "LUCILIUS": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "BRUTUS": {
+      "ratio": 9.25, 
+      "nlines": 37, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Camp near Sardis. Before BRUTUS's tent.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_4_3.png", 
+    "char_data": {
+     "GHOST": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "CLAUDIUS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "VARRO": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "TITINIUS": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "CASSIUS": {
+      "ratio": 33.67, 
+      "nlines": 101, 
+      "nedges": 3
+     }, 
+     "MESSALA": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "Poet": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "LUCILIUS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "LUCIUS": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 27.25, 
+      "nlines": 218, 
+      "nedges": 8
+     }
+    }, 
+    "location": "Brutus's tent.", 
+    "scene": "3", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/julius_caesar_5_1.png", 
+    "char_data": {
+     "CASSIUS": {
+      "ratio": 9.8, 
+      "nlines": 49, 
+      "nedges": 5
+     }, 
+     "MESSALA": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "OCTAVIUS": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "LUCILIUS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "ANTONY": {
+      "ratio": 5.75, 
+      "nlines": 23, 
+      "nedges": 4
+     }, 
+     "BRUTUS": {
+      "ratio": 8.5, 
+      "nlines": 34, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The plains of Philippi.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_5_2.png", 
+    "char_data": {
+     "BRUTUS": {
+      "ratio": 0, 
+      "nlines": 8, 
+      "nedges": 0
+     }
+    }, 
+    "location": "The same. The field of battle.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_5_3.png", 
+    "char_data": {
+     "TITINIUS": {
+      "ratio": 9.0, 
+      "nlines": 36, 
+      "nedges": 4
+     }, 
+     "CASSIUS": {
+      "ratio": 18.5, 
+      "nlines": 37, 
+      "nedges": 2
+     }, 
+     "MESSALA": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "PINDARUS": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "CATO": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "BRUTUS": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_5_4.png", 
+    "char_data": {
+     "First Soldier": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "Second Soldier": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "CATO": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "LUCILIUS": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "ANTONY": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/julius_caesar_5_5.png", 
+    "char_data": {
+     "CLITUS": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "STRATO": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "MESSALA": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "OCTAVIUS": {
+      "ratio": 2.4, 
+      "nlines": 12, 
+      "nedges": 5
+     }, 
+     "VOLUMNIUS": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "LUCILIUS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "ANTONY": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 9.6, 
+      "nlines": 48, 
+      "nedges": 5
+     }, 
+     "DARDANIUS": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "5", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "FLAVIUS", 
+  "First Commoner", 
+  "MARULLUS", 
+  "Second Commoner", 
+  "CAESAR", 
+  "CASCA", 
+  "CALPURNIA", 
+  "ANTONY", 
+  "Soothsayer", 
+  "BRUTUS", 
+  "CASSIUS", 
+  "CICERO", 
+  "CINNA", 
+  "LUCIUS", 
+  "DECIUS BRUTUS", 
+  "METELLUS CIMBER", 
+  "TREBONIUS", 
+  "PORTIA", 
+  "LIGARIUS", 
+  "Servant", 
+  "PUBLIUS", 
+  "ARTEMIDORUS", 
+  "POPILIUS", 
+  "Citizens", 
+  "First Citizen", 
+  "Second Citizen", 
+  "Third Citizen", 
+  "All", 
+  "Fourth Citizen", 
+  "Several Citizens", 
+  "CINNA THE POET", 
+  "OCTAVIUS", 
+  "LEPIDUS", 
+  "LUCILIUS", 
+  "PINDARUS", 
+  "First Soldier", 
+  "Second Soldier", 
+  "Third Soldier", 
+  "Poet", 
+  "MESSALA", 
+  "TITINIUS", 
+  "VARRO", 
+  "GHOST", 
+  "CLAUDIUS", 
+  "Messenger", 
+  "CATO", 
+  "CLITUS", 
+  "DARDANIUS", 
+  "VOLUMNIUS", 
+  "STRATO"
+ ], 
+ "year": "1599-1600 / 1623", 
+ "char_data": {
+  "PORTIA": {
+   "ratio": 31.0, 
+   "nlines": 93, 
+   "nedges": 3, 
+   "order_app": 17
+  }, 
+  "Second Citizen": {
+   "ratio": 2.75, 
+   "nlines": 22, 
+   "nedges": 8, 
+   "order_app": 25
+  }, 
+  "VARRO": {
+   "ratio": 3.67, 
+   "nlines": 11, 
+   "nedges": 3, 
+   "order_app": 41
+  }, 
+  "Second Soldier": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 36
+  }, 
+  "MARULLUS": {
+   "ratio": 10.33, 
+   "nlines": 31, 
+   "nedges": 3, 
+   "order_app": 2
+  }, 
+  "First Soldier": {
+   "ratio": 1.5, 
+   "nlines": 6, 
+   "nedges": 4, 
+   "order_app": 35
+  }, 
+  "CLITUS": {
+   "ratio": 3.33, 
+   "nlines": 10, 
+   "nedges": 3, 
+   "order_app": 46
+  }, 
+  "CLAUDIUS": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 43
+  }, 
+  "METELLUS CIMBER": {
+   "ratio": 6.0, 
+   "nlines": 18, 
+   "nedges": 3, 
+   "order_app": 15
+  }, 
+  "STRATO": {
+   "ratio": 1.75, 
+   "nlines": 7, 
+   "nedges": 4, 
+   "order_app": 49
+  }, 
+  "Messenger": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 44
+  }, 
+  "Poet": {
+   "ratio": 2.67, 
+   "nlines": 8, 
+   "nedges": 3, 
+   "order_app": 38
+  }, 
+  "Soothsayer": {
+   "ratio": 6.33, 
+   "nlines": 19, 
+   "nedges": 3, 
+   "order_app": 8
+  }, 
+  "MESSALA": {
+   "ratio": 5.43, 
+   "nlines": 38, 
+   "nedges": 7, 
+   "order_app": 39
+  }, 
+  "BRUTUS": {
+   "ratio": 23.55, 
+   "nlines": 777, 
+   "nedges": 33, 
+   "order_app": 9
+  }, 
+  "Several Citizens": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 29
+  }, 
+  "CASCA": {
+   "ratio": 22.83, 
+   "nlines": 137, 
+   "nedges": 6, 
+   "order_app": 5
+  }, 
+  "TITINIUS": {
+   "ratio": 9.75, 
+   "nlines": 39, 
+   "nedges": 4, 
+   "order_app": 40
+  }, 
+  "LIGARIUS": {
+   "ratio": 15.0, 
+   "nlines": 15, 
+   "nedges": 1, 
+   "order_app": 18
+  }, 
+  "CICERO": {
+   "ratio": 9.0, 
+   "nlines": 9, 
+   "nedges": 1, 
+   "order_app": 11
+  }, 
+  "LUCIUS": {
+   "ratio": 13.0, 
+   "nlines": 39, 
+   "nedges": 3, 
+   "order_app": 13
+  }, 
+  "PINDARUS": {
+   "ratio": 5.0, 
+   "nlines": 20, 
+   "nedges": 4, 
+   "order_app": 34
+  }, 
+  "CAESAR": {
+   "ratio": 11.08, 
+   "nlines": 144, 
+   "nedges": 13, 
+   "order_app": 4
+  }, 
+  "LUCILIUS": {
+   "ratio": 4.0, 
+   "nlines": 28, 
+   "nedges": 7, 
+   "order_app": 33
+  }, 
+  "ANTONY": {
+   "ratio": 19.76, 
+   "nlines": 336, 
+   "nedges": 17, 
+   "order_app": 7
+  }, 
+  "DARDANIUS": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 47
+  }, 
+  "GHOST": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 42
+  }, 
+  "DECIUS BRUTUS": {
+   "ratio": 8.8, 
+   "nlines": 44, 
+   "nedges": 5, 
+   "order_app": 14
+  }, 
+  "First Citizen": {
+   "ratio": 3.14, 
+   "nlines": 22, 
+   "nedges": 7, 
+   "order_app": 24
+  }, 
+  "Servant": {
+   "ratio": 8.5, 
+   "nlines": 34, 
+   "nedges": 4, 
+   "order_app": 19
+  }, 
+  "VOLUMNIUS": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 48
+  }, 
+  "Citizens": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 23
+  }, 
+  "CASSIUS": {
+   "ratio": 30.33, 
+   "nlines": 546, 
+   "nedges": 18, 
+   "order_app": 10
+  }, 
+  "CALPURNIA": {
+   "ratio": 13.5, 
+   "nlines": 27, 
+   "nedges": 2, 
+   "order_app": 6
+  }, 
+  "Fourth Citizen": {
+   "ratio": 3.5, 
+   "nlines": 21, 
+   "nedges": 6, 
+   "order_app": 28
+  }, 
+  "LEPIDUS": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 32
+  }, 
+  "PUBLIUS": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "Third Soldier": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 37
+  }, 
+  "CINNA THE POET": {
+   "ratio": 3.75, 
+   "nlines": 15, 
+   "nedges": 4, 
+   "order_app": 30
+  }, 
+  "FLAVIUS": {
+   "ratio": 9.33, 
+   "nlines": 28, 
+   "nedges": 3, 
+   "order_app": 0
+  }, 
+  "OCTAVIUS": {
+   "ratio": 7.57, 
+   "nlines": 53, 
+   "nedges": 7, 
+   "order_app": 31
+  }, 
+  "Third Citizen": {
+   "ratio": 4.0, 
+   "nlines": 24, 
+   "nedges": 6, 
+   "order_app": 26
+  }, 
+  "All": {
+   "ratio": 2.0, 
+   "nlines": 10, 
+   "nedges": 5, 
+   "order_app": 27
+  }, 
+  "CINNA": {
+   "ratio": 3.6, 
+   "nlines": 18, 
+   "nedges": 5, 
+   "order_app": 12
+  }, 
+  "ARTEMIDORUS": {
+   "ratio": 6.67, 
+   "nlines": 20, 
+   "nedges": 3, 
+   "order_app": 21
+  }, 
+  "CATO": {
+   "ratio": 8.0, 
+   "nlines": 8, 
+   "nedges": 1, 
+   "order_app": 45
+  }, 
+  "TREBONIUS": {
+   "ratio": 3.67, 
+   "nlines": 11, 
+   "nedges": 3, 
+   "order_app": 16
+  }, 
+  "POPILIUS": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 22
+  }, 
+  "Second Commoner": {
+   "ratio": 8.0, 
+   "nlines": 16, 
+   "nedges": 2, 
+   "order_app": 3
+  }, 
+  "First Commoner": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 1
+  }
+ }, 
+ "type": "Tragedy"
+}

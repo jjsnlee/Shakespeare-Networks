@@ -1,0 +1,1023 @@
+{
+ "title": "The Merry Wives of Windsor", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/merry_wives_1_1.png", 
+    "char_data": {
+     "BARDOLPH": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "SHALLOW": {
+      "ratio": 8.0, 
+      "nlines": 48, 
+      "nedges": 6
+     }, 
+     "ANNE PAGE": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "FALSTAFF": {
+      "ratio": 2.83, 
+      "nlines": 17, 
+      "nedges": 6
+     }, 
+     "SLENDER": {
+      "ratio": 10.67, 
+      "nlines": 96, 
+      "nedges": 9
+     }, 
+     "SIMPLE": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 10.57, 
+      "nlines": 74, 
+      "nedges": 7
+     }, 
+     "NYM": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "PISTOL": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "PAGE": {
+      "ratio": 6.0, 
+      "nlines": 24, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Windsor. Before PAGE's house.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_1_2.png", 
+    "char_data": {
+     "SIMPLE": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_1_3.png", 
+    "char_data": {
+     "BARDOLPH": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "FALSTAFF": {
+      "ratio": 11.75, 
+      "nlines": 47, 
+      "nedges": 4
+     }, 
+     "Host": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "PISTOL": {
+      "ratio": 8.67, 
+      "nlines": 26, 
+      "nedges": 3
+     }, 
+     "NYM": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in the Garter Inn.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_1_4.png", 
+    "char_data": {
+     "SIMPLE": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "FENTON": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "MISTRESS QUICKLY": {
+      "ratio": 23.75, 
+      "nlines": 95, 
+      "nedges": 4
+     }, 
+     "DOCTOR CAIUS": {
+      "ratio": 13.33, 
+      "nlines": 40, 
+      "nedges": 3
+     }, 
+     "RUGBY": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in DOCTOR CAIUS' house.", 
+    "scene": "4", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/merry_wives_2_1.png", 
+    "char_data": {
+     "MISTRESS QUICKLY": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "SHALLOW": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 19.75, 
+      "nlines": 79, 
+      "nedges": 4
+     }, 
+     "FORD": {
+      "ratio": 4.29, 
+      "nlines": 30, 
+      "nedges": 7
+     }, 
+     "Host": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "NYM": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "MISTRESS FORD": {
+      "ratio": 19.0, 
+      "nlines": 38, 
+      "nedges": 2
+     }, 
+     "PISTOL": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "PAGE": {
+      "ratio": 5.4, 
+      "nlines": 27, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Before PAGE'S house.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_2_2.png", 
+    "char_data": {
+     "MISTRESS QUICKLY": {
+      "ratio": 73.0, 
+      "nlines": 73, 
+      "nedges": 1
+     }, 
+     "BARDOLPH": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "FORD": {
+      "ratio": 106.0, 
+      "nlines": 106, 
+      "nedges": 1
+     }, 
+     "FALSTAFF": {
+      "ratio": 22.4, 
+      "nlines": 112, 
+      "nedges": 5
+     }, 
+     "PISTOL": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "ROBIN": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in the Garter Inn.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_2_3.png", 
+    "char_data": {
+     "DOCTOR CAIUS": {
+      "ratio": 5.8, 
+      "nlines": 29, 
+      "nedges": 5
+     }, 
+     "SHALLOW": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "SLENDER": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Host": {
+      "ratio": 7.0, 
+      "nlines": 28, 
+      "nedges": 4
+     }, 
+     "RUGBY": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "PAGE": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A field near Windsor.", 
+    "scene": "3", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/merry_wives_3_1.png", 
+    "char_data": {
+     "DOCTOR CAIUS": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "SIMPLE": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "SHALLOW": {
+      "ratio": 2.33, 
+      "nlines": 14, 
+      "nedges": 6
+     }, 
+     "SLENDER": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "Host": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 11.0, 
+      "nlines": 55, 
+      "nedges": 5
+     }, 
+     "PAGE": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A field near Frogmore.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_3_2.png", 
+    "char_data": {
+     "All": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "DOCTOR CAIUS": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "SHALLOW": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "SLENDER": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "FORD": {
+      "ratio": 6.17, 
+      "nlines": 37, 
+      "nedges": 6
+     }, 
+     "Host": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "PAGE": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "ROBIN": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_3_3.png", 
+    "char_data": {
+     "DOCTOR CAIUS": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "Servant": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 10.8, 
+      "nlines": 54, 
+      "nedges": 5
+     }, 
+     "FORD": {
+      "ratio": 4.83, 
+      "nlines": 29, 
+      "nedges": 6
+     }, 
+     "FALSTAFF": {
+      "ratio": 12.0, 
+      "nlines": 36, 
+      "nedges": 3
+     }, 
+     "ROBIN": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "MISTRESS FORD": {
+      "ratio": 13.4, 
+      "nlines": 67, 
+      "nedges": 5
+     }, 
+     "PAGE": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A room in FORD'S house.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_3_4.png", 
+    "char_data": {
+     "SLENDER": {
+      "ratio": 5.5, 
+      "nlines": 22, 
+      "nedges": 4
+     }, 
+     "MISTRESS QUICKLY": {
+      "ratio": 3.17, 
+      "nlines": 19, 
+      "nedges": 6
+     }, 
+     "SHALLOW": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "ANNE PAGE": {
+      "ratio": 4.0, 
+      "nlines": 20, 
+      "nedges": 5
+     }, 
+     "FENTON": {
+      "ratio": 7.0, 
+      "nlines": 28, 
+      "nedges": 4
+     }, 
+     "PAGE": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A room in PAGE'S house.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_3_5.png", 
+    "char_data": {
+     "BARDOLPH": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "FALSTAFF": {
+      "ratio": 33.0, 
+      "nlines": 99, 
+      "nedges": 3
+     }, 
+     "MISTRESS QUICKLY": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "FORD": {
+      "ratio": 27.0, 
+      "nlines": 27, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in the Garter Inn.", 
+    "scene": "5", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/merry_wives_4_1.png", 
+    "char_data": {
+     "WILLIAM PAGE": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "MISTRESS QUICKLY": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 10.0, 
+      "nlines": 30, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_4_2.png", 
+    "char_data": {
+     "First Servant": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "SHALLOW": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "Second Servant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 16.75, 
+      "nlines": 67, 
+      "nedges": 4
+     }, 
+     "FORD": {
+      "ratio": 7.29, 
+      "nlines": 51, 
+      "nedges": 7
+     }, 
+     "FALSTAFF": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "MISTRESS FORD": {
+      "ratio": 11.8, 
+      "nlines": 59, 
+      "nedges": 5
+     }, 
+     "PAGE": {
+      "ratio": 1.6, 
+      "nlines": 8, 
+      "nedges": 5
+     }
+    }, 
+    "location": "A room in FORD'S house.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_4_3.png", 
+    "char_data": {
+     "BARDOLPH": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "Host": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in the Garter Inn.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_4_4.png", 
+    "char_data": {
+     "MISTRESS FORD": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "PAGE": {
+      "ratio": 5.5, 
+      "nlines": 22, 
+      "nedges": 4
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 11.25, 
+      "nlines": 45, 
+      "nedges": 4
+     }, 
+     "FORD": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A room in FORD'S house.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_4_5.png", 
+    "char_data": {
+     "MISTRESS QUICKLY": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "DOCTOR CAIUS": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "FALSTAFF": {
+      "ratio": 10.5, 
+      "nlines": 42, 
+      "nedges": 4
+     }, 
+     "BARDOLPH": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "SIMPLE": {
+      "ratio": 12.0, 
+      "nlines": 24, 
+      "nedges": 2
+     }, 
+     "Host": {
+      "ratio": 5.8, 
+      "nlines": 29, 
+      "nedges": 5
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in the Garter Inn.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_4_6.png", 
+    "char_data": {
+     "FENTON": {
+      "ratio": 48.0, 
+      "nlines": 48, 
+      "nedges": 1
+     }, 
+     "Host": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another room in the Garter Inn.", 
+    "scene": "6", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/merry_wives_5_1.png", 
+    "char_data": {
+     "FALSTAFF": {
+      "ratio": 14.0, 
+      "nlines": 28, 
+      "nedges": 2
+     }, 
+     "MISTRESS QUICKLY": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "FORD": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in the Garter Inn.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_5_2.png", 
+    "char_data": {
+     "SHALLOW": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "PAGE": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "SLENDER": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Windsor Park.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_5_3.png", 
+    "char_data": {
+     "MISTRESS FORD": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "DOCTOR CAIUS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A street leading to the Park.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_5_4.png", 
+    "char_data": {
+     "SIR HUGH EVANS": {
+      "ratio": 0, 
+      "nlines": 5, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Windsor Park.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/merry_wives_5_5.png", 
+    "char_data": {
+     "SLENDER": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "MISTRESS QUICKLY": {
+      "ratio": 11.75, 
+      "nlines": 47, 
+      "nedges": 4
+     }, 
+     "DOCTOR CAIUS": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "MISTRESS FORD": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "MISTRESS PAGE": {
+      "ratio": 3.43, 
+      "nlines": 24, 
+      "nedges": 7
+     }, 
+     "FORD": {
+      "ratio": 4.0, 
+      "nlines": 28, 
+      "nedges": 7
+     }, 
+     "FALSTAFF": {
+      "ratio": 9.14, 
+      "nlines": 64, 
+      "nedges": 7
+     }, 
+     "ANNE PAGE": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "SIR HUGH EVANS": {
+      "ratio": 4.75, 
+      "nlines": 19, 
+      "nedges": 4
+     }, 
+     "FENTON": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "PISTOL": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "PAGE": {
+      "ratio": 3.17, 
+      "nlines": 19, 
+      "nedges": 6
+     }
+    }, 
+    "location": "Another part of the Park.", 
+    "scene": "5", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "SHALLOW", 
+  "SLENDER", 
+  "SIR HUGH EVANS", 
+  "PAGE", 
+  "FALSTAFF", 
+  "BARDOLPH", 
+  "PISTOL", 
+  "NYM", 
+  "SIMPLE", 
+  "ANNE PAGE", 
+  "Host", 
+  "MISTRESS QUICKLY", 
+  "RUGBY", 
+  "DOCTOR CAIUS", 
+  "FENTON", 
+  "MISTRESS PAGE", 
+  "MISTRESS FORD", 
+  "FORD", 
+  "ROBIN", 
+  "All", 
+  "Servant", 
+  "WILLIAM PAGE", 
+  "First Servant", 
+  "Second Servant"
+ ], 
+ "year": "1600-01 / 1602", 
+ "char_data": {
+  "SIMPLE": {
+   "ratio": 7.29, 
+   "nlines": 51, 
+   "nedges": 7, 
+   "order_app": 8
+  }, 
+  "Second Servant": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 23
+  }, 
+  "FALSTAFF": {
+   "ratio": 32.79, 
+   "nlines": 459, 
+   "nedges": 14, 
+   "order_app": 4
+  }, 
+  "NYM": {
+   "ratio": 5.8, 
+   "nlines": 29, 
+   "nedges": 5, 
+   "order_app": 7
+  }, 
+  "MISTRESS FORD": {
+   "ratio": 26.71, 
+   "nlines": 187, 
+   "nedges": 7, 
+   "order_app": 16
+  }, 
+  "ROBIN": {
+   "ratio": 2.6, 
+   "nlines": 13, 
+   "nedges": 5, 
+   "order_app": 18
+  }, 
+  "MISTRESS QUICKLY": {
+   "ratio": 19.71, 
+   "nlines": 276, 
+   "nedges": 14, 
+   "order_app": 11
+  }, 
+  "DOCTOR CAIUS": {
+   "ratio": 10.2, 
+   "nlines": 102, 
+   "nedges": 10, 
+   "order_app": 13
+  }, 
+  "SHALLOW": {
+   "ratio": 10.08, 
+   "nlines": 121, 
+   "nedges": 12, 
+   "order_app": 0
+  }, 
+  "Host": {
+   "ratio": 11.6, 
+   "nlines": 116, 
+   "nedges": 10, 
+   "order_app": 10
+  }, 
+  "FENTON": {
+   "ratio": 16.0, 
+   "nlines": 96, 
+   "nedges": 6, 
+   "order_app": 14
+  }, 
+  "PISTOL": {
+   "ratio": 7.75, 
+   "nlines": 62, 
+   "nedges": 8, 
+   "order_app": 6
+  }, 
+  "RUGBY": {
+   "ratio": 3.67, 
+   "nlines": 11, 
+   "nedges": 3, 
+   "order_app": 12
+  }, 
+  "Servant": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "SLENDER": {
+   "ratio": 12.17, 
+   "nlines": 146, 
+   "nedges": 12, 
+   "order_app": 1
+  }, 
+  "FORD": {
+   "ratio": 21.4, 
+   "nlines": 321, 
+   "nedges": 15, 
+   "order_app": 17
+  }, 
+  "ANNE PAGE": {
+   "ratio": 4.43, 
+   "nlines": 31, 
+   "nedges": 7, 
+   "order_app": 9
+  }, 
+  "SIR HUGH EVANS": {
+   "ratio": 17.0, 
+   "nlines": 238, 
+   "nedges": 14, 
+   "order_app": 2
+  }, 
+  "All": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 19
+  }, 
+  "First Servant": {
+   "ratio": 1.0, 
+   "nlines": 3, 
+   "nedges": 3, 
+   "order_app": 22
+  }, 
+  "BARDOLPH": {
+   "ratio": 4.0, 
+   "nlines": 24, 
+   "nedges": 6, 
+   "order_app": 5
+  }, 
+  "MISTRESS PAGE": {
+   "ratio": 29.82, 
+   "nlines": 328, 
+   "nedges": 11, 
+   "order_app": 15
+  }, 
+  "WILLIAM PAGE": {
+   "ratio": 6.0, 
+   "nlines": 12, 
+   "nedges": 2, 
+   "order_app": 21
+  }, 
+  "PAGE": {
+   "ratio": 12.38, 
+   "nlines": 161, 
+   "nedges": 13, 
+   "order_app": 3
+  }
+ }, 
+ "type": "Comedy"
+}

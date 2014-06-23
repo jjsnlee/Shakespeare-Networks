@@ -1,0 +1,808 @@
+{
+ "title": "Much Ado About Nothing", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/much_ado_1_1.png", 
+    "char_data": {
+     "HERO": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "BEATRICE": {
+      "ratio": 12.5, 
+      "nlines": 50, 
+      "nedges": 4
+     }, 
+     "CLAUDIO": {
+      "ratio": 18.0, 
+      "nlines": 36, 
+      "nedges": 2
+     }, 
+     "LEONATO": {
+      "ratio": 5.17, 
+      "nlines": 31, 
+      "nedges": 6
+     }, 
+     "Messenger": {
+      "ratio": 6.75, 
+      "nlines": 27, 
+      "nedges": 4
+     }, 
+     "DON JOHN": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "BENEDICK": {
+      "ratio": 22.5, 
+      "nlines": 90, 
+      "nedges": 4
+     }, 
+     "DON PEDRO": {
+      "ratio": 12.6, 
+      "nlines": 63, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Before LEONATO'S house.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_1_2.png", 
+    "char_data": {
+     "LEONATO": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }, 
+     "ANTONIO": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in LEONATO's house.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_1_3.png", 
+    "char_data": {
+     "BORACHIO": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "CONRADE": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "DON JOHN": {
+      "ratio": 20.0, 
+      "nlines": 40, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "3", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/much_ado_2_1.png", 
+    "char_data": {
+     "URSULA": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "BORACHIO": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "HERO": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "BEATRICE": {
+      "ratio": 13.63, 
+      "nlines": 109, 
+      "nedges": 8
+     }, 
+     "DON JOHN": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "ANTONIO": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "MARGARET": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "LEONATO": {
+      "ratio": 8.25, 
+      "nlines": 33, 
+      "nedges": 4
+     }, 
+     "DON PEDRO": {
+      "ratio": 10.17, 
+      "nlines": 61, 
+      "nedges": 6
+     }, 
+     "CLAUDIO": {
+      "ratio": 6.0, 
+      "nlines": 30, 
+      "nedges": 5
+     }, 
+     "BENEDICK": {
+      "ratio": 26.0, 
+      "nlines": 78, 
+      "nedges": 3
+     }, 
+     "BALTHASAR": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A hall in LEONATO'S house.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_2_2.png", 
+    "char_data": {
+     "BORACHIO": {
+      "ratio": 35.0, 
+      "nlines": 35, 
+      "nedges": 1
+     }, 
+     "DON JOHN": {
+      "ratio": 16.0, 
+      "nlines": 16, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_2_3.png", 
+    "char_data": {
+     "Boy": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "BEATRICE": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "CLAUDIO": {
+      "ratio": 11.67, 
+      "nlines": 35, 
+      "nedges": 3
+     }, 
+     "LEONATO": {
+      "ratio": 13.33, 
+      "nlines": 40, 
+      "nedges": 3
+     }, 
+     "DON PEDRO": {
+      "ratio": 15.5, 
+      "nlines": 62, 
+      "nedges": 4
+     }, 
+     "BALTHASAR": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "BENEDICK": {
+      "ratio": 14.83, 
+      "nlines": 89, 
+      "nedges": 6
+     }
+    }, 
+    "location": "LEONATO'S orchard.", 
+    "scene": "3", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/much_ado_3_1.png", 
+    "char_data": {
+     "MARGARET": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "URSULA": {
+      "ratio": 29.0, 
+      "nlines": 29, 
+      "nedges": 1
+     }, 
+     "BEATRICE": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "HERO": {
+      "ratio": 27.33, 
+      "nlines": 82, 
+      "nedges": 3
+     }
+    }, 
+    "location": "LEONATO'S garden.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_3_2.png", 
+    "char_data": {
+     "LEONATO": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "DON PEDRO": {
+      "ratio": 11.5, 
+      "nlines": 46, 
+      "nedges": 4
+     }, 
+     "CLAUDIO": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "DON JOHN": {
+      "ratio": 17.0, 
+      "nlines": 34, 
+      "nedges": 2
+     }, 
+     "BENEDICK": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A room in LEONATO'S house", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_3_3.png", 
+    "char_data": {
+     "DOGBERRY": {
+      "ratio": 12.8, 
+      "nlines": 64, 
+      "nedges": 5
+     }, 
+     "VERGES": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "BORACHIO": {
+      "ratio": 12.0, 
+      "nlines": 48, 
+      "nedges": 4
+     }, 
+     "Second Watchman": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "Watchman": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "CONRADE": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "First Watchman": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_3_4.png", 
+    "char_data": {
+     "MARGARET": {
+      "ratio": 16.67, 
+      "nlines": 50, 
+      "nedges": 3
+     }, 
+     "URSULA": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "BEATRICE": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "HERO": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }
+    }, 
+    "location": "HERO's apartment.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_3_5.png", 
+    "char_data": {
+     "VERGES": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "LEONATO": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "DOGBERRY": {
+      "ratio": 18.5, 
+      "nlines": 37, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another room in LEONATO'S house.", 
+    "scene": "5", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/much_ado_4_1.png", 
+    "char_data": {
+     "HERO": {
+      "ratio": 3.6, 
+      "nlines": 18, 
+      "nedges": 5
+     }, 
+     "BEATRICE": {
+      "ratio": 12.25, 
+      "nlines": 49, 
+      "nedges": 4
+     }, 
+     "DON JOHN": {
+      "ratio": 1.8, 
+      "nlines": 9, 
+      "nedges": 5
+     }, 
+     "LEONATO": {
+      "ratio": 9.86, 
+      "nlines": 69, 
+      "nedges": 7
+     }, 
+     "DON PEDRO": {
+      "ratio": 3.0, 
+      "nlines": 12, 
+      "nedges": 4
+     }, 
+     "CLAUDIO": {
+      "ratio": 9.67, 
+      "nlines": 58, 
+      "nedges": 6
+     }, 
+     "BENEDICK": {
+      "ratio": 8.17, 
+      "nlines": 49, 
+      "nedges": 6
+     }, 
+     "FRIAR FRANCIS": {
+      "ratio": 15.0, 
+      "nlines": 75, 
+      "nedges": 5
+     }
+    }, 
+    "location": "A church.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_4_2.png", 
+    "char_data": {
+     "DOGBERRY": {
+      "ratio": 8.0, 
+      "nlines": 48, 
+      "nedges": 6
+     }, 
+     "Second Watchman": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "BORACHIO": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "VERGES": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "First Watchman": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Sexton": {
+      "ratio": 3.2, 
+      "nlines": 16, 
+      "nedges": 5
+     }, 
+     "Watchman": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "CONRADE": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A prison.", 
+    "scene": "2", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/much_ado_5_1.png", 
+    "char_data": {
+     "DOGBERRY": {
+      "ratio": 6.2, 
+      "nlines": 31, 
+      "nedges": 5
+     }, 
+     "BORACHIO": {
+      "ratio": 7.0, 
+      "nlines": 21, 
+      "nedges": 3
+     }, 
+     "VERGES": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "CLAUDIO": {
+      "ratio": 10.8, 
+      "nlines": 54, 
+      "nedges": 5
+     }, 
+     "ANTONIO": {
+      "ratio": 11.33, 
+      "nlines": 34, 
+      "nedges": 3
+     }, 
+     "LEONATO": {
+      "ratio": 18.17, 
+      "nlines": 109, 
+      "nedges": 6
+     }, 
+     "DON PEDRO": {
+      "ratio": 11.0, 
+      "nlines": 66, 
+      "nedges": 6
+     }, 
+     "BENEDICK": {
+      "ratio": 12.0, 
+      "nlines": 24, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before LEONATO'S house.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_5_2.png", 
+    "char_data": {
+     "MARGARET": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "URSULA": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "BEATRICE": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "BENEDICK": {
+      "ratio": 21.0, 
+      "nlines": 63, 
+      "nedges": 3
+     }
+    }, 
+    "location": "LEONATO'S garden.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_5_3.png", 
+    "char_data": {
+     "Lord": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "DON PEDRO": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "CLAUDIO": {
+      "ratio": 7.0, 
+      "nlines": 28, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A church.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/much_ado_5_4.png", 
+    "char_data": {
+     "HERO": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "BEATRICE": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "CLAUDIO": {
+      "ratio": 4.4, 
+      "nlines": 22, 
+      "nedges": 5
+     }, 
+     "ANTONIO": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "LEONATO": {
+      "ratio": 4.5, 
+      "nlines": 27, 
+      "nedges": 6
+     }, 
+     "DON PEDRO": {
+      "ratio": 1.2, 
+      "nlines": 6, 
+      "nedges": 5
+     }, 
+     "FRIAR FRANCIS": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "BENEDICK": {
+      "ratio": 6.63, 
+      "nlines": 53, 
+      "nedges": 8
+     }, 
+     "Messenger": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in LEONATO'S house.", 
+    "scene": "4", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "LEONATO", 
+  "Messenger", 
+  "BEATRICE", 
+  "HERO", 
+  "DON PEDRO", 
+  "BENEDICK", 
+  "DON JOHN", 
+  "CLAUDIO", 
+  "ANTONIO", 
+  "CONRADE", 
+  "BORACHIO", 
+  "BALTHASAR", 
+  "MARGARET", 
+  "URSULA", 
+  "Boy", 
+  "DOGBERRY", 
+  "VERGES", 
+  "First Watchman", 
+  "Second Watchman", 
+  "Watchman", 
+  "FRIAR FRANCIS", 
+  "Sexton", 
+  "Lord"
+ ], 
+ "year": "1598-99 / 1600", 
+ "char_data": {
+  "BEATRICE": {
+   "ratio": 25.0, 
+   "nlines": 275, 
+   "nedges": 11, 
+   "order_app": 2
+  }, 
+  "Second Watchman": {
+   "ratio": 2.0, 
+   "nlines": 8, 
+   "nedges": 4, 
+   "order_app": 18
+  }, 
+  "DON JOHN": {
+   "ratio": 16.0, 
+   "nlines": 112, 
+   "nedges": 7, 
+   "order_app": 6
+  }, 
+  "ANTONIO": {
+   "ratio": 9.5, 
+   "nlines": 57, 
+   "nedges": 6, 
+   "order_app": 8
+  }, 
+  "MARGARET": {
+   "ratio": 13.0, 
+   "nlines": 65, 
+   "nedges": 5, 
+   "order_app": 12
+  }, 
+  "LEONATO": {
+   "ratio": 28.25, 
+   "nlines": 339, 
+   "nedges": 12, 
+   "order_app": 0
+  }, 
+  "Messenger": {
+   "ratio": 6.2, 
+   "nlines": 31, 
+   "nedges": 5, 
+   "order_app": 1
+  }, 
+  "Lord": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 22
+  }, 
+  "DOGBERRY": {
+   "ratio": 18.0, 
+   "nlines": 180, 
+   "nedges": 10, 
+   "order_app": 15
+  }, 
+  "CLAUDIO": {
+   "ratio": 24.42, 
+   "nlines": 293, 
+   "nedges": 12, 
+   "order_app": 7
+  }, 
+  "DON PEDRO": {
+   "ratio": 26.92, 
+   "nlines": 323, 
+   "nedges": 12, 
+   "order_app": 4
+  }, 
+  "FRIAR FRANCIS": {
+   "ratio": 14.17, 
+   "nlines": 85, 
+   "nedges": 6, 
+   "order_app": 20
+  }, 
+  "CONRADE": {
+   "ratio": 6.33, 
+   "nlines": 38, 
+   "nedges": 6, 
+   "order_app": 9
+  }, 
+  "Boy": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 14
+  }, 
+  "HERO": {
+   "ratio": 15.11, 
+   "nlines": 136, 
+   "nedges": 9, 
+   "order_app": 3
+  }, 
+  "VERGES": {
+   "ratio": 5.2, 
+   "nlines": 26, 
+   "nedges": 5, 
+   "order_app": 16
+  }, 
+  "BORACHIO": {
+   "ratio": 17.57, 
+   "nlines": 123, 
+   "nedges": 7, 
+   "order_app": 10
+  }, 
+  "Sexton": {
+   "ratio": 3.2, 
+   "nlines": 16, 
+   "nedges": 5, 
+   "order_app": 21
+  }, 
+  "Watchman": {
+   "ratio": 3.75, 
+   "nlines": 15, 
+   "nedges": 4, 
+   "order_app": 19
+  }, 
+  "URSULA": {
+   "ratio": 8.17, 
+   "nlines": 49, 
+   "nedges": 6, 
+   "order_app": 13
+  }, 
+  "First Watchman": {
+   "ratio": 2.0, 
+   "nlines": 10, 
+   "nedges": 5, 
+   "order_app": 17
+  }, 
+  "BALTHASAR": {
+   "ratio": 7.0, 
+   "nlines": 28, 
+   "nedges": 4, 
+   "order_app": 11
+  }, 
+  "BENEDICK": {
+   "ratio": 35.08, 
+   "nlines": 456, 
+   "nedges": 13, 
+   "order_app": 5
+  }
+ }, 
+ "type": "Comedy"
+}

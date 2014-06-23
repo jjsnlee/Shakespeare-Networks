@@ -1,0 +1,1560 @@
+{
+ "title": "Coriolanus", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/coriolanus_1_1.png", 
+    "char_data": {
+     "All": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "First Citizen": {
+      "ratio": 15.75, 
+      "nlines": 63, 
+      "nedges": 4
+     }, 
+     "TITUS": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "MARCIUS": {
+      "ratio": 11.57, 
+      "nlines": 81, 
+      "nedges": 7
+     }, 
+     "MENENIUS": {
+      "ratio": 23.5, 
+      "nlines": 94, 
+      "nedges": 4
+     }, 
+     "First Senator": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "COMINIUS": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "BRUTUS": {
+      "ratio": 20.0, 
+      "nlines": 20, 
+      "nedges": 1
+     }, 
+     "Second Citizen": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "SICINIUS": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Rome. A street.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_10.png", 
+    "char_data": {
+     "First Soldier": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "AUFIDIUS": {
+      "ratio": 32.0, 
+      "nlines": 32, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The camp of the Volsces.", 
+    "scene": "10", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_2.png", 
+    "char_data": {
+     "AUFIDIUS": {
+      "ratio": 10.67, 
+      "nlines": 32, 
+      "nedges": 3
+     }, 
+     "All": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "Second Senator": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "First Senator": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Corioli. The Senate-house.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_3.png", 
+    "char_data": {
+     "VALERIA": {
+      "ratio": 20.5, 
+      "nlines": 41, 
+      "nedges": 2
+     }, 
+     "VIRGILIA": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }, 
+     "Gentlewoman": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "VOLUMNIA": {
+      "ratio": 17.67, 
+      "nlines": 53, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Rome. A room in Marcius' house.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_4.png", 
+    "char_data": {
+     "First Soldier": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "All": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "LARTIUS": {
+      "ratio": 5.5, 
+      "nlines": 22, 
+      "nedges": 4
+     }, 
+     "Second Soldier": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "MARCIUS": {
+      "ratio": 6.5, 
+      "nlines": 39, 
+      "nedges": 6
+     }, 
+     "Messenger": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "First Senator": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Before Corioli.", 
+    "scene": "4", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_5.png", 
+    "char_data": {
+     "LARTIUS": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }, 
+     "MARCIUS": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "Third Roman": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "First Roman": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Second Roman": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Corioli. A street.", 
+    "scene": "5", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_6.png", 
+    "char_data": {
+     "COMINIUS": {
+      "ratio": 25.5, 
+      "nlines": 51, 
+      "nedges": 2
+     }, 
+     "MARCIUS": {
+      "ratio": 52.0, 
+      "nlines": 52, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Near the camp of Cominius.", 
+    "scene": "6", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_7.png", 
+    "char_data": {
+     "Lieutenant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "LARTIUS": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The gates of Corioli.", 
+    "scene": "7", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_8.png", 
+    "char_data": {
+     "MARCIUS": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "AUFIDIUS": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A field of battle.", 
+    "scene": "8", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_1_9.png", 
+    "char_data": {
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "MARCIUS": {
+      "ratio": 7.0, 
+      "nlines": 28, 
+      "nedges": 4
+     }, 
+     "LARTIUS": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "COMINIUS": {
+      "ratio": 14.75, 
+      "nlines": 59, 
+      "nedges": 4
+     }, 
+     "CORIOLANUS": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The Roman camp.", 
+    "scene": "9", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/coriolanus_2_1.png", 
+    "char_data": {
+     "Both": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "MENENIUS": {
+      "ratio": 15.38, 
+      "nlines": 123, 
+      "nedges": 8
+     }, 
+     "COMINIUS": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "VALERIA": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "VIRGILIA": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Herald": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "VOLUMNIA": {
+      "ratio": 6.14, 
+      "nlines": 43, 
+      "nedges": 7
+     }, 
+     "Messenger": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "SICINIUS": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 13.75, 
+      "nlines": 55, 
+      "nedges": 4
+     }, 
+     "CORIOLANUS": {
+      "ratio": 4.6, 
+      "nlines": 23, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Rome. A public place.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_2_2.png", 
+    "char_data": {
+     "SICINIUS": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "Senators": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "MENENIUS": {
+      "ratio": 5.25, 
+      "nlines": 42, 
+      "nedges": 8
+     }, 
+     "COMINIUS": {
+      "ratio": 23.5, 
+      "nlines": 47, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "First Officer": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "Second Officer": {
+      "ratio": 22.0, 
+      "nlines": 22, 
+      "nedges": 1
+     }, 
+     "CORIOLANUS": {
+      "ratio": 6.5, 
+      "nlines": 26, 
+      "nedges": 4
+     }, 
+     "First Senator": {
+      "ratio": 2.8, 
+      "nlines": 14, 
+      "nedges": 5
+     }, 
+     "Officer": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. The Capitol.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_2_3.png", 
+    "char_data": {
+     "MENENIUS": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "First Citizen": {
+      "ratio": 1.6, 
+      "nlines": 8, 
+      "nedges": 5
+     }, 
+     "Fifth Citizen": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Sixth Citizen": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Citizens": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Second Citizen": {
+      "ratio": 3.4, 
+      "nlines": 17, 
+      "nedges": 5
+     }, 
+     "Fourth Citizen": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "Both Citizens": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "All Citizens": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "All": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "Seventh Citizen": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "CORIOLANUS": {
+      "ratio": 7.0, 
+      "nlines": 70, 
+      "nedges": 10
+     }, 
+     "BRUTUS": {
+      "ratio": 11.4, 
+      "nlines": 57, 
+      "nedges": 5
+     }, 
+     "Third Citizen": {
+      "ratio": 9.0, 
+      "nlines": 54, 
+      "nedges": 6
+     }, 
+     "SICINIUS": {
+      "ratio": 9.33, 
+      "nlines": 56, 
+      "nedges": 6
+     }
+    }, 
+    "location": "The same. The Forum.", 
+    "scene": "3", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/coriolanus_3_1.png", 
+    "char_data": {
+     "MENENIUS": {
+      "ratio": 9.2, 
+      "nlines": 92, 
+      "nedges": 10
+     }, 
+     "COMINIUS": {
+      "ratio": 4.43, 
+      "nlines": 31, 
+      "nedges": 7
+     }, 
+     "AEdile": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Second Patrician": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "BRUTUS": {
+      "ratio": 7.67, 
+      "nlines": 46, 
+      "nedges": 6
+     }, 
+     "LARTIUS": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "A Patrician": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "First Citizen": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "Citizens": {
+      "ratio": 3.0, 
+      "nlines": 15, 
+      "nedges": 5
+     }, 
+     "SICINIUS": {
+      "ratio": 9.14, 
+      "nlines": 64, 
+      "nedges": 7
+     }, 
+     "Second Senator": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "First Senator": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "CORIOLANUS": {
+      "ratio": 25.67, 
+      "nlines": 154, 
+      "nedges": 6
+     }
+    }, 
+    "location": "Rome. A street.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_3_2.png", 
+    "char_data": {
+     "MENENIUS": {
+      "ratio": 4.2, 
+      "nlines": 21, 
+      "nedges": 5
+     }, 
+     "COMINIUS": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "A Patrician": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "VOLUMNIA": {
+      "ratio": 19.75, 
+      "nlines": 79, 
+      "nedges": 4
+     }, 
+     "First Senator": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "CORIOLANUS": {
+      "ratio": 15.25, 
+      "nlines": 61, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A room in CORIOLANUS'S house.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_3_3.png", 
+    "char_data": {
+     "Both Tribunes": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MENENIUS": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "COMINIUS": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "AEdile": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "Citizens": {
+      "ratio": 1.8, 
+      "nlines": 9, 
+      "nedges": 5
+     }, 
+     "First Senator": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "CORIOLANUS": {
+      "ratio": 6.38, 
+      "nlines": 51, 
+      "nedges": 8
+     }, 
+     "BRUTUS": {
+      "ratio": 6.5, 
+      "nlines": 26, 
+      "nedges": 4
+     }, 
+     "SICINIUS": {
+      "ratio": 9.0, 
+      "nlines": 54, 
+      "nedges": 6
+     }
+    }, 
+    "location": "The same. The Forum.", 
+    "scene": "3", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/coriolanus_4_1.png", 
+    "char_data": {
+     "VIRGILIA": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "COMINIUS": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "MENENIUS": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "VOLUMNIA": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "CORIOLANUS": {
+      "ratio": 11.25, 
+      "nlines": 45, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Rome. Before a gate of the city.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_4_2.png", 
+    "char_data": {
+     "MENENIUS": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "VOLUMNIA": {
+      "ratio": 9.25, 
+      "nlines": 37, 
+      "nedges": 4
+     }, 
+     "BRUTUS": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "VIRGILIA": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "SICINIUS": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The same. A  street near the gate.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_4_3.png", 
+    "char_data": {
+     "Roman": {
+      "ratio": 30.0, 
+      "nlines": 30, 
+      "nedges": 1
+     }, 
+     "Volsce": {
+      "ratio": 20.0, 
+      "nlines": 20, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A highway between Rome and Antium.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_4_4.png", 
+    "char_data": {
+     "CORIOLANUS": {
+      "ratio": 29.0, 
+      "nlines": 29, 
+      "nedges": 1
+     }, 
+     "Citizen": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Antium. Before Aufidius's house.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_4_5.png", 
+    "char_data": {
+     "All": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Second Servingman": {
+      "ratio": 9.5, 
+      "nlines": 38, 
+      "nedges": 4
+     }, 
+     "Third Servingman": {
+      "ratio": 12.25, 
+      "nlines": 49, 
+      "nedges": 4
+     }, 
+     "AUFIDIUS": {
+      "ratio": 19.0, 
+      "nlines": 57, 
+      "nedges": 3
+     }, 
+     "First Servingman": {
+      "ratio": 10.0, 
+      "nlines": 40, 
+      "nedges": 4
+     }, 
+     "CORIOLANUS": {
+      "ratio": 17.5, 
+      "nlines": 70, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The same. A hall in Aufidius's house.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_4_6.png", 
+    "char_data": {
+     "Both Tribunes": {
+      "ratio": 1.0, 
+      "nlines": 4, 
+      "nedges": 4
+     }, 
+     "MENENIUS": {
+      "ratio": 8.43, 
+      "nlines": 59, 
+      "nedges": 7
+     }, 
+     "First Citizen": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "AEdile": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "Citizens": {
+      "ratio": 0.6, 
+      "nlines": 3, 
+      "nedges": 5
+     }, 
+     "Second Citizen": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "Second Messenger": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "COMINIUS": {
+      "ratio": 7.0, 
+      "nlines": 42, 
+      "nedges": 6
+     }, 
+     "Messenger": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 2.88, 
+      "nlines": 23, 
+      "nedges": 8
+     }, 
+     "Third Citizen": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "SICINIUS": {
+      "ratio": 5.86, 
+      "nlines": 41, 
+      "nedges": 7
+     }
+    }, 
+    "location": "Rome. A public place.", 
+    "scene": "6", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_4_7.png", 
+    "char_data": {
+     "Lieutenant": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "AUFIDIUS": {
+      "ratio": 49.0, 
+      "nlines": 49, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A camp, at a small distance from Rome.", 
+    "scene": "7", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/coriolanus_5_1.png", 
+    "char_data": {
+     "MENENIUS": {
+      "ratio": 13.67, 
+      "nlines": 41, 
+      "nedges": 3
+     }, 
+     "COMINIUS": {
+      "ratio": 16.0, 
+      "nlines": 32, 
+      "nedges": 2
+     }, 
+     "BRUTUS": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "SICINIUS": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Rome. A public place.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_5_2.png", 
+    "char_data": {
+     "Second Senator": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "MENENIUS": {
+      "ratio": 19.67, 
+      "nlines": 59, 
+      "nedges": 3
+     }, 
+     "AUFIDIUS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "First Senator": {
+      "ratio": 10.33, 
+      "nlines": 31, 
+      "nedges": 3
+     }, 
+     "CORIOLANUS": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Entrance of the Volscian camp before Rome.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_5_3.png", 
+    "char_data": {
+     "Young MARCIUS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "VIRGILIA": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "AUFIDIUS": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "VOLUMNIA": {
+      "ratio": 53.5, 
+      "nlines": 107, 
+      "nedges": 2
+     }, 
+     "CORIOLANUS": {
+      "ratio": 28.0, 
+      "nlines": 112, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The tent of Coriolanus.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_5_4.png", 
+    "char_data": {
+     "Second Messenger": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "MENENIUS": {
+      "ratio": 12.67, 
+      "nlines": 38, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "SICINIUS": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Rome. A public place.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_5_5.png", 
+    "char_data": {
+     "All": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "First Senator": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. A street near the gate.", 
+    "scene": "5", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/coriolanus_5_6.png", 
+    "char_data": {
+     "Lords": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }, 
+     "All Conspirators": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "All The People": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "First Lord": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "Third Lord": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Second Conspirator": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "All The Lords": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Third Conspirator": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "First Conspirator": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "Second Lord": {
+      "ratio": 1.8, 
+      "nlines": 9, 
+      "nedges": 5
+     }, 
+     "AUFIDIUS": {
+      "ratio": 9.4, 
+      "nlines": 94, 
+      "nedges": 10
+     }, 
+     "CORIOLANUS": {
+      "ratio": 11.67, 
+      "nlines": 35, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Antium. A public place.", 
+    "scene": "6", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "First Citizen", 
+  "All", 
+  "Second Citizen", 
+  "MENENIUS", 
+  "MARCIUS", 
+  "Messenger", 
+  "First Senator", 
+  "COMINIUS", 
+  "TITUS", 
+  "SICINIUS", 
+  "BRUTUS", 
+  "AUFIDIUS", 
+  "Second Senator", 
+  "VOLUMNIA", 
+  "VIRGILIA", 
+  "Gentlewoman", 
+  "VALERIA", 
+  "LARTIUS", 
+  "First Soldier", 
+  "Second Soldier", 
+  "First Roman", 
+  "Second Roman", 
+  "Third Roman", 
+  "Lieutenant", 
+  "CORIOLANUS", 
+  "Both", 
+  "Herald", 
+  "First Officer", 
+  "Second Officer", 
+  "Officer", 
+  "Senators", 
+  "Third Citizen", 
+  "Fourth Citizen", 
+  "Fifth Citizen", 
+  "Both Citizens", 
+  "Sixth Citizen", 
+  "Seventh Citizen", 
+  "All Citizens", 
+  "Citizens", 
+  "AEdile", 
+  "A Patrician", 
+  "Second Patrician", 
+  "Both Tribunes", 
+  "Roman", 
+  "Volsce", 
+  "Citizen", 
+  "First Servingman", 
+  "Second Servingman", 
+  "Third Servingman", 
+  "Second Messenger", 
+  "Young MARCIUS", 
+  "First Conspirator", 
+  "Second Conspirator", 
+  "Third Conspirator", 
+  "All The Lords", 
+  "Lords", 
+  "First Lord", 
+  "All Conspirators", 
+  "All The People", 
+  "Second Lord", 
+  "Third Lord"
+ ], 
+ "year": "1607-08 / 1623", 
+ "char_data": {
+  "Second Citizen": {
+   "ratio": 4.67, 
+   "nlines": 28, 
+   "nedges": 6, 
+   "order_app": 2
+  }, 
+  "Second Soldier": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 19
+  }, 
+  "Second Patrician": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 41
+  }, 
+  "First Soldier": {
+   "ratio": 2.4, 
+   "nlines": 12, 
+   "nedges": 5, 
+   "order_app": 18
+  }, 
+  "LARTIUS": {
+   "ratio": 8.57, 
+   "nlines": 60, 
+   "nedges": 7, 
+   "order_app": 17
+  }, 
+  "Third Servingman": {
+   "ratio": 12.25, 
+   "nlines": 49, 
+   "nedges": 4, 
+   "order_app": 48
+  }, 
+  "Second Roman": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 21
+  }, 
+  "Second Messenger": {
+   "ratio": 7.67, 
+   "nlines": 23, 
+   "nedges": 3, 
+   "order_app": 49
+  }, 
+  "COMINIUS": {
+   "ratio": 17.47, 
+   "nlines": 297, 
+   "nedges": 17, 
+   "order_app": 7
+  }, 
+  "Messenger": {
+   "ratio": 6.5, 
+   "nlines": 39, 
+   "nedges": 6, 
+   "order_app": 5
+  }, 
+  "Citizen": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 45
+  }, 
+  "Second Lord": {
+   "ratio": 1.8, 
+   "nlines": 9, 
+   "nedges": 5, 
+   "order_app": 59
+  }, 
+  "Second Senator": {
+   "ratio": 4.2, 
+   "nlines": 21, 
+   "nedges": 5, 
+   "order_app": 12
+  }, 
+  "BRUTUS": {
+   "ratio": 19.85, 
+   "nlines": 258, 
+   "nedges": 13, 
+   "order_app": 10
+  }, 
+  "SICINIUS": {
+   "ratio": 19.63, 
+   "nlines": 314, 
+   "nedges": 16, 
+   "order_app": 9
+  }, 
+  "First Lord": {
+   "ratio": 3.25, 
+   "nlines": 13, 
+   "nedges": 4, 
+   "order_app": 56
+  }, 
+  "Second Servingman": {
+   "ratio": 9.5, 
+   "nlines": 38, 
+   "nedges": 4, 
+   "order_app": 47
+  }, 
+  "Fifth Citizen": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 33
+  }, 
+  "AUFIDIUS": {
+   "ratio": 16.06, 
+   "nlines": 289, 
+   "nedges": 18, 
+   "order_app": 11
+  }, 
+  "All The People": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 58
+  }, 
+  "Third Conspirator": {
+   "ratio": 6.0, 
+   "nlines": 12, 
+   "nedges": 2, 
+   "order_app": 53
+  }, 
+  "Both Citizens": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 34
+  }, 
+  "Lieutenant": {
+   "ratio": 6.0, 
+   "nlines": 12, 
+   "nedges": 2, 
+   "order_app": 23
+  }, 
+  "Second Conspirator": {
+   "ratio": 2.33, 
+   "nlines": 7, 
+   "nedges": 3, 
+   "order_app": 52
+  }, 
+  "First Conspirator": {
+   "ratio": 4.0, 
+   "nlines": 8, 
+   "nedges": 2, 
+   "order_app": 51
+  }, 
+  "First Officer": {
+   "ratio": 7.5, 
+   "nlines": 15, 
+   "nedges": 2, 
+   "order_app": 27
+  }, 
+  "Volsce": {
+   "ratio": 20.0, 
+   "nlines": 20, 
+   "nedges": 1, 
+   "order_app": 44
+  }, 
+  "MARCIUS": {
+   "ratio": 17.46, 
+   "nlines": 227, 
+   "nedges": 13, 
+   "order_app": 4
+  }, 
+  "VALERIA": {
+   "ratio": 14.0, 
+   "nlines": 42, 
+   "nedges": 3, 
+   "order_app": 16
+  }, 
+  "MENENIUS": {
+   "ratio": 25.38, 
+   "nlines": 609, 
+   "nedges": 24, 
+   "order_app": 3
+  }, 
+  "First Citizen": {
+   "ratio": 9.0, 
+   "nlines": 81, 
+   "nedges": 9, 
+   "order_app": 0
+  }, 
+  "AEdile": {
+   "ratio": 3.2, 
+   "nlines": 16, 
+   "nedges": 5, 
+   "order_app": 39
+  }, 
+  "Lords": {
+   "ratio": 0.67, 
+   "nlines": 2, 
+   "nedges": 3, 
+   "order_app": 55
+  }, 
+  "TITUS": {
+   "ratio": 1.5, 
+   "nlines": 6, 
+   "nedges": 4, 
+   "order_app": 8
+  }, 
+  "VIRGILIA": {
+   "ratio": 4.86, 
+   "nlines": 34, 
+   "nedges": 7, 
+   "order_app": 14
+  }, 
+  "First Servingman": {
+   "ratio": 10.0, 
+   "nlines": 40, 
+   "nedges": 4, 
+   "order_app": 46
+  }, 
+  "Fourth Citizen": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 32
+  }, 
+  "Herald": {
+   "ratio": 2.33, 
+   "nlines": 7, 
+   "nedges": 3, 
+   "order_app": 26
+  }, 
+  "All The Lords": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 54
+  }, 
+  "Roman": {
+   "ratio": 30.0, 
+   "nlines": 30, 
+   "nedges": 1, 
+   "order_app": 43
+  }, 
+  "VOLUMNIA": {
+   "ratio": 27.17, 
+   "nlines": 326, 
+   "nedges": 12, 
+   "order_app": 13
+  }, 
+  "Seventh Citizen": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 36
+  }, 
+  "Officer": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 29
+  }, 
+  "Both": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 25
+  }, 
+  "Second Officer": {
+   "ratio": 22.0, 
+   "nlines": 22, 
+   "nedges": 1, 
+   "order_app": 28
+  }, 
+  "Young MARCIUS": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 50
+  }, 
+  "A Patrician": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 40
+  }, 
+  "Gentlewoman": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 15
+  }, 
+  "All Conspirators": {
+   "ratio": 1.0, 
+   "nlines": 3, 
+   "nedges": 3, 
+   "order_app": 57
+  }, 
+  "First Roman": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 20
+  }, 
+  "Both Tribunes": {
+   "ratio": 1.0, 
+   "nlines": 5, 
+   "nedges": 5, 
+   "order_app": 42
+  }, 
+  "Senators": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 30
+  }, 
+  "All": {
+   "ratio": 1.71, 
+   "nlines": 24, 
+   "nedges": 14, 
+   "order_app": 1
+  }, 
+  "Third Citizen": {
+   "ratio": 8.29, 
+   "nlines": 58, 
+   "nedges": 7, 
+   "order_app": 31
+  }, 
+  "Sixth Citizen": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 35
+  }, 
+  "Third Lord": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 60
+  }, 
+  "All Citizens": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 37
+  }, 
+  "Third Roman": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 22
+  }, 
+  "Citizens": {
+   "ratio": 3.11, 
+   "nlines": 28, 
+   "nedges": 9, 
+   "order_app": 38
+  }, 
+  "First Senator": {
+   "ratio": 7.83, 
+   "nlines": 94, 
+   "nedges": 12, 
+   "order_app": 6
+  }, 
+  "CORIOLANUS": {
+   "ratio": 23.63, 
+   "nlines": 709, 
+   "nedges": 30, 
+   "order_app": 24
+  }
+ }, 
+ "type": "Tragedy"
+}

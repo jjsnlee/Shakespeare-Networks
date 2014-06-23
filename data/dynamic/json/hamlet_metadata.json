@@ -1,0 +1,971 @@
+{
+ "title": "Hamlet", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/hamlet_1_1.png", 
+    "char_data": {
+     "MARCELLUS": {
+      "ratio": 16.0, 
+      "nlines": 48, 
+      "nedges": 3
+     }, 
+     "HORATIO": {
+      "ratio": 34.0, 
+      "nlines": 102, 
+      "nedges": 3
+     }, 
+     "BERNARDO": {
+      "ratio": 11.67, 
+      "nlines": 35, 
+      "nedges": 3
+     }, 
+     "FRANCISCO": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Elsinore. A platform before the castle.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_1_2.png", 
+    "char_data": {
+     "MARCELLUS": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "HORATIO": {
+      "ratio": 25.0, 
+      "nlines": 50, 
+      "nedges": 2
+     }, 
+     "LORD POLONIUS": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "LAERTES": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "HAMLET": {
+      "ratio": 21.0, 
+      "nlines": 105, 
+      "nedges": 5
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 19.0, 
+      "nlines": 95, 
+      "nedges": 5
+     }, 
+     "QUEEN GERTRUDE": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "CORNELIUS": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room of state in the castle.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_1_3.png", 
+    "char_data": {
+     "OPHELIA": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }, 
+     "LAERTES": {
+      "ratio": 27.0, 
+      "nlines": 54, 
+      "nedges": 2
+     }, 
+     "LORD POLONIUS": {
+      "ratio": 34.0, 
+      "nlines": 68, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in Polonius' house.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_1_4.png", 
+    "char_data": {
+     "MARCELLUS": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "HORATIO": {
+      "ratio": 14.0, 
+      "nlines": 28, 
+      "nedges": 2
+     }, 
+     "HAMLET": {
+      "ratio": 35.0, 
+      "nlines": 70, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The platform.", 
+    "scene": "4", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_1_5.png", 
+    "char_data": {
+     "Ghost": {
+      "ratio": 90.0, 
+      "nlines": 90, 
+      "nedges": 1
+     }, 
+     "MARCELLUS": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "HORATIO": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "HAMLET": {
+      "ratio": 34.0, 
+      "nlines": 102, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another part of the platform.", 
+    "scene": "5", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/hamlet_2_1.png", 
+    "char_data": {
+     "OPHELIA": {
+      "ratio": 28.0, 
+      "nlines": 28, 
+      "nedges": 1
+     }, 
+     "LORD POLONIUS": {
+      "ratio": 45.5, 
+      "nlines": 91, 
+      "nedges": 2
+     }, 
+     "REYNALDO": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in POLONIUS' house.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_2_2.png", 
+    "char_data": {
+     "GUILDENSTERN": {
+      "ratio": 4.5, 
+      "nlines": 18, 
+      "nedges": 4
+     }, 
+     "LORD POLONIUS": {
+      "ratio": 29.8, 
+      "nlines": 149, 
+      "nedges": 5
+     }, 
+     "ROSENCRANTZ": {
+      "ratio": 12.0, 
+      "nlines": 48, 
+      "nedges": 4
+     }, 
+     "HAMLET": {
+      "ratio": 72.0, 
+      "nlines": 288, 
+      "nedges": 4
+     }, 
+     "VOLTIMAND": {
+      "ratio": 22.0, 
+      "nlines": 22, 
+      "nedges": 1
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 10.75, 
+      "nlines": 43, 
+      "nedges": 4
+     }, 
+     "QUEEN GERTRUDE": {
+      "ratio": 5.5, 
+      "nlines": 22, 
+      "nedges": 4
+     }, 
+     "First Player": {
+      "ratio": 24.5, 
+      "nlines": 49, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in the castle.", 
+    "scene": "2", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/hamlet_3_1.png", 
+    "char_data": {
+     "GUILDENSTERN": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "LORD POLONIUS": {
+      "ratio": 6.75, 
+      "nlines": 27, 
+      "nedges": 4
+     }, 
+     "ROSENCRANTZ": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "OPHELIA": {
+      "ratio": 8.75, 
+      "nlines": 35, 
+      "nedges": 4
+     }, 
+     "HAMLET": {
+      "ratio": 40.0, 
+      "nlines": 80, 
+      "nedges": 2
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 10.25, 
+      "nlines": 41, 
+      "nedges": 4
+     }, 
+     "QUEEN GERTRUDE": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A room in the castle.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_3_2.png", 
+    "char_data": {
+     "GUILDENSTERN": {
+      "ratio": 21.0, 
+      "nlines": 21, 
+      "nedges": 1
+     }, 
+     "LORD POLONIUS": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "ROSENCRANTZ": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "OPHELIA": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "HORATIO": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "HAMLET": {
+      "ratio": 18.62, 
+      "nlines": 242, 
+      "nedges": 13
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "Player Queen": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "Prologue": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "QUEEN GERTRUDE": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "LUCIANUS": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "Player King": {
+      "ratio": 22.5, 
+      "nlines": 45, 
+      "nedges": 2
+     }, 
+     "First Player": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A hall in the castle.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_3_3.png", 
+    "char_data": {
+     "GUILDENSTERN": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 13.5, 
+      "nlines": 54, 
+      "nedges": 4
+     }, 
+     "LORD POLONIUS": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "ROSENCRANTZ": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }, 
+     "HAMLET": {
+      "ratio": 25.0, 
+      "nlines": 25, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in the castle.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_3_4.png", 
+    "char_data": {
+     "QUEEN GERTRUDE": {
+      "ratio": 24.5, 
+      "nlines": 49, 
+      "nedges": 2
+     }, 
+     "Ghost": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "LORD POLONIUS": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "HAMLET": {
+      "ratio": 60.33, 
+      "nlines": 181, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The Queen's closet.", 
+    "scene": "4", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/hamlet_4_1.png", 
+    "char_data": {
+     "QUEEN GERTRUDE": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 33.0, 
+      "nlines": 33, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in the castle.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_4_2.png", 
+    "char_data": {
+     "GUILDENSTERN": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "ROSENCRANTZ": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "HAMLET": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another room in the castle.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_4_3.png", 
+    "char_data": {
+     "KING CLAUDIUS": {
+      "ratio": 24.5, 
+      "nlines": 49, 
+      "nedges": 2
+     }, 
+     "ROSENCRANTZ": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "HAMLET": {
+      "ratio": 26.0, 
+      "nlines": 26, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another room in the castle.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_4_4.png", 
+    "char_data": {
+     "PRINCE FORTINBRAS": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "Captain": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "ROSENCRANTZ": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "HAMLET": {
+      "ratio": 16.33, 
+      "nlines": 49, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A plain in Denmark.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_4_5.png", 
+    "char_data": {
+     "Gentleman": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "HORATIO": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "OPHELIA": {
+      "ratio": 28.0, 
+      "nlines": 84, 
+      "nedges": 3
+     }, 
+     "LAERTES": {
+      "ratio": 12.0, 
+      "nlines": 48, 
+      "nedges": 4
+     }, 
+     "Danes": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 14.6, 
+      "nlines": 73, 
+      "nedges": 5
+     }, 
+     "QUEEN GERTRUDE": {
+      "ratio": 3.6, 
+      "nlines": 18, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Elsinore. A room in the castle.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_4_6.png", 
+    "char_data": {
+     "Servant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "First Sailor": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "HORATIO": {
+      "ratio": 15.0, 
+      "nlines": 30, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another room in the castle.", 
+    "scene": "6", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_4_7.png", 
+    "char_data": {
+     "QUEEN GERTRUDE": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 47.67, 
+      "nlines": 143, 
+      "nedges": 3
+     }, 
+     "LAERTES": {
+      "ratio": 24.0, 
+      "nlines": 48, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another room in the castle.", 
+    "scene": "7", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/hamlet_5_1.png", 
+    "char_data": {
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Second Clown": {
+      "ratio": 19.0, 
+      "nlines": 19, 
+      "nedges": 1
+     }, 
+     "LAERTES": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }, 
+     "HAMLET": {
+      "ratio": 27.6, 
+      "nlines": 138, 
+      "nedges": 5
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "HORATIO": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "QUEEN GERTRUDE": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "First Priest": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }, 
+     "First Clown": {
+      "ratio": 49.5, 
+      "nlines": 99, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A churchyard.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/hamlet_5_2.png", 
+    "char_data": {
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "HORATIO": {
+      "ratio": 13.5, 
+      "nlines": 54, 
+      "nedges": 4
+     }, 
+     "First Ambassador": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "LAERTES": {
+      "ratio": 9.75, 
+      "nlines": 39, 
+      "nedges": 4
+     }, 
+     "HAMLET": {
+      "ratio": 33.43, 
+      "nlines": 234, 
+      "nedges": 7
+     }, 
+     "KING CLAUDIUS": {
+      "ratio": 6.0, 
+      "nlines": 30, 
+      "nedges": 5
+     }, 
+     "OSRIC": {
+      "ratio": 12.0, 
+      "nlines": 48, 
+      "nedges": 4
+     }, 
+     "QUEEN GERTRUDE": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "Lord": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "PRINCE FORTINBRAS": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A hall in the castle.", 
+    "scene": "2", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "BERNARDO", 
+  "FRANCISCO", 
+  "HORATIO", 
+  "MARCELLUS", 
+  "KING CLAUDIUS", 
+  "CORNELIUS", 
+  "LAERTES", 
+  "LORD POLONIUS", 
+  "HAMLET", 
+  "QUEEN GERTRUDE", 
+  "All", 
+  "OPHELIA", 
+  "Ghost", 
+  "REYNALDO", 
+  "ROSENCRANTZ", 
+  "GUILDENSTERN", 
+  "VOLTIMAND", 
+  "First Player", 
+  "Prologue", 
+  "Player King", 
+  "Player Queen", 
+  "LUCIANUS", 
+  "PRINCE FORTINBRAS", 
+  "Captain", 
+  "Gentleman", 
+  "Danes", 
+  "Servant", 
+  "First Sailor", 
+  "Messenger", 
+  "First Clown", 
+  "Second Clown", 
+  "First Priest", 
+  "OSRIC", 
+  "Lord", 
+  "First Ambassador"
+ ], 
+ "year": "1600-01 / 1603", 
+ "char_data": {
+  "GUILDENSTERN": {
+   "ratio": 12.25, 
+   "nlines": 49, 
+   "nedges": 4, 
+   "order_app": 15
+  }, 
+  "First Priest": {
+   "ratio": 13.0, 
+   "nlines": 13, 
+   "nedges": 1, 
+   "order_app": 31
+  }, 
+  "Gentleman": {
+   "ratio": 8.0, 
+   "nlines": 24, 
+   "nedges": 3, 
+   "order_app": 24
+  }, 
+  "LUCIANUS": {
+   "ratio": 7.0, 
+   "nlines": 7, 
+   "nedges": 1, 
+   "order_app": 21
+  }, 
+  "OSRIC": {
+   "ratio": 12.0, 
+   "nlines": 48, 
+   "nedges": 4, 
+   "order_app": 32
+  }, 
+  "Lord": {
+   "ratio": 7.0, 
+   "nlines": 7, 
+   "nedges": 1, 
+   "order_app": 33
+  }, 
+  "PRINCE FORTINBRAS": {
+   "ratio": 7.75, 
+   "nlines": 31, 
+   "nedges": 4, 
+   "order_app": 22
+  }, 
+  "First Ambassador": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 34
+  }, 
+  "MARCELLUS": {
+   "ratio": 13.0, 
+   "nlines": 78, 
+   "nedges": 6, 
+   "order_app": 3
+  }, 
+  "ROSENCRANTZ": {
+   "ratio": 18.5, 
+   "nlines": 111, 
+   "nedges": 6, 
+   "order_app": 14
+  }, 
+  "Captain": {
+   "ratio": 4.33, 
+   "nlines": 13, 
+   "nedges": 3, 
+   "order_app": 23
+  }, 
+  "Player King": {
+   "ratio": 22.5, 
+   "nlines": 45, 
+   "nedges": 2, 
+   "order_app": 19
+  }, 
+  "Ghost": {
+   "ratio": 96.0, 
+   "nlines": 96, 
+   "nedges": 1, 
+   "order_app": 12
+  }, 
+  "First Sailor": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 27
+  }, 
+  "HORATIO": {
+   "ratio": 25.5, 
+   "nlines": 306, 
+   "nedges": 12, 
+   "order_app": 2
+  }, 
+  "BERNARDO": {
+   "ratio": 11.67, 
+   "nlines": 35, 
+   "nedges": 3, 
+   "order_app": 0
+  }, 
+  "Servant": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 26
+  }, 
+  "LAERTES": {
+   "ratio": 27.0, 
+   "nlines": 216, 
+   "nedges": 8, 
+   "order_app": 6
+  }, 
+  "HAMLET": {
+   "ratio": 74.38, 
+   "nlines": 1562, 
+   "nedges": 21, 
+   "order_app": 8
+  }, 
+  "Second Clown": {
+   "ratio": 19.0, 
+   "nlines": 19, 
+   "nedges": 1, 
+   "order_app": 30
+  }, 
+  "Prologue": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 18
+  }, 
+  "First Player": {
+   "ratio": 26.0, 
+   "nlines": 52, 
+   "nedges": 2, 
+   "order_app": 17
+  }, 
+  "First Clown": {
+   "ratio": 49.5, 
+   "nlines": 99, 
+   "nedges": 2, 
+   "order_app": 29
+  }, 
+  "All": {
+   "ratio": 1.25, 
+   "nlines": 5, 
+   "nedges": 4, 
+   "order_app": 10
+  }, 
+  "FRANCISCO": {
+   "ratio": 4.0, 
+   "nlines": 12, 
+   "nedges": 3, 
+   "order_app": 1
+  }, 
+  "LORD POLONIUS": {
+   "ratio": 46.0, 
+   "nlines": 368, 
+   "nedges": 8, 
+   "order_app": 7
+  }, 
+  "OPHELIA": {
+   "ratio": 30.83, 
+   "nlines": 185, 
+   "nedges": 6, 
+   "order_app": 11
+  }, 
+  "Danes": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 25
+  }, 
+  "REYNALDO": {
+   "ratio": 15.0, 
+   "nlines": 15, 
+   "nedges": 1, 
+   "order_app": 13
+  }, 
+  "VOLTIMAND": {
+   "ratio": 22.0, 
+   "nlines": 22, 
+   "nedges": 1, 
+   "order_app": 16
+  }, 
+  "KING CLAUDIUS": {
+   "ratio": 41.36, 
+   "nlines": 579, 
+   "nedges": 14, 
+   "order_app": 4
+  }, 
+  "Player Queen": {
+   "ratio": 15.5, 
+   "nlines": 31, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "QUEEN GERTRUDE": {
+   "ratio": 16.6, 
+   "nlines": 166, 
+   "nedges": 10, 
+   "order_app": 9
+  }, 
+  "Messenger": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 28
+  }, 
+  "CORNELIUS": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 5
+  }
+ }, 
+ "type": "Tragedy"
+}

@@ -1,0 +1,1329 @@
+{
+ "title": "Henry VI, part 1", 
+ "acts": [
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "OF WINCHESTER": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "BEDFORD": {
+      "ratio": 16.67, 
+      "nlines": 50, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 8.67, 
+      "nlines": 26, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 23.67, 
+      "nlines": 71, 
+      "nedges": 3
+     }, 
+     "EXETER": {
+      "ratio": 6.25, 
+      "nlines": 25, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Westminster Abbey.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "BASTARD OF ORLEANS": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "CHARLES": {
+      "ratio": 9.0, 
+      "nlines": 54, 
+      "nedges": 6
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 26.0, 
+      "nlines": 52, 
+      "nedges": 2
+     }, 
+     "ALENCON": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "REIGNIER": {
+      "ratio": 7.0, 
+      "nlines": 21, 
+      "nedges": 3
+     }
+    }, 
+    "location": "France. Before Orleans.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "OF WINCHESTER": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "Officer": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "WOODVILE": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER": {
+      "ratio": 11.2, 
+      "nlines": 56, 
+      "nedges": 5
+     }, 
+     "Mayor": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "Second Warder": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "First Warder": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. Before the Tower.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Boy": {
+      "ratio": 7.67, 
+      "nlines": 23, 
+      "nedges": 3
+     }, 
+     "GARGRAVE": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }, 
+     "TALBOT": {
+      "ratio": 18.0, 
+      "nlines": 72, 
+      "nedges": 4
+     }, 
+     "Messenger": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "SALISBURY": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "GLANSDALE": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Orleans.", 
+    "scene": "4", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "TALBOT": {
+      "ratio": 37.0, 
+      "nlines": 37, 
+      "nedges": 1
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "5", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CHARLES": {
+      "ratio": 7.67, 
+      "nlines": 23, 
+      "nedges": 3
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "REIGNIER": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "ALENCON": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "6", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "BEDFORD": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "First Sentinel": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "Sentinels": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "CHARLES": {
+      "ratio": 3.0, 
+      "nlines": 12, 
+      "nedges": 4
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "ALENCON": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "BURGUNDY": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "REIGNIER": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "TALBOT": {
+      "ratio": 5.0, 
+      "nlines": 20, 
+      "nedges": 4
+     }, 
+     "Soldier": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "BASTARD OF ORLEANS": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "Sergeant": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Before Orleans.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "TALBOT": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "BEDFORD": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "Captain": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "BURGUNDY": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Orleans. Within the town.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "TALBOT": {
+      "ratio": 22.0, 
+      "nlines": 44, 
+      "nedges": 2
+     }, 
+     "OF AUVERGNE": {
+      "ratio": 15.67, 
+      "nlines": 47, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "Porter": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Auvergne. The COUNTESS's castle.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "PLANTAGENET": {
+      "ratio": 9.2, 
+      "nlines": 46, 
+      "nedges": 5
+     }, 
+     "SUFFOLK": {
+      "ratio": 3.5, 
+      "nlines": 14, 
+      "nedges": 4
+     }, 
+     "VERNON": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "Lawyer": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 10.0, 
+      "nlines": 30, 
+      "nedges": 3
+     }, 
+     "SOMERSET": {
+      "ratio": 9.4, 
+      "nlines": 47, 
+      "nedges": 5
+     }
+    }, 
+    "location": "London. The Temple-garden.", 
+    "scene": "4", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "First Gaoler": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "MORTIMER": {
+      "ratio": 48.5, 
+      "nlines": 97, 
+      "nedges": 2
+     }, 
+     "PLANTAGENET": {
+      "ratio": 39.0, 
+      "nlines": 39, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The Tower of London.", 
+    "scene": "5", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ALL": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "PLANTAGENET": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "KING HENRY VI": {
+      "ratio": 10.4, 
+      "nlines": 52, 
+      "nedges": 5
+     }, 
+     "OF WINCHESTER": {
+      "ratio": 10.67, 
+      "nlines": 32, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 5.17, 
+      "nlines": 31, 
+      "nedges": 6
+     }, 
+     "SOMERSET": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 9.86, 
+      "nlines": 69, 
+      "nedges": 7
+     }, 
+     "Mayor": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "EXETER": {
+      "ratio": 16.0, 
+      "nlines": 16, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. The Parliament-house.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "First Soldier": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "BEDFORD": {
+      "ratio": 3.2, 
+      "nlines": 16, 
+      "nedges": 5
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 4.38, 
+      "nlines": 35, 
+      "nedges": 8
+     }, 
+     "CHARLES": {
+      "ratio": 1.0, 
+      "nlines": 5, 
+      "nedges": 5
+     }, 
+     "Watch": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "REIGNIER": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "BURGUNDY": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "ALENCON": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "TALBOT": {
+      "ratio": 10.17, 
+      "nlines": 61, 
+      "nedges": 6
+     }, 
+     "BASTARD OF ORLEANS": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "Captain": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "FASTOLFE": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }
+    }, 
+    "location": "France. Before Rouen.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "JOAN LA PUCELLE": {
+      "ratio": 20.33, 
+      "nlines": 61, 
+      "nedges": 3
+     }, 
+     "CHARLES": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "BASTARD OF ORLEANS": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "ALENCON": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "BURGUNDY": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The plains near Rouen.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "TALBOT": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }, 
+     "BASSET": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "VERNON": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Paris. The palace.", 
+    "scene": "4", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "BASSET": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "KING HENRY VI": {
+      "ratio": 8.25, 
+      "nlines": 66, 
+      "nedges": 8
+     }, 
+     "OF WINCHESTER": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "TALBOT": {
+      "ratio": 9.0, 
+      "nlines": 36, 
+      "nedges": 4
+     }, 
+     "VERNON": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "YORK": {
+      "ratio": 1.67, 
+      "nlines": 10, 
+      "nedges": 6
+     }, 
+     "WARWICK": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "SOMERSET": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 6.67, 
+      "nlines": 40, 
+      "nedges": 6
+     }, 
+     "FASTOLFE": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "EXETER": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Paris. A hall of state.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "TALBOT": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }, 
+     "General": {
+      "ratio": 29.0, 
+      "nlines": 29, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Before Bourdeaux.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Messenger": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "YORK": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "LUCY": {
+      "ratio": 21.0, 
+      "nlines": 21, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Plains in Gascony.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "SOMERSET": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "Captain": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "LUCY": {
+      "ratio": 28.0, 
+      "nlines": 28, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Other plains in Gascony.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "TALBOT": {
+      "ratio": 25.0, 
+      "nlines": 25, 
+      "nedges": 1
+     }, 
+     "JOHN TALBOT": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The English camp near Bourdeaux.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "TALBOT": {
+      "ratio": 42.0, 
+      "nlines": 42, 
+      "nedges": 1
+     }, 
+     "JOHN TALBOT": {
+      "ratio": 16.0, 
+      "nlines": 16, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A field of battle.", 
+    "scene": "6", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Servant": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "CHARLES": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }, 
+     "LUCY": {
+      "ratio": 15.0, 
+      "nlines": 30, 
+      "nedges": 2
+     }, 
+     "BURGUNDY": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "TALBOT": {
+      "ratio": 16.5, 
+      "nlines": 33, 
+      "nedges": 2
+     }, 
+     "BASTARD OF ORLEANS": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "7", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "OF WINCHESTER": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 9.33, 
+      "nlines": 28, 
+      "nedges": 3
+     }, 
+     "Legate": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER": {
+      "ratio": 18.0, 
+      "nlines": 18, 
+      "nedges": 1
+     }, 
+     "EXETER": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CHARLES": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "Scout": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "ALENCON": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "BURGUNDY": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "France. Plains in Anjou.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "MARGARET": {
+      "ratio": 17.5, 
+      "nlines": 35, 
+      "nedges": 2
+     }, 
+     "SUFFOLK": {
+      "ratio": 36.67, 
+      "nlines": 110, 
+      "nedges": 3
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 42.0, 
+      "nlines": 42, 
+      "nedges": 1
+     }, 
+     "YORK": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "REIGNIER": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before Angiers.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Shepherd": {
+      "ratio": 8.33, 
+      "nlines": 25, 
+      "nedges": 3
+     }, 
+     "OF WINCHESTER": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "CHARLES": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "JOAN LA PUCELLE": {
+      "ratio": 13.67, 
+      "nlines": 41, 
+      "nedges": 3
+     }, 
+     "ALENCON": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "REIGNIER": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "YORK": {
+      "ratio": 8.67, 
+      "nlines": 52, 
+      "nedges": 6
+     }, 
+     "WARWICK": {
+      "ratio": 3.2, 
+      "nlines": 16, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Camp of the YORK in Anjou.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING HENRY VI": {
+      "ratio": 18.0, 
+      "nlines": 36, 
+      "nedges": 2
+     }, 
+     "SUFFOLK": {
+      "ratio": 20.67, 
+      "nlines": 62, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "EXETER": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "5", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "BEDFORD", 
+  "GLOUCESTER", 
+  "EXETER", 
+  "OF WINCHESTER", 
+  "Messenger", 
+  "CHARLES", 
+  "ALENCON", 
+  "REIGNIER", 
+  "BASTARD OF ORLEANS", 
+  "JOAN LA PUCELLE", 
+  "First Warder", 
+  "Second Warder", 
+  "WOODVILE", 
+  "Mayor", 
+  "Officer", 
+  "Boy", 
+  "SALISBURY", 
+  "TALBOT", 
+  "GARGRAVE", 
+  "GLANSDALE", 
+  "Sergeant", 
+  "First Sentinel", 
+  "BURGUNDY", 
+  "Sentinels", 
+  "Soldier", 
+  "Captain", 
+  "OF AUVERGNE", 
+  "Porter", 
+  "PLANTAGENET", 
+  "SUFFOLK", 
+  "SOMERSET", 
+  "WARWICK", 
+  "VERNON", 
+  "Lawyer", 
+  "MORTIMER", 
+  "First Gaoler", 
+  "KING HENRY VI", 
+  "ALL", 
+  "First Soldier", 
+  "Watch", 
+  "FASTOLFE", 
+  "BASSET", 
+  "YORK", 
+  "General", 
+  "LUCY", 
+  "JOHN TALBOT", 
+  "Servant", 
+  "Legate", 
+  "Scout", 
+  "MARGARET", 
+  "Shepherd"
+ ], 
+ "year": "1591-92 / 1623", 
+ "char_data": {
+  "BASSET": {
+   "ratio": 6.25, 
+   "nlines": 25, 
+   "nedges": 4, 
+   "order_app": 41
+  }, 
+  "BEDFORD": {
+   "ratio": 10.38, 
+   "nlines": 83, 
+   "nedges": 8, 
+   "order_app": 0
+  }, 
+  "YORK": {
+   "ratio": 7.36, 
+   "nlines": 103, 
+   "nedges": 14, 
+   "order_app": 42
+  }, 
+  "First Soldier": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 38
+  }, 
+  "ALENCON": {
+   "ratio": 6.25, 
+   "nlines": 50, 
+   "nedges": 8, 
+   "order_app": 6
+  }, 
+  "LUCY": {
+   "ratio": 19.75, 
+   "nlines": 79, 
+   "nedges": 4, 
+   "order_app": 44
+  }, 
+  "TALBOT": {
+   "ratio": 21.14, 
+   "nlines": 444, 
+   "nedges": 21, 
+   "order_app": 17
+  }, 
+  "MARGARET": {
+   "ratio": 17.5, 
+   "nlines": 35, 
+   "nedges": 2, 
+   "order_app": 49
+  }, 
+  "VERNON": {
+   "ratio": 3.88, 
+   "nlines": 31, 
+   "nedges": 8, 
+   "order_app": 32
+  }, 
+  "Messenger": {
+   "ratio": 14.14, 
+   "nlines": 99, 
+   "nedges": 7, 
+   "order_app": 4
+  }, 
+  "Sergeant": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 20
+  }, 
+  "GLANSDALE": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 19
+  }, 
+  "WARWICK": {
+   "ratio": 6.75, 
+   "nlines": 81, 
+   "nedges": 12, 
+   "order_app": 31
+  }, 
+  "Legate": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 47
+  }, 
+  "General": {
+   "ratio": 29.0, 
+   "nlines": 29, 
+   "nedges": 1, 
+   "order_app": 43
+  }, 
+  "FASTOLFE": {
+   "ratio": 3.0, 
+   "nlines": 9, 
+   "nedges": 3, 
+   "order_app": 40
+  }, 
+  "Porter": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 27
+  }, 
+  "OF AUVERGNE": {
+   "ratio": 15.67, 
+   "nlines": 47, 
+   "nedges": 3, 
+   "order_app": 26
+  }, 
+  "First Gaoler": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 35
+  }, 
+  "PLANTAGENET": {
+   "ratio": 11.75, 
+   "nlines": 94, 
+   "nedges": 8, 
+   "order_app": 28
+  }, 
+  "KING HENRY VI": {
+   "ratio": 16.42, 
+   "nlines": 197, 
+   "nedges": 12, 
+   "order_app": 36
+  }, 
+  "GARGRAVE": {
+   "ratio": 0.67, 
+   "nlines": 2, 
+   "nedges": 3, 
+   "order_app": 18
+  }, 
+  "Sentinels": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 23
+  }, 
+  "CHARLES": {
+   "ratio": 11.08, 
+   "nlines": 144, 
+   "nedges": 13, 
+   "order_app": 5
+  }, 
+  "Watch": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 39
+  }, 
+  "BURGUNDY": {
+   "ratio": 7.5, 
+   "nlines": 45, 
+   "nedges": 6, 
+   "order_app": 22
+  }, 
+  "Scout": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 48
+  }, 
+  "BASTARD OF ORLEANS": {
+   "ratio": 6.0, 
+   "nlines": 30, 
+   "nedges": 5, 
+   "order_app": 8
+  }, 
+  "First Warder": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 10
+  }, 
+  "SOMERSET": {
+   "ratio": 6.73, 
+   "nlines": 74, 
+   "nedges": 11, 
+   "order_app": 30
+  }, 
+  "Second Warder": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 11
+  }, 
+  "EXETER": {
+   "ratio": 9.14, 
+   "nlines": 64, 
+   "nedges": 7, 
+   "order_app": 2
+  }, 
+  "JOHN TALBOT": {
+   "ratio": 47.0, 
+   "nlines": 47, 
+   "nedges": 1, 
+   "order_app": 45
+  }, 
+  "Boy": {
+   "ratio": 7.67, 
+   "nlines": 23, 
+   "nedges": 3, 
+   "order_app": 15
+  }, 
+  "Shepherd": {
+   "ratio": 8.33, 
+   "nlines": 25, 
+   "nedges": 3, 
+   "order_app": 50
+  }, 
+  "Servant": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 46
+  }, 
+  "REIGNIER": {
+   "ratio": 7.88, 
+   "nlines": 63, 
+   "nedges": 8, 
+   "order_app": 7
+  }, 
+  "Soldier": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 24
+  }, 
+  "Officer": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 14
+  }, 
+  "ALL": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 37
+  }, 
+  "First Sentinel": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 21
+  }, 
+  "OF WINCHESTER": {
+   "ratio": 11.0, 
+   "nlines": 99, 
+   "nedges": 9, 
+   "order_app": 3
+  }, 
+  "JOAN LA PUCELLE": {
+   "ratio": 18.6, 
+   "nlines": 279, 
+   "nedges": 15, 
+   "order_app": 9
+  }, 
+  "MORTIMER": {
+   "ratio": 48.5, 
+   "nlines": 97, 
+   "nedges": 2, 
+   "order_app": 34
+  }, 
+  "SUFFOLK": {
+   "ratio": 18.6, 
+   "nlines": 186, 
+   "nedges": 10, 
+   "order_app": 29
+  }, 
+  "SALISBURY": {
+   "ratio": 5.0, 
+   "nlines": 15, 
+   "nedges": 3, 
+   "order_app": 16
+  }, 
+  "Lawyer": {
+   "ratio": 2.33, 
+   "nlines": 7, 
+   "nedges": 3, 
+   "order_app": 33
+  }, 
+  "WOODVILE": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 12
+  }, 
+  "Captain": {
+   "ratio": 2.5, 
+   "nlines": 10, 
+   "nedges": 4, 
+   "order_app": 25
+  }, 
+  "Mayor": {
+   "ratio": 4.6, 
+   "nlines": 23, 
+   "nedges": 5, 
+   "order_app": 13
+  }, 
+  "GLOUCESTER": {
+   "ratio": 13.88, 
+   "nlines": 222, 
+   "nedges": 16, 
+   "order_app": 1
+  }
+ }, 
+ "type": "History"
+}

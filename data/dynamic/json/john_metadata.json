@@ -1,0 +1,755 @@
+{
+ "title": "King John", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/john_1_1.png", 
+    "char_data": {
+     "BASTARD": {
+      "ratio": 29.4, 
+      "nlines": 147, 
+      "nedges": 5
+     }, 
+     "QUEEN ELINOR": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "LADY FAULCONBRIDGE": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }, 
+     "ROBERT": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "ESSEX": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "CHATILLON": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "KING JOHN": {
+      "ratio": 10.2, 
+      "nlines": 51, 
+      "nedges": 5
+     }, 
+     "GURNEY": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "KING JOHN'S palace.", 
+    "scene": "1", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/john_2_1.png", 
+    "char_data": {
+     "BLANCH": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "BASTARD": {
+      "ratio": 18.0, 
+      "nlines": 126, 
+      "nedges": 7
+     }, 
+     "First Citizen": {
+      "ratio": 13.0, 
+      "nlines": 65, 
+      "nedges": 5
+     }, 
+     "QUEEN ELINOR": {
+      "ratio": 3.5, 
+      "nlines": 21, 
+      "nedges": 6
+     }, 
+     "English Herald": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "LEWIS": {
+      "ratio": 5.8, 
+      "nlines": 29, 
+      "nedges": 5
+     }, 
+     "ARTHUR": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "KING PHILIP": {
+      "ratio": 13.56, 
+      "nlines": 122, 
+      "nedges": 9
+     }, 
+     "CHATILLON": {
+      "ratio": 26.0, 
+      "nlines": 26, 
+      "nedges": 1
+     }, 
+     "AUSTRIA": {
+      "ratio": 5.6, 
+      "nlines": 28, 
+      "nedges": 5
+     }, 
+     "French Herald": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "KING JOHN": {
+      "ratio": 13.13, 
+      "nlines": 105, 
+      "nedges": 8
+     }, 
+     "CONSTANCE": {
+      "ratio": 9.8, 
+      "nlines": 49, 
+      "nedges": 5
+     }
+    }, 
+    "location": "France. Before Angiers.", 
+    "scene": "1", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/john_3_1.png", 
+    "char_data": {
+     "BLANCH": {
+      "ratio": 6.75, 
+      "nlines": 27, 
+      "nedges": 4
+     }, 
+     "BASTARD": {
+      "ratio": 1.8, 
+      "nlines": 9, 
+      "nedges": 5
+     }, 
+     "CARDINAL PANDULPH": {
+      "ratio": 11.83, 
+      "nlines": 71, 
+      "nedges": 6
+     }, 
+     "QUEEN ELINOR": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }, 
+     "LEWIS": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "ARTHUR": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "KING PHILIP": {
+      "ratio": 12.0, 
+      "nlines": 48, 
+      "nedges": 4
+     }, 
+     "AUSTRIA": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "SALISBURY": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "CONSTANCE": {
+      "ratio": 16.11, 
+      "nlines": 145, 
+      "nedges": 9
+     }, 
+     "KING JOHN": {
+      "ratio": 6.17, 
+      "nlines": 37, 
+      "nedges": 6
+     }
+    }, 
+    "location": "The French King's pavilion.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/john_3_2.png", 
+    "char_data": {
+     "BASTARD": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "KING JOHN": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. Plains near Angiers.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/john_3_3.png", 
+    "char_data": {
+     "BASTARD": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "QUEEN ELINOR": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "ARTHUR": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "KING JOHN": {
+      "ratio": 14.0, 
+      "nlines": 70, 
+      "nedges": 5
+     }, 
+     "HUBERT": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "ELINOR": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/john_3_4.png", 
+    "char_data": {
+     "KING PHILIP": {
+      "ratio": 9.33, 
+      "nlines": 28, 
+      "nedges": 3
+     }, 
+     "LEWIS": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }, 
+     "CARDINAL PANDULPH": {
+      "ratio": 22.33, 
+      "nlines": 67, 
+      "nedges": 3
+     }, 
+     "CONSTANCE": {
+      "ratio": 37.5, 
+      "nlines": 75, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. KING PHILIP'S tent.", 
+    "scene": "4", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/john_4_1.png", 
+    "char_data": {
+     "ARTHUR": {
+      "ratio": 49.5, 
+      "nlines": 99, 
+      "nedges": 2
+     }, 
+     "First Executioner": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "HUBERT": {
+      "ratio": 25.5, 
+      "nlines": 51, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in a castle.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/john_4_2.png", 
+    "char_data": {
+     "PEMBROKE": {
+      "ratio": 29.0, 
+      "nlines": 58, 
+      "nedges": 2
+     }, 
+     "BASTARD": {
+      "ratio": 23.0, 
+      "nlines": 23, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }, 
+     "KING JOHN": {
+      "ratio": 21.17, 
+      "nlines": 127, 
+      "nedges": 6
+     }, 
+     "HUBERT": {
+      "ratio": 35.0, 
+      "nlines": 35, 
+      "nedges": 1
+     }, 
+     "PETER": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "SALISBURY": {
+      "ratio": 14.0, 
+      "nlines": 28, 
+      "nedges": 2
+     }
+    }, 
+    "location": "KING JOHN'S palace.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/john_4_3.png", 
+    "char_data": {
+     "PEMBROKE": {
+      "ratio": 4.25, 
+      "nlines": 17, 
+      "nedges": 4
+     }, 
+     "BASTARD": {
+      "ratio": 14.5, 
+      "nlines": 58, 
+      "nedges": 4
+     }, 
+     "BIGOT": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "ARTHUR": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }, 
+     "SALISBURY": {
+      "ratio": 11.2, 
+      "nlines": 56, 
+      "nedges": 5
+     }, 
+     "HUBERT": {
+      "ratio": 6.25, 
+      "nlines": 25, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Before the castle.", 
+    "scene": "3", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/john_5_1.png", 
+    "char_data": {
+     "BASTARD": {
+      "ratio": 44.0, 
+      "nlines": 44, 
+      "nedges": 1
+     }, 
+     "KING JOHN": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "CARDINAL PANDULPH": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }
+    }, 
+    "location": "KING JOHN'S palace.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/john_5_2.png", 
+    "char_data": {
+     "LEWIS": {
+      "ratio": 28.67, 
+      "nlines": 86, 
+      "nedges": 3
+     }, 
+     "BASTARD": {
+      "ratio": 27.0, 
+      "nlines": 54, 
+      "nedges": 2
+     }, 
+     "SALISBURY": {
+      "ratio": 32.0, 
+      "nlines": 32, 
+      "nedges": 1
+     }, 
+     "CARDINAL PANDULPH": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }
+    }, 
+    "location": "LEWIS's camp at St. Edmundsbury.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/john_5_3.png", 
+    "char_data": {
+     "Messenger": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "KING JOHN": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "HUBERT": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The field of battle.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/john_5_4.png", 
+    "char_data": {
+     "PEMBROKE": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "MELUN": {
+      "ratio": 19.5, 
+      "nlines": 39, 
+      "nedges": 2
+     }, 
+     "SALISBURY": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/john_5_5.png", 
+    "char_data": {
+     "LEWIS": {
+      "ratio": 19.0, 
+      "nlines": 19, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The French camp.", 
+    "scene": "5", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/john_5_6.png", 
+    "char_data": {
+     "BASTARD": {
+      "ratio": 21.0, 
+      "nlines": 21, 
+      "nedges": 1
+     }, 
+     "HUBERT": {
+      "ratio": 28.0, 
+      "nlines": 28, 
+      "nedges": 1
+     }
+    }, 
+    "location": "An open place in the neighbourhood of Swinstead Abbey.", 
+    "scene": "6", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/john_5_7.png", 
+    "char_data": {
+     "PRINCE HENRY": {
+      "ratio": 8.0, 
+      "nlines": 32, 
+      "nedges": 4
+     }, 
+     "BASTARD": {
+      "ratio": 14.0, 
+      "nlines": 42, 
+      "nedges": 3
+     }, 
+     "PEMBROKE": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "KING JOHN": {
+      "ratio": 9.67, 
+      "nlines": 29, 
+      "nedges": 3
+     }, 
+     "SALISBURY": {
+      "ratio": 7.0, 
+      "nlines": 21, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The orchard in Swinstead Abbey.", 
+    "scene": "7", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "KING JOHN", 
+  "CHATILLON", 
+  "QUEEN ELINOR", 
+  "ESSEX", 
+  "BASTARD", 
+  "ROBERT", 
+  "LADY FAULCONBRIDGE", 
+  "GURNEY", 
+  "LEWIS", 
+  "ARTHUR", 
+  "AUSTRIA", 
+  "CONSTANCE", 
+  "KING PHILIP", 
+  "BLANCH", 
+  "First Citizen", 
+  "French Herald", 
+  "English Herald", 
+  "SALISBURY", 
+  "CARDINAL PANDULPH", 
+  "ELINOR", 
+  "HUBERT", 
+  "First Executioner", 
+  "PEMBROKE", 
+  "Messenger", 
+  "PETER", 
+  "BIGOT", 
+  "MELUN", 
+  "PRINCE HENRY"
+ ], 
+ "year": "1596-97 / 1623", 
+ "char_data": {
+  "BASTARD": {
+   "ratio": 31.71, 
+   "nlines": 539, 
+   "nedges": 17, 
+   "order_app": 4
+  }, 
+  "French Herald": {
+   "ratio": 6.5, 
+   "nlines": 13, 
+   "nedges": 2, 
+   "order_app": 15
+  }, 
+  "CARDINAL PANDULPH": {
+   "ratio": 23.57, 
+   "nlines": 165, 
+   "nedges": 7, 
+   "order_app": 18
+  }, 
+  "English Herald": {
+   "ratio": 6.5, 
+   "nlines": 13, 
+   "nedges": 2, 
+   "order_app": 16
+  }, 
+  "BIGOT": {
+   "ratio": 2.0, 
+   "nlines": 8, 
+   "nedges": 4, 
+   "order_app": 25
+  }, 
+  "Messenger": {
+   "ratio": 14.5, 
+   "nlines": 29, 
+   "nedges": 2, 
+   "order_app": 23
+  }, 
+  "HUBERT": {
+   "ratio": 21.14, 
+   "nlines": 148, 
+   "nedges": 7, 
+   "order_app": 20
+  }, 
+  "GURNEY": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 7
+  }, 
+  "PEMBROKE": {
+   "ratio": 12.29, 
+   "nlines": 86, 
+   "nedges": 7, 
+   "order_app": 22
+  }, 
+  "LADY FAULCONBRIDGE": {
+   "ratio": 15.0, 
+   "nlines": 15, 
+   "nedges": 1, 
+   "order_app": 6
+  }, 
+  "ROBERT": {
+   "ratio": 11.0, 
+   "nlines": 22, 
+   "nedges": 2, 
+   "order_app": 5
+  }, 
+  "ESSEX": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 3
+  }, 
+  "KING PHILIP": {
+   "ratio": 19.8, 
+   "nlines": 198, 
+   "nedges": 10, 
+   "order_app": 12
+  }, 
+  "AUSTRIA": {
+   "ratio": 5.83, 
+   "nlines": 35, 
+   "nedges": 6, 
+   "order_app": 10
+  }, 
+  "First Executioner": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 21
+  }, 
+  "KING JOHN": {
+   "ratio": 23.05, 
+   "nlines": 461, 
+   "nedges": 20, 
+   "order_app": 0
+  }, 
+  "ELINOR": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 19
+  }, 
+  "First Citizen": {
+   "ratio": 13.0, 
+   "nlines": 65, 
+   "nedges": 5, 
+   "order_app": 14
+  }, 
+  "MELUN": {
+   "ratio": 19.5, 
+   "nlines": 39, 
+   "nedges": 2, 
+   "order_app": 26
+  }, 
+  "PRINCE HENRY": {
+   "ratio": 8.0, 
+   "nlines": 32, 
+   "nedges": 4, 
+   "order_app": 27
+  }, 
+  "CONSTANCE": {
+   "ratio": 29.89, 
+   "nlines": 269, 
+   "nedges": 9, 
+   "order_app": 11
+  }, 
+  "BLANCH": {
+   "ratio": 10.5, 
+   "nlines": 42, 
+   "nedges": 4, 
+   "order_app": 13
+  }, 
+  "PETER": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 24
+  }, 
+  "QUEEN ELINOR": {
+   "ratio": 6.0, 
+   "nlines": 54, 
+   "nedges": 9, 
+   "order_app": 2
+  }, 
+  "CHATILLON": {
+   "ratio": 14.0, 
+   "nlines": 42, 
+   "nedges": 3, 
+   "order_app": 1
+  }, 
+  "ARTHUR": {
+   "ratio": 17.57, 
+   "nlines": 123, 
+   "nedges": 7, 
+   "order_app": 9
+  }, 
+  "SALISBURY": {
+   "ratio": 16.3, 
+   "nlines": 163, 
+   "nedges": 10, 
+   "order_app": 17
+  }, 
+  "LEWIS": {
+   "ratio": 16.1, 
+   "nlines": 161, 
+   "nedges": 10, 
+   "order_app": 8
+  }
+ }, 
+ "type": "History"
+}

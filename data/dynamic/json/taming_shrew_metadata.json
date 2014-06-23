@@ -1,0 +1,934 @@
+{
+ "title": "Taming of the Shrew", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/taming_shrew_0_1.png", 
+    "char_data": {
+     "A Player": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "SLY": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "Hostess": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "Servant": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Second Huntsman": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "Players": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "First Huntsman": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "Lord": {
+      "ratio": 18.83, 
+      "nlines": 113, 
+      "nedges": 6
+     }
+    }, 
+    "location": "Before an alehouse on a heath.", 
+    "scene": "1", 
+    "act": "0"
+   }, 
+   {
+    "graph_img_f": "imgs/taming_shrew_0_2.png", 
+    "char_data": {
+     "ALL": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "First Servant": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "SLY": {
+      "ratio": 7.57, 
+      "nlines": 53, 
+      "nedges": 7
+     }, 
+     "Third Servant": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "Second Servant": {
+      "ratio": 3.0, 
+      "nlines": 12, 
+      "nedges": 4
+     }, 
+     "Messenger": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "Lord": {
+      "ratio": 8.25, 
+      "nlines": 33, 
+      "nedges": 4
+     }, 
+     "Page": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A bedchamber in the Lord's house.", 
+    "scene": "2", 
+    "act": "0"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/taming_shrew_1_1.png", 
+    "char_data": {
+     "HORTENSIO": {
+      "ratio": 8.33, 
+      "nlines": 25, 
+      "nedges": 3
+     }, 
+     "First Servant": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "TRANIO": {
+      "ratio": 16.0, 
+      "nlines": 64, 
+      "nedges": 4
+     }, 
+     "BAPTISTA": {
+      "ratio": 8.33, 
+      "nlines": 25, 
+      "nedges": 3
+     }, 
+     "HORTENSIA": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "BIANCA": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "LUCENTIO": {
+      "ratio": 19.2, 
+      "nlines": 96, 
+      "nedges": 5
+     }, 
+     "BIONDELLO": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "GREMIO": {
+      "ratio": 5.4, 
+      "nlines": 27, 
+      "nedges": 5
+     }, 
+     "KATHARINA": {
+      "ratio": 2.6, 
+      "nlines": 13, 
+      "nedges": 5
+     }, 
+     "Page": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "SLY": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Padua. A public place.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/taming_shrew_1_2.png", 
+    "char_data": {
+     "HORTENSIO": {
+      "ratio": 15.6, 
+      "nlines": 78, 
+      "nedges": 5
+     }, 
+     "GRUMIO": {
+      "ratio": 12.75, 
+      "nlines": 51, 
+      "nedges": 4
+     }, 
+     "TRANIO": {
+      "ratio": 5.67, 
+      "nlines": 34, 
+      "nedges": 6
+     }, 
+     "GREMIO": {
+      "ratio": 7.8, 
+      "nlines": 39, 
+      "nedges": 5
+     }, 
+     "BIONDELLO": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "LUCENTIO": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "PETRUCHIO": {
+      "ratio": 16.0, 
+      "nlines": 80, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Padua. Before HORTENSIO'S house.", 
+    "scene": "2", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/taming_shrew_2_1.png", 
+    "char_data": {
+     "HORTENSIO": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "TRANIO": {
+      "ratio": 15.67, 
+      "nlines": 47, 
+      "nedges": 3
+     }, 
+     "BAPTISTA": {
+      "ratio": 15.2, 
+      "nlines": 76, 
+      "nedges": 5
+     }, 
+     "PETRUCHIO": {
+      "ratio": 33.8, 
+      "nlines": 169, 
+      "nedges": 5
+     }, 
+     "BIANCA": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }, 
+     "GREMIO": {
+      "ratio": 15.5, 
+      "nlines": 62, 
+      "nedges": 4
+     }, 
+     "KATHARINA": {
+      "ratio": 14.25, 
+      "nlines": 57, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Padua. A room in BAPTISTA'S house.", 
+    "scene": "1", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/taming_shrew_3_1.png", 
+    "char_data": {
+     "BIANCA": {
+      "ratio": 11.67, 
+      "nlines": 35, 
+      "nedges": 3
+     }, 
+     "Servant": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "HORTENSIO": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "LUCENTIO": {
+      "ratio": 15.0, 
+      "nlines": 30, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Padua. BAPTISTA'S house.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/taming_shrew_3_2.png", 
+    "char_data": {
+     "GRUMIO": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "TRANIO": {
+      "ratio": 7.17, 
+      "nlines": 43, 
+      "nedges": 6
+     }, 
+     "BAPTISTA": {
+      "ratio": 8.2, 
+      "nlines": 41, 
+      "nedges": 5
+     }, 
+     "PETRUCHIO": {
+      "ratio": 9.29, 
+      "nlines": 65, 
+      "nedges": 7
+     }, 
+     "BIANCA": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "LUCENTIO": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "BIONDELLO": {
+      "ratio": 14.0, 
+      "nlines": 42, 
+      "nedges": 3
+     }, 
+     "GREMIO": {
+      "ratio": 6.0, 
+      "nlines": 36, 
+      "nedges": 6
+     }, 
+     "KATHARINA": {
+      "ratio": 5.6, 
+      "nlines": 28, 
+      "nedges": 5
+     }, 
+     "KATARINA": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Padua. Before BAPTISTA'S house.", 
+    "scene": "2", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/taming_shrew_4_1.png", 
+    "char_data": {
+     "NICHOLAS": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "GRUMIO": {
+      "ratio": 23.0, 
+      "nlines": 92, 
+      "nedges": 4
+     }, 
+     "First Servant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "PETRUCHIO": {
+      "ratio": 10.5, 
+      "nlines": 84, 
+      "nedges": 8
+     }, 
+     "JOSEPH": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "CURTIS": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }, 
+     "PHILIP": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "PETER": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "KATHARINA": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "NATHANIEL": {
+      "ratio": 0.8, 
+      "nlines": 4, 
+      "nedges": 5
+     }
+    }, 
+    "location": "PETRUCHIO'S country house.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/taming_shrew_4_2.png", 
+    "char_data": {
+     "HORTENSIO": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }, 
+     "TRANIO": {
+      "ratio": 14.0, 
+      "nlines": 70, 
+      "nedges": 5
+     }, 
+     "Pedant": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }, 
+     "BIANCA": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "LUCENTIO": {
+      "ratio": 1.25, 
+      "nlines": 5, 
+      "nedges": 4
+     }, 
+     "BIONDELLO": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Padua. Before BAPTISTA'S house.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/taming_shrew_4_3.png", 
+    "char_data": {
+     "HORTENSIO": {
+      "ratio": 3.0, 
+      "nlines": 12, 
+      "nedges": 4
+     }, 
+     "GRUMIO": {
+      "ratio": 8.75, 
+      "nlines": 35, 
+      "nedges": 4
+     }, 
+     "PETRUCHIO": {
+      "ratio": 18.2, 
+      "nlines": 91, 
+      "nedges": 5
+     }, 
+     "Tailor": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "Haberdasher": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "KATHARINA": {
+      "ratio": 16.0, 
+      "nlines": 48, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A room in PETRUCHIO'S house.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/taming_shrew_4_4.png", 
+    "char_data": {
+     "Pedant": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "LUCENTIO": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "TRANIO": {
+      "ratio": 10.0, 
+      "nlines": 30, 
+      "nedges": 3
+     }, 
+     "BAPTISTA": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "BIONDELLO": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Padua. Before BAPTISTA'S house.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/taming_shrew_4_5.png", 
+    "char_data": {
+     "VINCENTIO": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "HORTENSIO": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "KATHARINA": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "PETRUCHIO": {
+      "ratio": 15.0, 
+      "nlines": 45, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A public road.", 
+    "scene": "5", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/taming_shrew_5_1.png", 
+    "char_data": {
+     "TRANIO": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "BAPTISTA": {
+      "ratio": 2.4, 
+      "nlines": 12, 
+      "nedges": 5
+     }, 
+     "Pedant": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "PETRUCHIO": {
+      "ratio": 3.8, 
+      "nlines": 19, 
+      "nedges": 5
+     }, 
+     "BIANCA": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }, 
+     "LUCENTIO": {
+      "ratio": 3.2, 
+      "nlines": 16, 
+      "nedges": 5
+     }, 
+     "VINCENTIO": {
+      "ratio": 5.13, 
+      "nlines": 41, 
+      "nedges": 8
+     }, 
+     "BIONDELLO": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }, 
+     "GREMIO": {
+      "ratio": 1.75, 
+      "nlines": 14, 
+      "nedges": 8
+     }, 
+     "KATHARINA": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Padua. Before LUCENTIO'S house.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/taming_shrew_5_2.png", 
+    "char_data": {
+     "HORTENSIO": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "TRANIO": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "BAPTISTA": {
+      "ratio": 2.17, 
+      "nlines": 13, 
+      "nedges": 6
+     }, 
+     "VINCENTIO": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "KATHARINA": {
+      "ratio": 17.0, 
+      "nlines": 51, 
+      "nedges": 3
+     }, 
+     "BIANCA": {
+      "ratio": 1.8, 
+      "nlines": 9, 
+      "nedges": 5
+     }, 
+     "LUCENTIO": {
+      "ratio": 4.67, 
+      "nlines": 28, 
+      "nedges": 6
+     }, 
+     "BIONDELLO": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "GREMIO": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "PETRUCHIO": {
+      "ratio": 7.67, 
+      "nlines": 69, 
+      "nedges": 9
+     }, 
+     "Widow": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Padua. LUCENTIO'S house.", 
+    "scene": "2", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "SLY", 
+  "Hostess", 
+  "Lord", 
+  "First Huntsman", 
+  "Second Huntsman", 
+  "Servant", 
+  "Players", 
+  "A Player", 
+  "First Servant", 
+  "Second Servant", 
+  "Third Servant", 
+  "ALL", 
+  "Page", 
+  "Messenger", 
+  "LUCENTIO", 
+  "TRANIO", 
+  "BAPTISTA", 
+  "GREMIO", 
+  "KATHARINA", 
+  "HORTENSIO", 
+  "HORTENSIA", 
+  "BIANCA", 
+  "BIONDELLO", 
+  "PETRUCHIO", 
+  "GRUMIO", 
+  "KATARINA", 
+  "CURTIS", 
+  "NATHANIEL", 
+  "PHILIP", 
+  "JOSEPH", 
+  "NICHOLAS", 
+  "PETER", 
+  "Pedant", 
+  "Haberdasher", 
+  "Tailor", 
+  "VINCENTIO", 
+  "Widow"
+ ], 
+ "year": "1593-94 / 1623", 
+ "char_data": {
+  "CURTIS": {
+   "ratio": 13.5, 
+   "nlines": 27, 
+   "nedges": 2, 
+   "order_app": 26
+  }, 
+  "TRANIO": {
+   "ratio": 27.55, 
+   "nlines": 303, 
+   "nedges": 11, 
+   "order_app": 15
+  }, 
+  "BAPTISTA": {
+   "ratio": 18.9, 
+   "nlines": 189, 
+   "nedges": 10, 
+   "order_app": 16
+  }, 
+  "Second Servant": {
+   "ratio": 3.0, 
+   "nlines": 12, 
+   "nedges": 4, 
+   "order_app": 9
+  }, 
+  "Messenger": {
+   "ratio": 8.0, 
+   "nlines": 8, 
+   "nedges": 1, 
+   "order_app": 13
+  }, 
+  "Tailor": {
+   "ratio": 5.67, 
+   "nlines": 17, 
+   "nedges": 3, 
+   "order_app": 34
+  }, 
+  "Lord": {
+   "ratio": 16.22, 
+   "nlines": 146, 
+   "nedges": 9, 
+   "order_app": 2
+  }, 
+  "KATARINA": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 25
+  }, 
+  "HORTENSIO": {
+   "ratio": 19.64, 
+   "nlines": 216, 
+   "nedges": 11, 
+   "order_app": 19
+  }, 
+  "A Player": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 7
+  }, 
+  "HORTENSIA": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "NATHANIEL": {
+   "ratio": 0.8, 
+   "nlines": 4, 
+   "nedges": 5, 
+   "order_app": 27
+  }, 
+  "Pedant": {
+   "ratio": 8.83, 
+   "nlines": 53, 
+   "nedges": 6, 
+   "order_app": 32
+  }, 
+  "LUCENTIO": {
+   "ratio": 22.22, 
+   "nlines": 200, 
+   "nedges": 9, 
+   "order_app": 14
+  }, 
+  "BIONDELLO": {
+   "ratio": 13.25, 
+   "nlines": 106, 
+   "nedges": 8, 
+   "order_app": 22
+  }, 
+  "NICHOLAS": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 30
+  }, 
+  "JOSEPH": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 29
+  }, 
+  "GRUMIO": {
+   "ratio": 19.89, 
+   "nlines": 179, 
+   "nedges": 9, 
+   "order_app": 24
+  }, 
+  "SLY": {
+   "ratio": 8.63, 
+   "nlines": 69, 
+   "nedges": 8, 
+   "order_app": 0
+  }, 
+  "Hostess": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 1
+  }, 
+  "Servant": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 5
+  }, 
+  "Third Servant": {
+   "ratio": 4.0, 
+   "nlines": 12, 
+   "nedges": 3, 
+   "order_app": 10
+  }, 
+  "PETRUCHIO": {
+   "ratio": 29.62, 
+   "nlines": 622, 
+   "nedges": 21, 
+   "order_app": 23
+  }, 
+  "BIANCA": {
+   "ratio": 7.4, 
+   "nlines": 74, 
+   "nedges": 10, 
+   "order_app": 21
+  }, 
+  "Players": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 6
+  }, 
+  "First Huntsman": {
+   "ratio": 4.5, 
+   "nlines": 9, 
+   "nedges": 2, 
+   "order_app": 3
+  }, 
+  "PHILIP": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 28
+  }, 
+  "VINCENTIO": {
+   "ratio": 5.78, 
+   "nlines": 52, 
+   "nedges": 9, 
+   "order_app": 35
+  }, 
+  "Page": {
+   "ratio": 16.0, 
+   "nlines": 16, 
+   "nedges": 1, 
+   "order_app": 12
+  }, 
+  "Widow": {
+   "ratio": 3.67, 
+   "nlines": 11, 
+   "nedges": 3, 
+   "order_app": 36
+  }, 
+  "ALL": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 11
+  }, 
+  "PETER": {
+   "ratio": 1.0, 
+   "nlines": 3, 
+   "nedges": 3, 
+   "order_app": 31
+  }, 
+  "First Servant": {
+   "ratio": 3.2, 
+   "nlines": 16, 
+   "nedges": 5, 
+   "order_app": 8
+  }, 
+  "Second Huntsman": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 4
+  }, 
+  "GREMIO": {
+   "ratio": 13.92, 
+   "nlines": 181, 
+   "nedges": 13, 
+   "order_app": 17
+  }, 
+  "Haberdasher": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 33
+  }, 
+  "KATHARINA": {
+   "ratio": 25.11, 
+   "nlines": 226, 
+   "nedges": 9, 
+   "order_app": 18
+  }
+ }, 
+ "type": "Comedy"
+}

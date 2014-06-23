@@ -1,0 +1,790 @@
+{
+ "title": "Othello", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/othello_1_1.png", 
+    "char_data": {
+     "IAGO": {
+      "ratio": 55.0, 
+      "nlines": 110, 
+      "nedges": 2
+     }, 
+     "RODERIGO": {
+      "ratio": 21.0, 
+      "nlines": 42, 
+      "nedges": 2
+     }, 
+     "BRABANTIO": {
+      "ratio": 24.0, 
+      "nlines": 48, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Venice. A street.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_1_2.png", 
+    "char_data": {
+     "RODERIGO": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "IAGO": {
+      "ratio": 9.67, 
+      "nlines": 29, 
+      "nedges": 3
+     }, 
+     "OTHELLO": {
+      "ratio": 7.8, 
+      "nlines": 39, 
+      "nedges": 5
+     }, 
+     "BRABANTIO": {
+      "ratio": 8.25, 
+      "nlines": 33, 
+      "nedges": 4
+     }, 
+     "CASSIO": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "First Officer": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another street.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_1_3.png", 
+    "char_data": {
+     "RODERIGO": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "DUKE OF VENICE": {
+      "ratio": 7.9, 
+      "nlines": 79, 
+      "nedges": 10
+     }, 
+     "IAGO": {
+      "ratio": 88.0, 
+      "nlines": 88, 
+      "nedges": 1
+     }, 
+     "Sailor": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "First Officer": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "OTHELLO": {
+      "ratio": 23.6, 
+      "nlines": 118, 
+      "nedges": 5
+     }, 
+     "DESDEMONA": {
+      "ratio": 9.33, 
+      "nlines": 28, 
+      "nedges": 3
+     }, 
+     "Second Senator": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "First Senator": {
+      "ratio": 6.75, 
+      "nlines": 27, 
+      "nedges": 4
+     }, 
+     "BRABANTIO": {
+      "ratio": 15.75, 
+      "nlines": 63, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A council-chamber.", 
+    "scene": "3", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/othello_2_1.png", 
+    "char_data": {
+     "RODERIGO": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "Fourth Gentleman": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Third Gentleman": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "Second Gentleman": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "First Gentleman": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "IAGO": {
+      "ratio": 30.6, 
+      "nlines": 153, 
+      "nedges": 5
+     }, 
+     "OTHELLO": {
+      "ratio": 10.67, 
+      "nlines": 32, 
+      "nedges": 3
+     }, 
+     "EMILIA": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "CASSIO": {
+      "ratio": 6.4, 
+      "nlines": 64, 
+      "nedges": 10
+     }, 
+     "DESDEMONA": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "MONTANO": {
+      "ratio": 5.5, 
+      "nlines": 22, 
+      "nedges": 4
+     }, 
+     "Second Gentlemen": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A Sea-port in Cyprus. An open place near the quay.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_2_2.png", 
+    "char_data": {
+     "Herald": {
+      "ratio": 0, 
+      "nlines": 13, 
+      "nedges": 0
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_2_3.png", 
+    "char_data": {
+     "RODERIGO": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "IAGO": {
+      "ratio": 37.67, 
+      "nlines": 226, 
+      "nedges": 6
+     }, 
+     "CASSIO": {
+      "ratio": 16.2, 
+      "nlines": 81, 
+      "nedges": 5
+     }, 
+     "OTHELLO": {
+      "ratio": 15.75, 
+      "nlines": 63, 
+      "nedges": 4
+     }, 
+     "DESDEMONA": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MONTANO": {
+      "ratio": 12.0, 
+      "nlines": 36, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A hall in the castle.", 
+    "scene": "3", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/othello_3_1.png", 
+    "char_data": {
+     "IAGO": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "EMILIA": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }, 
+     "First Musician": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "CASSIO": {
+      "ratio": 10.0, 
+      "nlines": 30, 
+      "nedges": 3
+     }, 
+     "Clown": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before the castle.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_3_2.png", 
+    "char_data": {
+     "IAGO": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "OTHELLO": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "Gentleman": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in the castle.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_3_3.png", 
+    "char_data": {
+     "IAGO": {
+      "ratio": 75.0, 
+      "nlines": 225, 
+      "nedges": 3
+     }, 
+     "EMILIA": {
+      "ratio": 10.0, 
+      "nlines": 30, 
+      "nedges": 3
+     }, 
+     "CASSIO": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "DESDEMONA": {
+      "ratio": 19.0, 
+      "nlines": 76, 
+      "nedges": 4
+     }, 
+     "OTHELLO": {
+      "ratio": 102.0, 
+      "nlines": 204, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The garden of the castle.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_3_4.png", 
+    "char_data": {
+     "IAGO": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "Clown": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "BIANCA": {
+      "ratio": 18.0, 
+      "nlines": 18, 
+      "nedges": 1
+     }, 
+     "CASSIO": {
+      "ratio": 20.0, 
+      "nlines": 40, 
+      "nedges": 2
+     }, 
+     "EMILIA": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "OTHELLO": {
+      "ratio": 27.5, 
+      "nlines": 55, 
+      "nedges": 2
+     }, 
+     "DESDEMONA": {
+      "ratio": 16.2, 
+      "nlines": 81, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Before the castle.", 
+    "scene": "4", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/othello_4_1.png", 
+    "char_data": {
+     "LODOVICO": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }, 
+     "BIANCA": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "OTHELLO": {
+      "ratio": 21.2, 
+      "nlines": 106, 
+      "nedges": 5
+     }, 
+     "IAGO": {
+      "ratio": 28.0, 
+      "nlines": 140, 
+      "nedges": 5
+     }, 
+     "CASSIO": {
+      "ratio": 9.33, 
+      "nlines": 28, 
+      "nedges": 3
+     }, 
+     "DESDEMONA": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Cyprus. Before the castle.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_4_2.png", 
+    "char_data": {
+     "IAGO": {
+      "ratio": 21.0, 
+      "nlines": 63, 
+      "nedges": 3
+     }, 
+     "EMILIA": {
+      "ratio": 15.0, 
+      "nlines": 45, 
+      "nedges": 3
+     }, 
+     "DESDEMONA": {
+      "ratio": 21.67, 
+      "nlines": 65, 
+      "nedges": 3
+     }, 
+     "OTHELLO": {
+      "ratio": 38.5, 
+      "nlines": 77, 
+      "nedges": 2
+     }, 
+     "RODERIGO": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A room in the castle.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_4_3.png", 
+    "char_data": {
+     "LODOVICO": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "DESDEMONA": {
+      "ratio": 20.67, 
+      "nlines": 62, 
+      "nedges": 3
+     }, 
+     "OTHELLO": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "EMILIA": {
+      "ratio": 47.0, 
+      "nlines": 47, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another room In the castle.", 
+    "scene": "3", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/othello_5_1.png", 
+    "char_data": {
+     "RODERIGO": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "LODOVICO": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "GRATIANO": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "BIANCA": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "CASSIO": {
+      "ratio": 3.8, 
+      "nlines": 19, 
+      "nedges": 5
+     }, 
+     "OTHELLO": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "IAGO": {
+      "ratio": 14.17, 
+      "nlines": 85, 
+      "nedges": 6
+     }, 
+     "EMILIA": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Cyprus. A street.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/othello_5_2.png", 
+    "char_data": {
+     "LODOVICO": {
+      "ratio": 10.5, 
+      "nlines": 42, 
+      "nedges": 4
+     }, 
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "GRATIANO": {
+      "ratio": 4.25, 
+      "nlines": 17, 
+      "nedges": 4
+     }, 
+     "IAGO": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "CASSIO": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "EMILIA": {
+      "ratio": 15.17, 
+      "nlines": 91, 
+      "nedges": 6
+     }, 
+     "OTHELLO": {
+      "ratio": 30.57, 
+      "nlines": 214, 
+      "nedges": 7
+     }, 
+     "DESDEMONA": {
+      "ratio": 21.5, 
+      "nlines": 43, 
+      "nedges": 2
+     }, 
+     "MONTANO": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A bedchamber in the castle: DESDEMONA in bed asleep;", 
+    "scene": "2", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "RODERIGO", 
+  "IAGO", 
+  "BRABANTIO", 
+  "OTHELLO", 
+  "CASSIO", 
+  "First Officer", 
+  "DUKE OF VENICE", 
+  "First Senator", 
+  "Second Senator", 
+  "Sailor", 
+  "Messenger", 
+  "DESDEMONA", 
+  "MONTANO", 
+  "First Gentleman", 
+  "Second Gentleman", 
+  "Third Gentleman", 
+  "Fourth Gentleman", 
+  "Second Gentlemen", 
+  "EMILIA", 
+  "Herald", 
+  "All", 
+  "Clown", 
+  "First Musician", 
+  "Gentleman", 
+  "BIANCA", 
+  "LODOVICO", 
+  "GRATIANO"
+ ], 
+ "year": "1604-05 / 1622", 
+ "char_data": {
+  "RODERIGO": {
+   "ratio": 23.6, 
+   "nlines": 118, 
+   "nedges": 5, 
+   "order_app": 0
+  }, 
+  "Second Gentlemen": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 17
+  }, 
+  "Gentleman": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 23
+  }, 
+  "Messenger": {
+   "ratio": 3.0, 
+   "nlines": 9, 
+   "nedges": 3, 
+   "order_app": 10
+  }, 
+  "BRABANTIO": {
+   "ratio": 20.57, 
+   "nlines": 144, 
+   "nedges": 7, 
+   "order_app": 2
+  }, 
+  "Second Senator": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 8
+  }, 
+  "Fourth Gentleman": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 16
+  }, 
+  "Third Gentleman": {
+   "ratio": 9.0, 
+   "nlines": 18, 
+   "nedges": 2, 
+   "order_app": 15
+  }, 
+  "First Gentleman": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 13
+  }, 
+  "GRATIANO": {
+   "ratio": 5.5, 
+   "nlines": 33, 
+   "nedges": 6, 
+   "order_app": 26
+  }, 
+  "First Officer": {
+   "ratio": 1.4, 
+   "nlines": 7, 
+   "nedges": 5, 
+   "order_app": 5
+  }, 
+  "DESDEMONA": {
+   "ratio": 50.13, 
+   "nlines": 401, 
+   "nedges": 8, 
+   "order_app": 11
+  }, 
+  "LODOVICO": {
+   "ratio": 13.5, 
+   "nlines": 81, 
+   "nedges": 6, 
+   "order_app": 25
+  }, 
+  "DUKE OF VENICE": {
+   "ratio": 7.9, 
+   "nlines": 79, 
+   "nedges": 10, 
+   "order_app": 6
+  }, 
+  "BIANCA": {
+   "ratio": 9.0, 
+   "nlines": 36, 
+   "nedges": 4, 
+   "order_app": 24
+  }, 
+  "Clown": {
+   "ratio": 9.67, 
+   "nlines": 29, 
+   "nedges": 3, 
+   "order_app": 21
+  }, 
+  "Herald": {
+   "ratio": 0, 
+   "nlines": 13, 
+   "nedges": 0, 
+   "order_app": 19
+  }, 
+  "CASSIO": {
+   "ratio": 18.0, 
+   "nlines": 306, 
+   "nedges": 17, 
+   "order_app": 4
+  }, 
+  "First Musician": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 22
+  }, 
+  "Second Gentleman": {
+   "ratio": 6.5, 
+   "nlines": 13, 
+   "nedges": 2, 
+   "order_app": 14
+  }, 
+  "IAGO": {
+   "ratio": 95.5, 
+   "nlines": 1146, 
+   "nedges": 12, 
+   "order_app": 1
+  }, 
+  "All": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "First Senator": {
+   "ratio": 6.75, 
+   "nlines": 27, 
+   "nedges": 4, 
+   "order_app": 7
+  }, 
+  "Sailor": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 9
+  }, 
+  "OTHELLO": {
+   "ratio": 66.29, 
+   "nlines": 928, 
+   "nedges": 14, 
+   "order_app": 3
+  }, 
+  "EMILIA": {
+   "ratio": 31.5, 
+   "nlines": 252, 
+   "nedges": 8, 
+   "order_app": 18
+  }, 
+  "MONTANO": {
+   "ratio": 8.25, 
+   "nlines": 66, 
+   "nedges": 8, 
+   "order_app": 12
+  }
+ }, 
+ "type": "Tragedy"
+}

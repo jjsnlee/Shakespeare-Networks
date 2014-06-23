@@ -1,0 +1,564 @@
+{
+ "title": "The Comedy of Errors", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/comedy_errors_1_1.png", 
+    "char_data": {
+     "DUKE SOLINUS": {
+      "ratio": 23.5, 
+      "nlines": 47, 
+      "nedges": 2
+     }, 
+     "AEGEON": {
+      "ratio": 55.5, 
+      "nlines": 111, 
+      "nedges": 2
+     }, 
+     "Gaoler": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A hall in DUKE SOLINUS'S palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/comedy_errors_1_2.png", 
+    "char_data": {
+     "OF SYRACUSE": {
+      "ratio": 18.67, 
+      "nlines": 56, 
+      "nedges": 3
+     }, 
+     "First Merchant": {
+      "ratio": 19.0, 
+      "nlines": 19, 
+      "nedges": 1
+     }, 
+     "DROMIO OF EPHESUS": {
+      "ratio": 42.0, 
+      "nlines": 42, 
+      "nedges": 1
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The Mart.", 
+    "scene": "2", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/comedy_errors_2_1.png", 
+    "char_data": {
+     "ADRIANA": {
+      "ratio": 27.5, 
+      "nlines": 55, 
+      "nedges": 2
+     }, 
+     "LUCIANA": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "DROMIO OF EPHESUS": {
+      "ratio": 16.5, 
+      "nlines": 33, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The house of ANTIPHOLUS of Ephesus.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/comedy_errors_2_2.png", 
+    "char_data": {
+     "OF SYRACUSE": {
+      "ratio": 28.0, 
+      "nlines": 84, 
+      "nedges": 3
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 30.67, 
+      "nlines": 92, 
+      "nedges": 3
+     }, 
+     "ADRIANA": {
+      "ratio": 22.33, 
+      "nlines": 67, 
+      "nedges": 3
+     }, 
+     "LUCIANA": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A public place.", 
+    "scene": "2", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/comedy_errors_3_1.png", 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 5.8, 
+      "nlines": 29, 
+      "nedges": 5
+     }, 
+     "LUCE": {
+      "ratio": 2.2, 
+      "nlines": 11, 
+      "nedges": 5
+     }, 
+     "ANTIPHOLUS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "OF EPHESUS": {
+      "ratio": 8.17, 
+      "nlines": 49, 
+      "nedges": 6
+     }, 
+     "DROMIO OF EPHESUS": {
+      "ratio": 6.5, 
+      "nlines": 39, 
+      "nedges": 6
+     }, 
+     "BALTHAZAR": {
+      "ratio": 10.33, 
+      "nlines": 31, 
+      "nedges": 3
+     }, 
+     "ADRIANA": {
+      "ratio": 0.75, 
+      "nlines": 3, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Before the house of ANTIPHOLUS of Ephesus.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/comedy_errors_3_2.png", 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 16.0, 
+      "nlines": 16, 
+      "nedges": 1
+     }, 
+     "OF SYRACUSE": {
+      "ratio": 27.67, 
+      "nlines": 83, 
+      "nedges": 3
+     }, 
+     "ANTIPHOLUS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "LUCIANA": {
+      "ratio": 46.0, 
+      "nlines": 46, 
+      "nedges": 1
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 35.5, 
+      "nlines": 71, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "2", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/comedy_errors_4_1.png", 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 11.25, 
+      "nlines": 45, 
+      "nedges": 4
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "OF EPHESUS": {
+      "ratio": 9.8, 
+      "nlines": 49, 
+      "nedges": 5
+     }, 
+     "Officer": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "Second Merchant": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "DROMIO OF EPHESUS": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A public place.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/comedy_errors_4_2.png", 
+    "char_data": {
+     "LUCIANA": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "ADRIANA": {
+      "ratio": 19.0, 
+      "nlines": 38, 
+      "nedges": 2
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 15.0, 
+      "nlines": 30, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The house of ANTIPHOLUS of Ephesus.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/comedy_errors_4_3.png", 
+    "char_data": {
+     "OF SYRACUSE": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }, 
+     "Courtezan": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 25.5, 
+      "nlines": 51, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A public place.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/comedy_errors_4_4.png", 
+    "char_data": {
+     "OF SYRACUSE": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "PINCH": {
+      "ratio": 2.83, 
+      "nlines": 17, 
+      "nedges": 6
+     }, 
+     "Courtezan": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "ANTIPHOLUS": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "OF EPHESUS": {
+      "ratio": 8.0, 
+      "nlines": 48, 
+      "nedges": 6
+     }, 
+     "Officer": {
+      "ratio": 2.4, 
+      "nlines": 12, 
+      "nedges": 5
+     }, 
+     "LUCIANA": {
+      "ratio": 1.2, 
+      "nlines": 6, 
+      "nedges": 5
+     }, 
+     "ADRIANA": {
+      "ratio": 6.5, 
+      "nlines": 39, 
+      "nedges": 6
+     }, 
+     "DROMIO OF EPHESUS": {
+      "ratio": 8.33, 
+      "nlines": 50, 
+      "nedges": 6
+     }
+    }, 
+    "location": "A street.", 
+    "scene": "4", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/comedy_errors_5_1.png", 
+    "char_data": {
+     "ANGELO": {
+      "ratio": 5.67, 
+      "nlines": 34, 
+      "nedges": 6
+     }, 
+     "OF SYRACUSE": {
+      "ratio": 3.86, 
+      "nlines": 27, 
+      "nedges": 7
+     }, 
+     "DROMIO OF SYRACUSE": {
+      "ratio": 2.5, 
+      "nlines": 15, 
+      "nedges": 6
+     }, 
+     "Servant": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "AEMELIA": {
+      "ratio": 10.71, 
+      "nlines": 75, 
+      "nedges": 7
+     }, 
+     "AEGEON": {
+      "ratio": 7.4, 
+      "nlines": 37, 
+      "nedges": 5
+     }, 
+     "Courtezan": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "DUKE SOLINUS": {
+      "ratio": 4.55, 
+      "nlines": 50, 
+      "nedges": 11
+     }, 
+     "ANTIPHOLUS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "OF EPHESUS": {
+      "ratio": 7.3, 
+      "nlines": 73, 
+      "nedges": 10
+     }, 
+     "ADRIANA": {
+      "ratio": 7.9, 
+      "nlines": 79, 
+      "nedges": 10
+     }, 
+     "LUCIANA": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "Second Merchant": {
+      "ratio": 5.8, 
+      "nlines": 29, 
+      "nedges": 5
+     }, 
+     "DROMIO OF EPHESUS": {
+      "ratio": 3.57, 
+      "nlines": 25, 
+      "nedges": 7
+     }
+    }, 
+    "location": "A street before a Priory.", 
+    "scene": "1", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "AEGEON", 
+  "DUKE SOLINUS", 
+  "Gaoler", 
+  "First Merchant", 
+  "OF SYRACUSE", 
+  "DROMIO OF SYRACUSE", 
+  "DROMIO OF EPHESUS", 
+  "ADRIANA", 
+  "LUCIANA", 
+  "OF EPHESUS", 
+  "BALTHAZAR", 
+  "LUCE", 
+  "ANTIPHOLUS", 
+  "ANGELO", 
+  "Second Merchant", 
+  "Officer", 
+  "Courtezan", 
+  "PINCH", 
+  "AEMELIA", 
+  "Servant"
+ ], 
+ "year": "1592-93 / 1623", 
+ "char_data": {
+  "ANGELO": {
+   "ratio": 9.9, 
+   "nlines": 99, 
+   "nedges": 10, 
+   "order_app": 13
+  }, 
+  "OF SYRACUSE": {
+   "ratio": 25.73, 
+   "nlines": 283, 
+   "nedges": 11, 
+   "order_app": 4
+  }, 
+  "DROMIO OF SYRACUSE": {
+   "ratio": 29.18, 
+   "nlines": 321, 
+   "nedges": 11, 
+   "order_app": 5
+  }, 
+  "Servant": {
+   "ratio": 8.0, 
+   "nlines": 16, 
+   "nedges": 2, 
+   "order_app": 19
+  }, 
+  "Courtezan": {
+   "ratio": 5.0, 
+   "nlines": 40, 
+   "nedges": 8, 
+   "order_app": 16
+  }, 
+  "AEGEON": {
+   "ratio": 24.67, 
+   "nlines": 148, 
+   "nedges": 6, 
+   "order_app": 0
+  }, 
+  "First Merchant": {
+   "ratio": 19.0, 
+   "nlines": 19, 
+   "nedges": 1, 
+   "order_app": 3
+  }, 
+  "Officer": {
+   "ratio": 2.43, 
+   "nlines": 17, 
+   "nedges": 7, 
+   "order_app": 15
+  }, 
+  "LUCE": {
+   "ratio": 2.2, 
+   "nlines": 11, 
+   "nedges": 5, 
+   "order_app": 11
+  }, 
+  "DUKE SOLINUS": {
+   "ratio": 8.08, 
+   "nlines": 97, 
+   "nedges": 12, 
+   "order_app": 1
+  }, 
+  "ANTIPHOLUS": {
+   "ratio": 1.5, 
+   "nlines": 6, 
+   "nedges": 4, 
+   "order_app": 12
+  }, 
+  "OF EPHESUS": {
+   "ratio": 14.6, 
+   "nlines": 219, 
+   "nedges": 15, 
+   "order_app": 9
+  }, 
+  "DROMIO OF EPHESUS": {
+   "ratio": 13.71, 
+   "nlines": 192, 
+   "nedges": 14, 
+   "order_app": 6
+  }, 
+  "LUCIANA": {
+   "ratio": 11.1, 
+   "nlines": 111, 
+   "nedges": 10, 
+   "order_app": 8
+  }, 
+  "PINCH": {
+   "ratio": 2.83, 
+   "nlines": 17, 
+   "nedges": 6, 
+   "order_app": 17
+  }, 
+  "BALTHAZAR": {
+   "ratio": 10.33, 
+   "nlines": 31, 
+   "nedges": 3, 
+   "order_app": 10
+  }, 
+  "Gaoler": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 2
+  }, 
+  "Second Merchant": {
+   "ratio": 6.83, 
+   "nlines": 41, 
+   "nedges": 6, 
+   "order_app": 14
+  }, 
+  "AEMELIA": {
+   "ratio": 10.71, 
+   "nlines": 75, 
+   "nedges": 7, 
+   "order_app": 18
+  }, 
+  "ADRIANA": {
+   "ratio": 20.07, 
+   "nlines": 281, 
+   "nedges": 14, 
+   "order_app": 7
+  }
+ }, 
+ "type": "Comedy"
+}

@@ -1,0 +1,1685 @@
+{
+ "title": "Antony and Cleopatra", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/cleopatra_1_1.png", 
+    "char_data": {
+     "PHILO": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "CLEOPATRA": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }, 
+     "DEMETRIUS": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "Attendant": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 9.33, 
+      "nlines": 28, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Alexandria. A room in CLEOPATRA's palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_1_2.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "CHARMIAN": {
+      "ratio": 8.0, 
+      "nlines": 40, 
+      "nedges": 5
+     }, 
+     "Soothsayer": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "Second Messenger": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "ALEXAS": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "IRAS": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 9.0, 
+      "nlines": 45, 
+      "nedges": 5
+     }, 
+     "MARK ANTONY": {
+      "ratio": 12.8, 
+      "nlines": 64, 
+      "nedges": 5
+     }, 
+     "First Attendant": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Second Attendant": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. Another room.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_1_3.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 35.5, 
+      "nlines": 71, 
+      "nedges": 2
+     }, 
+     "CHARMIAN": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 47.0, 
+      "nlines": 47, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. Another room.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_1_4.png", 
+    "char_data": {
+     "OCTAVIUS CAESAR": {
+      "ratio": 32.5, 
+      "nlines": 65, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "LEPIDUS": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Rome. OCTAVIUS CAESAR's house.", 
+    "scene": "4", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_1_5.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 20.67, 
+      "nlines": 62, 
+      "nedges": 3
+     }, 
+     "CHARMIAN": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "MARDIAN": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "ALEXAS": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Alexandria. CLEOPATRA's palace.", 
+    "scene": "5", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/cleopatra_2_1.png", 
+    "char_data": {
+     "POMPEY": {
+      "ratio": 15.33, 
+      "nlines": 46, 
+      "nedges": 3
+     }, 
+     "VARRIUS": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "MENAS": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "MENECRATES": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Messina. POMPEY's house.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_2_2.png", 
+    "char_data": {
+     "MECAENAS": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "AGRIPPA": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "OCTAVIUS CAESAR": {
+      "ratio": 14.0, 
+      "nlines": 56, 
+      "nedges": 4
+     }, 
+     "LEPIDUS": {
+      "ratio": 7.25, 
+      "nlines": 29, 
+      "nedges": 4
+     }, 
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 15.6, 
+      "nlines": 78, 
+      "nedges": 5
+     }, 
+     "MARK ANTONY": {
+      "ratio": 21.75, 
+      "nlines": 87, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Rome. The house of LEPIDUS.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_2_3.png", 
+    "char_data": {
+     "Soothsayer": {
+      "ratio": 18.0, 
+      "nlines": 18, 
+      "nedges": 1
+     }, 
+     "OCTAVIA": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "OCTAVIUS CAESAR": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 9.67, 
+      "nlines": 29, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same. OCTAVIUS CAESAR's house.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_2_4.png", 
+    "char_data": {
+     "LEPIDUS": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "MECAENAS": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "AGRIPPA": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. A street.", 
+    "scene": "4", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_2_5.png", 
+    "char_data": {
+     "Attendants": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "CLEOPATRA": {
+      "ratio": 30.0, 
+      "nlines": 120, 
+      "nedges": 4
+     }, 
+     "CHARMIAN": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 13.0, 
+      "nlines": 26, 
+      "nedges": 2
+     }, 
+     "MARDIAN": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Alexandria. CLEOPATRA's palace.", 
+    "scene": "5", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_2_6.png", 
+    "char_data": {
+     "OCTAVIUS CAESAR": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "LEPIDUS": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "POMPEY": {
+      "ratio": 13.0, 
+      "nlines": 65, 
+      "nedges": 5
+     }, 
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 19.0, 
+      "nlines": 38, 
+      "nedges": 2
+     }, 
+     "MENAS": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "MARK ANTONY": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Near Misenum.", 
+    "scene": "6", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_2_7.png", 
+    "char_data": {
+     "First Servant": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "OCTAVIUS CAESAR": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "Second Servant": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "LEPIDUS": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "POMPEY": {
+      "ratio": 6.6, 
+      "nlines": 33, 
+      "nedges": 5
+     }, 
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 5.6, 
+      "nlines": 28, 
+      "nedges": 5
+     }, 
+     "MENAS": {
+      "ratio": 9.25, 
+      "nlines": 37, 
+      "nedges": 4
+     }, 
+     "MARK ANTONY": {
+      "ratio": 4.83, 
+      "nlines": 29, 
+      "nedges": 6
+     }
+    }, 
+    "location": "On board POMPEY's galley, off Misenum.", 
+    "scene": "7", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/cleopatra_3_1.png", 
+    "char_data": {
+     "SILIUS": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "VENTIDIUS": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A plain in Syria.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_10.png", 
+    "char_data": {
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "SCARUS": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }, 
+     "CANIDIUS": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the plain.", 
+    "scene": "10", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_11.png", 
+    "char_data": {
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "CLEOPATRA": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "CHARMIAN": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }, 
+     "IRAS": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "MARK ANTONY": {
+      "ratio": 15.25, 
+      "nlines": 61, 
+      "nedges": 4
+     }, 
+     "EROS": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Alexandria. CLEOPATRA's palace.", 
+    "scene": "11", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_12.png", 
+    "char_data": {
+     "OCTAVIUS CAESAR": {
+      "ratio": 7.67, 
+      "nlines": 23, 
+      "nedges": 3
+     }, 
+     "DOLABELLA": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "THYREUS": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "EUPHRONIUS": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Egypt. OCTAVIUS CAESAR's camp.", 
+    "scene": "12", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_13.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 12.25, 
+      "nlines": 49, 
+      "nedges": 4
+     }, 
+     "First Attendant": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "EUPHRONIUS": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 12.0, 
+      "nlines": 48, 
+      "nedges": 4
+     }, 
+     "Attendant": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "THYREUS": {
+      "ratio": 9.67, 
+      "nlines": 29, 
+      "nedges": 3
+     }, 
+     "MARK ANTONY": {
+      "ratio": 23.8, 
+      "nlines": 119, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Alexandria. CLEOPATRA's palace.", 
+    "scene": "13", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_2.png", 
+    "char_data": {
+     "AGRIPPA": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "OCTAVIUS CAESAR": {
+      "ratio": 5.25, 
+      "nlines": 21, 
+      "nedges": 4
+     }, 
+     "LEPIDUS": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "OCTAVIA": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }, 
+     "MARK ANTONY": {
+      "ratio": 5.25, 
+      "nlines": 21, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Rome. An ante-chamber in OCTAVIUS CAESAR's house.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_3.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 12.33, 
+      "nlines": 37, 
+      "nedges": 3
+     }, 
+     "CHARMIAN": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "ALEXAS": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Alexandria. CLEOPATRA's palace.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_4.png", 
+    "char_data": {
+     "OCTAVIA": {
+      "ratio": 16.0, 
+      "nlines": 16, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 26.0, 
+      "nlines": 26, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Athens. A room in MARK ANTONY's house.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_5.png", 
+    "char_data": {
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "EROS": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. Another room.", 
+    "scene": "5", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_6.png", 
+    "char_data": {
+     "OCTAVIUS CAESAR": {
+      "ratio": 28.33, 
+      "nlines": 85, 
+      "nedges": 3
+     }, 
+     "MECAENAS": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "OCTAVIA": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "AGRIPPA": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Rome. OCTAVIUS CAESAR's house.", 
+    "scene": "6", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_7.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "CANIDIUS": {
+      "ratio": 3.6, 
+      "nlines": 18, 
+      "nedges": 5
+     }, 
+     "Soldier": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 10.67, 
+      "nlines": 32, 
+      "nedges": 3
+     }, 
+     "MARK ANTONY": {
+      "ratio": 5.2, 
+      "nlines": 26, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Near Actium. MARK ANTONY's camp.", 
+    "scene": "7", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_8.png", 
+    "char_data": {
+     "OCTAVIUS CAESAR": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "TAURUS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A plain near Actium.", 
+    "scene": "8", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_3_9.png", 
+    "char_data": {
+     "MARK ANTONY": {
+      "ratio": 0, 
+      "nlines": 5, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Another part of the plain.", 
+    "scene": "9", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/cleopatra_4_1.png", 
+    "char_data": {
+     "OCTAVIUS CAESAR": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "MECAENAS": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Before Alexandria. OCTAVIUS CAESAR's camp.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_10.png", 
+    "char_data": {
+     "SCARUS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Between the two camps.", 
+    "scene": "10", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_11.png", 
+    "char_data": {
+     "OCTAVIUS CAESAR": {
+      "ratio": 0, 
+      "nlines": 5, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Another part of the same.", 
+    "scene": "11", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_12.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "SCARUS": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 26.0, 
+      "nlines": 52, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the same.", 
+    "scene": "12", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_13.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "CHARMIAN": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Alexandria. Cleopatra's palace.", 
+    "scene": "13", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_14.png", 
+    "char_data": {
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "MARDIAN": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "Second Guard": {
+      "ratio": 0.67, 
+      "nlines": 2, 
+      "nedges": 3
+     }, 
+     "First Guard": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "DERCETAS": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "DIOMEDES": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "Third Guard": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "MARK ANTONY": {
+      "ratio": 19.83, 
+      "nlines": 119, 
+      "nedges": 6
+     }, 
+     "EROS": {
+      "ratio": 19.0, 
+      "nlines": 19, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. Another room.", 
+    "scene": "14", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_15.png", 
+    "char_data": {
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "CLEOPATRA": {
+      "ratio": 19.25, 
+      "nlines": 77, 
+      "nedges": 4
+     }, 
+     "CHARMIAN": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "DIOMEDES": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "IRAS": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. A monument.", 
+    "scene": "15", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_2.png", 
+    "char_data": {
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "CLEOPATRA": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 15.0, 
+      "nlines": 45, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Alexandria. CLEOPATRA's palace.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_3.png", 
+    "char_data": {
+     "Fourth Soldier": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "First Soldier": {
+      "ratio": 3.5, 
+      "nlines": 14, 
+      "nedges": 4
+     }, 
+     "All": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Third Soldier": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "Second Soldier": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same. Before the palace.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_4.png", 
+    "char_data": {
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "CLEOPATRA": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "CHARMIAN": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Soldier": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "Captain": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "EROS": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "MARK ANTONY": {
+      "ratio": 7.2, 
+      "nlines": 36, 
+      "nedges": 5
+     }
+    }, 
+    "location": "The same. A room in the palace.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_5.png", 
+    "char_data": {
+     "Soldier": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "MARK ANTONY": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "EROS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Alexandria. MARK ANTONY's camp.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_6.png", 
+    "char_data": {
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "OCTAVIUS CAESAR": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "AGRIPPA": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Soldier": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Alexandria. OCTAVIUS CAESAR's camp.", 
+    "scene": "6", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_7.png", 
+    "char_data": {
+     "EROS": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "SCARUS": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "AGRIPPA": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Field of battle between the camps.", 
+    "scene": "7", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_8.png", 
+    "char_data": {
+     "CLEOPATRA": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "MARK ANTONY": {
+      "ratio": 44.0, 
+      "nlines": 44, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Under the walls of Alexandria.", 
+    "scene": "8", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_4_9.png", 
+    "char_data": {
+     "First Soldier": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "Second Soldier": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "Third Soldier": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "DOMITIUS ENOBARBUS": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }
+    }, 
+    "location": "OCTAVIUS CAESAR's camp.", 
+    "scene": "9", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/cleopatra_5_1.png", 
+    "char_data": {
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MECAENAS": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "PROCULEIUS": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Egyptian": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "OCTAVIUS CAESAR": {
+      "ratio": 8.29, 
+      "nlines": 58, 
+      "nedges": 7
+     }, 
+     "AGRIPPA": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "DERCETAS": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }, 
+     "DOLABELLA": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Alexandria. OCTAVIUS CAESAR's camp.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/cleopatra_5_2.png", 
+    "char_data": {
+     "SELEUCUS": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "PROCULEIUS": {
+      "ratio": 11.33, 
+      "nlines": 34, 
+      "nedges": 3
+     }, 
+     "OCTAVIUS CAESAR": {
+      "ratio": 15.5, 
+      "nlines": 62, 
+      "nedges": 4
+     }, 
+     "CLEOPATRA": {
+      "ratio": 29.13, 
+      "nlines": 233, 
+      "nedges": 8
+     }, 
+     "CHARMIAN": {
+      "ratio": 6.25, 
+      "nlines": 25, 
+      "nedges": 4
+     }, 
+     "Clown": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }, 
+     "Guard": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "GALLUS": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "IRAS": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "DOLABELLA": {
+      "ratio": 5.88, 
+      "nlines": 47, 
+      "nedges": 8
+     }, 
+     "First Guard": {
+      "ratio": 3.5, 
+      "nlines": 14, 
+      "nedges": 4
+     }, 
+     "Second Guard": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Alexandria. A room in the monument.", 
+    "scene": "2", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "PHILO", 
+  "CLEOPATRA", 
+  "MARK ANTONY", 
+  "Attendant", 
+  "DEMETRIUS", 
+  "CHARMIAN", 
+  "ALEXAS", 
+  "Soothsayer", 
+  "DOMITIUS ENOBARBUS", 
+  "IRAS", 
+  "Messenger", 
+  "First Attendant", 
+  "Second Attendant", 
+  "Second Messenger", 
+  "OCTAVIUS CAESAR", 
+  "LEPIDUS", 
+  "MARDIAN", 
+  "POMPEY", 
+  "MENECRATES", 
+  "MENAS", 
+  "VARRIUS", 
+  "MECAENAS", 
+  "AGRIPPA", 
+  "OCTAVIA", 
+  "Attendants", 
+  "First Servant", 
+  "Second Servant", 
+  "VENTIDIUS", 
+  "SILIUS", 
+  "EROS", 
+  "CANIDIUS", 
+  "Soldier", 
+  "TAURUS", 
+  "SCARUS", 
+  "All", 
+  "DOLABELLA", 
+  "EUPHRONIUS", 
+  "THYREUS", 
+  "First Soldier", 
+  "Second Soldier", 
+  "Third Soldier", 
+  "Fourth Soldier", 
+  "Captain", 
+  "First Guard", 
+  "Second Guard", 
+  "Third Guard", 
+  "DERCETAS", 
+  "DIOMEDES", 
+  "Egyptian", 
+  "PROCULEIUS", 
+  "GALLUS", 
+  "SELEUCUS", 
+  "Guard", 
+  "Clown"
+ ], 
+ "year": "1606-07 / 1623", 
+ "char_data": {
+  "CHARMIAN": {
+   "ratio": 12.67, 
+   "nlines": 114, 
+   "nedges": 9, 
+   "order_app": 5
+  }, 
+  "Second Soldier": {
+   "ratio": 3.75, 
+   "nlines": 15, 
+   "nedges": 4, 
+   "order_app": 39
+  }, 
+  "VENTIDIUS": {
+   "ratio": 31.0, 
+   "nlines": 31, 
+   "nedges": 1, 
+   "order_app": 27
+  }, 
+  "PHILO": {
+   "ratio": 9.0, 
+   "nlines": 18, 
+   "nedges": 2, 
+   "order_app": 0
+  }, 
+  "OCTAVIUS CAESAR": {
+   "ratio": 23.63, 
+   "nlines": 449, 
+   "nedges": 19, 
+   "order_app": 14
+  }, 
+  "VARRIUS": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 20
+  }, 
+  "Second Servant": {
+   "ratio": 7.0, 
+   "nlines": 7, 
+   "nedges": 1, 
+   "order_app": 26
+  }, 
+  "POMPEY": {
+   "ratio": 20.57, 
+   "nlines": 144, 
+   "nedges": 7, 
+   "order_app": 17
+  }, 
+  "Second Messenger": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 13
+  }, 
+  "SILIUS": {
+   "ratio": 12.0, 
+   "nlines": 12, 
+   "nedges": 1, 
+   "order_app": 28
+  }, 
+  "Messenger": {
+   "ratio": 13.33, 
+   "nlines": 80, 
+   "nedges": 6, 
+   "order_app": 10
+  }, 
+  "Soothsayer": {
+   "ratio": 7.75, 
+   "nlines": 31, 
+   "nedges": 4, 
+   "order_app": 7
+  }, 
+  "DOMITIUS ENOBARBUS": {
+   "ratio": 18.75, 
+   "nlines": 375, 
+   "nedges": 20, 
+   "order_app": 8
+  }, 
+  "MARK ANTONY": {
+   "ratio": 32.21, 
+   "nlines": 902, 
+   "nedges": 28, 
+   "order_app": 2
+  }, 
+  "Attendants": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 24
+  }, 
+  "MECAENAS": {
+   "ratio": 7.8, 
+   "nlines": 39, 
+   "nedges": 5, 
+   "order_app": 21
+  }, 
+  "Egyptian": {
+   "ratio": 7.0, 
+   "nlines": 7, 
+   "nedges": 1, 
+   "order_app": 48
+  }, 
+  "CANIDIUS": {
+   "ratio": 4.5, 
+   "nlines": 27, 
+   "nedges": 6, 
+   "order_app": 30
+  }, 
+  "DIOMEDES": {
+   "ratio": 7.33, 
+   "nlines": 22, 
+   "nedges": 3, 
+   "order_app": 47
+  }, 
+  "ALEXAS": {
+   "ratio": 8.0, 
+   "nlines": 32, 
+   "nedges": 4, 
+   "order_app": 6
+  }, 
+  "MENECRATES": {
+   "ratio": 6.0, 
+   "nlines": 6, 
+   "nedges": 1, 
+   "order_app": 18
+  }, 
+  "Attendant": {
+   "ratio": 0.67, 
+   "nlines": 2, 
+   "nedges": 3, 
+   "order_app": 3
+  }, 
+  "EROS": {
+   "ratio": 8.17, 
+   "nlines": 49, 
+   "nedges": 6, 
+   "order_app": 29
+  }, 
+  "CLEOPATRA": {
+   "ratio": 34.76, 
+   "nlines": 730, 
+   "nedges": 21, 
+   "order_app": 1
+  }, 
+  "Second Attendant": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 12
+  }, 
+  "First Soldier": {
+   "ratio": 5.8, 
+   "nlines": 29, 
+   "nedges": 5, 
+   "order_app": 38
+  }, 
+  "MARDIAN": {
+   "ratio": 9.5, 
+   "nlines": 19, 
+   "nedges": 2, 
+   "order_app": 16
+  }, 
+  "SELEUCUS": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 51
+  }, 
+  "AGRIPPA": {
+   "ratio": 10.67, 
+   "nlines": 64, 
+   "nedges": 6, 
+   "order_app": 22
+  }, 
+  "Fourth Soldier": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 41
+  }, 
+  "First Guard": {
+   "ratio": 3.17, 
+   "nlines": 19, 
+   "nedges": 6, 
+   "order_app": 43
+  }, 
+  "TAURUS": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 32
+  }, 
+  "LEPIDUS": {
+   "ratio": 8.63, 
+   "nlines": 69, 
+   "nedges": 8, 
+   "order_app": 15
+  }, 
+  "Soldier": {
+   "ratio": 8.2, 
+   "nlines": 41, 
+   "nedges": 5, 
+   "order_app": 31
+  }, 
+  "OCTAVIA": {
+   "ratio": 12.0, 
+   "nlines": 36, 
+   "nedges": 3, 
+   "order_app": 23
+  }, 
+  "Third Guard": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 45
+  }, 
+  "Third Soldier": {
+   "ratio": 4.0, 
+   "nlines": 16, 
+   "nedges": 4, 
+   "order_app": 40
+  }, 
+  "Clown": {
+   "ratio": 31.0, 
+   "nlines": 31, 
+   "nedges": 1, 
+   "order_app": 53
+  }, 
+  "GALLUS": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 50
+  }, 
+  "IRAS": {
+   "ratio": 4.17, 
+   "nlines": 25, 
+   "nedges": 6, 
+   "order_app": 9
+  }, 
+  "EUPHRONIUS": {
+   "ratio": 8.0, 
+   "nlines": 16, 
+   "nedges": 2, 
+   "order_app": 36
+  }, 
+  "Second Guard": {
+   "ratio": 1.0, 
+   "nlines": 4, 
+   "nedges": 4, 
+   "order_app": 44
+  }, 
+  "All": {
+   "ratio": 1.57, 
+   "nlines": 11, 
+   "nedges": 7, 
+   "order_app": 34
+  }, 
+  "First Servant": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 25
+  }, 
+  "PROCULEIUS": {
+   "ratio": 9.0, 
+   "nlines": 36, 
+   "nedges": 4, 
+   "order_app": 49
+  }, 
+  "First Attendant": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 11
+  }, 
+  "DEMETRIUS": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 4
+  }, 
+  "THYREUS": {
+   "ratio": 8.0, 
+   "nlines": 32, 
+   "nedges": 4, 
+   "order_app": 37
+  }, 
+  "Guard": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 52
+  }, 
+  "DERCETAS": {
+   "ratio": 7.33, 
+   "nlines": 22, 
+   "nedges": 3, 
+   "order_app": 46
+  }, 
+  "Captain": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 42
+  }, 
+  "SCARUS": {
+   "ratio": 8.8, 
+   "nlines": 44, 
+   "nedges": 5, 
+   "order_app": 33
+  }, 
+  "MENAS": {
+   "ratio": 16.75, 
+   "nlines": 67, 
+   "nedges": 4, 
+   "order_app": 19
+  }, 
+  "DOLABELLA": {
+   "ratio": 7.0, 
+   "nlines": 56, 
+   "nedges": 8, 
+   "order_app": 35
+  }
+ }, 
+ "type": "Tragedy"
+}

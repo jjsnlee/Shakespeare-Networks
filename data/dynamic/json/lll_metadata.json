@@ -1,0 +1,553 @@
+{
+ "title": "Love's Labours Lost", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/lll_1_1.png", 
+    "char_data": {
+     "DULL": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "DUMAIN": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "COSTARD": {
+      "ratio": 12.67, 
+      "nlines": 38, 
+      "nedges": 3
+     }, 
+     "FERDINAND": {
+      "ratio": 22.4, 
+      "nlines": 112, 
+      "nedges": 5
+     }, 
+     "BIRON": {
+      "ratio": 25.4, 
+      "nlines": 127, 
+      "nedges": 5
+     }, 
+     "LONGAVILLE": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The king of Navarre's park.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/lll_1_2.png", 
+    "char_data": {
+     "ADRIANO DE ARMADO": {
+      "ratio": 21.75, 
+      "nlines": 87, 
+      "nedges": 4
+     }, 
+     "MOTH": {
+      "ratio": 23.0, 
+      "nlines": 92, 
+      "nedges": 4
+     }, 
+     "ARMADO": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "JAQUENETTA": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "COSTARD": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "DULL": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "2", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/lll_2_1.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "PRINCESS": {
+      "ratio": 9.57, 
+      "nlines": 67, 
+      "nedges": 7
+     }, 
+     "BOYET": {
+      "ratio": 10.57, 
+      "nlines": 74, 
+      "nedges": 7
+     }, 
+     "KATHARINE": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "ROSALINE": {
+      "ratio": 5.8, 
+      "nlines": 29, 
+      "nedges": 5
+     }, 
+     "DUMAIN": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "FERDINAND": {
+      "ratio": 16.0, 
+      "nlines": 48, 
+      "nedges": 3
+     }, 
+     "MARIA": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "BIRON": {
+      "ratio": 3.8, 
+      "nlines": 19, 
+      "nedges": 5
+     }, 
+     "LONGAVILLE": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "1", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/lll_3_1.png", 
+    "char_data": {
+     "MOTH": {
+      "ratio": 38.5, 
+      "nlines": 77, 
+      "nedges": 2
+     }, 
+     "COSTARD": {
+      "ratio": 15.67, 
+      "nlines": 47, 
+      "nedges": 3
+     }, 
+     "BIRON": {
+      "ratio": 52.0, 
+      "nlines": 52, 
+      "nedges": 1
+     }, 
+     "ADRIANO DE ARMADO": {
+      "ratio": 28.5, 
+      "nlines": 57, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "1", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/lll_4_1.png", 
+    "char_data": {
+     "Forester": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "ROSALINE": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "BOYET": {
+      "ratio": 16.5, 
+      "nlines": 66, 
+      "nedges": 4
+     }, 
+     "COSTARD": {
+      "ratio": 10.33, 
+      "nlines": 31, 
+      "nedges": 3
+     }, 
+     "PRINCESS": {
+      "ratio": 17.33, 
+      "nlines": 52, 
+      "nedges": 3
+     }, 
+     "MARIA": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/lll_4_2.png", 
+    "char_data": {
+     "JAQUENETTA": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "HOLOFERNES": {
+      "ratio": 26.5, 
+      "nlines": 106, 
+      "nedges": 4
+     }, 
+     "SIR NATHANIEL": {
+      "ratio": 16.33, 
+      "nlines": 49, 
+      "nedges": 3
+     }, 
+     "DULL": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "COSTARD": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/lll_4_3.png", 
+    "char_data": {
+     "DUMAIN": {
+      "ratio": 15.33, 
+      "nlines": 46, 
+      "nedges": 3
+     }, 
+     "JAQUENETTA": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "COSTARD": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "FERDINAND": {
+      "ratio": 16.2, 
+      "nlines": 81, 
+      "nedges": 5
+     }, 
+     "BIRON": {
+      "ratio": 48.4, 
+      "nlines": 242, 
+      "nedges": 5
+     }, 
+     "LONGAVILLE": {
+      "ratio": 11.33, 
+      "nlines": 34, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "3", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/lll_5_1.png", 
+    "char_data": {
+     "MOTH": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "ADRIANO DE ARMADO": {
+      "ratio": 22.0, 
+      "nlines": 44, 
+      "nedges": 2
+     }, 
+     "HOLOFERNES": {
+      "ratio": 13.0, 
+      "nlines": 65, 
+      "nedges": 5
+     }, 
+     "COSTARD": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "SIR NATHANIEL": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "DULL": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/lll_5_2.png", 
+    "char_data": {
+     "MOTH": {
+      "ratio": 3.5, 
+      "nlines": 14, 
+      "nedges": 4
+     }, 
+     "MARIA": {
+      "ratio": 2.29, 
+      "nlines": 16, 
+      "nedges": 7
+     }, 
+     "PRINCESS": {
+      "ratio": 16.18, 
+      "nlines": 178, 
+      "nedges": 11
+     }, 
+     "BOYET": {
+      "ratio": 7.57, 
+      "nlines": 106, 
+      "nedges": 14
+     }, 
+     "MERCADE": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "ROSALINE": {
+      "ratio": 19.0, 
+      "nlines": 133, 
+      "nedges": 7
+     }, 
+     "KATHARINE": {
+      "ratio": 6.5, 
+      "nlines": 39, 
+      "nedges": 6
+     }, 
+     "ADRIANO DE ARMADO": {
+      "ratio": 9.1, 
+      "nlines": 91, 
+      "nedges": 10
+     }, 
+     "COSTARD": {
+      "ratio": 8.86, 
+      "nlines": 62, 
+      "nedges": 7
+     }, 
+     "DUMAIN": {
+      "ratio": 3.55, 
+      "nlines": 39, 
+      "nedges": 11
+     }, 
+     "HOLOFERNES": {
+      "ratio": 4.75, 
+      "nlines": 19, 
+      "nedges": 4
+     }, 
+     "FERDINAND": {
+      "ratio": 10.25, 
+      "nlines": 82, 
+      "nedges": 8
+     }, 
+     "SIR NATHANIEL": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "BIRON": {
+      "ratio": 15.46, 
+      "nlines": 201, 
+      "nedges": 13
+     }, 
+     "LONGAVILLE": {
+      "ratio": 2.13, 
+      "nlines": 17, 
+      "nedges": 8
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "2", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "FERDINAND", 
+  "LONGAVILLE", 
+  "DUMAIN", 
+  "BIRON", 
+  "DULL", 
+  "COSTARD", 
+  "ADRIANO DE ARMADO", 
+  "MOTH", 
+  "ARMADO", 
+  "JAQUENETTA", 
+  "BOYET", 
+  "PRINCESS", 
+  "First Lord", 
+  "MARIA", 
+  "KATHARINE", 
+  "ROSALINE", 
+  "Forester", 
+  "SIR NATHANIEL", 
+  "HOLOFERNES", 
+  "MERCADE"
+ ], 
+ "year": "1594-95 / 1598?", 
+ "char_data": {
+  "First Lord": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 12
+  }, 
+  "SIR NATHANIEL": {
+   "ratio": 11.33, 
+   "nlines": 68, 
+   "nedges": 6, 
+   "order_app": 17
+  }, 
+  "ARMADO": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 8
+  }, 
+  "PRINCESS": {
+   "ratio": 22.85, 
+   "nlines": 297, 
+   "nedges": 13, 
+   "order_app": 11
+  }, 
+  "MOTH": {
+   "ratio": 25.63, 
+   "nlines": 205, 
+   "nedges": 8, 
+   "order_app": 7
+  }, 
+  "MERCADE": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 19
+  }, 
+  "Forester": {
+   "ratio": 5.0, 
+   "nlines": 5, 
+   "nedges": 1, 
+   "order_app": 16
+  }, 
+  "BIRON": {
+   "ratio": 42.73, 
+   "nlines": 641, 
+   "nedges": 15, 
+   "order_app": 3
+  }, 
+  "BOYET": {
+   "ratio": 17.57, 
+   "nlines": 246, 
+   "nedges": 14, 
+   "order_app": 10
+  }, 
+  "JAQUENETTA": {
+   "ratio": 3.67, 
+   "nlines": 22, 
+   "nedges": 6, 
+   "order_app": 9
+  }, 
+  "KATHARINE": {
+   "ratio": 7.83, 
+   "nlines": 47, 
+   "nedges": 6, 
+   "order_app": 14
+  }, 
+  "ROSALINE": {
+   "ratio": 24.71, 
+   "nlines": 173, 
+   "nedges": 7, 
+   "order_app": 15
+  }, 
+  "ADRIANO DE ARMADO": {
+   "ratio": 21.46, 
+   "nlines": 279, 
+   "nedges": 13, 
+   "order_app": 6
+  }, 
+  "HOLOFERNES": {
+   "ratio": 21.11, 
+   "nlines": 190, 
+   "nedges": 9, 
+   "order_app": 18
+  }, 
+  "DUMAIN": {
+   "ratio": 8.73, 
+   "nlines": 96, 
+   "nedges": 11, 
+   "order_app": 2
+  }, 
+  "COSTARD": {
+   "ratio": 18.0, 
+   "nlines": 216, 
+   "nedges": 12, 
+   "order_app": 5
+  }, 
+  "FERDINAND": {
+   "ratio": 32.3, 
+   "nlines": 323, 
+   "nedges": 10, 
+   "order_app": 0
+  }, 
+  "MARIA": {
+   "ratio": 5.38, 
+   "nlines": 43, 
+   "nedges": 8, 
+   "order_app": 13
+  }, 
+  "DULL": {
+   "ratio": 3.44, 
+   "nlines": 31, 
+   "nedges": 9, 
+   "order_app": 4
+  }, 
+  "LONGAVILLE": {
+   "ratio": 8.0, 
+   "nlines": 72, 
+   "nedges": 9, 
+   "order_app": 1
+  }
+ }, 
+ "type": "Comedy"
+}

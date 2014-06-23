@@ -1,0 +1,989 @@
+{
+ "title": "King Lear", 
+ "acts": [
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ALBANY": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "KING LEAR": {
+      "ratio": 15.88, 
+      "nlines": 127, 
+      "nedges": 8
+     }, 
+     "KING OF FRANCE": {
+      "ratio": 8.25, 
+      "nlines": 33, 
+      "nedges": 4
+     }, 
+     "CORDELIA": {
+      "ratio": 9.4, 
+      "nlines": 47, 
+      "nedges": 5
+     }, 
+     "BURGUNDY": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "GONERIL": {
+      "ratio": 7.75, 
+      "nlines": 31, 
+      "nedges": 4
+     }, 
+     "EDMUND": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "KENT": {
+      "ratio": 11.75, 
+      "nlines": 47, 
+      "nedges": 4
+     }, 
+     "REGAN": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }
+    }, 
+    "location": "King Lear's palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "EDMUND": {
+      "ratio": 63.5, 
+      "nlines": 127, 
+      "nedges": 2
+     }, 
+     "EDGAR": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER": {
+      "ratio": 60.0, 
+      "nlines": 60, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The Earl of Gloucester's castle.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "OSWALD": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "GONERIL": {
+      "ratio": 25.0, 
+      "nlines": 25, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The Duke of Albany's palace.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Fool": {
+      "ratio": 35.67, 
+      "nlines": 107, 
+      "nedges": 3
+     }, 
+     "ALBANY": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "KING LEAR": {
+      "ratio": 22.67, 
+      "nlines": 136, 
+      "nedges": 6
+     }, 
+     "Knight": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "GONERIL": {
+      "ratio": 18.25, 
+      "nlines": 73, 
+      "nedges": 4
+     }, 
+     "KENT": {
+      "ratio": 12.33, 
+      "nlines": 37, 
+      "nedges": 3
+     }, 
+     "OSWALD": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A hall in the same.", 
+    "scene": "4", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Fool": {
+      "ratio": 13.0, 
+      "nlines": 26, 
+      "nedges": 2
+     }, 
+     "KING LEAR": {
+      "ratio": 7.0, 
+      "nlines": 21, 
+      "nedges": 3
+     }, 
+     "Gentleman": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "KENT": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Court before the same.", 
+    "scene": "5", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "EDGAR": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "EDMUND": {
+      "ratio": 13.4, 
+      "nlines": 67, 
+      "nedges": 5
+     }, 
+     "CURAN": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "CORNWALL": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "REGAN": {
+      "ratio": 7.67, 
+      "nlines": 23, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 11.67, 
+      "nlines": 35, 
+      "nedges": 3
+     }
+    }, 
+    "location": "GLOUCESTER's castle.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CORNWALL": {
+      "ratio": 8.0, 
+      "nlines": 32, 
+      "nedges": 4
+     }, 
+     "EDMUND": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "KENT": {
+      "ratio": 20.6, 
+      "nlines": 103, 
+      "nedges": 5
+     }, 
+     "OSWALD": {
+      "ratio": 8.33, 
+      "nlines": 25, 
+      "nedges": 3
+     }, 
+     "REGAN": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Before Gloucester's castle.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "EDGAR": {
+      "ratio": 0, 
+      "nlines": 22, 
+      "nedges": 0
+     }
+    }, 
+    "location": "A wood.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Fool": {
+      "ratio": 21.0, 
+      "nlines": 42, 
+      "nedges": 2
+     }, 
+     "KING LEAR": {
+      "ratio": 25.14, 
+      "nlines": 176, 
+      "nedges": 7
+     }, 
+     "Gentleman": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "CORNWALL": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "GONERIL": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "KENT": {
+      "ratio": 10.67, 
+      "nlines": 32, 
+      "nedges": 3
+     }, 
+     "REGAN": {
+      "ratio": 15.25, 
+      "nlines": 61, 
+      "nedges": 4
+     }, 
+     "GLOUCESTER": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Before GLOUCESTER's castle. KENT in the stocks.", 
+    "scene": "4", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Gentleman": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }, 
+     "KENT": {
+      "ratio": 42.0, 
+      "nlines": 42, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A heath.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Fool": {
+      "ratio": 20.5, 
+      "nlines": 41, 
+      "nedges": 2
+     }, 
+     "KING LEAR": {
+      "ratio": 22.5, 
+      "nlines": 45, 
+      "nedges": 2
+     }, 
+     "KENT": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the heath. Storm still.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "EDMUND": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER": {
+      "ratio": 20.0, 
+      "nlines": 20, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Gloucester's castle.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Fool": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "KING LEAR": {
+      "ratio": 17.75, 
+      "nlines": 71, 
+      "nedges": 4
+     }, 
+     "KENT": {
+      "ratio": 5.0, 
+      "nlines": 20, 
+      "nedges": 4
+     }, 
+     "EDGAR": {
+      "ratio": 18.25, 
+      "nlines": 73, 
+      "nedges": 4
+     }, 
+     "GLOUCESTER": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The heath. Before a hovel.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "EDMUND": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "CORNWALL": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Gloucester's castle.", 
+    "scene": "5", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Fool": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "KING LEAR": {
+      "ratio": 12.0, 
+      "nlines": 36, 
+      "nedges": 3
+     }, 
+     "KENT": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "EDGAR": {
+      "ratio": 11.5, 
+      "nlines": 46, 
+      "nedges": 4
+     }, 
+     "GLOUCESTER": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A chamber in a farmhouse adjoining the castle.", 
+    "scene": "6", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "First Servant": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "Third Servant": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "Second Servant": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "CORNWALL": {
+      "ratio": 8.0, 
+      "nlines": 48, 
+      "nedges": 6
+     }, 
+     "GONERIL": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "OSWALD": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "REGAN": {
+      "ratio": 5.25, 
+      "nlines": 21, 
+      "nedges": 4
+     }, 
+     "GLOUCESTER": {
+      "ratio": 16.5, 
+      "nlines": 33, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Gloucester's castle.", 
+    "scene": "7", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Old Man": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "EDGAR": {
+      "ratio": 18.5, 
+      "nlines": 37, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 22.5, 
+      "nlines": 45, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The heath.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "OSWALD": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "GONERIL": {
+      "ratio": 11.25, 
+      "nlines": 45, 
+      "nedges": 4
+     }, 
+     "Messenger": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "EDMUND": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "ALBANY": {
+      "ratio": 22.0, 
+      "nlines": 44, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before ALBANY's palace.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Gentleman": {
+      "ratio": 33.0, 
+      "nlines": 33, 
+      "nedges": 1
+     }, 
+     "KENT": {
+      "ratio": 30.0, 
+      "nlines": 30, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The French camp near Dover.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Messenger": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "CORDELIA": {
+      "ratio": 14.0, 
+      "nlines": 28, 
+      "nedges": 2
+     }, 
+     "Doctor": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. A tent.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "OSWALD": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "REGAN": {
+      "ratio": 34.0, 
+      "nlines": 34, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Gloucester's castle.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "OSWALD": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "KING LEAR": {
+      "ratio": 35.33, 
+      "nlines": 106, 
+      "nedges": 3
+     }, 
+     "Gentleman": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "EDGAR": {
+      "ratio": 30.25, 
+      "nlines": 121, 
+      "nedges": 4
+     }, 
+     "GLOUCESTER": {
+      "ratio": 22.0, 
+      "nlines": 66, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Fields near Dover.", 
+    "scene": "6", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING LEAR": {
+      "ratio": 8.25, 
+      "nlines": 33, 
+      "nedges": 4
+     }, 
+     "Gentleman": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "CORDELIA": {
+      "ratio": 10.5, 
+      "nlines": 42, 
+      "nedges": 4
+     }, 
+     "KENT": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "Doctor": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A tent in the French camp. LEAR on a bed asleep,", 
+    "scene": "7", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "GONERIL": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "REGAN": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "EDMUND": {
+      "ratio": 11.33, 
+      "nlines": 34, 
+      "nedges": 3
+     }, 
+     "EDGAR": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "ALBANY": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The British camp, near Dover.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "EDGAR": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A field between the two camps.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "ALBANY": {
+      "ratio": 11.89, 
+      "nlines": 107, 
+      "nedges": 9
+     }, 
+     "KING LEAR": {
+      "ratio": 9.33, 
+      "nlines": 56, 
+      "nedges": 6
+     }, 
+     "Gentleman": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "CORDELIA": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "EDGAR": {
+      "ratio": 11.43, 
+      "nlines": 80, 
+      "nedges": 7
+     }, 
+     "Herald": {
+      "ratio": 2.33, 
+      "nlines": 14, 
+      "nedges": 6
+     }, 
+     "GONERIL": {
+      "ratio": 5.67, 
+      "nlines": 17, 
+      "nedges": 3
+     }, 
+     "EDMUND": {
+      "ratio": 9.11, 
+      "nlines": 82, 
+      "nedges": 9
+     }, 
+     "KENT": {
+      "ratio": 6.0, 
+      "nlines": 24, 
+      "nedges": 4
+     }, 
+     "REGAN": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "Captain": {
+      "ratio": 1.8, 
+      "nlines": 9, 
+      "nedges": 5
+     }
+    }, 
+    "location": "The British camp near Dover.", 
+    "scene": "3", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "KENT", 
+  "GLOUCESTER", 
+  "EDMUND", 
+  "KING LEAR", 
+  "GONERIL", 
+  "CORDELIA", 
+  "REGAN", 
+  "ALBANY", 
+  "BURGUNDY", 
+  "KING OF FRANCE", 
+  "EDGAR", 
+  "OSWALD", 
+  "Knight", 
+  "Fool", 
+  "Gentleman", 
+  "CURAN", 
+  "CORNWALL", 
+  "First Servant", 
+  "Second Servant", 
+  "Third Servant", 
+  "Old Man", 
+  "Messenger", 
+  "Doctor", 
+  "Captain", 
+  "Herald"
+ ], 
+ "year": "1605-06 / 1608", 
+ "char_data": {
+  "Gentleman": {
+   "ratio": 12.14, 
+   "nlines": 85, 
+   "nedges": 7, 
+   "order_app": 14
+  }, 
+  "Doctor": {
+   "ratio": 6.0, 
+   "nlines": 18, 
+   "nedges": 3, 
+   "order_app": 22
+  }, 
+  "Old Man": {
+   "ratio": 6.0, 
+   "nlines": 12, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "Second Servant": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 18
+  }, 
+  "CORNWALL": {
+   "ratio": 13.44, 
+   "nlines": 121, 
+   "nedges": 9, 
+   "order_app": 16
+  }, 
+  "Messenger": {
+   "ratio": 6.33, 
+   "nlines": 19, 
+   "nedges": 3, 
+   "order_app": 21
+  }, 
+  "Fool": {
+   "ratio": 48.0, 
+   "nlines": 240, 
+   "nedges": 5, 
+   "order_app": 13
+  }, 
+  "ALBANY": {
+   "ratio": 18.4, 
+   "nlines": 184, 
+   "nedges": 10, 
+   "order_app": 7
+  }, 
+  "KING OF FRANCE": {
+   "ratio": 8.25, 
+   "nlines": 33, 
+   "nedges": 4, 
+   "order_app": 9
+  }, 
+  "CORDELIA": {
+   "ratio": 12.2, 
+   "nlines": 122, 
+   "nedges": 10, 
+   "order_app": 5
+  }, 
+  "BURGUNDY": {
+   "ratio": 4.0, 
+   "nlines": 12, 
+   "nedges": 3, 
+   "order_app": 8
+  }, 
+  "CURAN": {
+   "ratio": 10.0, 
+   "nlines": 10, 
+   "nedges": 1, 
+   "order_app": 15
+  }, 
+  "EDMUND": {
+   "ratio": 24.0, 
+   "nlines": 336, 
+   "nedges": 14, 
+   "order_app": 2
+  }, 
+  "Third Servant": {
+   "ratio": 6.0, 
+   "nlines": 6, 
+   "nedges": 1, 
+   "order_app": 19
+  }, 
+  "KING LEAR": {
+   "ratio": 47.47, 
+   "nlines": 807, 
+   "nedges": 17, 
+   "order_app": 3
+  }, 
+  "Knight": {
+   "ratio": 14.0, 
+   "nlines": 14, 
+   "nedges": 1, 
+   "order_app": 12
+  }, 
+  "EDGAR": {
+   "ratio": 34.33, 
+   "nlines": 412, 
+   "nedges": 12, 
+   "order_app": 10
+  }, 
+  "Herald": {
+   "ratio": 2.33, 
+   "nlines": 14, 
+   "nedges": 6, 
+   "order_app": 24
+  }, 
+  "GONERIL": {
+   "ratio": 18.0, 
+   "nlines": 216, 
+   "nedges": 12, 
+   "order_app": 4
+  }, 
+  "OSWALD": {
+   "ratio": 10.25, 
+   "nlines": 82, 
+   "nedges": 8, 
+   "order_app": 11
+  }, 
+  "REGAN": {
+   "ratio": 19.6, 
+   "nlines": 196, 
+   "nedges": 10, 
+   "order_app": 6
+  }, 
+  "First Servant": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 17
+  }, 
+  "KENT": {
+   "ratio": 35.18, 
+   "nlines": 387, 
+   "nedges": 11, 
+   "order_app": 0
+  }, 
+  "Captain": {
+   "ratio": 1.8, 
+   "nlines": 9, 
+   "nedges": 5, 
+   "order_app": 23
+  }, 
+  "GLOUCESTER": {
+   "ratio": 36.0, 
+   "nlines": 360, 
+   "nedges": 10, 
+   "order_app": 1
+  }
+ }, 
+ "type": "Tragedy"
+}

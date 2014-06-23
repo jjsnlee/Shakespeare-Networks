@@ -1,0 +1,1427 @@
+{
+ "title": "Richard III", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/richardiii_1_1.png", 
+    "char_data": {
+     "BRAKENBURY": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 43.0, 
+      "nlines": 129, 
+      "nedges": 3
+     }, 
+     "CLARENCE": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "HASTINGS": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. A street.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_1_2.png", 
+    "char_data": {
+     "GENTLEMEN": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 54.0, 
+      "nlines": 162, 
+      "nedges": 3
+     }, 
+     "Gentleman": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "LADY ANNE": {
+      "ratio": 121.0, 
+      "nlines": 121, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. Another street.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_1_3.png", 
+    "char_data": {
+     "CATESBY": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 21.0, 
+      "nlines": 126, 
+      "nedges": 6
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 18.57, 
+      "nlines": 130, 
+      "nedges": 7
+     }, 
+     "GREY": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "RIVERS": {
+      "ratio": 2.71, 
+      "nlines": 19, 
+      "nedges": 7
+     }, 
+     "First Murderer": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 2.0, 
+      "nlines": 12, 
+      "nedges": 6
+     }, 
+     "QUEEN ELIZABETH": {
+      "ratio": 6.75, 
+      "nlines": 54, 
+      "nedges": 8
+     }, 
+     "DERBY": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "DORSET": {
+      "ratio": 0.75, 
+      "nlines": 3, 
+      "nedges": 4
+     }, 
+     "HASTINGS": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The palace.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_1_4.png", 
+    "char_data": {
+     "Both": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "CLARENCE": {
+      "ratio": 28.2, 
+      "nlines": 141, 
+      "nedges": 5
+     }, 
+     "Second murderer": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "First Murderer": {
+      "ratio": 17.33, 
+      "nlines": 52, 
+      "nedges": 3
+     }, 
+     "BRAKENBURY": {
+      "ratio": 9.0, 
+      "nlines": 27, 
+      "nedges": 3
+     }, 
+     "Second Murderer": {
+      "ratio": 20.0, 
+      "nlines": 60, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. The Tower.", 
+    "scene": "4", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/richardiii_2_1.png", 
+    "char_data": {
+     "BUCKINGHAM": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 8.6, 
+      "nlines": 43, 
+      "nedges": 5
+     }, 
+     "RIVERS": {
+      "ratio": 1.0, 
+      "nlines": 4, 
+      "nedges": 4
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 11.0, 
+      "nlines": 66, 
+      "nedges": 6
+     }, 
+     "QUEEN ELIZABETH": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "DORSET": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "HASTINGS": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_2_2.png", 
+    "char_data": {
+     "Boy": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 4.0, 
+      "nlines": 20, 
+      "nedges": 5
+     }, 
+     "RIVERS": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "QUEEN ELIZABETH": {
+      "ratio": 4.0, 
+      "nlines": 24, 
+      "nedges": 6
+     }, 
+     "DUCHESS OF YORK": {
+      "ratio": 7.17, 
+      "nlines": 43, 
+      "nedges": 6
+     }, 
+     "Girl": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "DORSET": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "Children": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "HASTINGS": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The palace.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_2_3.png", 
+    "char_data": {
+     "Second Citizen": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "First Citizen": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "Third Citizen": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. A street.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_2_4.png", 
+    "char_data": {
+     "DUCHESS OF YORK": {
+      "ratio": 6.5, 
+      "nlines": 26, 
+      "nedges": 4
+     }, 
+     "ARCHBISHOP OF YORK": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "QUEEN ELIZABETH": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }, 
+     "YORK": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "4", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/richardiii_3_1.png", 
+    "char_data": {
+     "PRINCE EDWARD": {
+      "ratio": 9.2, 
+      "nlines": 46, 
+      "nedges": 5
+     }, 
+     "CATESBY": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 12.4, 
+      "nlines": 62, 
+      "nedges": 5
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 9.67, 
+      "nlines": 58, 
+      "nedges": 6
+     }, 
+     "Lord Mayor": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "CARDINAL": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "YORK": {
+      "ratio": 7.67, 
+      "nlines": 23, 
+      "nedges": 3
+     }, 
+     "HASTINGS": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. A street.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_3_2.png", 
+    "char_data": {
+     "CATESBY": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "Pursuivant": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "Priest": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "STANLEY": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "LORD STANLEY": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "HASTINGS": {
+      "ratio": 10.86, 
+      "nlines": 76, 
+      "nedges": 7
+     }
+    }, 
+    "location": "Before Lord Hastings' house.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_3_3.png", 
+    "char_data": {
+     "RATCLIFF": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "RIVERS": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "GREY": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "VAUGHAN": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Pomfret Castle.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_3_4.png", 
+    "char_data": {
+     "LOVEL": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 8.5, 
+      "nlines": 34, 
+      "nedges": 4
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "DERBY": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "BISHOP OF ELY": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "RATCLIFF": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "HASTINGS": {
+      "ratio": 8.5, 
+      "nlines": 51, 
+      "nedges": 6
+     }
+    }, 
+    "location": "The Tower of London.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_3_5.png", 
+    "char_data": {
+     "BUCKINGHAM": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "Lord Mayor": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 24.67, 
+      "nlines": 74, 
+      "nedges": 3
+     }, 
+     "LOVEL": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The Tower-walls.", 
+    "scene": "5", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_3_6.png", 
+    "char_data": {
+     "Scrivener": {
+      "ratio": 0, 
+      "nlines": 15, 
+      "nedges": 0
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "6", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_3_7.png", 
+    "char_data": {
+     "CATESBY": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 54.0, 
+      "nlines": 162, 
+      "nedges": 3
+     }, 
+     "Lord Mayor": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 19.0, 
+      "nlines": 76, 
+      "nedges": 4
+     }, 
+     "ANOTHER": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Baynard's Castle.", 
+    "scene": "7", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/richardiii_4_1.png", 
+    "char_data": {
+     "LADY ANNE": {
+      "ratio": 7.8, 
+      "nlines": 39, 
+      "nedges": 5
+     }, 
+     "QUEEN ELIZABETH": {
+      "ratio": 6.8, 
+      "nlines": 34, 
+      "nedges": 5
+     }, 
+     "BRAKENBURY": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "DUCHESS OF YORK": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "DORSET": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "LORD STANLEY": {
+      "ratio": 3.0, 
+      "nlines": 12, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Before the Tower.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_4_2.png", 
+    "char_data": {
+     "CATESBY": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 18.4, 
+      "nlines": 92, 
+      "nedges": 5
+     }, 
+     "BUCKINGHAM": {
+      "ratio": 10.33, 
+      "nlines": 31, 
+      "nedges": 3
+     }, 
+     "TYRREL": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "STANLEY": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "Page": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_4_3.png", 
+    "char_data": {
+     "CATESBY": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "TYRREL": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_4_4.png", 
+    "char_data": {
+     "CATESBY": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 48.5, 
+      "nlines": 97, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 30.0, 
+      "nlines": 210, 
+      "nedges": 7
+     }, 
+     "RATCLIFF": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "Second Messenger": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "QUEEN ELIZABETH": {
+      "ratio": 50.33, 
+      "nlines": 151, 
+      "nedges": 3
+     }, 
+     "Third Messenger": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "DUCHESS OF YORK": {
+      "ratio": 19.33, 
+      "nlines": 58, 
+      "nedges": 3
+     }, 
+     "STANLEY": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }, 
+     "Fourth Messenger": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before the palace.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_4_5.png", 
+    "char_data": {
+     "CHRISTOPHER": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "DERBY": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Lord Derby's house.", 
+    "scene": "5", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/richardiii_5_1.png", 
+    "char_data": {
+     "BUCKINGHAM": {
+      "ratio": 28.0, 
+      "nlines": 28, 
+      "nedges": 1
+     }, 
+     "Sheriff": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Salisbury. An open place.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_5_2.png", 
+    "char_data": {
+     "RICHMOND": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "OXFORD": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "BLUNT": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "HERBERT": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The camp near Tamworth.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_5_3.png", 
+    "char_data": {
+     "SURREY": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "LORDS": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "All": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "NORFOLK": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "Ghost of HASTINGS": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "Ghost of RIVERS": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "of Prince Edward": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "CATESBY": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "of young Princes": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 18.78, 
+      "nlines": 169, 
+      "nedges": 9
+     }, 
+     "RICHMOND": {
+      "ratio": 18.8, 
+      "nlines": 94, 
+      "nedges": 5
+     }, 
+     "Ghost of VAUGHAN": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "BLUNT": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "of King Henry VI": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "DERBY": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }, 
+     "Ghost of GREY": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Ghost of LADY ANNE": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "of BUCKINGHAM": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "Ghost of CLARENCE": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "RATCLIFF": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Bosworth Field.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_5_4.png", 
+    "char_data": {
+     "CATESBY": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER / KING RICHARD III": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/richardiii_5_5.png", 
+    "char_data": {
+     "RICHMOND": {
+      "ratio": 34.0, 
+      "nlines": 34, 
+      "nedges": 1
+     }, 
+     "DERBY": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "5", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "GLOUCESTER / KING RICHARD III", 
+  "CLARENCE", 
+  "BRAKENBURY", 
+  "HASTINGS", 
+  "LADY ANNE", 
+  "Gentleman", 
+  "GENTLEMEN", 
+  "RIVERS", 
+  "GREY", 
+  "QUEEN ELIZABETH", 
+  "BUCKINGHAM", 
+  "DERBY", 
+  "QUEEN MARGARET", 
+  "DORSET", 
+  "CATESBY", 
+  "First Murderer", 
+  "Second Murderer", 
+  "Second murderer", 
+  "Both", 
+  "KING EDWARD IV", 
+  "Boy", 
+  "DUCHESS OF YORK", 
+  "Girl", 
+  "Children", 
+  "First Citizen", 
+  "Second Citizen", 
+  "Third Citizen", 
+  "ARCHBISHOP OF YORK", 
+  "YORK", 
+  "Messenger", 
+  "PRINCE EDWARD", 
+  "Lord Mayor", 
+  "CARDINAL", 
+  "STANLEY", 
+  "LORD STANLEY", 
+  "Pursuivant", 
+  "Priest", 
+  "RATCLIFF", 
+  "VAUGHAN", 
+  "BISHOP OF ELY", 
+  "LOVEL", 
+  "Scrivener", 
+  "ANOTHER", 
+  "Page", 
+  "TYRREL", 
+  "Second Messenger", 
+  "Third Messenger", 
+  "Fourth Messenger", 
+  "CHRISTOPHER", 
+  "Sheriff", 
+  "RICHMOND", 
+  "OXFORD", 
+  "HERBERT", 
+  "BLUNT", 
+  "SURREY", 
+  "NORFOLK", 
+  "of Prince Edward", 
+  "of King Henry VI", 
+  "Ghost of CLARENCE", 
+  "Ghost of RIVERS", 
+  "Ghost of GREY", 
+  "Ghost of VAUGHAN", 
+  "All", 
+  "Ghost of HASTINGS", 
+  "of young Princes", 
+  "Ghost of LADY ANNE", 
+  "of BUCKINGHAM", 
+  "LORDS"
+ ], 
+ "year": "1592-93 / 1597", 
+ "char_data": {
+  "Second Citizen": {
+   "ratio": 7.0, 
+   "nlines": 14, 
+   "nedges": 2, 
+   "order_app": 25
+  }, 
+  "Sheriff": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 49
+  }, 
+  "Boy": {
+   "ratio": 6.33, 
+   "nlines": 19, 
+   "nedges": 3, 
+   "order_app": 20
+  }, 
+  "RATCLIFF": {
+   "ratio": 6.0, 
+   "nlines": 30, 
+   "nedges": 5, 
+   "order_app": 37
+  }, 
+  "LOVEL": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 40
+  }, 
+  "GLOUCESTER / KING RICHARD III": {
+   "ratio": 36.38, 
+   "nlines": 1237, 
+   "nedges": 34, 
+   "order_app": 0
+  }, 
+  "Second murderer": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 17
+  }, 
+  "GENTLEMEN": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 6
+  }, 
+  "BUCKINGHAM": {
+   "ratio": 22.35, 
+   "nlines": 380, 
+   "nedges": 17, 
+   "order_app": 10
+  }, 
+  "Lord Mayor": {
+   "ratio": 6.33, 
+   "nlines": 19, 
+   "nedges": 3, 
+   "order_app": 31
+  }, 
+  "Messenger": {
+   "ratio": 4.25, 
+   "nlines": 34, 
+   "nedges": 8, 
+   "order_app": 29
+  }, 
+  "BRAKENBURY": {
+   "ratio": 6.14, 
+   "nlines": 43, 
+   "nedges": 7, 
+   "order_app": 2
+  }, 
+  "DUCHESS OF YORK": {
+   "ratio": 12.17, 
+   "nlines": 146, 
+   "nedges": 12, 
+   "order_app": 21
+  }, 
+  "Ghost of GREY": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 60
+  }, 
+  "DORSET": {
+   "ratio": 2.22, 
+   "nlines": 20, 
+   "nedges": 9, 
+   "order_app": 13
+  }, 
+  "Second Murderer": {
+   "ratio": 20.0, 
+   "nlines": 60, 
+   "nedges": 3, 
+   "order_app": 16
+  }, 
+  "BISHOP OF ELY": {
+   "ratio": 2.0, 
+   "nlines": 8, 
+   "nedges": 4, 
+   "order_app": 39
+  }, 
+  "PRINCE EDWARD": {
+   "ratio": 9.2, 
+   "nlines": 46, 
+   "nedges": 5, 
+   "order_app": 30
+  }, 
+  "of Prince Edward": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 56
+  }, 
+  "CATESBY": {
+   "ratio": 9.57, 
+   "nlines": 67, 
+   "nedges": 7, 
+   "order_app": 14
+  }, 
+  "ARCHBISHOP OF YORK": {
+   "ratio": 4.33, 
+   "nlines": 13, 
+   "nedges": 3, 
+   "order_app": 27
+  }, 
+  "GREY": {
+   "ratio": 2.5, 
+   "nlines": 10, 
+   "nedges": 4, 
+   "order_app": 8
+  }, 
+  "LADY ANNE": {
+   "ratio": 26.67, 
+   "nlines": 160, 
+   "nedges": 6, 
+   "order_app": 4
+  }, 
+  "First Murderer": {
+   "ratio": 15.0, 
+   "nlines": 60, 
+   "nedges": 4, 
+   "order_app": 15
+  }, 
+  "KING EDWARD IV": {
+   "ratio": 11.0, 
+   "nlines": 66, 
+   "nedges": 6, 
+   "order_app": 19
+  }, 
+  "TYRREL": {
+   "ratio": 20.5, 
+   "nlines": 41, 
+   "nedges": 2, 
+   "order_app": 44
+  }, 
+  "QUEEN ELIZABETH": {
+   "ratio": 14.3, 
+   "nlines": 286, 
+   "nedges": 20, 
+   "order_app": 9
+  }, 
+  "ANOTHER": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 42
+  }, 
+  "Pursuivant": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 35
+  }, 
+  "STANLEY": {
+   "ratio": 11.0, 
+   "nlines": 33, 
+   "nedges": 3, 
+   "order_app": 33
+  }, 
+  "of BUCKINGHAM": {
+   "ratio": 7.0, 
+   "nlines": 14, 
+   "nedges": 2, 
+   "order_app": 66
+  }, 
+  "CHRISTOPHER": {
+   "ratio": 8.0, 
+   "nlines": 8, 
+   "nedges": 1, 
+   "order_app": 48
+  }, 
+  "HASTINGS": {
+   "ratio": 8.05, 
+   "nlines": 153, 
+   "nedges": 19, 
+   "order_app": 3
+  }, 
+  "SURREY": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 54
+  }, 
+  "Both": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 18
+  }, 
+  "Ghost of VAUGHAN": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 61
+  }, 
+  "First Citizen": {
+   "ratio": 4.0, 
+   "nlines": 8, 
+   "nedges": 2, 
+   "order_app": 24
+  }, 
+  "NORFOLK": {
+   "ratio": 12.0, 
+   "nlines": 12, 
+   "nedges": 1, 
+   "order_app": 55
+  }, 
+  "CLARENCE": {
+   "ratio": 27.33, 
+   "nlines": 164, 
+   "nedges": 6, 
+   "order_app": 1
+  }, 
+  "Ghost of HASTINGS": {
+   "ratio": 4.5, 
+   "nlines": 9, 
+   "nedges": 2, 
+   "order_app": 63
+  }, 
+  "LORDS": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 67
+  }, 
+  "Gentleman": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 5
+  }, 
+  "RIVERS": {
+   "ratio": 5.4, 
+   "nlines": 54, 
+   "nedges": 10, 
+   "order_app": 7
+  }, 
+  "Priest": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 36
+  }, 
+  "Ghost of LADY ANNE": {
+   "ratio": 6.0, 
+   "nlines": 12, 
+   "nedges": 2, 
+   "order_app": 65
+  }, 
+  "YORK": {
+   "ratio": 8.0, 
+   "nlines": 40, 
+   "nedges": 5, 
+   "order_app": 28
+  }, 
+  "of young Princes": {
+   "ratio": 5.5, 
+   "nlines": 11, 
+   "nedges": 2, 
+   "order_app": 64
+  }, 
+  "DERBY": {
+   "ratio": 7.5, 
+   "nlines": 60, 
+   "nedges": 8, 
+   "order_app": 11
+  }, 
+  "OXFORD": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 51
+  }, 
+  "Scrivener": {
+   "ratio": 0, 
+   "nlines": 15, 
+   "nedges": 0, 
+   "order_app": 41
+  }, 
+  "HERBERT": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 52
+  }, 
+  "BLUNT": {
+   "ratio": 4.0, 
+   "nlines": 8, 
+   "nedges": 2, 
+   "order_app": 53
+  }, 
+  "Page": {
+   "ratio": 6.0, 
+   "nlines": 6, 
+   "nedges": 1, 
+   "order_app": 43
+  }, 
+  "Third Citizen": {
+   "ratio": 14.5, 
+   "nlines": 29, 
+   "nedges": 2, 
+   "order_app": 26
+  }, 
+  "All": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 62
+  }, 
+  "Ghost of RIVERS": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 59
+  }, 
+  "Third Messenger": {
+   "ratio": 2.67, 
+   "nlines": 8, 
+   "nedges": 3, 
+   "order_app": 46
+  }, 
+  "Second Messenger": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 45
+  }, 
+  "QUEEN MARGARET": {
+   "ratio": 31.86, 
+   "nlines": 223, 
+   "nedges": 7, 
+   "order_app": 12
+  }, 
+  "RICHMOND": {
+   "ratio": 24.67, 
+   "nlines": 148, 
+   "nedges": 6, 
+   "order_app": 50
+  }, 
+  "of King Henry VI": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 57
+  }, 
+  "Fourth Messenger": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 47
+  }, 
+  "CARDINAL": {
+   "ratio": 4.5, 
+   "nlines": 9, 
+   "nedges": 2, 
+   "order_app": 32
+  }, 
+  "Girl": {
+   "ratio": 2.0, 
+   "nlines": 6, 
+   "nedges": 3, 
+   "order_app": 22
+  }, 
+  "LORD STANLEY": {
+   "ratio": 3.2, 
+   "nlines": 16, 
+   "nedges": 5, 
+   "order_app": 34
+  }, 
+  "Ghost of CLARENCE": {
+   "ratio": 5.5, 
+   "nlines": 11, 
+   "nedges": 2, 
+   "order_app": 58
+  }, 
+  "Children": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 23
+  }, 
+  "VAUGHAN": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 38
+  }
+ }, 
+ "type": "History"
+}

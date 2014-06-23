@@ -1,0 +1,708 @@
+{
+ "title": "A Midsummer Night's Dream", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/midsummer_1_1.png", 
+    "char_data": {
+     "THESEUS": {
+      "ratio": 13.4, 
+      "nlines": 67, 
+      "nedges": 5
+     }, 
+     "HERMIA": {
+      "ratio": 18.67, 
+      "nlines": 56, 
+      "nedges": 3
+     }, 
+     "DEMETRIUS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "EGEUS": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "HELENA": {
+      "ratio": 22.0, 
+      "nlines": 44, 
+      "nedges": 2
+     }, 
+     "LYSANDER": {
+      "ratio": 11.4, 
+      "nlines": 57, 
+      "nedges": 5
+     }, 
+     "HIPPOLYTA": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Athens. The palace of THESEUS.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/midsummer_1_2.png", 
+    "char_data": {
+     "ALL": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "BOTTOM": {
+      "ratio": 26.0, 
+      "nlines": 52, 
+      "nedges": 2
+     }, 
+     "FLUTE": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "SNOUT": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "SNUG": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "STARVELING": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "QUINCE": {
+      "ratio": 7.0, 
+      "nlines": 42, 
+      "nedges": 6
+     }
+    }, 
+    "location": "Athens. QUINCE'S house.", 
+    "scene": "2", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/midsummer_2_1.png", 
+    "char_data": {
+     "DEMETRIUS": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "PUCK": {
+      "ratio": 19.5, 
+      "nlines": 39, 
+      "nedges": 2
+     }, 
+     "TITANIA": {
+      "ratio": 73.0, 
+      "nlines": 73, 
+      "nedges": 1
+     }, 
+     "HELENA": {
+      "ratio": 18.0, 
+      "nlines": 36, 
+      "nedges": 2
+     }, 
+     "Fairy": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "OBERON": {
+      "ratio": 16.2, 
+      "nlines": 81, 
+      "nedges": 5
+     }
+    }, 
+    "location": "A wood near Athens.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/midsummer_2_2.png", 
+    "char_data": {
+     "DEMETRIUS": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "HERMIA": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "PUCK": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }, 
+     "TITANIA": {
+      "ratio": 25.0, 
+      "nlines": 25, 
+      "nedges": 1
+     }, 
+     "HELENA": {
+      "ratio": 11.0, 
+      "nlines": 33, 
+      "nedges": 3
+     }, 
+     "LYSANDER": {
+      "ratio": 15.0, 
+      "nlines": 45, 
+      "nedges": 3
+     }, 
+     "Fairy": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "OBERON": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the wood.", 
+    "scene": "2", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/midsummer_3_1.png", 
+    "char_data": {
+     "ALL": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "PUCK": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "BOTTOM": {
+      "ratio": 10.33, 
+      "nlines": 93, 
+      "nedges": 9
+     }, 
+     "MOTH": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "PEASEBLOSSOM": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "FLUTE": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "MUSTARDSEED": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "TITANIA": {
+      "ratio": 12.0, 
+      "nlines": 36, 
+      "nedges": 3
+     }, 
+     "SNOUT": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "COBWEB": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "STARVELING": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "QUINCE": {
+      "ratio": 9.25, 
+      "nlines": 37, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The wood. TITANIA lying asleep.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/midsummer_3_2.png", 
+    "char_data": {
+     "DEMETRIUS": {
+      "ratio": 13.4, 
+      "nlines": 67, 
+      "nedges": 5
+     }, 
+     "HERMIA": {
+      "ratio": 16.6, 
+      "nlines": 83, 
+      "nedges": 5
+     }, 
+     "PUCK": {
+      "ratio": 22.8, 
+      "nlines": 114, 
+      "nedges": 5
+     }, 
+     "HELENA": {
+      "ratio": 23.6, 
+      "nlines": 118, 
+      "nedges": 5
+     }, 
+     "LYSANDER": {
+      "ratio": 15.75, 
+      "nlines": 63, 
+      "nedges": 4
+     }, 
+     "HERNIA": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "OBERON": {
+      "ratio": 22.33, 
+      "nlines": 67, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another part of the wood.", 
+    "scene": "2", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/midsummer_4_1.png", 
+    "char_data": {
+     "THESEUS": {
+      "ratio": 8.8, 
+      "nlines": 44, 
+      "nedges": 5
+     }, 
+     "DEMETRIUS": {
+      "ratio": 4.17, 
+      "nlines": 25, 
+      "nedges": 6
+     }, 
+     "BOTTOM": {
+      "ratio": 9.2, 
+      "nlines": 46, 
+      "nedges": 5
+     }, 
+     "PEASEBLOSSOM": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "HERMIA": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "PUCK": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "MUSTARDSEED": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "TITANIA": {
+      "ratio": 7.75, 
+      "nlines": 31, 
+      "nedges": 4
+     }, 
+     "EGEUS": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "HELENA": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "LYSANDER": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "COBWEB": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "HIPPOLYTA": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "OBERON": {
+      "ratio": 23.5, 
+      "nlines": 47, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. LYSANDER, DEMETRIUS, HELENA, and HERMIA", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/midsummer_4_2.png", 
+    "char_data": {
+     "QUINCE": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "SNUG": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "BOTTOM": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "FLUTE": {
+      "ratio": 3.5, 
+      "nlines": 14, 
+      "nedges": 4
+     }, 
+     "STARVELING": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Athens. QUINCE'S house.", 
+    "scene": "2", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/midsummer_5_1.png", 
+    "char_data": {
+     "Pyramus": {
+      "ratio": 15.25, 
+      "nlines": 61, 
+      "nedges": 4
+     }, 
+     "THESEUS": {
+      "ratio": 11.75, 
+      "nlines": 141, 
+      "nedges": 12
+     }, 
+     "DEMETRIUS": {
+      "ratio": 2.67, 
+      "nlines": 24, 
+      "nedges": 9
+     }, 
+     "BOTTOM": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Wall": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "Moonshine": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "PUCK": {
+      "ratio": 19.0, 
+      "nlines": 38, 
+      "nedges": 2
+     }, 
+     "LYSANDER": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "TITANIA": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "Thisbe": {
+      "ratio": 7.4, 
+      "nlines": 37, 
+      "nedges": 5
+     }, 
+     "Lion": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "HIPPOLYTA": {
+      "ratio": 5.75, 
+      "nlines": 23, 
+      "nedges": 4
+     }, 
+     "Prologue": {
+      "ratio": 36.0, 
+      "nlines": 36, 
+      "nedges": 1
+     }, 
+     "PHILOSTRATE": {
+      "ratio": 25.0, 
+      "nlines": 25, 
+      "nedges": 1
+     }, 
+     "OBERON": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Athens. The palace of THESEUS.", 
+    "scene": "1", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "THESEUS", 
+  "HIPPOLYTA", 
+  "EGEUS", 
+  "HERMIA", 
+  "DEMETRIUS", 
+  "LYSANDER", 
+  "HELENA", 
+  "QUINCE", 
+  "BOTTOM", 
+  "FLUTE", 
+  "STARVELING", 
+  "SNOUT", 
+  "SNUG", 
+  "ALL", 
+  "PUCK", 
+  "Fairy", 
+  "OBERON", 
+  "TITANIA", 
+  "PEASEBLOSSOM", 
+  "COBWEB", 
+  "MOTH", 
+  "MUSTARDSEED", 
+  "HERNIA", 
+  "PHILOSTRATE", 
+  "Prologue", 
+  "Wall", 
+  "Pyramus", 
+  "Thisbe", 
+  "Lion", 
+  "Moonshine"
+ ], 
+ "year": "1595-96 / 1600", 
+ "char_data": {
+  "MOTH": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "PEASEBLOSSOM": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 18
+  }, 
+  "PUCK": {
+   "ratio": 20.73, 
+   "nlines": 228, 
+   "nedges": 11, 
+   "order_app": 14
+  }, 
+  "EGEUS": {
+   "ratio": 14.0, 
+   "nlines": 42, 
+   "nedges": 3, 
+   "order_app": 2
+  }, 
+  "HELENA": {
+   "ratio": 39.17, 
+   "nlines": 235, 
+   "nedges": 6, 
+   "order_app": 6
+  }, 
+  "SNUG": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 12
+  }, 
+  "STARVELING": {
+   "ratio": 1.25, 
+   "nlines": 5, 
+   "nedges": 4, 
+   "order_app": 10
+  }, 
+  "HERNIA": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 22
+  }, 
+  "Pyramus": {
+   "ratio": 15.25, 
+   "nlines": 61, 
+   "nedges": 4, 
+   "order_app": 26
+  }, 
+  "BOTTOM": {
+   "ratio": 17.67, 
+   "nlines": 212, 
+   "nedges": 12, 
+   "order_app": 8
+  }, 
+  "HERMIA": {
+   "ratio": 28.5, 
+   "nlines": 171, 
+   "nedges": 6, 
+   "order_app": 3
+  }, 
+  "FLUTE": {
+   "ratio": 5.2, 
+   "nlines": 26, 
+   "nedges": 5, 
+   "order_app": 9
+  }, 
+  "MUSTARDSEED": {
+   "ratio": 1.67, 
+   "nlines": 5, 
+   "nedges": 3, 
+   "order_app": 21
+  }, 
+  "QUINCE": {
+   "ratio": 12.29, 
+   "nlines": 86, 
+   "nedges": 7, 
+   "order_app": 7
+  }, 
+  "THESEUS": {
+   "ratio": 16.8, 
+   "nlines": 252, 
+   "nedges": 15, 
+   "order_app": 0
+  }, 
+  "Moonshine": {
+   "ratio": 2.0, 
+   "nlines": 6, 
+   "nedges": 3, 
+   "order_app": 29
+  }, 
+  "TITANIA": {
+   "ratio": 24.29, 
+   "nlines": 170, 
+   "nedges": 7, 
+   "order_app": 17
+  }, 
+  "SNOUT": {
+   "ratio": 2.33, 
+   "nlines": 7, 
+   "nedges": 3, 
+   "order_app": 11
+  }, 
+  "LYSANDER": {
+   "ratio": 20.56, 
+   "nlines": 185, 
+   "nedges": 9, 
+   "order_app": 5
+  }, 
+  "COBWEB": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 19
+  }, 
+  "Prologue": {
+   "ratio": 36.0, 
+   "nlines": 36, 
+   "nedges": 1, 
+   "order_app": 24
+  }, 
+  "Fairy": {
+   "ratio": 11.0, 
+   "nlines": 33, 
+   "nedges": 3, 
+   "order_app": 15
+  }, 
+  "ALL": {
+   "ratio": 0.5, 
+   "nlines": 2, 
+   "nedges": 4, 
+   "order_app": 13
+  }, 
+  "Wall": {
+   "ratio": 4.33, 
+   "nlines": 13, 
+   "nedges": 3, 
+   "order_app": 25
+  }, 
+  "DEMETRIUS": {
+   "ratio": 10.29, 
+   "nlines": 144, 
+   "nedges": 14, 
+   "order_app": 4
+  }, 
+  "Thisbe": {
+   "ratio": 7.4, 
+   "nlines": 37, 
+   "nedges": 5, 
+   "order_app": 27
+  }, 
+  "Lion": {
+   "ratio": 3.33, 
+   "nlines": 10, 
+   "nedges": 3, 
+   "order_app": 28
+  }, 
+  "HIPPOLYTA": {
+   "ratio": 8.75, 
+   "nlines": 35, 
+   "nedges": 4, 
+   "order_app": 1
+  }, 
+  "PHILOSTRATE": {
+   "ratio": 25.0, 
+   "nlines": 25, 
+   "nedges": 1, 
+   "order_app": 23
+  }, 
+  "OBERON": {
+   "ratio": 33.43, 
+   "nlines": 234, 
+   "nedges": 7, 
+   "order_app": 16
+  }
+ }, 
+ "type": "Comedy"
+}

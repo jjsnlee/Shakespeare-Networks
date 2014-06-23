@@ -1,0 +1,769 @@
+{
+ "title": "The Merchant of Venice", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/merchant_1_1.png", 
+    "char_data": {
+     "PORTIA": {
+      "ratio": 29.67, 
+      "nlines": 89, 
+      "nedges": 3
+     }, 
+     "SALARINO": {
+      "ratio": 10.75, 
+      "nlines": 43, 
+      "nedges": 4
+     }, 
+     "Servant": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "GRATIANO": {
+      "ratio": 11.67, 
+      "nlines": 35, 
+      "nedges": 3
+     }, 
+     "BASSANIO": {
+      "ratio": 12.5, 
+      "nlines": 50, 
+      "nedges": 4
+     }, 
+     "LORENZO": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "ANTONIO": {
+      "ratio": 12.25, 
+      "nlines": 49, 
+      "nedges": 4
+     }, 
+     "NERISSA": {
+      "ratio": 37.0, 
+      "nlines": 37, 
+      "nedges": 1
+     }, 
+     "SALANIO": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Venice. A street.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_1_3.png", 
+    "char_data": {
+     "SHYLOCK": {
+      "ratio": 66.0, 
+      "nlines": 132, 
+      "nedges": 2
+     }, 
+     "BASSANIO": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "ANTONIO": {
+      "ratio": 20.5, 
+      "nlines": 41, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Venice. A public place.", 
+    "scene": "3", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/merchant_2_1.png", 
+    "char_data": {
+     "MOROCCO": {
+      "ratio": 33.0, 
+      "nlines": 33, 
+      "nedges": 1
+     }, 
+     "PORTIA": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Belmont. A room in PORTIA'S house.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_2_2.png", 
+    "char_data": {
+     "LAUNCELOT": {
+      "ratio": 56.0, 
+      "nlines": 112, 
+      "nedges": 2
+     }, 
+     "GOBBO": {
+      "ratio": 18.5, 
+      "nlines": 37, 
+      "nedges": 2
+     }, 
+     "BASSANIO": {
+      "ratio": 9.5, 
+      "nlines": 38, 
+      "nedges": 4
+     }, 
+     "LEONARDO": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "GRATIANO": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Venice. A street.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_2_3.png", 
+    "char_data": {
+     "LAUNCELOT": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "JESSICA": {
+      "ratio": 18.0, 
+      "nlines": 18, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same. A room in SHYLOCK'S house.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_2_4.png", 
+    "char_data": {
+     "LAUNCELOT": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "SALARINO": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "LORENZO": {
+      "ratio": 7.75, 
+      "nlines": 31, 
+      "nedges": 4
+     }, 
+     "SALANIO": {
+      "ratio": 1.0, 
+      "nlines": 4, 
+      "nedges": 4
+     }, 
+     "GRATIANO": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same. A street.", 
+    "scene": "4", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_2_5.png", 
+    "char_data": {
+     "LAUNCELOT": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "SHYLOCK": {
+      "ratio": 20.0, 
+      "nlines": 40, 
+      "nedges": 2
+     }, 
+     "JESSICA": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. Before SHYLOCK'S house.", 
+    "scene": "5", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_2_6.png", 
+    "char_data": {
+     "GRATIANO": {
+      "ratio": 5.25, 
+      "nlines": 21, 
+      "nedges": 4
+     }, 
+     "SALARINO": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "LORENZO": {
+      "ratio": 6.25, 
+      "nlines": 25, 
+      "nedges": 4
+     }, 
+     "JESSICA": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }, 
+     "ANTONIO": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "6", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_2_7.png", 
+    "char_data": {
+     "PORTIA": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "MOROCCO": {
+      "ratio": 73.0, 
+      "nlines": 73, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Belmont. A room in PORTIA'S house.", 
+    "scene": "7", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_2_8.png", 
+    "char_data": {
+     "SALARINO": {
+      "ratio": 35.0, 
+      "nlines": 35, 
+      "nedges": 1
+     }, 
+     "SALANIO": {
+      "ratio": 21.0, 
+      "nlines": 21, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Venice. A street.", 
+    "scene": "8", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_2_9.png", 
+    "char_data": {
+     "Servant": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "PORTIA": {
+      "ratio": 7.0, 
+      "nlines": 21, 
+      "nedges": 3
+     }, 
+     "NERISSA": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "ARRAGON": {
+      "ratio": 68.0, 
+      "nlines": 68, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Belmont. A room in PORTIA'S house.", 
+    "scene": "9", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/merchant_3_1.png", 
+    "char_data": {
+     "Servant": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "SALARINO": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "SHYLOCK": {
+      "ratio": 17.25, 
+      "nlines": 69, 
+      "nedges": 4
+     }, 
+     "SALANIO": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "TUBAL": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Venice. A street.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_3_2.png", 
+    "char_data": {
+     "PORTIA": {
+      "ratio": 18.14, 
+      "nlines": 127, 
+      "nedges": 7
+     }, 
+     "ALL": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "JESSICA": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "GRATIANO": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "BASSANIO": {
+      "ratio": 29.2, 
+      "nlines": 146, 
+      "nedges": 5
+     }, 
+     "LORENZO": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "NERISSA": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "SALERIO": {
+      "ratio": 4.2, 
+      "nlines": 21, 
+      "nedges": 5
+     }
+    }, 
+    "location": "Belmont. A room in PORTIA'S house.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_3_3.png", 
+    "char_data": {
+     "SALARINO": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "SHYLOCK": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "ANTONIO": {
+      "ratio": 10.0, 
+      "nlines": 20, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Venice. A street.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_3_4.png", 
+    "char_data": {
+     "PORTIA": {
+      "ratio": 18.25, 
+      "nlines": 73, 
+      "nedges": 4
+     }, 
+     "LORENZO": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "JESSICA": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "NERISSA": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "BALTHASAR": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Belmont. A room in PORTIA'S house.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_3_5.png", 
+    "char_data": {
+     "LAUNCELOT": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "LORENZO": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }, 
+     "JESSICA": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. A garden.", 
+    "scene": "5", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/merchant_4_1.png", 
+    "char_data": {
+     "DUKE": {
+      "ratio": 7.38, 
+      "nlines": 59, 
+      "nedges": 8
+     }, 
+     "PORTIA": {
+      "ratio": 28.2, 
+      "nlines": 141, 
+      "nedges": 5
+     }, 
+     "Clerk": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }, 
+     "ANTONIO": {
+      "ratio": 13.4, 
+      "nlines": 67, 
+      "nedges": 5
+     }, 
+     "BASSANIO": {
+      "ratio": 10.4, 
+      "nlines": 52, 
+      "nedges": 5
+     }, 
+     "SHYLOCK": {
+      "ratio": 17.33, 
+      "nlines": 104, 
+      "nedges": 6
+     }, 
+     "GRATIANO": {
+      "ratio": 6.8, 
+      "nlines": 34, 
+      "nedges": 5
+     }, 
+     "NERISSA": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "SALERIO": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Venice. A court of justice.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/merchant_4_2.png", 
+    "char_data": {
+     "PORTIA": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "NERISSA": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "GRATIANO": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. A street.", 
+    "scene": "2", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/merchant_5_1.png", 
+    "char_data": {
+     "PORTIA": {
+      "ratio": 22.2, 
+      "nlines": 111, 
+      "nedges": 5
+     }, 
+     "JESSICA": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }, 
+     "ANTONIO": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "BASSANIO": {
+      "ratio": 10.5, 
+      "nlines": 42, 
+      "nedges": 4
+     }, 
+     "LAUNCELOT": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "LORENZO": {
+      "ratio": 16.2, 
+      "nlines": 81, 
+      "nedges": 5
+     }, 
+     "GRATIANO": {
+      "ratio": 9.0, 
+      "nlines": 36, 
+      "nedges": 4
+     }, 
+     "NERISSA": {
+      "ratio": 6.25, 
+      "nlines": 25, 
+      "nedges": 4
+     }, 
+     "STEPHANO": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Belmont. Avenue to PORTIA'S house.", 
+    "scene": "1", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "ANTONIO", 
+  "SALARINO", 
+  "SALANIO", 
+  "BASSANIO", 
+  "LORENZO", 
+  "GRATIANO", 
+  "PORTIA", 
+  "NERISSA", 
+  "Servant", 
+  "SHYLOCK", 
+  "MOROCCO", 
+  "LAUNCELOT", 
+  "GOBBO", 
+  "LEONARDO", 
+  "JESSICA", 
+  "ARRAGON", 
+  "TUBAL", 
+  "ALL", 
+  "SALERIO", 
+  "BALTHASAR", 
+  "DUKE", 
+  "Clerk", 
+  "STEPHANO"
+ ], 
+ "year": "1596-97 / 1600", 
+ "char_data": {
+  "PORTIA": {
+   "ratio": 43.21, 
+   "nlines": 605, 
+   "nedges": 14, 
+   "order_app": 6
+  }, 
+  "SALARINO": {
+   "ratio": 15.71, 
+   "nlines": 110, 
+   "nedges": 7, 
+   "order_app": 1
+  }, 
+  "DUKE": {
+   "ratio": 7.38, 
+   "nlines": 59, 
+   "nedges": 8, 
+   "order_app": 20
+  }, 
+  "ARRAGON": {
+   "ratio": 68.0, 
+   "nlines": 68, 
+   "nedges": 1, 
+   "order_app": 15
+  }, 
+  "ANTONIO": {
+   "ratio": 27.86, 
+   "nlines": 195, 
+   "nedges": 7, 
+   "order_app": 0
+  }, 
+  "MOROCCO": {
+   "ratio": 106.0, 
+   "nlines": 106, 
+   "nedges": 1, 
+   "order_app": 10
+  }, 
+  "LAUNCELOT": {
+   "ratio": 29.5, 
+   "nlines": 177, 
+   "nedges": 6, 
+   "order_app": 11
+  }, 
+  "NERISSA": {
+   "ratio": 14.83, 
+   "nlines": 89, 
+   "nedges": 6, 
+   "order_app": 7
+  }, 
+  "JESSICA": {
+   "ratio": 15.33, 
+   "nlines": 92, 
+   "nedges": 6, 
+   "order_app": 14
+  }, 
+  "Clerk": {
+   "ratio": 17.0, 
+   "nlines": 17, 
+   "nedges": 1, 
+   "order_app": 21
+  }, 
+  "GRATIANO": {
+   "ratio": 15.17, 
+   "nlines": 182, 
+   "nedges": 12, 
+   "order_app": 5
+  }, 
+  "GOBBO": {
+   "ratio": 18.5, 
+   "nlines": 37, 
+   "nedges": 2, 
+   "order_app": 12
+  }, 
+  "SHYLOCK": {
+   "ratio": 30.17, 
+   "nlines": 362, 
+   "nedges": 12, 
+   "order_app": 9
+  }, 
+  "STEPHANO": {
+   "ratio": 8.0, 
+   "nlines": 8, 
+   "nedges": 1, 
+   "order_app": 22
+  }, 
+  "Servant": {
+   "ratio": 5.67, 
+   "nlines": 17, 
+   "nedges": 3, 
+   "order_app": 8
+  }, 
+  "LORENZO": {
+   "ratio": 17.36, 
+   "nlines": 191, 
+   "nedges": 11, 
+   "order_app": 4
+  }, 
+  "SALERIO": {
+   "ratio": 4.33, 
+   "nlines": 26, 
+   "nedges": 6, 
+   "order_app": 18
+  }, 
+  "ALL": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 17
+  }, 
+  "BASSANIO": {
+   "ratio": 26.31, 
+   "nlines": 342, 
+   "nedges": 13, 
+   "order_app": 3
+  }, 
+  "BALTHASAR": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 19
+  }, 
+  "TUBAL": {
+   "ratio": 12.0, 
+   "nlines": 12, 
+   "nedges": 1, 
+   "order_app": 16
+  }, 
+  "LEONARDO": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 13
+  }, 
+  "SALANIO": {
+   "ratio": 11.6, 
+   "nlines": 58, 
+   "nedges": 5, 
+   "order_app": 2
+  }
+ }, 
+ "type": "Comedy"
+}

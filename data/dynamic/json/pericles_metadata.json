@@ -1,0 +1,1053 @@
+{
+ "title": "Pericles, Prince of Tyre", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/pericles_1_0.png", 
+    "char_data": {}, 
+    "location": "PROLOGUE", 
+    "scene": "0", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_1_1.png", 
+    "char_data": {
+     "Daughter": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "ANTIOCHUS": {
+      "ratio": 18.75, 
+      "nlines": 75, 
+      "nedges": 4
+     }, 
+     "Messenger": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "PERICLES": {
+      "ratio": 52.0, 
+      "nlines": 104, 
+      "nedges": 2
+     }, 
+     "THALIARD": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Antioch. A room in the palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_1_2.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Second Lord": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "PERICLES": {
+      "ratio": 50.5, 
+      "nlines": 101, 
+      "nedges": 2
+     }, 
+     "HELICANUS": {
+      "ratio": 16.0, 
+      "nlines": 32, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Tyre. A room in the palace.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_1_3.png", 
+    "char_data": {
+     "THALIARD": {
+      "ratio": 22.0, 
+      "nlines": 22, 
+      "nedges": 1
+     }, 
+     "HELICANUS": {
+      "ratio": 20.0, 
+      "nlines": 20, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Tyre. An ante-chamber in the palace.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_1_4.png", 
+    "char_data": {
+     "CLEON": {
+      "ratio": 25.33, 
+      "nlines": 76, 
+      "nedges": 3
+     }, 
+     "Lord": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "All": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "PERICLES": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "DIONYZA": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Tarsus. A room in the Governor's house.", 
+    "scene": "4", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/pericles_2_1.png", 
+    "char_data": {
+     "First Fisherman": {
+      "ratio": 13.0, 
+      "nlines": 39, 
+      "nedges": 3
+     }, 
+     "Second Fisherman": {
+      "ratio": 9.67, 
+      "nlines": 29, 
+      "nedges": 3
+     }, 
+     "PERICLES": {
+      "ratio": 26.67, 
+      "nlines": 80, 
+      "nedges": 3
+     }, 
+     "Third Fisherman": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Pentapolis. An open place by the sea-side.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_2_2.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "Third Lord": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "THAISA": {
+      "ratio": 26.0, 
+      "nlines": 26, 
+      "nedges": 1
+     }, 
+     "Second Lord": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "SIMONIDES": {
+      "ratio": 11.0, 
+      "nlines": 33, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The same. A public way or platform leading to the", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_2_3.png", 
+    "char_data": {
+     "SIMONIDES": {
+      "ratio": 15.0, 
+      "nlines": 75, 
+      "nedges": 5
+     }, 
+     "First Knight": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "KNIGHTS": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Knights": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "PERICLES": {
+      "ratio": 6.25, 
+      "nlines": 25, 
+      "nedges": 4
+     }, 
+     "THAISA": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "Marshal": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. A hall of state: a banquet prepared.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_2_4.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }, 
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "HELICANUS": {
+      "ratio": 8.25, 
+      "nlines": 33, 
+      "nedges": 4
+     }, 
+     "Third Lord": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "ESCANES": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "Second Lord": {
+      "ratio": 2.33, 
+      "nlines": 7, 
+      "nedges": 3
+     }, 
+     "GOWER": {
+      "ratio": 43.0, 
+      "nlines": 43, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Tyre. A room in the Governor's house.", 
+    "scene": "4", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_2_5.png", 
+    "char_data": {
+     "BOTH": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Third Knight": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "SIMONIDES": {
+      "ratio": 10.67, 
+      "nlines": 64, 
+      "nedges": 6
+     }, 
+     "First Knight": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "PERICLES": {
+      "ratio": 16.0, 
+      "nlines": 32, 
+      "nedges": 2
+     }, 
+     "THAISA": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "Second Knight": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Pentapolis. A room in the palace.", 
+    "scene": "5", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/pericles_3_1.png", 
+    "char_data": {
+     "First Sailor": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "PERICLES": {
+      "ratio": 16.0, 
+      "nlines": 64, 
+      "nedges": 4
+     }, 
+     "LYCHORIDA": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "GOWER": {
+      "ratio": 65.0, 
+      "nlines": 65, 
+      "nedges": 1
+     }, 
+     "Second Sailor": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Enter PERICLES, on shipboard", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_3_2.png", 
+    "char_data": {
+     "First Servant": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "CERIMON": {
+      "ratio": 15.67, 
+      "nlines": 94, 
+      "nedges": 6
+     }, 
+     "First Gentleman": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "Servant": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "PHILEMON": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Second Gentleman": {
+      "ratio": 3.75, 
+      "nlines": 15, 
+      "nedges": 4
+     }, 
+     "THAISA": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Ephesus. A room in CERIMON's house.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_3_3.png", 
+    "char_data": {
+     "CLEON": {
+      "ratio": 7.0, 
+      "nlines": 14, 
+      "nedges": 2
+     }, 
+     "PERICLES": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "DIONYZA": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Tarsus. A room in CLEON's house.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_3_4.png", 
+    "char_data": {
+     "CERIMON": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "THAISA": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Ephesus. A room in CERIMON's house.", 
+    "scene": "4", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/pericles_4_0.png", 
+    "char_data": {
+     "GOWER": {
+      "ratio": 0, 
+      "nlines": 53, 
+      "nedges": 0
+     }
+    }, 
+    "location": "PROLOGUE", 
+    "scene": "0", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_4_1.png", 
+    "char_data": {
+     "LEONINE": {
+      "ratio": 7.0, 
+      "nlines": 28, 
+      "nedges": 4
+     }, 
+     "Second Pirate": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "DIONYZA": {
+      "ratio": 19.0, 
+      "nlines": 38, 
+      "nedges": 2
+     }, 
+     "First Pirate": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Third Pirate": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "MARINA": {
+      "ratio": 23.5, 
+      "nlines": 47, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Tarsus. An open place near the sea-shore.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_4_2.png", 
+    "char_data": {
+     "MARINA": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "First Pirate": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "BOULT": {
+      "ratio": 9.5, 
+      "nlines": 38, 
+      "nedges": 4
+     }, 
+     "Pandar": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }, 
+     "Bawd": {
+      "ratio": 21.33, 
+      "nlines": 64, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Mytilene. A room in a brothel.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_4_3.png", 
+    "char_data": {
+     "CLEON": {
+      "ratio": 22.0, 
+      "nlines": 22, 
+      "nedges": 1
+     }, 
+     "GOWER": {
+      "ratio": 56.0, 
+      "nlines": 56, 
+      "nedges": 1
+     }, 
+     "DIONYZA": {
+      "ratio": 19.5, 
+      "nlines": 39, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Tarsus. A room in CLEON's house.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_4_4.png", 
+    "char_data": {}, 
+    "location": "Tarsus. Enter GOWER, before the monument of MARINA at Tarsus.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_4_5.png", 
+    "char_data": {
+     "Second Gentleman": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "First Gentleman": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Mytilene. A street before the brothel.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_4_6.png", 
+    "char_data": {
+     "LYSIMACHUS": {
+      "ratio": 17.0, 
+      "nlines": 51, 
+      "nedges": 3
+     }, 
+     "MARINA": {
+      "ratio": 18.67, 
+      "nlines": 56, 
+      "nedges": 3
+     }, 
+     "BOULT": {
+      "ratio": 11.5, 
+      "nlines": 46, 
+      "nedges": 4
+     }, 
+     "Pandar": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "Bawd": {
+      "ratio": 10.0, 
+      "nlines": 40, 
+      "nedges": 4
+     }
+    }, 
+    "location": "The same. A room in the brothel.", 
+    "scene": "6", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/pericles_5_0.png", 
+    "char_data": {
+     "GOWER": {
+      "ratio": 0, 
+      "nlines": 25, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Prologue", 
+    "scene": "0", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_5_1.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "HELICANUS": {
+      "ratio": 8.6, 
+      "nlines": 43, 
+      "nedges": 5
+     }, 
+     "Tyrian Sailor": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }, 
+     "First Gentleman": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "LYSIMACHUS": {
+      "ratio": 7.5, 
+      "nlines": 60, 
+      "nedges": 8
+     }, 
+     "DIANA": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "MARINA": {
+      "ratio": 33.5, 
+      "nlines": 67, 
+      "nedges": 2
+     }, 
+     "PERICLES": {
+      "ratio": 30.75, 
+      "nlines": 123, 
+      "nedges": 4
+     }
+    }, 
+    "location": "On board PERICLES' ship, off Mytilene. A close", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_5_2.png", 
+    "char_data": {
+     "GOWER": {
+      "ratio": 0, 
+      "nlines": 21, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Enter GOWER, before the temple of DIANA at Ephesus", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/pericles_5_3.png", 
+    "char_data": {
+     "HELICANUS": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "CERIMON": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "MARINA": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "PERICLES": {
+      "ratio": 14.25, 
+      "nlines": 57, 
+      "nedges": 4
+     }, 
+     "THAISA": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "GOWER": {
+      "ratio": 20.0, 
+      "nlines": 20, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The temple of Diana at Ephesus; THAISA standing", 
+    "scene": "3", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "ANTIOCHUS", 
+  "PERICLES", 
+  "Daughter", 
+  "THALIARD", 
+  "Messenger", 
+  "First Lord", 
+  "Second Lord", 
+  "HELICANUS", 
+  "CLEON", 
+  "DIONYZA", 
+  "Lord", 
+  "All", 
+  "GOWER", 
+  "First Fisherman", 
+  "Second Fisherman", 
+  "Third Fisherman", 
+  "SIMONIDES", 
+  "THAISA", 
+  "Third Lord", 
+  "KNIGHTS", 
+  "Marshal", 
+  "First Knight", 
+  "Knights", 
+  "ESCANES", 
+  "Second Knight", 
+  "Third Knight", 
+  "BOTH", 
+  "LYCHORIDA", 
+  "First Sailor", 
+  "Second Sailor", 
+  "CERIMON", 
+  "PHILEMON", 
+  "Servant", 
+  "First Gentleman", 
+  "Second Gentleman", 
+  "First Servant", 
+  "LEONINE", 
+  "MARINA", 
+  "First Pirate", 
+  "Second Pirate", 
+  "Third Pirate", 
+  "Pandar", 
+  "BOULT", 
+  "Bawd", 
+  "LYSIMACHUS", 
+  "Tyrian Sailor", 
+  "DIANA"
+ ], 
+ "year": "1608-09 / 1609", 
+ "char_data": {
+  "Second Fisherman": {
+   "ratio": 9.67, 
+   "nlines": 29, 
+   "nedges": 3, 
+   "order_app": 14
+  }, 
+  "HELICANUS": {
+   "ratio": 11.73, 
+   "nlines": 129, 
+   "nedges": 11, 
+   "order_app": 7
+  }, 
+  "CERIMON": {
+   "ratio": 16.86, 
+   "nlines": 118, 
+   "nedges": 7, 
+   "order_app": 30
+  }, 
+  "DIONYZA": {
+   "ratio": 18.4, 
+   "nlines": 92, 
+   "nedges": 5, 
+   "order_app": 9
+  }, 
+  "ANTIOCHUS": {
+   "ratio": 18.75, 
+   "nlines": 75, 
+   "nedges": 4, 
+   "order_app": 0
+  }, 
+  "Messenger": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 4
+  }, 
+  "Third Fisherman": {
+   "ratio": 6.0, 
+   "nlines": 18, 
+   "nedges": 3, 
+   "order_app": 15
+  }, 
+  "PHILEMON": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 31
+  }, 
+  "Knights": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 22
+  }, 
+  "MARINA": {
+   "ratio": 31.5, 
+   "nlines": 189, 
+   "nedges": 6, 
+   "order_app": 37
+  }, 
+  "Lord": {
+   "ratio": 8.0, 
+   "nlines": 8, 
+   "nedges": 1, 
+   "order_app": 10
+  }, 
+  "Second Lord": {
+   "ratio": 2.75, 
+   "nlines": 11, 
+   "nedges": 4, 
+   "order_app": 6
+  }, 
+  "THAISA": {
+   "ratio": 17.6, 
+   "nlines": 88, 
+   "nedges": 5, 
+   "order_app": 17
+  }, 
+  "ESCANES": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 23
+  }, 
+  "First Lord": {
+   "ratio": 3.71, 
+   "nlines": 26, 
+   "nedges": 7, 
+   "order_app": 5
+  }, 
+  "LEONINE": {
+   "ratio": 7.0, 
+   "nlines": 28, 
+   "nedges": 4, 
+   "order_app": 36
+  }, 
+  "Bawd": {
+   "ratio": 26.0, 
+   "nlines": 104, 
+   "nedges": 4, 
+   "order_app": 43
+  }, 
+  "Pandar": {
+   "ratio": 15.0, 
+   "nlines": 30, 
+   "nedges": 2, 
+   "order_app": 41
+  }, 
+  "First Gentleman": {
+   "ratio": 6.25, 
+   "nlines": 25, 
+   "nedges": 4, 
+   "order_app": 33
+  }, 
+  "Third Knight": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 25
+  }, 
+  "Tyrian Sailor": {
+   "ratio": 3.67, 
+   "nlines": 11, 
+   "nedges": 3, 
+   "order_app": 45
+  }, 
+  "Third Pirate": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 40
+  }, 
+  "SIMONIDES": {
+   "ratio": 15.64, 
+   "nlines": 172, 
+   "nedges": 11, 
+   "order_app": 16
+  }, 
+  "First Knight": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 21
+  }, 
+  "First Fisherman": {
+   "ratio": 13.0, 
+   "nlines": 39, 
+   "nedges": 3, 
+   "order_app": 13
+  }, 
+  "Second Sailor": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 29
+  }, 
+  "Second Knight": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 24
+  }, 
+  "First Sailor": {
+   "ratio": 4.5, 
+   "nlines": 9, 
+   "nedges": 2, 
+   "order_app": 28
+  }, 
+  "Daughter": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 2
+  }, 
+  "BOTH": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 26
+  }, 
+  "Servant": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 32
+  }, 
+  "Second Pirate": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 39
+  }, 
+  "CLEON": {
+   "ratio": 37.33, 
+   "nlines": 112, 
+   "nedges": 3, 
+   "order_app": 8
+  }, 
+  "THALIARD": {
+   "ratio": 14.0, 
+   "nlines": 28, 
+   "nedges": 2, 
+   "order_app": 3
+  }, 
+  "LYSIMACHUS": {
+   "ratio": 11.1, 
+   "nlines": 111, 
+   "nedges": 10, 
+   "order_app": 44
+  }, 
+  "KNIGHTS": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 19
+  }, 
+  "PERICLES": {
+   "ratio": 28.77, 
+   "nlines": 633, 
+   "nedges": 22, 
+   "order_app": 1
+  }, 
+  "Marshal": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "All": {
+   "ratio": 1.0, 
+   "nlines": 3, 
+   "nedges": 3, 
+   "order_app": 11
+  }, 
+  "BOULT": {
+   "ratio": 16.8, 
+   "nlines": 84, 
+   "nedges": 5, 
+   "order_app": 42
+  }, 
+  "First Servant": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 35
+  }, 
+  "First Pirate": {
+   "ratio": 1.0, 
+   "nlines": 3, 
+   "nedges": 3, 
+   "order_app": 38
+  }, 
+  "DIANA": {
+   "ratio": 5.5, 
+   "nlines": 11, 
+   "nedges": 2, 
+   "order_app": 46
+  }, 
+  "Third Lord": {
+   "ratio": 1.0, 
+   "nlines": 3, 
+   "nedges": 3, 
+   "order_app": 18
+  }, 
+  "Second Gentleman": {
+   "ratio": 4.75, 
+   "nlines": 19, 
+   "nedges": 4, 
+   "order_app": 34
+  }, 
+  "LYCHORIDA": {
+   "ratio": 11.0, 
+   "nlines": 11, 
+   "nedges": 1, 
+   "order_app": 27
+  }, 
+  "GOWER": {
+   "ratio": 94.33, 
+   "nlines": 283, 
+   "nedges": 3, 
+   "order_app": 12
+  }
+ }, 
+ "type": "Comedy"
+}

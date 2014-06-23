@@ -1,0 +1,753 @@
+{
+ "title": "Winter's Tale", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/winters_tale_1_1.png", 
+    "char_data": {
+     "CAMILLO": {
+      "ratio": 23.0, 
+      "nlines": 23, 
+      "nedges": 1
+     }, 
+     "ARCHIDAMUS": {
+      "ratio": 23.0, 
+      "nlines": 23, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Antechamber in LEONTES' palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_1_2.png", 
+    "char_data": {
+     "CAMILLO": {
+      "ratio": 62.5, 
+      "nlines": 125, 
+      "nedges": 2
+     }, 
+     "MAMILLIUS": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "LEONTES": {
+      "ratio": 55.0, 
+      "nlines": 220, 
+      "nedges": 4
+     }, 
+     "POLIXENES": {
+      "ratio": 43.0, 
+      "nlines": 129, 
+      "nedges": 3
+     }, 
+     "HERMIONE": {
+      "ratio": 34.0, 
+      "nlines": 68, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room of state in the same.", 
+    "scene": "2", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/winters_tale_2_1.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "First Lady": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "LEONTES": {
+      "ratio": 36.67, 
+      "nlines": 110, 
+      "nedges": 3
+     }, 
+     "Second Lady": {
+      "ratio": 1.33, 
+      "nlines": 4, 
+      "nedges": 3
+     }, 
+     "HERMIONE": {
+      "ratio": 11.75, 
+      "nlines": 47, 
+      "nedges": 4
+     }, 
+     "MAMILLIUS": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }, 
+     "ANTIGONUS": {
+      "ratio": 16.0, 
+      "nlines": 32, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in LEONTES' palace.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_2_2.png", 
+    "char_data": {
+     "EMILIA": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }, 
+     "Gaoler": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "PAULINA": {
+      "ratio": 27.5, 
+      "nlines": 55, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A prison.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_2_3.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "PAULINA": {
+      "ratio": 22.0, 
+      "nlines": 88, 
+      "nedges": 4
+     }, 
+     "First Servant": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "LEONTES": {
+      "ratio": 19.17, 
+      "nlines": 115, 
+      "nedges": 6
+     }, 
+     "Lords": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Servant": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "Second Servant": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "ANTIGONUS": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A room in LEONTES' palace.", 
+    "scene": "3", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/winters_tale_3_1.png", 
+    "char_data": {
+     "DION": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }, 
+     "CLEOMENES": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A sea-port in Sicilia.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_3_2.png", 
+    "char_data": {
+     "Lords": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "PAULINA": {
+      "ratio": 30.5, 
+      "nlines": 61, 
+      "nedges": 2
+     }, 
+     "LEONTES": {
+      "ratio": 13.33, 
+      "nlines": 80, 
+      "nedges": 6
+     }, 
+     "First Lord": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "Servant": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "CLEOMENES": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "HERMIONE": {
+      "ratio": 22.5, 
+      "nlines": 90, 
+      "nedges": 4
+     }, 
+     "Officer": {
+      "ratio": 6.75, 
+      "nlines": 27, 
+      "nedges": 4
+     }
+    }, 
+    "location": "A court of Justice.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_3_3.png", 
+    "char_data": {
+     "Shepherd": {
+      "ratio": 22.5, 
+      "nlines": 45, 
+      "nedges": 2
+     }, 
+     "Mariner": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "ANTIGONUS": {
+      "ratio": 27.0, 
+      "nlines": 54, 
+      "nedges": 2
+     }, 
+     "Clown": {
+      "ratio": 34.0, 
+      "nlines": 34, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Bohemia. A desert country near the sea.", 
+    "scene": "3", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/winters_tale_4_2.png", 
+    "char_data": {
+     "CAMILLO": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }, 
+     "POLIXENES": {
+      "ratio": 40.0, 
+      "nlines": 40, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Bohemia. The palace of POLIXENES.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_4_3.png", 
+    "char_data": {
+     "AUTOLYCUS": {
+      "ratio": 44.5, 
+      "nlines": 89, 
+      "nedges": 2
+     }, 
+     "Clown": {
+      "ratio": 42.0, 
+      "nlines": 42, 
+      "nedges": 1
+     }, 
+     "Time": {
+      "ratio": 34.0, 
+      "nlines": 34, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A road near the Shepherd's cottage.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_4_4.png", 
+    "char_data": {
+     "Shepherd": {
+      "ratio": 12.14, 
+      "nlines": 85, 
+      "nedges": 7
+     }, 
+     "MOPSA": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }, 
+     "AUTOLYCUS": {
+      "ratio": 18.09, 
+      "nlines": 199, 
+      "nedges": 11
+     }, 
+     "Servant": {
+      "ratio": 9.25, 
+      "nlines": 37, 
+      "nedges": 4
+     }, 
+     "POLIXENES": {
+      "ratio": 16.5, 
+      "nlines": 99, 
+      "nedges": 6
+     }, 
+     "Clown": {
+      "ratio": 9.5, 
+      "nlines": 76, 
+      "nedges": 8
+     }, 
+     "DORCAS": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "Shepard": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "PERDITA": {
+      "ratio": 20.67, 
+      "nlines": 124, 
+      "nedges": 6
+     }, 
+     "FLORIZEL": {
+      "ratio": 34.0, 
+      "nlines": 170, 
+      "nedges": 5
+     }, 
+     "CAMILLO": {
+      "ratio": 22.83, 
+      "nlines": 137, 
+      "nedges": 6
+     }
+    }, 
+    "location": "The Shepherd's cottage.", 
+    "scene": "4", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/winters_tale_5_1.png", 
+    "char_data": {
+     "PAULINA": {
+      "ratio": 17.75, 
+      "nlines": 71, 
+      "nedges": 4
+     }, 
+     "LEONTES": {
+      "ratio": 18.5, 
+      "nlines": 111, 
+      "nedges": 6
+     }, 
+     "DION": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "Gentleman": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "CLEOMENES": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "Lord": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "PERDITA": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "FLORIZEL": {
+      "ratio": 19.0, 
+      "nlines": 38, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in LEONTES' palace.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_5_2.png", 
+    "char_data": {
+     "Shepherd": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "AUTOLYCUS": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "Third Gentleman": {
+      "ratio": 33.0, 
+      "nlines": 66, 
+      "nedges": 2
+     }, 
+     "First Gentleman": {
+      "ratio": 9.33, 
+      "nlines": 28, 
+      "nedges": 3
+     }, 
+     "Clown": {
+      "ratio": 17.5, 
+      "nlines": 35, 
+      "nedges": 2
+     }, 
+     "Second Gentleman": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before LEONTES' palace.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/winters_tale_5_3.png", 
+    "char_data": {
+     "PAULINA": {
+      "ratio": 15.6, 
+      "nlines": 78, 
+      "nedges": 5
+     }, 
+     "LEONTES": {
+      "ratio": 26.0, 
+      "nlines": 78, 
+      "nedges": 3
+     }, 
+     "POLIXENES": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "HERMIONE": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "CAMILLO": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "PERDITA": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A chapel in PAULINA'S house.", 
+    "scene": "3", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "ARCHIDAMUS", 
+  "CAMILLO", 
+  "POLIXENES", 
+  "LEONTES", 
+  "HERMIONE", 
+  "MAMILLIUS", 
+  "First Lady", 
+  "Second Lady", 
+  "First Lord", 
+  "ANTIGONUS", 
+  "PAULINA", 
+  "Gaoler", 
+  "EMILIA", 
+  "First Servant", 
+  "Second Servant", 
+  "Lords", 
+  "Servant", 
+  "CLEOMENES", 
+  "DION", 
+  "Officer", 
+  "Mariner", 
+  "Shepherd", 
+  "Clown", 
+  "Time", 
+  "AUTOLYCUS", 
+  "FLORIZEL", 
+  "PERDITA", 
+  "DORCAS", 
+  "MOPSA", 
+  "Shepard", 
+  "Gentleman", 
+  "Lord", 
+  "First Gentleman", 
+  "Second Gentleman", 
+  "Third Gentleman"
+ ], 
+ "year": "1610-11 / 1623", 
+ "char_data": {
+  "First Lady": {
+   "ratio": 3.0, 
+   "nlines": 9, 
+   "nedges": 3, 
+   "order_app": 6
+  }, 
+  "AUTOLYCUS": {
+   "ratio": 23.85, 
+   "nlines": 310, 
+   "nedges": 13, 
+   "order_app": 24
+  }, 
+  "ARCHIDAMUS": {
+   "ratio": 23.0, 
+   "nlines": 23, 
+   "nedges": 1, 
+   "order_app": 0
+  }, 
+  "Gentleman": {
+   "ratio": 9.0, 
+   "nlines": 18, 
+   "nedges": 2, 
+   "order_app": 30
+  }, 
+  "Second Servant": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 14
+  }, 
+  "Lord": {
+   "ratio": 8.0, 
+   "nlines": 24, 
+   "nedges": 3, 
+   "order_app": 31
+  }, 
+  "PERDITA": {
+   "ratio": 14.89, 
+   "nlines": 134, 
+   "nedges": 9, 
+   "order_app": 26
+  }, 
+  "Gaoler": {
+   "ratio": 6.5, 
+   "nlines": 13, 
+   "nedges": 2, 
+   "order_app": 11
+  }, 
+  "MOPSA": {
+   "ratio": 6.67, 
+   "nlines": 20, 
+   "nedges": 3, 
+   "order_app": 28
+  }, 
+  "Shepherd": {
+   "ratio": 17.25, 
+   "nlines": 138, 
+   "nedges": 8, 
+   "order_app": 21
+  }, 
+  "POLIXENES": {
+   "ratio": 30.89, 
+   "nlines": 278, 
+   "nedges": 9, 
+   "order_app": 2
+  }, 
+  "Third Gentleman": {
+   "ratio": 33.0, 
+   "nlines": 66, 
+   "nedges": 2, 
+   "order_app": 34
+  }, 
+  "First Gentleman": {
+   "ratio": 9.33, 
+   "nlines": 28, 
+   "nedges": 3, 
+   "order_app": 32
+  }, 
+  "DORCAS": {
+   "ratio": 4.0, 
+   "nlines": 12, 
+   "nedges": 3, 
+   "order_app": 27
+  }, 
+  "HERMIONE": {
+   "ratio": 23.67, 
+   "nlines": 213, 
+   "nedges": 9, 
+   "order_app": 4
+  }, 
+  "FLORIZEL": {
+   "ratio": 29.71, 
+   "nlines": 208, 
+   "nedges": 7, 
+   "order_app": 25
+  }, 
+  "MAMILLIUS": {
+   "ratio": 5.5, 
+   "nlines": 22, 
+   "nedges": 4, 
+   "order_app": 5
+  }, 
+  "LEONTES": {
+   "ratio": 44.63, 
+   "nlines": 714, 
+   "nedges": 16, 
+   "order_app": 3
+  }, 
+  "First Lord": {
+   "ratio": 7.4, 
+   "nlines": 37, 
+   "nedges": 5, 
+   "order_app": 8
+  }, 
+  "Servant": {
+   "ratio": 7.83, 
+   "nlines": 47, 
+   "nedges": 6, 
+   "order_app": 16
+  }, 
+  "DION": {
+   "ratio": 14.0, 
+   "nlines": 28, 
+   "nedges": 2, 
+   "order_app": 18
+  }, 
+  "CLEOMENES": {
+   "ratio": 6.5, 
+   "nlines": 26, 
+   "nedges": 4, 
+   "order_app": 17
+  }, 
+  "Second Lady": {
+   "ratio": 1.33, 
+   "nlines": 4, 
+   "nedges": 3, 
+   "order_app": 7
+  }, 
+  "Officer": {
+   "ratio": 6.75, 
+   "nlines": 27, 
+   "nedges": 4, 
+   "order_app": 19
+  }, 
+  "Time": {
+   "ratio": 34.0, 
+   "nlines": 34, 
+   "nedges": 1, 
+   "order_app": 23
+  }, 
+  "CAMILLO": {
+   "ratio": 34.11, 
+   "nlines": 307, 
+   "nedges": 9, 
+   "order_app": 1
+  }, 
+  "Mariner": {
+   "ratio": 12.0, 
+   "nlines": 12, 
+   "nedges": 1, 
+   "order_app": 20
+  }, 
+  "Lords": {
+   "ratio": 0.75, 
+   "nlines": 3, 
+   "nedges": 4, 
+   "order_app": 15
+  }, 
+  "PAULINA": {
+   "ratio": 27.15, 
+   "nlines": 353, 
+   "nedges": 13, 
+   "order_app": 10
+  }, 
+  "First Servant": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 13
+  }, 
+  "Shepard": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 29
+  }, 
+  "Second Gentleman": {
+   "ratio": 9.0, 
+   "nlines": 18, 
+   "nedges": 2, 
+   "order_app": 33
+  }, 
+  "Clown": {
+   "ratio": 23.38, 
+   "nlines": 187, 
+   "nedges": 8, 
+   "order_app": 22
+  }, 
+  "EMILIA": {
+   "ratio": 10.5, 
+   "nlines": 21, 
+   "nedges": 2, 
+   "order_app": 12
+  }, 
+  "ANTIGONUS": {
+   "ratio": 16.57, 
+   "nlines": 116, 
+   "nedges": 7, 
+   "order_app": 9
+  }
+ }, 
+ "type": "Comedy"
+}

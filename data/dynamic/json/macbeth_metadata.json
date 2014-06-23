@@ -1,0 +1,1142 @@
+{
+ "title": "Macbeth", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/macbeth_1_1.png", 
+    "char_data": {
+     "First Witch": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Second Witch": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "ALL": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "Third Witch": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A desert place.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_1_2.png", 
+    "char_data": {
+     "DUNCAN": {
+      "ratio": 6.0, 
+      "nlines": 18, 
+      "nedges": 3
+     }, 
+     "MALCOLM": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "ROSS": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "LENNOX": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Sergeant": {
+      "ratio": 17.5, 
+      "nlines": 35, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A camp near Forres.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_1_3.png", 
+    "char_data": {
+     "ALL": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "ANGUS": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "Third Witch": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "MACBETH": {
+      "ratio": 13.75, 
+      "nlines": 55, 
+      "nedges": 4
+     }, 
+     "BANQUO": {
+      "ratio": 10.75, 
+      "nlines": 43, 
+      "nedges": 4
+     }, 
+     "First Witch": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "Second Witch": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "ROSS": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A heath near Forres.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_1_4.png", 
+    "char_data": {
+     "MALCOLM": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "MACBETH": {
+      "ratio": 17.0, 
+      "nlines": 17, 
+      "nedges": 1
+     }, 
+     "BANQUO": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "DUNCAN": {
+      "ratio": 13.0, 
+      "nlines": 39, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Forres. The palace.", 
+    "scene": "4", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_1_5.png", 
+    "char_data": {
+     "Messenger": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "MACBETH": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "LADY MACBETH": {
+      "ratio": 38.5, 
+      "nlines": 77, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Inverness. Macbeth's castle.", 
+    "scene": "5", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_1_6.png", 
+    "char_data": {
+     "BANQUO": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "LADY MACBETH": {
+      "ratio": 11.0, 
+      "nlines": 11, 
+      "nedges": 1
+     }, 
+     "DUNCAN": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before Macbeth's castle.", 
+    "scene": "6", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_1_7.png", 
+    "char_data": {
+     "MACBETH": {
+      "ratio": 51.0, 
+      "nlines": 51, 
+      "nedges": 1
+     }, 
+     "LADY MACBETH": {
+      "ratio": 43.0, 
+      "nlines": 43, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Macbeth's castle.", 
+    "scene": "7", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/macbeth_2_1.png", 
+    "char_data": {
+     "FLEANCE": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "BANQUO": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }, 
+     "MACBETH": {
+      "ratio": 48.0, 
+      "nlines": 48, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Court of Macbeth's castle.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_2_2.png", 
+    "char_data": {
+     "MACBETH": {
+      "ratio": 44.0, 
+      "nlines": 44, 
+      "nedges": 1
+     }, 
+     "LADY MACBETH": {
+      "ratio": 55.0, 
+      "nlines": 55, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_2_3.png", 
+    "char_data": {
+     "ALL": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "MACDUFF": {
+      "ratio": 6.57, 
+      "nlines": 46, 
+      "nedges": 7
+     }, 
+     "MALCOLM": {
+      "ratio": 3.0, 
+      "nlines": 15, 
+      "nedges": 5
+     }, 
+     "LENNOX": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }, 
+     "LADY MACBETH": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "MACBETH": {
+      "ratio": 6.0, 
+      "nlines": 36, 
+      "nedges": 6
+     }, 
+     "DONALBAIN": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "BANQUO": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "Porter": {
+      "ratio": 53.0, 
+      "nlines": 53, 
+      "nedges": 1
+     }
+    }, 
+    "location": "The same.", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_2_4.png", 
+    "char_data": {
+     "MACDUFF": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "Old Man": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "ROSS": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Outside Macbeth's castle.", 
+    "scene": "4", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/macbeth_3_1.png", 
+    "char_data": {
+     "Both Murderers": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "MACBETH": {
+      "ratio": 20.33, 
+      "nlines": 122, 
+      "nedges": 6
+     }, 
+     "LADY MACBETH": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "Second Murderer": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "First Murderer": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "BANQUO": {
+      "ratio": 22.0, 
+      "nlines": 22, 
+      "nedges": 1
+     }, 
+     "ATTENDANT": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Forres. The palace.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_3_2.png", 
+    "char_data": {
+     "Servant": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "MACBETH": {
+      "ratio": 43.0, 
+      "nlines": 43, 
+      "nedges": 1
+     }, 
+     "LADY MACBETH": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The palace.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_3_3.png", 
+    "char_data": {
+     "First Murderer": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "Third Murderer": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "BANQUO": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "Second Murderer": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A park near the palace.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_3_4.png", 
+    "char_data": {
+     "Lords": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "LENNOX": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "MACBETH": {
+      "ratio": 22.6, 
+      "nlines": 113, 
+      "nedges": 5
+     }, 
+     "LADY MACBETH": {
+      "ratio": 14.0, 
+      "nlines": 42, 
+      "nedges": 3
+     }, 
+     "First Murderer": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "ROSS": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. Hall in the palace.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_3_5.png", 
+    "char_data": {
+     "First Witch": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "HECATE": {
+      "ratio": 36.0, 
+      "nlines": 36, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A Heath.", 
+    "scene": "5", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_3_6.png", 
+    "char_data": {
+     "Lord": {
+      "ratio": 22.0, 
+      "nlines": 22, 
+      "nedges": 1
+     }, 
+     "LENNOX": {
+      "ratio": 34.0, 
+      "nlines": 34, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Forres. The palace.", 
+    "scene": "6", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/macbeth_4_1.png", 
+    "char_data": {
+     "ALL": {
+      "ratio": 3.0, 
+      "nlines": 15, 
+      "nedges": 5
+     }, 
+     "LENNOX": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "Second Apparition": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "HECATE": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "Third Witch": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "MACBETH": {
+      "ratio": 11.86, 
+      "nlines": 83, 
+      "nedges": 7
+     }, 
+     "First Witch": {
+      "ratio": 4.83, 
+      "nlines": 29, 
+      "nedges": 6
+     }, 
+     "Second Witch": {
+      "ratio": 3.8, 
+      "nlines": 19, 
+      "nedges": 5
+     }, 
+     "Third Apparition": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "First Apparition": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A cavern. In the middle, a boiling cauldron.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_4_2.png", 
+    "char_data": {
+     "LADY MACDUFF": {
+      "ratio": 10.75, 
+      "nlines": 43, 
+      "nedges": 4
+     }, 
+     "First Murderer": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "ROSS": {
+      "ratio": 21.0, 
+      "nlines": 21, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }, 
+     "Son": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Fife. Macduff's castle.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_4_3.png", 
+    "char_data": {
+     "Doctor": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "MALCOLM": {
+      "ratio": 48.67, 
+      "nlines": 146, 
+      "nedges": 3
+     }, 
+     "MACDUFF": {
+      "ratio": 46.5, 
+      "nlines": 93, 
+      "nedges": 2
+     }, 
+     "ROSS": {
+      "ratio": 20.5, 
+      "nlines": 41, 
+      "nedges": 2
+     }
+    }, 
+    "location": "England. Before the King's palace.", 
+    "scene": "3", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/macbeth_5_1.png", 
+    "char_data": {
+     "Gentlewoman": {
+      "ratio": 12.5, 
+      "nlines": 25, 
+      "nedges": 2
+     }, 
+     "LADY MACBETH": {
+      "ratio": 10.5, 
+      "nlines": 21, 
+      "nedges": 2
+     }, 
+     "Doctor": {
+      "ratio": 15.5, 
+      "nlines": 31, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Dunsinane. Ante-room in the castle.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_5_2.png", 
+    "char_data": {
+     "ANGUS": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "LENNOX": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }, 
+     "MENTEITH": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "CAITHNESS": {
+      "ratio": 3.67, 
+      "nlines": 11, 
+      "nedges": 3
+     }
+    }, 
+    "location": "The country near Dunsinane.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_5_3.png", 
+    "char_data": {
+     "Servant": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "SEYTON": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "MACBETH": {
+      "ratio": 19.67, 
+      "nlines": 59, 
+      "nedges": 3
+     }, 
+     "Doctor": {
+      "ratio": 10.0, 
+      "nlines": 10, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Dunsinane. A room in the castle.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_5_4.png", 
+    "char_data": {
+     "SIWARD": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "Soldiers": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "MALCOLM": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }, 
+     "MACDUFF": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "MENTEITH": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Country near Birnam wood.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_5_5.png", 
+    "char_data": {
+     "SEYTON": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "Messenger": {
+      "ratio": 9.0, 
+      "nlines": 9, 
+      "nedges": 1
+     }, 
+     "MACBETH": {
+      "ratio": 25.0, 
+      "nlines": 50, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Dunsinane. Within the castle.", 
+    "scene": "5", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_5_6.png", 
+    "char_data": {
+     "SIWARD": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "MALCOLM": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "MACDUFF": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Dunsinane. Before the castle.", 
+    "scene": "6", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_5_7.png", 
+    "char_data": {
+     "SIWARD": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }, 
+     "YOUNG SIWARD": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "MACDUFF": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "MACBETH": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "MALCOLM": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "7", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/macbeth_5_8.png", 
+    "char_data": {
+     "ALL": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "MACDUFF": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }, 
+     "SIWARD": {
+      "ratio": 4.0, 
+      "nlines": 12, 
+      "nedges": 3
+     }, 
+     "MALCOLM": {
+      "ratio": 5.5, 
+      "nlines": 22, 
+      "nedges": 4
+     }, 
+     "MACBETH": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "ROSS": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "8", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "First Witch", 
+  "Second Witch", 
+  "Third Witch", 
+  "ALL", 
+  "DUNCAN", 
+  "MALCOLM", 
+  "Sergeant", 
+  "LENNOX", 
+  "ROSS", 
+  "MACBETH", 
+  "BANQUO", 
+  "ANGUS", 
+  "LADY MACBETH", 
+  "Messenger", 
+  "FLEANCE", 
+  "Porter", 
+  "MACDUFF", 
+  "DONALBAIN", 
+  "Old Man", 
+  "ATTENDANT", 
+  "First Murderer", 
+  "Second Murderer", 
+  "Both Murderers", 
+  "Servant", 
+  "Third Murderer", 
+  "Lords", 
+  "HECATE", 
+  "Lord", 
+  "First Apparition", 
+  "Second Apparition", 
+  "Third Apparition", 
+  "LADY MACDUFF", 
+  "Son", 
+  "Doctor", 
+  "Gentlewoman", 
+  "MENTEITH", 
+  "CAITHNESS", 
+  "SEYTON", 
+  "SIWARD", 
+  "Soldiers", 
+  "YOUNG SIWARD"
+ ], 
+ "year": "1605-06 / 1623", 
+ "char_data": {
+  "DONALBAIN": {
+   "ratio": 5.0, 
+   "nlines": 10, 
+   "nedges": 2, 
+   "order_app": 17
+  }, 
+  "Doctor": {
+   "ratio": 11.5, 
+   "nlines": 46, 
+   "nedges": 4, 
+   "order_app": 33
+  }, 
+  "SIWARD": {
+   "ratio": 6.6, 
+   "nlines": 33, 
+   "nedges": 5, 
+   "order_app": 38
+  }, 
+  "Old Man": {
+   "ratio": 12.0, 
+   "nlines": 12, 
+   "nedges": 1, 
+   "order_app": 18
+  }, 
+  "Messenger": {
+   "ratio": 8.0, 
+   "nlines": 24, 
+   "nedges": 3, 
+   "order_app": 13
+  }, 
+  "Sergeant": {
+   "ratio": 17.5, 
+   "nlines": 35, 
+   "nedges": 2, 
+   "order_app": 6
+  }, 
+  "Lord": {
+   "ratio": 22.0, 
+   "nlines": 22, 
+   "nedges": 1, 
+   "order_app": 27
+  }, 
+  "Porter": {
+   "ratio": 53.0, 
+   "nlines": 53, 
+   "nedges": 1, 
+   "order_app": 15
+  }, 
+  "LENNOX": {
+   "ratio": 9.5, 
+   "nlines": 76, 
+   "nedges": 8, 
+   "order_app": 7
+  }, 
+  "MACDUFF": {
+   "ratio": 21.22, 
+   "nlines": 191, 
+   "nedges": 9, 
+   "order_app": 16
+  }, 
+  "Both Murderers": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 22
+  }, 
+  "MALCOLM": {
+   "ratio": 16.77, 
+   "nlines": 218, 
+   "nedges": 13, 
+   "order_app": 5
+  }, 
+  "LADY MACBETH": {
+   "ratio": 27.7, 
+   "nlines": 277, 
+   "nedges": 10, 
+   "order_app": 12
+  }, 
+  "Second Murderer": {
+   "ratio": 4.0, 
+   "nlines": 16, 
+   "nedges": 4, 
+   "order_app": 21
+  }, 
+  "First Murderer": {
+   "ratio": 5.5, 
+   "nlines": 33, 
+   "nedges": 6, 
+   "order_app": 20
+  }, 
+  "MENTEITH": {
+   "ratio": 2.4, 
+   "nlines": 12, 
+   "nedges": 5, 
+   "order_app": 35
+  }, 
+  "BANQUO": {
+   "ratio": 10.08, 
+   "nlines": 121, 
+   "nedges": 12, 
+   "order_app": 10
+  }, 
+  "First Witch": {
+   "ratio": 8.25, 
+   "nlines": 66, 
+   "nedges": 8, 
+   "order_app": 0
+  }, 
+  "LADY MACDUFF": {
+   "ratio": 10.75, 
+   "nlines": 43, 
+   "nedges": 4, 
+   "order_app": 31
+  }, 
+  "YOUNG SIWARD": {
+   "ratio": 8.0, 
+   "nlines": 8, 
+   "nedges": 1, 
+   "order_app": 40
+  }, 
+  "Servant": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 23
+  }, 
+  "ANGUS": {
+   "ratio": 5.25, 
+   "nlines": 21, 
+   "nedges": 4, 
+   "order_app": 11
+  }, 
+  "Third Witch": {
+   "ratio": 6.75, 
+   "nlines": 27, 
+   "nedges": 4, 
+   "order_app": 2
+  }, 
+  "CAITHNESS": {
+   "ratio": 3.67, 
+   "nlines": 11, 
+   "nedges": 3, 
+   "order_app": 36
+  }, 
+  "Third Murderer": {
+   "ratio": 2.67, 
+   "nlines": 8, 
+   "nedges": 3, 
+   "order_app": 24
+  }, 
+  "Second Witch": {
+   "ratio": 5.8, 
+   "nlines": 29, 
+   "nedges": 5, 
+   "order_app": 1
+  }, 
+  "Third Apparition": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 30
+  }, 
+  "Gentlewoman": {
+   "ratio": 12.5, 
+   "nlines": 25, 
+   "nedges": 2, 
+   "order_app": 34
+  }, 
+  "First Apparition": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 28
+  }, 
+  "Lords": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 25
+  }, 
+  "ALL": {
+   "ratio": 4.29, 
+   "nlines": 30, 
+   "nedges": 7, 
+   "order_app": 3
+  }, 
+  "FLEANCE": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 14
+  }, 
+  "Second Apparition": {
+   "ratio": 2.5, 
+   "nlines": 5, 
+   "nedges": 2, 
+   "order_app": 29
+  }, 
+  "DUNCAN": {
+   "ratio": 12.67, 
+   "nlines": 76, 
+   "nedges": 6, 
+   "order_app": 4
+  }, 
+  "HECATE": {
+   "ratio": 21.5, 
+   "nlines": 43, 
+   "nedges": 2, 
+   "order_app": 26
+  }, 
+  "MACBETH": {
+   "ratio": 30.68, 
+   "nlines": 767, 
+   "nedges": 25, 
+   "order_app": 9
+  }, 
+  "Son": {
+   "ratio": 11.0, 
+   "nlines": 22, 
+   "nedges": 2, 
+   "order_app": 32
+  }, 
+  "Soldiers": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 39
+  }, 
+  "ATTENDANT": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 19
+  }, 
+  "SEYTON": {
+   "ratio": 6.0, 
+   "nlines": 6, 
+   "nedges": 1, 
+   "order_app": 37
+  }, 
+  "ROSS": {
+   "ratio": 12.45, 
+   "nlines": 137, 
+   "nedges": 11, 
+   "order_app": 8
+  }
+ }, 
+ "type": "Tragedy"
+}

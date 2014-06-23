@@ -1,0 +1,1074 @@
+{
+ "title": "Cymbeline", 
+ "acts": [
+  [
+   {
+    "graph_img_f": "imgs/cymbeline_1_1.png", 
+    "char_data": {
+     "POSTHUMUS LEONATUS": {
+      "ratio": 11.0, 
+      "nlines": 33, 
+      "nedges": 3
+     }, 
+     "CYMBELINE": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "IMOGEN": {
+      "ratio": 11.75, 
+      "nlines": 47, 
+      "nedges": 4
+     }, 
+     "PISANIO": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "QUEEN": {
+      "ratio": 7.6, 
+      "nlines": 38, 
+      "nedges": 5
+     }, 
+     "First Gentleman": {
+      "ratio": 34.5, 
+      "nlines": 69, 
+      "nedges": 2
+     }, 
+     "Second Gentleman": {
+      "ratio": 13.0, 
+      "nlines": 13, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Britain. The garden of Cymbeline's palace.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_1_2.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "Second Lord": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "CLOTEN": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. A public place.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_1_3.png", 
+    "char_data": {
+     "PISANIO": {
+      "ratio": 14.0, 
+      "nlines": 14, 
+      "nedges": 1
+     }, 
+     "Lady": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "IMOGEN": {
+      "ratio": 17.0, 
+      "nlines": 34, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in Cymbeline's palace.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_1_4.png", 
+    "char_data": {
+     "POSTHUMUS LEONATUS": {
+      "ratio": 17.0, 
+      "nlines": 51, 
+      "nedges": 3
+     }, 
+     "IACHIMO": {
+      "ratio": 24.67, 
+      "nlines": 74, 
+      "nedges": 3
+     }, 
+     "Frenchman": {
+      "ratio": 7.33, 
+      "nlines": 22, 
+      "nedges": 3
+     }, 
+     "PHILARIO": {
+      "ratio": 6.67, 
+      "nlines": 20, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Rome. Philario's house.", 
+    "scene": "4", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_1_5.png", 
+    "char_data": {
+     "PISANIO": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "CORNELIUS": {
+      "ratio": 28.0, 
+      "nlines": 28, 
+      "nedges": 1
+     }, 
+     "First Lady": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "QUEEN": {
+      "ratio": 25.67, 
+      "nlines": 77, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Britain. A room in Cymbeline's palace.", 
+    "scene": "5", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_1_6.png", 
+    "char_data": {
+     "PISANIO": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "IACHIMO": {
+      "ratio": 78.5, 
+      "nlines": 157, 
+      "nedges": 2
+     }, 
+     "IMOGEN": {
+      "ratio": 43.0, 
+      "nlines": 86, 
+      "nedges": 2
+     }
+    }, 
+    "location": "The same. Another room in the palace.", 
+    "scene": "6", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/cymbeline_2_1.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "Second Lord": {
+      "ratio": 16.5, 
+      "nlines": 33, 
+      "nedges": 2
+     }, 
+     "CLOTEN": {
+      "ratio": 13.5, 
+      "nlines": 27, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Britain. Before Cymbeline's palace.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_2_2.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "CLOTEN": {
+      "ratio": 10.0, 
+      "nlines": 90, 
+      "nedges": 9
+     }, 
+     "CYMBELINE": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "IMOGEN": {
+      "ratio": 17.25, 
+      "nlines": 69, 
+      "nedges": 4
+     }, 
+     "PISANIO": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "IACHIMO": {
+      "ratio": 22.0, 
+      "nlines": 44, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Second Lord": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "QUEEN": {
+      "ratio": 5.0, 
+      "nlines": 10, 
+      "nedges": 2
+     }, 
+     "Lady": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "Scene III": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Imogen's bedchamber in Cymbeline's palace:", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_2_4.png", 
+    "char_data": {
+     "POSTHUMUS LEONATUS": {
+      "ratio": 50.5, 
+      "nlines": 101, 
+      "nedges": 2
+     }, 
+     "IACHIMO": {
+      "ratio": 37.5, 
+      "nlines": 75, 
+      "nedges": 2
+     }, 
+     "PHILARIO": {
+      "ratio": 12.0, 
+      "nlines": 24, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Rome. Philario's house.", 
+    "scene": "4", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_2_5.png", 
+    "char_data": {
+     "POSTHUMUS LEONATUS": {
+      "ratio": 0, 
+      "nlines": 36, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Another room in Philario's house.", 
+    "scene": "5", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/cymbeline_3_1.png", 
+    "char_data": {
+     "CAIUS LUCIUS": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "CLOTEN": {
+      "ratio": 8.33, 
+      "nlines": 25, 
+      "nedges": 3
+     }, 
+     "CYMBELINE": {
+      "ratio": 16.0, 
+      "nlines": 32, 
+      "nedges": 2
+     }, 
+     "QUEEN": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Britain. A hall in Cymbeline's palace.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_3_2.png", 
+    "char_data": {
+     "PISANIO": {
+      "ratio": 32.0, 
+      "nlines": 32, 
+      "nedges": 1
+     }, 
+     "IMOGEN": {
+      "ratio": 61.0, 
+      "nlines": 61, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another room in the palace.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_3_3.png", 
+    "char_data": {
+     "BELARIUS": {
+      "ratio": 47.5, 
+      "nlines": 95, 
+      "nedges": 2
+     }, 
+     "GUIDERIUS": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "ARVIRAGUS": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Wales: a mountainous country with a cave.", 
+    "scene": "3", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_3_4.png", 
+    "char_data": {
+     "PISANIO": {
+      "ratio": 86.0, 
+      "nlines": 86, 
+      "nedges": 1
+     }, 
+     "IMOGEN": {
+      "ratio": 136.0, 
+      "nlines": 136, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Country near Milford-Haven.", 
+    "scene": "4", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_3_5.png", 
+    "char_data": {
+     "CAIUS LUCIUS": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "CLOTEN": {
+      "ratio": 21.5, 
+      "nlines": 86, 
+      "nedges": 4
+     }, 
+     "CYMBELINE": {
+      "ratio": 8.0, 
+      "nlines": 32, 
+      "nedges": 4
+     }, 
+     "PISANIO": {
+      "ratio": 30.0, 
+      "nlines": 30, 
+      "nedges": 1
+     }, 
+     "QUEEN": {
+      "ratio": 9.5, 
+      "nlines": 38, 
+      "nedges": 4
+     }, 
+     "Attendant": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in Cymbeline's palace.", 
+    "scene": "5", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_3_6.png", 
+    "char_data": {
+     "BELARIUS": {
+      "ratio": 11.0, 
+      "nlines": 33, 
+      "nedges": 3
+     }, 
+     "GUIDERIUS": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "IMOGEN": {
+      "ratio": 21.0, 
+      "nlines": 63, 
+      "nedges": 3
+     }, 
+     "ARVIRAGUS": {
+      "ratio": 5.0, 
+      "nlines": 15, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Wales. Before the cave of Belarius.", 
+    "scene": "6", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_3_7.png", 
+    "char_data": {
+     "First Tribune": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "Second Senator": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "First Senator": {
+      "ratio": 15.0, 
+      "nlines": 15, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Rome. A public place.", 
+    "scene": "7", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/cymbeline_4_1.png", 
+    "char_data": {
+     "CLOTEN": {
+      "ratio": 0, 
+      "nlines": 27, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Wales: near the cave of Belarius.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_4_2.png", 
+    "char_data": {
+     "CAIUS LUCIUS": {
+      "ratio": 14.67, 
+      "nlines": 44, 
+      "nedges": 3
+     }, 
+     "CLOTEN": {
+      "ratio": 12.5, 
+      "nlines": 25, 
+      "nedges": 2
+     }, 
+     "IMOGEN": {
+      "ratio": 18.8, 
+      "nlines": 94, 
+      "nedges": 5
+     }, 
+     "ARVIRAGUS": {
+      "ratio": 30.0, 
+      "nlines": 90, 
+      "nedges": 3
+     }, 
+     "BELARIUS": {
+      "ratio": 29.25, 
+      "nlines": 117, 
+      "nedges": 4
+     }, 
+     "Soothsayer": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "GUIDERIUS": {
+      "ratio": 20.33, 
+      "nlines": 122, 
+      "nedges": 6
+     }, 
+     "Captain": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Before the cave of Belarius.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_4_3.png", 
+    "char_data": {
+     "First Lord": {
+      "ratio": 8.0, 
+      "nlines": 16, 
+      "nedges": 2
+     }, 
+     "PISANIO": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "CYMBELINE": {
+      "ratio": 12.0, 
+      "nlines": 24, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A room in Cymbeline's palace.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_4_4.png", 
+    "char_data": {
+     "BELARIUS": {
+      "ratio": 15.0, 
+      "nlines": 30, 
+      "nedges": 2
+     }, 
+     "GUIDERIUS": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }, 
+     "ARVIRAGUS": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Wales: before the cave of Belarius.", 
+    "scene": "4", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": "imgs/cymbeline_5_1.png", 
+    "char_data": {
+     "POSTHUMUS LEONATUS": {
+      "ratio": 0, 
+      "nlines": 34, 
+      "nedges": 0
+     }
+    }, 
+    "location": "Britain. The Roman camp.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_5_2.png", 
+    "char_data": {
+     "BELARIUS": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "GUIDERIUS": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "IACHIMO": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "CAIUS LUCIUS": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Field of battle between the British and Roman camps.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_5_3.png", 
+    "char_data": {
+     "Lord": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "First Captain": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "POSTHUMUS LEONATUS": {
+      "ratio": 30.0, 
+      "nlines": 90, 
+      "nedges": 3
+     }, 
+     "Second Captain": {
+      "ratio": 4.0, 
+      "nlines": 8, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_5_4.png", 
+    "char_data": {
+     "First Gaoler": {
+      "ratio": 11.75, 
+      "nlines": 47, 
+      "nedges": 4
+     }, 
+     "POSTHUMUS LEONATUS": {
+      "ratio": 10.0, 
+      "nlines": 40, 
+      "nedges": 4
+     }, 
+     "Second Brother": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "First Brother": {
+      "ratio": 4.25, 
+      "nlines": 17, 
+      "nedges": 4
+     }, 
+     "All": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "Sicilius Leonatus": {
+      "ratio": 5.86, 
+      "nlines": 41, 
+      "nedges": 7
+     }, 
+     "Jupiter": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "Second Gaoler": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "Mother": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "Posthumus Leonatus": {
+      "ratio": 15.0, 
+      "nlines": 30, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A British prison.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": "imgs/cymbeline_5_5.png", 
+    "char_data": {
+     "CAIUS LUCIUS": {
+      "ratio": 7.0, 
+      "nlines": 28, 
+      "nedges": 4
+     }, 
+     "POSTHUMUS LEONATUS": {
+      "ratio": 7.5, 
+      "nlines": 45, 
+      "nedges": 6
+     }, 
+     "First Lady": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "CYMBELINE": {
+      "ratio": 17.09, 
+      "nlines": 188, 
+      "nedges": 11
+     }, 
+     "IMOGEN": {
+      "ratio": 5.29, 
+      "nlines": 37, 
+      "nedges": 7
+     }, 
+     "PISANIO": {
+      "ratio": 6.0, 
+      "nlines": 30, 
+      "nedges": 5
+     }, 
+     "IACHIMO": {
+      "ratio": 38.0, 
+      "nlines": 76, 
+      "nedges": 2
+     }, 
+     "ARVIRAGUS": {
+      "ratio": 2.25, 
+      "nlines": 9, 
+      "nedges": 4
+     }, 
+     "BELARIUS": {
+      "ratio": 16.2, 
+      "nlines": 81, 
+      "nedges": 5
+     }, 
+     "Soothsayer": {
+      "ratio": 18.5, 
+      "nlines": 37, 
+      "nedges": 2
+     }, 
+     "GUIDERIUS": {
+      "ratio": 2.5, 
+      "nlines": 15, 
+      "nedges": 6
+     }, 
+     "CORNELIUS": {
+      "ratio": 16.0, 
+      "nlines": 48, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Cymbeline's tent.", 
+    "scene": "5", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "First Gentleman", 
+  "Second Gentleman", 
+  "QUEEN", 
+  "POSTHUMUS LEONATUS", 
+  "IMOGEN", 
+  "CYMBELINE", 
+  "PISANIO", 
+  "First Lord", 
+  "CLOTEN", 
+  "Second Lord", 
+  "Lady", 
+  "IACHIMO", 
+  "PHILARIO", 
+  "Frenchman", 
+  "First Lady", 
+  "CORNELIUS", 
+  "Scene III", 
+  "Messenger", 
+  "CAIUS LUCIUS", 
+  "BELARIUS", 
+  "GUIDERIUS", 
+  "ARVIRAGUS", 
+  "Attendant", 
+  "First Senator", 
+  "First Tribune", 
+  "Second Senator", 
+  "Captain", 
+  "Soothsayer", 
+  "Lord", 
+  "First Captain", 
+  "Second Captain", 
+  "First Gaoler", 
+  "Second Gaoler", 
+  "Sicilius Leonatus", 
+  "Mother", 
+  "First Brother", 
+  "Second Brother", 
+  "Jupiter", 
+  "All", 
+  "Posthumus Leonatus"
+ ], 
+ "year": "1609-10 / 1623", 
+ "char_data": {
+  "CAIUS LUCIUS": {
+   "ratio": 11.89, 
+   "nlines": 107, 
+   "nedges": 9, 
+   "order_app": 18
+  }, 
+  "First Lady": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 14
+  }, 
+  "PHILARIO": {
+   "ratio": 14.67, 
+   "nlines": 44, 
+   "nedges": 3, 
+   "order_app": 12
+  }, 
+  "PISANIO": {
+   "ratio": 25.44, 
+   "nlines": 229, 
+   "nedges": 9, 
+   "order_app": 6
+  }, 
+  "IACHIMO": {
+   "ratio": 48.78, 
+   "nlines": 439, 
+   "nedges": 9, 
+   "order_app": 11
+  }, 
+  "Messenger": {
+   "ratio": 0.75, 
+   "nlines": 3, 
+   "nedges": 4, 
+   "order_app": 17
+  }, 
+  "Second Gaoler": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 32
+  }, 
+  "Lord": {
+   "ratio": 7.0, 
+   "nlines": 7, 
+   "nedges": 1, 
+   "order_app": 28
+  }, 
+  "Soothsayer": {
+   "ratio": 22.0, 
+   "nlines": 44, 
+   "nedges": 2, 
+   "order_app": 27
+  }, 
+  "GUIDERIUS": {
+   "ratio": 18.1, 
+   "nlines": 181, 
+   "nedges": 10, 
+   "order_app": 20
+  }, 
+  "Second Senator": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 25
+  }, 
+  "Second Lord": {
+   "ratio": 24.5, 
+   "nlines": 49, 
+   "nedges": 2, 
+   "order_app": 9
+  }, 
+  "First Lord": {
+   "ratio": 7.8, 
+   "nlines": 39, 
+   "nedges": 5, 
+   "order_app": 7
+  }, 
+  "First Gaoler": {
+   "ratio": 11.75, 
+   "nlines": 47, 
+   "nedges": 4, 
+   "order_app": 31
+  }, 
+  "POSTHUMUS LEONATUS": {
+   "ratio": 26.88, 
+   "nlines": 430, 
+   "nedges": 16, 
+   "order_app": 3
+  }, 
+  "CYMBELINE": {
+   "ratio": 19.63, 
+   "nlines": 314, 
+   "nedges": 16, 
+   "order_app": 5
+  }, 
+  "IMOGEN": {
+   "ratio": 48.23, 
+   "nlines": 627, 
+   "nedges": 13, 
+   "order_app": 4
+  }, 
+  "Second Brother": {
+   "ratio": 3.0, 
+   "nlines": 6, 
+   "nedges": 2, 
+   "order_app": 36
+  }, 
+  "First Gentleman": {
+   "ratio": 34.5, 
+   "nlines": 69, 
+   "nedges": 2, 
+   "order_app": 0
+  }, 
+  "BELARIUS": {
+   "ratio": 51.29, 
+   "nlines": 359, 
+   "nedges": 7, 
+   "order_app": 19
+  }, 
+  "Attendant": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 22
+  }, 
+  "Lady": {
+   "ratio": 7.0, 
+   "nlines": 14, 
+   "nedges": 2, 
+   "order_app": 10
+  }, 
+  "Frenchman": {
+   "ratio": 7.33, 
+   "nlines": 22, 
+   "nedges": 3, 
+   "order_app": 13
+  }, 
+  "Posthumus Leonatus": {
+   "ratio": 15.0, 
+   "nlines": 30, 
+   "nedges": 2, 
+   "order_app": 39
+  }, 
+  "First Brother": {
+   "ratio": 4.25, 
+   "nlines": 17, 
+   "nedges": 4, 
+   "order_app": 35
+  }, 
+  "Sicilius Leonatus": {
+   "ratio": 5.86, 
+   "nlines": 41, 
+   "nedges": 7, 
+   "order_app": 33
+  }, 
+  "Mother": {
+   "ratio": 6.0, 
+   "nlines": 12, 
+   "nedges": 2, 
+   "order_app": 34
+  }, 
+  "Captain": {
+   "ratio": 5.5, 
+   "nlines": 11, 
+   "nedges": 2, 
+   "order_app": 26
+  }, 
+  "First Captain": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 29
+  }, 
+  "First Tribune": {
+   "ratio": 2.0, 
+   "nlines": 4, 
+   "nedges": 2, 
+   "order_app": 24
+  }, 
+  "Scene III": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 16
+  }, 
+  "All": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 38
+  }, 
+  "CLOTEN": {
+   "ratio": 22.15, 
+   "nlines": 288, 
+   "nedges": 13, 
+   "order_app": 8
+  }, 
+  "QUEEN": {
+   "ratio": 18.5, 
+   "nlines": 185, 
+   "nedges": 10, 
+   "order_app": 2
+  }, 
+  "ARVIRAGUS": {
+   "ratio": 28.8, 
+   "nlines": 144, 
+   "nedges": 5, 
+   "order_app": 21
+  }, 
+  "Jupiter": {
+   "ratio": 11.0, 
+   "nlines": 22, 
+   "nedges": 2, 
+   "order_app": 37
+  }, 
+  "Second Gentleman": {
+   "ratio": 13.0, 
+   "nlines": 13, 
+   "nedges": 1, 
+   "order_app": 1
+  }, 
+  "CORNELIUS": {
+   "ratio": 19.0, 
+   "nlines": 76, 
+   "nedges": 4, 
+   "order_app": 15
+  }, 
+  "First Senator": {
+   "ratio": 15.0, 
+   "nlines": 15, 
+   "nedges": 1, 
+   "order_app": 23
+  }, 
+  "Second Captain": {
+   "ratio": 4.0, 
+   "nlines": 8, 
+   "nedges": 2, 
+   "order_app": 30
+  }
+ }, 
+ "type": "Comedy"
+}

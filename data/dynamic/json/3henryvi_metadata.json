@@ -1,0 +1,1337 @@
+{
+ "title": "Henry VI, part 3", 
+ "acts": [
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "PRINCE EDWARD": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "NORFOLK": {
+      "ratio": 0.75, 
+      "nlines": 3, 
+      "nedges": 4
+     }, 
+     "RICHARD": {
+      "ratio": 1.17, 
+      "nlines": 7, 
+      "nedges": 6
+     }, 
+     "KING HENRY VI": {
+      "ratio": 7.6, 
+      "nlines": 76, 
+      "nedges": 10
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 21.5, 
+      "nlines": 43, 
+      "nedges": 2
+     }, 
+     "NORTHUMBERLAND": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "CLIFFORD": {
+      "ratio": 4.75, 
+      "nlines": 19, 
+      "nedges": 4
+     }, 
+     "MONTAGUE": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "EDWARD": {
+      "ratio": 1.67, 
+      "nlines": 5, 
+      "nedges": 3
+     }, 
+     "YORK": {
+      "ratio": 6.33, 
+      "nlines": 38, 
+      "nedges": 6
+     }, 
+     "WARWICK": {
+      "ratio": 5.88, 
+      "nlines": 47, 
+      "nedges": 8
+     }, 
+     "EXETER": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "WESTMORELAND": {
+      "ratio": 2.75, 
+      "nlines": 11, 
+      "nedges": 4
+     }
+    }, 
+    "location": "London. The Parliament-house.", 
+    "scene": "1", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "RICHARD": {
+      "ratio": 11.0, 
+      "nlines": 22, 
+      "nedges": 2
+     }, 
+     "MONTAGUE": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "EDWARD": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }, 
+     "YORK": {
+      "ratio": 7.2, 
+      "nlines": 36, 
+      "nedges": 5
+     }, 
+     "JOHN MORTIMER": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Sandal Castle.", 
+    "scene": "2", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "RUTLAND": {
+      "ratio": 26.0, 
+      "nlines": 26, 
+      "nedges": 1
+     }, 
+     "CLIFFORD": {
+      "ratio": 14.5, 
+      "nlines": 29, 
+      "nedges": 2
+     }, 
+     "Tutor": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Field of battle betwixt Sandal Castle and Wakefield.", 
+    "scene": "3", 
+    "act": "1"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "QUEEN MARGARET": {
+      "ratio": 18.67, 
+      "nlines": 56, 
+      "nedges": 3
+     }, 
+     "NORTHUMBERLAND": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "YORK": {
+      "ratio": 34.33, 
+      "nlines": 103, 
+      "nedges": 3
+     }, 
+     "CLIFFORD": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "4", 
+    "act": "1"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "EDWARD": {
+      "ratio": 13.67, 
+      "nlines": 41, 
+      "nedges": 3
+     }, 
+     "Messenger": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "RICHARD": {
+      "ratio": 22.33, 
+      "nlines": 67, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 27.0, 
+      "nlines": 81, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A plain near Mortimer's Cross in Herefordshire.", 
+    "scene": "1", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "PRINCE EDWARD": {
+      "ratio": 1.5, 
+      "nlines": 6, 
+      "nedges": 4
+     }, 
+     "RICHARD": {
+      "ratio": 2.86, 
+      "nlines": 20, 
+      "nedges": 7
+     }, 
+     "KING HENRY VI": {
+      "ratio": 4.6, 
+      "nlines": 23, 
+      "nedges": 5
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 4.4, 
+      "nlines": 22, 
+      "nedges": 5
+     }, 
+     "NORTHUMBERLAND": {
+      "ratio": 0.5, 
+      "nlines": 2, 
+      "nedges": 4
+     }, 
+     "PRINCE": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "EDWARD": {
+      "ratio": 6.5, 
+      "nlines": 39, 
+      "nedges": 6
+     }, 
+     "Messenger": {
+      "ratio": 6.0, 
+      "nlines": 6, 
+      "nedges": 1
+     }, 
+     "WARWICK": {
+      "ratio": 0.83, 
+      "nlines": 5, 
+      "nedges": 6
+     }, 
+     "GEORGE": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "CLIFFORD": {
+      "ratio": 6.71, 
+      "nlines": 47, 
+      "nedges": 7
+     }
+    }, 
+    "location": "Before York.", 
+    "scene": "2", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "EDWARD": {
+      "ratio": 5.33, 
+      "nlines": 16, 
+      "nedges": 3
+     }, 
+     "GEORGE": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "RICHARD": {
+      "ratio": 6.5, 
+      "nlines": 13, 
+      "nedges": 2
+     }, 
+     "WARWICK": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A field of battle between Towton and Saxton, in", 
+    "scene": "3", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "RICHARD": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "CLIFFORD": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "4", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "PRINCE EDWARD": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 20.5, 
+      "nlines": 82, 
+      "nedges": 4
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "Father": {
+      "ratio": 14.0, 
+      "nlines": 28, 
+      "nedges": 2
+     }, 
+     "Son": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "EXETER": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "5", 
+    "act": "2"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CLIFFORD": {
+      "ratio": 32.0, 
+      "nlines": 32, 
+      "nedges": 1
+     }, 
+     "EDWARD": {
+      "ratio": 5.75, 
+      "nlines": 23, 
+      "nedges": 4
+     }, 
+     "GEORGE": {
+      "ratio": 1.0, 
+      "nlines": 3, 
+      "nedges": 3
+     }, 
+     "RICHARD": {
+      "ratio": 8.0, 
+      "nlines": 24, 
+      "nedges": 3
+     }, 
+     "WARWICK": {
+      "ratio": 11.0, 
+      "nlines": 33, 
+      "nedges": 3
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "6", 
+    "act": "2"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "First Keeper": {
+      "ratio": 9.0, 
+      "nlines": 18, 
+      "nedges": 2
+     }, 
+     "Second Keeper": {
+      "ratio": 7.5, 
+      "nlines": 15, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 35.0, 
+      "nlines": 70, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A forest in the north of England.", 
+    "scene": "1", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "LADY GREY": {
+      "ratio": 12.0, 
+      "nlines": 36, 
+      "nedges": 3
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 14.75, 
+      "nlines": 59, 
+      "nedges": 4
+     }, 
+     "CLARENCE": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }, 
+     "Nobleman": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "GLOUCESTER": {
+      "ratio": 34.67, 
+      "nlines": 104, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "2", 
+    "act": "3"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "PRINCE EDWARD": {
+      "ratio": 1.75, 
+      "nlines": 7, 
+      "nedges": 4
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 18.75, 
+      "nlines": 75, 
+      "nedges": 4
+     }, 
+     "KING LEWIS XI": {
+      "ratio": 14.4, 
+      "nlines": 72, 
+      "nedges": 5
+     }, 
+     "WARWICK": {
+      "ratio": 18.6, 
+      "nlines": 93, 
+      "nedges": 5
+     }, 
+     "OXFORD": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "BONA": {
+      "ratio": 3.33, 
+      "nlines": 10, 
+      "nedges": 3
+     }, 
+     "Post": {
+      "ratio": 3.5, 
+      "nlines": 7, 
+      "nedges": 2
+     }
+    }, 
+    "location": "France. KING LEWIS XI's palace.", 
+    "scene": "3", 
+    "act": "3"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CLARENCE": {
+      "ratio": 5.2, 
+      "nlines": 26, 
+      "nedges": 5
+     }, 
+     "MONTAGUE": {
+      "ratio": 2.5, 
+      "nlines": 5, 
+      "nedges": 2
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 10.83, 
+      "nlines": 65, 
+      "nedges": 6
+     }, 
+     "QUEEN ELIZABETH": {
+      "ratio": 8.0, 
+      "nlines": 8, 
+      "nedges": 1
+     }, 
+     "SOMERSET": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "HASTINGS": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "Post": {
+      "ratio": 9.5, 
+      "nlines": 19, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 7.67, 
+      "nlines": 23, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CLARENCE": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "WARWICK": {
+      "ratio": 31.0, 
+      "nlines": 31, 
+      "nedges": 1
+     }
+    }, 
+    "location": "A plain in Warwickshire.", 
+    "scene": "2", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "Second Watchman": {
+      "ratio": 2.5, 
+      "nlines": 10, 
+      "nedges": 4
+     }, 
+     "Third Watchman": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "First Watchman": {
+      "ratio": 2.67, 
+      "nlines": 8, 
+      "nedges": 3
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 6.0, 
+      "nlines": 12, 
+      "nedges": 2
+     }, 
+     "WARWICK": {
+      "ratio": 6.0, 
+      "nlines": 30, 
+      "nedges": 5
+     }, 
+     "OXFORD": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "SOMERSET": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Edward's camp, near Warwick.", 
+    "scene": "3", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "QUEEN ELIZABETH": {
+      "ratio": 29.0, 
+      "nlines": 29, 
+      "nedges": 1
+     }, 
+     "RIVERS": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "4", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING EDWARD IV": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "Huntsman": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 6.33, 
+      "nlines": 19, 
+      "nedges": 3
+     }, 
+     "HASTINGS": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }
+    }, 
+    "location": "A park near Middleham Castle In Yorkshire.", 
+    "scene": "5", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CLARENCE": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 12.25, 
+      "nlines": 49, 
+      "nedges": 4
+     }, 
+     "Lieutenant": {
+      "ratio": 3.0, 
+      "nlines": 3, 
+      "nedges": 1
+     }, 
+     "WARWICK": {
+      "ratio": 5.75, 
+      "nlines": 23, 
+      "nedges": 4
+     }, 
+     "OXFORD": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "Post": {
+      "ratio": 7.0, 
+      "nlines": 7, 
+      "nedges": 1
+     }, 
+     "SOMERSET": {
+      "ratio": 4.67, 
+      "nlines": 14, 
+      "nedges": 3
+     }
+    }, 
+    "location": "London. The Tower.", 
+    "scene": "6", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "All": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 9.2, 
+      "nlines": 46, 
+      "nedges": 5
+     }, 
+     "MONTAGUE": {
+      "ratio": 3.2, 
+      "nlines": 16, 
+      "nedges": 5
+     }, 
+     "Soldier": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "HASTINGS": {
+      "ratio": 2.6, 
+      "nlines": 13, 
+      "nedges": 5
+     }, 
+     "Mayor": {
+      "ratio": 2.0, 
+      "nlines": 6, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 3.0, 
+      "nlines": 12, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Before York.", 
+    "scene": "7", 
+    "act": "4"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CLARENCE": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "KING HENRY VI": {
+      "ratio": 4.6, 
+      "nlines": 23, 
+      "nedges": 5
+     }, 
+     "MONTAGUE": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 5.5, 
+      "nlines": 11, 
+      "nedges": 2
+     }, 
+     "WARWICK": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "OXFORD": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "EXETER": {
+      "ratio": 1.5, 
+      "nlines": 3, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 4.0, 
+      "nlines": 4, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "8", 
+    "act": "4"
+   }
+  ], 
+  [
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "CLARENCE": {
+      "ratio": 11.5, 
+      "nlines": 23, 
+      "nedges": 2
+     }, 
+     "Second Messenger": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "First Messenger": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "MONTAGUE": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 7.5, 
+      "nlines": 30, 
+      "nedges": 4
+     }, 
+     "EDWARD": {
+      "ratio": 1.0, 
+      "nlines": 1, 
+      "nedges": 1
+     }, 
+     "WARWICK": {
+      "ratio": 4.38, 
+      "nlines": 35, 
+      "nedges": 8
+     }, 
+     "OXFORD": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "SOMERSET": {
+      "ratio": 3.0, 
+      "nlines": 9, 
+      "nedges": 3
+     }, 
+     "GLOUCESTER": {
+      "ratio": 3.33, 
+      "nlines": 20, 
+      "nedges": 6
+     }
+    }, 
+    "location": "Coventry.", 
+    "scene": "1", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "OXFORD": {
+      "ratio": 2.0, 
+      "nlines": 2, 
+      "nedges": 1
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 5.0, 
+      "nlines": 5, 
+      "nedges": 1
+     }, 
+     "SOMERSET": {
+      "ratio": 12.0, 
+      "nlines": 12, 
+      "nedges": 1
+     }, 
+     "WARWICK": {
+      "ratio": 11.67, 
+      "nlines": 35, 
+      "nedges": 3
+     }
+    }, 
+    "location": "A field of battle near Barnet.", 
+    "scene": "2", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING EDWARD IV": {
+      "ratio": 8.5, 
+      "nlines": 17, 
+      "nedges": 2
+     }, 
+     "CLARENCE": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "3", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "PRINCE EDWARD": {
+      "ratio": 4.33, 
+      "nlines": 13, 
+      "nedges": 3
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 12.75, 
+      "nlines": 51, 
+      "nedges": 4
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }, 
+     "Messenger": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "OXFORD": {
+      "ratio": 1.8, 
+      "nlines": 9, 
+      "nedges": 5
+     }, 
+     "SOMERSET": {
+      "ratio": 2.0, 
+      "nlines": 4, 
+      "nedges": 2
+     }
+    }, 
+    "location": "Plains near Tewksbury.", 
+    "scene": "4", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "PRINCE EDWARD": {
+      "ratio": 3.25, 
+      "nlines": 13, 
+      "nedges": 4
+     }, 
+     "CLARENCE": {
+      "ratio": 2.0, 
+      "nlines": 8, 
+      "nedges": 4
+     }, 
+     "QUEEN MARGARET": {
+      "ratio": 6.8, 
+      "nlines": 34, 
+      "nedges": 5
+     }, 
+     "KING EDWARD IV": {
+      "ratio": 5.0, 
+      "nlines": 25, 
+      "nedges": 5
+     }, 
+     "OXFORD": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "SOMERSET": {
+      "ratio": 1.0, 
+      "nlines": 2, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 4.0, 
+      "nlines": 16, 
+      "nedges": 4
+     }
+    }, 
+    "location": "Another part of the field.", 
+    "scene": "5", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "GLOUCESTER": {
+      "ratio": 48.0, 
+      "nlines": 48, 
+      "nedges": 1
+     }, 
+     "KING HENRY VI": {
+      "ratio": 50.0, 
+      "nlines": 50, 
+      "nedges": 1
+     }
+    }, 
+    "location": "London. The Tower.", 
+    "scene": "6", 
+    "act": "5"
+   }, 
+   {
+    "graph_img_f": null, 
+    "char_data": {
+     "KING EDWARD IV": {
+      "ratio": 16.0, 
+      "nlines": 32, 
+      "nedges": 2
+     }, 
+     "GLOUCESTER": {
+      "ratio": 4.5, 
+      "nlines": 9, 
+      "nedges": 2
+     }, 
+     "QUEEN ELIZABETH": {
+      "ratio": 0.5, 
+      "nlines": 1, 
+      "nedges": 2
+     }, 
+     "CLARENCE": {
+      "ratio": 3.0, 
+      "nlines": 6, 
+      "nedges": 2
+     }
+    }, 
+    "location": "London. The palace.", 
+    "scene": "7", 
+    "act": "5"
+   }
+  ]
+ ], 
+ "characters": [
+  "WARWICK", 
+  "YORK", 
+  "EDWARD", 
+  "MONTAGUE", 
+  "RICHARD", 
+  "NORFOLK", 
+  "KING HENRY VI", 
+  "NORTHUMBERLAND", 
+  "CLIFFORD", 
+  "WESTMORELAND", 
+  "EXETER", 
+  "QUEEN MARGARET", 
+  "PRINCE EDWARD", 
+  "Messenger", 
+  "JOHN MORTIMER", 
+  "RUTLAND", 
+  "Tutor", 
+  "PRINCE", 
+  "GEORGE", 
+  "Son", 
+  "Father", 
+  "First Keeper", 
+  "Second Keeper", 
+  "KING EDWARD IV", 
+  "GLOUCESTER", 
+  "CLARENCE", 
+  "LADY GREY", 
+  "Nobleman", 
+  "KING LEWIS XI", 
+  "OXFORD", 
+  "BONA", 
+  "Post", 
+  "SOMERSET", 
+  "HASTINGS", 
+  "QUEEN ELIZABETH", 
+  "First Watchman", 
+  "Second Watchman", 
+  "Third Watchman", 
+  "RIVERS", 
+  "Huntsman", 
+  "Lieutenant", 
+  "Mayor", 
+  "Soldier", 
+  "All", 
+  "First Messenger", 
+  "Second Messenger"
+ ], 
+ "year": "1590-91 / 1594?", 
+ "char_data": {
+  "Nobleman": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 27
+  }, 
+  "RICHARD": {
+   "ratio": 13.33, 
+   "nlines": 160, 
+   "nedges": 12, 
+   "order_app": 4
+  }, 
+  "Post": {
+   "ratio": 6.6, 
+   "nlines": 33, 
+   "nedges": 5, 
+   "order_app": 31
+  }, 
+  "Father": {
+   "ratio": 14.0, 
+   "nlines": 28, 
+   "nedges": 2, 
+   "order_app": 20
+  }, 
+  "MONTAGUE": {
+   "ratio": 3.0, 
+   "nlines": 39, 
+   "nedges": 13, 
+   "order_app": 3
+  }, 
+  "Tutor": {
+   "ratio": 4.0, 
+   "nlines": 4, 
+   "nedges": 1, 
+   "order_app": 16
+  }, 
+  "Messenger": {
+   "ratio": 5.14, 
+   "nlines": 36, 
+   "nedges": 7, 
+   "order_app": 13
+  }, 
+  "WARWICK": {
+   "ratio": 17.5, 
+   "nlines": 455, 
+   "nedges": 26, 
+   "order_app": 0
+  }, 
+  "RUTLAND": {
+   "ratio": 26.0, 
+   "nlines": 26, 
+   "nedges": 1, 
+   "order_app": 15
+  }, 
+  "First Watchman": {
+   "ratio": 2.67, 
+   "nlines": 8, 
+   "nedges": 3, 
+   "order_app": 35
+  }, 
+  "Lieutenant": {
+   "ratio": 3.0, 
+   "nlines": 3, 
+   "nedges": 1, 
+   "order_app": 40
+  }, 
+  "PRINCE EDWARD": {
+   "ratio": 3.83, 
+   "nlines": 46, 
+   "nedges": 12, 
+   "order_app": 12
+  }, 
+  "QUEEN ELIZABETH": {
+   "ratio": 9.5, 
+   "nlines": 38, 
+   "nedges": 4, 
+   "order_app": 34
+  }, 
+  "KING HENRY VI": {
+   "ratio": 18.65, 
+   "nlines": 373, 
+   "nedges": 20, 
+   "order_app": 6
+  }, 
+  "Huntsman": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 39
+  }, 
+  "NORTHUMBERLAND": {
+   "ratio": 3.88, 
+   "nlines": 31, 
+   "nedges": 8, 
+   "order_app": 7
+  }, 
+  "First Messenger": {
+   "ratio": 1.0, 
+   "nlines": 1, 
+   "nedges": 1, 
+   "order_app": 44
+  }, 
+  "PRINCE": {
+   "ratio": 1.5, 
+   "nlines": 3, 
+   "nedges": 2, 
+   "order_app": 17
+  }, 
+  "KING EDWARD IV": {
+   "ratio": 18.65, 
+   "nlines": 317, 
+   "nedges": 17, 
+   "order_app": 23
+  }, 
+  "WESTMORELAND": {
+   "ratio": 2.75, 
+   "nlines": 11, 
+   "nedges": 4, 
+   "order_app": 9
+  }, 
+  "KING LEWIS XI": {
+   "ratio": 14.4, 
+   "nlines": 72, 
+   "nedges": 5, 
+   "order_app": 28
+  }, 
+  "BONA": {
+   "ratio": 3.33, 
+   "nlines": 10, 
+   "nedges": 3, 
+   "order_app": 30
+  }, 
+  "EXETER": {
+   "ratio": 4.0, 
+   "nlines": 20, 
+   "nedges": 5, 
+   "order_app": 10
+  }, 
+  "GLOUCESTER": {
+   "ratio": 17.27, 
+   "nlines": 259, 
+   "nedges": 15, 
+   "order_app": 24
+  }, 
+  "NORFOLK": {
+   "ratio": 0.75, 
+   "nlines": 3, 
+   "nedges": 4, 
+   "order_app": 5
+  }, 
+  "CLARENCE": {
+   "ratio": 8.55, 
+   "nlines": 94, 
+   "nedges": 11, 
+   "order_app": 25
+  }, 
+  "LADY GREY": {
+   "ratio": 12.0, 
+   "nlines": 36, 
+   "nedges": 3, 
+   "order_app": 26
+  }, 
+  "Second Watchman": {
+   "ratio": 2.5, 
+   "nlines": 10, 
+   "nedges": 4, 
+   "order_app": 36
+  }, 
+  "Third Watchman": {
+   "ratio": 4.5, 
+   "nlines": 9, 
+   "nedges": 2, 
+   "order_app": 37
+  }, 
+  "RIVERS": {
+   "ratio": 7.0, 
+   "nlines": 7, 
+   "nedges": 1, 
+   "order_app": 38
+  }, 
+  "First Keeper": {
+   "ratio": 9.0, 
+   "nlines": 18, 
+   "nedges": 2, 
+   "order_app": 21
+  }, 
+  "Soldier": {
+   "ratio": 1.0, 
+   "nlines": 2, 
+   "nedges": 2, 
+   "order_app": 42
+  }, 
+  "JOHN MORTIMER": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 14
+  }, 
+  "OXFORD": {
+   "ratio": 3.8, 
+   "nlines": 38, 
+   "nedges": 10, 
+   "order_app": 29
+  }, 
+  "GEORGE": {
+   "ratio": 7.33, 
+   "nlines": 22, 
+   "nedges": 3, 
+   "order_app": 18
+  }, 
+  "CLIFFORD": {
+   "ratio": 12.42, 
+   "nlines": 149, 
+   "nedges": 12, 
+   "order_app": 8
+  }, 
+  "All": {
+   "ratio": 0.5, 
+   "nlines": 1, 
+   "nedges": 2, 
+   "order_app": 43
+  }, 
+  "Second Messenger": {
+   "ratio": 2.0, 
+   "nlines": 2, 
+   "nedges": 1, 
+   "order_app": 45
+  }, 
+  "QUEEN MARGARET": {
+   "ratio": 17.94, 
+   "nlines": 287, 
+   "nedges": 16, 
+   "order_app": 11
+  }, 
+  "SOMERSET": {
+   "ratio": 5.38, 
+   "nlines": 43, 
+   "nedges": 8, 
+   "order_app": 32
+  }, 
+  "Son": {
+   "ratio": 11.5, 
+   "nlines": 23, 
+   "nedges": 2, 
+   "order_app": 19
+  }, 
+  "EDWARD": {
+   "ratio": 13.4, 
+   "nlines": 134, 
+   "nedges": 10, 
+   "order_app": 2
+  }, 
+  "HASTINGS": {
+   "ratio": 3.83, 
+   "nlines": 23, 
+   "nedges": 6, 
+   "order_app": 33
+  }, 
+  "Second Keeper": {
+   "ratio": 7.5, 
+   "nlines": 15, 
+   "nedges": 2, 
+   "order_app": 22
+  }, 
+  "Mayor": {
+   "ratio": 2.0, 
+   "nlines": 6, 
+   "nedges": 3, 
+   "order_app": 41
+  }, 
+  "YORK": {
+   "ratio": 14.75, 
+   "nlines": 177, 
+   "nedges": 12, 
+   "order_app": 1
+  }
+ }, 
+ "type": "History"
+}
