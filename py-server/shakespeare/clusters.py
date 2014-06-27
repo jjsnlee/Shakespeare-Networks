@@ -1,13 +1,15 @@
 import plays_n_graphs
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 import json, sys, os
 import logging
+
 from gensim.models.ldamodel import LdaModel
+from gensim.corpora import Dictionary
+from gensim.utils import simple_preprocess #, SaveLoad
 
 logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger('shakespeare.shakespeare_pages')
+logger = logging.getLogger('shakespeare.clusters')
 
 import helper
 from os.path import join
@@ -18,179 +20,28 @@ if join(rootdir, 'py-external') not in sys.path:
 
 from pcibook import nmf
 
-import datetime, time
+from datetime import datetime
+import time
 def get_ts():
     ts = time.time()
-    return datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+    return datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 
 def get_lda_base_dir():
     return join(helper.get_dynamic_rootdir(), 'lda')
 
-def _get_stopwords():
-    from nltk.corpus import stopwords
-    stopwds = set(stopwords.words('english'))
-    addl_stopwords_file = join(helper.get_root_dir(), 'data/stopwords')
-    with open(addl_stopwords_file) as fh:
-        more_stopwds = [s.strip() for s in fh.readlines() if not s.startswith('#')]
-        stopwds = stopwds.union(more_stopwds)
-    
-    addl_stopwds = set([
-        'thee', 'thy', 'thou', 'hath', 'shall', 'doth', 'dost', 'prithee', 'tis', 'ye', 'ay', 'hast',
-        'says', 'good', 'sir',
-        'give', 'put', #'speak', 'leave',
-        #"'s", '!', '?', ':', ';', 'i', '.', ',', "'", 
-        "ll", "d", "em", "n't",
-        'edward', 'henry', 'jack', 'john', 'richard', 'harry', 'anne', 'hal', 'kate',
-        #'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 
-        'ten'
-    ])
-
-    stopwds = stopwds.union(addl_stopwds)
-    return stopwds
-
-class ClustersCtxt(object):
-    def __init__(self, play_ctx):
-        from plays_n_graphs import RootPlayCtx
-        assert(isinstance(play_ctx, RootPlayCtx))
-        
-        chars_per_play = {}
-        for play_alias in play_ctx.map_by_alias:
-            p = play_ctx.get_play(play_alias)
-            chars_per_play[play_alias] = set(p.characters.keys())
-        
-        self.plays = play_ctx.play_details
-        self.reset()
-        self.chars_per_play = chars_per_play
-        self.documents = [] # plays, characters, etc
-        # remove documents: scenes/characters with very few lines
-        #self.min_lines_per_doc = 10
-
-    def reset(self):
-        self.pruned_characters = {}
-        self.pruned_max_terms = []
-
-    def preproc(self, plays_to_filter=None, by='Play'):
-        """
-        get all the characters, the key should be name and play
-        then all their lines, and relationships?
-        it could be an interesting game of clustering
-        """
-        plays = self.plays.values()
-        if plays_to_filter:
-            plays_to_filter = set(plays_to_filter)
-            plays = [k for k in plays if k.title in plays_to_filter]
-        self.reset()
-        
-        if by == 'Play':
-            self.documents = plays
-        
-        if by == 'Char':
-            clines = []
-            for p in plays:
-                clines.extend(p.characters.values())
-            self.documents = clines
-
-def get_character_names(prc_ctx):
-    #name_d = helper.init_name_dict()
-    all_c_in_play = set()
-    for play_name in prc_ctx.plays.keys():
-        # Only characters in ALL CAPS are considered major, do not 
-        # include minor characters in the list of stopwords.
-        # There may be minor characters in the play
-        # such as "Lord" in Hamlet. Do not want those terms to be removed. 
-        c_in_play = prc_ctx.chars_per_play[play_name]
-        c_in_play = set([c.lower() for c in c_in_play if c.isupper()])
-        for c in c_in_play:
-            v = prc_ctx.pruned_characters.setdefault(c, set())
-            v.add(play_name)
-        all_c_in_play.update(c_in_play)
-    return all_c_in_play
-
-def get_doc_content(prc_ctx, minlines=10):
-    doc_titles   = []
-    docs_content = []
-    for doc in prc_ctx.documents:
-        lines = doc.clean_lines
-        # remove documents: scenes/characters with very few lines
-        if len(lines) < minlines:
-            logger.info('Skipping [%s] since it had too few lines.', str(doc))
-            continue
-        lines = ' '.join([li.spoken_line for li in lines])
-        lines = lines.replace('--', ' ') # for now just replace these...
-        #print lines+"|"
-        lines = lines.lower()
-        docs_content.append(lines)
-        doc_titles.append(str(doc))
-    return doc_titles, docs_content
-    
-def process_data(prc_ctx,
-                 min_df=2, # in at least 2 documents
-                 max_df=1.0,
-                 minlines=10,
-                 raw = False,
-                 stopwords=_get_stopwords()
-                 ):
-    
-    all_c_in_play = get_character_names(prc_ctx)
-    
-    #import PorterStemmer
-    
-    doc_titles, docs_content = get_doc_content(prc_ctx, minlines=minlines)
-
-    from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-    if raw: 
-        vectorizer = CountVectorizer
-    else:
-        vectorizer = TfidfVectorizer
-        
-    # Do unigrams
-    cv = vectorizer(min_df=min_df,
-                    max_df=max_df,
-                    charset_error="ignore",
-                    stop_words=stopwords|all_c_in_play, 
-                    )
-    
-    cnts = cv.fit_transform(docs_content).toarray()
-    uni = pd.DataFrame(cnts, columns=cv.get_feature_names(), index=doc_titles)
-    ngdf = uni
-
-#    cv = CountVectorizer(min_df=2,  # in at least 2 documents
-#                         charset_error="ignore",
-#                         #stop_words=stopwds|c_in_play, 
-#                         ngram_range=(2, 3)
-#                         )
-#    cnts = cv.fit_transform(docs).toarray()
-#    ngs = pd.DataFrame(cnts, columns=cv.get_feature_names(), index=plays)
-#    # Filter ngrams which end with a stopword        
-#    keep = np.array([n.split(' ')[-1] not in stopwds for n in ngs.columns])
-#    ngs = ngs.T[keep]
-#    ngdf = pd.DataFrame.join(uni, ngs.T)
-    # Remove terms which show up frequently
-#    ngdf = ngdf.replace(0, float('Nan'))
-#    nzero_cnts = ngdf.count()
-#    rm_max = nzero_cnts > max_df*len(doc_titles)
-#    prc_ctx.pruned_max_terms = ngdf.columns[rm_max]
-#    ngdf = ngdf.T[rm_max==False]
-
-    prc_ctx.pruned_max_terms = cv.stop_words_
-    ngdf.fillna(0, inplace=True)
-    
-    # Transpose to have plays/documents on the index
-    # Keep as is to have the terms on the index
-    return ngdf
-
-from gensim.corpora import Dictionary
-from gensim.utils import simple_preprocess #, SaveLoad
-
 class LDAContext(object):
-    def __init__(self, doc_nms, doc_contents, from_cache=None):
+    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None):
         self.doc_names = doc_nms
         self.doc_contents = doc_contents
         self.doc_contents_tokenized = [simple_preprocess(doc) for doc in doc_contents]
         
         if from_cache is None:
             dictionary = Dictionary(self.doc_contents_tokenized)
-            stopwds = _get_stopwords()
+            
+            if not stopwds:
+                logger.warn('No stopwords were specified, will use the entire vocabulary!')
+                stopwds = []
+            
             # remove stop words and words that appear only once
             stop_ids = [dictionary.token2id[stopword] for stopword in stopwds
                         if stopword in dictionary.token2id]
@@ -201,14 +52,19 @@ class LDAContext(object):
             # MANDATORY! to trigger the id2token creation
             dictionary[0]
             self.dictionary = dictionary
+            
+            # would be interesting to get bigram collocations here
+            
             self.corpus = [dictionary.doc2bow(doc) for doc in self.doc_contents_tokenized]
+            self.stopwords = stopwds
         else:
             self.dictionary = from_cache['dictionary']
             self.corpus = from_cache['corpus']
+            self.stopwords = from_cache['stopwords']
     
     def get_terms(self):
         return self.dictionary.id2token.values()
- 
+
     lda_dict_fname = 'lda.dict'
     lda_corpus_data = 'corpus_data.json'
 
@@ -218,7 +74,8 @@ class LDAContext(object):
         
         data = \
         {
-         'corpus' : self.corpus,
+         'corpus'       : self.corpus,
+         'stopwords'    : self.stopwords,
          'doc_titles'   : self.doc_names,
          'doc_contents' : self.doc_contents
         }
@@ -239,18 +96,19 @@ class LDAContext(object):
         
         doc_nms = lda_json['doc_titles']
         doc_contents = lda_json['doc_contents']
+        
         lda_json['dictionary'] = dictionary
         return LDAContext(doc_nms, doc_contents, from_cache=lda_json)
 
-CACHED_LDA_CTXS = {}
-def get_lda_ctxt(lda_key, reload_ctx=False):
-    global CACHED_LDA_CTXS
-    if lda_key not in CACHED_LDA_CTXS or reload_ctx:
+CACHED_LDA_RSLTS = {}
+def get_lda_rslt(lda_key, reload_ctx=False):
+    global CACHED_LDA_RSLTS
+    if lda_key not in CACHED_LDA_RSLTS or reload_ctx:
         lda_ctxt = LDAContext.load_corpus()
         lda = LdaModel.load(lda_key)
-        lda_result = LDAResult(lda, lda_ctxt)
-        CACHED_LDA_CTXS[lda_key] = lda_result
-    return CACHED_LDA_CTXS[lda_key]
+        lda_result = LDAResult(lda_key, lda, lda_ctxt)
+        CACHED_LDA_RSLTS[lda_key] = lda_result
+    return CACHED_LDA_RSLTS[lda_key]
 
 # def get_docs_per_topic(lda, lda_ctxt):
 #     # http://stackoverflow.com/questions/20984841/topic-distribution-how-do-we-see-which-document-belong-to-which-topic-after-doi
@@ -273,10 +131,22 @@ def get_lda_ctxt(lda_key, reload_ctx=False):
 #     cluster3 = [j for i,j in zip(corpus_scores, doc_nms) if i[2][1] > threshold]
 
 class LDAResult(object):
-    def __init__(self, lda, lda_ctxt):
-        self.lda = lda 
+    def __init__(self, label, lda_ctxt, ntopics, npasses):
+        corpus = lda_ctxt.corpus 
+        dictionary = lda_ctxt.dictionary
+        lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
+        t = datetime.now()
+        
+        self.baselabel = label
+        self.label = '%s_%s_%s_%s_lda' % (label, t, ntopics, npasses)
+        self.lda = lda
         self.lda_ctxt = lda_ctxt
+
         self._docs_per_topic = None
+
+    def save(self):
+        self.lda.save(join(get_lda_base_dir(), self.label, 'run.lda'))
+        # should also save some of the state
 
     @property
     def doc_names(self):
@@ -307,27 +177,78 @@ class LDAResult(object):
                 print '\ttopic %d, score: %s' % (topic, score)
                 print '\t', self.lda.show_topic(topic)
 
-def create_lda_corpus_with_mat(mat):
-    class MyCorpus(object):
-        def __iter__(self):
-            for idx in range(len(mat.index)):
-                #doc_nm = mat.index[idx]
-                yield mat.ix[idx]
-    return MyCorpus()
+from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, \
+    ComputeSeriation, PrepareDataForClient, \
+    ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer
 
-# def runs_lda(corpus):
-#     lda = LdaModel(corpus, num_topics=10)
-#     return lda
+class TermiteData(object):
+    def __init__(self, lda_rslt, from_cache=False):
+        #assert(isinstance(lda_rslt, LDAResult))
+        lda = lda_rslt.lda
+        lda_ctxt = lda_rslt.lda_ctxt
+        
+        self.lda = lda
+        self.lda_ctxt = lda_ctxt
+        self.basepath = join(get_lda_base_dir(), lda_rslt.lda_key+'_files')
 
-def runs_multi_nmf(mat, nruns=5, pc=16, iters=100):
-    runs = []
-    for _n in range(nruns):
-        print 'Start:', get_ts() 
-        w,h = nmf.factorize(mat.values, pc=pc, iters=iters)
-        print 'End:', get_ts()
-        print w.shape, h.shape
-        runs.append((w,h))
-    return runs
+        model = Model()
+        model.term_topic_matrix = lda.state.sstats.T 
+        model.topic_count = lda.num_topics
+        model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(model.topic_count))
+        model.term_index = lda_ctxt.get_terms()
+        model.term_count = len(model.term_index)
+        self.model = model
+
+        tokens = Tokens()
+        tokens.data = dict(self.docs_tokenized_zipped())
+        self.tokens = tokens
+        
+        self._saliency = None
+        self._similarity = None
+        self._seriation = None
+    
+    def docs_zipped(self):
+        return [(t, c) for t,c in zip(self.lda_ctxt.doc_names, self.lda_ctxt.doc_contents)]
+
+    def docs_tokenized_zipped(self):
+        return [(t, c) for t,c in zip(self.lda_ctxt.doc_names, self.lda_ctxt.doc_contents_tokenized)]
+
+    @property
+    def saliency(self):
+        if self._saliency is None:
+            saliency_calc = ComputeSaliency()
+            saliency_calc.execute(self.model)
+            self._saliency = saliency_calc.saliency
+            SaliencyRWer.write(self._saliency, self.basepath) 
+        return self._saliency
+    @property
+    def similarity(self):
+        if self._similarity is None:
+            similarity_calc = ComputeSimilarity()
+            similarity_calc.execute(self.tokens)
+            self._similarity = similarity_calc.similarity
+            SimilarityRWer.write(self._similarity, self.basepath)
+        return self._similarity
+    @property
+    def seriation(self):
+        if self._seriation is None:
+            seriation_calc = ComputeSeriation()
+            seriation_calc.execute(self.saliency, self.similarity)
+            self._seriation = seriation_calc.seriation
+            SeriationRWer.write(self._seriation, self.basepath)
+        return self._seriation
+    def data_for_client(self):
+        prep_client = PrepareDataForClient()
+        prep_client.execute(self.model, self.saliency, self.seriation)
+        ClientRWer.write(prep_client.client, self.basepath)
+
+    def load(self, which):
+        if which=='saliency':
+            self._saliency = SaliencyRWer.read(self.basepath)
+        elif which=='seriation':
+            self._seriation = SeriationRWer.read(self.basepath)
+        elif which=='similarity':
+            self._similarity = SimilarityRWer.read(self.basepath)
 
 def runs_affine_prop(mat):
     from sklearn import cluster, covariance, manifold
@@ -430,6 +351,24 @@ def runs_affine_prop(mat):
 #    controller = ControllerFactory.createSimple();
 #    byTopicClusters = controller.process(documents, "data mining", LingoClusteringAlgorithm.class);
 #    final List<Cluster> clustersByTopic = byTopicClusters.getClusters();
+
+def create_lda_corpus_with_mat(mat):
+    class MyCorpus(object):
+        def __iter__(self):
+            for idx in range(len(mat.index)):
+                #doc_nm = mat.index[idx]
+                yield mat.ix[idx]
+    return MyCorpus()
+
+def runs_multi_nmf(mat, nruns=5, pc=16, iters=100):
+    runs = []
+    for _n in range(nruns):
+        print 'Start:', get_ts() 
+        w,h = nmf.factorize(mat.values, pc=pc, iters=iters)
+        print 'End:', get_ts()
+        print w.shape, h.shape
+        runs.append((w,h))
+    return runs
 
 def plot_wd_cnts(mat, pct_min=0, pct_max=100, mincnt=10):
     """ Useful to see the top words """

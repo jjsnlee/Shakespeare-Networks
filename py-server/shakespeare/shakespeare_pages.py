@@ -80,11 +80,12 @@ def get_corpus_data_json(req, play_set):
             return HttpResponse(all_json_rslt, content_type='application/json')
 
         elif info == 'ldatopics':
+            # is this being to get the document/character info?
             #'/shakespeare/corpus/ldatopics'
             which_topic = path_elmts[3]
 
             logger.debug('which_topic: %s', which_topic)
-            #lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
+            #lda_key = '2014-05-13 00/50/36.652535_50_50.lda'
             lda_key = '2014-06-01 12:55:34.874782_20_50.lda'
             lda_key = join(get_lda_base_dir(), lda_key)
             lda_rslt = get_lda_rslt(lda_key)
@@ -93,13 +94,6 @@ def get_corpus_data_json(req, play_set):
             
             topic_json = json.dumps(topic_info, ensure_ascii=False)
             return HttpResponse(topic_json, content_type='application/json')
-            
-#             if which_json == 'seriated-parameters.json':
-#                 pass
-#             elif which_json == 'filtered-parameters.json':
-#                 pass
-#             elif which_json == 'global-term_freqs.json':
-#                 pass
 
         elif info == 'characters':
             #'/shakespeare/corpus/characters/[charKey]'

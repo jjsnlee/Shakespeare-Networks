@@ -1,5 +1,5 @@
 from unittest import TestCase
-from shakespeare.plays_n_graphs import Play, Scene, _init_graphs
+from shakespeare.plays_n_graphs import ShakespearePlayCtx, Play, Scene, _init_graphs
 import networkx as nx
 
 nolines = lambda c: ['Line %i' % (i+1) for i in range(c)]
@@ -12,6 +12,9 @@ def plot_test_graph(key, graph):
     plt.show()
 
 class PlaysAndGraphsTest(TestCase):
+
+    def test_load_play(self):
+        play_ctx = ShakespearePlayCtx()
 
     def _create_scene1(self, test_play):
         sc = Scene(test_play, 'Act I', 'Scene 1', 'A castle', None)
