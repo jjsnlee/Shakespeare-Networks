@@ -69,10 +69,6 @@ createChartDirective('allPlaysChart', 'whichChart', function(scope, containerNam
   };
 });
 
-//function testClick() {
-//	console.log('ABCD');
-//}
-
 function createAllPlaysOneSummary(allPlaysData, containerName, isActivePlay) {
   console.log('allPlaysData: '+allPlaysData);
   var playsPerRow = 4;
@@ -95,6 +91,7 @@ function createAllPlaysOneSummary(allPlaysData, containerName, isActivePlay) {
   });
   
   templ+='</table>';
+  // odd, the previous chart div contents are being retained, what a mess...
   $('div#'+containerName).html(templ);
   
   $.each(activePlaysKeys, function(idx, playAlias) {
@@ -103,11 +100,12 @@ function createAllPlaysOneSummary(allPlaysData, containerName, isActivePlay) {
 		var characters = Object.keys(charMap);
 		var playContainerName = '_'+playAlias;
 		//var title = '<a ng-click="testClick()>'+playAlias+'</a>'
-		var title = playAlias
-
+		var title = '<span style="font-size: 11px;"><b>'+playData.title + '</b><br>('+ playData.year+')</span>';
+		
 		chartOptions = {
 			xAxisLabels : { enabled: false },
-	  	title : title
+	  	title : title,
+	  	titleUseHTML : true
 		}
 		
 		createSinglePlayCharChart(charMap, characters, playContainerName, 'nlines', chartOptions);
@@ -214,6 +212,7 @@ function createColumnChart(containerName, categories, singleSeries, chartOptions
 	
 	YAxisLabel = chartOptions.YAxisLabel;
 	title = chartOptions.title;
+	titleUseHTML = chartOptions.titleUseHTML;
 	xAxisLabels = chartOptions.xAxisLabels;
 	tooltip = chartOptions.tooltip;
 	
@@ -240,7 +239,7 @@ function createColumnChart(containerName, categories, singleSeries, chartOptions
 		},
 		title: {
 		  text: title,
-		  //useHTML:true
+		  useHTML:titleUseHTML
 		},
 		xAxis: {
 		  categories : categories,

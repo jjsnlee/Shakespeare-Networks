@@ -4,7 +4,7 @@ from os.path import join
 import helper
 from plays_n_graphs import get_plays_ctx, init_play_imgs
 from plays_transform import PlayJSONMetadataEncoder
-from clusters import get_lda_ctxt
+from clusters import get_lda_rslt, get_lda_base_dir
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
@@ -72,7 +72,8 @@ def get_corpus_data_json(req, play_set):
                 all_plays_json[play_alias] = {
                     'chardata' : play_json['char_data'],
                     'title'    : play_json['title'],
-                    'genre'    : play_json['type']
+                    'genre'    : play_json['type'],
+                    'year'     : play_json['year']
                 }
 
             all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
@@ -83,8 +84,10 @@ def get_corpus_data_json(req, play_set):
             which_topic = path_elmts[3]
 
             logger.debug('which_topic: %s', which_topic)
-            lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
-            lda_rslt = get_lda_ctxt(lda_key)
+            #lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
+            lda_key = '2014-06-01 12:55:34.874782_20_50.lda'
+            lda_key = join(get_lda_base_dir(), lda_key)
+            lda_rslt = get_lda_rslt(lda_key)
             topic_info = lda_rslt.docs_per_topic[int(which_topic)]
             logger.debug('topic_info: %s', topic_info)
             
@@ -112,12 +115,27 @@ def get_corpus_data_json(req, play_set):
             play = play_data_ctx.get_play(alias)
             # then the character
             char = play.characters.get(char_nm)
+            
+            char_lines = []
+            prev = curr = None
+            for cl in char.clean_lines:
+                if prev is None \
+                        or prev.act!=cl.act \
+                        or prev.scene!=cl.scene \
+                        or int(prev.lineno)+1!=int(cl.lineno):
+                    curr = []
+                    char_lines.append(curr)
+                curr.append(str(cl))
+                prev = cl
+
+            #print 'char_lines: ', char_lines
+            
             char_data = \
             {
              'character'   : char_nm,
              'play'        : title,
              'doc_name'    : char_key,
-             'doc_content' : [str(li) for li in char.clean_lines]
+             'doc_content' : char_lines #[str(li) for li in char.clean_lines]
             }
             char_json = json.dumps(char_data, ensure_ascii=False)
             return HttpResponse(char_json, content_type='application/json')
