@@ -7,12 +7,12 @@ import logging
 from gensim.models.ldamodel import LdaModel
 from gensim.corpora import Dictionary
 from gensim.utils import simple_preprocess #, SaveLoad
+from os.path import join
+import helper
 
 logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger('shakespeare.clusters')
+logger = helper.setup_sysout_handler(__name__)
 
-import helper
-from os.path import join
 rootdir = helper.get_root_dir()
 
 if join(rootdir, 'py-external') not in sys.path:
@@ -75,7 +75,7 @@ class LDAContext(object):
         data = \
         {
          'corpus'       : self.corpus,
-         'stopwords'    : self.stopwords,
+         'stopwords'    : list(self.stopwords),
          'doc_titles'   : self.doc_names,
          'doc_contents' : self.doc_contents
         }
@@ -101,14 +101,17 @@ class LDAContext(object):
         return LDAContext(doc_nms, doc_contents, from_cache=lda_json)
 
 CACHED_LDA_RSLTS = {}
-def get_lda_rslt(lda_key, reload_ctx=False):
+def get_lda_rslt(lda_label, reload_ctx=False):
     global CACHED_LDA_RSLTS
-    if lda_key not in CACHED_LDA_RSLTS or reload_ctx:
-        lda_ctxt = LDAContext.load_corpus()
-        lda = LdaModel.load(lda_key)
-        lda_result = LDAResult(lda_key, lda, lda_ctxt)
-        CACHED_LDA_RSLTS[lda_key] = lda_result
-    return CACHED_LDA_RSLTS[lda_key]
+    if lda_label not in CACHED_LDA_RSLTS or reload_ctx:
+        basedir = join(get_lda_base_dir(), lda_label)
+        lda_ctxt = LDAContext.load_corpus(basedir=basedir)
+        
+        lda_model_loc = join(get_lda_base_dir(), lda_label, 'run.lda')
+        lda = LdaModel.load(lda_model_loc)
+        lda_result = LDAResult(lda_label, lda_ctxt, lda)
+        CACHED_LDA_RSLTS[lda_label] = lda_result
+    return CACHED_LDA_RSLTS[lda_label]
 
 # def get_docs_per_topic(lda, lda_ctxt):
 #     # http://stackoverflow.com/questions/20984841/topic-distribution-how-do-we-see-which-document-belong-to-which-topic-after-doi
@@ -131,21 +134,33 @@ def get_lda_rslt(lda_key, reload_ctx=False):
 #     cluster3 = [j for i,j in zip(corpus_scores, doc_nms) if i[2][1] > threshold]
 
 class LDAResult(object):
-    def __init__(self, label, lda_ctxt, ntopics, npasses):
+    def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None):
         corpus = lda_ctxt.corpus 
         dictionary = lda_ctxt.dictionary
-        lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
-        t = datetime.now()
         
-        self.baselabel = label
-        self.label = '%s_%s_%s_%s_lda' % (label, t, ntopics, npasses)
-        self.lda = lda
-        self.lda_ctxt = lda_ctxt
+        if lda:
+            self.lda = lda
+            self.label = label
+        else:
+            lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
+            t = datetime.now()
+            #self.baselabel = label
+            self.label = '%s_%s_%s_%s_lda' % (label, t, ntopics, npasses)
+            self.lda = lda
 
+        self.lda_ctxt = lda_ctxt
         self._docs_per_topic = None
+        self.termite_data = TermiteData(self)
+
+    def generate_viz(self):
+        self.termite_data.data_for_client()
 
     def save(self):
-        self.lda.save(join(get_lda_base_dir(), self.label, 'run.lda'))
+        basedir = join(get_lda_base_dir(), self.label)
+        os.makedirs(basedir)
+        self.lda_ctxt.save_corpus(basedir=basedir)
+        
+        self.lda.save(join(basedir, 'run.lda'))
         # should also save some of the state
 
     @property
@@ -189,7 +204,7 @@ class TermiteData(object):
         
         self.lda = lda
         self.lda_ctxt = lda_ctxt
-        self.basepath = join(get_lda_base_dir(), lda_rslt.lda_key+'_files')
+        self.basepath = join(get_lda_base_dir(), lda_rslt.label, 'termite')
 
         model = Model()
         model.term_topic_matrix = lda.state.sstats.T 

@@ -19,7 +19,7 @@ def transform(play_html):
 
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
-def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, limit_plays=[]):
+def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, limit_plays=[], reset=False):
     """
     gen_imgs  : generate png images 
     gen_md    : generate the metadata as json
@@ -29,7 +29,8 @@ def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, li
 
     from plays_n_graphs import get_plays_ctx, init_play_imgs
     import json
-    data_ctx = get_plays_ctx('shakespeare')
+    
+    data_ctx = get_plays_ctx('shakespeare', reload_ctx=reset)
     plays = data_ctx.plays
     #play_set = 'shakespeare'
     

@@ -6,56 +6,58 @@ from os.path import join
 import pandas as pd
 
 import logging
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger('shakespeare.clusters_runner')
-
 import helper
+logger = helper.setup_sysout_handler(__name__)
+logging.basicConfig(level=logging.DEBUG)
 
 # 2014-05-13 00:50:36.652535_50_50.lda
 # 2014-06-01 12:55:34.874782_20_50.lda
 
-def main(train_new=False):
+def main(label=None, train_new=False):
     """
     maybe:
         - reduce the sample size by removing characters with x # of lines
     """
-    
+    #import shakespeare.clusters as sc
+    #import shakespeare.clusters_runner as scr
     if train_new:
-        play_ctx = png.get_plays_ctx('shakespeare')
-        prc_ctx = ClustersCtxt(play_ctx)
-        prc_ctx.preproc(by='Char') # by='Char'
-        lda_rslt = doLDA(prc_ctx)
+#         play_ctx = png.get_plays_ctx('shakespeare')
+#         prc_ctx = ClustersCtxt(play_ctx)
+#         prc_ctx.preproc(by='Char/Scene') # by='Char'
+#         lda_rslt = doLDA(prc_ctx)
+        lda_rslt = doLDA(label, ntopics=50, npasses=50)
     else:
         lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
         lda_rslt = get_lda_rslt(lda_key)
 
     td = sc.TermiteData(lda_rslt)
-    #td.saliency()
-    #td.similarity()
-    #td.seriation()
-
+    #td.saliency
+    #td.similarity
+    #td.seriation
+    td.data_for_client()
     return td
 
-def doLDA(prc_ctx):
+def doLDA(label, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene'):
+    play_ctx = png.get_plays_ctx(ctx)
+    prc_ctx = ClustersCtxt(play_ctx)
+    prc_ctx.preproc(by=by) # by='Char'
+    
     doc_titles, docs_content = get_doc_content(prc_ctx)
     
     #logger = logging.getLogger('gensim.models.ldamodel')
     #logger.setLevel(logging.DEBUG)
     #logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    logging.basicConfig(level=logging.DEBUG)
     
-    lda_ctxt = LDAContext(doc_titles, docs_content)
-    lda_ctxt.save_corpus()
+    lda_ctxt = LDAContext(doc_titles, docs_content, stopwds=_get_stopwords())
+    #lda_ctxt.save_corpus()
     
     # Do this N number of times
-    lda = run_n_save_lda(lda_ctxt)
-    return LDAResult(lda, lda_ctxt)
-    #sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
-
-def run_n_save_lda(label, lda_ctxt, ntopics=50, npasses=50):
-    lda_rslt = LDAResult(label, lda_ctxt, ntopics, npasses)
+    lda_rslt = LDAResult(label, lda_ctxt, ntopics=ntopics, npasses=npasses)
     lda_rslt.save()
+
     return lda_rslt
+
+    #sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
 #     doc_results = lda[corpus]
 #     from gensim.models.tfidfmodel import TfidfModel
 #     tfidf_model = TfidfModel( )
@@ -109,6 +111,8 @@ class ClustersCtxt(object):
         then all their lines, and relationships?
         it could be an interesting game of clustering
         """
+        
+        assert(by in ['Play', 'Char', 'Char/Scene'])
         plays = self.plays.values()
         if plays_to_filter:
             plays_to_filter = set(plays_to_filter)
@@ -118,12 +122,29 @@ class ClustersCtxt(object):
         if by == 'Play':
             self.documents = plays
         
-        if by == 'Char':
+        elif by == 'Char':
             clines = []
             for p in plays:
                 clines.extend(p.characters.values())
             self.documents = clines
-
+        
+        elif by == 'Char/Scene':
+            from plays_n_graphs import Character
+            clines = []
+            for p in plays:
+                chars = p.characters.values()
+                # create artificial characters
+                for c in chars:
+                    char_lines = {}
+                    for li in c.clean_lines:
+                        char_lines.setdefault((li.act, li.scene), []).append(li)
+                    for k in char_lines.keys():
+                        char_name = '%s, Act %s, Sc %s' % (c.name, k[0], k[1])
+                        artif_char = Character(char_name, c.play)
+                        artif_char._cleaned_lines = char_lines[k] 
+                        clines.append(artif_char)
+            self.documents = clines
+        
 def get_character_names(prc_ctx):
     #name_d = helper.init_name_dict()
     all_c_in_play = set()

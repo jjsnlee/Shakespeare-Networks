@@ -10,7 +10,7 @@ from pprint import pformat
 from os.path import join
 from collections import OrderedDict
 
-logger = logging.getLogger('shakespeare.plays_n_graphs')
+logger = helper.setup_sysout_handler('shakespeare.plays_n_graphs')
 
 _ALL_PLAYS = None
 def get_plays_ctx(plays_set, reload_ctx=False):
@@ -143,7 +143,8 @@ class ShakespearePlayCtx(RootPlayCtx):
             
             # separate this out for testing...
             play_repl_chars = _repl_speakers.get(play_alias, {})
-            logger.debug('play_repl_chars: [%s]', play_repl_chars)            
+            if play_repl_chars:
+                logger.debug('play_repl_chars: [%s]', play_repl_chars)            
 
             # there is a bug where 2 characters speak together
             # only one of them gets picked up in the graph, 

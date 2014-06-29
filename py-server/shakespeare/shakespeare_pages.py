@@ -8,7 +8,7 @@ from clusters import get_lda_rslt, get_lda_base_dir
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger('shakespeare.shakespeare_pages')
+logger = helper.setup_sysout_handler(__name__)
 
 try:
     from django.http import HttpResponse
@@ -86,8 +86,9 @@ def get_corpus_data_json(req, play_set):
 
             logger.debug('which_topic: %s', which_topic)
             #lda_key = '2014-05-13 00/50/36.652535_50_50.lda'
-            lda_key = '2014-06-01 12:55:34.874782_20_50.lda'
-            lda_key = join(get_lda_base_dir(), lda_key)
+            #lda_key = 'chars_2014-06-01 12:55:34.874782_20_50_lda'
+            lda_key = 'char_scene_2014-06-28 17.14.37.323434_20_50_lda'
+            #lda_key = join(get_lda_base_dir(), lda_key)
             lda_rslt = get_lda_rslt(lda_key)
             topic_info = lda_rslt.docs_per_topic[int(which_topic)]
             logger.debug('topic_info: %s', topic_info)
