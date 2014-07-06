@@ -96,23 +96,23 @@ StateModel.prototype.clearAllSelectedTopics = function() {
  * @this {state model}
  * @param { int } index of double clicked topic
  */
-StateModel.prototype.getSortType = function ( topicIndex ){
-	var sorts = ["desc", "asc", ""];
-	
-	if(this.get("doubleClickTopic") !== topicIndex)
-		return sorts[0];
-	else{
-		var currentSort = this.get("sortType");
-		var index = (sorts.indexOf(currentSort) + 1) % sorts.length;
-		return sorts[index];
-	}
-};
+//StateModel.prototype.getSortType = function ( topicIndex ){
+//	var sorts = ["desc", "asc", ""];
+//	if(this.get("doubleClickTopic") !== topicIndex)
+//		return sorts[0];
+//	else{
+//		var currentSort = this.get("sortType");
+//		var index = (sorts.indexOf(currentSort) + 1) % sorts.length;
+//		return sorts[index];
+//	}
+//};
 StateModel.prototype.setDoubleClickTopic = function ( topicIndex ){
-	var type = this.getSortType(topicIndex);
-	if( type === "")
-		this.set( "doubleClickTopic", null);
-	else
-		this.set( "doubleClickTopic", topicIndex);
+	//var type = this.getSortType(topicIndex);
+//	if( type === "")
+//		this.set( "doubleClickTopic", null);
+//	else
+	var type = "desc";
+	this.set( "doubleClickTopic", topicIndex);
 	this.set( "sortType", type);
 };
 StateModel.prototype.clearSorting = function(){

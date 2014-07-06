@@ -9,6 +9,10 @@ termiteTopics.directive('myDraggable', function($document) {
   };
 });
 
+//termiteTopics.factory('stateModel', function() {
+//  return new StateModel();
+//});
+
 termiteTopics.service('termiteMsgService', function() {
   var topicHandler = null;
   setTopic = function(topicIndex, topicLabel) {

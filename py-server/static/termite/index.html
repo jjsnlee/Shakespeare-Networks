@@ -8,6 +8,7 @@
 	<link href="InteractionObjects.css" rel="stylesheet" type="text/css"/>
 
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="/static/lib/ext/angular-1.2.9/angular.js"></script>
 	
 	<script type="text/javascript" src="/static/lib/ang-dnd.js"></script>
@@ -30,7 +31,6 @@
 	<script type="text/javascript" src="QueryString.js"></script>
 
 <script type="text/javascript">
-
 /**
  * Generates a descending sorted sparse matrix representation of a full matrix. 
  * Must be called by a model that has termIndex, topicIndex, and matrix default vars
@@ -87,31 +87,18 @@ var generateColumnFirst = function( matrix ) {
     }
     return colMatrix;
 };
-// temp globals to check values with javascript console
-var stateModel;
-var seriatedTermTopicProbabilityModel;
-var filteredTermTopicProbabilityModel;
-var termTopicMatrixView;
-var termFrequencyModel;
-var termFrequencyView;
-function init()
-{
-	// create backbone models and views
-	stateModel = new StateModel();
-	
-	seriatedTermTopicProbabilityModel = new SeriatedTermTopicProbabilityModel();
-	filteredTermTopicProbabilityModel = new FilteredTermTopicProbabilityModel();
-	termFrequencyModel = new TermFrequencyModel();	
 
-  //basedir = '../data/';
-  basedir = '../data-shakespeare/';	
-	seriatedTermTopicProbabilityModel.url = basedir+"seriated-parameters.json";
-	filteredTermTopicProbabilityModel.url = basedir+"filtered-parameters.json";
-	termFrequencyModel.url = basedir+"global-term-freqs.json";
+termiteTopics.controller('msgCtrl', function($scope, termiteMsgService) {
+	// create backbone models and views
+	var stateModel = new StateModel();
+
+	var termTopicMatrixView = new TermTopicMatrixView( {el: "div.termTopicMatrixContainer"} );
+	var termFrequencyView = new TermFrequencyView( {el: "div.termFrequencyContainer"} );
 	
-	termTopicMatrixView = new TermTopicMatrixView( {el: "div.termTopicMatrixContainer"} );
-	termFrequencyView = new TermFrequencyView( {el: "div.termFrequencyContainer"} );
-	
+	var seriatedTermTopicProbabilityModel = new SeriatedTermTopicProbabilityModel();
+	var filteredTermTopicProbabilityModel = new FilteredTermTopicProbabilityModel();
+	var termFrequencyModel = new TermFrequencyModel();  
+
 	// init user control views
 	var totalTermsView = new TotalTermsView( {model: stateModel} );
 	var affinityNumTermsView = new AffinityNumTermsView( {model: stateModel} );
@@ -122,11 +109,20 @@ function init()
 	var salientNumTermsSlider = new SalientNumTermsSlider( {model: stateModel} );
 	var userDefinedTermsBox = new UserDefinedTermsBox( {model:stateModel} );
 	var addTopTwenty = new AddTopTwenty( {model:stateModel} );
-	var sortDescription = new SortDescription( {model:stateModel} );
+	//var sortDescription = new SortDescription( {model:stateModel} );
 	var clearAllButton = new ClearAllButton( { model:stateModel } );
 	var clearSortButton = new ClearSortButton( { model:stateModel } );
 	
 	// initialize parent and state model where needed
+  //basedir = '../data/';
+  //basedir = '../data/shakespeare-50/';
+  //basedir = '../data/shakespeare-20/';
+  //basedir = '../data/shakespeare-char-scene-20/';
+  basedir = '../data/shakespeare-char-scene-100/';
+	seriatedTermTopicProbabilityModel.url = basedir+"seriated-parameters.json";
+	filteredTermTopicProbabilityModel.url = basedir+"filtered-parameters.json";
+	termFrequencyModel.url = basedir+"global-term-freqs.json";
+
 	//seriatedTermTopicProbabilityModel.initModel( fullModel );	// unused at the moment
 	filteredTermTopicProbabilityModel.initModel( seriatedTermTopicProbabilityModel, stateModel );
 	termTopicMatrixView.initModel( filteredTermTopicProbabilityModel );
@@ -164,7 +160,7 @@ function init()
 		termTopicMatrixView.listenTo( stateModel, "color:topic", termTopicMatrixView.clickTopic, termTopicMatrixView);
 		filteredTermTopicProbabilityModel.listenTo( stateModel, "color:topic", filteredTermTopicProbabilityModel.selectTopic, filteredTermTopicProbabilityModel);
 		termFrequencyModel.listenTo( stateModel, "color:topic", termFrequencyModel.selectTopic, termFrequencyModel);
-		sortDescription.listenTo( stateModel, "change:sortType change:doubleClickTopic" , sortDescription.render );
+		//sortDescription.listenTo( stateModel, "change:sortType change:doubleClickTopic" , sortDescription.render );
 		
 	});
 	
@@ -192,148 +188,182 @@ function init()
 	stateModel.listenTo( termTopicMatrixView, "mouseover:topic mouseout:topic", stateModel.setHighlightedTopic );
 	stateModel.listenTo( termTopicMatrixView, "mouseover:term mouseout:term", stateModel.setHighlightedTerm );
 	stateModel.listenTo( termFrequencyView, "mouseover:term mouseout:term", stateModel.setHighlightedTerm );
-	stateModel.listenTo( termTopicMatrixView, "doubleClick:topic", stateModel.setDoubleClickTopic );
-	stateModel.listenTo( termTopicMatrixView, "click:topic", stateModel.selectTopic );
+	//stateModel.listenTo( termTopicMatrixView, "doubleClick:topic", stateModel.setDoubleClickTopic );
+	//stateModel.listenTo( termTopicMatrixView, "click:topic", stateModel.selectTopic );
 	// http://backbonejs.org/#Events-listenTo: 
 	// 	object.listenTo(other, event, callback)
-	
+
+	stateModel.listenTo( termTopicMatrixView, "click:topic", function(topicIndex) {
+	    console.log('topicIndex' + topicIndex);
+	    stateModel.selectTopic(topicIndex);
+	    //console.log( termTopicMatrixView.parentModel );
+	    
+	    // It could be we are clicking OFF of a topic 
+	    if(stateModel.get('highlightedTopic') == topicIndex) {
+        stateModel.setDoubleClickTopic(topicIndex);
+
+        var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex]
+        termiteMsgService.setTopic(topicIndex, topicLabel);
+	    }
+	} );
+
 	// being loading process
 	stateModel.loadStatesFromQueryString();
 	initColorObjects(null);
-}
-
-termiteTopics.controller('msgCtrl', function($scope, termiteMsgService) {
-	init();
-	stateModel.listenTo( termTopicMatrixView, "click:topic", function(topicIndex) {
-		console.log('topicIndex' + topicIndex);
-		//console.log( termTopicMatrixView.parentModel );
-		var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex]
-		termiteMsgService.setTopic(topicIndex, topicLabel);
-	} );
 });
 
+//$(document).ready(function(){
+//  $('#double-scroll').doubleScroll();
+//});
 </script>
 
-<style>
-.popupDiv {
-  width:40%; height:80%; 
-  position:absolute; 
-  top:10%; left:30%; 
-  border:3px solid #eee;
-  overflow:auto;
-  background: white   
-}
+<!--<style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
 </style>
-
+<div id="draggable" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>-->
 </head>
-<body ng-app="termiteTopicDisplay">
+<body ng-app="termiteTopicDisplay" !onLoad="onLoad()">
 <div id="pageBackground" ng-controller="msgCtrl">
-	<div id="pageFrame">
-		<div id="pageHeader">
-			<div id="pageControl" class="headerObject">
-				<table cellspacing="5">
-					<tr>
-						<td style="vertical-align: top">
-							<div class="line">
-								Currently showing 
-								<div class="TotalTermsView" style="display:inline">25</div> 
-								total terms.
-							</div>
-							<div class="line">
-								Show top:
-								<input class="AffinityNumTermsSlider" style="display:inline; width: 160px; vertical-align: -5px;" type="range" max="100" min="10" value="25"/> 
-								<div class="AffinityNumTermsView" style="display:inline">25</div> 
-								terms by affinity.</div>
-							<div class="line">
-								Show top:
-								<input class="SalientNumTermsSlider" style="display:inline; width: 160px; vertical-align: -5px;" type="range" max="100" min="0" value="0"/>
-								<div class="SalientNumTermsView" style="display:inline-block">0</div> 
-								terms by saliency.
-							</div>
-						</td>
-						<td style="vertical-align: top">
-							<div class="line">
-								Add top twenty terms for clicked topics
-								<input type="checkbox" class="TopTwentyAddition" style="display:inline-block"></div> 
-							</div>
-							<div class="line">
-								Always showing terms: 
-								<input class="UserDefinedTermsBox" style="display:inline; width: 200px; vertical-align: -2px" type="text"/>
-								<div class="FoundTermsView" style="display:inline-block"></div>
-							</div>
-							<div class="line">
-								<div class="UnfoundTermsPrefix" style="display:inline-block; visibility:hidden">Cannot find these terms: </div>
-								<div class="UnfoundTermsView" style="display:inline-block; visibility:hidden"></div>
-							</div>
-						</td>
-						<td style="vertical-align: top">
-              <div class="line">
-								Sorting by: 
-								<div class="SortDescription" style="display:inline-block">default</div> 
-							</div>
-							<div class="line">
-								(Double click topic label to sort by topic.)
-							</div>
-						</td>
-						<td style="vertical-align: top">
-							<div class="line">
-								<button type="button" class="clearAll" style="width: 150px">Clear all topic selections</button>
-							</div>
-							<div class="line">
-								<button type="button" class="clearSort" style="width: 150px">Clear sorting method</button>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		<div id="pageContent" ng-controller="contentCtrl">
-			<table border=0 !width="100%">
-				<tr>
-					<!-- Frequent terms -->
-					<td style="vertical-align: top"><div class="termFrequencyContainer"></div></td>
+  <div id="pageFrame">
 
-					<!-- Main matrix -->
-					<td style="vertical-align: top"><div class="termTopicMatrixContainer"></div></td>
-					<!-- Related documents -->
-					<td style="vertical-align: top" ng-cloak>
-						<div ng-show="topDocsForTopic">
-						<span style="color: #666; font-family: Verdana; font-size: 8pt;">{{selectedTopic}}</span>
-						<table border=1 cellpadding=1 cellspacing=0 width=250>
-						<tr ng-repeat="doc in topDocsForTopic" style="color: #666; font-family: Verdana; font-size: 8pt;">
-							<td><a href="" ng-click="getDocContent(doc.char)">{{doc.char}}</a></td>
-							<td>{{doc.score}}</td>
-						</tr>
-					  </table>
-					  </div>
-					</td>
-				</tr>
-			</table>
-			<div id="pageDetails">
-				<p>This visualization shows the topical distribution of words in a corpus.</p>
-				<p>The area of a circle is proportional to a word's frequency in a topic.</p>
-			</div>
+    <div id="pageHeader">
+      <div id="pageControl" class="headerObject">
+        <!--<div ng-include="'termite-hdr.html'" onLoad="onLoad()"></div>-->
+    <table cellspacing="5">
+    <tr>
+        <td style="vertical-align: top">
+            <div class="line">
+                Currently showing 
+                <div class="TotalTermsView" style="display:inline">25</div> 
+                total terms.
+            </div>
+            <div class="line">
+                Show top:
+                <input class="AffinityNumTermsSlider" style="display:inline; width: 140px; vertical-align: -5px;" type="range" max="100" min="10" value="25"/> 
+                <div class="AffinityNumTermsView" style="display:inline">25</div> 
+                terms by affinity.</div>
+            <div class="line">
+                Show top:
+                <input class="SalientNumTermsSlider" style="display:inline; width: 140px; vertical-align: -5px;" type="range" max="100" min="0" value="0"/>
+                <div class="SalientNumTermsView" style="display:inline-block">0</div> 
+                terms by saliency.
+            </div>
+        </td>
+        <td style="vertical-align: top">
+            <div class="line">
+                Add top twenty terms for clicked topics
+                <input type="checkbox" class="TopTwentyAddition" style="display:inline-block"></div> 
+            </div>
+            <div class="line">
+                Always showing terms: 
+                <input class="UserDefinedTermsBox" style="display:inline; width: 200px; vertical-align: -2px" type="text"/>
+                <div class="FoundTermsView" style="display:inline-block"></div>
+            </div>
+            <div class="line">
+                <div class="UnfoundTermsPrefix" style="display:inline-block; visibility:hidden">Cannot find these terms: </div>
+                <div class="UnfoundTermsView" style="display:inline-block; visibility:hidden"></div>
+            </div>
+        </td>
+        <!--<td style="vertical-align: top">
+        <div class="line">
+                Sorting by: 
+                <div class="SortDescription" style="display:inline-block">default</div> 
+            </div>
+            <div class="line">
+                (Double click topic label to sort by topic.)
+            </div>
+        </td>-->
+        <td style="vertical-align: top">
+            <div class="line">
+                <button type="button" class="clearAll" style="width: 150px">Clear all topic selections</button>
+            </div>
+            <div class="line">
+                <button type="button" class="clearSort" style="width: 150px">Clear sorting method</button>
+            </div>
+        </td>
+    </tr>
+</table>
 
-			<div my-draggable id="topicPopup" ng-show="showTopicDetails===1" class="popupDiv">
-				<div align="right"><button ng-click="showTopicDetails=0">Close</button></div>
-				<table border=0 cellpadding=0 cellspacing=0 width="100%" style="overflow:auto;">
-			    <!--<tr><td align="right"><button ng-click="showTopicDetails=0">Close</button></td></tr>-->
-			    <tr><td>{{docName}}</td></tr>
-			    <tr><td>
-			    	<span ng-repeat="content in docContent" style="color: #666; font-family: Verdana; font-size: 8pt;">
-			    	{{content}}<br>
-						</span>
-			    </td></tr>
-			  </table>
-			</div>
-		</div>
+      </div>
+    </div>
 
-		<div id="pageFooter">
-        Termite | Topic Model Visualization<br/>
-				<span class="credits">Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group</span><br/>		
-			http://termite.stanford.edu | Version 1.1
-		</div>
-	</div>
+    <div id="pageContent" ng-controller="contentCtrl">
+      <table border=1 width="100%">
+	    <tr>
+	      <!-- Frequent terms -->
+	      <td width="20%" style="vertical-align: top">
+	        <div class="termFrequencyContainer"></div>
+	      </td>
+	
+	      <!-- Main matrix -->
+	      <td width="50%" style="vertical-align:top">
+	        <div style="width:100%;overflow:auto;" id="double-scroll" class="termTopicMatrixContainer"></div>
+	      </td>
+	
+	      <!-- Related documents -->
+	      <td width="30%" style="vertical-align: top" ng-cloak>
+        <div ng-show="topDocsForTopic">
+          <span style="color: #666; font-family: Verdana; font-size: 8pt;">
+            {{selectedTopic}}
+          </span>
+          <table border=1 cellpadding=1 cellspacing=0 width=250>
+            <tr ng-repeat="doc in topDocsForTopic" style="color:#666; font-family:Verdana; font-size:8pt;">
+              <td>
+                <a href="" ng-click="getDocContent(doc.char)">
+                  {{doc.char}}
+                </a>
+              </td>
+              <td>
+                {{doc.score}}
+              </td>
+            </tr>
+          </table>
+        </div>
+	      </td>
+	    </tr>
+      </table>
+      <style>
+        .popupDiv { width:40%; height:80%; position:absolute; top:10%; left:30%; 
+            border:3px solid #eee; background: white; 
+            overflow:hidden; 
+            padding:0px 0px 10px; 
+        }
+      </style>
+      
+      <div my-draggable id="topicPopup" ng-show="showTopicDetails===1" class="popupDiv">
+        <div style="position:absolute;width:90%;padding:5px 30px 10px;">
+          <div align="right">
+            <button ng-click="showTopicDetails=0">Close</button>
+          </div>
+          <div align="top">{{docName}}</div>
+        </div>
+        <div style="position:relative;top:8%;width:100%;height:600px;overflow:auto;">
+          <p ng-repeat="content in docContent"
+             style="color: #666; font-family: Verdana; font-size: 8pt;padding:10px 5px 10px;">
+            <span ng-repeat="line in content">{{line}}<br></span>
+          </p>
+        </div>
+      </div> <!-- END TopicPopup -->
+    </div> <!-- END PageContent, CONTROLLER: contentCtrl-->
+
+	  <div id="pageDetails">
+	    <p>This visualization shows the topical distribution of words in a corpus.</p>
+	    <p>The area of a circle is proportional to a word's frequency in a topic.</p>
+	  </div>
+
+    <div id="pageFooter">
+      Termite | Topic Model Visualization
+      <br/>
+      <span class="credits">
+        Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group
+      </span>
+      <br/>
+      http://termite.stanford.edu | Version 1.1
+    </div>
+  </div>
 </div>
+
 </body>
 </html>

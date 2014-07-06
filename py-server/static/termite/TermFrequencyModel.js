@@ -23,7 +23,6 @@ var TermFrequencyModel = Backbone.Model.extend({
 		"colorList": [],
 		"selectedTopics": {} 
 	},
-	//url : "../data/global-term-freqs.json",
 	initialize : function() {
 		this.parentModel = null;
 		this.stateModel = null;

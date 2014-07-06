@@ -243,6 +243,70 @@ TermTopicMatrixView.prototype.updateTopLabelView = function(){
 	var topicIndex = this.parentModel.get("topicIndex");
 	var dblclickTimer = null;
 
+//function dragmove(d) {
+//  var x = d3.event.x;
+//  var y = d3.event.y;
+//  d3.select(this).attr("transform", "translate(" + x + "," + y + ")");
+//}
+
+//	var drag = d3.behavior.drag()
+//    .on("dragstart", function(){
+//        //do some drag start stuff...
+//        console.log('Started dragging...')
+//    })
+//    .on("drag", function(d){
+//        //hey we're dragging, let's update some stuff
+//        console.log('Dragging...');
+//        //dragmove(d);
+//        var x = d3.event.x;
+//			  var y = d3.event.y;
+//			  d3.select(this).attr("transform", "translate(" + x + "," + y + ")");
+//    })
+//    .on("dragend", function(){
+//        //we're done, end some stuff
+//        console.log('Done dragging...')
+//    });
+//	d3.selectAll(".topLabel").call(drag);
+
+//$(".topLabel").draggable({
+//	revert: true,
+//	revertDuration: 200,
+//	cursorAt: { left: -2, top: -2 }, 
+//
+//	// Register what we're dragging with the drop manager
+//	start: function (e) {
+//		console.log('Started dragging...');
+//		// Getting the datum from the standard event target requires more work.
+//		DragDropManager.dragged = d3.select(e.target).datum();
+//	},
+//	// Set cursors based on matches, prepare for a drop
+//	drag: function (e) {
+//		matches = DragDropManager.draggedMatchesTarget();
+//		body.style("cursor",function() {
+//			return (matches) ? "copy" : "move";
+//		});
+//		// Eliminate the animation on revert for matches.
+//		// We have to set the revert duration here instead of "stop"
+//		// in order to have the change take effect.
+//		$(e.target).draggable("option","revertDuration",(matches) ? 0 : 200)
+//	},
+//	// Handle the end state. For this example, disable correct drops
+//	// then reset the standard cursor.
+//	stop: function (e,ui) {
+//		console.log('Done dragging...');
+//		// Dropped on a non-matching target.
+//		if (!DragDropManager.draggedMatchesTarget()) return;
+//		$(e.target).draggable("disable");
+//		$("body").css("cursor","");
+//	}
+//});
+
+//	this.topLabelLayer.selectAll( "text" ).data( topicIndex )
+//		.attr( "id", function(d, i) { 
+//			//return ["topLabel", this.selectedTopics[i], getTopicClassTag(d)].join(" ")
+//			return getTopicClassTag(d) 
+//		}.bind(this)); //.draggable();
+
 	this.topLabelLayer.selectAll( "text" ).data( topicIndex ).exit().remove()
 	this.topLabelLayer.selectAll( "text" ).data( topicIndex ).enter().append( "svg:text" )
 		.on( "mouseout", function() { this.trigger( "mouseout:topic", null) }.bind(this))
@@ -260,6 +324,8 @@ TermTopicMatrixView.prototype.updateTopLabelView = function(){
   				dblclickTimer = null;
   				this.trigger( "doubleClick:topic", i) 
   			}.bind(this))
+
+		//this.topLabelLayer.selectAll( "text" ).data( topicIndex ).draggable();
   	
   	var clickWork = function(d, i) {
   		if(dblclickTimer === null)

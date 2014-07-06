@@ -115,37 +115,38 @@ var AddTopTwenty = Backbone.View.extend({
 });
 
 // Expects to be bound to the state model
-var SortDescription = Backbone.View.extend({
-	el: 'div.SortDescription',
-	render : function()
-	{
-		var sort = this.model.get("sortType");
-		var topic = this.model.get("doubleClickTopic");
-		var output = "";
-		if( sort === "" )
-			output = "default";
-		else if (sort === "asc")
-			output = "ascending on topic #" + topic;
-		else
-			output = "descending on topic #" + topic;
-		d3.select(this.el).text( output );
-	},
-	initialize : function() {
-		// TODO: call render's function?
-		this.model.on( "change:sortType change:doubleClickTopic", function(value) {
-			var sort = this.model.get("sortType");
-			var topic = this.model.get("doubleClickTopic");
-			var output = "";
-			if( sort === "" )
-				output = "default";
-			else if (sort === "asc")
-				output = "ascending on topic #" + topic;
-			else
-				output = "descending on topic #" + topic;
-			d3.select(this.el).text( output );
-		}, this);
-	}
-});
+//var SortDescription = Backbone.View.extend({
+//	el: 'div.SortDescription',
+//	render : function()
+//	{
+//		var sort = this.model.get("sortType");
+//		var topic = this.model.get("doubleClickTopic");
+//		var output = "";
+//		if( sort === "" )
+//			output = "default";
+//		else if (sort === "asc")
+//			output = "ascending on topic #" + topic;
+//		else
+//			output = "descending on topic #" + topic;
+//		d3.select(this.el).text( output );
+//	},
+//	initialize : function() {
+//		// TODO: call render's function?
+//		this.model.on( "change:sortType change:doubleClickTopic", function(value) {
+//			var sort = this.model.get("sortType");
+//			var topic = this.model.get("doubleClickTopic");
+//			topic = Number(topic)+1;
+//			var output = "";
+//			if( sort === "" )
+//				output = "default";
+//			else if (sort === "asc")
+//				output = "ascending on topic #" + topic;
+//			else
+//				output = "descending on topic #" + topic;
+//			d3.select(this.el).text( output );
+//		}, this);
+//	}
+//});
 
 // Expects to be bound to the state model
 var ClearAllButton = Backbone.View.extend({
