@@ -4,7 +4,7 @@ from os.path import join
 import helper
 from plays_n_graphs import get_plays_ctx, init_play_imgs
 from plays_transform import PlayJSONMetadataEncoder
-from clusters import get_lda_rslt, get_lda_base_dir
+from clusters import get_lda_rslt
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
@@ -87,11 +87,12 @@ def get_corpus_data_json(req, play_set):
             logger.debug('which_topic: %s', which_topic)
             #lda_key = '2014-05-13 00/50/36.652535_50_50.lda'
             #lda_key = 'chars_2014-06-01 12:55:34.874782_20_50_lda'
-            lda_key = 'char_scene_2014-06-28 17.14.37.323434_20_50_lda'
-            #lda_key = join(get_lda_base_dir(), lda_key)
+            #lda_key = 'char_scene_2014-06-28 17.14.37.323434_20_50_lda'
+            lda_key = 'char_scene_2014-06-29 19.49.11.703618_100_50_lda'
+            
             lda_rslt = get_lda_rslt(lda_key)
             topic_info = lda_rslt.docs_per_topic[int(which_topic)]
-            logger.debug('topic_info: %s', topic_info)
+            #logger.debug('topic_info: %s', topic_info)
             
             topic_json = json.dumps(topic_info, ensure_ascii=False)
             return HttpResponse(topic_json, content_type='application/json')
@@ -111,6 +112,24 @@ def get_corpus_data_json(req, play_set):
             # then the character
             char = play.characters.get(char_nm)
             
+            # fix this!!!
+            if not char:
+                #char_nm, act, scene = char_nm.split(',')
+                import re
+                from plays_n_graphs import Character
+                CHAR_NM_RE = re.compile('^([^,]+), Act (\d+), Sc (\d+)$')
+                m = CHAR_NM_RE.match(char_nm)
+                char_nm, act, sc = m.group(1), m.group(2), m.group(3)                     
+                
+                char = play.characters.get(char_nm)
+                char_lines = []
+                for li in char.clean_lines:
+                    if li.act==act and li.scene==sc:
+                        char_lines.append(li)
+                artif_char = Character(char_nm, play)
+                artif_char._cleaned_lines = char_lines
+                char = artif_char
+            
             char_lines = []
             prev = curr = None
             for cl in char.clean_lines:
@@ -120,10 +139,14 @@ def get_corpus_data_json(req, play_set):
                         or int(prev.lineno)+1!=int(cl.lineno):
                     curr = []
                     char_lines.append(curr)
-                curr.append(str(cl))
+                li = str(cl)
+                #li = li.replace('France', '<yellow>France</yellow>')
+                curr.append(li)
                 prev = cl
 
             #print 'char_lines: ', char_lines
+            
+            #char_lines = char_lines.replace('france', '<yellow>france</yellow>')
             
             char_data = \
             {
@@ -173,7 +196,7 @@ def get_play_data_json(req, play_set):
             }
             json_rslt = json.dumps(scene_data, ensure_ascii=False)
             return HttpResponse(json_rslt, content_type='application/json')
-        
+
         else:
             # Probably want to streamline this, so we take the existing files where possible...
             init_play_imgs(play, play_alias, False)
