@@ -1,8 +1,17 @@
+function initUserControlViewComponents(stateModel) {
+  var affinityNumTermsSlider = new AffinityNumTermsSlider( {model: stateModel} );
+  var salientNumTermsSlider = new SalientNumTermsSlider( {model: stateModel} );
+  var userDefinedTermsBox = new UserDefinedTermsBox( {model:stateModel} );
+  var addTopTwenty = new AddTopTwenty( {model:stateModel} );
+  //var sortDescription = new SortDescription( {model:stateModel} );
+  var clearAllButton = new ClearAllButton( { model:stateModel } ); 
+  var clearSortButton = new ClearSortButton( { model:stateModel } );
+}
+
 // Expects to be bound to the state model
 var TotalTermsView = Backbone.View.extend({
 	el : 'div.TotalTermsView',
-	render : function()
-	{
+	render : function() {
 		d3.select(this.el).text( this.model.get("totalTerms") );
 	}
 });
@@ -11,8 +20,7 @@ var TotalTermsView = Backbone.View.extend({
 // Need to bound to the state model
 var AffinityNumTermsView = Backbone.View.extend({
 	el : 'div.AffinityNumTermsView',
-	render : function()
-	{
+	render : function() {
 		d3.select(this.el).text( this.model.get("numAffinityTerms") );
 	}
 });
@@ -32,13 +40,11 @@ var AffinityNumTermsSlider = Backbone.View.extend({
 	}
 });
 
-
 // Salient Number Terms
 // Expects to be bound to the state model
 var SalientNumTermsView = Backbone.View.extend({
 	el : 'div.SalientNumTermsView',
-	render : function()
-	{
+	render : function() {
 		d3.select(this.el).text( this.model.get("numSalientTerms") );
 	}
 });
@@ -62,8 +68,7 @@ var SalientNumTermsSlider = Backbone.View.extend({
 // Expects to be bound to the state model
 var FoundTermsView = Backbone.View.extend({
 	el : 'div.FoundTermsView',
-	render : function()
-	{
+	render : function() {
 		d3.select(this.el).text( this.model.get("foundTerms"));
 	}
 });
@@ -72,8 +77,7 @@ var FoundTermsView = Backbone.View.extend({
 var UnfoundTermsView = Backbone.View.extend({
 	el: 'div.UnfoundTermsView',
 	prefix: 'div.UnfoundTermsPrefix',
-	render : function()
-	{
+	render : function() {
 		if( this.model.get("unfoundTerms") !== ""){
 			d3.select( this.prefix ).style("visibility", "visible");
 			d3.select( this.el ).style("visibility", "visible").text( this.model.get("unfoundTerms"));

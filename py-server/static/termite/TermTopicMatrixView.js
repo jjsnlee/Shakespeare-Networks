@@ -178,16 +178,22 @@ TermTopicMatrixView.prototype.renderUpdate = function(){
 		
 	this.xs
 		.domain( [ 0, topicIndex.length ] )
-		.range( [ MATRIX_CONTAINER_PADDING.left, MATRIX_CONTAINER_PADDING.left + topicIndex.length * MATRIX_ENCODING_PARAMETERS.packing() ] );
+		.range( [ MATRIX_CONTAINER_PADDING.left, 
+		          MATRIX_CONTAINER_PADDING.left 
+		              + topicIndex.length * MATRIX_ENCODING_PARAMETERS.packing() ] );
 	this.ys
 		.domain( [ 0, termIndex.length ] )
-		.range( [ MATRIX_CONTAINER_PADDING.top, MATRIX_CONTAINER_PADDING.top + termIndex.length * MATRIX_ENCODING_PARAMETERS.packing() ] );
+		.range( [ MATRIX_CONTAINER_PADDING.top, 
+		          MATRIX_CONTAINER_PADDING.top 
+		              + termIndex.length * MATRIX_ENCODING_PARAMETERS.packing() ] );
+
 	this.svg
 		.style( "width", MATRIX_CONTAINER_PADDING.fullWidth( topicIndex.length ) + "px" )
 		.style( "height", MATRIX_CONTAINER_PADDING.fullHeight( topicIndex.length, termIndex.length ) + "px" )
 	
 	this.updateMatrixView();
 	this.updateTopLabelView();
+	// Probably want to remove this
 	this.updateLeftLabelView();
 };
 
@@ -209,10 +215,23 @@ TermTopicMatrixView.prototype.updateMatrixView = function(){
 	this.matrixLayer.selectAll( "circle" ).data( matrix ).exit().remove();
 	this.matrixLayer.selectAll( "circle" ).data( matrix ).enter().append( "svg:circle" )
 		.on( "mouseout", function() { this.trigger( "mouseout:term", ""); this.trigger( "mouseout:topic", null); }.bind(this) )
+
 	this.matrixLayer.selectAll( "circle" ).data( matrix )	
-		.attr( "class", function(d) { return [ "matrixElement", this.selectedTopics[d.topicIndex], getTopicClassTag(d.topicName), getTermClassTag(d.term) ].join(" ") }.bind(this))
-		.on( "mouseover", function(d) { this.trigger( "mouseover:term", d.term); this.trigger( "mouseover:topic", d.topicIndex); }.bind(this) )
-		.on( "click", function (d) { this.trigger( "click:topic", d.topicIndex ) }.bind(this)) 
+		.attr( "class", function(d) { 
+		  return [ "matrixElement", 
+		           this.selectedTopics[d.topicIndex], 
+		           getTopicClassTag(d.topicName), 
+		           getTermClassTag(d.term) 
+		         ].join(" ") 
+		}.bind(this))
+		.on( "mouseover", function(d) { 
+		  this.trigger( "mouseover:term", d.term); 
+		  this.trigger( "mouseover:topic", d.topicIndex); 
+		}.bind(this) )
+		.on( "click", function (d) { 
+		  console.log('term: '+d.term+', topic: '+d.topicIndex+', val: '+d.value);
+		  //this.trigger( "click:topic", d.topicIndex ) 
+		}.bind(this)) 
 		.attr( "cx", function(d) { return this.xs(d.topicIndex+0.5) }.bind(this) )
 		.attr( "cy", function(d) { return this.ys(d.termIndex+0.5) }.bind(this) )
 		.attr( "r", function(d) { return this.rs(d.value) }.bind(this) )
@@ -239,106 +258,43 @@ TermTopicMatrixView.prototype.initTopLabelView = function(){
 	this.topLabelLayer = this.svg.append( "svg:g" )
 		.attr( "class", "topLabelLayer" );
 };
+
 TermTopicMatrixView.prototype.updateTopLabelView = function(){
 	var topicIndex = this.parentModel.get("topicIndex");
 	var dblclickTimer = null;
-
-//function dragmove(d) {
-//  var x = d3.event.x;
-//  var y = d3.event.y;
-//  d3.select(this).attr("transform", "translate(" + x + "," + y + ")");
-//}
-
-//	var drag = d3.behavior.drag()
-//    .on("dragstart", function(){
-//        //do some drag start stuff...
-//        console.log('Started dragging...')
-//    })
-//    .on("drag", function(d){
-//        //hey we're dragging, let's update some stuff
-//        console.log('Dragging...');
-//        //dragmove(d);
-//        var x = d3.event.x;
-//			  var y = d3.event.y;
-//			  d3.select(this).attr("transform", "translate(" + x + "," + y + ")");
-//    })
-//    .on("dragend", function(){
-//        //we're done, end some stuff
-//        console.log('Done dragging...')
-//    });
-//	d3.selectAll(".topLabel").call(drag);
-
-//$(".topLabel").draggable({
-//	revert: true,
-//	revertDuration: 200,
-//	cursorAt: { left: -2, top: -2 }, 
-//
-//	// Register what we're dragging with the drop manager
-//	start: function (e) {
-//		console.log('Started dragging...');
-//		// Getting the datum from the standard event target requires more work.
-//		DragDropManager.dragged = d3.select(e.target).datum();
-//	},
-//	// Set cursors based on matches, prepare for a drop
-//	drag: function (e) {
-//		matches = DragDropManager.draggedMatchesTarget();
-//		body.style("cursor",function() {
-//			return (matches) ? "copy" : "move";
-//		});
-//		// Eliminate the animation on revert for matches.
-//		// We have to set the revert duration here instead of "stop"
-//		// in order to have the change take effect.
-//		$(e.target).draggable("option","revertDuration",(matches) ? 0 : 200)
-//	},
-//	// Handle the end state. For this example, disable correct drops
-//	// then reset the standard cursor.
-//	stop: function (e,ui) {
-//		console.log('Done dragging...');
-//		// Dropped on a non-matching target.
-//		if (!DragDropManager.draggedMatchesTarget()) return;
-//		$(e.target).draggable("disable");
-//		$("body").css("cursor","");
-//	}
-//});
-
-//	this.topLabelLayer.selectAll( "text" ).data( topicIndex )
-//		.attr( "id", function(d, i) { 
-//			//return ["topLabel", this.selectedTopics[i], getTopicClassTag(d)].join(" ")
-//			return getTopicClassTag(d) 
-//		}.bind(this)); //.draggable();
-
 	this.topLabelLayer.selectAll( "text" ).data( topicIndex ).exit().remove()
 	this.topLabelLayer.selectAll( "text" ).data( topicIndex ).enter().append( "svg:text" )
 		.on( "mouseout", function() { this.trigger( "mouseout:topic", null) }.bind(this))
 		.attr( "y", 3 )
-	this.topLabelLayer.selectAll( "text" ).data( topicIndex )
-		.attr( "class", function(d, i) { return ["topLabel", this.selectedTopics[i], getTopicClassTag(d)].join(" ") }.bind(this))
-		.on( "mouseover", function(d, i) { this.trigger( "mouseover:topic", i ) }.bind(this))
-		.attr( "transform", function(d,i) { return "translate(" + this.xs(i+0.5) + "," + (this.ys(0)-MATRIX_CONTAINER_PADDING.top_separation) + ") rotate(270)" }.bind(this) )
-		.text( function(d) { return d } )
-		.on( "click", function(d, i) { 
-				dblclickTimer = setTimeout(function(){ clickWork(d, i)}, 200);
-			})
-		.on( "dblclick", function(d, i){ 
-				clearTimeout(dblclickTimer);
-  				dblclickTimer = null;
-  				this.trigger( "doubleClick:topic", i) 
-  			}.bind(this))
 
-		//this.topLabelLayer.selectAll( "text" ).data( topicIndex ).draggable();
-  	
-  	var clickWork = function(d, i) {
-  		if(dblclickTimer === null)
-			return; 
-		else { 
-			this.trigger( "click:topic", i)
-		}
-  	}.bind(this);
+	this.topLabelLayer.selectAll( "text" ).data( topicIndex )
+		.attr( "class", function(d, i) { 
+		  return ["topLabel", this.selectedTopics[i], getTopicClassTag(d)].join(" ") 
+		}.bind(this))
+		.on( "mouseover", function(d, i) { this.trigger( "mouseover:topic", i ) }.bind(this))
+		.attr( "transform", function(d,i) { 
+		  return "translate(" + this.xs(i+0.5) + "," 
+		          + (this.ys(0)-MATRIX_CONTAINER_PADDING.top_separation) 
+		          + ") rotate(270)" 
+		}.bind(this) )
+		.text( function(d) { return d } )
+		.on( "click", function(d, i) {
+		  this.trigger( "click:topic", i)
+				//dblclickTimer = setTimeout(function(){ clickWork(d, i)}, 200);
+			}.bind(this))
+
+//		.on( "dblclick", function(d, i){ 
+//				clearTimeout(dblclickTimer);
+//  				dblclickTimer = null;
+//  				this.trigger( "doubleClick:topic", i) 
+//  			}.bind(this))
 };
+
 TermTopicMatrixView.prototype.initLeftLabelView = function(){
 	this.leftLabelLayer = this.svg.append( "svg:g" )
 		.attr( "class", "leftLabelLayer" );
 };
+
 TermTopicMatrixView.prototype.updateLeftLabelView = function(){
 	var termIndex = this.parentModel.get("termIndex");
 	
@@ -360,7 +316,6 @@ TermTopicMatrixView.prototype.updateLeftLabelView = function(){
 TermTopicMatrixView.prototype.update = function() {
 	this.renderUpdate();
 };
-
 
 // Interactions
 /** 
@@ -489,3 +444,65 @@ TermTopicMatrixView.prototype.selectTopic = function( topic, colorClass ) {
 		this.selectedTopics[topic] = colorClass;
 	}
 };
+
+
+//function dragmove(d) {
+//  var x = d3.event.x;
+//  var y = d3.event.y;
+//  d3.select(this).attr("transform", "translate(" + x + "," + y + ")");
+//}
+//  var drag = d3.behavior.drag()
+//    .on("dragstart", function(){
+//        //do some drag start stuff...
+//        console.log('Started dragging...')
+//    })
+//    .on("drag", function(d){
+//        //hey we're dragging, let's update some stuff
+//        console.log('Dragging...');
+//        //dragmove(d);
+//        var x = d3.event.x;
+//            var y = d3.event.y;
+//            d3.select(this).attr("transform", "translate(" + x + "," + y + ")");
+//    })
+//    .on("dragend", function(){
+//        //we're done, end some stuff
+//        console.log('Done dragging...')
+//    });
+//  d3.selectAll(".topLabel").call(drag);
+//$(".topLabel").draggable({
+//  revert: true,
+//  revertDuration: 200,
+//  cursorAt: { left: -2, top: -2 }, 
+//
+//  // Register what we're dragging with the drop manager
+//  start: function (e) {
+//      console.log('Started dragging...');
+//      // Getting the datum from the standard event target requires more work.
+//      DragDropManager.dragged = d3.select(e.target).datum();
+//  },
+//  // Set cursors based on matches, prepare for a drop
+//  drag: function (e) {
+//      matches = DragDropManager.draggedMatchesTarget();
+//      body.style("cursor",function() {
+//          return (matches) ? "copy" : "move";
+//      });
+//      // Eliminate the animation on revert for matches.
+//      // We have to set the revert duration here instead of "stop"
+//      // in order to have the change take effect.
+//      $(e.target).draggable("option","revertDuration",(matches) ? 0 : 200)
+//  },
+//  // Handle the end state. For this example, disable correct drops
+//  // then reset the standard cursor.
+//  stop: function (e,ui) {
+//      console.log('Done dragging...');
+//      // Dropped on a non-matching target.
+//      if (!DragDropManager.draggedMatchesTarget()) return;
+//      $(e.target).draggable("disable");
+//      $("body").css("cursor","");
+//  }
+//});
+//  this.topLabelLayer.selectAll( "text" ).data( topicIndex )
+//      .attr( "id", function(d, i) { 
+//          //return ["topLabel", this.selectedTopics[i], getTopicClassTag(d)].join(" ")
+//          return getTopicClassTag(d) 
+//      }.bind(this)); //.draggable();

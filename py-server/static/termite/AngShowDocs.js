@@ -18,55 +18,65 @@ termiteTopics.service('termiteMsgService', function() {
   setTopic = function(topicIndex, topicLabel) {
 		topicHandler(topicIndex, topicLabel);
   };
-  registerTopicHandler = function(handler) {
-  	topicHandler = handler;
-  }
+  registerTopicHandler  = function(handler) { topicHandler = handler; };
+
   return {
   	registerTopicHandler : registerTopicHandler,
-  	setTopic : setTopic
+  	setTopic : setTopic,
   };
 });
 
-termiteTopics.controller('contentCtrl', function($scope, $http, termiteMsgService) {
-	$scope.topDocsForTopic = [];
-	$scope.selectedTopic = null;
-	$scope.showTopicDetails = 0;
-	
-	$scope.getDocContent = function(charNm) {
-		console.log('charNm: '+charNm);
-		$scope.showTopicDetails = 1;
-		
-		$http.get('/shakespeare/corpus/characters/'+charNm).success(function(data) {
-			console.log('data: '+data);
-			$scope.docName    = data.doc_name;
-			$scope.docContent = data.doc_content;
-    });
-	};
+termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsgService) {
+  $scope.topDocsForTopic = [];
+  $scope.selectedTopic = null;
+  $scope.showTopicDetails = 0;
 
-	$scope.getSelected = function(topicIndex, topicLabel) {
-		console.log('Got msg about topicIndex: ' + topicIndex);
+  var models = $scope.$parent.getModels();
+  var filteredTermTopicProbabilityModel = models['filteredTermTopicProbabilityModel'];
+  var termFrequencyModel = models['termFrequencyModel'];
+  var stateModel = models['stateModel'];
+  
+  $scope.getDocContent = function(charNm) {
+    console.log('charNm: '+charNm);
+    $scope.showTopicDetails = 1;
+    $http.get('/shakespeare/corpus/characters/'+charNm).success(function(data) {
+      console.log('data: '+data);
+      
+      var terms = filteredTermTopicProbabilityModel.get('termIndex');
+      var content = data.doc_content.map(function(section) {
+        var sectionText = section.map(function(li) {
+          //return li.replace(/France/g, "<span class='yellow'>France</span>");
+          for(i in terms)           
+            li = li.replace(new RegExp('\\b('+terms[i]+')\\b', 'gi'), "<span class='yellow'>$1</span>" );
+          return li;
+        }).join('<br>\n');
+        
+        return '<p class="charText">'+sectionText+'</p>'
+      }).join('\n');
+      
+      content = $sce.trustAsHtml(content);
 
-		$scope.selectedTopic = topicLabel;
-		$http.get('/shakespeare/corpus/ldatopics/'+topicIndex).success(function(data) {
-			data = data.map(function(c) {
-    		return {
-    			'char'  : c[0], 
-    			'score' : c[1].toFixed(6) 
-    			//'url'   : 'ABC'
-    		}
-  		});
-			$scope.topDocsForTopic = _.sortBy(data, function(c) { 
-				return -1*c.score; 
-			});
+      $scope.docName    = data.doc_name;
+      $scope.docContent = content;
     });
   };
-  termiteMsgService.registerTopicHandler($scope.getSelected);
   
-  //$scope.getSelected(1);
-	/*$scope.setStateModel = function(stateModel, termTopicMatrixView) {
-		stateModel.listenTo( termTopicMatrixView, "click:topic", function(topicIndex) {
-			console.log('topicIndex' + topicIndex);
-		} );  	
-  };*/
-
+  function getSelectedTopic(topicIndex, topicLabel) {
+    console.log('Will fetch data for topicIndex: ' + topicIndex);
+    $scope.selectedTopic = topicLabel;
+    $http.get('/shakespeare/corpus/ldatopics/'+topicIndex).success(function(data) {
+      data = data.map(function(c) {
+        return {
+          'char'  : c[0], 
+          'score' : c[1].toFixed(6)
+          //'url'   : 'ABC'
+        }
+      });
+      $scope.topDocsForTopic = _.sortBy(data, function(c) { 
+        return -1*c.score; 
+      });
+    });
+  };
+  
+  termiteMsgService.registerTopicHandler(getSelectedTopic);
 });

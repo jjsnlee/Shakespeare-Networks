@@ -27,6 +27,8 @@ var FilteredTermTopicProbabilityModel = Backbone.Model.extend({
 	initialize : function() {
 		this.stateModel = null;
 		this.parentModel = null;
+		
+		this.termsPerTopic = 80;
 
 		// mappings
 		this.termRankMap = null;
@@ -91,8 +93,7 @@ FilteredTermTopicProbabilityModel.prototype.load = function() {
 		}
 	}.bind(this);
 
-	var successHandler = function( model, response, options )
-	{
+	var successHandler = function( model, response, options ) {
 		var keepQuiet = false;
 		this.termRankMap = response.termRankMap;
 		this.termOrderMap = response.termOrderMap;
@@ -132,7 +133,9 @@ FilteredTermTopicProbabilityModel.prototype.initTopTermLists = function() {
 	
 	var colFirstMatrix = generateColumnFirst(this.parentModel.get("matrix"));
 	
-	var termsPerTopic = 20;	
+	var N = this.termsPerTopic;
+	
+	//var termsPerTopic = 20;	
 	this.topTermLists = {};
 	for( var i = 0; i < topicIndex.length; i++){
 		this.topTermLists[i] = [];
@@ -146,9 +149,9 @@ FilteredTermTopicProbabilityModel.prototype.initTopTermLists = function() {
 			indices[j] = j;
 		indices.sort(function (a, b) { return topicalFrequencies[a] < topicalFrequencies[b] ? 1 : topicalFrequencies[a] > topicalFrequencies[b] ? -1 : 0; });
 
-		// take the top 20 (unless there are fewer than 20)
+		// take the top N (unless there are fewer than N)
 		var count = 0;
-		while(count < 20 && indices[count] > THRESHHOLD){
+		while(count < N && indices[count] > THRESHHOLD){
 			this.topTermLists[i].push(termIndex[indices[count]]);
 			count++;
 		}
@@ -158,8 +161,7 @@ FilteredTermTopicProbabilityModel.prototype.initTopTermLists = function() {
 /**
  * Calls appropriate functions to update based on data change(s)
  */
-FilteredTermTopicProbabilityModel.prototype.update = function( obj )
-{
+FilteredTermTopicProbabilityModel.prototype.update = function( obj ) {
 	this.filter( false );
 };
 
@@ -225,11 +227,13 @@ FilteredTermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 				subset.push( [term, this.termOrderMap[ term ]] );
 			else if( sortType === "desc") {
 				var topic = this.stateModel.get("doubleClickTopic");
-				subset.push( [term, 1 / (original_submatrix[this.rowIndexMap[term]][topic]*this.termDistinctivenessMap[term])]);
+				subset.push( [term, 
+				    1 / (original_submatrix[this.rowIndexMap[term]][topic]*this.termDistinctivenessMap[term])]);
 			}
 			else if( sortType === "asc") {
 				var topic = this.stateModel.get("doubleClickTopic");
-				subset.push( [term, original_submatrix[this.rowIndexMap[term]][topic]*this.termDistinctivenessMap[term]]);
+				subset.push( [term, 
+				    original_submatrix[this.rowIndexMap[term]][topic]*this.termDistinctivenessMap[term]]);
 			}
 		}
 	}

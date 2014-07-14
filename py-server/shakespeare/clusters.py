@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json, sys, os
 import logging
+import pandas as pd
 
 from gensim.models.ldamodel import LdaModel
 from gensim.corpora import Dictionary
@@ -46,6 +47,7 @@ class LDAContext(object):
             stop_ids = [dictionary.token2id[stopword] for stopword in stopwds
                         if stopword in dictionary.token2id]
             once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.iteritems() if docfreq == 1]
+
             dictionary.filter_tokens(stop_ids + once_ids) # remove stop words and words that appear only once
             #dictionary.filter_tokens(stop_ids)
             dictionary.compactify()
@@ -64,6 +66,11 @@ class LDAContext(object):
     
     def get_terms(self):
         return self.dictionary.id2token.values()
+    def find_term(self, t):
+        return self.dictionary.id2token[t]
+        #return self.get_terms().index(t)
+    def term_cnt_matrix(self):
+        pass
 
     lda_dict_fname = 'lda.dict'
     lda_corpus_data = 'corpus_data.json'
@@ -162,6 +169,9 @@ class LDAResult(object):
         
         self.lda.save(join(basedir, 'run.lda'))
         # should also save some of the state
+        
+    def as_dataframe(self):
+        return pd.DataFrame(self.lda.state.sstats, columns=self.lda_ctxt.get_terms())
 
     @property
     def doc_names(self):

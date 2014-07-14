@@ -76,6 +76,7 @@ StateModel.prototype.selectTopic = function( topicIndex ) {
 	// fire event to signify topic coloring may have changed
 	this.trigger("color:topic", { "topic":topicIndex, "color": color } );
 };
+
 /**
  * Clears all topic selections (currently inefficiently implemented)
  */
@@ -134,7 +135,6 @@ StateModel.prototype.setHighlightedTopic = function( topic ) {
 	this.set("highlightedTopic", topic );
 };
 /** end highlight event code **/
-
 
 /**
  * load from query string including decoding some values
