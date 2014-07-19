@@ -229,7 +229,7 @@ TermTopicMatrixView.prototype.updateMatrixView = function(){
 		  this.trigger( "mouseover:topic", d.topicIndex); 
 		}.bind(this) )
 		.on( "click", function (d) { 
-		  console.log('term: '+d.term+', topic: '+d.topicIndex+', val: '+d.value);
+		  console.log('term: '+d.term+', topic: '+d.topicName+', val: '+d.value);
 		  //this.trigger( "click:topic", d.topicIndex ) 
 		}.bind(this)) 
 		.attr( "cx", function(d) { return this.xs(d.topicIndex+0.5) }.bind(this) )

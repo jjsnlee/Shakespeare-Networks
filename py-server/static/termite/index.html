@@ -22,7 +22,6 @@
 	<script type="text/javascript" src="/static/lib/ext/d3.v3.min.js"></script> 
 	<script type="text/javascript" src="/static/lib/ext/html5slider.min.js"></script>
 
-	<script type="text/javascript" src="FullTermTopicProbabilityModel.js"></script>
 	<script type="text/javascript" src="SeriatedTermTopicProbabilityModel.js"></script>
 	<script type="text/javascript" src="FilteredTermTopicProbabilityModel.js"></script>
 	<script type="text/javascript" src="TermFrequencyModel.js"></script>
@@ -97,6 +96,7 @@ termiteTopics.controller('msgCtrl', function($scope, termiteMsgService) {
   var termTopicMatrixView = new TermTopicMatrixView( {el:"div.termTopicMatrixContainer"} );
   var termFrequencyView = new TermFrequencyView( {el:"div.termFrequencyContainer"} );
   
+  // Almost absolutely nothing here atm...  
   var seriatedTermTopicProbM = new SeriatedTermTopicProbabilityModel();
   // Model for the termTopicMatrixView
   var filteredTermTopicProbM = new FilteredTermTopicProbabilityModel();
@@ -112,19 +112,29 @@ termiteTopics.controller('msgCtrl', function($scope, termiteMsgService) {
 
   initUserControlViewComponents(stateModel);
 
-	// initialize parent and state model where needed
-  //basedir = '../data/';
-  //basedir = '../data/shakespeare-50/';
-  //basedir = '../data/shakespeare-20/';
-  //basedir = '../data/shakespeare-char-scene-20/';
-  basedir = '../data/shakespeare-char-scene-100/';
-  seriatedTermTopicProbM.url = basedir+"seriated-parameters.json";
-  filteredTermTopicProbM.url = basedir+"filtered-parameters.json";
-  termFrequencyModel.url = basedir+"global-term-freqs.json";
+  // initialize parent and state model where needed
+  //var basedir = '../data/';
+  //var LdaModel = 'shakespeare-20';
+  //var LdaModel = 'shakespeare-char-scene-20';
+  $scope.LDAModels = [
+    'shakespeare-char-scene-100',
+    'shakespeare-50',
+  ];
+  $scope.LDAModel = $scope.LDAModels[0];
+
+  var basedir = '../data/'+$scope.LDAModel
+  seriatedTermTopicProbM.url = basedir+"/seriated-parameters.json";
+  filteredTermTopicProbM.url = basedir+"/filtered-parameters.json";
+  termFrequencyModel.url = basedir+"/global-term-freqs.json";
   
+  // Pretty msure don't need this seriatedTermTopicProbM, the termFrequencyModel
+  // should pretty much have the same data...
   //seriatedTermTopicProbM.initModel( fullModel );	// unused at the moment
+
   filteredTermTopicProbM.initModel( seriatedTermTopicProbM, stateModel );
+  //filteredTermTopicProbM.initModel( termFrequencyModel, stateModel );
   termTopicMatrixView.initModel( filteredTermTopicProbM );
+  
   termFrequencyModel.initModels( filteredTermTopicProbM, stateModel );
   termFrequencyView.initModel( termFrequencyModel );
   
@@ -133,6 +143,7 @@ termiteTopics.controller('msgCtrl', function($scope, termiteMsgService) {
 
 	// load all models
 	stateModel.once( "loaded:states", seriatedTermTopicProbM.load, seriatedTermTopicProbM );
+	//stateModel.once( "loaded:states", filteredTermTopicProbM.load, filteredTermTopicProbM );
 	seriatedTermTopicProbM.once( "loaded:seriated", filteredTermTopicProbM.load, filteredTermTopicProbM );
 	filteredTermTopicProbM.once( "loaded:filtered", termTopicMatrixView.load, termTopicMatrixView );
 	filteredTermTopicProbM.once( "loaded:filtered", termFrequencyModel.load, termFrequencyModel );
@@ -204,7 +215,7 @@ termiteTopics.controller('msgCtrl', function($scope, termiteMsgService) {
       stateModel.setDoubleClickTopic(topicIndex);
       var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex];
       //var terms = filteredTermTopicProbM.termIndex;
-      termiteMsgService.setTopic(topicIndex, topicLabel);
+      termiteMsgService.setTopic(LdaModel, topicIndex, topicLabel);
     }
   });
   
@@ -239,30 +250,39 @@ $(function(){
 
     <div id="pageHeader">
       <div id="pageControl" class="headerObject">
+
         <!--<div ng-include="'termite-hdr.html'" onLoad="onLoad()"></div>-->
     <table cellspacing="5">
     <tr>
-        <td style="vertical-align: top">
+      <td style="vertical-align: top">
+        <select name="LDAModel" ng-model="LDAModel"
+		      ng-options="m for m in LDAModels" 
+		      style="width:200px"> <!--ng-change="submitSet()" -->
+		    </select>
+      </td>
+    
+      <td style="vertical-align: top">
+        <div class="line">
+            Currently showing 
+            <div class="TotalTermsView" style="display:inline">25</div> 
+            total terms.
+        </div>
+        <div class="line">
+            Show top:
+            <input class="AffinityNumTermsSlider" style="display:inline; width: 140px; vertical-align: -5px;" type="range" max="100" min="10" value="25"/> 
+            <div class="AffinityNumTermsView" style="display:inline">25</div> 
+            terms by affinity.</div>
+        <div class="line">
+            Show top:
+            <input class="SalientNumTermsSlider" style="display:inline; width: 140px; vertical-align: -5px;" type="range" max="100" min="0" value="0"/>
+            <div class="SalientNumTermsView" style="display:inline-block">0</div> 
+            terms by saliency.
+        </div>
+      </td>
+      
+      <td style="vertical-align: top">
             <div class="line">
-                Currently showing 
-                <div class="TotalTermsView" style="display:inline">25</div> 
-                total terms.
-            </div>
-            <div class="line">
-                Show top:
-                <input class="AffinityNumTermsSlider" style="display:inline; width: 140px; vertical-align: -5px;" type="range" max="100" min="10" value="25"/> 
-                <div class="AffinityNumTermsView" style="display:inline">25</div> 
-                terms by affinity.</div>
-            <div class="line">
-                Show top:
-                <input class="SalientNumTermsSlider" style="display:inline; width: 140px; vertical-align: -5px;" type="range" max="100" min="0" value="0"/>
-                <div class="SalientNumTermsView" style="display:inline-block">0</div> 
-                terms by saliency.
-            </div>
-        </td>
-        <td style="vertical-align: top">
-            <div class="line">
-                Add top twenty terms for clicked topics
+                Add top terms for clicked topics
                 <input type="checkbox" class="TopTwentyAddition" style="display:inline-block"></div> 
             </div>
             <div class="line">
@@ -294,7 +314,9 @@ $(function(){
   overflow-x:scroll;
   overflow-y:hidden;
 }
-.wrapper1 { height: 20px; }
+.wrapper1 { 
+  height: 20px; 
+}
 .div1 {
   width:100%;
   height:20px;
@@ -309,8 +331,12 @@ $(function(){
 .charText {
   color: #666; font-family: Verdana; font-size: 8pt;padding:10px 5px 10px;
 }
-.person { background-color:#b0c4de; }
-.organization { background-color:red; }
+.person { 
+  background-color:#b0c4de; 
+}
+.organization { 
+  background-color:red; 
+}
 .yellow {
   background-color:yellow; 
 }
@@ -332,14 +358,13 @@ $(function(){
 	      <td width="20%" style="vertical-align: top">
 	        <div class="termFrequencyContainer"></div>
 	      </td>
-
 	      <!-- Main matrix -->
-	      <td width="50%" style="vertical-align:top">
-          <div class="wrapper2">
-	          <div !style="width:100%;overflow:auto;" class="termTopicMatrixContainer"></div>
+	      <td width="50%" style="vertical-align:top;">
+          <div class="wrapper2" style="width:600px;">
+            <!-- !style="width:100%;overflow:auto;" -->
+	          <div class="termTopicMatrixContainer"></div>
 	        </div>
 	      </td>
-
 	      <!-- Related documents -->
 	      <td width="30%" style="vertical-align: top" ng-cloak>
         <div ng-show="topDocsForTopic">

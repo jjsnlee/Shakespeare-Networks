@@ -36,39 +36,32 @@ class ComputeSaliency( object ):
 	    'topic-info.json'
 	"""
 	
-	def __init__(self, logging_level=logging.DEBUG):
-		self.logger = logger
-# 		self.logger = logging.getLogger( 'ComputeSaliency' )
-# 		self.logger.setLevel( logging_level )
-# 		handler = logging.StreamHandler( sys.stderr )
-# 		handler.setLevel( logging_level )
-# 		self.logger.addHandler( handler )
-	
-	def execute(self, model):
-		
-		self.logger.info( '--------------------------------------------------------------------------------' )
-		self.logger.info( 'Computing term saliency...'                                                       )
-#		self.logger.info( '    data_path = %s', data_path                                                    )
-		
-		self.logger.info( 'Connecting to data...' )
+	def __init__(self, model):
+		#self.logger = logger
 		self.model = model
 		self.saliency = Saliency()
+	
+	def execute(self):
 		
-		#self.logger.info( 'Reading data from disk...' )
-		#self.model.read()
+		logger.info( '--------------------------------------------------------------------------------' )
+		logger.info( 'Computing term saliency...'                                                       )
+#		self.logger.info( '    data_path = %s', data_path                                                    )
 		
-		self.logger.info( 'Computing...' )
+		#self.logger.info( 'Connecting to data...' )
+		
+		logger.info( 'Computing...' )
 		self.computeTopicInfo()
 		self.computeTermInfo()
 		self.rankResults()
 		
-# 		self.logger.info( 'Writing data to disk...' )
-# 		self.saliency.write()
-		
-		self.logger.info( '--------------------------------------------------------------------------------' )
+		logger.info( '--------------------------------------------------------------------------------' )
 	
 	def computeTopicInfo( self ):
+		# http://stackoverflow.com/questions/2511300/why-does-x-y-zipzipa-b-work-in-python
+		# The asterisk performs apply (as it's known in Lisp and Scheme). Basically, 
+		# it takes your list, and calls the function with that list's contents as arguments.
 		topic_weights = [ sum(x) for x in zip( *self.model.term_topic_matrix ) ]
+		
 		topic_info = []
 		for i in range(self.model.topic_count):
 			topic_info.append( {

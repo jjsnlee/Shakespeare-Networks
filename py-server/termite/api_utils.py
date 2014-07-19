@@ -10,9 +10,9 @@ from utf8_utils import UnicodeReader, UnicodeWriter
 
 class Documents( object ):
 	ACCEPTABLE_FORMATS = frozenset( [ 'file' ] )
-	def __init__( self, format, path ):
+	def __init__( self, _format, path ):
 		assert format in Documents.ACCEPTABLE_FORMATS
-		self.format = format
+		self.format = _format
 		self.data = {}
 	
 class Tokens(object):
@@ -23,9 +23,15 @@ class Model(object):
 	def __init__(self):
 		self.topic_index = []
 		self.term_index = []
-		self.topic_count = 0
-		self.term_count = 0
+		#self.topic_count = 0
+		#self.term_count = 0
 		self.term_topic_matrix = []
+	@property
+	def topic_count(self):
+		return len(self.topic_index)
+	@property
+	def term_count(self):
+		return len(self.term_index)
 
 class Saliency(object):
 	def __init__(self):
@@ -44,12 +50,6 @@ class Similarity(object):
 		self.window_g2 = {}
 		self.collocation_g2 = {}
 		self.combined_g2 = {}
-
-class Client(object):
-	def __init__(self):
-		self.seriated_parameters = {}
-		self.filtered_parameters = {}
-		self.global_term_freqs = {}
 
 class Seriation(object):
 	def __init__(self):
@@ -118,8 +118,8 @@ class ModelRWer(object):
 	
 	@classmethod
 	def verify(cls, model):
-		model.topic_count = len( model.topic_index )
-		model.term_count = len( model.term_index )
+		#model.topic_count = len( model.topic_index )
+		#model.term_count = len( model.term_index )
 		assert model.term_count == len( model.term_topic_matrix )
 		for row in model.term_topic_matrix:
 			assert model.topic_count == len(row)
@@ -227,6 +227,7 @@ class ClientRWer(object):
 	@classmethod
 	def read( cls, path ):
 		path = '{}/{}/'.format( path, cls.SUBFOLDER )
+		from prepare_data_for_client import Client
 		client = Client()
 		client.seriated_parameters = ReadAsJson( path + cls.SERIATED_PARAMETERS )
 		client.filtered_parameters = ReadAsJson( path + cls.FILTERED_PARAMETERS )

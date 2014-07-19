@@ -24,14 +24,8 @@ class ComputeSimilarity( object ):
 	
 	def __init__(self, logging_level=logging.DEBUG):
 		self.logger = logger
-# 		self.logger = logging.getLogger( 'ComputeSimilarity' )
-# 		self.logger.setLevel( logging_level )
-# 		handler = logging.StreamHandler( sys.stderr )
-# 		handler.setLevel( logging_level )
-# 		self.logger.addHandler( handler )
 	
 	def execute( self, tokens, sliding_window_size = None ):
-		
 		#assert data_path is not None
 		if sliding_window_size is None:
 			sliding_window_size = ComputeSimilarity.DEFAULT_SLIDING_WINDOW_SIZE
@@ -45,9 +39,6 @@ class ComputeSimilarity( object ):
 		self.tokens = tokens #TokensAPI( data_path )
 		self.similarity = Similarity()
 		
-# 		self.logger.info( 'Reading data from disk...' )
-# 		self.tokens.read()
-		
 		self.logger.info( 'Computing document co-occurrence...' )
 		self.computeDocumentCooccurrence()
 		
@@ -58,18 +49,24 @@ class ComputeSimilarity( object ):
 		self.computeTokenCounts()
 		
 		self.logger.info( 'Computing document co-occurrence likelihood...' )
-		self.similarity.document_g2 = self.getG2Stats( self.document_count, self.similarity.document_occurrence, self.similarity.document_cooccurrence )
+		self.similarity.document_g2 = self.getG2Stats( 
+			self.document_count, 
+			self.similarity.document_occurrence, 
+			self.similarity.document_cooccurrence )
 		
 		self.logger.info( 'Computing sliding-window co-occurrence likelihood...' )
-		self.similarity.window_g2 = self.getG2Stats( self.window_count, self.similarity.window_occurrence, self.similarity.window_cooccurrence )
+		self.similarity.window_g2 = self.getG2Stats( 
+			self.window_count, 
+			self.similarity.window_occurrence, 
+			self.similarity.window_cooccurrence )
 		
 		self.logger.info( 'Computing collocation likelihood...' )
-		self.similarity.collocation_g2 = self.getG2Stats( self.token_count, self.similarity.unigram_counts, self.similarity.bigram_counts )
+		self.similarity.collocation_g2 = self.getG2Stats( 
+			self.token_count, 
+			self.similarity.unigram_counts, 
+			self.similarity.bigram_counts )
 		
 		self.combineSimilarityMatrices()
-		
-# 		self.logger.info( 'Writing data to disk...' )
-# 		self.similarity.write()
 		
 		self.logger.info( '--------------------------------------------------------------------------------' )
 	

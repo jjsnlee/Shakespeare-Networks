@@ -131,6 +131,8 @@ FilteredTermTopicProbabilityModel.prototype.initTopTermLists = function() {
 	var termIndex = this.parentModel.get("termIndex");
 	var topicIndex = this.parentModel.get("topicIndex");
 	
+	// This is only a very small subset NxT matrix, with T
+	// being ~100 terms out of a vocabulary of 13k
 	var colFirstMatrix = generateColumnFirst(this.parentModel.get("matrix"));
 	
 	var N = this.termsPerTopic;

@@ -15,8 +15,8 @@ termiteTopics.directive('myDraggable', function($document) {
 
 termiteTopics.service('termiteMsgService', function() {
   var topicHandler = null;
-  setTopic = function(topicIndex, topicLabel) {
-		topicHandler(topicIndex, topicLabel);
+  setTopic = function(LdaModel, topicIndex, topicLabel) {
+		topicHandler(LdaModel, topicIndex, topicLabel);
   };
   registerTopicHandler  = function(handler) { topicHandler = handler; };
 
@@ -61,10 +61,10 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
     });
   };
   
-  function getSelectedTopic(topicIndex, topicLabel) {
+  function getSelectedTopic(LdaModel, topicIndex, topicLabel) {
     console.log('Will fetch data for topicIndex: ' + topicIndex);
     $scope.selectedTopic = topicLabel;
-    $http.get('/shakespeare/corpus/ldatopics/'+topicIndex).success(function(data) {
+    $http.get('/shakespeare/corpus/lda/'+LdaModel+'/'+topicIndex).success(function(data) {
       data = data.map(function(c) {
         return {
           'char'  : c[0], 

@@ -172,6 +172,8 @@ class LDAResult(object):
         
     def as_dataframe(self):
         return pd.DataFrame(self.lda.state.sstats, columns=self.lda_ctxt.get_terms())
+    # get index location of term:
+    # df.columns.get_loc('jew')
 
     @property
     def doc_names(self):
@@ -202,8 +204,7 @@ class LDAResult(object):
                 print '\ttopic %d, score: %s' % (topic, score)
                 print '\t', self.lda.show_topic(topic)
 
-from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, \
-    ComputeSeriation, PrepareDataForClient, \
+from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, ComputeSeriation, \
     ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer
 
 class TermiteData(object):
@@ -217,11 +218,13 @@ class TermiteData(object):
         self.basepath = join(get_lda_base_dir(), lda_rslt.label, 'termite')
 
         model = Model()
-        model.term_topic_matrix = lda.state.sstats.T 
-        model.topic_count = lda.num_topics
-        model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(model.topic_count))
+        model.term_topic_matrix = lda.state.sstats.T
+
+        #model.topic_count = lda.num_topics
+        #model.term_count = len(model.term_index)
+        
+        model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(lda.num_topics))
         model.term_index = lda_ctxt.get_terms()
-        model.term_count = len(model.term_index)
         self.model = model
 
         tokens = Tokens()
@@ -241,8 +244,8 @@ class TermiteData(object):
     @property
     def saliency(self):
         if self._saliency is None:
-            saliency_calc = ComputeSaliency()
-            saliency_calc.execute(self.model)
+            saliency_calc = ComputeSaliency(self.model)
+            saliency_calc.execute()
             self._saliency = saliency_calc.saliency
             SaliencyRWer.write(self._saliency, self.basepath) 
         return self._saliency
@@ -263,9 +266,13 @@ class TermiteData(object):
             SeriationRWer.write(self._seriation, self.basepath)
         return self._seriation
     def data_for_client(self):
-        prep_client = PrepareDataForClient()
-        prep_client.execute(self.model, self.saliency, self.seriation)
-        ClientRWer.write(prep_client.client, self.basepath)
+        from termite.prepare_data_for_client import Client 
+        client = Client()
+        client.prepareSeriatedParameters(self.model, self.seriation)
+        client.prepareFilteredParameters(self.seriation, self.saliency)
+        client.prepareGlobalTermFreqs(self.saliency)
+        ClientRWer.write(client, self.basepath)
+        return client
 
     def load(self, which):
         if which=='saliency':

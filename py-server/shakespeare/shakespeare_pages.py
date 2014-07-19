@@ -79,16 +79,23 @@ def get_corpus_data_json(req, play_set):
             all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
             return HttpResponse(all_json_rslt, content_type='application/json')
 
-        elif info == 'ldatopics':
+        elif info == 'lda':
             # is this being to get the document/character info?
-            #'/shakespeare/corpus/ldatopics'
-            which_topic = path_elmts[3]
+            #'/shakespeare/corpus/lda/[LDA Model Name]/[Topic #]'
+            ldaModel = path_elmts[3]
+            which_topic = path_elmts[4]
 
             logger.debug('which_topic: %s', which_topic)
+            
+            LDA_KEYS = {
+                'shakespeare-50' : 'chars_2014-06-01 12:55:34.874782_20_50_lda',
+                'shakespeare-char-scene-100' : 'char_scene_2014-06-29 19.49.11.703618_100_50_lda'
             #lda_key = '2014-05-13 00/50/36.652535_50_50.lda'
             #lda_key = 'chars_2014-06-01 12:55:34.874782_20_50_lda'
             #lda_key = 'char_scene_2014-06-28 17.14.37.323434_20_50_lda'
-            lda_key = 'char_scene_2014-06-29 19.49.11.703618_100_50_lda'
+            }
+            
+            lda_key = LDA_KEYS.get(ldaModel)
             
             lda_rslt = get_lda_rslt(lda_key)
             topic_info = lda_rslt.docs_per_topic[int(which_topic)]

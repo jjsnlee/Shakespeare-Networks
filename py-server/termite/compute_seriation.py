@@ -24,44 +24,38 @@ class ComputeSeriation( object ):
 	
 	DEFAULT_NUM_SERIATED_TERMS = 100
 	
-	def __init__(self, logging_level=logging.DEBUG):
-		self.logger = logger
-# 		self.logger = logging.getLogger( 'ComputeSeriation' )
-# 		self.logger.setLevel( logging_level )
-# 		handler = logging.StreamHandler( sys.stderr )
-# 		handler.setLevel( logging_level )
-# 		self.logger.addHandler( handler )
+	def __init__(self):
+		self.seriation = Seriation()
+		self.saliency = None
+		self.similarity = None
 	
 	def execute(self, saliency, similarity, numSeriatedTerms = None ):
-		
 		#assert data_path is not None
 		if numSeriatedTerms is None:
 			numSeriatedTerms = ComputeSeriation.DEFAULT_NUM_SERIATED_TERMS
 		
-		self.logger.info( '--------------------------------------------------------------------------------' )
-		self.logger.info( 'Computing term seriation...'                                                      )
-		#self.logger.info( '    data_path = %s', data_path                                                    )
-		self.logger.info( '    number_of_seriated_terms = %d', numSeriatedTerms                              )
+		logger.info( '--------------------------------------------------------------------------------' )
+		logger.info( 'Computing term seriation...'                                                      )
+		#logger.info( '    data_path = %s', data_path                                                    )
+		logger.info( '    number_of_seriated_terms = %d', numSeriatedTerms                              )
 		
-		self.logger.info( 'Connecting to data...' )
+		logger.info( 'Connecting to data...' )
 		self.saliency = saliency
 		self.similarity = similarity
-		self.seriation = Seriation()
-		
-# 		self.logger.info( 'Reading data from disk...' )
+
+# 		logger.info( 'Reading data from disk...' )
 # 		self.saliency.read()
 # 		self.similarity.read()
 		
-		self.logger.info( 'Reshaping saliency data...' )
+		logger.info( 'Reshaping saliency data...' )
 		self.reshape()
 		
-		self.logger.info( 'Computing seriation...' )
+		logger.info( 'Computing seriation...' )
 		self.compute( numSeriatedTerms )
 		
-# 		self.logger.info( 'Writing data to disk...' )
+# 		logger.info( 'Writing data to disk...' )
 # 		self.seriation.write()
-		
-		self.logger.info( '--------------------------------------------------------------------------------' )
+		logger.info( '--------------------------------------------------------------------------------' )
 	
 	def reshape( self ):
 		self.candidateSize = 100
@@ -100,10 +94,20 @@ class ComputeSeriation( object ):
 			addedTerm = 0
 			if len(self.seriation.term_iter_index) > 0:
 				addedTerm = self.seriation.term_iter_index[-1]
+
 			if iteration == 1:
-				(preBest, postBest) = self.initBestEnergies(addedTerm, candidateTerms)
-			(preBest, postBest, self.bestEnergies) = self.getBestEnergies(preBest, postBest, addedTerm)
-			(candidateTerms, self.seriation.term_ordering, self.seriation.term_iter_index, self.buffers) = self.iterate_eff(candidateTerms, self.seriation.term_ordering, self.seriation.term_iter_index, self.buffers, self.bestEnergies, iteration)
+				preBest, postBest = self.initBestEnergies(addedTerm, candidateTerms)
+
+			preBest, postBest, self.bestEnergies = \
+				self.getBestEnergies(preBest, postBest, addedTerm)
+
+			candidateTerms, self.seriation.term_ordering, self.seriation.term_iter_index, self.buffers = \
+				self.iterate_eff(candidateTerms, 
+								self.seriation.term_ordering, 
+								self.seriation.term_iter_index, 
+								self.buffers, 
+								self.bestEnergies, 
+								iteration)
 			
 			print "---------------"
 		seriation_time = time.time() - start_time
@@ -114,13 +118,12 @@ class ComputeSeriation( object ):
 		
 		#print "similarity matrix generation time: ", compute_sim_time
 		#print "seriation time: ", seriation_time
-		self.logger.debug("seriation time: " +  str(seriation_time))
+		logger.debug("seriation time: " +  str(seriation_time))
 
 #-------------------------------------------------------------------------------#
 # Helper Functions
 	
 	def initBestEnergies(self, firstTerm, candidateTerms):
-		
 		preBest = []
 		postBest = []
 		for candidate in candidateTerms:
