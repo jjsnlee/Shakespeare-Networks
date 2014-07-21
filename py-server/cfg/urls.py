@@ -28,7 +28,7 @@ urlpatterns = patterns('',
     ('^(shakespeare|chekhov)/$', shakespeare_pages.get_page_html),
     ('^(shakespeare|chekhov)/otherCharts$', shakespeare_pages.get_page_html),
     
-    ('^(shakespeare|chekhov)/corpus/', shakespeare_pages.get_corpus_data_json),
+    ('^(shakespeare|chekhov)/corpus/', shakespeare_pages.CorpusDataJsonHandler.dispatch),
     ('^(shakespeare|chekhov)/play/', shakespeare_pages.get_play_data_json),
 
     ('^imgs/.*\.png$', view_imgs),

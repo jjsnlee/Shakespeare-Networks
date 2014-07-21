@@ -13,9 +13,10 @@ logger = helper.setup_sysout_handler(__name__)
 try:
     from django.http import HttpResponse
 except:
-    logger.warn("Couldn't find Django, maybe ok...")
+    logger.warn("Couldn't find Django...")
 
 def get_page_html(req, play_set):
+    """ Basic HTML with interpolated values """
     path = req.path
     info = path.split('/')[-1]
     print 'path:', path
@@ -50,138 +51,164 @@ def get_page_html(req, play_set):
 
     return HttpResponse(html)
 
-def get_corpus_data_json(req, play_set):
-    try:
-        path_elmts = filter(None, req.path.split('/'))
-        info = None
-        if len(path_elmts) > 2:
-            info = path_elmts[2] # expect format '/shakespeare/corpus/lineCounts'
-
-        logger.debug('info: %s', info)
-        play_data_ctx = get_plays_ctx(play_set)
-
-        if info == 'lineCounts':
-            plays = play_data_ctx.plays
-
-            all_plays_json = {}
-            for play_alias, _ in plays:
-                fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
-                if not os.path.exists(fname):
-                    logger.warn('File path [%s] doesn\'t exist!', fname)
-                play_json = json.loads(open(fname, 'r').read())
-                all_plays_json[play_alias] = {
-                    'chardata' : play_json['char_data'],
-                    'title'    : play_json['title'],
-                    'genre'    : play_json['type'],
-                    'year'     : play_json['year']
-                }
-
-            all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
-            return HttpResponse(all_json_rslt, content_type='application/json')
-
-        elif info == 'lda':
-            # is this being to get the document/character info?
-            #'/shakespeare/corpus/lda/[LDA Model Name]/[Topic #]'
-            ldaModel = path_elmts[3]
-            which_topic = path_elmts[4]
-
-            logger.debug('which_topic: %s', which_topic)
+class CorpusDataJsonHandler:
+    
+    @property
+    @classmethod
+    def dipatch_map(cls):
+        return {
+           'lineCounts' : cls.handle_linecounts,
+           'lda'        : cls.handle_LDA,
+           'characters' : cls.handle_chardata
+        }
+    
+    @classmethod
+    def dispatch(cls, req, play_set):
+        try:
+            path_elmts = filter(None, req.path.split('/'))
+            info = None
+            if len(path_elmts) > 2:
+                info = path_elmts[2] # expect format '/shakespeare/corpus/lineCounts'
+    
+            logger.debug('info: %s', info)
+            play_data_ctx = get_plays_ctx(play_set)
+            handler = cls.dispatch_map.get(info)
+            if not handler:
+                raise 'No handler defined for [%s]' % info
             
-            LDA_KEYS = {
-                'shakespeare-50' : 'chars_2014-06-01 12:55:34.874782_20_50_lda',
-                'shakespeare-char-scene-100' : 'char_scene_2014-06-29 19.49.11.703618_100_50_lda'
-            #lda_key = '2014-05-13 00/50/36.652535_50_50.lda'
-            #lda_key = 'chars_2014-06-01 12:55:34.874782_20_50_lda'
-            #lda_key = 'char_scene_2014-06-28 17.14.37.323434_20_50_lda'
+            rslt_json = handler(play_data_ctx, path_elmts)
+            return HttpResponse(rslt_json, content_type='application/json')
+
+        except Exception as e:
+            # Without the explicit error handling the JSON error gets swallowed
+            st = traceback.format_exc()
+            #print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
+            logger.error('Problem parsing [%s]:\n%s\n%s', req, e, st)
+
+    @classmethod
+    def handle_linecounts(play_data_ctx, path_elmts):
+        plays = play_data_ctx.plays
+
+        all_plays_json = {}
+        for play_alias, _ in plays:
+            fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
+            if not os.path.exists(fname):
+                logger.warn('File path [%s] doesn\'t exist!', fname)
+            play_json = json.loads(open(fname, 'r').read())
+            all_plays_json[play_alias] = {
+                'chardata' : play_json['char_data'],
+                'title'    : play_json['title'],
+                'genre'    : play_json['type'],
+                'year'     : play_json['year']
             }
-            
-            lda_key = LDA_KEYS.get(ldaModel)
-            
-            lda_rslt = get_lda_rslt(lda_key)
-            topic_info = lda_rslt.docs_per_topic[int(which_topic)]
-            #logger.debug('topic_info: %s', topic_info)
-            
-            topic_json = json.dumps(topic_info, ensure_ascii=False)
-            return HttpResponse(topic_json, content_type='application/json')
 
-        elif info == 'characters':
-            #'/shakespeare/corpus/characters/[charKey]'
-            char_key = path_elmts[3]
-            
-            char_nm, title = char_key.split(' in ')
-            logger.debug('title: %s, char_nm: %s', title, char_nm)
-            
-            # need to get play alias by the title
-            alias = play_data_ctx.map_by_title.get(title)
-            logger.debug('play alias: %s', alias)
-            
-            play = play_data_ctx.get_play(alias)
-            # then the character
-            char = play.characters.get(char_nm)
-            
-            # fix this!!!
-            if not char:
-                #char_nm, act, scene = char_nm.split(',')
-                import re
-                from plays_n_graphs import Character
-                CHAR_NM_RE = re.compile('^([^,]+), Act (\d+), Sc (\d+)$')
-                m = CHAR_NM_RE.match(char_nm)
-                char_nm, act, sc = m.group(1), m.group(2), m.group(3)                     
-                
-                char = play.characters.get(char_nm)
-                char_lines = []
-                for li in char.clean_lines:
-                    if li.act==act and li.scene==sc:
-                        char_lines.append(li)
-                artif_char = Character(char_nm, play)
-                artif_char._cleaned_lines = char_lines
-                char = artif_char
-            
-            char_lines = []
-            prev = curr = None
-            for cl in char.clean_lines:
-                if prev is None \
-                        or prev.act!=cl.act \
-                        or prev.scene!=cl.scene \
-                        or int(prev.lineno)+1!=int(cl.lineno):
-                    curr = []
-                    char_lines.append(curr)
-                li = str(cl)
-                #li = li.replace('France', '<yellow>France</yellow>')
-                curr.append(li)
-                prev = cl
+        all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
+        return all_json_rslt
 
-            #print 'char_lines: ', char_lines
-            
-            #char_lines = char_lines.replace('france', '<yellow>france</yellow>')
-            
-            char_data = \
-            {
-             'character'   : char_nm,
-             'play'        : title,
-             'doc_name'    : char_key,
-             'doc_content' : char_lines #[str(li) for li in char.clean_lines]
-            }
-            char_json = json.dumps(char_data, ensure_ascii=False)
-            return HttpResponse(char_json, content_type='application/json')
+    @classmethod
+    def handle_LDA(cls, play_data_ctx, path_elmts):
+        """
+            Expected format:
+                /shakespeare/corpus/lda/[LDA Model Name]/[Topic #]
+        """
+        ldaModel = path_elmts[3]
+        which_topic = path_elmts[4]
+        logger.debug('which_topic: %s', which_topic)
         
-    except Exception as e:
-        # Without the explicit error handling the JSON error gets swallowed
-        st = traceback.format_exc()
-        #print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
-        logger.error('Problem parsing [%s]:\n%s\n%s', req, e, st)
+        LDA_KEYS = {
+            'shakespeare-50' : 'chars_2014-06-01 12:55:34.874782_20_50_lda',
+            'shakespeare-char-scene-100' : 'char_scene_2014-06-29 19.49.11.703618_100_50_lda',
+            'shakespeare-char-scene-100-test' : 'char_scene_2014-06-29 19.49.11.703618_100_50_lda'
+        #lda_key = '2014-05-13 00/50/36.652535_50_50.lda'
+        #lda_key = 'chars_2014-06-01 12:55:34.874782_20_50_lda'
+        #lda_key = 'char_scene_2014-06-28 17.14.37.323434_20_50_lda'
+        }
+        
+        lda_key = LDA_KEYS.get(ldaModel)
+        
+        lda_rslt = get_lda_rslt(lda_key)
+        topic_info = lda_rslt.docs_per_topic[int(which_topic)]
+        #logger.debug('topic_info: %s', topic_info)
+        
+        topic_json = json.dumps(topic_info, ensure_ascii=False)
+        return topic_json
 
+    @classmethod
+    def handle_chardata(cls, play_data_ctx, path_elmts):
+        """ 
+            Expected format:
+                /shakespeare/corpus/characters/[charKey]
+        """
+        char_key = path_elmts[3]
+        
+        char_nm, title = char_key.split(' in ')
+        logger.debug('title: %s, char_nm: %s', title, char_nm)
+        
+        # need to get play alias by the title
+        alias = play_data_ctx.map_by_title.get(title)
+        logger.debug('play alias: %s', alias)
+        
+        play = play_data_ctx.get_play(alias)
+        # then the character
+        char = play.characters.get(char_nm)
+        
+        # fix this!!!
+        if not char:
+            #char_nm, act, scene = char_nm.split(',')
+            import re
+            from plays_n_graphs import Character
+            CHAR_NM_RE = re.compile('^([^,]+), Act (\d+), Sc (\d+)$')
+            m = CHAR_NM_RE.match(char_nm)
+            char_nm, act, sc = m.group(1), m.group(2), m.group(3)                     
+            
+            char = play.characters.get(char_nm)
+            char_lines = []
+            for li in char.clean_lines:
+                if li.act==act and li.scene==sc:
+                    char_lines.append(li)
+            artif_char = Character(char_nm, play)
+            artif_char._cleaned_lines = char_lines
+            char = artif_char
+        
+        char_lines = []
+        prev = curr = None
+        for cl in char.clean_lines:
+            if prev is None \
+                    or prev.act!=cl.act \
+                    or prev.scene!=cl.scene \
+                    or int(prev.lineno)+1!=int(cl.lineno):
+                curr = []
+                char_lines.append(curr)
+            li = str(cl)
+            #li = li.replace('France', '<yellow>France</yellow>')
+            curr.append(li)
+            prev = cl
+
+        #print 'char_lines: ', char_lines
+        #char_lines = char_lines.replace('france', '<yellow>france</yellow>')
+        
+        char_data = \
+        {
+         'character'   : char_nm,
+         'play'        : title,
+         'doc_name'    : char_key,
+         'doc_content' : char_lines #[str(li) for li in char.clean_lines]
+        }
+        char_json = json.dumps(char_data, ensure_ascii=False)
+        return char_json
+        
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
 def get_play_data_json(req, play_set):
     """ 
     JSON representation for the play. This is for the initial load of
-    the play and its scenes, and I believe the scenes will have the basic 
+    the play and its scenes, and the scenes will have basic metadata.
+    
+    Expects format:
+        /shakespeare/play/{play_alias}/{?act}/{?scene}/?content
     """
     try:
         path_elmts = filter(None, req.path.split('/'))
-        
-        # expect format '/shakespeare/play/{play_alias}/{?act}/{?scene}/?content'
         
         play_alias = path_elmts[2] # i.e, '/shakespeare/play/hamlet' 
         logger.debug('REQUEST: [%s], [%s]', play_alias, path_elmts)
