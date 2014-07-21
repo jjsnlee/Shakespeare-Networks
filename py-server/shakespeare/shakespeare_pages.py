@@ -53,9 +53,8 @@ def get_page_html(req, play_set):
 
 class CorpusDataJsonHandler:
     
-    @property
     @classmethod
-    def dipatch_map(cls):
+    def dispatch_map(cls):
         return {
            'lineCounts' : cls.handle_linecounts,
            'lda'        : cls.handle_LDA,
@@ -72,7 +71,7 @@ class CorpusDataJsonHandler:
     
             logger.debug('info: %s', info)
             play_data_ctx = get_plays_ctx(play_set)
-            handler = cls.dispatch_map.get(info)
+            handler = cls.dispatch_map().get(info)
             if not handler:
                 raise 'No handler defined for [%s]' % info
             
