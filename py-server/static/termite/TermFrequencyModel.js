@@ -142,22 +142,24 @@ TermFrequencyModel.prototype.getTotalTermFreqs = function(){
  * @private
  */
 TermFrequencyModel.prototype.generateTopicalMatrix = function( keepQuiet ) {
-	var frequencies = [];
-	var terms = this.parentModel.get("termIndex");
-	for( var index = 0; index < this.colorList.length; index++){
-		var tempList = [];
-		var topic = this.colorToTopic[this.colorList[index]];
-		for( var i = 0; i < terms.length; i++){
-			var termIndex = this.originalTermIndex.indexOf(terms[i]);
-			tempList.push(this.originalMatrix[termIndex][topic]);
-		} 
-		frequencies.push(tempList);
-	}
-	this.topicalFreqs = frequencies;
-	this.set("topicalFreqMatrix", frequencies, {silent: keepQuiet});
-	this.set("colorList", this.colorList);
-	this.set("selectedTopics", this.selectedTopics);
-	return frequencies;
+  var frequencies = [];
+  var terms = this.parentModel.get("termIndex");
+  for( var index = 0; index < this.colorList.length; index++){
+    var tempList = [];
+    var topic = this.colorToTopic[this.colorList[index]];
+    for( var i = 0; i < terms.length; i++){
+      if(this.originalMatrix[topic][terms[i]])
+        tempList.push(this.originalMatrix[topic][terms[i]]);
+      else
+        tempList.push(0);
+    } 
+    frequencies.push(tempList);
+  }
+  this.topicalFreqs = frequencies;
+  this.set("topicalFreqMatrix", frequencies, {silent: keepQuiet});
+  this.set("colorList", this.colorList);
+  this.set("selectedTopics", this.selectedTopics);
+  return frequencies;
 };
 
 /** 
@@ -172,7 +174,7 @@ TermFrequencyModel.prototype.getTopicalsForTopic = function( topic ) {
 	var terms = this.get("termIndex");
 	for( var i = 0; i < terms.length; i++){
 		var termIndex = this.originalTermIndex.indexOf(terms[i]);
-		frequencies.push(this.originalMatrix[termIndex][topic]);
+		frequencies.push(this.originalMatrix[topic][termIndex]);
 	} 
 	return frequencies;
 };

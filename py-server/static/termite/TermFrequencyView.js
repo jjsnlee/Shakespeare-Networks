@@ -152,7 +152,8 @@ TermFrequencyView.prototype.renderInit = function() {
 		if(termFreq[termIndex[i]] > maxFreq)
 			maxFreq = termFreq[termIndex[i]];
 	}
-	this.line_length = d3.scale.linear().domain([0, maxFreq]).range( [ 0, HISTORGRAM_CONTAINER_PADDING.width ] );
+	this.line_length = d3.scale.linear().domain([0, maxFreq]).range( 
+	   [ 0, HISTORGRAM_CONTAINER_PADDING.width ] );
 
 	// init svg layers
 	var container =	d3.select(this.el);
@@ -186,7 +187,8 @@ TermFrequencyView.prototype.renderUpdate = function() {
 	var termFreq = this.parentModel.get("totalTermFreqs");
 
 	this.svg
-		.style( "height", HISTORGRAM_CONTAINER_PADDING.fullHeight( HISTOGRAM_ENCODING_PARAMETERS.NUM_TOPICS, termIndex.length ) + "px" )
+		.style( "height", HISTORGRAM_CONTAINER_PADDING.fullHeight( 
+		  HISTOGRAM_ENCODING_PARAMETERS.NUM_TOPICS, termIndex.length ) + "px" )
 	
 	this.ys.domain( [ 0, termIndex.length ] )
 		.range( [ 0, termIndex.length * HISTOGRAM_ENCODING_PARAMETERS.packing()] );
@@ -196,6 +198,7 @@ TermFrequencyView.prototype.renderUpdate = function() {
 		.on( "mouseout", function() { this.trigger( "mouseout:term", "" ) }.bind(this))
 		.attr( "x", -HISTORGRAM_CONTAINER_PADDING.left_separation )
 		.attr( "y", 3 )
+
 	this.svgTermLabelLayer.selectAll( "text" ).data( termIndex )	
 		.attr( "class", function(d) { return ["termLabel", "HISTnormal", getTermClassTag(d)].join(" ") })
 		.attr( "transform", function(d,i) { return "translate(0," + this.ys(i+0.5) + ")" }.bind(this) )
@@ -217,10 +220,12 @@ TermFrequencyView.prototype.renderUpdate = function() {
 	var stackedData = this.prepareStackedBars();
 	var colors = this.parentModel.get("colorList");
 	
-	this.overlayLayer.selectAll( "g" ).data(stackedData).exit().remove();
-	this.overlayLayer.selectAll( "g" ).data(stackedData).enter().append("svg:g")
-	this.gLayer = this.overlayLayer.selectAll( "g" ).data(stackedData)
-		.attr("class", function(d,i) { return ["overlayGroup", this.colorClassPrefix + colors[i]].join(" ") }.bind(this) )
+  this.overlayLayer.selectAll( "g" ).data(stackedData).exit().remove();
+  this.overlayLayer.selectAll( "g" ).data(stackedData).enter().append("svg:g")
+  this.gLayer = this.overlayLayer.selectAll( "g" ).data(stackedData)
+    .attr("class", function(d,i) { 
+      return ["overlayGroup", this.colorClassPrefix + colors[i]].join(" ")}.bind(this) 
+    )
 	
 	this.gLayer.selectAll("line").data(function(d) {return d;}).exit().remove();
 	this.gLayer.selectAll("line").data(function(d, i) { return d;}).enter().append("svg:line")
@@ -228,9 +233,17 @@ TermFrequencyView.prototype.renderUpdate = function() {
 		.attr("y2", 0)
 	this.gLayer.selectAll("line").data(function(d, i) { return d;})
 		.attr("class", function(d,i){return ["line", getTermClassTag(termIndex[i])].join(" ") })
-		.attr( "transform", function(d,i) { return "translate(0," + this.ys(i+0.5) + ")" }.bind(this) )
-		.attr("x1", function(d){ return this.line_length(d.y0)}.bind(this) )
-		.attr("x2", function(d){return this.line_length(d.y0) + this.line_length(d.y)}.bind(this) )
+		.attr( "transform", function(d,i){
+		  return "translate(0," + this.ys(i+0.5) + ")" }.bind(this) 
+		)
+		.attr("x1", function(d){ 
+		    return this.line_length(d.y0) 
+		  }.bind(this) 
+		)
+		.attr("x2", function(d){
+		    return this.line_length(d.y0) + this.line_length(d.y)
+		  }.bind(this) 
+		)
 		
 	this.svgTopicalBarLayer.selectAll("line").data(termIndex).exit().remove();
 	this.svgTopicalBarLayer.selectAll("line").data(termIndex).enter().append("svg:line")
@@ -281,11 +294,11 @@ TermFrequencyView.prototype.onHighlightTopicChanged = function( model, value ) {
  * @return { void }
  */
 TermFrequencyView.prototype.onHighlightTermChanged = function( model, value ) {
-	var term = value;
-	if(term === "")
-		this.unhighlight( true, false );
-	else
-		this.highlight( term, null );
+  var term = value;
+  if(term === "")
+    this.unhighlight( true, false );
+  else
+    this.highlight( term, null );
 };
 /** 
  * Unhighlights elements based on term and/or topic
@@ -327,16 +340,18 @@ TermFrequencyView.prototype.unhighlight = function( term, topic ) {
 				}
 			}
 		}
-		
-		// reset layers
-		var colors = this.parentModel.get("colorList");
-		this.gLayer = this.overlayLayer.selectAll( "g" )
-			.attr("class", function(d,i) { return ["overlayGroup", this.colorClassPrefix + colors[i]].join(" ") }.bind(this) );
-		
-		// reset variables
-		this.prevHighlightColor = this.normalColor;
-		this.useOffset = false;
-	}
+
+    // reset layers
+    var colors = this.parentModel.get("colorList");
+    this.gLayer = this.overlayLayer.selectAll( "g" )
+      .attr("class", function(d,i) { 
+        return ["overlayGroup", this.colorClassPrefix + colors[i]].join(" ") 
+      }.bind(this) );
+
+    // reset variables
+    this.prevHighlightColor = this.normalColor;
+    this.useOffset = false;
+  }
 };
 /** 
  * Highlights elements based on term and/or topic
