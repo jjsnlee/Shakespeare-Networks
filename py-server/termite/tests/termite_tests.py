@@ -38,7 +38,7 @@ class PrepareDataForClientTest(TestCase):
         # for convenience test arr as TxV, transpose below
         orig_arr = [                              # should retain:
         [.011, .12, .013, .14, .015], # B=.12, D=.14 
-        [.021, .022, .23, .24, .25]   # C=.23, D=.24, E=.25
+        [.021, .022, .23, .24, .251694932]   # C=.23, D=.24, E=.25
         ]
         
         # simulating a VxT matrix, where |V|=5, |T|=2
@@ -54,12 +54,15 @@ class PrepareDataForClientTest(TestCase):
         p = client.seriated_parameters
         
         #print 'client.seriated_parameters:', p
-        assert(p['topicIndex'] == ['Topic 1', 'Topic 2'])
-        assert(p['termIndex'] == ['C', 'A'])
+        self.assertEquals(p['topicIndex'], ['Topic 1', 'Topic 2'])
+        self.assertEquals(p['termIndex'], ['C', 'A'])
         
         matrix = p['matrix']
         print 'matrix:\n', matrix
-        print 'matrix.shape:', matrix.shape
-        #assert()
+        #print 'matrix.shape:', matrix.shape
         
+        d1 = matrix[0]
+        self.assertEquals(d1, {'B':.12, 'D':.14})
         
+        d2 = matrix[1]
+        self.assertEquals(d2, {'C':.23, 'D':.24, 'E':.2517}) 

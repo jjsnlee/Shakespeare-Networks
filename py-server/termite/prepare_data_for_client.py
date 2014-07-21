@@ -33,7 +33,6 @@ Number of files created or copied: 5
 """
 
 # 	def execute( self, model, saliency, seriation ):
-
 # 		
 # 		self.logger.info( '--------------------------------------------------------------------------------' )
 # 		self.logger.info( 'Preparing data for client...'                                                     )
@@ -70,29 +69,32 @@ class Client(object):
 
 	def prepareSeriatedParameters(self, model, seriation, TERM_THRESHOLD=.01):
 		topic_index = model.topic_index
-		term_index = set(model.term_index)
+		term_index_set = set(model.term_index)
+
+		# This appears to be just the seriated order documented in
+		# the Termite paper
+		term_ordering = seriation.term_ordering
+		term_subindex = [term for term in term_ordering if term in term_index_set]
 		
 		# this has the full VxT matrix;
 		# V - full vocabulary
 		#term_topic_matrix = model.term_topic_matrix
-		topic_term_matrix = pd.DataFrame(model.term_topic_matrix.T, columns=term_index) #
+		topic_term_matrix = pd.DataFrame(model.term_topic_matrix.T, columns=model.term_index) #
 		
-		print 'topic_term_matrix:\n', topic_term_matrix
-		term_topic_submatrix = topic_term_matrix[topic_term_matrix>TERM_THRESHOLD] #.T.to_sparse()
-		print 'term_topic_submatrix:\n', term_topic_submatrix
-		term_topic_submatrix = term_topic_submatrix.T
-		
-		# This appears to be just the seriated order documented in
-		# the Termite paper
-		term_ordering = seriation.term_ordering
-		#term_subindex = []
-		term_subindex = [term for term in term_ordering if term in term_index]
+# 		print 'topic_term_matrix:\n', topic_term_matrix
+# 		term_topic_submatrix = topic_term_matrix[topic_term_matrix>TERM_THRESHOLD] #.T.to_sparse()
+# 		print 'term_topic_submatrix:\n', term_topic_submatrix
+# 		term_topic_submatrix = term_topic_submatrix.T
 
-# 		topic_term_submatrix = []
-# 		for i in topic_term_matrix.index:
-# 			ti = topic_term_matrix.ix[i]
-# 			topic_term_submatrix.append(ti[ti>TERM_THRESHOLD].to_sparse())
-#		term_topic_submatrix = np.array(topic_term_submatrix).T
+		# the highest scoring terms per topic
+		topic_term_submatrix = []
+		for i in topic_term_matrix.index:
+			ti = topic_term_matrix.ix[i]
+			v = ti[ti>TERM_THRESHOLD].to_sparse().to_dict()
+			v = dict([(k, round(v, 4)) for k,v in v.iteritems()])
+			topic_term_submatrix.append(v)
+
+		#term_topic_submatrix = topic_term_submatrix.T
 # 		for term in term_ordering:
 # 			if term in term_index:
 # 				index = term_index.index( term )
@@ -105,7 +107,8 @@ class Client(object):
 		self.seriated_parameters = {
 			'termIndex'  : term_subindex,
 			'topicIndex' : topic_index,
-			'matrix'     : term_topic_submatrix
+			#'matrix'     : term_topic_submatrix
+			'matrix'     : topic_term_submatrix
 		}
 	
 	def prepareFilteredParameters(self, seriation, saliency):
