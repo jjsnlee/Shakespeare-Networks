@@ -85,7 +85,7 @@ class CorpusDataJsonHandler:
             logger.error('Problem parsing [%s]:\n%s\n%s', req, e, st)
 
     @classmethod
-    def handle_linecounts(play_data_ctx, path_elmts):
+    def handle_linecounts(cls, play_data_ctx, path_elmts):
         plays = play_data_ctx.plays
 
         all_plays_json = {}
