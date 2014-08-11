@@ -44,22 +44,26 @@ var MATRIX_ENCODING_PARAMETERS = {
 	TARGET_PIXEL_DENSITY : 0.20,
 	radius : function( sparseMatrix, numTopics, numTerms )	// matrix view
 	{
-		var totalCirclePixels = 0.0;
-		for ( var i in sparseMatrix )
-			totalCirclePixels += sparseMatrix[i].value * Math.PI;
-		// Add up # pixels:  prob * Math.PI;
-		var totalMatrixPixels = numTopics * numTerms * this.packing() * this.packing();
+//		var totalCirclePixels = 0.0;
+//		for ( var i in sparseMatrix )
+//			totalCirclePixels += sparseMatrix[i].value * Math.PI;
+//		// Add up # pixels:  prob * Math.PI;
+//		var totalMatrixPixels = numTopics * numTerms * this.packing() * this.packing();
+//		
+//		var targetPixels = ( totalMatrixPixels * this.TARGET_PIXEL_DENSITY );
+//		var observedPixels = totalCirclePixels;
+//		var areaScale = targetPixels / observedPixels;
+//		var radiusScale = Math.sqrt( areaScale );
 		
-		var targetPixels = ( totalMatrixPixels * this.TARGET_PIXEL_DENSITY );
-		var observedPixels = totalCirclePixels;
-		var areaScale = targetPixels / observedPixels;
-		var radiusScale = Math.sqrt( areaScale );
+		//var totalCirclePixels = 0.0;
+		//for ( var i in sparseMatrix )
+		//	totalCirclePixels += radiusScale * radiusScale * ( sparseMatrix[i].value ) * Math.PI;
 		
-		var totalCirclePixels = 0.0;
-		for ( var i in sparseMatrix )
-			totalCirclePixels += radiusScale * radiusScale * ( sparseMatrix[i].value ) * Math.PI;
+		// It wasn't clear to me that it was useful to scale the radii of the circles
+		// based on the number of items in the matrix 
 		
-		return radiusScale;
+		//return radiusScale;
+		return 1;
 	}
 };
 
@@ -214,7 +218,10 @@ TermTopicMatrixView.prototype.updateMatrixView = function(){
 	
 	this.matrixLayer.selectAll( "circle" ).data( matrix ).exit().remove();
 	this.matrixLayer.selectAll( "circle" ).data( matrix ).enter().append( "svg:circle" )
-		.on( "mouseout", function() { this.trigger( "mouseout:term", ""); this.trigger( "mouseout:topic", null); }.bind(this) )
+		.on( "mouseout", function() { 
+		  this.trigger( "mouseout:term", ""); 
+		  this.trigger( "mouseout:topic", null); 
+		}.bind(this) )
 
 	this.matrixLayer.selectAll( "circle" ).data( matrix )	
 		.attr( "class", function(d) { 

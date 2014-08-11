@@ -228,7 +228,9 @@ StateModel.prototype.saveStatesToQueryString = function() {
 	this.set("selectedTopicsStr", strVersion);
 	qs.addValueParameter( 'selectedTopicsStr', 'tc', 'str');
 	
-	var keys = [ 'numAffinityTerms', 'numSalientTerms', 'visibleTerms', 'sortType', 'doubleClickTopic', 'addTopTwenty', 'selectedTopicsStr' ];
+  // These have to be coordinated with the parameters listed above	
+	var keys = [ 'numAffinityTerms', 'numSalientTerms', 'visibleTerms', 
+	               'sortType', 'doubleClickTopic', 'addTopTwenty', 'selectedTopicsStr' ];
 	var states = {};
 	for ( var i in keys )
 	{
