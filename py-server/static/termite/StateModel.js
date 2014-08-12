@@ -6,7 +6,7 @@ var StateModel = Backbone.Model.extend({
 		"totalTerms" : 25,
 		"foundTerms" : "",
 		"unfoundTerms" : "",
-		"sortType": "",
+		//"sortType": "",
 		"addTopTwenty": false,
 		"highlightedTerm" : "",
 		"highlightedTopic" : null,
@@ -114,11 +114,11 @@ StateModel.prototype.setDoubleClickTopic = function ( topicIndex ){
 //	else
 	var type = "desc";
 	this.set( "doubleClickTopic", topicIndex);
-	this.set( "sortType", type);
+	//this.set( "sortType", type);
 };
 StateModel.prototype.clearSorting = function(){
 	this.set( "doubleClickTopic", null);
-	this.set( "sortType", "");
+	//this.set( "sortType", "");
 };
 /** end double click event code **/
 
@@ -176,7 +176,7 @@ StateModel.prototype.loadStatesFromQueryString = function() {
 	qs.addValueParameter( 'numAffinityTerms', 'na', 'int' );
 	qs.addValueParameter( 'numSalientTerms', 'ns', 'int' );
 	qs.addArrayParameter( 'visibleTerms', 't' );
-	qs.addValueParameter( 'sortType', 'st', 'str');
+	//qs.addValueParameter( 'sortType', 'st', 'str');
 	qs.addValueParameter( 'doubleClickTopic', 'dct', 'int');
 	qs.addValueParameter( 'addTopTwenty', 'att', 'str');
 	qs.addValueParameter( 'selectedTopicsStr', 'tc', 'str');
@@ -215,7 +215,7 @@ StateModel.prototype.saveStatesToQueryString = function() {
 	qs.addValueParameter( 'numAffinityTerms', 'na', 'int' );
 	qs.addValueParameter( 'numSalientTerms', 'ns', 'int' );
 	qs.addArrayParameter( 'visibleTerms', 't' );
-	qs.addValueParameter( 'sortType', 'st', 'str');
+	//qs.addValueParameter( 'sortType', 'st', 'str');
 	qs.addValueParameter( 'doubleClickTopic', 'dct', 'int');
 	qs.addValueParameter( 'addTopTwenty', 'att', 'str');
 	
@@ -230,7 +230,8 @@ StateModel.prototype.saveStatesToQueryString = function() {
 	
   // These have to be coordinated with the parameters listed above	
 	var keys = [ 'numAffinityTerms', 'numSalientTerms', 'visibleTerms', 
-	               'sortType', 'doubleClickTopic', 'addTopTwenty', 'selectedTopicsStr' ];
+	               //'sortType', 
+	               'doubleClickTopic', 'addTopTwenty', 'selectedTopicsStr' ];
 	var states = {};
 	for ( var i in keys )
 	{

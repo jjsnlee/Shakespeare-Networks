@@ -23,7 +23,7 @@
 	<script type="text/javascript" src="/static/lib/ext/html5slider.min.js"></script>
 
 	<script type="text/javascript" src="SeriatedTermTopicProbabilityModel.js"></script>
-	<script type="text/javascript" src="FilteredTermTopicProbabilityModel.js"></script>
+	<script type="text/javascript" src="TermTopicProbabilityModel.js"></script>
 	<script type="text/javascript" src="TermFrequencyModel.js"></script>
 	<script type="text/javascript" src="ViewParameters.js"></script>
 	<script type="text/javascript" src="TermTopicMatrixView.js"></script>
@@ -36,7 +36,7 @@
 
 termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService) {
 
-  var stateModel, seriatedTermTopicProbM, filteredTermTopicProbM, termFrequencyModel;  
+  var stateModel, seriatedTermTopicProbM, termTopicProbM, termFrequencyModel;  
 
   function loadPage(ldaModel) {
     // create backbone models and views
@@ -47,7 +47,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
     // Almost absolutely nothing here atm...  
     seriatedTermTopicProbM = new SeriatedTermTopicProbabilityModel();
     // Model for the termTopicMatrixView
-    filteredTermTopicProbM = new FilteredTermTopicProbabilityModel();
+    termTopicProbM = new TermTopicProbabilityModel();
     // Model for the term frequency column
     termFrequencyModel = new TermFrequencyModel();  
 
@@ -62,18 +62,18 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
 
     var basedir = '../data/'+ldaModel
     seriatedTermTopicProbM.url = basedir+"/seriated-parameters.json";
-    filteredTermTopicProbM.url = basedir+"/filtered-parameters.json";
+    termTopicProbM.url = basedir+"/filtered-parameters.json";
     termFrequencyModel.url = basedir+"/global-term-freqs.json";
 
     // Pretty msure don't need this seriatedTermTopicProbM, the termFrequencyModel
     // should pretty much have the same data...
     //seriatedTermTopicProbM.initModel( fullModel );	// unused at the moment
 
-    filteredTermTopicProbM.initModel( seriatedTermTopicProbM, stateModel );
-    //filteredTermTopicProbM.initModel( termFrequencyModel, stateModel );
-    termTopicMatrixView.initModel( filteredTermTopicProbM );
+    termTopicProbM.initModel( seriatedTermTopicProbM, stateModel );
+    //termTopicProbM.initModel( termFrequencyModel, stateModel );
+    termTopicMatrixView.initModel( termTopicProbM );
 
-    termFrequencyModel.initModels( filteredTermTopicProbM, stateModel );
+    termFrequencyModel.initModels( termTopicProbM, stateModel );
     termFrequencyView.initModel( termFrequencyModel );
 
     // load states from QueryString and save changes to state to query string
@@ -81,20 +81,20 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
     
     // load all models
     stateModel.once( "loaded:states", seriatedTermTopicProbM.load, seriatedTermTopicProbM );
-    //stateModel.once( "loaded:states", filteredTermTopicProbM.load, filteredTermTopicProbM );
-    seriatedTermTopicProbM.once( "loaded:seriated", filteredTermTopicProbM.load, filteredTermTopicProbM );
-    filteredTermTopicProbM.once( "loaded:filtered", termTopicMatrixView.load, termTopicMatrixView );
-    filteredTermTopicProbM.once( "loaded:filtered", termFrequencyModel.load, termFrequencyModel );
+    //stateModel.once( "loaded:states", termTopicProbM.load, termTopicProbM );
+    seriatedTermTopicProbM.once( "loaded:seriated", termTopicProbM.load, termTopicProbM );
+    termTopicProbM.once( "loaded:filtered", termTopicMatrixView.load, termTopicMatrixView );
+    termTopicProbM.once( "loaded:filtered", termFrequencyModel.load, termFrequencyModel );
     termFrequencyModel.once( "loaded:freqModel", termFrequencyView.load, termFrequencyView );
     stateModel.once("sending:colors", termTopicMatrixView.receiveSelectedTopics, termTopicMatrixView);
 
     // initialize all events that listen to stateModel
     stateModel.once( "loaded:states", function() {	
-      filteredTermTopicProbM.listenTo(stateModel, "change:numAffinityTerms", filteredTermTopicProbM.update.bind( filteredTermTopicProbM ));
-      filteredTermTopicProbM.listenTo(stateModel, "change:numSalientTerms", filteredTermTopicProbM.update.bind( filteredTermTopicProbM ));
-      filteredTermTopicProbM.listenTo(stateModel, "change:visibleTerms", filteredTermTopicProbM.update.bind( filteredTermTopicProbM ));
-      //filteredTermTopicProbM.listenTo(stateModel, "change:sortType change:doubleClickTopic", filteredTermTopicProbM.update.bind( filteredTermTopicProbM));
-      filteredTermTopicProbM.listenTo(stateModel, "change:addTopTwenty", filteredTermTopicProbM.update.bind( filteredTermTopicProbM ));
+      termTopicProbM.listenTo(stateModel, "change:numAffinityTerms", termTopicProbM.update.bind( termTopicProbM ));
+      termTopicProbM.listenTo(stateModel, "change:numSalientTerms", termTopicProbM.update.bind( termTopicProbM ));
+      termTopicProbM.listenTo(stateModel, "change:visibleTerms", termTopicProbM.update.bind( termTopicProbM ));
+      //termTopicProbM.listenTo(stateModel, "change:sortType change:doubleClickTopic", termTopicProbM.update.bind( termTopicProbM));
+      termTopicProbM.listenTo(stateModel, "change:addTopTwenty", termTopicProbM.update.bind( termTopicProbM ));
       
       foundTermsView.listenTo(   stateModel, 'change:foundTerms',   foundTermsView.render );
       unfoundTermsView.listenTo( stateModel, 'change:unfoundTerms', unfoundTermsView.render );
@@ -106,18 +106,18 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
       termFrequencyView.listenTo(stateModel, "change:highlightedTopic", termFrequencyView.onHighlightTopicChanged, termFrequencyView);
       
       termTopicMatrixView.listenTo( stateModel, "color:topic", termTopicMatrixView.clickTopic, termTopicMatrixView);
-      filteredTermTopicProbM.listenTo( stateModel, "color:topic", filteredTermTopicProbM.selectTopic, filteredTermTopicProbM);
+      termTopicProbM.listenTo( stateModel, "color:topic", termTopicProbM.selectTopic, termTopicProbM);
       termFrequencyModel.listenTo( stateModel, "color:topic", termFrequencyModel.selectTopic, termFrequencyModel);
       //sortDescription.listenTo( stateModel, "change:sortType change:doubleClickTopic" , sortDescription.render );
     });
 
     // initialize all events that listen to filtered model
-    filteredTermTopicProbM.once( "loaded:filtered", function() {
+    termTopicProbM.once( "loaded:filtered", function() {
       // Declare dependencies
       // data pipeline events
-      termFrequencyModel.listenTo( filteredTermTopicProbM, "change:termIndex", termFrequencyModel.update.bind( termFrequencyModel ));
-      termTopicMatrixView.listenTo( filteredTermTopicProbM, "change:sparseMatrix", termTopicMatrixView.update.bind( termTopicMatrixView ));
-      totalTermsView.listenTo( filteredTermTopicProbM, 'change:termIndex', totalTermsView.render );
+      termFrequencyModel.listenTo( termTopicProbM, "change:termIndex", termFrequencyModel.update.bind( termFrequencyModel ));
+      termTopicMatrixView.listenTo( termTopicProbM, "change:sparseMatrix", termTopicMatrixView.update.bind( termTopicMatrixView ));
+      totalTermsView.listenTo( termTopicProbM, 'change:termIndex', totalTermsView.render );
     
       // Once the matrix has loaded, need to set the top level div to a fixed size,
       // and then can set the inner one to be wider, which the scrollbar 
@@ -152,7 +152,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
       if(stateModel.get('highlightedTopic') == topicIndex) {
         stateModel.setDoubleClickTopic(topicIndex);
         var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex];
-        //var terms = filteredTermTopicProbM.termIndex;
+        //var terms = termTopicProbM.termIndex;
         termiteMsgService.setTopic(ldaModel, topicIndex, topicLabel);
       }
     });
@@ -165,7 +165,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
     return {
       stateModel : stateModel, 
       //seriatedTermTopicProbabilityModel : seriatedTermTopicProbM, 
-      filteredTermTopicProbabilityModel : filteredTermTopicProbM,
+      termTopicProbModel : termTopicProbM,
       termFrequencyModel : termFrequencyModel 
     };
   };
@@ -284,7 +284,8 @@ $(function(){
   top:10%; left:30%; 
   border:3px solid #eee; background: white; 
   overflow:hidden; 
-  padding:0px 0px 10px; 
+  padding:0px 0px 0px; 
+  background-color:#F8EDDD
 }
 .charText {
   color: #666; font-family: Verdana; font-size: 8pt;padding:10px 5px 10px;
@@ -332,17 +333,17 @@ $(function(){
       </table>
 
       <div my-draggable id="topicPopup" ng-show="showTopicDetails===1" class="popupDiv">
-        <div style="position:absolute;width:90%;padding:5px 30px 10px;">
+        <div style="position:absolute;width:90%;padding:5px 30px 5px;">
           <div align="right">
             <button ng-click="showTopicDetails=0">Close</button>
           </div>
           <div align="top">{{docName}}</div>
         </div>
-        <div style="position:relative;top:8%;width:100%;height:600px;overflow:auto;">
+        <div style="position:relative;top:8%;width:100%;height:80%;overflow:auto;">
           <div ng-bind-html="docContent"></div>
         </div>
         
-        <div style="position:relative;top:10%;font-family: Verdana; font-size: 8pt;">
+        <div align="right" style="position:relative;top:10%;font-family: Verdana; font-size: 8pt;">
           Topic Score:
           <span ng-repeat="color in colorAxis.colors">
             <span style="background-color:{{color}}">&gt;{{colorAxis.values[$index]}}</span>

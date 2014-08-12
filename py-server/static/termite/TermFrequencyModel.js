@@ -6,7 +6,7 @@
 		Load term frequency from 'data/global-term-freqs.json'
 	
 	Data Update:
-		Listens to FilteredTermTopicProbabilityModel (events: )
+		Listens to TermTopicProbabilityModel (events: )
 
 	Details:
 	--------

@@ -37,7 +37,7 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   $scope.showTopicDetails = 0;
 
   var models = $scope.$parent.getModels();
-  var filteredTermTopicProbabilityModel = models['filteredTermTopicProbabilityModel'];
+  var termTopicProbModel = models['termTopicProbModel'];
   var termFrequencyModel = models['termFrequencyModel'];
   var stateModel = models['stateModel'];
   
@@ -57,16 +57,23 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
     }
     return $scope.colorAxis.colors[colorIdx]; 
   }
+  
+  $scope.getScore = function(topicIdx, termIdx) {
+    var termTopicScoreMatrix = termTopicProbModel.get('matrix');
+    var termScore = termTopicScoreMatrix[termIdx][topicIdx];
+    console.log('Term score is: ' + termScore);
+  }
 
   $scope.getDocContent = function(charNm) {
     console.log('charNm: '+charNm);
     $scope.showTopicDetails = 1;
     $http.get('/shakespeare/corpus/characters/'+charNm).success(function(data) {
       console.log('data: '+data);
-      var termTopicScoreMatrix = filteredTermTopicProbabilityModel.get('matrix');
-      var terms = filteredTermTopicProbabilityModel.get('termIndex');
+      var termTopicScoreMatrix = termTopicProbModel.get('matrix');
+      var terms = termTopicProbModel.get('termIndex');
       var content = data.doc_content.map(function(section) {
         var sectionText = section.map(function(li) {
+          // need to fix this for puncutation - ie, Jew? is not getting picked up
           var wds = li.split(' ');
           var uniqueWds = {};
           _.each(wds, function(wd) {
@@ -79,8 +86,10 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
               var termScore = termTopicScoreMatrix[idx][selectedTopicIndex];
               if(termScore) {
 	              var heatMapColor = scoreColor(termScore);
+	              var getScoreArgs = selectedTopicIndex+','+idx;
 	              li = li.replace(new RegExp('\\b('+wd+')\\b', 'gi'), 
-	                    "<span style='font-weight:bold;background-color:"+heatMapColor+"'>$1</span>" );
+	                    "<span ng-click='getScore("+getScoreArgs+")' style='font-weight:bold;background-color:"
+	                       +heatMapColor+"'>$1</span>" );
 	            }
             }
           });
@@ -120,7 +129,7 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
 	if(stateModel.get('doubleClickTopic')) {
 	  var topicIndex = stateModel.get('doubleClickTopic');
 	  //var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex];
-	  //var topicLabel = filteredTermTopicProbabilityModel.attributes.topicIndex[topicIndex];
+	  //var topicLabel = termTopicProbModel.attributes.topicIndex[topicIndex];
 	  var topicLabel = 'Topic '; //+(topicIndex+1);
 	  getSelectedTopic($scope.$parent.LDAModel, topicIndex, topicLabel);
 	}

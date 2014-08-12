@@ -6,7 +6,7 @@
 	Details:
 	--------
 	Pulls list of ordered terms, topics, and similarity values from 
-	FilteredTermTopicProbabilityModel. 
+	TermTopicProbabilityModel. 
 	
 	Additionally, uses parameters defined in ViewParameters.js.
 */

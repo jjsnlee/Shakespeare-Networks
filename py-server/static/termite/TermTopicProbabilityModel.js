@@ -1,5 +1,5 @@
 /*
-	FilteredTermTopicProbabilityModel.js
+	TermTopicProbabilityModel.js
 	
 	This model is responsible for modifying data based on user inputs/controls 
 		Current user control changes:
@@ -16,7 +16,7 @@
 	At that time, the new "user defined" state is passed to the update function.  
 */
 
-var FilteredTermTopicProbabilityModel = Backbone.Model.extend({
+var TermTopicProbabilityModel = Backbone.Model.extend({
 	defaults : {
 		"matrix" : null,
 		"termIndex" : null,
@@ -48,7 +48,7 @@ var FilteredTermTopicProbabilityModel = Backbone.Model.extend({
  *
  * @private
  */
-FilteredTermTopicProbabilityModel.prototype.initModel = function( model, state ){
+TermTopicProbabilityModel.prototype.initModel = function( model, state ){
 	this.parentModel = model;
 	this.stateModel = state;
 };
@@ -58,7 +58,7 @@ FilteredTermTopicProbabilityModel.prototype.initModel = function( model, state )
  *
  * @private
  */
-FilteredTermTopicProbabilityModel.prototype.defaultSelection = function(){
+TermTopicProbabilityModel.prototype.defaultSelection = function(){
 	var topicIndex = this.parentModel.get("topicIndex");
 	for( var i = 0; i < topicIndex.length; i++ ){
 		this.selectedTopics[i] = false;
@@ -73,7 +73,7 @@ FilteredTermTopicProbabilityModel.prototype.defaultSelection = function(){
  * @param { string } the location of datafile to load values from
  * @return { void }
  */
-FilteredTermTopicProbabilityModel.prototype.load = function() {
+TermTopicProbabilityModel.prototype.load = function() {
 //	var initRowIndexMap = function( termIndex ){
 //		this.rowIndexMap = {};
 //		for ( var i = 0; i < termIndex.length; i++ ){
@@ -127,7 +127,7 @@ FilteredTermTopicProbabilityModel.prototype.load = function() {
  *
  * @private
  */
-FilteredTermTopicProbabilityModel.prototype.initTopTermLists = function() {
+TermTopicProbabilityModel.prototype.initTopTermLists = function() {
 	var termIndex = this.parentModel.get("termIndex");
 	var topicIndex = this.parentModel.get("topicIndex");
 	
@@ -155,7 +155,7 @@ FilteredTermTopicProbabilityModel.prototype.initTopTermLists = function() {
 /**
  * Calls appropriate functions to update based on data change(s)
  */
-FilteredTermTopicProbabilityModel.prototype.update = function( obj ) {
+TermTopicProbabilityModel.prototype.update = function( obj ) {
 	this.filter( false );
 };
 
@@ -164,7 +164,7 @@ FilteredTermTopicProbabilityModel.prototype.update = function( obj ) {
  *
  * @private
  */
-FilteredTermTopicProbabilityModel.prototype.addTopTerms = function() {
+TermTopicProbabilityModel.prototype.addTopTerms = function() {
 	for( var obj in this.selectedTopics){
 		if(this.selectedTopics[obj])
 			this.visibleTopTerms[obj] = this.topTermLists[obj];
@@ -177,7 +177,7 @@ FilteredTermTopicProbabilityModel.prototype.addTopTerms = function() {
  * @param { boolean } determines whether certain "set"s should trigger change events
  * @return { void }
  */
-FilteredTermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
+TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 	var original_submatrix = this.parentModel.get("matrix");
 	var original_termIndex = this.parentModel.get("termIndex");
 	var original_topicIndex = this.parentModel.get("topicIndex");
@@ -226,30 +226,34 @@ FilteredTermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 
   var subset = [];
 	// sort the terms
-	var sortType = this.stateModel.get("sortType");
+//	var sortType = this.stateModel.get("sortType");
 	for ( var i = 0; i < termsToDisplay.length; i++ ){
 		var term = termsToDisplay[i];
 		if( chooseTerm( term ) ){
-			if(sortType === "")
-				subset.push( [term, this.termOrderMap[ term ]] );
-			else if( sortType === "desc") {
-				var topic = this.stateModel.get("doubleClickTopic");
-				subset.push( [term, 
-				    1 / (original_submatrix[topic][term]
-				        *this.termDistinctivenessMap[term])]);
-			}
-			else if( sortType === "asc") {
-				var topic = this.stateModel.get("doubleClickTopic");
-				subset.push( [term, 
-				    original_submatrix[topic][term]
-				        *this.termDistinctivenessMap[term]]);
-			}
+//			if(sortType === "")
+//				subset.push( [term, this.termOrderMap[ term ]] );
+//			else if( sortType === "desc") {
+
+			var topic = this.stateModel.get("doubleClickTopic");
+			subset.push( [term, 
+			    1 / (original_submatrix[topic][term]
+			        *this.termDistinctivenessMap[term])]);
+
+//			}
+//			else if( sortType === "asc") {
+//				var topic = this.stateModel.get("doubleClickTopic");
+//				subset.push( [term, 
+//				    original_submatrix[topic][term]
+//				        *this.termDistinctivenessMap[term]]);
+//			}
 		}
 	}
+
 	// find out which user defined terms were found in the dataset
 	for( var i = 0; i < foundTerms.length; i++){
 		userDefinedTerms.splice(userDefinedTerms.indexOf(foundTerms[i]),1);
 	}
+
 	subset.sort(function(a, b) {return a[1] - b[1]});
 
 	// update model and state attributes
@@ -279,11 +283,11 @@ FilteredTermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 /**
  * Behavior when topic is selected
  *
- * @this { FilteredTermTopicProbabilityModel }
+ * @this { TermTopicProbabilityModel }
  * @param { object } topic: target topic index, color: associated color
  * @return { void }
  */
-FilteredTermTopicProbabilityModel.prototype.selectTopic = function( obj ) {
+TermTopicProbabilityModel.prototype.selectTopic = function( obj ) {
 	var topic = obj.topic;
 	var colorClass = obj.color;
 	var topicIndex = this.parentModel.get("topicIndex");
