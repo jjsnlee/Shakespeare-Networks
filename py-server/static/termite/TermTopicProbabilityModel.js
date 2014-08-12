@@ -182,6 +182,9 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 	var original_termIndex = this.parentModel.get("termIndex");
 	var original_topicIndex = this.parentModel.get("topicIndex");
 	
+	// For some reason this function is getting called twice every time
+	// the page is refreshed!!
+	
 	var userDefinedTerms = this.stateModel.get("visibleTerms").slice(0);
 	if(this.stateModel.get("addTopTwenty"))
 		this.addTopTerms();
@@ -212,7 +215,7 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 		return false;
 	}.bind(this);
 	
-	// Basically using the Obejct to replicate a Set, to get unique values
+	// Basically using the Object to replicate a Set, to get unique values
 	var termsToDisplay = _.object(original_termIndex, []);
 	var addlTerms = _.map(this.visibleTopTerms, function(t) {
 	   return _.object(t, []);
@@ -226,26 +229,16 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 
   var subset = [];
 	// sort the terms
-//	var sortType = this.stateModel.get("sortType");
 	for ( var i = 0; i < termsToDisplay.length; i++ ){
 		var term = termsToDisplay[i];
 		if( chooseTerm( term ) ){
-//			if(sortType === "")
-//				subset.push( [term, this.termOrderMap[ term ]] );
-//			else if( sortType === "desc") {
-
 			var topic = this.stateModel.get("doubleClickTopic");
-			subset.push( [term, 
-			    1 / (original_submatrix[topic][term]
-			        *this.termDistinctivenessMap[term])]);
 
-//			}
-//			else if( sortType === "asc") {
-//				var topic = this.stateModel.get("doubleClickTopic");
-//				subset.push( [term, 
-//				    original_submatrix[topic][term]
-//				        *this.termDistinctivenessMap[term]]);
-//			}
+	    // Terms are going to be sorted by distinctiveness!
+	    // Is this across the entire corpus?
+			subset.push( [term, 
+			    original_submatrix[topic][term]
+			        *this.termDistinctivenessMap[term]]);
 		}
 	}
 
@@ -254,7 +247,16 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 		userDefinedTerms.splice(userDefinedTerms.indexOf(foundTerms[i]),1);
 	}
 
-	subset.sort(function(a, b) {return a[1] - b[1]});
+	subset.sort(function(a, b) {
+	   if(isNaN(a[1]) || isNaN(b[1])) {
+	     if(!isNaN(a[1]))
+	       return -1;
+	     if(!isNaN(b[1]))
+           return 1;
+	     return 0;
+	   } 
+	   return b[1]-a[1];
+	});
 
 	// update model and state attributes
   matrix = [];	
