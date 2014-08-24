@@ -34,7 +34,7 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   // As an index
   var selectedTopicIndex = -1;
   
-  $scope.showTopicDetails = 0;
+  $scope.showTopicDetails = 1;
 
   var models = $scope.$parent.getModels();
   var termTopicProbModel = models['termTopicProbModel'];
@@ -102,7 +102,13 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
       content = $sce.trustAsHtml(content);
       $scope.docName    = data.doc_name;
       $scope.docContent = content;
+    }).error(function(data) {
+      var content = $sce.trustAsHtml(data);
+      $scope.docContent = content;
     });
+    
+    // Need a failure
+    
   };
   
   function getSelectedTopic(LdaModel, topicIndex, topicLabel) {
@@ -114,7 +120,6 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
         return {
           'char'  : c[0], 
           'score' : c[1].toFixed(6)
-          //'url'   : 'ABC'
         }
       });
       $scope.topDocsForTopic = _.sortBy(data, function(c) { 

@@ -60,7 +60,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
 
     initUserControlViewComponents(stateModel);
 
-    var basedir = '../data/'+ldaModel
+    var basedir = '/static/data/'+ldaModel
     seriatedTermTopicProbM.url = basedir+"/seriated-parameters.json";
     termTopicProbM.url = basedir+"/filtered-parameters.json";
     termFrequencyModel.url = basedir+"/global-term-freqs.json";
@@ -93,7 +93,6 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
       termTopicProbM.listenTo(stateModel, "change:numAffinityTerms", termTopicProbM.update.bind( termTopicProbM ));
       termTopicProbM.listenTo(stateModel, "change:numSalientTerms", termTopicProbM.update.bind( termTopicProbM ));
       termTopicProbM.listenTo(stateModel, "change:visibleTerms", termTopicProbM.update.bind( termTopicProbM ));
-      //termTopicProbM.listenTo(stateModel, "change:sortType change:doubleClickTopic", termTopicProbM.update.bind( termTopicProbM));
       termTopicProbM.listenTo(stateModel, "change:addTopTwenty", termTopicProbM.update.bind( termTopicProbM ));
       
       foundTermsView.listenTo(   stateModel, 'change:foundTerms',   foundTermsView.render );
@@ -140,6 +139,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
     stateModel.listenTo( termTopicMatrixView, "mouseover:topic mouseout:topic", stateModel.setHighlightedTopic );
     stateModel.listenTo( termTopicMatrixView, "mouseover:term mouseout:term", stateModel.setHighlightedTerm );
     stateModel.listenTo( termFrequencyView,   "mouseover:term mouseout:term", stateModel.setHighlightedTerm );
+
     //stateModel.listenTo( termTopicMatrixView, "doubleClick:topic", stateModel.setDoubleClickTopic );
     //stateModel.listenTo( termTopicMatrixView, "click:topic", stateModel.selectTopic );
 
@@ -152,7 +152,6 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
       if(stateModel.get('highlightedTopic') == topicIndex) {
         stateModel.setDoubleClickTopic(topicIndex);
         var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex];
-        //var terms = termTopicProbM.termIndex;
         termiteMsgService.setTopic(ldaModel, topicIndex, topicLabel);
       }
     });
@@ -163,8 +162,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
   
   $scope.getModels = function() {
     return {
-      stateModel : stateModel, 
-      //seriatedTermTopicProbabilityModel : seriatedTermTopicProbM, 
+      stateModel         : stateModel, 
       termTopicProbModel : termTopicProbM,
       termFrequencyModel : termFrequencyModel 
     };
@@ -190,15 +188,6 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
   loadPage($scope.LDAModel);
    
 });
-
-$(function(){
-  $(".wrapper1").scroll(function(){
-    $(".wrapper2").scrollLeft($(".wrapper1").scrollLeft());
-  });
-  $(".wrapper2").scroll(function(){
-    $(".wrapper1").scrollLeft($(".wrapper2").scrollLeft());
-  });
-});
 </script>
 
 </head>
@@ -208,17 +197,17 @@ $(function(){
 
     <div id="pageHeader">
       <div id="pageControl" class="headerObject">
-
-        <!--<div ng-include="'termite-hdr.html'" onLoad="onLoad()"></div>-->
+      <!--<div ng-include="'termite-hdr.html'" onLoad="onLoad()"></div>-->
     <table cellspacing="5">
     <tr>
-      <td style="vertical-align: top">
+      <td colspan="100%" style="vertical-align: top">
         <select name="LDAModel" ng-model="LDAModel"
           ng-options="m for m in LDAModels" 
           ng-change="changeModel()" style="width:200px">
         </select>
       </td>
-    
+    </tr>
+    <tr>
       <td style="vertical-align: top">
         <div class="line">
             Currently showing 
@@ -254,12 +243,15 @@ $(function(){
             </div>
         </td>
         <td style="vertical-align: top">
-            <div class="line">
-                <button type="button" class="clearAll" style="width: 150px">Clear all topic selections</button>
-            </div>
-            <div class="line">
-                <button type="button" class="clearSort" style="width: 150px">Clear sorting method</button>
-            </div>
+          <div class="line">
+            <button type="button" class="clearAll" style="width: 150px">Clear all topic selections</button>
+          </div>
+          <div class="line">
+            <button type="button" class="clearSort" style="width: 150px">Clear sorting method</button>
+          </div>
+          <!--<div class="line">
+            <button type="button" style="width: 150px" ng-click="showTopicDetails=1">Show Topic Details</button>
+          </div>-->
         </td>
       </tr>
     </table>
@@ -268,56 +260,48 @@ $(function(){
     </div>
 
 <style>
-.wrapper1, .wrapper2 {
-  overflow-x:scroll;
-  overflow-y:hidden;
+#.slide-out-div { padding:20px; height:800px; width:400px; background: #fff; border: 10px solid #666; }
+.wrapper1, .wrapper2 { overflow-x:scroll; overflow-y:hidden; }
+.wrapper1 { height: 20px; }
+.div1     { width:100%; height:20px; }
+.charText { color: #666; font-family: Verdana; font-size: 8pt;padding:10px 5px 10px; }
+.popupDiv { width:40%; height:60%; position:absolute; 
+  top:10%; left:30%; border:10px solid #eee; background: white; 
+  overflow:auto; padding:0px 0px 0px; 
 }
-.wrapper1 { 
-  height: 20px; 
-}
-.div1 {
-  width:100%;
-  height:20px;
-}
-.popupDiv { 
-  width:40%; height:80%; position:absolute; 
-  top:10%; left:30%; 
-  border:3px solid #eee; background: white; 
-  overflow:hidden; 
-  padding:0px 0px 0px; 
-  background-color:#F8EDDD
-}
-.charText {
-  color: #666; font-family: Verdana; font-size: 8pt;padding:10px 5px 10px;
-}
+
+table { border:1px solid #ccc; border-collapse: collapse; width:100%; }
+tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+thead th { padding:1px 6px 1px 3px; background:#fefefe; text-align:left; font-weight:normal; font-size:11px; border:1px solid #ddd; }
+tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 </style>
 
     <div id="pageContent" ng-controller="contentCtrl">
+      <div style="vertical-align:top;height:800px;overflow-y:scroll;overflow-x:auto;">
       <table border=1 cellpadding=1 cellspacing=1 width="100%">
-      <tr>
-        <td></td>
-        <td>
-          <div class="wrapper1">
-            <div class="div1"></div>
-          </div>
-        </td>
-        <td></td>
-      </tr>
 	    <tr>
-	      <!-- Frequent terms -->
-	      <td width="20%" style="vertical-align: top">
+	      <td style="width:600px;">
+	        <!-- Main matrix -->
+	        <div class="termTopicMatrixContainer"></div>
+	      </td>
+	      <td>
+          <!-- Frequent terms -->
 	        <div class="termFrequencyContainer"></div>
 	      </td>
-	      <!-- Main matrix -->
-	      <td width="50%" style="vertical-align:top;">
-          <div class="wrapper2" style="width:600px;">
-            <!-- !style="width:100%;overflow:auto;" -->
-	          <div class="termTopicMatrixContainer"></div>
-	        </div>
-	      </td>
-	      <!-- Related documents -->
-	      <td width="30%" style="vertical-align: top" ng-cloak>
-        <div ng-show="topDocsForTopic">
+      </tr>
+      </table>
+      </div>
+
+      <!-- Related documents -->
+      <div my-draggable id="topicPopup" ng-show="showTopicDetails===1" class="popupDiv">
+        <!--
+        <div style="position:absolute;width:90%;padding:5px 30px 5px;">
+          -div align="right">
+            <button ng-click="showTopicDetails=0">Close</button>
+          </div>
+        </div-->
+
+        <div style="height:30%;overflow-y:scroll;border:1px solid #ccc;">
           <span style="color: #666; font-family: Verdana; font-size: 8pt;">
             {{selectedTopic}}
           </span>
@@ -328,30 +312,24 @@ $(function(){
             </tr>
           </table>
         </div>
-	      </td>
-	    </tr>
-      </table>
-
-      <div my-draggable id="topicPopup" ng-show="showTopicDetails===1" class="popupDiv">
-        <div style="position:absolute;width:90%;padding:5px 30px 5px;">
-          <div align="right">
-            <button ng-click="showTopicDetails=0">Close</button>
-          </div>
-          <div align="top">{{docName}}</div>
-        </div>
-        <div style="position:relative;top:8%;width:100%;height:80%;overflow:auto;">
-          <div ng-bind-html="docContent"></div>
-        </div>
-        
-        <div align="right" style="position:relative;top:10%;font-family: Verdana; font-size: 8pt;">
-          Topic Score:
-          <span ng-repeat="color in colorAxis.colors">
-            <span style="background-color:{{color}}">&gt;{{colorAxis.values[$index]}}</span>
-          </span>
-        </div>
-        
-      </div> <!-- END TopicPopup -->
-
+        <div style="height:70%;border:1px solid #ccc;">
+          <div style="height:10%"> 
+		        <div align="left" style="padding-top:10px;font-family: Verdana; font-size: 8pt;">
+		          Topic Score:
+		          <span ng-repeat="color in colorAxis.colors">
+		            <span style="background-color:{{color}}">&gt;{{colorAxis.values[$index]}}</span>
+		          </span>
+		        </div>
+		        <div style="padding:5px 10px 5px;">
+		          <div align="top">{{docName}}</div>
+		        </div>
+	        </div>
+	        <div style="overflow-y:scroll;height:90%">
+	          <div ng-bind-html="docContent"></div>
+	        </div>
+	      </div>
+	    </div>
+	    
     </div> <!-- END PageContent, CONTROLLER: contentCtrl-->
 
 	  <div id="pageDetails">
@@ -370,13 +348,6 @@ $(function(){
     </div>
   </div>
 </div>
-
-<!--<style>
-  #draggable { width: 150px; height: 150px; padding: 0.5em; }
-</style>
-<div id="draggable" class="ui-widget-content">
-  <p>Drag me around</p>
-</div>-->
 
 </body>
 </html>

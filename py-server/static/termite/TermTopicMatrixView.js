@@ -247,7 +247,9 @@ TermTopicMatrixView.prototype.updateMatrixView = function(){
 	this.xGridlineLayer.selectAll( "line" ).data( termIndex ).enter().append( "svg:line" )
 		.attr( "x1", this.xs(0.5) )
 	this.xGridlineLayer.selectAll( "line" ).data( termIndex )
-		.attr( "class", function(d) { return [ "verticalLine", this.normalColor, getTermClassTag(d) ].join(" ") }.bind(this)) 
+		.attr( "class", function(d) { 
+		    return [ "verticalLine", this.normalColor, getTermClassTag(d) ].join(" ") 
+		  }.bind(this)) 
 		.attr( "x2", this.xs(topicIndex.length-0.5) )
 		.attr( "y1", function(d,i) { return this.ys(i+0.5) }.bind(this) )
 		.attr( "y2", function(d,i) { return this.ys(i+0.5) }.bind(this) )
@@ -255,15 +257,18 @@ TermTopicMatrixView.prototype.updateMatrixView = function(){
 	this.yGridlineLayer.selectAll( "line" ).data( topicIndex ).exit().remove();
 	this.yGridlineLayer.selectAll( "line" ).data( topicIndex ).enter().append( "svg:line" )
 		.attr( "y1", this.ys(0.5) )
+
 	this.yGridlineLayer.selectAll( "line" ).data( topicIndex )
-		.attr( "class", function(d, i) { return [ "verticalLine", this.selectedTopics[i], getTopicClassTag(d)].join(" ") }.bind(this)) 
+		.attr( "class", function(d, i) { 
+		    return [ "verticalLine", this.selectedTopics[i], getTopicClassTag(d)].join(" ") 
+		  }.bind(this))
 		.attr( "x1", function(d,i){ return this.xs(i+0.5) }.bind(this) )
 		.attr( "x2", function(d,i){ return this.xs(i+0.5) }.bind(this) )
 		.attr( "y2", this.ys(termIndex.length-0.5) )
 };
+
 TermTopicMatrixView.prototype.initTopLabelView = function(){
-	this.topLabelLayer = this.svg.append( "svg:g" )
-		.attr( "class", "topLabelLayer" );
+	this.topLabelLayer = this.svg.append( "svg:g" ).attr( "class", "topLabelLayer" );
 };
 
 TermTopicMatrixView.prototype.updateTopLabelView = function(){
@@ -287,19 +292,11 @@ TermTopicMatrixView.prototype.updateTopLabelView = function(){
 		.text( function(d) { return d } )
 		.on( "click", function(d, i) {
 		  this.trigger( "click:topic", i)
-				//dblclickTimer = setTimeout(function(){ clickWork(d, i)}, 200);
 			}.bind(this))
-
-//		.on( "dblclick", function(d, i){ 
-//				clearTimeout(dblclickTimer);
-//  				dblclickTimer = null;
-//  				this.trigger( "doubleClick:topic", i) 
-//  			}.bind(this))
 };
 
 TermTopicMatrixView.prototype.initLeftLabelView = function(){
-	this.leftLabelLayer = this.svg.append( "svg:g" )
-		.attr( "class", "leftLabelLayer" );
+	this.leftLabelLayer = this.svg.append( "svg:g" ).attr( "class", "leftLabelLayer" );
 };
 
 TermTopicMatrixView.prototype.updateLeftLabelView = function(){
@@ -309,10 +306,16 @@ TermTopicMatrixView.prototype.updateLeftLabelView = function(){
 	this.leftLabelLayer.selectAll( "text" ).data( termIndex ).enter().append( "svg:text" )
 		.on( "mouseout", function() { this.trigger( "mouseout:term", "") }.bind(this))
 		.attr( "y", 3 )
+
 	this.leftLabelLayer.selectAll( "text" ).data( termIndex )
 		.attr( "class", function(d) { return ["leftLabel", this.normalColor, getTermClassTag(d)].join(" ") }.bind(this))
 		.on( "mouseover", function(d) { this.trigger( "mouseover:term", d ) }.bind(this))
-		.attr( "transform", function(d,i) { return "translate(" + (this.xs(0)-MATRIX_CONTAINER_PADDING.left_separation) + "," + this.ys(i+0.5) + ")" }.bind(this) )
+		.attr( "transform", function(d,i) { 
+		  return "translate(" 
+		      + (this.xs(0)-MATRIX_CONTAINER_PADDING.left_separation) 
+		      + "," 
+		      + this.ys(i+0.5) + ")" 
+		}.bind(this) )
 		.text( function(d) { return d } )
 };
 /** end init and update functions **/

@@ -199,6 +199,7 @@ TermFrequencyView.prototype.renderUpdate = function() {
 		.attr( "x", -HISTORGRAM_CONTAINER_PADDING.left_separation )
 		.attr( "y", 3 )
 
+  // The word labels
 	this.svgTermLabelLayer.selectAll( "text" ).data( termIndex )	
 		.attr( "class", function(d) { return ["termLabel", "HISTnormal", getTermClassTag(d)].join(" ") })
 		.attr( "transform", function(d,i) { return "translate(0," + this.ys(i+0.5) + ")" }.bind(this) )
