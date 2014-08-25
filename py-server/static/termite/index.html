@@ -146,11 +146,12 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
     // http://backbonejs.org/#Events-listenTo: object.listenTo(other, event, callback)
     stateModel.listenTo( termTopicMatrixView, "click:topic", function(topicIndex) {
       console.log('[click:topic] topicIndex: '+topicIndex+', highlightedTopic: '+stateModel.get('highlightedTopic'));
+      stateModel.setDoubleClickTopic(topicIndex);
       stateModel.selectTopic(topicIndex);
       //console.log( termTopicMatrixView.parentModel );
       // We could be clicking OFF a topic 
       if(stateModel.get('highlightedTopic') == topicIndex) {
-        stateModel.setDoubleClickTopic(topicIndex);
+        
         var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex];
         termiteMsgService.setTopic(ldaModel, topicIndex, topicLabel);
       }
@@ -169,29 +170,29 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
   };
 
   // initialize parent and state model where needed
-  //var basedir = '../data/';
-  //var LdaModel = 'shakespeare-20';
-  //var LdaModel = 'shakespeare-char-scene-20';
   $scope.LDAModels = [
     'shakespeare-char-scene-100',
     'shakespeare-char-scene-100-test',
+    'char-scene-50-tfidf',
     'shakespeare-50',
   ];
-  $scope.LDAModel = $scope.LDAModels[1];
+  $scope.LDAModel = $scope.LDAModels[2];
   $scope.changeModel = function() {
     console.log('$scope.LDAModel: '+$scope.LDAModel);
-    //loadPage($scope.LDAModel);
+    $('.termTopicMatrixContainer').empty();
+    $('.termFrequencyContainer').empty();
+    
+    loadPage($scope.LDAModel);
     //var urlRoot = '/'+$scope.LDAModel;
     //$window.location.href = urlRoot;
     //console.log('$window.location.href: '+$window.location.href);
   };
   loadPage($scope.LDAModel);
-   
 });
 </script>
 
 </head>
-<body ng-app="termiteTopicDisplay" !onLoad="onLoad()">
+<body ng-app="termiteTopicDisplay">
 <div id="pageBackground" ng-controller="msgCtrl">
   <div id="pageFrame">
 
