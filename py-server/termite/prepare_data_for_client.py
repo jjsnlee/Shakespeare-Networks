@@ -32,35 +32,6 @@ Number of files created or copied: 5
     'term-info.txt'
 """
 
-# 	def execute( self, model, saliency, seriation ):
-# 		
-# 		self.logger.info( '--------------------------------------------------------------------------------' )
-# 		self.logger.info( 'Preparing data for client...'                                                     )
-# 		#self.logger.info( '    data_path = %s', data_path                                                    )
-# 		
-# 		self.logger.info( 'Connecting to data...' )
-# 		self.model = model
-# 		self.saliency = saliency
-# 		self.seriation = seriation
-# 		self.client = Client()
-# 		
-# # 		self.logger.info( 'Reading data from disk...' )
-# # 		self.model.read()
-# # 		self.saliency.read()
-# # 		self.seriation.read()
-# 
-# 		self.logger.info( 'Preparing parameters for seriated matrix...' )
-# 		self.prepareSeriatedParameters()
-# 		
-# 		self.logger.info( 'Preparing parameters for filtered matrix...' )
-# 		self.prepareFilteredParameters()
-# 		
-# 		self.logger.info( 'Preparing global term freqs...' )
-# 		self.prepareGlobalTermFreqs()
-# 		
-# # 		self.logger.info( 'Writing data to disk...' )
-# # 		self.client.write()
-
 class Client(object):
 	def __init__(self, td=None):
 		self.seriated_parameters = None

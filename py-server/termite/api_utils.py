@@ -220,7 +220,7 @@ class SeriationRWer(object):
 		WriteAsList( ser.term_iter_index, path + cls.TERM_ITER_INDEX )
 
 class ClientRWer(object):
-	SUBFOLDER = 'public_html/data'
+	SUBFOLDER = 'public_html'
 	SERIATED_PARAMETERS = 'seriated-parameters.json'
 	FILTERED_PARAMETERS = 'filtered-parameters.json'
 	GLOBAL_TERM_FREQS = 'global-term-freqs.json'
