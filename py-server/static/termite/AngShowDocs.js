@@ -112,6 +112,15 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   };
   
   function getSelectedTopic(LdaModel, topicIndex, topicLabel) {
+  
+    if(topicIndex==selectedTopicIndex)
+      return;
+  
+    // First reset the existing 
+    $scope.topDocsForTopic = [];
+	  $scope.docName    = '';
+	  $scope.docContent = '';
+  
     console.log('Will fetch data for topicIndex: ' + topicIndex);
     $scope.selectedTopic = topicLabel;
     selectedTopicIndex = topicIndex;

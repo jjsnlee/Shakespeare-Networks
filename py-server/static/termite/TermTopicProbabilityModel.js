@@ -233,7 +233,7 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 		var term = termsToDisplay[i];
 		if( chooseTerm( term ) ){
 			var topic = this.stateModel.get("doubleClickTopic");
-
+			console.log('The currently selected topic is: '+topic);
 	    // Terms are going to be sorted by distinctiveness!
 	    // Is this across the entire corpus?
 			subset.push( [term, 

@@ -5,6 +5,7 @@ import json, sys, os
 import logging
 import pandas as pd
 
+from gensim.models import TfidfModel
 from gensim.models.ldamodel import LdaModel
 from gensim.corpora import Dictionary
 from gensim.utils import simple_preprocess #, SaveLoad
@@ -31,7 +32,7 @@ def get_lda_base_dir():
     return join(helper.get_dynamic_rootdir(), 'lda')
 
 class LDAContext(object):
-    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None):
+    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=False):
         self.doc_names = doc_nms
         self.doc_contents = doc_contents
         self.doc_contents_tokenized = [simple_preprocess(doc) for doc in doc_contents]
@@ -56,13 +57,24 @@ class LDAContext(object):
             self.dictionary = dictionary
             
             # would be interesting to get bigram collocations here
+            # this should use TF/IDF?
             
-            self.corpus = [dictionary.doc2bow(doc) for doc in self.doc_contents_tokenized]
+            bow_corpus = [dictionary.doc2bow(doc) for doc in self.doc_contents_tokenized]
+            
+            if as_bow:
+                self.corpus = bow_corpus
+            else:
+                tfidf = TfidfModel(bow_corpus)
+                corpus_tfidf = tfidf[bow_corpus]
+                self.corpus = [doc for doc in corpus_tfidf]
+
             self.stopwords = stopwds
         else:
             self.dictionary = from_cache['dictionary']
             self.corpus = from_cache['corpus']
             self.stopwords = from_cache['stopwords']
+    
+    # can't seem to realize the transformed corpus 
     
     def get_terms(self):
         return self.dictionary.id2token.values()
@@ -150,7 +162,8 @@ class LDAResult(object):
             self.label = label
         else:
             lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
-            t = datetime.now()
+            #t = datetime.now()
+            t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H:%M:%S')
             #self.baselabel = label
             self.label = '%s_%s_%s_%s_lda' % (label, t, ntopics, npasses)
             self.lda = lda
@@ -185,6 +198,9 @@ class LDAResult(object):
     def docs_per_topic(self):
         if self._docs_per_topic is None:
             d = {}
+            # in LDAModel, it is effectively recalculated the doc score
+            # by calling inference(), which is called during the expectation
+            # phase of the training
             corpus_scores = self.lda[self.corpus]
             for scores, doc_nm in zip(corpus_scores, self.doc_names):
                 #print 'j:', doc_nm, 'i:', i
@@ -376,13 +392,6 @@ def runs_affine_prop(mat):
             node_embedding[1].max() + .03 * node_embedding[1].ptp())
     
     pl.show()
-
-#def runs_lingo(mat):
-#    import carrot_alg_lingo as lingo
-#    from org.carrot2.core import ControllerFactory
-#    controller = ControllerFactory.createSimple();
-#    byTopicClusters = controller.process(documents, "data mining", LingoClusteringAlgorithm.class);
-#    final List<Cluster> clustersByTopic = byTopicClusters.getClusters();
 
 def create_lda_corpus_with_mat(mat):
     class MyCorpus(object):
@@ -580,3 +589,9 @@ def make_matricesXXX(ngdf, min_cnt=2, max_threshold=1.0, ret_skipped=False):
     #cnts = np.concatenate((cnts, cnts2)) # , axis=1 ?
 #        docs[k].update({x:y for x,y in zip(ngs, cnts)})
 
+#def runs_lingo(mat):
+#    import carrot_alg_lingo as lingo
+#    from org.carrot2.core import ControllerFactory
+#    controller = ControllerFactory.createSimple();
+#    byTopicClusters = controller.process(documents, "data mining", LingoClusteringAlgorithm.class);
+#    final List<Cluster> clustersByTopic = byTopicClusters.getClusters();

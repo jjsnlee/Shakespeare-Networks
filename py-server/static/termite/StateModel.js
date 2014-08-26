@@ -70,6 +70,8 @@ StateModel.prototype.selectTopic = function( topicIndex ) {
 	}
 	// assign a color to the selected topic if there are any free 
 	else {
+	  // Should think about some way to pop the last color used
+	
 		color = getColor();
 		this.get("selectedTopics")[topicIndex] = color;
 	}
