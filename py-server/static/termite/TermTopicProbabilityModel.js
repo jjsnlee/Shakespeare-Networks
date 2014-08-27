@@ -100,7 +100,7 @@ TermTopicProbabilityModel.prototype.load = function() {
 		this.termDistinctivenessMap = response.termDistinctivenessMap;
 		//initRowIndexMap( this.parentModel.get("termIndex") );
 		initTermSaliencyList( response.termSaliencyMap );
-			
+
 		this.initTopTermLists();
 		this.defaultSelection();
 		this.filter( keepQuiet );	
@@ -233,7 +233,13 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 		var term = termsToDisplay[i];
 		if( chooseTerm( term ) ){
 			var topic = this.stateModel.get("doubleClickTopic");
+			if(topic > original_topicIndex.length) {
+			  topic = original_topicIndex.length-1;
+			}
+			
 			console.log('The currently selected topic is: '+topic);
+			// Problem here when going from a larger dataset to a smaller one
+			
 	    // Terms are going to be sorted by distinctiveness!
 	    // Is this across the entire corpus?
 			subset.push( [term, 

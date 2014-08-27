@@ -155,7 +155,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
         termiteMsgService.setTopic(ldaModel, topicIndex, topicLabel);
       }
       else {
-        // lifted form statemodel.selectTopic
+        // lifted from statemodel.selectTopic
 		    if(topicIndex in stateModel.get("selectedTopics")) {
 	        freeColor(stateModel.get("selectedTopics")[topicIndex]);
 	        delete stateModel.get("selectedTopics")[topicIndex];
@@ -177,17 +177,22 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
 
   // initialize parent and state model where needed
   $scope.LDAModels = [
-    'shakespeare-char-scene-100', // something's wrong with this one which is odd since it is just an alias...
-    //'shakespeare-char-scene-100-test',
-    'shakespeare-char-scene-50-tfidf',
-    //'shakespeare-50',
+    'shakespeare-char-scene-50-100-tfidf',
+    'shakespeare-char-scene-50-50-tfidf',
+    'shakespeare-char-scene-50-50-tfidf-2',
+    'shakespeare-char-scene-100-50'
   ];
-  $scope.LDAModel = $scope.LDAModels[1];
+  $scope.LDAModel = $scope.LDAModels[0];
   $scope.changeModel = function() {
     console.log('$scope.LDAModel: '+$scope.LDAModel);
     $('.termTopicMatrixContainer').empty();
     $('.termFrequencyContainer').empty();
     loadPage($scope.LDAModel);
+    $scope.$$childHead.setModels($scope.getModels());
+
+    $scope.$$childHead.topDocsForTopic = [];
+	  $scope.$$childHead.docName    = '';
+	  $scope.$$childHead.docContent = '';
   };
   loadPage($scope.LDAModel);
 });
@@ -206,7 +211,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
       <td colspan="100%" style="vertical-align: top">
         <select name="LDAModel" ng-model="LDAModel"
           ng-options="m for m in LDAModels" 
-          ng-change="changeModel()" style="width:200px">
+          ng-change="changeModel()" style="width:280px">
         </select>
       </td>
     </tr>
@@ -231,20 +236,20 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
       </td>
       
       <td style="vertical-align: top">
-            <div class="line">
-                Add top terms for clicked topics
-                <input type="checkbox" class="TopTwentyAddition" style="display:inline-block"></div> 
-            </div>
-            <div class="line">
-                Always showing terms: 
-                <input class="UserDefinedTermsBox" style="display:inline; width: 200px; vertical-align: -2px" type="text"/>
-                <div class="FoundTermsView" style="display:inline-block"></div>
-            </div>
-            <div class="line">
-                <div class="UnfoundTermsPrefix" style="display:inline-block; visibility:hidden">Cannot find these terms: </div>
-                <div class="UnfoundTermsView" style="display:inline-block; visibility:hidden"></div>
-            </div>
-        </td>
+	        <div class="line">
+	            Add top terms for clicked topics
+	            <input type="checkbox" class="TopTwentyAddition" style="display:inline-block"></div> 
+	        </div>
+	        <div class="line">
+	            Always showing terms: 
+	            <input class="UserDefinedTermsBox" style="display:inline; width: 200px; vertical-align: -2px" type="text"/>
+	            <div class="FoundTermsView" style="display:inline-block"></div>
+	        </div>
+	        <div class="line">
+	            <div class="UnfoundTermsPrefix" style="display:inline-block; visibility:hidden">Cannot find these terms: </div>
+	            <div class="UnfoundTermsView" style="display:inline-block; visibility:hidden"></div>
+	        </div>
+	    </td>
         <td style="vertical-align: top">
           <div class="line">
             <button type="button" class="clearAll" style="width: 150px">Clear all topic selections</button>

@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# import re
-# import json
 from io_utils import CheckAndMakeDirs
-from io_utils import ReadAsList, ReadAsVector, ReadAsMatrix, ReadAsSparseVector, ReadAsSparseMatrix, ReadAsJson
-from io_utils import WriteAsList, WriteAsVector, WriteAsMatrix, WriteAsSparseVector, WriteAsSparseMatrix, WriteAsJson, WriteAsTabDelimited
+from io_utils import ReadAsList, ReadAsMatrix, ReadAsSparseVector, ReadAsSparseMatrix, ReadAsJson
+from io_utils import WriteAsList, WriteAsMatrix, WriteAsSparseVector, WriteAsSparseMatrix, WriteAsJson, WriteAsTabDelimited
 from utf8_utils import UnicodeReader, UnicodeWriter
+from os.path import join 
 
 class Documents( object ):
 	ACCEPTABLE_FORMATS = frozenset( [ 'file' ] )
@@ -220,23 +219,22 @@ class SeriationRWer(object):
 		WriteAsList( ser.term_iter_index, path + cls.TERM_ITER_INDEX )
 
 class ClientRWer(object):
-	SUBFOLDER = 'public_html'
 	SERIATED_PARAMETERS = 'seriated-parameters.json'
 	FILTERED_PARAMETERS = 'filtered-parameters.json'
 	GLOBAL_TERM_FREQS = 'global-term-freqs.json'
 	@classmethod
 	def read( cls, path ):
-		path = '{}/{}/'.format( path, cls.SUBFOLDER )
 		from prepare_data_for_client import Client
 		client = Client()
-		client.seriated_parameters = ReadAsJson( path + cls.SERIATED_PARAMETERS )
-		client.filtered_parameters = ReadAsJson( path + cls.FILTERED_PARAMETERS )
-		client.global_term_freqs = ReadAsJson( path + cls.GLOBAL_TERM_FREQS )
+		basepath = join(path, 'public_html')
+		client.seriated_parameters = ReadAsJson( join(basepath, cls.SERIATED_PARAMETERS) )
+		client.filtered_parameters = ReadAsJson( join(basepath, cls.FILTERED_PARAMETERS) )
+		client.global_term_freqs = ReadAsJson( join(basepath, cls.GLOBAL_TERM_FREQS) )
 		return client
 	@classmethod
 	def write( cls, client, path ):
-		path = '{}/{}/'.format( path, cls.SUBFOLDER )
 		CheckAndMakeDirs( path )
-		WriteAsJson( client.seriated_parameters, path + cls.SERIATED_PARAMETERS )
-		WriteAsJson( client.filtered_parameters, path + cls.FILTERED_PARAMETERS )
-		WriteAsJson( client.global_term_freqs, path + cls.GLOBAL_TERM_FREQS )
+		basepath = join(path, 'public_html')
+		WriteAsJson( client.seriated_parameters, join(basepath, cls.SERIATED_PARAMETERS) )
+		WriteAsJson( client.filtered_parameters, join(basepath, cls.FILTERED_PARAMETERS) )
+		WriteAsJson( client.global_term_freqs, join(basepath, cls.GLOBAL_TERM_FREQS) )

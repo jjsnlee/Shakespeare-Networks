@@ -115,8 +115,11 @@ class CorpusDataJsonHandler:
         logger.debug('which_topic: %s', which_topic)
         
         LDA_KEYS = {
-            'shakespeare-char-scene-100'      : 'char_scene_2014-06-29_19.49.11.703618_100_50_lda',
-            'shakespeare-char-scene-50-tfidf' : 'char-scene_2014-08-24_23:04:15.113839_50_50_lda'
+          'shakespeare-char-scene-100-50'        : 'char_scene_2014-06-29_19.49.11_100_50_lda',
+          'shakespeare-char-scene-50-50-tfidf'   : 'char-scene_2014-08-24_23.04.15_50_50_lda',
+          'shakespeare-char-scene-50-50-tfidf-2' : 'char-scene_2014-08-26_00.43.50_50_50_lda',
+          
+          'shakespeare-char-scene-50-100-tfidf' : 'char-scene_2014-08-26_01.47.56_50_100_lda'
         }
         
         lda_key = LDA_KEYS.get(ldaModel)

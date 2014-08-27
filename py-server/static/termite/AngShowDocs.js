@@ -19,6 +19,7 @@ termiteTopics.service('termiteMsgService', function() {
 		topicHandler(LdaModel, topicIndex, topicLabel);
   };
   var registerTopicHandler = function(handler) { topicHandler = handler; };
+  //var registerModelHandler = function(handler) { topicHandler = handler; };
 
   return {
   	registerTopicHandler : registerTopicHandler,
@@ -36,10 +37,15 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   
   $scope.showTopicDetails = 1;
 
-  var models = $scope.$parent.getModels();
-  var termTopicProbModel = models['termTopicProbModel'];
-  var termFrequencyModel = models['termFrequencyModel'];
-  var stateModel = models['stateModel'];
+  $scope.setModels = function(m) {
+    models = m;
+    termTopicProbModel = m['termTopicProbModel'];
+    termFrequencyModel = m['termFrequencyModel'];
+    stateModel = m['stateModel'];
+  }
+
+  var models, termTopicProbModel, termFrequencyModel, stateModel;
+  $scope.setModels($scope.$parent.getModels());
   
   $scope.colorAxis = {
     //colors: ['#', '#','#', '#', '#', '#'],
@@ -47,6 +53,7 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
     colors: ['#A89D7D', '#A89049','#E7AD00', '#FFB164', '#FFFF00', '#DFFF00'],
     values: [0, 1, 10, 25, 50, 100]
   };
+
   var scoreColor = function(score) {
     var colorIdx = 0;
     for(i in $scope.colorAxis.values) {
@@ -144,7 +151,7 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
 	  var topicIndex = stateModel.get('doubleClickTopic');
 	  //var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex];
 	  //var topicLabel = termTopicProbModel.attributes.topicIndex[topicIndex];
-	  var topicLabel = 'Topic '; //+(topicIndex+1);
+	  var topicLabel = 'Topic '+(topicIndex+1);
 	  getSelectedTopic($scope.$parent.LDAModel, topicIndex, topicLabel);
 	}
 });
