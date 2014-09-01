@@ -5,6 +5,9 @@ from pcibook import nmf, clusters
 from os.path import join
 import pandas as pd
 
+from datetime import datetime
+import time
+import os
 import logging
 import helper
 logger = helper.setup_sysout_handler(__name__)
@@ -27,7 +30,9 @@ def main(label=None, train_new=False):
 #         lda_rslt = doLDA(prc_ctx)
         lda_rslt = doLDA(label, ntopics=50, npasses=50)
     else:
-        lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
+        #lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
+        # char_scene_2014-06-29 19.49.11.703618_100_50_lda
+        lda_key = '2014-05-13 00:50:36.652535_50_50.lda'
         lda_rslt = get_lda_rslt(lda_key)
 
     td = sc.TermiteData(lda_rslt)
@@ -37,18 +42,28 @@ def main(label=None, train_new=False):
     td.data_for_client()
     return td
 
-def doLDA(label, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene'):
+def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=False):
     play_ctx = png.get_plays_ctx(ctx)
     prc_ctx = ClustersCtxt(play_ctx)
     prc_ctx.preproc(by=by) # by='Char'
     
     doc_titles, docs_content = get_doc_content(prc_ctx)
+
+    t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+    label = '%s_%s_%s_%s_lda' % (baselabel, t, ntopics, npasses)
+    basedir = join(sc.get_lda_base_dir(), label)
+    os.makedirs(basedir)
+    logfile = join(basedir, 'gensim.log')
     
-    #logger = logging.getLogger('gensim.models.ldamodel')
-    #logger.setLevel(logging.DEBUG)
+    # Need this to analyze the perplexity
+    logger = logging.getLogger('gensim.models.ldamodel')
+    fh = logging.FileHandler(logfile)
+    fh.setLevel(logging.DEBUG)
+    fh.setFormatter(logging.Formatter('%(asctime)s : %(levelname)s : %(message)s'))
+    logger.addHandler(fh)
     #logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     
-    lda_ctxt = LDAContext(doc_titles, docs_content, stopwds=_get_stopwords())
+    lda_ctxt = LDAContext(doc_titles, docs_content, stopwds=_get_stopwords(), as_bow=as_bow)
     #lda_ctxt.save_corpus()
     
     # Do this N number of times

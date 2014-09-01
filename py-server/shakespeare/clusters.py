@@ -152,32 +152,59 @@ def get_lda_rslt(lda_label, reload_ctx=False):
 #     cluster2 = [j for i,j in zip(corpus_scores, doc_nms) if i[1][1] > threshold]
 #     cluster3 = [j for i,j in zip(corpus_scores, doc_nms) if i[2][1] > threshold]
 
-class LDAResult(object):
-    def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None):
-        corpus = lda_ctxt.corpus 
-        dictionary = lda_ctxt.dictionary
-        
-        if lda:
-            self.lda = lda
-            self.label = label
+class ModelResult(object):
+    def __init__(self, label, ctxt, model=None, init_model=None, ntopics=None, npasses=None):
+        if model:
+            self.model = model
         else:
-            lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
-            #t = datetime.now()
-            t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H:%M:%S')
-            #self.baselabel = label
-            self.label = '%s_%s_%s_%s_lda' % (label, t, ntopics, npasses)
-            self.lda = lda
-
-        self.lda_ctxt = lda_ctxt
-        self._docs_per_topic = None
+            init_model()
+        self.label = label
+        self.model_ctxt = ctxt
         self.termite_data = TermiteData(self)
+    def generate_viz(self):
+        self.termite_data.data_for_client()
+
+class NMFResult(ModelResult):
+    def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
+        def init_mode():
+            from sklearn.decomposition import NMF
+            self.model = NMF(n_components=None, 
+                             init=None, sparseness=None, 
+                             beta=1, eta=0.1, tol=0.0001, max_iter=200, nls_max_iter=2000, 
+                             random_state=None)
+
+class AffinityPropagationResult(ModelResult):
+    def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
+        # can do anything with Affinity Propagation
+        pass
+
+class LDAResult(ModelResult):
+    def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None):
+        def init_model():
+            corpus = lda_ctxt.corpus 
+            dictionary = lda_ctxt.dictionary
+            lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
+            self.model = lda
+        
+        super(LDAResult, self).__init__(label, lda_ctxt, lda, init_model=init_model)
+        self._docs_per_topic = None
+        #self.termite_data = TermiteData(self)
 
     def generate_viz(self):
         self.termite_data.data_for_client()
 
     def save(self):
         basedir = join(get_lda_base_dir(), self.label)
-        os.makedirs(basedir)
+        # http://stackoverflow.com/questions/273192/check-if-a-directory-exists-and-create-it-if-necessary
+        # to handle potenital race conditions (though probably not applicable in my case).
+        # also not sure why this wouldn't be handled more robustly by the python api itself 
+        import errno
+        try:
+            os.makedirs(basedir)
+        except OSError as exception:
+            if exception.errno != errno.EEXIST:
+                raise
+        #os.makedirs(basedir)
         self.lda_ctxt.save_corpus(basedir=basedir)
         
         self.lda.save(join(basedir, 'run.lda'))
@@ -187,7 +214,12 @@ class LDAResult(object):
         return pd.DataFrame(self.lda.state.sstats, columns=self.lda_ctxt.get_terms())
     # get index location of term:
     # df.columns.get_loc('jew')
-
+    @property
+    def lda_ctxt(self):
+        return self.model_ctxt
+    @property
+    def lda(self):
+        return self.model
     @property
     def doc_names(self):
         return self.lda_ctxt.doc_names
@@ -309,7 +341,8 @@ def runs_affine_prop(mat):
     X /= X.std(axis=0)
     edge_model.fit(X)
     
-    # Cluster using affinity propagation
+    # Cluster using affinity propagation - just the labels are clustered
+    # purely based on correlations in this case?
     plays = mat.index
     _, labels = cluster.affinity_propagation(edge_model.covariance_)
     n_labels = labels.max()
