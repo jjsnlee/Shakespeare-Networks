@@ -28,7 +28,7 @@ body {
 <script type="text/javascript">
 shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.whichChart = 0;
-  $scope.allPlaysData = null;
+  $scope.allPlaysSceneSummary = null;
 
   $scope.genreTragedy = true;  
   $scope.genreComedy = true;
@@ -36,15 +36,14 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.refreshToggle = 0;
   
   //$scope.chartAllPlaysWhichMetric = 'nlines';
-  
   // Keep track of the positions of each of the popups.  
   // Otherwise there will be some jumping of the div elements
   //$scope.popupPosn = {};
   
   $scope.enableAllPlaysChart = function(whichChart) {
-    if($scope.allPlaysData == null) {
-	    $http.get('/shakespeare/corpus/lineCounts').success(function(data) {
-	      $scope.allPlaysData = data;
+    if($scope.allPlaysSceneSummary == null) {
+	    $http.get('/shakespeare/corpus/sceneSummary').success(function(data) {
+	      $scope.allPlaysSceneSummary = data;
 	      $scope.whichChart = whichChart;
 	    });
     }
@@ -75,7 +74,10 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   <td width="20%" valign="top">
 
 	  <a ng-click="enableAllPlaysChart('All Plays - One Summary')" 
-	    style="text-decoration:underline; cursor:pointer">All Plays - Summary</a><br>    
+	    style="text-decoration:underline; cursor:pointer">All Plays - Summary</a><br>
+
+    <a ng-click="enableAllPlaysChart('All Plays - Degree')" 
+        style="text-decoration:underline; cursor:pointer">All Plays - Degree v Density</a><br>    
 
 	  <a ng-click="enableAllPlaysChart('Top Characters (Lines)')" 
 	    style="text-decoration:underline; cursor:pointer">Top Characters (Lines)</a><br>

@@ -128,7 +128,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   
   $scope.submitSet = function() {
 		$window.location.href = getURLRoot();
-  };  
+  };
 
   $scope.submitPlay = function() {
 		var selectedPlay = $scope.selectedPlay.value;
@@ -241,12 +241,12 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
       <td align="left"><b><a href="" ng-click="sortField='char'; reverse=!reverse">Characters</a> 
         (<a href="" ng-click="sortField='order_app'; reverse=!reverse">OA</a>)</b></td>
       <td align="right"><b><a href="" ng-click="sortField='lines'; reverse=!reverse">Lines</a></b></td>
-      <td align="right"><b><a href="" ng-click="sortField='edges'; reverse=!reverse">Edges</a></b></td>
+      <td align="right"><b><a href="" ng-click="sortField='edges'; reverse=!reverse">Degrees</a></b></td>
     </tr>
     <tr ng-repeat="char in characters | orderBy:LHSSortFn:reverse">
       <td>{{char}}</td>
       <td align="right">{{charData[char].nlines}}</td>
-      <td align="right">{{charData[char].nedges}}</td>
+      <td align="right">{{charData[char].degrees}}</td>
     </tr>
     </table>
   </td>

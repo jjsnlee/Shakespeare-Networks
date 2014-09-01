@@ -42,6 +42,10 @@ def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, li
             continue
         print 'Processing play:', play_alias
         play = data_ctx.get_play(play_alias)
+        # FIXME unfortunately need to run this (first) if want the image paths included in the json
+        if gen_imgs:
+            init_play_imgs(play, play_alias, True)
+
         if gen_md or gen_lines:
             #play = init_play(play_set, play_alias, False)
             
@@ -59,9 +63,6 @@ def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, li
                 with open(fname, 'w') as fh:
                     fh.write(json_rslt)
         
-        if gen_imgs:
-            init_play_imgs(play, play_alias, True)
-
 class PlayEncoderBase(JSONEncoder):
     def from_keys(self, obj, keys):
         return dict([(k,getattr(obj,k)) for k in keys])
@@ -113,7 +114,7 @@ class PlayJSONMetadataEncoder(PlayEncoderBase):
                 char_data[c] = \
                 {
                  'nlines'    : nlines,
-                 'nedges'    : cnxs[c],
+                 'degrees'   : cnxs[c],
                  'ratio'     : ratio,
                  'order_app' : idx
                 }
@@ -121,7 +122,7 @@ class PlayJSONMetadataEncoder(PlayEncoderBase):
         elif isinstance(obj, Scene):
             d = self.from_keys(obj, ('act', 'scene', 'location', 'graph_img_f'))
             d['char_data'] = char_data = {}
-            
+
             #dmat = obj.dialogue_matrix
             #d['dialogue_matrix'] = dmat
             # skip this for now...
@@ -130,19 +131,24 @@ class PlayJSONMetadataEncoder(PlayEncoderBase):
             # May want to extract this so that we only do this when 
             # necessary for plays
             sceneG = obj.graph
+            d['density'] = nx.density(sceneG)
+            # Degrees and edges are different, but in this case are using the same way
+            # (if there is more than one edge than modifying the weight instead of adding
+            # a new edge, so in effect degrees and edges should be equivalent)
+            d['total_degrees'] = sceneG.number_of_edges()
             cnxs = nx.degree(sceneG)
             for c in sceneG.node:
                 nlines = sceneG.node[c]['nlines']
                 ratio = 0
+                degrees = cnxs[c]
                 if cnxs[c] > 0:
-                    ratio = round(float(nlines) / cnxs[c], 2)
+                    ratio = round(float(nlines) / degrees, 2)
                 char_data[c] = \
                 {
-                 'nlines'     : nlines,
-                 'nedges'     : cnxs[c],
-                 'ratio'      : ratio
+                 'nlines'  : nlines,
+                 'degrees' : degrees,
+                 'ratio'   : ratio
                 }
-            
         else:
             d = obj.__dict__.copy()
         

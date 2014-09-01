@@ -56,9 +56,10 @@ class CorpusDataJsonHandler:
     @classmethod
     def dispatch_map(cls):
         return {
-           'lineCounts' : cls.handle_linecounts,
-           'lda'        : cls.handle_LDA,
-           'characters' : cls.handle_chardata
+           'sceneSummary' : cls.handle_scene_summary,
+           #'sceneDetail'  : cls.handle_scene_detail,
+           'lda'          : cls.handle_LDA,
+           'characters'   : cls.handle_chardata
         }
     
     @classmethod
@@ -85,17 +86,26 @@ class CorpusDataJsonHandler:
             logger.error('Problem parsing [%s]:\n%s\n%s', req, e, st)
 
     @classmethod
-    def handle_linecounts(cls, play_data_ctx, path_elmts):
+    def handle_scene_summary(cls, play_data_ctx, path_elmts):
+        import itertools
         plays = play_data_ctx.plays
-
         all_plays_json = {}
         for play_alias, _ in plays:
             fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
             if not os.path.exists(fname):
                 logger.warn('File path [%s] doesn\'t exist!', fname)
             play_json = json.loads(open(fname, 'r').read())
+
+            scenes = [{'density'   : p['density'],
+                       'location'  : p['location'],
+                       'total_degrees' : p['total_degrees'],
+                       'scene' : 'Act %s, Sc %s' % (p['act'], p['scene']),
+                       'graph_img_f' : p['graph_img_f']
+                       } for p in itertools.chain(*play_json['acts'])]
+            
             all_plays_json[play_alias] = {
                 'chardata' : play_json['char_data'],
+                'scenes'   : scenes,
                 'title'    : play_json['title'],
                 'genre'    : play_json['type'],
                 'year'     : play_json['year']
@@ -103,6 +113,24 @@ class CorpusDataJsonHandler:
 
         all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
         return all_json_rslt
+
+#     @classmethod
+#     def handle_scene_detail(cls, play_data_ctx, path_elmts):
+#         plays = play_data_ctx.plays
+#         all_plays_json = {}
+#         for play_alias, _ in plays:
+#             fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
+#             if not os.path.exists(fname):
+#                 logger.warn('File path [%s] doesn\'t exist!', fname)
+#             play_json = json.loads(open(fname, 'r').read())
+#             all_plays_json[play_alias] = {
+#                 'acts'   : play_json['acts'],
+#                 'title'  : play_json['title'],
+#                 'genre'  : play_json['type'],
+#                 'year'   : play_json['year']
+#             }
+#         all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
+#         return all_json_rslt
 
     @classmethod
     def handle_LDA(cls, play_data_ctx, path_elmts):
@@ -119,7 +147,9 @@ class CorpusDataJsonHandler:
           'shakespeare-char-scene-50-50-tfidf'   : 'char-scene_2014-08-24_23.04.15_50_50_lda',
           'shakespeare-char-scene-50-50-tfidf-2' : 'char-scene_2014-08-26_00.43.50_50_50_lda',
           
-          'shakespeare-char-scene-50-100-tfidf' : 'char-scene_2014-08-26_01.47.56_50_100_lda'
+          'shakespeare-char-scene-50-100-tfidf' : 'char-scene_2014-08-26_01.47.56_50_100_lda',
+          'shakespeare-char-scene-50-200-tfidf' : 'char-scene_2014-08-29_23.00.09_50_200_lda',
+          'shakespeare-char-scene-bow-50-200'   : 'char-scene-bow_2014-08-30_14.32.36_50_200_lda'
         }
         
         lda_key = LDA_KEYS.get(ldaModel)
