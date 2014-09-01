@@ -233,8 +233,8 @@ class ClientRWer(object):
 		return client
 	@classmethod
 	def write( cls, client, path ):
-		CheckAndMakeDirs( path )
 		basepath = join(path, 'public_html')
+		CheckAndMakeDirs( basepath )
 		WriteAsJson( client.seriated_parameters, join(basepath, cls.SERIATED_PARAMETERS) )
 		WriteAsJson( client.filtered_parameters, join(basepath, cls.FILTERED_PARAMETERS) )
 		WriteAsJson( client.global_term_freqs, join(basepath, cls.GLOBAL_TERM_FREQS) )
