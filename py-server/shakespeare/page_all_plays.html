@@ -40,7 +40,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   // Otherwise there will be some jumping of the div elements
   //$scope.popupPosn = {};
   
-  $scope.enableAllPlaysChart = function(whichChart) {
+  $scope.toggleChart = function(whichChart) {
     if($scope.allPlaysSceneSummary == null) {
 	    $http.get('/shakespeare/corpus/sceneSummary').success(function(data) {
 	      $scope.allPlaysSceneSummary = data;
@@ -57,8 +57,9 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     $scope.refreshToggle = ~$scope.refreshToggle;
   };
   
-  //$scope.enableAllPlaysChart('Top Characters (Lines)');
-  $scope.enableAllPlaysChart('All Plays - One Summary');
+  //$scope.toggleChart('Top Characters (Lines)');
+  //$scope.toggleChart('All Plays - One Summary');
+  $scope.toggleChart('All Plays - Degree');
 });
 </script>
 </head>
@@ -73,22 +74,22 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 <tr>
   <td width="20%" valign="top">
 
-	  <a ng-click="enableAllPlaysChart('All Plays - One Summary')" 
+	  <a ng-click="toggleChart('All Plays - One Summary')" 
 	    style="text-decoration:underline; cursor:pointer">All Plays - Summary</a><br>
 
-    <a ng-click="enableAllPlaysChart('All Plays - Degree')" 
+    <a ng-click="toggleChart('All Plays - Degree')" 
         style="text-decoration:underline; cursor:pointer">All Plays - Degree v Density</a><br>    
 
-	  <a ng-click="enableAllPlaysChart('Top Characters (Lines)')" 
+	  <a ng-click="toggleChart('Top Characters (Lines)')" 
 	    style="text-decoration:underline; cursor:pointer">Top Characters (Lines)</a><br>
 	  
-	  <a ng-click="enableAllPlaysChart('Top Characters (Edges)')" 
+	  <a ng-click="toggleChart('Top Characters (Edges)')" 
 	    style="text-decoration:underline; cursor:pointer">Top Characters (Edges)</a><br>	  
 	  
-	  <a ng-click="enableAllPlaysChart('All Plays (Lines)')" 
+	  <a ng-click="toggleChart('All Plays (Lines)')" 
 	    style="text-decoration:underline; cursor:pointer">All Plays (Lines)</a><br>
 
-	  <a ng-click="enableAllPlaysChart('All Plays (Edges)')" 
+	  <a ng-click="toggleChart('All Plays (Edges)')" 
 	    style="text-decoration:underline; cursor:pointer">All Plays (Edges)</a><br>
 
     <div style="padding-top: 20px">

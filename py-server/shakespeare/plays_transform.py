@@ -2,6 +2,7 @@ import helper
 from os.path import join
 from json.encoder import JSONEncoder
 import networkx as nx
+import math
 
 def transform(play_html):
     from BeautifulSoup import BeautifulSoup
@@ -42,9 +43,12 @@ def generate_shakespeare_files(gen_imgs=False, gen_md=False, gen_lines=False, li
             continue
         print 'Processing play:', play_alias
         play = data_ctx.get_play(play_alias)
-        # FIXME unfortunately need to run this (first) if want the image paths included in the json
+        
         if gen_imgs:
             init_play_imgs(play, play_alias, True)
+        else:
+            # In this case doing this so the image paths are included in the json
+            init_play_imgs(play, play_alias, False)
 
         if gen_md or gen_lines:
             #play = init_play(play_set, play_alias, False)
@@ -136,9 +140,27 @@ class PlayJSONMetadataEncoder(PlayEncoderBase):
             # (if there is more than one edge than modifying the weight instead of adding
             # a new edge, so in effect degrees and edges should be equivalent)
             d['total_degrees'] = sceneG.number_of_edges()
+            
+            try:
+                d['avg_clustering'] = nx.average_clustering(sceneG)
+            except:
+                d['avg_clustering'] = -1
+            try:
+                d['deg_assort_coeff'] = nx.degree_assortativity_coefficient(sceneG)
+                if math.isnan(d['deg_assort_coeff']):
+                    d['deg_assort_coeff'] = -1                
+            except:
+                d['deg_assort_coeff'] = -1
+            try:
+                d['avg_shortest_path'] = nx.average_shortest_path_length(sceneG)
+            except:
+                d['avg_shortest_path'] = -1
+            
+            total_lines = 0
             cnxs = nx.degree(sceneG)
             for c in sceneG.node:
                 nlines = sceneG.node[c]['nlines']
+                total_lines += nlines
                 ratio = 0
                 degrees = cnxs[c]
                 if cnxs[c] > 0:
@@ -149,6 +171,7 @@ class PlayJSONMetadataEncoder(PlayEncoderBase):
                  'degrees' : degrees,
                  'ratio'   : ratio
                 }
+            d['total_lines'] = total_lines
         else:
             d = obj.__dict__.copy()
         

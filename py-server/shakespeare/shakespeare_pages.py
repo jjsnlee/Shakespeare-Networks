@@ -89,6 +89,14 @@ class CorpusDataJsonHandler:
     def handle_scene_summary(cls, play_data_ctx, path_elmts):
         import itertools
         plays = play_data_ctx.plays
+        
+        def copy_d(d):
+            new_d = dict([(k,d[k]) for k in [
+                'density','location','total_degrees','graph_img_f','total_lines',
+                'avg_clustering','deg_assort_coeff','avg_shortest_path']])
+            new_d['scene'] ='Act %s, Sc %s' % (p['act'], p['scene'])
+            return new_d
+        
         all_plays_json = {}
         for play_alias, _ in plays:
             fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
@@ -96,12 +104,7 @@ class CorpusDataJsonHandler:
                 logger.warn('File path [%s] doesn\'t exist!', fname)
             play_json = json.loads(open(fname, 'r').read())
 
-            scenes = [{'density'   : p['density'],
-                       'location'  : p['location'],
-                       'total_degrees' : p['total_degrees'],
-                       'scene' : 'Act %s, Sc %s' % (p['act'], p['scene']),
-                       'graph_img_f' : p['graph_img_f']
-                       } for p in itertools.chain(*play_json['acts'])]
+            scenes = [copy_d(p) for p in itertools.chain(*play_json['acts'])]
             
             all_plays_json[play_alias] = {
                 'chardata' : play_json['char_data'],

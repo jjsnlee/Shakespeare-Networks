@@ -137,7 +137,7 @@ function createSinglePlayCharChart(charMap, characters, containerName, whichMetr
   createColumnChart(containerName, characters, charAggr, chartOptions);
 }
 
-function mapAllPlaysByMetric(allPlaysData, whichMetric) {
+function mapAllPlaysByCharMetric(allPlaysData, whichMetric) {
   var playChars = {};
   return Object.keys(allPlaysData).map(function(playAlias) {
     var playCharacters = allPlaysData[playAlias].chardata;
@@ -275,7 +275,7 @@ function createColumnChart(containerName, categories, singleSeries, chartOptions
 
 function createAllPlaysSplineChart(allPlaysData, containerName, isActivePlay, whichMetric, label) {
   
-  var playAggrData = mapAllPlaysByMetric(allPlaysData, whichMetric).map(function(playData) {
+  var playAggrData = mapAllPlaysByCharMetric(allPlaysData, whichMetric).map(function(playData) {
     if(!isActivePlay(playData.name))
       playData.visible = false;
     return playData;
@@ -333,19 +333,47 @@ function createAllPlaysSplineChart(allPlaysData, containerName, isActivePlay, wh
 
 function initDegreeChart(allPlaysData, containerName, isActivePlay) {
   var whichMetric = 'total_degrees'
-  var playAggrData = mapAllPlaysByMetric(allPlaysData, whichMetric).map(function(playData) {
-    if(!isActivePlay(playData.name))
+  function mapAllPlaysBySceneMetric(allPlaysData, whichMetric) {
+    return Object.keys(allPlaysData).map(function(playAlias) {
+      var scenes = allPlaysData[playAlias].scenes;
+      
+      var series = [];
+      _.each(scenes, function(scene, _idx) {
+        series.push({
+          name : scene.scene,
+          dataLabels : {
+            formatter: function() {
+              return scene.scene
+            },
+          },
+          tooltip: {
+            formatter: function() {
+              //return 'The value for <b>' + this.x + '</b> is <b>' + this.y + '</b>, in series '+ this.series.name;
+            	return 'OK'
+            }
+          },
+          //graph_img_f: "imgs/timon_1_2.png", scene.location
+          x : scene.total_degrees, 
+          //y : scene.avg_clustering,
+          //y : scene.avg_shortest_path,
+          y : scene.deg_assort_coeff,
+          z : Math.pow(scene.total_lines, 2)
+        });
+      });
+//      avg_clustering: 0.7514550264550266
+//      avg_shortest_path: 1.6818181818181819
+//      deg_assort_coeff, density
+      
+      return { 
+      	name : playAlias, data : series
+      };
+    });
+  } 
+
+  var playAggrData = mapAllPlaysBySceneMetric(allPlaysData, whichMetric).map(function(playData) {
+    if(!isActivePlay(playData.name) || playData.name!='hamlet')
       playData.visible = false;
     return playData;
-  });
-
-  var charNames = {};
-
-  playAggrData.map(function(playData) {
-    var playName = playData.name;
-    charNames[playName] = playData.data.map(function(charData) {
-      return charData[2]; // characterName
-    })
   });
 	
 	var chart = new Highcharts.Chart({
@@ -354,13 +382,36 @@ function initDegreeChart(allPlaysData, containerName, isActivePlay) {
 	    renderTo : containerName,
 	    zoomType: 'xy'
 		},
-		title: {
-			text: 'Highcharts Bubbles'
-		},
-		series: [
+    plotOptions: {
+      series: {
+        dataLabels: {
+          enabled: true,
+          //borderRadius: 5,
+          //backgroundColor: 'rgba(252, 255, 197, 0.7)',
+          borderWidth: 1,
+          borderColor: '#AAA',
+          x: -5, y: -6
+        },
+        tooltip: {
+          formatter: function() {
+            //return 'The value for <b>' + this.x + '</b> is <b>' + this.y + '</b>, in series '+ this.series.name;
+          	return 'OK'
+          }
+        },
+        //marker: { enabled:true },
+      },
+    },
+		title: { text: 'Degrees v Density' },
+		xAxis: { title: { text: 'Total Degrees' } },
+		//yAxis: { title: { text: 'Density' }, },
+		//yAxis: { title: { text: 'Avg Clustering' }, },
+		//yAxis: { title: { text: 'Avg Shortest Path' }, },
+		yAxis: { title: { text: 'Degree Assortativity Coefficient' }, },
+		series: playAggrData
+//		series: [
 //		{ data: [[97,36,79],[94,74,60],[68,76,58],[64,87,56],[68,27,73],[74,99,42],[7,93,87],[51,69,40],[38,23,33],[57,86,31]] }, 
 //		{ data: [[25,10,87],[2,75,59],[11,54,8],[86,55,93],[5,3,58],[90,63,44],[91,33,17],[97,3,56],[15,67,48],[54,25,81]] }, 
 //		{ data: [[47,47,21],[20,12,4],[6,76,91],[38,30,60],[57,98,64],[61,17,80],[83,60,13],[67,78,75],[64,12,10],[30,77,82]] }
-		]
+//		]
 	});
 }
