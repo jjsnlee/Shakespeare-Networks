@@ -346,18 +346,18 @@ function initDegreeChart(allPlaysData, containerName, isActivePlay) {
               return scene.scene
             },
           },
-          tooltip: {
-            formatter: function() {
-              //return 'The value for <b>' + this.x + '</b> is <b>' + this.y + '</b>, in series '+ this.series.name;
-            	return 'OK'
-            }
-          },
-          //graph_img_f: "imgs/timon_1_2.png", scene.location
           x : scene.total_degrees, 
           //y : scene.avg_clustering,
           //y : scene.avg_shortest_path,
           y : scene.deg_assort_coeff,
-          z : Math.pow(scene.total_lines, 2)
+          z : Math.pow(scene.total_lines, 2),
+          
+          sc_avg_clustering : scene.avg_clustering,
+          sc_avg_shortest_path : scene.avg_shortest_path,
+          sc_deg_assort_coeff : scene.deg_assort_coeff,
+          sc_density : scene.density,
+          sc_location : scene.location,
+          sc_graph_img_f : scene.graph_img_f  
         });
       });
 //      avg_clustering: 0.7514550264550266
@@ -392,16 +392,23 @@ function initDegreeChart(allPlaysData, containerName, isActivePlay) {
           borderColor: '#AAA',
           x: -5, y: -6
         },
-        tooltip: {
-          formatter: function() {
-            //return 'The value for <b>' + this.x + '</b> is <b>' + this.y + '</b>, in series '+ this.series.name;
-          	return 'OK'
-          }
-        },
         //marker: { enabled:true },
       },
     },
-		title: { text: 'Degrees v Density' },
+    tooltip: {
+    	useHTML: true,
+      formatter: function() {
+        //return 'The value for <b>' + this.x + '</b> is <b>' + this.y + '</b>, in series '+ this.series.name;
+      	var pt = this.point;
+      	return 'Scene location: ' + pt.sc_location + '<br>' +
+      				'Avg Clustering:' + pt.sc_avg_clustering.toFixed(4) + '<br>' +
+      				'Avg Shortest Path:' + pt.sc_avg_shortest_path.toFixed(4) + '<br>'+
+      				'Degree Assortativity Coefficient:' + pt.sc_deg_assort_coeff.toFixed(4) + '<br>' +
+      				'Density:' + pt.sc_density.toFixed(4) + '<br>' +
+      				'<img src="/' + pt.sc_graph_img_f + '" height="40%"/>'  
+      }
+    },
+    title: { text: 'Degrees v Density' },
 		xAxis: { title: { text: 'Total Degrees' } },
 		//yAxis: { title: { text: 'Density' }, },
 		//yAxis: { title: { text: 'Avg Clustering' }, },
