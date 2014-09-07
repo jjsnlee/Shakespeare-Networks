@@ -337,35 +337,60 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
 		'Degree Assortative Coefficient' : {
 			y : function(v) { return v.sc_deg_assort_coeff },
 		},
-		'Play' : {
+		'Plays By Title' : {
 			y : function(v) { return v.play_idx },
 			yAxis : {
 				categories: allPlays,
 				type: 'category',
-//				tickInterval: 1,
+				//tickInterval: null,
+				//tickPositions: _.map(new Array(allPlays.length), function(v,i) { return i; }),
+				//tickPositions: Array.apply(null, {length: allPlays.length}).map(Number.call, Number),
 				min: 0, 
 				max: allPlays.length-1,
 			}
 		} 
 	};
+	
+	var allPlaysPairs = _.pairs(allPlaysData);
+	allPlaysPairs.sort(function(a,b) { return a[1].genre.localeCompare(b[1].genre) });
+	var allPlaysByGenre = allPlaysPairs.map(function(d) { return d[0]; })
+	ySets['Play Grouped by Genre'] = $.extend(true, {}, ySets['Plays By Title']);
+	ySets['Play Grouped by Genre'].yAxis.categories = allPlaysByGenre;
+	ySets['Play Grouped by Genre'].playsOrder = allPlaysByGenre;
 
+	allPlaysPairs.sort(function(a,b) { return a[1].year.localeCompare(b[1].year) });
+	var allPlaysByYear = allPlaysPairs.map(function(d) { return d[0]; })
+	ySets['Play Grouped by Year'] = $.extend(true, {}, ySets['Plays By Title']);
+	ySets['Play Grouped by Year'].yAxis.categories = allPlaysByYear;
+	ySets['Play Grouped by Year'].playsOrder = allPlaysByYear;
+	
+	scope.degreeMin = 25;
 	scope._degreeYAxisOptions = Object.keys(ySets);
-  var templ = 'y-axis: <select name="degreeYAxis" ng-model="selectedDegreeYAxis" '+
-      'ng-options="p for p in _degreeYAxisOptions" ' +  
-      'ng-change="renderDegreeChart()" style="width:200px"> ' +
-      '</select><br>'
-  	templ += '<div id="innerContainer"></div>'
+  var templ = 'y-axis: <select name="degreeYAxis" ng-model="selectedDegreeYAxis" '
+      + 'ng-options="p for p in _degreeYAxisOptions" '
+      + 'ng-change="renderDegreeChart()" style="width:200px"></select>'
+      + '&nbsp;Min # of Degrees: <input type="text" id="min-degree" ng-model="degreeMin" ng-blur="renderDegreeChart()" >' // style="border:1; color:#f6931f; font-weight:bold;"
+      //+ '<input type="text" id="max-degree" ng-model="degreeMax" readonly style="border:0; color:#f6931f; font-weight:bold;">'
+      //+ '<div id="slider-range-max"></div><br>'
+      //+ '<script>$(function() { enableSliderWidget("#min-degree") } );</script>'
+      + '<br>';
+
+  templ += '<div id="innerContainer"></div>'
   $('div#'+containerName).html(compile(templ)(scope));
   
-  var DEGREE_THRESHOLD = 5;
+  //var DEGREE_THRESHOLD = 25;
 
 	scope.renderDegreeChart = function() {
   	var whichMetric = 'total_degrees'
   	var whichY = scope.selectedDegreeYAxis;
   	var ySet = ySets[whichY];
   	
+  	var plays = allPlays;
+  	if(ySet.playsOrder)
+  		plays = ySet.playsOrder;
+  	
     function mapAllPlaysBySceneMetric(whichMetric) {
-      return allPlays.map(function(playAlias, playIdx) {
+      return plays.map(function(playAlias, playIdx) {
         var play = allPlaysData[playAlias];
         var scenes = play.scenes;
         var series = [];
@@ -375,6 +400,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
           	play : play.title,
           	play_idx : playIdx,
           	year : play.year,
+          	genre : play.genre,
             name : scene.scene,
             dataLabels : {
               formatter: function() {
@@ -383,7 +409,10 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
             },
             x : scene.total_degrees, 
             z : Math.pow(scene.total_lines, 2),
-            
+
+            sc_total_degrees : scene.total_degrees,
+            sc_total_edges : -1,
+            sc_total_lines : scene.total_lines,
             sc_avg_clustering : scene.avg_clustering,
             sc_avg_shortest_path : scene.avg_shortest_path,
             sc_deg_assort_coeff : scene.deg_assort_coeff,
@@ -394,7 +423,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
         	
         	val.y = ySet.y(val);
         	var ignoreIf = ySet.ignoreIf || function(v) { return false; };
-        	if(ignoreIf(val) || scene.total_degrees < DEGREE_THRESHOLD)
+        	if(ignoreIf(val) || scene.total_degrees < scope.degreeMin)
         		return;
         	
           series.push(val);
@@ -420,7 +449,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
 		    //renderTo : containerName,
 		    renderTo : 'innerContainer',
 		    zoomType: 'xy',
-		    height: 600
+		    height: 700
 			},
 	    plotOptions: {
 	      series: {
@@ -438,14 +467,17 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
 	    	hideDelay: 200,
 	      formatter: function() {
 	      	var pt = this.point;
-	      	return '<b>' + pt.play + ' ' + pt.name + '</b><br>' +
-	      				'Year:' + pt.year + '<br>' +
-	      				'Scene location: ' + pt.sc_location + '<br>' +
-	      				'Avg Clustering:' + pt.sc_avg_clustering.toFixed(4) + '<br>' +
-	      				'Avg Shortest Path:' + pt.sc_avg_shortest_path.toFixed(4) + '<br>'+
-	      				'Degree Assortativity Coefficient:' + pt.sc_deg_assort_coeff.toFixed(4) + '<br>' +
-	      				'Density:' + pt.sc_density.toFixed(4) + '<br>' +
-	      				'<img src="/' + pt.sc_graph_img_f + '" height="25%"/>'  
+	      	return '<b>' + pt.play + ' ' + pt.name + '</b><br>'
+	      				+ 'Year:' + pt.year + '<br>'
+	      				+ 'Scene location: ' + pt.sc_location + '<br>'
+	      				+ 'Total Degrees: ' + pt.sc_total_degrees + '<br>'
+	      				+ 'Total Lines: ' + pt.sc_total_lines + '<br>'
+	      				
+	      				+ 'Avg Clustering:' + pt.sc_avg_clustering.toFixed(4) + '<br>'
+	      				+ 'Avg Shortest Path:' + pt.sc_avg_shortest_path.toFixed(4) + '<br>'
+	      				+ 'Degree Assortativity Coefficient:' + pt.sc_deg_assort_coeff.toFixed(4) + '<br>'
+	      				+ 'Density:' + pt.sc_density.toFixed(4) + '<br>'
+	      				+ '<img src="/' + pt.sc_graph_img_f + '" height="23%"/>'  
 	      }
 	    },
 	    title: { text: 'Degrees v ' + whichY },

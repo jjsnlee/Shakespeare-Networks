@@ -23,9 +23,9 @@ body {
 }
 </style>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="/static/lib/ext/angular-1.2.9/angular.js"></script>
-<script type="text/javascript" src="/static/lib/plays.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+<script src="/static/lib/ext/angular-1.2.9/angular.js" type="text/javascript"></script>
+<script src="/static/lib/plays.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 shPlays.controller('play', function($scope, $http, $location, $window) {
@@ -44,11 +44,6 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
         || (playData.genre=='Tragedy' && $scope.genreTragedy);
   };
   
-  //$scope.chartAllPlaysWhichMetric = 'nlines';
-  // Keep track of the positions of each of the popups.  
-  // Otherwise there will be some jumping of the div elements
-  //$scope.popupPosn = {};
-  
   $scope.toggleChart = function(whichChart) {
     if($scope.allPlaysSceneSummary == null) {
 	    $http.get('/shakespeare/corpus/sceneSummary').success(function(data) {
@@ -60,25 +55,42 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
       $scope.whichChart = whichChart;
     }
   };
-
+  
   $scope.allGenres = function() {
-      $scope.genreTragedy = $scope.genreComedy = $scope.genreHistory = true;
-      $scope.flipRefreshToggle();
+    $scope.genreTragedy = $scope.genreComedy = $scope.genreHistory = true;
   };  
   $scope.clearGenres = function() {
 	  $scope.genreTragedy = $scope.genreComedy = $scope.genreHistory = false;
-	  $scope.flipRefreshToggle();
   };
   
-  $scope.flipRefreshToggle = function() {
+  function flipRefreshToggle() {
     // apparently can't do this inline in the ng-click
     $scope.refreshToggle = ~$scope.refreshToggle;
   };
+
+  $scope.$watch('genreTragedy', flipRefreshToggle);
+  $scope.$watch('genreComedy', flipRefreshToggle);
+  $scope.$watch('genreHistory', flipRefreshToggle);
   
   //$scope.toggleChart('Top Characters (Lines)');
   //$scope.toggleChart('All Plays - One Summary');
   $scope.toggleChart('All Plays - Degree');
 });
+
+//$(function() {
+function enableSliderWidget(amtId) {
+  console.log('ABCD')
+	$( "#slider-range-max" ).slider({
+	  range: "max",
+	  min: 1,
+	  max: 40,
+	  value: 10,
+	  slide: function( event, ui ) {
+	    $(amtId).val( ui.value );
+	  }
+	});
+	$(amtId).val( $( "#slider-range-max" ).slider( "value" ) );
+};
 </script>
 </head>
 
@@ -117,12 +129,11 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
       <input type="checkbox" ng-model="genreHistory">History<br>
       <button ng-click="clearGenres()">Clear Genres</button>
       <button ng-click="allGenres()">All Genres</button><br>
-      <button ng-click="flipRefreshToggle()">Refresh</button>
 	  </div>
  
   </td>
   <td valign="top">
-		<div class="chartDiv"> <!--id="allPlaysCharPopup" -->
+		<div class="chartDiv"> 
 			<div all-plays-chart></div>
 		  &nbsp;<br>&nbsp;<br>
 		</div>
@@ -130,10 +141,11 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
 </tr>
 </table>
 
-<script type="text/javascript" src="/static/lib/ext/Highcharts-3.0.10/highcharts.src.js"></script>
-<script type="text/javascript" src="/static/lib/ext/Highcharts-3.0.10/highcharts-more.src.js"></script>
-<script type="text/javascript" src="/static/lib/ext/underscore-min-1.5.0.js"></script>
-<script type="text/javascript" src="/static/lib/ext/wu-0.1.8.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/static/lib/ext/Highcharts-3.0.10/highcharts.src.js" type="text/javascript"></script>
+<script src="/static/lib/ext/Highcharts-3.0.10/highcharts-more.src.js" type="text/javascript"></script>
+<script src="/static/lib/ext/underscore-min-1.5.0.js" type="text/javascript"></script>
+<script src="/static/lib/ext/wu-0.1.8.min.js" type="text/javascript"></script>
 
 </body>
 </html>
