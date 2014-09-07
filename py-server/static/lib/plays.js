@@ -10,14 +10,11 @@ shPlays.directive('myDraggable', function($document) {
 });
 
 function createChartDirective(directiveName, toggleVar, renderChartFn) {
-  shPlays.directive(directiveName, function($document) {
+  shPlays.directive(directiveName, function($document, $compile) {
     var containerName = directiveName+'Container'
     return { 
       replace: true,
-      /*scope: {
-			        items: '='
-			        //charData : '='
-		      },*/
+      /*scope: { items: '=' },*/
       controller: function ($scope, $element, $attrs) {
         console.log(directiveName + ' controller...');
       },
@@ -25,7 +22,7 @@ function createChartDirective(directiveName, toggleVar, renderChartFn) {
       link: function (scope, element, attr) {
         function refreshEvt(newValue) {
           if(scope[toggleVar]!==0) {
-            renderChartFn(scope, containerName, scope[toggleVar]);
+            renderChartFn(scope, containerName, scope[toggleVar], $compile);
           }
         };
         scope.$watch(toggleVar, refreshEvt, true);
@@ -46,7 +43,7 @@ createChartDirective('characterChart', 'showCurrPlayChart', function(scope, cont
   };
 });
 
-createChartDirective('allPlaysChart', 'whichChart', function(scope, containerName, whichChart) {
+createChartDirective('allPlaysChart', 'whichChart', function(scope, containerName, whichChart, compile) {
   
   var allPlaysData = scope.allPlaysSceneSummary;
   function isActivePlay(playAlias) {
@@ -63,7 +60,7 @@ createChartDirective('allPlaysChart', 'whichChart', function(scope, containerNam
   switch(whichChart) {
   	case 'All Plays - One Summary' : initSummary(); break;
   	// not sure if this needs to change for the isActivePlay call
-  	case 'All Plays - Degree'      : initDegreeChart(allPlaysData, containerName, isActivePlay); break;
+  	case 'All Plays - Degree'      : initDegreeChart(scope, compile, allPlaysData, containerName, isActivePlay); break;
     case 'Top Characters (Lines)'  : initColChart('nlines', '% of Total Lines'); break;
     case 'Top Characters (Edges)'  : initColChart('degrees', '% of Total Edges'); break;
     case 'All Plays (Lines)'       : initSplineChart('nlines', '% of Total Lines'); break;
@@ -265,11 +262,6 @@ function createColumnChart(containerName, categories, singleSeries, chartOptions
 		},
 		series: [ { name : 'A', data : singleSeries } ]
 	}
-//	,function(chart){
-//    $('.highcharts-title').click(function(){
-//        console.log('aaaa');
-//    });
-//	}
 	);
 }
 
@@ -331,94 +323,126 @@ function createAllPlaysSplineChart(allPlaysData, containerName, isActivePlay, wh
   //chart.yAxis[0].setExtremes(500, 1700);
 }
 
-function initDegreeChart(allPlaysData, containerName, isActivePlay) {
-  var whichMetric = 'total_degrees'
-  function mapAllPlaysBySceneMetric(allPlaysData, whichMetric) {
-    return Object.keys(allPlaysData).map(function(playAlias) {
-      var scenes = allPlaysData[playAlias].scenes;
-      
-      var series = [];
-      _.each(scenes, function(scene, _idx) {
-        series.push({
-          name : scene.scene,
-          dataLabels : {
-            formatter: function() {
-              return scene.scene
-            },
-          },
-          x : scene.total_degrees, 
-          //y : scene.avg_clustering,
-          //y : scene.avg_shortest_path,
-          y : scene.deg_assort_coeff,
-          z : Math.pow(scene.total_lines, 2),
-          
-          sc_avg_clustering : scene.avg_clustering,
-          sc_avg_shortest_path : scene.avg_shortest_path,
-          sc_deg_assort_coeff : scene.deg_assort_coeff,
-          sc_density : scene.density,
-          sc_location : scene.location,
-          sc_graph_img_f : scene.graph_img_f  
-        });
-      });
-//      avg_clustering: 0.7514550264550266
-//      avg_shortest_path: 1.6818181818181819
-//      deg_assort_coeff, density
-      
-      return { 
-      	name : playAlias, data : series
-      };
-    });
-  } 
+function initDegreeChart(scope, compile, allPlaysData, containerName, isActivePlay) {
+	if(!scope.selectedDegreeYAxis)
+		scope.selectedDegreeYAxis = 'Degree Assortative Coeff';
 
-  var playAggrData = mapAllPlaysBySceneMetric(allPlaysData, whichMetric).map(function(playData) {
-    if(!isActivePlay(playData.name) || playData.name!='hamlet')
-      playData.visible = false;
-    return playData;
-  });
-	
-	var chart = new Highcharts.Chart({
-		chart: {
-	    type: 'bubble',
-	    renderTo : containerName,
-	    zoomType: 'xy'
+	var ySets = {
+		'Avg Clustering' : {
+			y : function(scene) { return scene.avg_clustering },
+			yLabel : 'Avg Clustering',
+			ignoreIf : function(val) { return val <= -1; }
 		},
-    plotOptions: {
-      series: {
-        dataLabels: {
-          enabled: true,
-          //borderRadius: 5,
-          //backgroundColor: 'rgba(252, 255, 197, 0.7)',
-          borderWidth: 1,
-          borderColor: '#AAA',
-          x: -5, y: -6
-        },
-        //marker: { enabled:true },
-      },
-    },
-    tooltip: {
-    	useHTML: true,
-      formatter: function() {
-        //return 'The value for <b>' + this.x + '</b> is <b>' + this.y + '</b>, in series '+ this.series.name;
-      	var pt = this.point;
-      	return 'Scene location: ' + pt.sc_location + '<br>' +
-      				'Avg Clustering:' + pt.sc_avg_clustering.toFixed(4) + '<br>' +
-      				'Avg Shortest Path:' + pt.sc_avg_shortest_path.toFixed(4) + '<br>'+
-      				'Degree Assortativity Coefficient:' + pt.sc_deg_assort_coeff.toFixed(4) + '<br>' +
-      				'Density:' + pt.sc_density.toFixed(4) + '<br>' +
-      				'<img src="/' + pt.sc_graph_img_f + '" height="40%"/>'  
-      }
-    },
-    title: { text: 'Degrees v Density' },
-		xAxis: { title: { text: 'Total Degrees' } },
-		//yAxis: { title: { text: 'Density' }, },
-		//yAxis: { title: { text: 'Avg Clustering' }, },
-		//yAxis: { title: { text: 'Avg Shortest Path' }, },
-		yAxis: { title: { text: 'Degree Assortativity Coefficient' }, },
-		series: playAggrData
-//		series: [
-//		{ data: [[97,36,79],[94,74,60],[68,76,58],[64,87,56],[68,27,73],[74,99,42],[7,93,87],[51,69,40],[38,23,33],[57,86,31]] }, 
-//		{ data: [[25,10,87],[2,75,59],[11,54,8],[86,55,93],[5,3,58],[90,63,44],[91,33,17],[97,3,56],[15,67,48],[54,25,81]] }, 
-//		{ data: [[47,47,21],[20,12,4],[6,76,91],[38,30,60],[57,98,64],[61,17,80],[83,60,13],[67,78,75],[64,12,10],[30,77,82]] }
-//		]
-	});
+		'Avg Shortest Path' : {
+			y : function(scene) { return scene.avg_shortest_path },
+			yLabel : 'Avg Shortest Path',
+			ignoreIf : function(val) { return val <= -1; }
+		},
+		'Degree Assortative Coeff' : {
+			y : function(scene) { return scene.deg_assort_coeff },
+			yLabel : 'Degree Assortativity Coefficient',
+			ignoreIf : function(val) { return false; }
+		}
+	};
+	//scope._degreeYAxisOptions = ['Avg Clustering', 'Avg Shortest Path', 'Degree Assortative Coeff'];
+	scope._degreeYAxisOptions = Object.keys(ySets);
+  var templ = 'y-axis: <select name="degreeYAxis" ng-model="selectedDegreeYAxis" '+
+      'ng-options="p for p in _degreeYAxisOptions" ' +  
+      'ng-change="renderDegreeChart()" style="width:200px"> ' +
+      '</select><br>'
+  	templ += '<div id="innerContainer"></div>'
+  $('div#'+containerName).html(compile(templ)(scope));
+  
+  scope.renderDegreeChart = function() {
+  	var whichMetric = 'total_degrees'
+  	var whichY = scope.selectedDegreeYAxis;
+  	var ySet = ySets[whichY];
+  	
+    function mapAllPlaysBySceneMetric(allPlaysData, whichMetric) {
+    	var allPlays = Object.keys(allPlaysData);
+    	allPlays.sort();
+    	
+      return allPlays.map(function(playAlias) {
+        var play = allPlaysData[playAlias];
+        var scenes = play.scenes;
+        var series = [];
+        _.each(scenes, function(scene, _idx) {
+        	var yVal = ySet.y(scene);
+        	if(ySet.ignoreIf(yVal) || scene.total_degrees < 10)
+        		return;
+        	
+          series.push({
+          	play : play.title,
+          	year : play.year,
+            name : scene.scene,
+            dataLabels : {
+              formatter: function() {
+                return scene.scene
+              },
+            },
+            x : scene.total_degrees, 
+            //y : scene.avg_clustering,scene.avg_shortest_path,scene.deg_assort_coeff,
+            y : yVal,
+            z : Math.pow(scene.total_lines, 2),
+            
+            sc_avg_clustering : scene.avg_clustering,
+            sc_avg_shortest_path : scene.avg_shortest_path,
+            sc_deg_assort_coeff : scene.deg_assort_coeff,
+            sc_density : scene.density,
+            sc_location : scene.location,
+            sc_graph_img_f : scene.graph_img_f  
+          });
+        });
+        
+        return { name : playAlias, data : series };
+      });
+    } 
+
+    var playAggrData = mapAllPlaysBySceneMetric(allPlaysData, whichMetric).map(function(playData) {
+      if(!isActivePlay(playData.name) ) //|| playData.name!='hamlet'
+        playData.visible = false;
+      return playData;
+    });
+
+  	var chart = new Highcharts.Chart({
+			chart: {
+		    type: 'bubble',
+		    //renderTo : containerName,
+		    renderTo : 'innerContainer',
+		    zoomType: 'xy'
+			},
+	    plotOptions: {
+	      series: {
+	        dataLabels: {
+	          enabled: true,
+	          //borderRadius: 5, backgroundColor: 'rgba(252, 255, 197, 0.7)',
+	          borderWidth: 1,
+	          borderColor: '#AAA',
+	          x: -5, y: -6
+	        },
+	      },
+	    },
+	    tooltip: {
+	    	useHTML: true,
+	    	hideDelay: 200,
+	      formatter: function() {
+	      	var pt = this.point;
+	      	return '<b>' + pt.play + ' ' + pt.name + '</b><br>' +
+	      				'Year:' + pt.year + '<br>' +
+	      				'Scene location: ' + pt.sc_location + '<br>' +
+	      				'Avg Clustering:' + pt.sc_avg_clustering.toFixed(4) + '<br>' +
+	      				'Avg Shortest Path:' + pt.sc_avg_shortest_path.toFixed(4) + '<br>'+
+	      				'Degree Assortativity Coefficient:' + pt.sc_deg_assort_coeff.toFixed(4) + '<br>' +
+	      				'Density:' + pt.sc_density.toFixed(4) + '<br>' +
+	      				'<img src="/' + pt.sc_graph_img_f + '" height="40%"/>'  
+	      }
+	    },
+	    title: { text: 'Degrees v ' + ySet.yLabel },
+			xAxis: { title: { text: 'Total Degrees' } },
+			yAxis: { title: { text: ySet.yLabel }, },
+			series: playAggrData
+		});
+  };
+  
+  scope.renderDegreeChart();
 }
