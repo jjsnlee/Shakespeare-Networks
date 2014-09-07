@@ -46,21 +46,16 @@ createChartDirective('characterChart', 'showCurrPlayChart', function(scope, cont
 createChartDirective('allPlaysChart', 'whichChart', function(scope, containerName, whichChart, compile) {
   
   var allPlaysData = scope.allPlaysSceneSummary;
-  function isActivePlay(playAlias) {
-    var playData = allPlaysData[playAlias];
-    return (playData.genre=='Comedy' && scope.genreComedy) 
-        || (playData.genre=='History' && scope.genreHistory)
-        || (playData.genre=='Tragedy' && scope.genreTragedy);
-  };
-
-  var initSummary = wu.curry(createAllPlaysOneSummary, allPlaysData, containerName, isActivePlay);
-  var initColChart = wu.curry(createAllPlaysCharChart, allPlaysData, containerName, isActivePlay);
-  var initSplineChart = wu.curry(createAllPlaysSplineChart, allPlaysData, containerName, isActivePlay);
+  var isPlayActive = scope.isPlayActive;
+  
+  var initSummary = wu.curry(createAllPlaysOneSummary, allPlaysData, containerName, isPlayActive);
+  var initColChart = wu.curry(createAllPlaysCharChart, allPlaysData, containerName, isPlayActive);
+  var initSplineChart = wu.curry(createAllPlaysSplineChart, allPlaysData, containerName, isPlayActive);
 
   switch(whichChart) {
   	case 'All Plays - One Summary' : initSummary(); break;
-  	// not sure if this needs to change for the isActivePlay call
-  	case 'All Plays - Degree'      : initDegreeChart(scope, compile, allPlaysData, containerName, isActivePlay); break;
+  	// not sure if this needs to change for the isPlayActive call
+  	case 'All Plays - Degree'      : initDegreeChart(scope, compile, allPlaysData, containerName); break;
     case 'Top Characters (Lines)'  : initColChart('nlines', '% of Total Lines'); break;
     case 'Top Characters (Edges)'  : initColChart('degrees', '% of Total Edges'); break;
     case 'All Plays (Lines)'       : initSplineChart('nlines', '% of Total Lines'); break;
@@ -68,14 +63,14 @@ createChartDirective('allPlaysChart', 'whichChart', function(scope, containerNam
   };
 });
 
-function createAllPlaysOneSummary(allPlaysData, containerName, isActivePlay) {
+function createAllPlaysOneSummary(allPlaysData, containerName, isPlayActive) {
   console.log('allPlaysData: '+allPlaysData);
   var playsPerRow = 4;
   var currRow=0, currCol=0;
   var templ = '<table width="100%" border="1" cellpadding="0" cellspacing="0">';
 
   var activePlaysKeys = wu(Object.keys(allPlaysData)).filter(function(playAlias) {
-    return isActivePlay(playAlias)
+    return isPlayActive(playAlias)
   }).toArray();
   
   $.each(activePlaysKeys, function(idx, playAlias) {
@@ -185,7 +180,7 @@ function mapAllChars(allPlaysData, mapByField) {
   };
 }
 
-function createAllPlaysCharChart(allPlaysData, containerName, isActivePlay, whichMetric, Label) {
+function createAllPlaysCharChart(allPlaysData, containerName, isPlayActive, whichMetric, Label) {
   console.log('Rendering All Plays 1...');
   
   var playCharAggr = mapAllChars(allPlaysData, whichMetric);
@@ -265,10 +260,10 @@ function createColumnChart(containerName, categories, singleSeries, chartOptions
 	);
 }
 
-function createAllPlaysSplineChart(allPlaysData, containerName, isActivePlay, whichMetric, label) {
+function createAllPlaysSplineChart(allPlaysData, containerName, isPlayActive, whichMetric, label) {
   
   var playAggrData = mapAllPlaysByCharMetric(allPlaysData, whichMetric).map(function(playData) {
-    if(!isActivePlay(playData.name))
+    if(!isPlayActive(playData.name))
       playData.visible = false;
     return playData;
   });
@@ -323,28 +318,37 @@ function createAllPlaysSplineChart(allPlaysData, containerName, isActivePlay, wh
   //chart.yAxis[0].setExtremes(500, 1700);
 }
 
-function initDegreeChart(scope, compile, allPlaysData, containerName, isActivePlay) {
+function initDegreeChart(scope, compile, allPlaysData, containerName) {
 	if(!scope.selectedDegreeYAxis)
-		scope.selectedDegreeYAxis = 'Degree Assortative Coeff';
+		scope.selectedDegreeYAxis = 'Degree Assortative Coefficient';
 
+	var allPlays = Object.keys(allPlaysData);
+	allPlays.sort();
+	
 	var ySets = {
 		'Avg Clustering' : {
-			y : function(scene) { return scene.avg_clustering },
-			yLabel : 'Avg Clustering',
+			y : function(v) { return v.sc_avg_clustering },
 			ignoreIf : function(val) { return val <= -1; }
 		},
 		'Avg Shortest Path' : {
-			y : function(scene) { return scene.avg_shortest_path },
-			yLabel : 'Avg Shortest Path',
+			y : function(v) { return v.sc_avg_shortest_path },
 			ignoreIf : function(val) { return val <= -1; }
 		},
-		'Degree Assortative Coeff' : {
-			y : function(scene) { return scene.deg_assort_coeff },
-			yLabel : 'Degree Assortativity Coefficient',
-			ignoreIf : function(val) { return false; }
-		}
+		'Degree Assortative Coefficient' : {
+			y : function(v) { return v.sc_deg_assort_coeff },
+		},
+		'Play' : {
+			y : function(v) { return v.play_idx },
+			yAxis : {
+				categories: allPlays,
+				type: 'category',
+//				tickInterval: 1,
+				min: 0, 
+				max: allPlays.length-1,
+			}
+		} 
 	};
-	//scope._degreeYAxisOptions = ['Avg Clustering', 'Avg Shortest Path', 'Degree Assortative Coeff'];
+
 	scope._degreeYAxisOptions = Object.keys(ySets);
   var templ = 'y-axis: <select name="degreeYAxis" ng-model="selectedDegreeYAxis" '+
       'ng-options="p for p in _degreeYAxisOptions" ' +  
@@ -353,26 +357,23 @@ function initDegreeChart(scope, compile, allPlaysData, containerName, isActivePl
   	templ += '<div id="innerContainer"></div>'
   $('div#'+containerName).html(compile(templ)(scope));
   
-  scope.renderDegreeChart = function() {
+  var DEGREE_THRESHOLD = 5;
+
+	scope.renderDegreeChart = function() {
   	var whichMetric = 'total_degrees'
   	var whichY = scope.selectedDegreeYAxis;
   	var ySet = ySets[whichY];
   	
-    function mapAllPlaysBySceneMetric(allPlaysData, whichMetric) {
-    	var allPlays = Object.keys(allPlaysData);
-    	allPlays.sort();
-    	
-      return allPlays.map(function(playAlias) {
+    function mapAllPlaysBySceneMetric(whichMetric) {
+      return allPlays.map(function(playAlias, playIdx) {
         var play = allPlaysData[playAlias];
         var scenes = play.scenes;
         var series = [];
         _.each(scenes, function(scene, _idx) {
-        	var yVal = ySet.y(scene);
-        	if(ySet.ignoreIf(yVal) || scene.total_degrees < 10)
-        		return;
         	
-          series.push({
+        	var val = {
           	play : play.title,
+          	play_idx : playIdx,
           	year : play.year,
             name : scene.scene,
             dataLabels : {
@@ -381,8 +382,6 @@ function initDegreeChart(scope, compile, allPlaysData, containerName, isActivePl
               },
             },
             x : scene.total_degrees, 
-            //y : scene.avg_clustering,scene.avg_shortest_path,scene.deg_assort_coeff,
-            y : yVal,
             z : Math.pow(scene.total_lines, 2),
             
             sc_avg_clustering : scene.avg_clustering,
@@ -391,25 +390,37 @@ function initDegreeChart(scope, compile, allPlaysData, containerName, isActivePl
             sc_density : scene.density,
             sc_location : scene.location,
             sc_graph_img_f : scene.graph_img_f  
-          });
+          };
+        	
+        	val.y = ySet.y(val);
+        	var ignoreIf = ySet.ignoreIf || function(v) { return false; };
+        	if(ignoreIf(val) || scene.total_degrees < DEGREE_THRESHOLD)
+        		return;
+        	
+          series.push(val);
         });
         
         return { name : playAlias, data : series };
       });
-    } 
-
-    var playAggrData = mapAllPlaysBySceneMetric(allPlaysData, whichMetric).map(function(playData) {
-      if(!isActivePlay(playData.name) ) //|| playData.name!='hamlet'
+    };
+    
+    var playAggrData = mapAllPlaysBySceneMetric(whichMetric).map(function(playData) {
+      if(!scope.isPlayActive(playData.name) ) //|| playData.name!='hamlet'
         playData.visible = false;
       return playData;
     });
+    
+    var yAxis = { title: { text: whichY } };
+    if(ySet.yAxis)
+    	yAxis = $.extend(yAxis, ySet.yAxis);
 
   	var chart = new Highcharts.Chart({
 			chart: {
 		    type: 'bubble',
 		    //renderTo : containerName,
 		    renderTo : 'innerContainer',
-		    zoomType: 'xy'
+		    zoomType: 'xy',
+		    height: 600
 			},
 	    plotOptions: {
 	      series: {
@@ -434,12 +445,12 @@ function initDegreeChart(scope, compile, allPlaysData, containerName, isActivePl
 	      				'Avg Shortest Path:' + pt.sc_avg_shortest_path.toFixed(4) + '<br>'+
 	      				'Degree Assortativity Coefficient:' + pt.sc_deg_assort_coeff.toFixed(4) + '<br>' +
 	      				'Density:' + pt.sc_density.toFixed(4) + '<br>' +
-	      				'<img src="/' + pt.sc_graph_img_f + '" height="40%"/>'  
+	      				'<img src="/' + pt.sc_graph_img_f + '" height="25%"/>'  
 	      }
 	    },
-	    title: { text: 'Degrees v ' + ySet.yLabel },
+	    title: { text: 'Degrees v ' + whichY },
 			xAxis: { title: { text: 'Total Degrees' } },
-			yAxis: { title: { text: ySet.yLabel }, },
+			yAxis: yAxis,
 			series: playAggrData
 		});
   };

@@ -141,20 +141,32 @@ class PlayJSONMetadataEncoder(PlayEncoderBase):
             # a new edge, so in effect degrees and edges should be equivalent)
             d['total_degrees'] = sceneG.number_of_edges()
             
-            try:
-                d['avg_clustering'] = nx.average_clustering(sceneG)
-            except:
-                d['avg_clustering'] = -1
-            try:
-                d['deg_assort_coeff'] = nx.degree_assortativity_coefficient(sceneG)
-                if math.isnan(d['deg_assort_coeff']):
-                    d['deg_assort_coeff'] = -1                
-            except:
+            def field_val(fn, def_if_err=-1):
+                try:
+                    val = fn(sceneG)
+#                     if math.isnan(val):
+#                         val = def_if_err
+                    return val
+                except:
+                    return def_if_err
+            
+            d['avg_clustering'] = field_val(nx.average_clustering)
+            d['avg_shortest_path'] = field_val(nx.average_shortest_path_length)
+
+            d['deg_assort_coeff'] = field_val(lambda(G): nx.degree_assortativity_coefficient(G, weight='weight'))
+            if math.isnan(d['deg_assort_coeff']):
                 d['deg_assort_coeff'] = -1
-            try:
-                d['avg_shortest_path'] = nx.average_shortest_path_length(sceneG)
-            except:
-                d['avg_shortest_path'] = -1
+
+#             try:
+#                 d['deg_assort_coeff'] = nx.degree_assortativity_coefficient(sceneG)
+#                 if math.isnan(d['deg_assort_coeff']):
+#                     d['deg_assort_coeff'] = -1                
+#             except:
+#                 d['deg_assort_coeff'] = -1
+#             try:
+#                 d['avg_shortest_path'] = nx.average_shortest_path_length(sceneG)
+#             except:
+#                 d['avg_shortest_path'] = -1
             
             total_lines = 0
             cnxs = nx.degree(sceneG)

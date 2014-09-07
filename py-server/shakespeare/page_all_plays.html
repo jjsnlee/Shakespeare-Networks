@@ -15,6 +15,7 @@ body {
 
 .chartDiv {
   min-width: 60%; 
+  height: 800px;
 	border:3px solid #eee;
 	background:rgba(265,265,265,1); 
 	overflow:auto; 
@@ -35,6 +36,13 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   $scope.genreComedy = true;
   $scope.genreHistory = true;
   $scope.refreshToggle = 0;
+    
+  $scope.isPlayActive = function(playAlias) {
+    var playData = $scope.allPlaysSceneSummary[playAlias];
+    return (playData.genre=='Comedy' && $scope.genreComedy) 
+        || (playData.genre=='History' && $scope.genreHistory)
+        || (playData.genre=='Tragedy' && $scope.genreTragedy);
+  };
   
   //$scope.chartAllPlaysWhichMetric = 'nlines';
   // Keep track of the positions of each of the popups.  
@@ -51,6 +59,15 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     else {
       $scope.whichChart = whichChart;
     }
+  };
+
+  $scope.allGenres = function() {
+      $scope.genreTragedy = $scope.genreComedy = $scope.genreHistory = true;
+      $scope.flipRefreshToggle();
+  };  
+  $scope.clearGenres = function() {
+	  $scope.genreTragedy = $scope.genreComedy = $scope.genreHistory = false;
+	  $scope.flipRefreshToggle();
   };
   
   $scope.flipRefreshToggle = function() {
@@ -98,12 +115,14 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
       <input type="checkbox" ng-model="genreTragedy">Tragedy<br>
       <input type="checkbox" ng-model="genreComedy">Comedy<br>
       <input type="checkbox" ng-model="genreHistory">History<br>
+      <button ng-click="clearGenres()">Clear Genres</button>
+      <button ng-click="allGenres()">All Genres</button><br>
       <button ng-click="flipRefreshToggle()">Refresh</button>
 	  </div>
  
   </td>
   <td valign="top">
-		<div id="allPlaysCharPopup" class="chartDiv">
+		<div class="chartDiv"> <!--id="allPlaysCharPopup" -->
 			<div all-plays-chart></div>
 		  &nbsp;<br>&nbsp;<br>
 		</div>
