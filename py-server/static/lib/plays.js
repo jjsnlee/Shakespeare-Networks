@@ -404,7 +404,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
             name : scene.scene,
             dataLabels : {
               formatter: function() {
-                return scene.scene
+                return play.title + '<br>' +scene.scene
               },
             },
             x : scene.total_degrees, 
@@ -455,7 +455,8 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
 	      series: {
 	        dataLabels: {
 	          enabled: true,
-	          //borderRadius: 5, backgroundColor: 'rgba(252, 255, 197, 0.7)',
+	          //borderRadius: 5, 
+	          backgroundColor: 'rgba(252, 255, 197, 0.3)',
 	          borderWidth: 1,
 	          borderColor: '#AAA',
 	          x: -5, y: -6
