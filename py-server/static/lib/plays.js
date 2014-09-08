@@ -379,6 +379,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
   $('div#'+containerName).html(compile(templ)(scope));
   
   //var DEGREE_THRESHOLD = 25;
+  var playsVisibility = {};
 
 	scope.renderDegreeChart = function() {
   	var whichMetric = 'total_degrees'
@@ -409,6 +410,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
             },
             x : scene.total_degrees, 
             z : Math.pow(scene.total_lines, 2),
+            //z : scene.total_lines,
 
             sc_total_degrees : scene.total_degrees,
             sc_total_edges : -1,
@@ -434,7 +436,9 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
     };
     
     var playAggrData = mapAllPlaysBySceneMetric(whichMetric).map(function(playData) {
-      if(!scope.isPlayActive(playData.name) ) //|| playData.name!='hamlet'
+    	if(playsVisibility[playData.name]) 
+    		playData.visible = playsVisibility[playData.name];
+    	else if(!scope.isPlayActive(playData.name) ) //|| playData.name!='hamlet'
         playData.visible = false;
       return playData;
     });
@@ -449,7 +453,8 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
 		    //renderTo : containerName,
 		    renderTo : 'innerContainer',
 		    zoomType: 'xy',
-		    height: 700
+		    height: 700,
+		    //events: { load: function () { chart.hideLoading(); } }
 			},
 	    plotOptions: {
 	      series: {
@@ -461,6 +466,12 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
 	          borderColor: '#AAA',
 	          x: -5, y: -6
 	        },
+	        events: {
+	  		    legendItemClick: function () {
+	  		    	// preserve the selected plays when toggling between options
+	  		    	playsVisibility[this.name] = !this.visible;
+	  		    }
+	        }
 	      },
 	    },
 	    tooltip: {
@@ -486,6 +497,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
 			yAxis: yAxis,
 			series: playAggrData
 		});
+  	//chart.showLoading();
   };
   
   scope.renderDegreeChart();
