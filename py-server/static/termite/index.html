@@ -177,10 +177,12 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
 
   // initialize parent and state model where needed
   $scope.LDAModels = [
-    'shakespeare-char-scene-50-100-tfidf',
-    'shakespeare-char-scene-50-50-tfidf',
-    'shakespeare-char-scene-50-50-tfidf-2',
-    'shakespeare-char-scene-100-50'
+    'shakespeare-char-scene-bow-50-200',
+    'shakespeare-char-scene-tfidf-50-200',
+    'shakespeare-char-scene-tfidf-50-100',
+    'shakespeare-char-scene-tfidf-50-50',
+    'shakespeare-char-scene-tfidf-50-50-v2',
+    'shakespeare-char-scene-bow-100-50',
   ];
   $scope.LDAModel = $scope.LDAModels[0];
   $scope.changeModel = function() {

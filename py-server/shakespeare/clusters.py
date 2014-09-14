@@ -1,7 +1,7 @@
 import plays_n_graphs
 import numpy as np
 import matplotlib.pyplot as plt
-import json, sys, os
+import json, sys, os, re
 import logging
 import pandas as pd
 
@@ -31,8 +31,34 @@ def get_ts():
 def get_lda_base_dir():
     return join(helper.get_dynamic_rootdir(), 'lda')
 
+class ModelContext(object):
+    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=True, 
+                 min_df=2, # in at least 2 documents
+                 max_df=1.0
+                 ):
+        from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer        
+        self.doc_names = doc_nms
+        self.doc_contents = doc_contents
+        #self.doc_contents_tokenized = [simple_preprocess(doc) for doc in doc_contents]
+        if from_cache is None:
+            if as_bow:
+                vectorizer = CountVectorizer
+            else:
+                vectorizer = TfidfVectorizer
+            cv = vectorizer(
+                min_df=min_df,
+                max_df=max_df,
+                charset_error="ignore",
+                stop_words=stopwds, 
+                )
+            self.cnts = cv.fit_transform(doc_contents).toarray()
+            unigrams = pd.DataFrame(self.cnts, columns=cv.get_feature_names(), index=doc_nms)
+            self.corpus = unigrams
+        else:
+            pass
+
 class LDAContext(object):
-    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=False):
+    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=True):
         self.doc_names = doc_nms
         self.doc_contents = doc_contents
         self.doc_contents_tokenized = [simple_preprocess(doc) for doc in doc_contents]
@@ -81,8 +107,8 @@ class LDAContext(object):
     def find_term(self, t):
         return self.dictionary.id2token[t]
         #return self.get_terms().index(t)
-    def term_cnt_matrix(self):
-        pass
+    #def term_cnt_matrix(self):
+    #    pass
 
     lda_dict_fname = 'lda.dict'
     lda_corpus_data = 'corpus_data.json'
@@ -152,7 +178,7 @@ def get_lda_rslt(lda_label, reload_ctx=False):
 #     cluster2 = [j for i,j in zip(corpus_scores, doc_nms) if i[1][1] > threshold]
 #     cluster3 = [j for i,j in zip(corpus_scores, doc_nms) if i[2][1] > threshold]
 
-class ModelResult(object):
+class _ModelResult(object):
     def __init__(self, label, ctxt, model=None, init_model=None, ntopics=None, npasses=None):
         if model:
             self.model = model
@@ -163,22 +189,43 @@ class ModelResult(object):
         self.termite_data = TermiteData(self)
     def generate_viz(self):
         self.termite_data.data_for_client()
+    @property
+    def basedir(self):
+        return join(get_lda_base_dir(), self.label)
 
-class NMFResult(ModelResult):
+class NMFResult(_ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
-        def init_mode():
+        def init_model():
             from sklearn.decomposition import NMF
             self.model = NMF(n_components=None, 
                              init=None, sparseness=None, 
                              beta=1, eta=0.1, tol=0.0001, max_iter=200, nls_max_iter=2000, 
                              random_state=None)
+        super(LDAResult, self).__init__(label, ctxt, model, init_model=init_model)
 
-class AffinityPropagationResult(ModelResult):
+class AffinityPropagationResult(_ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
+        def init_model():
+            from sklearn.covariance import GraphLassoCV
+            from sklearn.cluster import affinity_propagation
+            # EDGES - Learn a graphical structure from the correlations
+            edge_model = GraphLassoCV()
+            mat = ctxt.corpus
+            # standardize the time series: using correlations rather than covariance
+            # is more efficient for structure recovery
+            X = mat.values.copy().T
+            X /= X.std(axis=0)
+            edge_model.fit(X)
+            
+            # Cluster using affinity propagation - just the labels are clustered
+            # purely based on correlations in this case?
+            plays = mat.index
+            _, labels = affinity_propagation(edge_model.covariance_)
+            n_labels = labels.max()
         # can do anything with Affinity Propagation
         pass
 
-class LDAResult(ModelResult):
+class LDAResult(_ModelResult):
     def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None):
         def init_model():
             corpus = lda_ctxt.corpus 
@@ -190,24 +237,23 @@ class LDAResult(ModelResult):
         self._docs_per_topic = None
         #self.termite_data = TermiteData(self)
 
-    def generate_viz(self):
-        self.termite_data.data_for_client()
+    #def generate_viz(self):
+    #    self.termite_data.data_for_client()
 
     def save(self):
-        basedir = join(get_lda_base_dir(), self.label)
+        #basedir = join(get_lda_base_dir(), self.label)
         # http://stackoverflow.com/questions/273192/check-if-a-directory-exists-and-create-it-if-necessary
         # to handle potenital race conditions (though probably not applicable in my case).
         # also not sure why this wouldn't be handled more robustly by the python api itself 
         import errno
         try:
-            os.makedirs(basedir)
+            os.makedirs(self.basedir)
         except OSError as exception:
             if exception.errno != errno.EEXIST:
                 raise
         #os.makedirs(basedir)
-        self.lda_ctxt.save_corpus(basedir=basedir)
-        
-        self.lda.save(join(basedir, 'run.lda'))
+        self.lda_ctxt.save_corpus(basedir=self.basedir)
+        self.lda.save(join(self.basedir, 'run.lda'))
         # should also save some of the state
         
     def as_dataframe(self):
@@ -251,6 +297,19 @@ class LDAResult(ModelResult):
             for topic, score in doc_rslt:
                 print '\ttopic %d, score: %s' % (topic, score)
                 print '\t', self.lda.show_topic(topic)
+    def perplexity(self):
+        return perplexity_score(join(self.basedir, 'gensim.log'))
+
+def perplexity_score(logfile):
+    ppx_scores = []
+    with open(logfile) as fh:
+        pat = re.compile(' ([-.0-9]+) per-word bound, ([-.0-9]+) perplexity')
+        for li in fh.readlines():
+            m = pat.search(li)
+            if m:
+                ppx_scores.append(m.group(2))
+        # -12.572 per-word bound, 6088.5 perplexity
+    return ppx_scores
 
 from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, ComputeSeriation, \
     ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer

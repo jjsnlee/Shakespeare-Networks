@@ -77,6 +77,20 @@ def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene',
 #     from gensim.models.tfidfmodel import TfidfModel
 #     tfidf_model = TfidfModel( )
 
+def perplexity_scores():
+    basedir = sc.get_lda_base_dir()
+    rslts = {}
+    for d in os.listdir(basedir):
+        if d.startswith('.') or d=='old':
+            continue
+        try:
+            logfile = join(basedir, d, 'gensim.log')
+            rslts[d] = sc.perplexity_score(logfile)
+        except:
+            # some of these may not have the logs
+            pass
+    return rslts
+
 def _get_stopwords():
     from nltk.corpus import stopwords
     stopwds = set(stopwords.words('english'))
