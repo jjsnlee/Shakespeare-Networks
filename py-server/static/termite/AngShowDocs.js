@@ -80,8 +80,8 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
       var terms = termTopicProbModel.get('termIndex');
       var content = data.doc_content.map(function(section) {
         var sectionText = section.map(function(li) {
-          // need to fix this for puncutation - ie, Jew? is not getting picked up
-          var wds = li.split(' ');
+          // need to fix this for punctuation - ie, Jew? is not getting picked up
+          var wds = li.split(/[\s?.,;:]/);
           var uniqueWds = {};
           _.each(wds, function(wd) {
             wd = wd.toLowerCase();
