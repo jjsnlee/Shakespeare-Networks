@@ -53,9 +53,11 @@ createChartDirective('allPlaysChart', 'whichChart', function(scope, containerNam
   var initSplineChart = wu.curry(createAllPlaysSplineChart, allPlaysData, containerName, isPlayActive);
 
   switch(whichChart) {
-  	case 'All Plays - One Summary' : initSummary(); break;
+  	case 'All Plays:Summary'   : initSummary(); break;
   	// not sure if this needs to change for the isPlayActive call
-  	case 'All Plays - Degree'      : initDegreeChart(scope, compile, allPlaysData, containerName); break;
+  	case 'All Plays:Degrees'       : initDegreeChart(scope, compile, allPlaysData, containerName); break;
+  	case 'All Plays:Densest'       : initDensityChart(scope, compile, allPlaysData, containerName); break;
+  	
     case 'Top Characters (Lines)'  : initColChart('nlines', '% of Total Lines'); break;
     case 'Top Characters (Edges)'  : initColChart('degrees', '% of Total Edges'); break;
     case 'All Plays (Lines)'       : initSplineChart('nlines', '% of Total Lines'); break;
@@ -316,6 +318,33 @@ function createAllPlaysSplineChart(allPlaysData, containerName, isPlayActive, wh
 		series: playAggrData
   });
   //chart.yAxis[0].setExtremes(500, 1700);
+}
+
+function initDensityChart(scope, compile, allPlaysData, containerName) {
+//	var playAggrData = allPlaysData.map(function(playData) {
+//    if(!isPlayActive(playData.name))
+//      playData.visible = false;
+//    return playData;
+//  });
+	var allPlays = Object.keys(allPlaysData);
+	allPlays.sort();
+	
+  var templ = '<table border=1 cellpadding=1 cellspacing=1>'
+	$.each(allPlays, function(idx, playName) {
+		var play = allPlaysData[playName];
+		if(scope.isPlayActive(playName)) {
+			templ += '<tr><td>'+play.title+'</td>';
+			$.each(play.scenes, function(idx, scene) {
+				if(scene.total_degrees > 10) {
+					templ += '<td><img src="/' + scene.graph_img_f + '" height="23%"/></td>';
+				}
+			});
+			templ += '</tr>';
+		}
+  });
+  templ += '</table>'
+	//templ += '<div id="innerContainer"></div>'
+	$('div#'+containerName).html(compile(templ)(scope));
 }
 
 function initDegreeChart(scope, compile, allPlaysData, containerName) {

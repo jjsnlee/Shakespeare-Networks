@@ -74,7 +74,7 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   
   //$scope.toggleChart('Top Characters (Lines)');
   //$scope.toggleChart('All Plays - One Summary');
-  $scope.toggleChart('All Plays - Degree');
+  $scope.toggleChart('All Plays:Degrees');
 });
 
 //$(function() {
@@ -104,12 +104,17 @@ function enableSliderWidget(amtId) {
 <tr>
   <td width="20%" valign="top">
 
-	  <a ng-click="toggleChart('All Plays - One Summary')" 
+	  <a ng-click="toggleChart('All Plays:Summary')" 
 	    style="text-decoration:underline; cursor:pointer">All Plays - Summary</a><br>
+    
+    <hr>
+    <a ng-click="toggleChart('All Plays:Degrees')" 
+        style="text-decoration:underline; cursor:pointer">All Plays - Degrees by Scene</a><br>
+    
+    <a ng-click="toggleChart('All Plays:Densest')" 
+        style="text-decoration:underline; cursor:pointer">All Plays - Densest Scenes (WIP)</a><br>
 
-    <a ng-click="toggleChart('All Plays - Degree')" 
-        style="text-decoration:underline; cursor:pointer">All Plays - Degree v Density</a><br>    
-
+    <hr>
 	  <a ng-click="toggleChart('Top Characters (Lines)')" 
 	    style="text-decoration:underline; cursor:pointer">Top Characters (Lines)</a><br>
 	  
