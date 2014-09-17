@@ -7,6 +7,14 @@ body {
   font-size: 14px;
 }
 
+.imgDiv {
+  width:40%;  
+  position:absolute; 
+  top:5%; left:30%; 
+  border:3px solid #eee;
+  background: white;  
+}
+
 .sectionDiv {
   position: absolute;
   top: 5%;
@@ -25,6 +33,7 @@ body {
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
 <script src="/static/lib/ext/angular-1.2.9/angular.js" type="text/javascript"></script>
+<script src="/static/lib/ang-dnd.js" type="text/javascript"></script>
 <script src="/static/lib/plays.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -43,7 +52,12 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
         || (playData.genre=='History' && $scope.genreHistory)
         || (playData.genre=='Tragedy' && $scope.genreTragedy);
   };
-  
+
+  $scope.sceneOpen = function(evt, playAlias, sceneIdx) {
+    $scope.showScenePopup = 1;
+    $scope.selected_graph_img_f = evt.currentTarget.src;
+  };
+    
   $scope.toggleChart = function(whichChart) {
     if($scope.allPlaysSceneSummary == null) {
 	    $http.get('/shakespeare/corpus/sceneSummary').success(function(data) {
@@ -74,7 +88,8 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
   
   //$scope.toggleChart('Top Characters (Lines)');
   //$scope.toggleChart('All Plays - One Summary');
-  $scope.toggleChart('All Plays:Degrees');
+  //$scope.toggleChart('All Plays:Degrees');
+  $scope.toggleChart('All Plays:Densest');
 });
 
 //$(function() {
@@ -145,6 +160,13 @@ function enableSliderWidget(amtId) {
   </td>
 </tr>
 </table>
+
+<div my-draggable id="scenePopup" ng-show="showScenePopup===1" class="imgDiv">
+  <table border=0 cellpadding=0 cellspacing=0 width="100%">
+    <tr><td align="right"><button ng-click="showScenePopup=0">Close</button></td></tr>
+    <tr><td><img ng-src="{{selected_graph_img_f}}" width="100%"></td></tr>
+  </table>
+</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
 <script src="/static/lib/ext/Highcharts-3.0.10/highcharts.src.js" type="text/javascript"></script>

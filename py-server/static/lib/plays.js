@@ -329,20 +329,21 @@ function initDensityChart(scope, compile, allPlaysData, containerName) {
 	var allPlays = Object.keys(allPlaysData);
 	allPlays.sort();
 	
-  var templ = '<table border=1 cellpadding=1 cellspacing=1>'
+  var templ = '<div style="width:600px;overflow:none"><table border=1 cellpadding=1 cellspacing=1>'
 	$.each(allPlays, function(idx, playName) {
 		var play = allPlaysData[playName];
 		if(scope.isPlayActive(playName)) {
-			templ += '<tr><td>'+play.title+'</td>';
+			templ += '<tr><td style="font-size:10pt">'+play.title+'</td>';
 			$.each(play.scenes, function(idx, scene) {
 				if(scene.total_degrees > 10) {
-					templ += '<td><img src="/' + scene.graph_img_f + '" height="23%"/></td>';
+					templ += '<td><img src="/' + scene.graph_img_f + '" height="23%" '+
+						'ng-click="sceneOpen($event,\''+ playName+'\','+idx+')"/></td>';
 				}
 			});
 			templ += '</tr>';
 		}
   });
-  templ += '</table>'
+  templ += '</table></div>'
 	//templ += '<div id="innerContainer"></div>'
 	$('div#'+containerName).html(compile(templ)(scope));
 }
