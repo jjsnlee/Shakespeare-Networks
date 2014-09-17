@@ -77,6 +77,19 @@ def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene',
 #     from gensim.models.tfidfmodel import TfidfModel
 #     tfidf_model = TfidfModel( )
 
+def create_model_ctxt(ctx='shakespeare', by='Char/Scene', ):
+    play_ctx = png.get_plays_ctx(ctx)
+    prc_ctx = ClustersCtxt(play_ctx)
+    prc_ctx.preproc(by=by) # by='Char'
+    doc_titles, docs_content = get_doc_content(prc_ctx)
+    from clusters import ModelContext
+    ctxt = ModelContext(doc_titles, docs_content)
+    return ctxt
+
+def doAffProp(ctx='shakespeare', by='Char/Scene', ):
+    from clusters import AffinityPropagationResult, ModelContext
+    pass
+
 def perplexity_scores():
     basedir = sc.get_lda_base_dir()
     rslts = {}

@@ -12,6 +12,8 @@ from gensim.utils import simple_preprocess #, SaveLoad
 from os.path import join
 import helper
 
+from sklearn.externals import joblib
+
 logging.basicConfig(level=logging.DEBUG)
 logger = helper.setup_sysout_handler(__name__)
 
@@ -36,26 +38,57 @@ class ModelContext(object):
                  min_df=2, # in at least 2 documents
                  max_df=1.0
                  ):
-        from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer        
         self.doc_names = doc_nms
         self.doc_contents = doc_contents
-        #self.doc_contents_tokenized = [simple_preprocess(doc) for doc in doc_contents]
         if from_cache is None:
-            if as_bow:
-                vectorizer = CountVectorizer
-            else:
-                vectorizer = TfidfVectorizer
-            cv = vectorizer(
-                min_df=min_df,
-                max_df=max_df,
-                charset_error="ignore",
-                stop_words=stopwds, 
-                )
-            self.cnts = cv.fit_transform(doc_contents).toarray()
-            unigrams = pd.DataFrame(self.cnts, columns=cv.get_feature_names(), index=doc_nms)
-            self.corpus = unigrams
+            self.stopwords = stopwds
         else:
-            pass
+            self.stopwords = from_cache['stopwords']
+
+        from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+        self.as_bow = as_bow # for the sake of serializing
+        if as_bow:
+            vectorizer = CountVectorizer
+        else:
+            vectorizer = TfidfVectorizer
+        cv = vectorizer(
+            min_df=min_df,
+            max_df=max_df,
+            charset_error="ignore",
+            stop_words=stopwds, 
+            )
+        self.cnts = cv.fit_transform(doc_contents).toarray()
+        unigrams = pd.DataFrame(self.cnts, columns=cv.get_feature_names(), index=doc_nms)
+        self.corpus = unigrams
+    
+    corpus_data = 'corpus_data.json'
+    
+    def save_corpus(self, basedir=get_lda_base_dir()):
+        data = \
+        {
+         #'corpus'       : self.corpus,
+         'vectorizer'   : 'BOW' if self.as_bow else 'TF-IDF',
+         'stopwords'    : list(self.stopwords) if self.stopwords else [],
+         'doc_titles'   : self.doc_names,
+         'doc_contents' : self.doc_contents
+        }
+        
+        json_rslt = json.dumps(data, ensure_ascii=False, #cls=PlayJSONMetadataEncoder, 
+                               indent=True)
+        fname = join(basedir, self.corpus_data) 
+        with open(fname, 'w') as fh:
+            fh.write(json_rslt)
+
+    @classmethod
+    def load_corpus(cls, basedir=get_lda_base_dir()):
+        fname = join(basedir, cls.corpus_data)
+        if not os.path.exists(fname):
+            logger.warn('File path [%s] doesn\'t exist!', fname)
+        ctxjson = json.loads(open(fname, 'r').read())
+        doc_nms = ctxjson['doc_titles']
+        doc_contents = ctxjson['doc_contents']
+        as_bow = True if ctxjson['vectorizer']=='BOW' else False
+        return ModelContext(doc_nms, doc_contents, from_cache=ctxjson, as_bow=as_bow)
 
 class LDAContext(object):
     def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=True):
@@ -186,44 +219,79 @@ class _ModelResult(object):
             init_model()
         self.label = label
         self.model_ctxt = ctxt
-        self.termite_data = TermiteData(self)
+        self.__termite_data = None
+    @property
+    def termite_data(self):
+        if self.__termite_data is None:
+            self.__termite_data = TermiteData(self)
+        return self.__termite_data
     def generate_viz(self):
         self.termite_data.data_for_client()
     @property
     def basedir(self):
         return join(get_lda_base_dir(), self.label)
+    def _ensure_basedir(self):
+        #basedir = join(get_lda_base_dir(), self.label)
+        # http://stackoverflow.com/questions/273192/check-if-a-directory-exists-and-create-it-if-necessary
+        # to handle potenital race conditions (though probably not applicable in my case).
+        # also not sure why this wouldn't be handled more robustly by the python api itself 
+        import errno
+        try:
+            os.makedirs(self.basedir)
+        except OSError as exception:
+            if exception.errno != errno.EEXIST:
+                raise
+    def save(self):
+        # save the classifier
+        self._ensure_basedir()
+        fname = join(self.basedir, 'classifier.pkl')
+        _ = joblib.dump(self.model, fname, compress=9)
+        self.ctxt.save_corpus(basedir=self.basedir)
+    @classmethod
+    def load(cls, label):
+        basedir = join(get_lda_base_dir(), label)
+        fname = join(basedir, 'classifier.pkl')
+        ctxt  = ModelContext.load_corpus(basedir=basedir)
+        rslt = cls(label, ctxt, model=joblib.load(fname))
+        return rslt
 
 class NMFResult(_ModelResult):
-    def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
+    def __init__(self, label, ctxt, model=None): # , ntopics=None, npasses=None
         def init_model():
             from sklearn.decomposition import NMF
             self.model = NMF(n_components=None, 
                              init=None, sparseness=None, 
                              beta=1, eta=0.1, tol=0.0001, max_iter=200, nls_max_iter=2000, 
                              random_state=None)
-        super(LDAResult, self).__init__(label, ctxt, model, init_model=init_model)
+            self.model.fit(ctxt.corpus)
+        super(NMFResult, self).__init__(label, ctxt, model, init_model=init_model)
 
 class AffinityPropagationResult(_ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
         def init_model():
             from sklearn.covariance import GraphLassoCV
             from sklearn.cluster import affinity_propagation
-            # EDGES - Learn a graphical structure from the correlations
-            edge_model = GraphLassoCV()
+            
             mat = ctxt.corpus
             # standardize the time series: using correlations rather than covariance
             # is more efficient for structure recovery
             X = mat.values.copy().T
             X /= X.std(axis=0)
+
+            # EDGES - Learn a graphical structure from the correlations
+            #edge_model = GraphLassoCV(verbose=True, n_jobs=2)
+            edge_model = GraphLassoCV(verbose=True)
             edge_model.fit(X)
+            
+            self.edge_model = edge_model
             
             # Cluster using affinity propagation - just the labels are clustered
             # purely based on correlations in this case?
-            plays = mat.index
-            _, labels = affinity_propagation(edge_model.covariance_)
-            n_labels = labels.max()
+            #plays = mat.index
+            #_, labels = affinity_propagation(edge_model.covariance_)
+            #n_labels = labels.max()
         # can do anything with Affinity Propagation
-        pass
+        super(LDAResult, self).__init__(label, ctxt, model, init_model=init_model)
 
 class LDAResult(_ModelResult):
     def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None):
@@ -245,12 +313,13 @@ class LDAResult(_ModelResult):
         # http://stackoverflow.com/questions/273192/check-if-a-directory-exists-and-create-it-if-necessary
         # to handle potenital race conditions (though probably not applicable in my case).
         # also not sure why this wouldn't be handled more robustly by the python api itself 
-        import errno
-        try:
-            os.makedirs(self.basedir)
-        except OSError as exception:
-            if exception.errno != errno.EEXIST:
-                raise
+#         import errno
+#         try:
+#             os.makedirs(self.basedir)
+#         except OSError as exception:
+#             if exception.errno != errno.EEXIST:
+#                 raise
+        self._ensure_basedir()
         #os.makedirs(basedir)
         self.lda_ctxt.save_corpus(basedir=self.basedir)
         self.lda.save(join(self.basedir, 'run.lda'))
@@ -392,13 +461,17 @@ class TermiteData(object):
 def runs_affine_prop(mat):
     from sklearn import cluster, covariance, manifold
 
+    print '--- A'
     # EDGES - Learn a graphical structure from the correlations
-    edge_model = covariance.GraphLassoCV()
+    #edge_model = covariance.GraphLassoCV(verbose=True, n_jobs=2)
+    edge_model = covariance.GraphLassoCV(verbose=True)
     # standardize the time series: using correlations rather than covariance
     # is more efficient for structure recovery
     X = mat.values.copy().T
     X /= X.std(axis=0)
+    print '--- B'
     edge_model.fit(X)
+    print '--- C'
     
     # Cluster using affinity propagation - just the labels are clustered
     # purely based on correlations in this case?
