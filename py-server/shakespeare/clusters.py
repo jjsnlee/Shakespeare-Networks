@@ -60,13 +60,15 @@ class ModelContext(object):
         self.cnts = cv.fit_transform(doc_contents).toarray()
         unigrams = pd.DataFrame(self.cnts, columns=cv.get_feature_names(), index=doc_nms)
         self.corpus = unigrams
-    
+
+    def get_terms(self):
+        return list(self.corpus.columns)
+
     corpus_data = 'corpus_data.json'
     
     def save_corpus(self, basedir=get_lda_base_dir()):
         data = \
         {
-         #'corpus'       : self.corpus,
          'vectorizer'   : 'BOW' if self.as_bow else 'TF-IDF',
          'stopwords'    : list(self.stopwords) if self.stopwords else [],
          'doc_titles'   : self.doc_names,
@@ -255,13 +257,31 @@ class _ModelResult(object):
         rslt = cls(label, ctxt, model=joblib.load(fname))
         return rslt
 
+class RBMPipelineResult(_ModelResult):
+    def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200):
+        def init_model():
+            from sklearn.neural_network import BernoulliRBM
+            from sklearn import linear_model
+            pass
+        super(RBMPipelineResult, self).__init__(label, ctxt, model, init_model=init_model)
+        
+class RBMResult(_ModelResult):
+    def __init__(self, label, ctxt, model=None, ntopics=16, npasses=10):
+        def init_model():
+            from sklearn.neural_network import BernoulliRBM
+            self.model = BernoulliRBM(n_components=ntopics,
+                                      random_state=0, 
+                                      n_iter=npasses,
+                                      verbose=True)
+        super(RBMResult, self).__init__(label, ctxt, model, init_model=init_model)
+
 class NMFResult(_ModelResult):
-    def __init__(self, label, ctxt, model=None): # , ntopics=None, npasses=None
+    def __init__(self, label, ctxt, model=None, ntopics=10, npasses=200): 
         def init_model():
             from sklearn.decomposition import NMF
-            self.model = NMF(n_components=None, 
+            self.model = NMF(n_components=ntopics, 
                              init=None, sparseness=None, 
-                             beta=1, eta=0.1, tol=0.0001, max_iter=200, nls_max_iter=2000, 
+                             beta=1, eta=0.1, tol=0.0001, max_iter=npasses, nls_max_iter=2000, 
                              random_state=None)
             self.model.fit(ctxt.corpus)
         super(NMFResult, self).__init__(label, ctxt, model, init_model=init_model)
@@ -303,10 +323,6 @@ class LDAResult(_ModelResult):
         
         super(LDAResult, self).__init__(label, lda_ctxt, lda, init_model=init_model)
         self._docs_per_topic = None
-        #self.termite_data = TermiteData(self)
-
-    #def generate_viz(self):
-    #    self.termite_data.data_for_client()
 
     def save(self):
         #basedir = join(get_lda_base_dir(), self.label)
@@ -384,14 +400,13 @@ from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, ComputeSe
     ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer
 
 class TermiteData(object):
-    def __init__(self, lda_rslt, from_cache=False):
+    def __init__(self, model_rslt, from_cache=False):
         #assert(isinstance(lda_rslt, LDAResult))
-        lda = lda_rslt.lda
-        lda_ctxt = lda_rslt.lda_ctxt
+        lda = model_rslt.lda
+        model_ctxt = model_rslt.model_ctxt
         
-        self.lda = lda
-        self.lda_ctxt = lda_ctxt
-        self.basepath = join(get_lda_base_dir(), lda_rslt.label, 'termite')
+        self.model_ctxt = model_ctxt
+        self.basepath = join(get_lda_base_dir(), model_rslt.label, 'termite')
 
         model = Model()
         model.term_topic_matrix = lda.state.sstats.T
@@ -400,7 +415,7 @@ class TermiteData(object):
         #model.term_count = len(model.term_index)
         
         model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(lda.num_topics))
-        model.term_index = lda_ctxt.get_terms()
+        model.term_index = model_ctxt.get_terms()
         self.model = model
 
         tokens = Tokens()
@@ -412,10 +427,10 @@ class TermiteData(object):
         self._seriation = None
     
     def docs_zipped(self):
-        return [(t, c) for t,c in zip(self.lda_ctxt.doc_names, self.lda_ctxt.doc_contents)]
+        return [(t, c) for t,c in zip(self.model_ctxt.doc_names, self.model_ctxt.doc_contents)]
 
     def docs_tokenized_zipped(self):
-        return [(t, c) for t,c in zip(self.lda_ctxt.doc_names, self.lda_ctxt.doc_contents_tokenized)]
+        return [(t, c) for t,c in zip(self.model_ctxt.doc_names, self.model_ctxt.doc_contents_tokenized)]
 
     @property
     def saliency(self):

@@ -24,7 +24,7 @@ class ShakespeareClustersTest(TestCase):
 #         corpus = lda_ctxt.corpus 
 #         dictionary = lda_ctxt.dictionary
         #lda = LdaModel(corpus, num_topics=2, id2word=dictionary.id2token, passes=2)
-        lda_rslt = sc.LDAResult('Some label', lda_ctxt, 2, 2)
+        lda_rslt = sc.LDAResult('Some label', lda_ctxt, ntopics=2, npasses=2)
         print 'docs_per_topic:', lda_rslt.docs_per_topic
 
     def test_make_matrices(self):

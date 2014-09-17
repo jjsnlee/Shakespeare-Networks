@@ -46,7 +46,6 @@ def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene',
     play_ctx = png.get_plays_ctx(ctx)
     prc_ctx = ClustersCtxt(play_ctx)
     prc_ctx.preproc(by=by) # by='Char'
-    
     doc_titles, docs_content = get_doc_content(prc_ctx)
 
     t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
@@ -77,17 +76,28 @@ def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene',
 #     from gensim.models.tfidfmodel import TfidfModel
 #     tfidf_model = TfidfModel( )
 
+from clusters import ModelContext
 def create_model_ctxt(ctx='shakespeare', by='Char/Scene', ):
     play_ctx = png.get_plays_ctx(ctx)
     prc_ctx = ClustersCtxt(play_ctx)
     prc_ctx.preproc(by=by) # by='Char'
     doc_titles, docs_content = get_doc_content(prc_ctx)
-    from clusters import ModelContext
     ctxt = ModelContext(doc_titles, docs_content)
     return ctxt
 
+def doNMF():
+    from clusters import NMFResult
+    model_ctxt = create_model_ctxt(by='Char')
+    t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+    label = 'NMF-'+t
+    start = time.time()
+    model_rslt = NMFResult(label, model_ctxt, ntopics=50, npasses=200)
+    end = time.time()
+    print 'Completed:', end-start 
+    return model_rslt
+
 def doAffProp(ctx='shakespeare', by='Char/Scene', ):
-    from clusters import AffinityPropagationResult, ModelContext
+    from clusters import AffinityPropagationResult
     pass
 
 def perplexity_scores():
@@ -339,7 +349,7 @@ def process_data(prc_ctx,
 #         }
 #     return json.dumps(json_out, ensure_ascii=False)
 
-def doNMF(prc_ctx):
+def doNMF2(prc_ctx):
     #-- NMF
     mat = process_data(prc_ctx, max_df=.8) # ngram data frame
     #mat = sc.process_data(prc_ctx, max_df=.8, raw=True) # ngram data frame
