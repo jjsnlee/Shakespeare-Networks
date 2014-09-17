@@ -85,15 +85,16 @@ def create_model_ctxt(ctx='shakespeare', by='Char/Scene', ):
     ctxt = ModelContext(doc_titles, docs_content)
     return ctxt
 
-def doNMF():
+def doNMF(ntopics=50, npasses=200):
     from clusters import NMFResult
     model_ctxt = create_model_ctxt(by='Char')
     t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-    label = 'NMF-'+t
-    start = time.time()
-    model_rslt = NMFResult(label, model_ctxt, ntopics=50, npasses=200)
-    end = time.time()
-    print 'Completed:', end-start 
+    label = 'nmf-%s-%s-%s' % (t, ntopics, npasses)
+    print 'Label:', label
+    print 'Started', t
+    model_rslt = NMFResult(label, model_ctxt, ntopics=ntopics, npasses=npasses)
+    ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+    print 'Completed:', ended
     return model_rslt
 
 def doAffProp(ctx='shakespeare', by='Char/Scene', ):
