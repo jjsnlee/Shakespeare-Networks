@@ -40,6 +40,7 @@ class ModelContext(object):
                  ):
         self.doc_names = doc_nms
         self.doc_contents = doc_contents
+      
         if from_cache is None:
             self.stopwords = stopwds
         else:
@@ -75,6 +76,8 @@ class ModelContext(object):
          'doc_contents' : self.doc_contents
         }
         
+        # probably should also serialize the corpus, so we are dealing with the same exact object
+        
         json_rslt = json.dumps(data, ensure_ascii=False, #cls=PlayJSONMetadataEncoder, 
                                indent=True)
         fname = join(basedir, self.corpus_data) 
@@ -89,8 +92,9 @@ class ModelContext(object):
         ctxjson = json.loads(open(fname, 'r').read())
         doc_nms = ctxjson['doc_titles']
         doc_contents = ctxjson['doc_contents']
+        stopwds = ctxjson['stopwords']
         as_bow = True if ctxjson['vectorizer']=='BOW' else False
-        return ModelContext(doc_nms, doc_contents, from_cache=ctxjson, as_bow=as_bow)
+        return ModelContext(doc_nms, doc_contents, from_cache=ctxjson, stopwds=stopwds, as_bow=as_bow)
 
 class LDAContext(object):
     def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=True):
@@ -181,17 +185,14 @@ class LDAContext(object):
         return LDAContext(doc_nms, doc_contents, from_cache=lda_json)
 
 CACHED_LDA_RSLTS = {}
-def get_lda_rslt(lda_label, reload_ctx=False):
+def get_lda_rslt(label, reload_ctx=False, cls=None):
     global CACHED_LDA_RSLTS
-    if lda_label not in CACHED_LDA_RSLTS or reload_ctx:
-        basedir = join(get_lda_base_dir(), lda_label)
-        lda_ctxt = LDAContext.load_corpus(basedir=basedir)
-        
-        lda_model_loc = join(get_lda_base_dir(), lda_label, 'run.lda')
-        lda = LdaModel.load(lda_model_loc)
-        lda_result = LDAResult(lda_label, lda_ctxt, lda)
-        CACHED_LDA_RSLTS[lda_label] = lda_result
-    return CACHED_LDA_RSLTS[lda_label]
+    if label not in CACHED_LDA_RSLTS or reload_ctx:
+        if cls is None:
+            cls = LDAResult
+        #basedir = join(get_lda_base_dir(), lda_label)
+        CACHED_LDA_RSLTS[label] = cls.load(label)
+    return CACHED_LDA_RSLTS[label]
 
 # def get_docs_per_topic(lda, lda_ctxt):
 #     # http://stackoverflow.com/questions/20984841/topic-distribution-how-do-we-see-which-document-belong-to-which-topic-after-doi
@@ -223,6 +224,12 @@ class _ModelResult(object):
         self.model_ctxt = ctxt
         self.__termite_data = None
     @property
+    def term_topic_matrix(self):
+        return self.model.components_
+    @property
+    def num_topics(self):
+        return self.model.n_components_
+    @property
     def termite_data(self):
         if self.__termite_data is None:
             self.__termite_data = TermiteData(self)
@@ -248,14 +255,18 @@ class _ModelResult(object):
         self._ensure_basedir()
         fname = join(self.basedir, 'classifier.pkl')
         _ = joblib.dump(self.model, fname, compress=9)
-        self.ctxt.save_corpus(basedir=self.basedir)
+        self.model_ctxt.save_corpus(basedir=self.basedir)
     @classmethod
     def load(cls, label):
         basedir = join(get_lda_base_dir(), label)
         fname = join(basedir, 'classifier.pkl')
         ctxt  = ModelContext.load_corpus(basedir=basedir)
         rslt = cls(label, ctxt, model=joblib.load(fname))
+        assert rslt.model.components_.shape[1] == len(rslt.model_ctxt.get_terms()) 
         return rslt
+    @property
+    def docs_per_topic(self):
+        pass
 
 class RBMPipelineResult(_ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200):
@@ -283,8 +294,24 @@ class NMFResult(_ModelResult):
                              init=None, sparseness=None, 
                              beta=1, eta=0.1, tol=0.0001, max_iter=npasses, nls_max_iter=2000, 
                              random_state=None)
-            self.model.fit(ctxt.corpus)
+            self.H = self.model.fit_transform(ctxt.corpus)
         super(NMFResult, self).__init__(label, ctxt, model, init_model=init_model)
+
+    def save(self):
+        super(NMFResult, self).save()
+        fname = join(self.basedir, 'classifier_H.pkl')
+        _ = joblib.dump(self.model, fname, compress=9)
+
+    @classmethod
+    def load(cls, label):
+        rslt = super(NMFResult, cls).load(label)
+        basedir = join(get_lda_base_dir(), label)
+        fname = join(basedir, 'classifier_H.pkl')
+        rslt.H = joblib.load(fname)
+        return rslt
+    @property
+    def docs_per_topic(self):
+        print 'OK!'
 
 class AffinityPropagationResult(_ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
@@ -323,24 +350,26 @@ class LDAResult(_ModelResult):
         
         super(LDAResult, self).__init__(label, lda_ctxt, lda, init_model=init_model)
         self._docs_per_topic = None
-
+    
+    @property
+    def term_topic_matrix(self):
+        return self.lda.state.sstats
+    @property
+    def num_topics(self):
+        return self.lda.num_topics
     def save(self):
-        #basedir = join(get_lda_base_dir(), self.label)
-        # http://stackoverflow.com/questions/273192/check-if-a-directory-exists-and-create-it-if-necessary
-        # to handle potenital race conditions (though probably not applicable in my case).
-        # also not sure why this wouldn't be handled more robustly by the python api itself 
-#         import errno
-#         try:
-#             os.makedirs(self.basedir)
-#         except OSError as exception:
-#             if exception.errno != errno.EEXIST:
-#                 raise
         self._ensure_basedir()
-        #os.makedirs(basedir)
         self.lda_ctxt.save_corpus(basedir=self.basedir)
         self.lda.save(join(self.basedir, 'run.lda'))
         # should also save some of the state
-        
+    @classmethod
+    def load(cls, label):
+        basedir = join(get_lda_base_dir(), label)
+        lda_ctxt = LDAContext.load_corpus(basedir=basedir)
+        lda_model_loc = join(get_lda_base_dir(), label, 'run.lda')
+        lda = LdaModel.load(lda_model_loc)
+        lda_result = LDAResult(label, lda_ctxt, lda)
+        return lda_result
     def as_dataframe(self):
         return pd.DataFrame(self.lda.state.sstats, columns=self.lda_ctxt.get_terms())
     # get index location of term:
@@ -402,19 +431,14 @@ from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, ComputeSe
 class TermiteData(object):
     def __init__(self, model_rslt, from_cache=False):
         #assert(isinstance(lda_rslt, LDAResult))
-        lda = model_rslt.lda
         model_ctxt = model_rslt.model_ctxt
         
         self.model_ctxt = model_ctxt
         self.basepath = join(get_lda_base_dir(), model_rslt.label, 'termite')
 
         model = Model()
-        model.term_topic_matrix = lda.state.sstats.T
-
-        #model.topic_count = lda.num_topics
-        #model.term_count = len(model.term_index)
-        
-        model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(lda.num_topics))
+        model.term_topic_matrix = model_rslt.term_topic_matrix.T
+        model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(model_rslt.num_topics))
         model.term_index = model_ctxt.get_terms()
         self.model = model
 
@@ -430,7 +454,8 @@ class TermiteData(object):
         return [(t, c) for t,c in zip(self.model_ctxt.doc_names, self.model_ctxt.doc_contents)]
 
     def docs_tokenized_zipped(self):
-        return [(t, c) for t,c in zip(self.model_ctxt.doc_names, self.model_ctxt.doc_contents_tokenized)]
+        doc_contents_tokenized = [simple_preprocess(doc) for doc in self.model_ctxt.doc_contents]
+        return [(t, c) for t,c in zip(self.model_ctxt.doc_names, doc_contents_tokenized)]
 
     @property
     def saliency(self):

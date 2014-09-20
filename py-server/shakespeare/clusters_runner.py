@@ -82,14 +82,14 @@ def create_model_ctxt(ctx='shakespeare', by='Char/Scene', ):
     prc_ctx = ClustersCtxt(play_ctx)
     prc_ctx.preproc(by=by) # by='Char'
     doc_titles, docs_content = get_doc_content(prc_ctx)
-    ctxt = ModelContext(doc_titles, docs_content)
+    ctxt = ModelContext(doc_titles, docs_content, stopwds=_get_stopwords())
     return ctxt
 
 def doNMF(ntopics=50, npasses=200):
     from clusters import NMFResult
     model_ctxt = create_model_ctxt(by='Char')
     t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-    label = 'nmf-%s-%s-%s' % (t, ntopics, npasses)
+    label = 'nmf-char-%s-%s-%s' % (t, ntopics, npasses)
     print 'Label:', label
     print 'Started', t
     model_rslt = NMFResult(label, model_ctxt, ntopics=ntopics, npasses=npasses)
