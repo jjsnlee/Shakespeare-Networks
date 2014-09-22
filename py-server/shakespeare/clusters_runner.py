@@ -50,7 +50,7 @@ def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene',
 
     t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
     label = '%s_%s_%s_%s_lda' % (baselabel, t, ntopics, npasses)
-    basedir = join(sc.get_lda_base_dir(), label)
+    basedir = join(sc.get_models_base_dir(), label)
     os.makedirs(basedir)
     logfile = join(basedir, 'gensim.log')
     
@@ -102,7 +102,7 @@ def doAffProp(ctx='shakespeare', by='Char/Scene', ):
     pass
 
 def perplexity_scores():
-    basedir = sc.get_lda_base_dir()
+    basedir = sc.get_models_base_dir()
     rslts = {}
     for d in os.listdir(basedir):
         if d.startswith('.') or d=='old':

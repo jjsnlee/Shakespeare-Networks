@@ -30,7 +30,7 @@ def get_ts():
     ts = time.time()
     return datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 
-def get_lda_base_dir():
+def get_models_base_dir():
     return join(helper.get_dynamic_rootdir(), 'lda')
 
 class ModelContext(object):
@@ -67,7 +67,7 @@ class ModelContext(object):
 
     corpus_data = 'corpus_data.json'
     
-    def save_corpus(self, basedir=get_lda_base_dir()):
+    def save_corpus(self, basedir=get_models_base_dir()):
         data = \
         {
          'vectorizer'   : 'BOW' if self.as_bow else 'TF-IDF',
@@ -85,7 +85,7 @@ class ModelContext(object):
             fh.write(json_rslt)
 
     @classmethod
-    def load_corpus(cls, basedir=get_lda_base_dir()):
+    def load_corpus(cls, basedir=get_models_base_dir()):
         fname = join(basedir, cls.corpus_data)
         if not os.path.exists(fname):
             logger.warn('File path [%s] doesn\'t exist!', fname)
@@ -152,7 +152,7 @@ class LDAContext(object):
     lda_dict_fname = 'lda.dict'
     lda_corpus_data = 'corpus_data.json'
 
-    def save_corpus(self, basedir=get_lda_base_dir()):
+    def save_corpus(self, basedir=get_models_base_dir()):
         # corpus is just a BOW, do i need to save that? or just the doc_titles and content?
         self.dictionary.save(join(basedir, self.lda_dict_fname))
         
@@ -171,7 +171,7 @@ class LDAContext(object):
             fh.write(json_rslt)
 
     @classmethod
-    def load_corpus(cls, basedir=get_lda_base_dir()):
+    def load_corpus(cls, basedir=get_models_base_dir()):
         fname = join(basedir, cls.lda_corpus_data)
         if not os.path.exists(fname):
             logger.warn('File path [%s] doesn\'t exist!', fname)
@@ -183,16 +183,6 @@ class LDAContext(object):
         
         lda_json['dictionary'] = dictionary
         return LDAContext(doc_nms, doc_contents, from_cache=lda_json)
-
-CACHED_LDA_RSLTS = {}
-def get_lda_rslt(label, reload_ctx=False, cls=None):
-    global CACHED_LDA_RSLTS
-    if label not in CACHED_LDA_RSLTS or reload_ctx:
-        if cls is None:
-            cls = LDAResult
-        #basedir = join(get_lda_base_dir(), lda_label)
-        CACHED_LDA_RSLTS[label] = cls.load(label)
-    return CACHED_LDA_RSLTS[label]
 
 # def get_docs_per_topic(lda, lda_ctxt):
 #     # http://stackoverflow.com/questions/20984841/topic-distribution-how-do-we-see-which-document-belong-to-which-topic-after-doi
@@ -238,9 +228,9 @@ class _ModelResult(object):
         self.termite_data.data_for_client()
     @property
     def basedir(self):
-        return join(get_lda_base_dir(), self.label)
+        return join(get_models_base_dir(), self.label)
     def _ensure_basedir(self):
-        #basedir = join(get_lda_base_dir(), self.label)
+        #basedir = join(get_models_base_dir(), self.label)
         # http://stackoverflow.com/questions/273192/check-if-a-directory-exists-and-create-it-if-necessary
         # to handle potenital race conditions (though probably not applicable in my case).
         # also not sure why this wouldn't be handled more robustly by the python api itself 
@@ -258,7 +248,7 @@ class _ModelResult(object):
         self.model_ctxt.save_corpus(basedir=self.basedir)
     @classmethod
     def load(cls, label):
-        basedir = join(get_lda_base_dir(), label)
+        basedir = join(get_models_base_dir(), label)
         fname = join(basedir, 'classifier.pkl')
         ctxt  = ModelContext.load_corpus(basedir=basedir)
         rslt = cls(label, ctxt, model=joblib.load(fname))
@@ -296,22 +286,40 @@ class NMFResult(_ModelResult):
                              random_state=None)
             self.H = self.model.fit_transform(ctxt.corpus)
         super(NMFResult, self).__init__(label, ctxt, model, init_model=init_model)
-
+        self._docs_per_topic = None
+        self._topics_per_doc = None
     def save(self):
         super(NMFResult, self).save()
         fname = join(self.basedir, 'classifier_H.pkl')
-        _ = joblib.dump(self.model, fname, compress=9)
-
+        _ = joblib.dump(self.H, fname, compress=9)
     @classmethod
     def load(cls, label):
         rslt = super(NMFResult, cls).load(label)
-        basedir = join(get_lda_base_dir(), label)
+        basedir = join(get_models_base_dir(), label)
         fname = join(basedir, 'classifier_H.pkl')
         rslt.H = joblib.load(fname)
         return rslt
     @property
+    def topics_per_doc(self):
+        if self._topics_per_doc is None:
+            self.docs_per_topic
+        return self._topics_per_doc
+    @property
     def docs_per_topic(self):
-        print 'OK!'
+        if self._docs_per_topic is None:
+            d1 = {}
+            d2 = {}
+            doc_nms = self.model_ctxt.doc_names
+            corpus_scores = self.H
+            for scores, doc_nm in zip(corpus_scores, doc_nms):
+                #print 'j:', doc_nm, 'i:', i
+                for topic, score in enumerate(scores):
+                    if score>0:
+                        d1.setdefault(topic, []).append((doc_nm, score))
+                        d2.setdefault(doc_nm, []).append((topic, score))
+            self._docs_per_topic = d1
+            self._topics_per_doc = d2
+        return self._docs_per_topic
 
 class AffinityPropagationResult(_ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
@@ -364,9 +372,9 @@ class LDAResult(_ModelResult):
         # should also save some of the state
     @classmethod
     def load(cls, label):
-        basedir = join(get_lda_base_dir(), label)
+        basedir = join(get_models_base_dir(), label)
         lda_ctxt = LDAContext.load_corpus(basedir=basedir)
-        lda_model_loc = join(get_lda_base_dir(), label, 'run.lda')
+        lda_model_loc = join(get_models_base_dir(), label, 'run.lda')
         lda = LdaModel.load(lda_model_loc)
         lda_result = LDAResult(label, lda_ctxt, lda)
         return lda_result
@@ -390,12 +398,15 @@ class LDAResult(_ModelResult):
     def docs_per_topic(self):
         if self._docs_per_topic is None:
             d = {}
-            # in LDAModel, it is effectively recalculated the doc score
+            # in LDAModel, it is effectively recalculating the doc score
             # by calling inference(), which is called during the expectation
             # phase of the training
             corpus_scores = self.lda[self.corpus]
             for scores, doc_nm in zip(corpus_scores, self.doc_names):
                 #print 'j:', doc_nm, 'i:', i
+                # scores will look like (idx, score):
+                # (2, 0.13756479927604343),
+                # (3, 0.081981422061639414)
                 for score in scores:
                     topic = score[0]
                     d.setdefault(topic, []).append((doc_nm, score[1]))
@@ -425,6 +436,33 @@ def perplexity_score(logfile):
         # -12.572 per-word bound, 6088.5 perplexity
     return ppx_scores
 
+CACHED_MODEL_RSLTS = {}
+def get_lda_rslt(label, reload_ctx=False, cls=None):
+    global CACHED_MODEL_RSLTS
+    if label not in CACHED_MODEL_RSLTS or reload_ctx:
+        if cls is None:
+            cls = LDAResult
+        
+        basedir = join(get_models_base_dir(), label)
+        if not os.path.exists(basedir):
+            pass
+        
+        CACHED_MODEL_RSLTS[label] = cls.load(label)
+    return CACHED_MODEL_RSLTS[label]
+
+MODEL_KEYS = {
+  'shakespeare-char-scene-bow-100-50'    : 'char_scene-bow_2014-06-29_19.49.11_100_50_lda',
+  'shakespeare-char-scene-tfidf-50-50'   : 'char-scene-tfidf_2014-08-24_23.04.15_50_50_lda',
+  'shakespeare-char-scene-tfidf-50-50-v2': 'char-scene-tfidf_2014-08-26_00.43.50_50_50_lda',
+  
+  'shakespeare-char-scene-tfidf-50-100'  : 'char-scene-tfidf_2014-08-26_01.47.56_50_100_lda',
+  'shakespeare-char-scene-tfidf-50-200'  : 'char-scene-tfidf_2014-08-29_23.00.09_50_200_lda',
+  'shakespeare-char-scene-bow-50-200'    : 'char-scene-bow_2014-08-30_14.32.36_50_200_lda',
+
+  'shakespeare-char-nmf-50-250'          : ('nmf-char-2014-09-20_02.06.43-50-250', NMFResult),
+  'shakespeare-char-nmf-50-200'          : ('nmf-char-2014-09-20_03.22.31-50-200', NMFResult),
+}
+
 from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, ComputeSeriation, \
     ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer
 
@@ -434,7 +472,7 @@ class TermiteData(object):
         model_ctxt = model_rslt.model_ctxt
         
         self.model_ctxt = model_ctxt
-        self.basepath = join(get_lda_base_dir(), model_rslt.label, 'termite')
+        self.basepath = join(get_models_base_dir(), model_rslt.label, 'termite')
 
         model = Model()
         model.term_topic_matrix = model_rslt.term_topic_matrix.T

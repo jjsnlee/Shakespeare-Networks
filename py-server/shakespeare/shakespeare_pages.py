@@ -4,9 +4,8 @@ from os.path import join
 import helper
 from plays_n_graphs import get_plays_ctx, init_play_imgs
 from plays_transform import PlayJSONMetadataEncoder
-from clusters import get_lda_rslt
-import logging
 
+import logging
 logging.basicConfig(level=logging.DEBUG)
 logger = helper.setup_sysout_handler(__name__)
 
@@ -141,24 +140,17 @@ class CorpusDataJsonHandler:
             Expected format:
                 /shakespeare/corpus/lda/[LDA Model Name]/[Topic #]
         """
-        ldaModel = path_elmts[3]
+        import clusters
+        topic_model = path_elmts[3]
         which_topic = path_elmts[4]
         logger.debug('which_topic: %s', which_topic)
         
-        LDA_KEYS = {
-          'shakespeare-char-scene-bow-100-50'    : 'char_scene-bow_2014-06-29_19.49.11_100_50_lda',
-          'shakespeare-char-scene-tfidf-50-50'   : 'char-scene-tfidf_2014-08-24_23.04.15_50_50_lda',
-          'shakespeare-char-scene-tfidf-50-50-v2': 'char-scene-tfidf_2014-08-26_00.43.50_50_50_lda',
-          
-          'shakespeare-char-scene-tfidf-50-100'  : 'char-scene-tfidf_2014-08-26_01.47.56_50_100_lda',
-          'shakespeare-char-scene-tfidf-50-200'  : 'char-scene-tfidf_2014-08-29_23.00.09_50_200_lda',
-          'shakespeare-char-scene-bow-50-200'    : 'char-scene-bow_2014-08-30_14.32.36_50_200_lda'
-        }
-        
-        lda_key = LDA_KEYS.get(ldaModel)
-        
-        lda_rslt = get_lda_rslt(lda_key)
-        topic_info = lda_rslt.docs_per_topic[int(which_topic)]
+        model_key = clusters.MODEL_KEYS.get(topic_model)
+        cls = None
+        if type(model_key)==tuple:
+            model_key, cls = model_key
+        model_rslt = clusters.get_lda_rslt(model_key, cls=cls)
+        topic_info = model_rslt.docs_per_topic[int(which_topic)]
         #logger.debug('topic_info: %s', topic_info)
         
         topic_json = json.dumps(topic_info, ensure_ascii=False)
@@ -227,7 +219,7 @@ class CorpusDataJsonHandler:
         }
         char_json = json.dumps(char_data, ensure_ascii=False)
         return char_json
-        
+
 DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
 
 def get_play_data_json(req, play_set):
