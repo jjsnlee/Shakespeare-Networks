@@ -57,8 +57,9 @@ class CorpusDataJsonHandler:
         return {
            'sceneSummary' : cls.handle_scene_summary,
            #'sceneDetail'  : cls.handle_scene_detail,
-           'lda'          : cls.handle_LDA,
-           'characters'   : cls.handle_chardata
+           #'lda'          : cls.handle_LDA,
+           'characters'   : cls.handle_chardata,
+           'topicModels'  : cls.handle_topic_models
         }
     
     @classmethod
@@ -135,25 +136,59 @@ class CorpusDataJsonHandler:
 #         return all_json_rslt
 
     @classmethod
-    def handle_LDA(cls, play_data_ctx, path_elmts):
+    def handle_topic_models(cls, play_data_ctx, path_elmts):
         """
             Expected format:
-                /shakespeare/corpus/lda/[LDA Model Name]/[Topic #]
+            /shakespeare/corpus/topicModels : 
+                Get All Topic Models
+            /shakespeare/corpus/topicModels/[Topic Model Name]/[Topic #] :
+                Specific Topic Info
+            /shakespeare/corpus/topicModels/[Topic Model Name]/termite/*.json :
+                static termite json info
         """
         import clusters
-        topic_model = path_elmts[3]
-        which_topic = path_elmts[4]
-        logger.debug('which_topic: %s', which_topic)
-        
-        model_key = clusters.MODEL_KEYS.get(topic_model)
-        cls = None
-        if type(model_key)==tuple:
-            model_key, cls = model_key
-        model_rslt = clusters.get_lda_rslt(model_key, cls=cls)
-        topic_info = model_rslt.docs_per_topic[int(which_topic)]
-        #logger.debug('topic_info: %s', topic_info)
-        
-        topic_json = json.dumps(topic_info, ensure_ascii=False)
+        MODEL_KEYS = {
+          'char-scene-bow-LDA-100-50'    : 'lda-char-scene-bow_2014-06-29_19.49.11_100_50',
+          'char-scene-bow-LDA-50-200'    : 'lda-char-scene-bow_2014-08-30_14.32.36_50_200',
+
+          'char-scene-tfidf-LDA-50-50'   : 'lda-char-scene-tfidf_2014-08-24_23.04.15_50_50',
+          'char-scene-tfidf-LDA-50-50-v2': 'lda-char-scene-tfidf_2014-08-26_00.43.50_50_50',
+          'char-scene-tfidf-LDA-50-100'  : 'lda-char-scene-tfidf_2014-08-26_01.47.56_50_100',
+          'char-scene-tfidf-LDA-50-200'  : 'lda-char-scene-tfidf_2014-08-29_23.00.09_50_200',
+          
+          'char-bow-LDA-50-200'          : 'lda-char-bow_2014-09-21_23.33.07_50_200',
+          'char-bow-NMF-50-250'          : ('nmf-char-2014-09-20_02.06.43-50-250', clusters.NMFResult),
+          'char-bow-NMF-50-200'          : ('nmf-char-2014-09-20_03.22.31-50-200', clusters.NMFResult),
+        }
+
+        if len(path_elmts)==3:
+            topics = MODEL_KEYS.keys()
+            print 'TOPICS:', topics
+            topics.sort()
+            topic_json = json.dumps(topics, ensure_ascii=False)
+        else:
+            topic_model = path_elmts[3]
+            topic_context = path_elmts[4]
+            model_key = MODEL_KEYS.get(topic_model)
+            cls = None
+            if type(model_key)==tuple:
+                model_key, cls = model_key
+            
+            #logger.debug('which_topic: %s', which_topic)
+            
+            if topic_context=='termite':
+                json_file = path_elmts[5]
+                fname = join(clusters.get_models_base_dir(), 
+                             model_key, 'termite', 'public_html', json_file)
+                topic_json = open(fname, 'r').read()
+                #print 'topic_json:', topic_json
+            else:
+                which_topic = topic_context
+                logger.debug('which_topic: %s', which_topic)
+                model_rslt = clusters.get_lda_rslt(model_key, cls=cls)
+                topic_info = model_rslt.docs_per_topic[int(which_topic)]
+                #logger.debug('topic_info: %s', topic_info)
+                topic_json = json.dumps(topic_info, ensure_ascii=False)
         return topic_json
 
     @classmethod
@@ -203,7 +238,6 @@ class CorpusDataJsonHandler:
                 curr = []
                 char_lines.append(curr)
             li = str(cl)
-            #li = li.replace('France', '<yellow>France</yellow>')
             curr.append(li)
             prev = cl
 

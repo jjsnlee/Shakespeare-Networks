@@ -192,27 +192,10 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
 	  $scope.LDAModel = $scope.LDAModels[0];
 	  loadPage($scope.LDAModel);
 	  $scope.$$childHead.setModels($scope.getModels());
-  });
-
-/*
-	$http.get('/shakespeare/corpus/topicModels').success(function(data) {
-	  // initialize parent and state model where needed
-	  $scope.LDAModels = [
-	    'shakespeare-char-nmf-50-200',
-	    //'shakespeare-char-nmf-50-250',
-	    'shakespeare-char-scene-bow-50-200',
-	    'shakespeare-char-scene-tfidf-50-200',
-	    'shakespeare-char-scene-tfidf-50-100',
-	    'shakespeare-char-scene-tfidf-50-50',
-	    'shakespeare-char-scene-tfidf-50-50-v2',
-	    'shakespeare-char-scene-bow-100-50'
-	  ];
 	}).error(function(data) {
 	  $scope.LDAModels = ['Error loading models...'];
-	  //var content = $sce.trustAsHtml(data);
-	  //$scope.docContent = content;
+	  $scope.LDAModel = $scope.LDAModels[0];
 	});
-*/
 });
 </script>
 
