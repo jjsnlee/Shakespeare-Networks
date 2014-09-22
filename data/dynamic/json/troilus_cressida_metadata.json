@@ -3,859 +3,1003 @@
  "acts": [
   [
    {
+    "total_lines": 119, 
+    "deg_assort_coeff": -0.69024856596558315, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Troy. Before Priam's palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/troilus_cressida_1_1.png", 
     "char_data": {
      "TROILUS": {
       "ratio": 38.0, 
-      "nlines": 76, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 76
      }, 
      "PANDARUS": {
       "ratio": 38.0, 
-      "nlines": 38, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 38
      }, 
      "AENEAS": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }
     }, 
-    "location": "Troy. Before Priam's palace.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 296, 
+    "deg_assort_coeff": -0.5754146034740234, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The Same. A street.", 
+    "act": "1", 
     "graph_img_f": "imgs/troilus_cressida_1_2.png", 
     "char_data": {
      "Boy": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "PANDARUS": {
       "ratio": 50.0, 
-      "nlines": 150, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 150
      }, 
      "CRESSIDA": {
       "ratio": 55.0, 
-      "nlines": 110, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 110
      }, 
      "ALEXANDER": {
       "ratio": 17.0, 
-      "nlines": 34, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 34
      }
     }, 
-    "location": "The Same. A street.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 406, 
+    "deg_assort_coeff": -0.46006278339728357, 
+    "density": 0.7, 
+    "scene": "3", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The Grecian camp. Before Agamemnon's tent.", 
+    "act": "1", 
     "graph_img_f": "imgs/troilus_cressida_1_3.png", 
     "char_data": {
      "AGAMEMNON": {
       "ratio": 16.75, 
-      "nlines": 67, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 67
      }, 
      "NESTOR": {
       "ratio": 31.67, 
-      "nlines": 95, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 95
      }, 
      "MENELAUS": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "ULYSSES": {
       "ratio": 60.33, 
-      "nlines": 181, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 181
      }, 
      "AENEAS": {
       "ratio": 20.33, 
-      "nlines": 61, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 61
      }
     }, 
-    "location": "The Grecian camp. Before Agamemnon's tent.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.7
    }
   ], 
   [
    {
+    "total_lines": 131, 
+    "deg_assort_coeff": -0.36496777973052164, 
+    "density": 0.8333333333333334, 
+    "scene": "1", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "A part of the Grecian camp.", 
+    "act": "2", 
     "graph_img_f": "imgs/troilus_cressida_2_1.png", 
     "char_data": {
      "ACHILLES": {
       "ratio": 8.67, 
-      "nlines": 26, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 26
      }, 
      "AJAX": {
       "ratio": 13.5, 
-      "nlines": 27, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 27
      }, 
      "THERSITES": {
       "ratio": 25.0, 
-      "nlines": 75, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 75
      }, 
      "PATROCLUS": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }
     }, 
-    "location": "A part of the Grecian camp.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 224, 
+    "deg_assort_coeff": -0.40542907180385146, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Troy. A room in Priam's palace.", 
+    "act": "2", 
     "graph_img_f": "imgs/troilus_cressida_2_2.png", 
     "char_data": {
      "PARIS": {
       "ratio": 10.0, 
-      "nlines": 30, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 30
      }, 
      "PRIAM": {
       "ratio": 3.0, 
-      "nlines": 12, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 12
      }, 
      "HECTOR": {
       "ratio": 19.25, 
-      "nlines": 77, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 77
      }, 
      "TROILUS": {
       "ratio": 17.4, 
-      "nlines": 87, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 87
      }, 
      "HELENUS": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "CASSANDRA": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }
     }, 
-    "location": "Troy. A room in Priam's palace.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.6944444444444445
    }, 
    {
+    "total_lines": 278, 
+    "deg_assort_coeff": -0.10950771759978344, 
+    "density": 0.5, 
+    "scene": "3", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.6785714285714286, 
+    "location": "The Grecian camp. Before Achilles' tent.", 
+    "act": "2", 
     "graph_img_f": "imgs/troilus_cressida_2_3.png", 
     "char_data": {
      "AGAMEMNON": {
       "ratio": 15.0, 
-      "nlines": 60, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 60
      }, 
      "ULYSSES": {
       "ratio": 15.8, 
-      "nlines": 79, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 79
      }, 
      "PATROCLUS": {
       "ratio": 4.75, 
-      "nlines": 19, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 19
      }, 
      "DIOMEDES": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "AJAX": {
       "ratio": 6.25, 
-      "nlines": 25, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 25
      }, 
      "ACHILLES": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "THERSITES": {
       "ratio": 19.33, 
-      "nlines": 58, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 58
      }, 
      "NESTOR": {
       "ratio": 7.0, 
-      "nlines": 21, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 21
      }
     }, 
-    "location": "The Grecian camp. Before Achilles' tent.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.7291666666666666
    }
   ], 
   [
    {
+    "total_lines": 154, 
+    "deg_assort_coeff": -0.60152639895060067, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Troy. Priam's palace.", 
+    "act": "3", 
     "graph_img_f": "imgs/troilus_cressida_3_1.png", 
     "char_data": {
      "Servant": {
       "ratio": 19.0, 
-      "nlines": 19, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 19
      }, 
      "PARIS": {
       "ratio": 13.5, 
-      "nlines": 27, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 27
      }, 
      "PANDARUS": {
       "ratio": 28.0, 
-      "nlines": 84, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 84
      }, 
      "HELEN": {
       "ratio": 12.0, 
-      "nlines": 24, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 24
      }
     }, 
-    "location": "Troy. Priam's palace.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 216, 
+    "deg_assort_coeff": 0.1865546218487395, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The same. Pandarus' orchard.", 
+    "act": "3", 
     "graph_img_f": "imgs/troilus_cressida_3_2.png", 
     "char_data": {
      "Boy": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "PANDARUS": {
       "ratio": 19.67, 
-      "nlines": 59, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 59
      }, 
      "CRESSIDA": {
       "ratio": 34.0, 
-      "nlines": 68, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 68
      }, 
      "TROILUS": {
       "ratio": 44.0, 
-      "nlines": 88, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 88
      }
     }, 
-    "location": "The same. Pandarus' orchard.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 330, 
+    "deg_assort_coeff": -0.16821104670839349, 
+    "density": 0.3111111111111111, 
+    "scene": "3", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.8444444444444446, 
+    "location": "The Grecian camp. Before Achilles' tent.", 
+    "act": "3", 
     "graph_img_f": "imgs/troilus_cressida_3_3.png", 
     "char_data": {
      "AGAMEMNON": {
       "ratio": 3.0, 
-      "nlines": 15, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 15
      }, 
      "ULYSSES": {
       "ratio": 31.25, 
-      "nlines": 125, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 125
      }, 
      "PATROCLUS": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }, 
      "DIOMEDES": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "CALCHAS": {
       "ratio": 29.0, 
-      "nlines": 29, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 29
      }, 
      "AJAX": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "MENELAUS": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "ACHILLES": {
       "ratio": 10.71, 
-      "nlines": 75, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 75
      }, 
      "THERSITES": {
       "ratio": 22.5, 
-      "nlines": 45, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 45
      }, 
      "NESTOR": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "The Grecian camp. Before Achilles' tent.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.46571428571428575
    }
   ], 
   [
    {
+    "total_lines": 86, 
+    "deg_assort_coeff": -0.36029411764706082, 
+    "density": 0.8333333333333334, 
+    "scene": "1", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "Troy. A street.", 
+    "act": "4", 
     "graph_img_f": "imgs/troilus_cressida_4_1.png", 
     "char_data": {
      "PARIS": {
       "ratio": 10.67, 
-      "nlines": 32, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 32
      }, 
      "DEIPHOBUS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "DIOMEDES": {
       "ratio": 16.0, 
-      "nlines": 32, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 32
      }, 
      "AENEAS": {
       "ratio": 7.0, 
-      "nlines": 21, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 21
      }
     }, 
-    "location": "Troy. A street.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 123, 
+    "deg_assort_coeff": -0.11396586529638619, 
+    "density": 0.8333333333333334, 
+    "scene": "2", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The same. Court of Pandarus' house.", 
+    "act": "4", 
     "graph_img_f": "imgs/troilus_cressida_4_2.png", 
     "char_data": {
      "TROILUS": {
       "ratio": 7.0, 
-      "nlines": 21, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 21
      }, 
      "PANDARUS": {
       "ratio": 10.67, 
-      "nlines": 32, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 32
      }, 
      "AENEAS": {
       "ratio": 11.0, 
-      "nlines": 22, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 22
      }, 
      "CRESSIDA": {
       "ratio": 24.0, 
-      "nlines": 48, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 48
      }
     }, 
-    "location": "The same. Court of Pandarus' house.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 15, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The same. Street before Pandarus' house.", 
+    "act": "4", 
     "graph_img_f": "imgs/troilus_cressida_4_3.png", 
     "char_data": {
      "PARIS": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }, 
      "TROILUS": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }
     }, 
-    "location": "The same. Street before Pandarus' house.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 165, 
+    "deg_assort_coeff": -0.1294857160727404, 
+    "density": 0.42857142857142855, 
+    "scene": "4", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.7142857142857142, 
+    "location": "The same. Pandarus' house.", 
+    "act": "4", 
     "graph_img_f": "imgs/troilus_cressida_4_4.png", 
     "char_data": {
      "AENEAS": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "PARIS": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "PANDARUS": {
       "ratio": 9.0, 
-      "nlines": 18, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 18
      }, 
      "DIOMEDES": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "DEIPHOBUS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "TROILUS": {
       "ratio": 19.0, 
-      "nlines": 95, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 95
      }, 
      "CRESSIDA": {
       "ratio": 13.0, 
-      "nlines": 26, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 26
      }
     }, 
-    "location": "The same. Pandarus' house.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.6476190476190476
    }, 
    {
+    "total_lines": 333, 
+    "deg_assort_coeff": -0.21794268797398028, 
+    "density": 0.47435897435897434, 
+    "scene": "5", 
+    "total_degrees": 37, 
+    "avg_shortest_path": 1.5512820512820513, 
+    "location": "The Grecian camp. Lists set out.", 
+    "act": "4", 
     "graph_img_f": "imgs/troilus_cressida_4_5.png", 
     "char_data": {
      "ALL": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "AENEAS": {
       "ratio": 4.17, 
-      "nlines": 25, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 25
      }, 
      "AGAMEMNON": {
       "ratio": 4.0, 
-      "nlines": 40, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 40
      }, 
      "ULYSSES": {
       "ratio": 6.5, 
-      "nlines": 65, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 65
      }, 
      "PATROCLUS": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "AJAX": {
       "ratio": 4.4, 
-      "nlines": 22, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 22
      }, 
      "HECTOR": {
       "ratio": 9.88, 
-      "nlines": 79, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 79
      }, 
      "DIOMEDES": {
       "ratio": 1.33, 
-      "nlines": 8, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 8
      }, 
      "MENELAUS": {
       "ratio": 1.8, 
-      "nlines": 9, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 9
      }, 
      "ACHILLES": {
       "ratio": 4.33, 
-      "nlines": 26, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 26
      }, 
      "TROILUS": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "NESTOR": {
       "ratio": 4.0, 
-      "nlines": 28, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 28
      }, 
      "CRESSIDA": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }
     }, 
-    "location": "The Grecian camp. Lists set out.", 
-    "scene": "5", 
-    "act": "4"
+    "avg_clustering": 0.7131257631257631
    }
   ], 
   [
    {
+    "total_lines": 114, 
+    "deg_assort_coeff": 0.13814999141925613, 
+    "density": 0.4, 
+    "scene": "1", 
+    "total_degrees": 18, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "The Grecian camp. Before Achilles' tent.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_1.png", 
     "char_data": {
      "AGAMEMNON": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "ULYSSES": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "PATROCLUS": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "DIOMEDES": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "HECTOR": {
       "ratio": 0.75, 
-      "nlines": 6, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 6
      }, 
      "AJAX": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "MENELAUS": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "ACHILLES": {
       "ratio": 4.17, 
-      "nlines": 25, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 25
      }, 
      "TROILUS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "THERSITES": {
       "ratio": 14.0, 
-      "nlines": 56, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 56
      }
     }, 
-    "location": "The Grecian camp. Before Achilles' tent.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.6185714285714285
    }, 
    {
+    "total_lines": 63, 
+    "deg_assort_coeff": -0.98461538461538467, 
+    "density": 0.5, 
+    "scene": "10", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.5, 
+    "location": "Another part of the plains.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_10.png", 
     "char_data": {
      "TROILUS": {
       "ratio": 11.0, 
-      "nlines": 33, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 33
      }, 
      "ALL": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "AENEAS": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "PANDARUS": {
       "ratio": 25.0, 
-      "nlines": 25, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 25
      }
     }, 
-    "location": "Another part of the plains.", 
-    "scene": "10", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 228, 
+    "deg_assort_coeff": -0.30438202247191287, 
+    "density": 0.6190476190476191, 
+    "scene": "2", 
+    "total_degrees": 13, 
+    "avg_shortest_path": 1.380952380952381, 
+    "location": "The same. Before Calchas' tent.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_2.png", 
     "char_data": {
      "AENEAS": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "ULYSSES": {
       "ratio": 6.0, 
-      "nlines": 30, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 30
      }, 
      "CALCHAS": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "DIOMEDES": {
       "ratio": 7.25, 
-      "nlines": 29, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 29
      }, 
      "TROILUS": {
       "ratio": 18.4, 
-      "nlines": 92, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 92
      }, 
      "THERSITES": {
       "ratio": 5.25, 
-      "nlines": 21, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 21
      }, 
      "CRESSIDA": {
       "ratio": 12.5, 
-      "nlines": 50, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 50
      }
     }, 
-    "location": "The same. Before Calchas' tent.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.5952380952380952
    }, 
    {
+    "total_lines": 133, 
+    "deg_assort_coeff": -0.42878338278931555, 
+    "density": 0.6, 
+    "scene": "3", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.4666666666666666, 
+    "location": "Troy. Before Priam's palace.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_3.png", 
     "char_data": {
      "ANDROMACHE": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "PANDARUS": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }, 
      "PRIAM": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "HECTOR": {
       "ratio": 9.5, 
-      "nlines": 38, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 38
      }, 
      "TROILUS": {
       "ratio": 9.0, 
-      "nlines": 36, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 36
      }, 
      "CASSANDRA": {
       "ratio": 6.25, 
-      "nlines": 25, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 25
      }
     }, 
-    "location": "Troy. Before Priam's palace.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.6388888888888888
    }, 
    {
+    "total_lines": 42, 
+    "deg_assort_coeff": -0.30909090909090908, 
+    "density": 0.6666666666666666, 
+    "scene": "4", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Plains between Troy and the Grecian camp.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_4.png", 
     "char_data": {
      "TROILUS": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "THERSITES": {
       "ratio": 10.67, 
-      "nlines": 32, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 32
      }, 
      "DIOMEDES": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "HECTOR": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }
     }, 
-    "location": "Plains between Troy and the Grecian camp.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 58, 
+    "deg_assort_coeff": -0.45454545454545453, 
+    "density": 0.38095238095238093, 
+    "scene": "5", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.8095238095238095, 
+    "location": "Another part of the plains.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_5.png", 
     "char_data": {
      "AGAMEMNON": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "ULYSSES": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "Servant": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "DIOMEDES": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "AJAX": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "ACHILLES": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "NESTOR": {
       "ratio": 4.0, 
-      "nlines": 16, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 16
      }
     }, 
-    "location": "Another part of the plains.", 
-    "scene": "5", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 44, 
+    "deg_assort_coeff": -0.29032258064516814, 
+    "density": 0.5, 
+    "scene": "6", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.7, 
+    "location": "Another part of the plains.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_6.png", 
     "char_data": {
      "HECTOR": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "TROILUS": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "AJAX": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "DIOMEDES": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "ACHILLES": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }
     }, 
-    "location": "Another part of the plains.", 
-    "scene": "6", 
-    "act": "5"
+    "avg_clustering": 0.4666666666666666
    }, 
    {
+    "total_lines": 29, 
+    "deg_assort_coeff": -0.52941176470588236, 
+    "density": 0.6666666666666666, 
+    "scene": "7", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another part of the plains.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_7.png", 
     "char_data": {
      "MARGARELON": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "ACHILLES": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "THERSITES": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }
     }, 
-    "location": "Another part of the plains.", 
-    "scene": "7", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 28, 
+    "deg_assort_coeff": -0.92592592592592593, 
+    "density": 0.6666666666666666, 
+    "scene": "8", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another part of the plains.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_8.png", 
     "char_data": {
      "HECTOR": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "ACHILLES": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }, 
      "MYRMIDONS": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }
     }, 
-    "location": "Another part of the plains.", 
-    "scene": "8", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 12, 
+    "deg_assort_coeff": -1, 
+    "density": 0.6666666666666666, 
+    "scene": "9", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another part of the plains.", 
+    "act": "5", 
     "graph_img_f": "imgs/troilus_cressida_5_9.png", 
     "char_data": {
      "DIOMEDES": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "NESTOR": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "AGAMEMNON": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "AJAX": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "Another part of the plains.", 
-    "scene": "9", 
-    "act": "5"
+    "avg_clustering": 0.0
    }
   ]
  ], 
@@ -893,170 +1037,170 @@
  "char_data": {
   "MENELAUS": {
    "ratio": 2.8, 
+   "degrees": 5, 
    "nlines": 14, 
-   "nedges": 5, 
    "order_app": 9
   }, 
   "HELENUS": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 16
   }, 
   "Servant": {
    "ratio": 7.33, 
+   "degrees": 3, 
    "nlines": 22, 
-   "nedges": 3, 
    "order_app": 20
   }, 
   "ULYSSES": {
    "ratio": 38.38, 
+   "degrees": 13, 
    "nlines": 499, 
-   "nedges": 13, 
    "order_app": 8
   }, 
   "HECTOR": {
    "ratio": 16.07, 
+   "degrees": 14, 
    "nlines": 225, 
-   "nedges": 14, 
    "order_app": 15
   }, 
   "DIOMEDES": {
    "ratio": 8.31, 
+   "degrees": 13, 
    "nlines": 108, 
-   "nedges": 13, 
    "order_app": 19
   }, 
   "TROILUS": {
    "ratio": 37.4, 
+   "degrees": 15, 
    "nlines": 561, 
-   "nedges": 15, 
    "order_app": 0
   }, 
   "NESTOR": {
    "ratio": 20.63, 
+   "degrees": 8, 
    "nlines": 165, 
-   "nedges": 8, 
    "order_app": 7
   }, 
   "ANDROMACHE": {
    "ratio": 8.0, 
+   "degrees": 2, 
    "nlines": 16, 
-   "nedges": 2, 
    "order_app": 25
   }, 
   "Boy": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 5
   }, 
   "AENEAS": {
    "ratio": 13.73, 
+   "degrees": 11, 
    "nlines": 151, 
-   "nedges": 11, 
    "order_app": 2
   }, 
   "PARIS": {
    "ratio": 12.63, 
+   "degrees": 8, 
    "nlines": 101, 
-   "nedges": 8, 
    "order_app": 18
   }, 
   "CALCHAS": {
    "ratio": 10.67, 
+   "degrees": 3, 
    "nlines": 32, 
-   "nedges": 3, 
    "order_app": 22
   }, 
   "MYRMIDONS": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 27
   }, 
   "AJAX": {
    "ratio": 10.22, 
+   "degrees": 9, 
    "nlines": 92, 
-   "nedges": 9, 
    "order_app": 10
   }, 
   "ACHILLES": {
    "ratio": 18.55, 
+   "degrees": 11, 
    "nlines": 204, 
-   "nedges": 11, 
    "order_app": 12
   }, 
   "THERSITES": {
    "ratio": 30.2, 
+   "degrees": 10, 
    "nlines": 302, 
-   "nedges": 10, 
    "order_app": 11
   }, 
   "MARGARELON": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 26
   }, 
   "ALL": {
    "ratio": 0.67, 
+   "degrees": 3, 
    "nlines": 2, 
-   "nedges": 3, 
    "order_app": 24
   }, 
   "AGAMEMNON": {
    "ratio": 14.64, 
+   "degrees": 14, 
    "nlines": 205, 
-   "nedges": 14, 
    "order_app": 6
   }, 
   "PATROCLUS": {
    "ratio": 11.33, 
+   "degrees": 6, 
    "nlines": 68, 
-   "nedges": 6, 
    "order_app": 13
   }, 
   "PANDARUS": {
    "ratio": 51.88, 
+   "degrees": 8, 
    "nlines": 415, 
-   "nedges": 8, 
    "order_app": 1
   }, 
   "PRIAM": {
    "ratio": 5.25, 
+   "degrees": 4, 
    "nlines": 21, 
-   "nedges": 4, 
    "order_app": 14
   }, 
   "HELEN": {
    "ratio": 12.0, 
+   "degrees": 2, 
    "nlines": 24, 
-   "nedges": 2, 
    "order_app": 21
   }, 
   "DEIPHOBUS": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 23
   }, 
   "ALEXANDER": {
    "ratio": 17.0, 
+   "degrees": 2, 
    "nlines": 34, 
-   "nedges": 2, 
    "order_app": 4
   }, 
   "CRESSIDA": {
    "ratio": 39.13, 
+   "degrees": 8, 
    "nlines": 313, 
-   "nedges": 8, 
    "order_app": 3
   }, 
   "CASSANDRA": {
    "ratio": 9.75, 
+   "degrees": 4, 
    "nlines": 39, 
-   "nedges": 4, 
    "order_app": 17
   }
  }, 

@@ -3,624 +3,738 @@
  "acts": [
   [
    {
+    "total_lines": 109, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "London. The palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/1henryiv_1_1.png", 
     "char_data": {
      "KING HENRY IV": {
       "ratio": 75.0, 
-      "nlines": 75, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 75
      }, 
      "WESTMORELAND": {
       "ratio": 34.0, 
-      "nlines": 34, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 34
      }
     }, 
-    "location": "London. The palace.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 210, 
+    "deg_assort_coeff": -0.50000000000000022, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "London. An apartment of the Prince's.", 
+    "act": "1", 
     "graph_img_f": "imgs/1henryiv_1_2.png", 
     "char_data": {
      "POINS": {
       "ratio": 23.5, 
-      "nlines": 47, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 47
      }, 
      "FALSTAFF": {
       "ratio": 40.0, 
-      "nlines": 80, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 80
      }, 
      "PRINCE HENRY": {
       "ratio": 41.5, 
-      "nlines": 83, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 83
      }
     }, 
-    "location": "London. An apartment of the Prince's.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 319, 
+    "deg_assort_coeff": -0.20317185313520358, 
+    "density": 0.8, 
+    "scene": "3", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "London. The palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/1henryiv_1_3.png", 
     "char_data": {
      "KING HENRY IV": {
       "ratio": 12.0, 
-      "nlines": 48, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 48
      }, 
      "HOTSPUR": {
       "ratio": 43.25, 
-      "nlines": 173, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 173
      }, 
      "NORTHUMBERLAND": {
       "ratio": 9.0, 
-      "nlines": 27, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 27
      }, 
      "SIR WALTER BLUNT": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "EARL OF WORCESTER": {
       "ratio": 21.33, 
-      "nlines": 64, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 64
      }
     }, 
-    "location": "London. The palace.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.8666666666666666
    }
   ], 
   [
    {
+    "total_lines": 97, 
+    "deg_assort_coeff": -0.24338624338624446, 
+    "density": 0.5, 
+    "scene": "1", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.6, 
+    "location": "Rochester. An inn yard.", 
+    "act": "2", 
     "graph_img_f": "imgs/1henryiv_2_1.png", 
     "char_data": {
      "Ostler": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "GADSHILL": {
       "ratio": 13.33, 
-      "nlines": 40, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 40
      }, 
      "First Carrier": {
       "ratio": 7.33, 
-      "nlines": 22, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 22
      }, 
      "Chamberlain": {
       "ratio": 17.0, 
-      "nlines": 17, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 17
      }, 
      "Second Carrier": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }
     }, 
-    "location": "Rochester. An inn yard.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.3333333333333333
    }, 
    {
+    "total_lines": 114, 
+    "deg_assort_coeff": -0.18660287081339744, 
+    "density": 0.3333333333333333, 
+    "scene": "2", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.9166666666666667, 
+    "location": "The highway, near Gadshill.", 
+    "act": "2", 
     "graph_img_f": "imgs/1henryiv_2_2.png", 
     "char_data": {
      "POINS": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "BARDOLPH": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "PETO": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "FALSTAFF": {
       "ratio": 9.83, 
-      "nlines": 59, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 59
      }, 
      "Thieves": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "First Traveller": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "Travellers": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "PRINCE HENRY": {
       "ratio": 9.33, 
-      "nlines": 28, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 28
      }, 
      "GADSHILL": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }
     }, 
-    "location": "The highway, near Gadshill.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.23703703703703705
    }, 
    {
+    "total_lines": 126, 
+    "deg_assort_coeff": -0.73134328358208955, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Warkworth castle", 
+    "act": "2", 
     "graph_img_f": "imgs/1henryiv_2_3.png", 
     "char_data": {
      "Servant": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "HOTSPUR": {
       "ratio": 37.5, 
-      "nlines": 75, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 75
      }, 
      "LADY PERCY": {
       "ratio": 48.0, 
-      "nlines": 48, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 48
      }
     }, 
-    "location": "Warkworth castle", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 556, 
+    "deg_assort_coeff": -0.50117160455961862, 
+    "density": 0.34545454545454546, 
+    "scene": "4", 
+    "total_degrees": 19, 
+    "avg_shortest_path": 1.6545454545454545, 
+    "location": "The Boar's-Head Tavern, Eastcheap.", 
+    "act": "2", 
     "graph_img_f": "imgs/1henryiv_2_4.png", 
     "char_data": {
      "POINS": {
       "ratio": 8.0, 
-      "nlines": 24, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 24
      }, 
      "Sheriff": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "Hostess": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "BARDOLPH": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "PETO": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "Vintner": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "FALSTAFF": {
       "ratio": 37.83, 
-      "nlines": 227, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 227
      }, 
      "Carrier": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "PRINCE HENRY": {
       "ratio": 23.4, 
-      "nlines": 234, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 234
      }, 
      "GADSHILL": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "FRANCIS": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }
     }, 
-    "location": "The Boar's-Head Tavern, Eastcheap.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.7424242424242425
    }
   ], 
   [
    {
+    "total_lines": 279, 
+    "deg_assort_coeff": -0.24251968503937099, 
+    "density": 0.7, 
+    "scene": "1", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.4, 
+    "location": "Bangor. The Archdeacon's house.", 
+    "act": "3", 
     "graph_img_f": "imgs/1henryiv_3_1.png", 
     "char_data": {
      "GLENDOWER": {
       "ratio": 41.0, 
-      "nlines": 82, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 82
      }, 
      "HOTSPUR": {
       "ratio": 17.83, 
-      "nlines": 107, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 107
      }, 
      "MORTIMER": {
       "ratio": 21.0, 
-      "nlines": 63, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 63
      }, 
      "EARL OF WORCESTER": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "LADY PERCY": {
       "ratio": 11.0, 
-      "nlines": 11, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 11
      }
     }, 
-    "location": "Bangor. The Archdeacon's house.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.6
    }, 
    {
+    "total_lines": 184, 
+    "deg_assort_coeff": -0.66666666666666663, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "London. The palace.", 
+    "act": "3", 
     "graph_img_f": "imgs/1henryiv_3_2.png", 
     "char_data": {
      "KING HENRY IV": {
       "ratio": 66.5, 
-      "nlines": 133, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 133
      }, 
      "SIR WALTER BLUNT": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "PRINCE HENRY": {
       "ratio": 44.0, 
-      "nlines": 44, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 44
      }
     }, 
-    "location": "London. The palace.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 210, 
+    "deg_assort_coeff": -0.3333333333333337, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.0, 
+    "location": "Eastcheap. The Boar's-Head Tavern.", 
+    "act": "3", 
     "graph_img_f": "imgs/1henryiv_3_3.png", 
     "char_data": {
      "BARDOLPH": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "FALSTAFF": {
       "ratio": 40.33, 
-      "nlines": 121, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 121
      }, 
      "Hostess": {
       "ratio": 12.33, 
-      "nlines": 37, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 37
      }, 
      "PRINCE HENRY": {
       "ratio": 14.0, 
-      "nlines": 42, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 42
      }
     }, 
-    "location": "Eastcheap. The Boar's-Head Tavern.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 1.0
    }
   ], 
   [
    {
+    "total_lines": 146, 
+    "deg_assort_coeff": -0.45467703998552561, 
+    "density": 0.5333333333333333, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.4666666666666666, 
+    "location": "The rebel camp near Shrewsbury.", 
+    "act": "4", 
     "graph_img_f": "imgs/1henryiv_4_1.png", 
     "char_data": {
      "WORCESTER": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "VERNON": {
       "ratio": 12.5, 
-      "nlines": 25, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 25
      }, 
      "Messenger": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "EARL OF WORCESTER": {
       "ratio": 10.5, 
-      "nlines": 21, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 21
      }, 
      "EARL OF DOUGLAS": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "HOTSPUR": {
       "ratio": 15.6, 
-      "nlines": 78, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 78
      }
     }, 
-    "location": "The rebel camp near Shrewsbury.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.8277777777777778
    }, 
    {
+    "total_lines": 84, 
+    "deg_assort_coeff": -0.99009900990098998, 
+    "density": 0.5, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.5, 
+    "location": "A public road near Coventry.", 
+    "act": "4", 
     "graph_img_f": "imgs/1henryiv_4_2.png", 
     "char_data": {
      "BARDOLPH": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "FALSTAFF": {
       "ratio": 21.67, 
-      "nlines": 65, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 65
      }, 
      "WESTMORELAND": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "PRINCE HENRY": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }
     }, 
-    "location": "A public road near Coventry.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 124, 
+    "deg_assort_coeff": -0.10060153495125546, 
+    "density": 0.7, 
+    "scene": "3", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The rebel camp near Shrewsbury.", 
+    "act": "4", 
     "graph_img_f": "imgs/1henryiv_4_3.png", 
     "char_data": {
      "EARL OF DOUGLAS": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "HOTSPUR": {
       "ratio": 24.33, 
-      "nlines": 73, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 73
      }, 
      "VERNON": {
       "ratio": 6.67, 
-      "nlines": 20, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 20
      }, 
      "EARL OF WORCESTER": {
       "ratio": 1.5, 
-      "nlines": 6, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 6
      }, 
      "SIR WALTER BLUNT": {
       "ratio": 10.5, 
-      "nlines": 21, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 21
      }
     }, 
-    "location": "The rebel camp near Shrewsbury.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.7666666666666666
    }, 
    {
+    "total_lines": 43, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "York. The ARCHBISHOP'S palace.", 
+    "act": "4", 
     "graph_img_f": "imgs/1henryiv_4_4.png", 
     "char_data": {
      "ARCHBISHOP OF YORK": {
       "ratio": 35.0, 
-      "nlines": 35, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 35
      }, 
      "SIR MICHAEL": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }
     }, 
-    "location": "York. The ARCHBISHOP'S palace.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 148, 
+    "deg_assort_coeff": -0.59958720330237569, 
+    "density": 0.8333333333333334, 
+    "scene": "1", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "KING HENRY IV's camp near Shrewsbury.", 
+    "act": "5", 
     "graph_img_f": "imgs/1henryiv_5_1.png", 
     "char_data": {
      "FALSTAFF": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }, 
      "PRINCE HENRY": {
       "ratio": 10.0, 
-      "nlines": 30, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 30
      }, 
      "EARL OF WORCESTER": {
       "ratio": 23.5, 
-      "nlines": 47, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 47
      }, 
      "KING HENRY IV": {
       "ratio": 17.0, 
-      "nlines": 51, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 51
      }
     }, 
-    "location": "KING HENRY IV's camp near Shrewsbury.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 108, 
+    "deg_assort_coeff": -0.72699197035207086, 
+    "density": 0.6, 
+    "scene": "2", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.4, 
+    "location": "The rebel camp.", 
+    "act": "5", 
     "graph_img_f": "imgs/1henryiv_5_2.png", 
     "char_data": {
      "EARL OF DOUGLAS": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "VERNON": {
       "ratio": 11.0, 
-      "nlines": 22, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 22
      }, 
      "Messenger": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "HOTSPUR": {
       "ratio": 10.5, 
-      "nlines": 42, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 42
      }, 
      "EARL OF WORCESTER": {
       "ratio": 11.67, 
-      "nlines": 35, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 35
      }
     }, 
-    "location": "The rebel camp.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.6
    }, 
    {
+    "total_lines": 69, 
+    "deg_assort_coeff": -0.4814814814814854, 
+    "density": 0.5, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.7, 
+    "location": "Plain between the camps.", 
+    "act": "5", 
     "graph_img_f": "imgs/1henryiv_5_3.png", 
     "char_data": {
      "FALSTAFF": {
       "ratio": 12.5, 
-      "nlines": 25, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 25
      }, 
      "EARL OF DOUGLAS": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }, 
      "SIR WALTER BLUNT": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "HOTSPUR": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "PRINCE HENRY": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }
     }, 
-    "location": "Plain between the camps.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.4666666666666667
    }, 
    {
+    "total_lines": 189, 
+    "deg_assort_coeff": -0.43916811091854557, 
+    "density": 0.5714285714285714, 
+    "scene": "4", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.4285714285714286, 
+    "location": "Another part of the field.", 
+    "act": "5", 
     "graph_img_f": "imgs/1henryiv_5_4.png", 
     "char_data": {
      "LANCASTER": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "KING HENRY IV": {
       "ratio": 4.2, 
-      "nlines": 21, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 21
      }, 
      "FALSTAFF": {
       "ratio": 15.33, 
-      "nlines": 46, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 46
      }, 
      "WESTMORELAND": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "PRINCE HENRY": {
       "ratio": 14.33, 
-      "nlines": 86, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 86
      }, 
      "EARL OF DOUGLAS": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "HOTSPUR": {
       "ratio": 6.33, 
-      "nlines": 19, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 19
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 0.6857142857142857
    }, 
    {
+    "total_lines": 48, 
+    "deg_assort_coeff": -0.66666666666666663, 
+    "density": 0.6666666666666666, 
+    "scene": "5", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another part of the field.", 
+    "act": "5", 
     "graph_img_f": "imgs/1henryiv_5_5.png", 
     "char_data": {
      "LANCASTER": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "KING HENRY IV": {
       "ratio": 9.33, 
-      "nlines": 28, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 28
      }, 
      "EARL OF WORCESTER": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "PRINCE HENRY": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "5", 
-    "act": "5"
+    "avg_clustering": 0.5833333333333333
    }
   ]
  ], 
@@ -665,212 +779,212 @@
  "char_data": {
   "Sheriff": {
    "ratio": 4.5, 
+   "degrees": 2, 
    "nlines": 9, 
-   "nedges": 2, 
    "order_app": 24
   }, 
   "FALSTAFF": {
    "ratio": 53.58, 
+   "degrees": 12, 
    "nlines": 643, 
-   "nedges": 12, 
    "order_app": 2
   }, 
   "VERNON": {
    "ratio": 22.33, 
+   "degrees": 3, 
    "nlines": 67, 
-   "nedges": 3, 
    "order_app": 30
   }, 
   "Thieves": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 17
   }, 
   "Messenger": {
    "ratio": 4.0, 
+   "degrees": 2, 
    "nlines": 8, 
-   "nedges": 2, 
    "order_app": 29
   }, 
   "LADY PERCY": {
    "ratio": 59.0, 
+   "degrees": 1, 
    "nlines": 59, 
-   "nedges": 1, 
    "order_app": 19
   }, 
   "HOTSPUR": {
    "ratio": 36.13, 
+   "degrees": 16, 
    "nlines": 578, 
-   "nedges": 16, 
    "order_app": 7
   }, 
   "Chamberlain": {
    "ratio": 17.0, 
+   "degrees": 1, 
    "nlines": 17, 
-   "nedges": 1, 
    "order_app": 13
   }, 
   "Second Carrier": {
    "ratio": 8.5, 
+   "degrees": 2, 
    "nlines": 17, 
-   "nedges": 2, 
    "order_app": 11
   }, 
   "POINS": {
    "ratio": 21.5, 
+   "degrees": 4, 
    "nlines": 86, 
-   "nedges": 4, 
    "order_app": 4
   }, 
   "KING HENRY IV": {
    "ratio": 39.56, 
+   "degrees": 9, 
    "nlines": 356, 
-   "nedges": 9, 
    "order_app": 0
   }, 
   "GLENDOWER": {
    "ratio": 41.0, 
+   "degrees": 2, 
    "nlines": 82, 
-   "nedges": 2, 
    "order_app": 27
   }, 
   "First Carrier": {
    "ratio": 7.33, 
+   "degrees": 3, 
    "nlines": 22, 
-   "nedges": 3, 
    "order_app": 9
   }, 
   "ARCHBISHOP OF YORK": {
    "ratio": 35.0, 
+   "degrees": 1, 
    "nlines": 35, 
-   "nedges": 1, 
    "order_app": 32
   }, 
   "PETO": {
    "ratio": 3.5, 
+   "degrees": 4, 
    "nlines": 14, 
-   "nedges": 4, 
    "order_app": 15
   }, 
   "NORTHUMBERLAND": {
    "ratio": 9.0, 
+   "degrees": 3, 
    "nlines": 27, 
-   "nedges": 3, 
    "order_app": 6
   }, 
   "WORCESTER": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 31
   }, 
   "SIR WALTER BLUNT": {
    "ratio": 10.75, 
+   "degrees": 4, 
    "nlines": 43, 
-   "nedges": 4, 
    "order_app": 8
   }, 
   "WESTMORELAND": {
    "ratio": 14.0, 
+   "degrees": 3, 
    "nlines": 42, 
-   "nedges": 3, 
    "order_app": 1
   }, 
   "Travellers": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 18
   }, 
   "FRANCIS": {
    "ratio": 8.0, 
+   "degrees": 2, 
    "nlines": 16, 
-   "nedges": 2, 
    "order_app": 21
   }, 
   "EARL OF DOUGLAS": {
    "ratio": 7.14, 
+   "degrees": 7, 
    "nlines": 50, 
-   "nedges": 7, 
    "order_app": 28
   }, 
   "LANCASTER": {
    "ratio": 3.0, 
+   "degrees": 3, 
    "nlines": 9, 
-   "nedges": 3, 
    "order_app": 34
   }, 
   "Hostess": {
    "ratio": 16.33, 
+   "degrees": 3, 
    "nlines": 49, 
-   "nedges": 3, 
    "order_app": 23
   }, 
   "Servant": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 20
   }, 
   "Vintner": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 22
   }, 
   "Carrier": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 25
   }, 
   "EARL OF WORCESTER": {
    "ratio": 21.33, 
+   "degrees": 9, 
    "nlines": 192, 
-   "nedges": 9, 
    "order_app": 5
   }, 
   "PRINCE HENRY": {
    "ratio": 36.25, 
+   "degrees": 16, 
    "nlines": 580, 
-   "nedges": 16, 
    "order_app": 3
   }, 
   "SIR MICHAEL": {
    "ratio": 8.0, 
+   "degrees": 1, 
    "nlines": 8, 
-   "nedges": 1, 
    "order_app": 33
   }, 
   "BARDOLPH": {
    "ratio": 5.8, 
+   "degrees": 5, 
    "nlines": 29, 
-   "nedges": 5, 
    "order_app": 14
   }, 
   "MORTIMER": {
    "ratio": 21.0, 
+   "degrees": 3, 
    "nlines": 63, 
-   "nedges": 3, 
    "order_app": 26
   }, 
   "Ostler": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 10
   }, 
   "First Traveller": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 16
   }, 
   "GADSHILL": {
    "ratio": 7.67, 
+   "degrees": 6, 
    "nlines": 46, 
-   "nedges": 6, 
    "order_app": 12
   }
  }, 

@@ -3,592 +3,682 @@
  "acts": [
   [
    {
+    "total_lines": 200, 
+    "deg_assort_coeff": -0.5000000000000121, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "Venice. A street.", 
+    "act": "1", 
     "graph_img_f": "imgs/othello_1_1.png", 
     "char_data": {
      "IAGO": {
       "ratio": 55.0, 
-      "nlines": 110, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 110
      }, 
      "RODERIGO": {
       "ratio": 21.0, 
-      "nlines": 42, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 42
      }, 
      "BRABANTIO": {
       "ratio": 24.0, 
-      "nlines": 48, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 48
      }
     }, 
-    "location": "Venice. A street.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 123, 
+    "deg_assort_coeff": -0.23415265200517366, 
+    "density": 0.6, 
+    "scene": "2", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.4, 
+    "location": "Another street.", 
+    "act": "1", 
     "graph_img_f": "imgs/othello_1_2.png", 
     "char_data": {
      "RODERIGO": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "IAGO": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }, 
      "OTHELLO": {
       "ratio": 7.8, 
-      "nlines": 39, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 39
      }, 
      "BRABANTIO": {
       "ratio": 8.25, 
-      "nlines": 33, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 33
      }, 
      "CASSIO": {
       "ratio": 9.0, 
-      "nlines": 18, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 18
      }, 
      "First Officer": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }
     }, 
-    "location": "Another street.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.7611111111111111
    }, 
    {
+    "total_lines": 440, 
+    "deg_assort_coeff": -0.28262012650593166, 
+    "density": 0.34545454545454546, 
+    "scene": "3", 
+    "total_degrees": 19, 
+    "avg_shortest_path": 1.9636363636363636, 
+    "location": "A council-chamber.", 
+    "act": "1", 
     "graph_img_f": "imgs/othello_1_3.png", 
     "char_data": {
      "RODERIGO": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }, 
      "DUKE OF VENICE": {
       "ratio": 7.9, 
-      "nlines": 79, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 79
      }, 
      "IAGO": {
       "ratio": 88.0, 
-      "nlines": 88, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 88
      }, 
      "Sailor": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "Messenger": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "First Officer": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "OTHELLO": {
       "ratio": 23.6, 
-      "nlines": 118, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 118
      }, 
      "DESDEMONA": {
       "ratio": 9.33, 
-      "nlines": 28, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 28
      }, 
      "Second Senator": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "First Senator": {
       "ratio": 6.75, 
-      "nlines": 27, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 27
      }, 
      "BRABANTIO": {
       "ratio": 15.75, 
-      "nlines": 63, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 63
      }
     }, 
-    "location": "A council-chamber.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.5108225108225107
    }
   ], 
   [
    {
+    "total_lines": 351, 
+    "deg_assort_coeff": -0.3271724404877096, 
+    "density": 0.2727272727272727, 
+    "scene": "1", 
+    "total_degrees": 18, 
+    "avg_shortest_path": 2.0303030303030303, 
+    "location": "A Sea-port in Cyprus. An open place near the quay.", 
+    "act": "2", 
     "graph_img_f": "imgs/othello_2_1.png", 
     "char_data": {
      "RODERIGO": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }, 
      "Fourth Gentleman": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "Third Gentleman": {
       "ratio": 9.0, 
-      "nlines": 18, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 18
      }, 
      "Second Gentleman": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "First Gentleman": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "IAGO": {
       "ratio": 30.6, 
-      "nlines": 153, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 153
      }, 
      "OTHELLO": {
       "ratio": 10.67, 
-      "nlines": 32, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 32
      }, 
      "EMILIA": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "CASSIO": {
       "ratio": 6.4, 
-      "nlines": 64, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 64
      }, 
      "DESDEMONA": {
       "ratio": 7.5, 
-      "nlines": 30, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 30
      }, 
      "MONTANO": {
       "ratio": 5.5, 
-      "nlines": 22, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 22
      }, 
      "Second Gentlemen": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }
     }, 
-    "location": "A Sea-port in Cyprus. An open place near the quay.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.46488095238095245
    }, 
    {
+    "total_lines": 13, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "2", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "A street.", 
+    "act": "2", 
     "graph_img_f": "imgs/othello_2_2.png", 
     "char_data": {
      "Herald": {
       "ratio": 0, 
-      "nlines": 13, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 13
      }
     }, 
-    "location": "A street.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 415, 
+    "deg_assort_coeff": -0.34635727056018911, 
+    "density": 0.5238095238095238, 
+    "scene": "3", 
+    "total_degrees": 11, 
+    "avg_shortest_path": 1.619047619047619, 
+    "location": "A hall in the castle.", 
+    "act": "2", 
     "graph_img_f": "imgs/othello_2_3.png", 
     "char_data": {
      "RODERIGO": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "All": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "IAGO": {
       "ratio": 37.67, 
-      "nlines": 226, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 226
      }, 
      "CASSIO": {
       "ratio": 16.2, 
-      "nlines": 81, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 81
      }, 
      "OTHELLO": {
       "ratio": 15.75, 
-      "nlines": 63, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 63
      }, 
      "DESDEMONA": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "MONTANO": {
       "ratio": 12.0, 
-      "nlines": 36, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 36
      }
     }, 
-    "location": "A hall in the castle.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.5095238095238095
    }
   ], 
   [
    {
+    "total_lines": 70, 
+    "deg_assort_coeff": -0.37931034482758619, 
+    "density": 0.4, 
+    "scene": "1", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.8, 
+    "location": "Before the castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/othello_3_1.png", 
     "char_data": {
      "IAGO": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "EMILIA": {
       "ratio": 13.0, 
-      "nlines": 13, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 13
      }, 
      "First Musician": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "CASSIO": {
       "ratio": 10.0, 
-      "nlines": 30, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 30
      }, 
      "Clown": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }
     }, 
-    "location": "Before the castle.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 8, 
+    "deg_assort_coeff": -0.81818181818181823, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "A room in the castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/othello_3_2.png", 
     "char_data": {
      "IAGO": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "OTHELLO": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "Gentleman": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }
     }, 
-    "location": "A room in the castle.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 547, 
+    "deg_assort_coeff": 0.18676316216543759, 
+    "density": 0.7, 
+    "scene": "3", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The garden of the castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/othello_3_3.png", 
     "char_data": {
      "IAGO": {
       "ratio": 75.0, 
-      "nlines": 225, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 225
      }, 
      "EMILIA": {
       "ratio": 10.0, 
-      "nlines": 30, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 30
      }, 
      "CASSIO": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "DESDEMONA": {
       "ratio": 19.0, 
-      "nlines": 76, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 76
      }, 
      "OTHELLO": {
       "ratio": 102.0, 
-      "nlines": 204, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 204
      }
     }, 
-    "location": "The garden of the castle.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.7666666666666666
    }, 
    {
+    "total_lines": 234, 
+    "deg_assort_coeff": -0.40482219530991964, 
+    "density": 0.38095238095238093, 
+    "scene": "4", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.8095238095238095, 
+    "location": "Before the castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/othello_3_4.png", 
     "char_data": {
      "IAGO": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "Clown": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "BIANCA": {
       "ratio": 18.0, 
-      "nlines": 18, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 18
      }, 
      "CASSIO": {
       "ratio": 20.0, 
-      "nlines": 40, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 40
      }, 
      "EMILIA": {
       "ratio": 6.33, 
-      "nlines": 19, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 19
      }, 
      "OTHELLO": {
       "ratio": 27.5, 
-      "nlines": 55, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 55
      }, 
      "DESDEMONA": {
       "ratio": 16.2, 
-      "nlines": 81, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 81
      }
     }, 
-    "location": "Before the castle.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.4095238095238095
    }
   ], 
   [
    {
+    "total_lines": 327, 
+    "deg_assort_coeff": -0.45897866547842431, 
+    "density": 0.7333333333333333, 
+    "scene": "1", 
+    "total_degrees": 11, 
+    "avg_shortest_path": 1.2666666666666666, 
+    "location": "Cyprus. Before the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/othello_4_1.png", 
     "char_data": {
      "LODOVICO": {
       "ratio": 9.0, 
-      "nlines": 27, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 27
      }, 
      "BIANCA": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "OTHELLO": {
       "ratio": 21.2, 
-      "nlines": 106, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 106
      }, 
      "IAGO": {
       "ratio": 28.0, 
-      "nlines": 140, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 140
      }, 
      "CASSIO": {
       "ratio": 9.33, 
-      "nlines": 28, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 28
      }, 
      "DESDEMONA": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }
     }, 
-    "location": "Cyprus. Before the castle.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.8666666666666667
    }, 
    {
+    "total_lines": 281, 
+    "deg_assort_coeff": -0.32419465387251606, 
+    "density": 0.6, 
+    "scene": "2", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.5, 
+    "location": "A room in the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/othello_4_2.png", 
     "char_data": {
      "IAGO": {
       "ratio": 21.0, 
-      "nlines": 63, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 63
      }, 
      "EMILIA": {
       "ratio": 15.0, 
-      "nlines": 45, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 45
      }, 
      "DESDEMONA": {
       "ratio": 21.67, 
-      "nlines": 65, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 65
      }, 
      "OTHELLO": {
       "ratio": 38.5, 
-      "nlines": 77, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 77
      }, 
      "RODERIGO": {
       "ratio": 31.0, 
-      "nlines": 31, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 31
      }
     }, 
-    "location": "A room in the castle.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.5333333333333333
    }, 
    {
+    "total_lines": 116, 
+    "deg_assort_coeff": -0.08045335268829211, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another room In the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/othello_4_3.png", 
     "char_data": {
      "LODOVICO": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "DESDEMONA": {
       "ratio": 20.67, 
-      "nlines": 62, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 62
      }, 
      "OTHELLO": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "EMILIA": {
       "ratio": 47.0, 
-      "nlines": 47, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 47
      }
     }, 
-    "location": "Another room In the castle.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.5833333333333333
    }
   ], 
   [
    {
+    "total_lines": 164, 
+    "deg_assort_coeff": -0.2835278072435225, 
+    "density": 0.5, 
+    "scene": "1", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.5714285714285714, 
+    "location": "Cyprus. A street.", 
+    "act": "5", 
     "graph_img_f": "imgs/othello_5_1.png", 
     "char_data": {
      "RODERIGO": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "LODOVICO": {
       "ratio": 2.5, 
-      "nlines": 10, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 10
      }, 
      "GRATIANO": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "BIANCA": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "CASSIO": {
       "ratio": 3.8, 
-      "nlines": 19, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 19
      }, 
      "OTHELLO": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "IAGO": {
       "ratio": 14.17, 
-      "nlines": 85, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 85
      }, 
      "EMILIA": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }
     }, 
-    "location": "Cyprus. A street.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.8125
    }, 
    {
+    "total_lines": 442, 
+    "deg_assort_coeff": -0.33099184549680577, 
+    "density": 0.4444444444444444, 
+    "scene": "2", 
+    "total_degrees": 16, 
+    "avg_shortest_path": 1.6111111111111112, 
+    "location": "A bedchamber in the castle: DESDEMONA in bed asleep;", 
+    "act": "5", 
     "graph_img_f": "imgs/othello_5_2.png", 
     "char_data": {
      "LODOVICO": {
       "ratio": 10.5, 
-      "nlines": 42, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 42
      }, 
      "All": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "GRATIANO": {
       "ratio": 4.25, 
-      "nlines": 17, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 17
      }, 
      "IAGO": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "CASSIO": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "EMILIA": {
       "ratio": 15.17, 
-      "nlines": 91, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 91
      }, 
      "OTHELLO": {
       "ratio": 30.57, 
-      "nlines": 214, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 214
      }, 
      "DESDEMONA": {
       "ratio": 21.5, 
-      "nlines": 43, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 43
      }, 
      "MONTANO": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }
     }, 
-    "location": "A bedchamber in the castle: DESDEMONA in bed asleep;", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.6164021164021164
    }
   ]
  ], 
@@ -625,164 +715,164 @@
  "char_data": {
   "RODERIGO": {
    "ratio": 23.6, 
+   "degrees": 5, 
    "nlines": 118, 
-   "nedges": 5, 
    "order_app": 0
   }, 
   "Second Gentlemen": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 17
   }, 
   "Gentleman": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 23
   }, 
   "Messenger": {
    "ratio": 3.0, 
+   "degrees": 3, 
    "nlines": 9, 
-   "nedges": 3, 
    "order_app": 10
   }, 
   "BRABANTIO": {
    "ratio": 20.57, 
+   "degrees": 7, 
    "nlines": 144, 
-   "nedges": 7, 
    "order_app": 2
   }, 
   "Second Senator": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 8
   }, 
   "Fourth Gentleman": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 16
   }, 
   "Third Gentleman": {
    "ratio": 9.0, 
+   "degrees": 2, 
    "nlines": 18, 
-   "nedges": 2, 
    "order_app": 15
   }, 
   "First Gentleman": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 13
   }, 
   "GRATIANO": {
    "ratio": 5.5, 
+   "degrees": 6, 
    "nlines": 33, 
-   "nedges": 6, 
    "order_app": 26
   }, 
   "First Officer": {
    "ratio": 1.4, 
+   "degrees": 5, 
    "nlines": 7, 
-   "nedges": 5, 
    "order_app": 5
   }, 
   "DESDEMONA": {
    "ratio": 50.13, 
+   "degrees": 8, 
    "nlines": 401, 
-   "nedges": 8, 
    "order_app": 11
   }, 
   "LODOVICO": {
    "ratio": 13.5, 
+   "degrees": 6, 
    "nlines": 81, 
-   "nedges": 6, 
    "order_app": 25
   }, 
   "DUKE OF VENICE": {
    "ratio": 7.9, 
+   "degrees": 10, 
    "nlines": 79, 
-   "nedges": 10, 
    "order_app": 6
   }, 
   "BIANCA": {
    "ratio": 9.0, 
+   "degrees": 4, 
    "nlines": 36, 
-   "nedges": 4, 
    "order_app": 24
   }, 
   "Clown": {
    "ratio": 9.67, 
+   "degrees": 3, 
    "nlines": 29, 
-   "nedges": 3, 
    "order_app": 21
   }, 
   "Herald": {
    "ratio": 0, 
+   "degrees": 0, 
    "nlines": 13, 
-   "nedges": 0, 
    "order_app": 19
   }, 
   "CASSIO": {
    "ratio": 18.0, 
+   "degrees": 17, 
    "nlines": 306, 
-   "nedges": 17, 
    "order_app": 4
   }, 
   "First Musician": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 22
   }, 
   "Second Gentleman": {
    "ratio": 6.5, 
+   "degrees": 2, 
    "nlines": 13, 
-   "nedges": 2, 
    "order_app": 14
   }, 
   "IAGO": {
    "ratio": 95.5, 
+   "degrees": 12, 
    "nlines": 1146, 
-   "nedges": 12, 
    "order_app": 1
   }, 
   "All": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 20
   }, 
   "First Senator": {
    "ratio": 6.75, 
+   "degrees": 4, 
    "nlines": 27, 
-   "nedges": 4, 
    "order_app": 7
   }, 
   "Sailor": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 9
   }, 
   "OTHELLO": {
    "ratio": 66.29, 
+   "degrees": 14, 
    "nlines": 928, 
-   "nedges": 14, 
    "order_app": 3
   }, 
   "EMILIA": {
    "ratio": 31.5, 
+   "degrees": 8, 
    "nlines": 252, 
-   "nedges": 8, 
    "order_app": 18
   }, 
   "MONTANO": {
    "ratio": 8.25, 
+   "degrees": 8, 
    "nlines": 66, 
-   "nedges": 8, 
    "order_app": 12
   }
  }, 

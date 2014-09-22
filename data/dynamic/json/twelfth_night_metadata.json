@@ -3,556 +3,664 @@
  "acts": [
   [
    {
+    "total_lines": 45, 
+    "deg_assort_coeff": -0.81818181818181823, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "DUKE ORSINO's palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/twelfth_night_1_1.png", 
     "char_data": {
      "DUKE ORSINO": {
       "ratio": 17.0, 
-      "nlines": 34, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 34
      }, 
      "CURIO": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "VALENTINE": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }
     }, 
-    "location": "DUKE ORSINO's palace.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 67, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The sea-coast.", 
+    "act": "1", 
     "graph_img_f": "imgs/twelfth_night_1_2.png", 
     "char_data": {
      "Captain": {
       "ratio": 32.0, 
-      "nlines": 32, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 32
      }, 
      "VIOLA": {
       "ratio": 35.0, 
-      "nlines": 35, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 35
      }
     }, 
-    "location": "The sea-coast.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 130, 
+    "deg_assort_coeff": -0.50000000000000566, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "OLIVIA'S house.", 
+    "act": "1", 
     "graph_img_f": "imgs/twelfth_night_1_3.png", 
     "char_data": {
      "MARIA": {
       "ratio": 14.5, 
-      "nlines": 29, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 29
      }, 
      "SIR TOBY BELCH": {
       "ratio": 29.5, 
-      "nlines": 59, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 59
      }, 
      "SIR ANDREW": {
       "ratio": 21.0, 
-      "nlines": 42, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 42
      }
     }, 
-    "location": "OLIVIA'S house.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 48, 
+    "deg_assort_coeff": -0.63295880149812733, 
+    "density": 0.6666666666666666, 
+    "scene": "4", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "DUKE ORSINO's palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/twelfth_night_1_4.png", 
     "char_data": {
      "DUKE ORSINO": {
       "ratio": 27.0, 
-      "nlines": 27, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 27
      }, 
      "VIOLA": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }, 
      "VALENTINE": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }
     }, 
-    "location": "DUKE ORSINO's palace.", 
-    "scene": "4", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 315, 
+    "deg_assort_coeff": -0.48195080396123824, 
+    "density": 0.6, 
+    "scene": "5", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.4, 
+    "location": "OLIVIA'S house.", 
+    "act": "1", 
     "graph_img_f": "imgs/twelfth_night_1_5.png", 
     "char_data": {
      "SIR TOBY BELCH": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "MALVOLIO": {
       "ratio": 17.5, 
-      "nlines": 35, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 35
      }, 
      "Clown": {
       "ratio": 15.75, 
-      "nlines": 63, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 63
      }, 
      "OLIVIA": {
       "ratio": 24.2, 
-      "nlines": 121, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 121
      }, 
      "VIOLA": {
       "ratio": 34.5, 
-      "nlines": 69, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 69
      }, 
      "MARIA": {
       "ratio": 6.67, 
-      "nlines": 20, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 20
      }
     }, 
-    "location": "OLIVIA'S house.", 
-    "scene": "5", 
-    "act": "1"
+    "avg_clustering": 0.7611111111111111
    }
   ], 
   [
    {
+    "total_lines": 45, 
+    "deg_assort_coeff": -0.49999999999999201, 
+    "density": 2.0, 
+    "scene": "1", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.0, 
+    "location": "The sea-coast.", 
+    "act": "2", 
     "graph_img_f": "imgs/twelfth_night_2_1.png", 
     "char_data": {
      "SEBASTIAN": {
       "ratio": 11.33, 
-      "nlines": 34, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 34
      }, 
      "ANTONIO": {
       "ratio": 11.0, 
-      "nlines": 11, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 11
      }
     }, 
-    "location": "The sea-coast.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 42, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A street.", 
+    "act": "2", 
     "graph_img_f": "imgs/twelfth_night_2_2.png", 
     "char_data": {
      "MALVOLIO": {
       "ratio": 13.0, 
-      "nlines": 13, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 13
      }, 
      "VIOLA": {
       "ratio": 29.0, 
-      "nlines": 29, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 29
      }
     }, 
-    "location": "A street.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 189, 
+    "deg_assort_coeff": -0.13898480662983295, 
+    "density": 0.9, 
+    "scene": "3", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.1, 
+    "location": "OLIVIA's house.", 
+    "act": "2", 
     "graph_img_f": "imgs/twelfth_night_2_3.png", 
     "char_data": {
      "SIR ANDREW": {
       "ratio": 14.33, 
-      "nlines": 43, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 43
      }, 
      "SIR TOBY BELCH": {
       "ratio": 14.25, 
-      "nlines": 57, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 57
      }, 
      "MALVOLIO": {
       "ratio": 6.67, 
-      "nlines": 20, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 20
      }, 
      "Clown": {
       "ratio": 7.75, 
-      "nlines": 31, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 31
      }, 
      "MARIA": {
       "ratio": 9.5, 
-      "nlines": 38, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 38
      }
     }, 
-    "location": "OLIVIA's house.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.9
    }, 
    {
+    "total_lines": 137, 
+    "deg_assort_coeff": -0.82045454545454577, 
+    "density": 0.5, 
+    "scene": "4", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.5, 
+    "location": "DUKE ORSINO's palace.", 
+    "act": "2", 
     "graph_img_f": "imgs/twelfth_night_2_4.png", 
     "char_data": {
      "DUKE ORSINO": {
       "ratio": 25.0, 
-      "nlines": 75, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 75
      }, 
      "CURIO": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "VIOLA": {
       "ratio": 33.0, 
-      "nlines": 33, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 33
      }, 
      "Clown": {
       "ratio": 26.0, 
-      "nlines": 26, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 26
      }
     }, 
-    "location": "DUKE ORSINO's palace.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 206, 
+    "deg_assort_coeff": -0.51587097554705341, 
+    "density": 0.8, 
+    "scene": "5", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "OLIVIA's garden.", 
+    "act": "2", 
     "graph_img_f": "imgs/twelfth_night_2_5.png", 
     "char_data": {
      "SIR ANDREW": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "FABIAN": {
       "ratio": 9.33, 
-      "nlines": 28, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 28
      }, 
      "SIR TOBY BELCH": {
       "ratio": 8.75, 
-      "nlines": 35, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 35
      }, 
      "MALVOLIO": {
       "ratio": 27.5, 
-      "nlines": 110, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 110
      }, 
      "MARIA": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }
     }, 
-    "location": "OLIVIA's garden.", 
-    "scene": "5", 
-    "act": "2"
+    "avg_clustering": 0.8666666666666666
    }
   ], 
   [
    {
+    "total_lines": 170, 
+    "deg_assort_coeff": -0.3386640663091175, 
+    "density": 0.6, 
+    "scene": "1", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.4, 
+    "location": "OLIVIA's garden.", 
+    "act": "3", 
     "graph_img_f": "imgs/twelfth_night_3_1.png", 
     "char_data": {
      "SIR TOBY BELCH": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "OLIVIA": {
       "ratio": 28.0, 
-      "nlines": 56, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 56
      }, 
      "VIOLA": {
       "ratio": 17.0, 
-      "nlines": 68, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 68
      }, 
      "Clown": {
       "ratio": 36.0, 
-      "nlines": 36, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 36
      }, 
      "SIR ANDREW": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }
     }, 
-    "location": "OLIVIA's garden.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.6
    }, 
    {
+    "total_lines": 82, 
+    "deg_assort_coeff": -0.64069952305246425, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "OLIVIA's house.", 
+    "act": "3", 
     "graph_img_f": "imgs/twelfth_night_3_2.png", 
     "char_data": {
      "FABIAN": {
       "ratio": 11.5, 
-      "nlines": 23, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 23
      }, 
      "SIR TOBY BELCH": {
       "ratio": 11.0, 
-      "nlines": 33, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 33
      }, 
      "SIR ANDREW": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "MARIA": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }
     }, 
-    "location": "OLIVIA's house.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 54, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A street.", 
+    "act": "3", 
     "graph_img_f": "imgs/twelfth_night_3_3.png", 
     "char_data": {
      "SEBASTIAN": {
       "ratio": 21.0, 
-      "nlines": 21, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 21
      }, 
      "ANTONIO": {
       "ratio": 33.0, 
-      "nlines": 33, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 33
      }
     }, 
-    "location": "A street.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 408, 
+    "deg_assort_coeff": 0.11884247771344407, 
+    "density": 0.4, 
+    "scene": "4", 
+    "total_degrees": 22, 
+    "avg_shortest_path": 1.8545454545454545, 
+    "location": "OLIVIA's garden.", 
+    "act": "3", 
     "graph_img_f": "imgs/twelfth_night_3_4.png", 
     "char_data": {
      "SIR TOBY BELCH": {
       "ratio": 18.86, 
-      "nlines": 132, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 132
      }, 
      "Servant": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "MALVOLIO": {
       "ratio": 13.0, 
-      "nlines": 52, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 52
      }, 
      "ANTONIO": {
       "ratio": 9.0, 
-      "nlines": 36, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 36
      }, 
      "FABIAN": {
       "ratio": 6.4, 
-      "nlines": 32, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 32
      }, 
      "OLIVIA": {
       "ratio": 10.4, 
-      "nlines": 52, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 52
      }, 
      "First Officer": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "VIOLA": {
       "ratio": 11.0, 
-      "nlines": 55, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 55
      }, 
      "Second Officer": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "MARIA": {
       "ratio": 5.25, 
-      "nlines": 21, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 21
      }, 
      "SIR ANDREW": {
       "ratio": 4.0, 
-      "nlines": 16, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 16
      }
     }, 
-    "location": "OLIVIA's garden.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.5281385281385281
    }
   ], 
   [
    {
+    "total_lines": 67, 
+    "deg_assort_coeff": -0.39848589125946315, 
+    "density": 0.8, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "Before OLIVIA's house.", 
+    "act": "4", 
     "graph_img_f": "imgs/twelfth_night_4_1.png", 
     "char_data": {
      "SIR TOBY BELCH": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "SEBASTIAN": {
       "ratio": 4.25, 
-      "nlines": 17, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 17
      }, 
      "OLIVIA": {
       "ratio": 9.5, 
-      "nlines": 19, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 19
      }, 
      "Clown": {
       "ratio": 6.0, 
-      "nlines": 18, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 18
      }, 
      "SIR ANDREW": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }
     }, 
-    "location": "Before OLIVIA's house.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.8666666666666666
    }, 
    {
+    "total_lines": 130, 
+    "deg_assort_coeff": -0.2096401933869442, 
+    "density": 0.8333333333333334, 
+    "scene": "2", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "OLIVIA's house.", 
+    "act": "4", 
     "graph_img_f": "imgs/twelfth_night_4_2.png", 
     "char_data": {
      "SIR TOBY BELCH": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "MALVOLIO": {
       "ratio": 19.0, 
-      "nlines": 38, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 38
      }, 
      "Clown": {
       "ratio": 24.67, 
-      "nlines": 74, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 74
      }, 
      "MARIA": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }
     }, 
-    "location": "OLIVIA's house.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 37, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "OLIVIA's garden.", 
+    "act": "4", 
     "graph_img_f": "imgs/twelfth_night_4_3.png", 
     "char_data": {
      "SEBASTIAN": {
       "ratio": 24.0, 
-      "nlines": 24, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 24
      }, 
      "OLIVIA": {
       "ratio": 13.0, 
-      "nlines": 13, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 13
      }
     }, 
-    "location": "OLIVIA's garden.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 436, 
+    "deg_assort_coeff": -0.52094530531705607, 
+    "density": 0.4393939393939394, 
+    "scene": "1", 
+    "total_degrees": 29, 
+    "avg_shortest_path": 1.5757575757575757, 
+    "location": "Before OLIVIA's house.", 
+    "act": "5", 
     "graph_img_f": "imgs/twelfth_night_5_1.png", 
     "char_data": {
      "DUKE ORSINO": {
       "ratio": 9.3, 
-      "nlines": 93, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 93
      }, 
      "SIR TOBY BELCH": {
       "ratio": 1.5, 
-      "nlines": 6, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 6
      }, 
      "MALVOLIO": {
       "ratio": 9.5, 
-      "nlines": 19, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 19
      }, 
      "Clown": {
       "ratio": 12.5, 
-      "nlines": 75, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 75
      }, 
      "ANTONIO": {
       "ratio": 7.25, 
-      "nlines": 29, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 29
      }, 
      "FABIAN": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }, 
      "OLIVIA": {
       "ratio": 7.5, 
-      "nlines": 75, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 75
      }, 
      "First Officer": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "VIOLA": {
       "ratio": 6.71, 
-      "nlines": 47, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 47
      }, 
      "SEBASTIAN": {
       "ratio": 8.0, 
-      "nlines": 32, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 32
      }, 
      "Priest": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "SIR ANDREW": {
       "ratio": 4.25, 
-      "nlines": 17, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 17
      }
     }, 
-    "location": "Before OLIVIA's house.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.78994708994709
    }
   ]
  ], 
@@ -580,110 +688,110 @@
  "char_data": {
   "ANTONIO": {
    "ratio": 15.57, 
+   "degrees": 7, 
    "nlines": 109, 
-   "nedges": 7, 
    "order_app": 11
   }, 
   "DUKE ORSINO": {
    "ratio": 19.08, 
+   "degrees": 12, 
    "nlines": 229, 
-   "nedges": 12, 
    "order_app": 0
   }, 
   "CURIO": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 1
   }, 
   "SIR TOBY BELCH": {
    "ratio": 35.4, 
+   "degrees": 10, 
    "nlines": 354, 
-   "nedges": 10, 
    "order_app": 5
   }, 
   "SEBASTIAN": {
    "ratio": 14.22, 
+   "degrees": 9, 
    "nlines": 128, 
-   "nedges": 9, 
    "order_app": 12
   }, 
   "MALVOLIO": {
    "ratio": 41.0, 
+   "degrees": 7, 
    "nlines": 287, 
-   "nedges": 7, 
    "order_app": 10
   }, 
   "Clown": {
    "ratio": 35.89, 
+   "degrees": 9, 
    "nlines": 323, 
-   "nedges": 9, 
    "order_app": 8
   }, 
   "VALENTINE": {
    "ratio": 6.5, 
+   "degrees": 2, 
    "nlines": 13, 
-   "nedges": 2, 
    "order_app": 2
   }, 
   "Servant": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 14
   }, 
   "FABIAN": {
    "ratio": 14.0, 
+   "degrees": 8, 
    "nlines": 112, 
-   "nedges": 8, 
    "order_app": 13
   }, 
   "OLIVIA": {
    "ratio": 28.0, 
+   "degrees": 12, 
    "nlines": 336, 
-   "nedges": 12, 
    "order_app": 9
   }, 
   "First Officer": {
    "ratio": 2.4, 
+   "degrees": 5, 
    "nlines": 12, 
-   "nedges": 5, 
    "order_app": 15
   }, 
   "VIOLA": {
    "ratio": 27.15, 
+   "degrees": 13, 
    "nlines": 353, 
-   "nedges": 13, 
    "order_app": 3
   }, 
   "Second Officer": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 16
   }, 
   "Captain": {
    "ratio": 32.0, 
+   "degrees": 1, 
    "nlines": 32, 
-   "nedges": 1, 
    "order_app": 4
   }, 
   "SIR ANDREW": {
    "ratio": 15.2, 
+   "degrees": 10, 
    "nlines": 152, 
-   "nedges": 10, 
    "order_app": 7
   }, 
   "Priest": {
    "ratio": 4.0, 
+   "degrees": 2, 
    "nlines": 8, 
-   "nedges": 2, 
    "order_app": 17
   }, 
   "MARIA": {
    "ratio": 21.29, 
+   "degrees": 7, 
    "nlines": 149, 
-   "nedges": 7, 
    "order_app": 6
   }
  }, 

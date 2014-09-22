@@ -3,963 +3,1125 @@
  "acts": [
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 188, 
+    "deg_assort_coeff": -0.070175438596491224, 
+    "density": 0.8, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "Westminster Abbey.", 
+    "act": "1", 
+    "graph_img_f": "imgs/1henryvi_1_1.png", 
     "char_data": {
      "OF WINCHESTER": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "BEDFORD": {
       "ratio": 16.67, 
-      "nlines": 50, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 50
      }, 
      "GLOUCESTER": {
       "ratio": 8.67, 
-      "nlines": 26, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 26
      }, 
      "Messenger": {
       "ratio": 23.67, 
-      "nlines": 71, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 71
      }, 
      "EXETER": {
       "ratio": 6.25, 
-      "nlines": 25, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 25
      }
     }, 
-    "location": "Westminster Abbey.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.6666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 159, 
+    "deg_assort_coeff": -0.15422077922077998, 
+    "density": 0.8, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.3, 
+    "location": "France. Before Orleans.", 
+    "act": "1", 
+    "graph_img_f": "imgs/1henryvi_1_2.png", 
     "char_data": {
      "BASTARD OF ORLEANS": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "CHARLES": {
       "ratio": 9.0, 
-      "nlines": 54, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 54
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 26.0, 
-      "nlines": 52, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 52
      }, 
      "ALENCON": {
       "ratio": 6.33, 
-      "nlines": 19, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 19
      }, 
      "REIGNIER": {
       "ratio": 7.0, 
-      "nlines": 21, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 21
      }
     }, 
-    "location": "France. Before Orleans.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.7666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 105, 
+    "deg_assort_coeff": -0.33471933471933474, 
+    "density": 0.38095238095238093, 
+    "scene": "3", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.8095238095238095, 
+    "location": "London. Before the Tower.", 
+    "act": "1", 
+    "graph_img_f": "imgs/1henryvi_1_3.png", 
     "char_data": {
      "OF WINCHESTER": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }, 
      "Officer": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "WOODVILE": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "GLOUCESTER": {
       "ratio": 11.2, 
-      "nlines": 56, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 56
      }, 
      "Mayor": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "Second Warder": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "First Warder": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }
     }, 
-    "location": "London. Before the Tower.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.4095238095238095
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 118, 
+    "deg_assort_coeff": -0.3673139158576062, 
+    "density": 0.5333333333333333, 
+    "scene": "4", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "Orleans.", 
+    "act": "1", 
+    "graph_img_f": "imgs/1henryvi_1_4.png", 
     "char_data": {
      "Boy": {
       "ratio": 7.67, 
-      "nlines": 23, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 23
      }, 
      "GARGRAVE": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "TALBOT": {
       "ratio": 18.0, 
-      "nlines": 72, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 72
      }, 
      "Messenger": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "SALISBURY": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "GLANSDALE": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }
     }, 
-    "location": "Orleans.", 
-    "scene": "4", 
-    "act": "1"
+    "avg_clustering": 0.38888888888888884
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 47, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "5", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The same.", 
+    "act": "1", 
+    "graph_img_f": "imgs/1henryvi_1_5.png", 
     "char_data": {
      "TALBOT": {
       "ratio": 37.0, 
-      "nlines": 37, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 37
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }
     }, 
-    "location": "The same.", 
-    "scene": "5", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 32, 
+    "deg_assort_coeff": -0.7142857142857143, 
+    "density": 0.6666666666666666, 
+    "scene": "6", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The same.", 
+    "act": "1", 
+    "graph_img_f": "imgs/1henryvi_1_6.png", 
     "char_data": {
      "CHARLES": {
       "ratio": 7.67, 
-      "nlines": 23, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 23
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "REIGNIER": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "ALENCON": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "The same.", 
-    "scene": "6", 
-    "act": "1"
+    "avg_clustering": 0.5833333333333333
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 92, 
+    "deg_assort_coeff": 0.015653220951233299, 
+    "density": 0.22727272727272727, 
+    "scene": "1", 
+    "total_degrees": 15, 
+    "avg_shortest_path": 2.9696969696969697, 
+    "location": "Before Orleans.", 
+    "act": "2", 
+    "graph_img_f": "imgs/1henryvi_2_1.png", 
     "char_data": {
      "BEDFORD": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "First Sentinel": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "Sentinels": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "CHARLES": {
       "ratio": 3.0, 
-      "nlines": 12, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 12
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "ALENCON": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "BURGUNDY": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "REIGNIER": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "TALBOT": {
       "ratio": 5.0, 
-      "nlines": 20, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 20
      }, 
      "Soldier": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "BASTARD OF ORLEANS": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "Sergeant": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }
     }, 
-    "location": "Before Orleans.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.4305555555555556
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 65, 
+    "deg_assort_coeff": -0.61777777777777731, 
+    "density": 0.6, 
+    "scene": "2", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.4, 
+    "location": "Orleans. Within the town.", 
+    "act": "2", 
+    "graph_img_f": "imgs/1henryvi_2_2.png", 
     "char_data": {
      "TALBOT": {
       "ratio": 7.5, 
-      "nlines": 30, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 30
      }, 
      "BEDFORD": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "Captain": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "Messenger": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "BURGUNDY": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }
     }, 
-    "location": "Orleans. Within the town.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.5999999999999999
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 102, 
+    "deg_assort_coeff": -0.67032967032967028, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Auvergne. The COUNTESS's castle.", 
+    "act": "2", 
+    "graph_img_f": "imgs/1henryvi_2_3.png", 
     "char_data": {
      "TALBOT": {
       "ratio": 22.0, 
-      "nlines": 44, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 44
      }, 
      "OF AUVERGNE": {
       "ratio": 15.67, 
-      "nlines": 47, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 47
      }, 
      "Messenger": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "Porter": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "Auvergne. The COUNTESS's castle.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 155, 
+    "deg_assort_coeff": -0.38970588235294146, 
+    "density": 0.8, 
+    "scene": "4", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.2, 
+    "location": "London. The Temple-garden.", 
+    "act": "2", 
+    "graph_img_f": "imgs/1henryvi_2_4.png", 
     "char_data": {
      "PLANTAGENET": {
       "ratio": 9.2, 
-      "nlines": 46, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 46
      }, 
      "SUFFOLK": {
       "ratio": 3.5, 
-      "nlines": 14, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 14
      }, 
      "VERNON": {
       "ratio": 2.75, 
-      "nlines": 11, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 11
      }, 
      "Lawyer": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "WARWICK": {
       "ratio": 10.0, 
-      "nlines": 30, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 30
      }, 
      "SOMERSET": {
       "ratio": 9.4, 
-      "nlines": 47, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 47
      }
     }, 
-    "location": "London. The Temple-garden.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.8444444444444446
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 140, 
+    "deg_assort_coeff": -0.64079822616407978, 
+    "density": 0.6666666666666666, 
+    "scene": "5", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The Tower of London.", 
+    "act": "2", 
+    "graph_img_f": "imgs/1henryvi_2_5.png", 
     "char_data": {
      "First Gaoler": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "MORTIMER": {
       "ratio": 48.5, 
-      "nlines": 97, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 97
      }, 
      "PLANTAGENET": {
       "ratio": 39.0, 
-      "nlines": 39, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 39
      }
     }, 
-    "location": "The Tower of London.", 
-    "scene": "5", 
-    "act": "2"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 226, 
+    "deg_assort_coeff": 0.0037637521713931098, 
+    "density": 0.4444444444444444, 
+    "scene": "1", 
+    "total_degrees": 16, 
+    "avg_shortest_path": 1.7222222222222223, 
+    "location": "London. The Parliament-house.", 
+    "act": "3", 
+    "graph_img_f": "imgs/1henryvi_3_1.png", 
     "char_data": {
      "ALL": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "PLANTAGENET": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "KING HENRY VI": {
       "ratio": 10.4, 
-      "nlines": 52, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 52
      }, 
      "OF WINCHESTER": {
       "ratio": 10.67, 
-      "nlines": 32, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 32
      }, 
      "WARWICK": {
       "ratio": 5.17, 
-      "nlines": 31, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 31
      }, 
      "SOMERSET": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "GLOUCESTER": {
       "ratio": 9.86, 
-      "nlines": 69, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 69
      }, 
      "Mayor": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "EXETER": {
       "ratio": 16.0, 
-      "nlines": 16, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 16
      }
     }, 
-    "location": "London. The Parliament-house.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.44074074074074077
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 157, 
+    "deg_assort_coeff": -0.21476442932879983, 
+    "density": 0.3333333333333333, 
+    "scene": "2", 
+    "total_degrees": 22, 
+    "avg_shortest_path": 1.9393939393939394, 
+    "location": "France. Before Rouen.", 
+    "act": "3", 
+    "graph_img_f": "imgs/1henryvi_3_2.png", 
     "char_data": {
      "First Soldier": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "BEDFORD": {
       "ratio": 3.2, 
-      "nlines": 16, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 16
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 4.38, 
-      "nlines": 35, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 35
      }, 
      "CHARLES": {
       "ratio": 1.0, 
-      "nlines": 5, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 5
      }, 
      "Watch": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "REIGNIER": {
       "ratio": 2.25, 
-      "nlines": 9, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 9
      }, 
      "BURGUNDY": {
       "ratio": 2.25, 
-      "nlines": 9, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 9
      }, 
      "ALENCON": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "TALBOT": {
       "ratio": 10.17, 
-      "nlines": 61, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 61
      }, 
      "BASTARD OF ORLEANS": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "Captain": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "FASTOLFE": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }
     }, 
-    "location": "France. Before Rouen.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.5603174603174602
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 96, 
+    "deg_assort_coeff": -0.019195943498734311, 
+    "density": 0.7, 
+    "scene": "3", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The plains near Rouen.", 
+    "act": "3", 
+    "graph_img_f": "imgs/1henryvi_3_3.png", 
     "char_data": {
      "JOAN LA PUCELLE": {
       "ratio": 20.33, 
-      "nlines": 61, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 61
      }, 
      "CHARLES": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "BASTARD OF ORLEANS": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "ALENCON": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "BURGUNDY": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }
     }, 
-    "location": "The plains near Rouen.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.7666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 49, 
+    "deg_assort_coeff": 0.3210332103321033, 
+    "density": 0.4, 
+    "scene": "4", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.8, 
+    "location": "Paris. The palace.", 
+    "act": "3", 
+    "graph_img_f": "imgs/1henryvi_3_4.png", 
     "char_data": {
      "TALBOT": {
       "ratio": 13.0, 
-      "nlines": 13, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 13
      }, 
      "BASSET": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "VERNON": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "KING HENRY VI": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "GLOUCESTER": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }
     }, 
-    "location": "Paris. The palace.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 206, 
+    "deg_assort_coeff": -0.45038235229301199, 
+    "density": 0.38181818181818183, 
+    "scene": "1", 
+    "total_degrees": 21, 
+    "avg_shortest_path": 1.7454545454545454, 
+    "location": "Paris. A hall of state.", 
+    "act": "4", 
+    "graph_img_f": "imgs/1henryvi_4_1.png", 
     "char_data": {
      "BASSET": {
       "ratio": 3.75, 
-      "nlines": 15, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 15
      }, 
      "KING HENRY VI": {
       "ratio": 8.25, 
-      "nlines": 66, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 66
      }, 
      "OF WINCHESTER": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "TALBOT": {
       "ratio": 9.0, 
-      "nlines": 36, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 36
      }, 
      "VERNON": {
       "ratio": 2.5, 
-      "nlines": 10, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 10
      }, 
      "YORK": {
       "ratio": 1.67, 
-      "nlines": 10, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 10
      }, 
      "WARWICK": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "SOMERSET": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "GLOUCESTER": {
       "ratio": 6.67, 
-      "nlines": 40, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 40
      }, 
      "FASTOLFE": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "EXETER": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }
     }, 
-    "location": "Paris. A hall of state.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.5930735930735931
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 60, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Before Bourdeaux.", 
+    "act": "4", 
+    "graph_img_f": "imgs/1henryvi_4_2.png", 
     "char_data": {
      "TALBOT": {
       "ratio": 31.0, 
-      "nlines": 31, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 31
      }, 
      "General": {
       "ratio": 29.0, 
-      "nlines": 29, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 29
      }
     }, 
-    "location": "Before Bourdeaux.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 56, 
+    "deg_assort_coeff": -0.61832061068702293, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Plains in Gascony.", 
+    "act": "4", 
+    "graph_img_f": "imgs/1henryvi_4_3.png", 
     "char_data": {
      "Messenger": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "YORK": {
       "ratio": 14.5, 
-      "nlines": 29, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 29
      }, 
      "LUCY": {
       "ratio": 21.0, 
-      "nlines": 21, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 21
      }
     }, 
-    "location": "Plains in Gascony.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 48, 
+    "deg_assort_coeff": -0.55251141552511418, 
+    "density": 0.6666666666666666, 
+    "scene": "4", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Other plains in Gascony.", 
+    "act": "4", 
+    "graph_img_f": "imgs/1henryvi_4_4.png", 
     "char_data": {
      "SOMERSET": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }, 
      "Captain": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "LUCY": {
       "ratio": 28.0, 
-      "nlines": 28, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 28
      }
     }, 
-    "location": "Other plains in Gascony.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 56, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "5", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The English camp near Bourdeaux.", 
+    "act": "4", 
+    "graph_img_f": "imgs/1henryvi_4_5.png", 
     "char_data": {
      "TALBOT": {
       "ratio": 25.0, 
-      "nlines": 25, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 25
      }, 
      "JOHN TALBOT": {
       "ratio": 31.0, 
-      "nlines": 31, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 31
      }
     }, 
-    "location": "The English camp near Bourdeaux.", 
-    "scene": "5", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 58, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "6", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A field of battle.", 
+    "act": "4", 
+    "graph_img_f": "imgs/1henryvi_4_6.png", 
     "char_data": {
      "TALBOT": {
       "ratio": 42.0, 
-      "nlines": 42, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 42
      }, 
      "JOHN TALBOT": {
       "ratio": 16.0, 
-      "nlines": 16, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 16
      }
     }, 
-    "location": "A field of battle.", 
-    "scene": "6", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 101, 
+    "deg_assort_coeff": 0.13921360255047913, 
+    "density": 0.42857142857142855, 
+    "scene": "7", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.8571428571428572, 
+    "location": "Another part of the field.", 
+    "act": "4", 
+    "graph_img_f": "imgs/1henryvi_4_7.png", 
     "char_data": {
      "Servant": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "CHARLES": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 4.0, 
-      "nlines": 16, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 16
      }, 
      "LUCY": {
       "ratio": 15.0, 
-      "nlines": 30, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 30
      }, 
      "BURGUNDY": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "TALBOT": {
       "ratio": 16.5, 
-      "nlines": 33, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 33
      }, 
      "BASTARD OF ORLEANS": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "7", 
-    "act": "4"
+    "avg_clustering": 0.49999999999999994
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 66, 
+    "deg_assort_coeff": -0.21212121212121213, 
+    "density": 0.4, 
+    "scene": "1", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.8, 
+    "location": "London. The palace.", 
+    "act": "5", 
+    "graph_img_f": "imgs/1henryvi_5_1.png", 
     "char_data": {
      "OF WINCHESTER": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "KING HENRY VI": {
       "ratio": 9.33, 
-      "nlines": 28, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 28
      }, 
      "Legate": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "GLOUCESTER": {
       "ratio": 18.0, 
-      "nlines": 18, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 18
      }, 
      "EXETER": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }
     }, 
-    "location": "London. The palace.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 23, 
+    "deg_assort_coeff": -0.50000000000000089, 
+    "density": 0.7, 
+    "scene": "2", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "France. Plains in Anjou.", 
+    "act": "5", 
+    "graph_img_f": "imgs/1henryvi_5_2.png", 
     "char_data": {
      "CHARLES": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "Scout": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 1.5, 
-      "nlines": 6, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 6
      }, 
      "ALENCON": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "BURGUNDY": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "France. Plains in Anjou.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.8
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 220, 
+    "deg_assort_coeff": -0.14609571788413131, 
+    "density": 0.5, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.7, 
+    "location": "Before Angiers.", 
+    "act": "5", 
+    "graph_img_f": "imgs/1henryvi_5_3.png", 
     "char_data": {
      "MARGARET": {
       "ratio": 17.5, 
-      "nlines": 35, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 35
      }, 
      "SUFFOLK": {
       "ratio": 36.67, 
-      "nlines": 110, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 110
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 42.0, 
-      "nlines": 42, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 42
      }, 
      "YORK": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "REIGNIER": {
       "ratio": 10.5, 
-      "nlines": 21, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 21
      }
     }, 
-    "location": "Before Angiers.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.4666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 183, 
+    "deg_assort_coeff": -0.19029957203994374, 
+    "density": 0.5, 
+    "scene": "4", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.5, 
+    "location": "Camp of the YORK in Anjou.", 
+    "act": "5", 
+    "graph_img_f": "imgs/1henryvi_5_4.png", 
     "char_data": {
      "Shepherd": {
       "ratio": 8.33, 
-      "nlines": 25, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 25
      }, 
      "OF WINCHESTER": {
       "ratio": 9.0, 
-      "nlines": 18, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 18
      }, 
      "CHARLES": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "JOAN LA PUCELLE": {
       "ratio": 13.67, 
-      "nlines": 41, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 41
      }, 
      "ALENCON": {
       "ratio": 2.75, 
-      "nlines": 11, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 11
      }, 
      "REIGNIER": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "YORK": {
       "ratio": 8.67, 
-      "nlines": 52, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 52
      }, 
      "WARWICK": {
       "ratio": 3.2, 
-      "nlines": 16, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 16
      }
     }, 
-    "location": "Camp of the YORK in Anjou.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 0.44999999999999996
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 112, 
+    "deg_assort_coeff": -0.57446808510638381, 
+    "density": 0.8333333333333334, 
+    "scene": "5", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "London. The palace.", 
+    "act": "5", 
+    "graph_img_f": "imgs/1henryvi_5_5.png", 
     "char_data": {
      "KING HENRY VI": {
       "ratio": 18.0, 
-      "nlines": 36, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 36
      }, 
      "SUFFOLK": {
       "ratio": 20.67, 
-      "nlines": 62, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 62
      }, 
      "GLOUCESTER": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "EXETER": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "London. The palace.", 
-    "scene": "5", 
-    "act": "5"
+    "avg_clustering": 0.8333333333333333
    }
   ]
  ], 
@@ -1020,308 +1182,308 @@
  "char_data": {
   "BASSET": {
    "ratio": 6.25, 
+   "degrees": 4, 
    "nlines": 25, 
-   "nedges": 4, 
    "order_app": 41
   }, 
   "BEDFORD": {
    "ratio": 10.38, 
+   "degrees": 8, 
    "nlines": 83, 
-   "nedges": 8, 
    "order_app": 0
   }, 
   "YORK": {
    "ratio": 7.36, 
+   "degrees": 14, 
    "nlines": 103, 
-   "nedges": 14, 
    "order_app": 42
   }, 
   "First Soldier": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 38
   }, 
   "ALENCON": {
    "ratio": 6.25, 
+   "degrees": 8, 
    "nlines": 50, 
-   "nedges": 8, 
    "order_app": 6
   }, 
   "LUCY": {
    "ratio": 19.75, 
+   "degrees": 4, 
    "nlines": 79, 
-   "nedges": 4, 
    "order_app": 44
   }, 
   "TALBOT": {
    "ratio": 21.14, 
+   "degrees": 21, 
    "nlines": 444, 
-   "nedges": 21, 
    "order_app": 17
   }, 
   "MARGARET": {
    "ratio": 17.5, 
+   "degrees": 2, 
    "nlines": 35, 
-   "nedges": 2, 
    "order_app": 49
   }, 
   "VERNON": {
    "ratio": 3.88, 
+   "degrees": 8, 
    "nlines": 31, 
-   "nedges": 8, 
    "order_app": 32
   }, 
   "Messenger": {
    "ratio": 14.14, 
+   "degrees": 7, 
    "nlines": 99, 
-   "nedges": 7, 
    "order_app": 4
   }, 
   "Sergeant": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 20
   }, 
   "GLANSDALE": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 19
   }, 
   "WARWICK": {
    "ratio": 6.75, 
+   "degrees": 12, 
    "nlines": 81, 
-   "nedges": 12, 
    "order_app": 31
   }, 
   "Legate": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 47
   }, 
   "General": {
    "ratio": 29.0, 
+   "degrees": 1, 
    "nlines": 29, 
-   "nedges": 1, 
    "order_app": 43
   }, 
   "FASTOLFE": {
    "ratio": 3.0, 
+   "degrees": 3, 
    "nlines": 9, 
-   "nedges": 3, 
    "order_app": 40
   }, 
   "Porter": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 27
   }, 
   "OF AUVERGNE": {
    "ratio": 15.67, 
+   "degrees": 3, 
    "nlines": 47, 
-   "nedges": 3, 
    "order_app": 26
   }, 
   "First Gaoler": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 35
   }, 
   "PLANTAGENET": {
    "ratio": 11.75, 
+   "degrees": 8, 
    "nlines": 94, 
-   "nedges": 8, 
    "order_app": 28
   }, 
   "KING HENRY VI": {
    "ratio": 16.42, 
+   "degrees": 12, 
    "nlines": 197, 
-   "nedges": 12, 
    "order_app": 36
   }, 
   "GARGRAVE": {
    "ratio": 0.67, 
+   "degrees": 3, 
    "nlines": 2, 
-   "nedges": 3, 
    "order_app": 18
   }, 
   "Sentinels": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 23
   }, 
   "CHARLES": {
    "ratio": 11.08, 
+   "degrees": 13, 
    "nlines": 144, 
-   "nedges": 13, 
    "order_app": 5
   }, 
   "Watch": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 39
   }, 
   "BURGUNDY": {
    "ratio": 7.5, 
+   "degrees": 6, 
    "nlines": 45, 
-   "nedges": 6, 
    "order_app": 22
   }, 
   "Scout": {
    "ratio": 2.5, 
+   "degrees": 2, 
    "nlines": 5, 
-   "nedges": 2, 
    "order_app": 48
   }, 
   "BASTARD OF ORLEANS": {
    "ratio": 6.0, 
+   "degrees": 5, 
    "nlines": 30, 
-   "nedges": 5, 
    "order_app": 8
   }, 
   "First Warder": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 10
   }, 
   "SOMERSET": {
    "ratio": 6.73, 
+   "degrees": 11, 
    "nlines": 74, 
-   "nedges": 11, 
    "order_app": 30
   }, 
   "Second Warder": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 11
   }, 
   "EXETER": {
    "ratio": 9.14, 
+   "degrees": 7, 
    "nlines": 64, 
-   "nedges": 7, 
    "order_app": 2
   }, 
   "JOHN TALBOT": {
    "ratio": 47.0, 
+   "degrees": 1, 
    "nlines": 47, 
-   "nedges": 1, 
    "order_app": 45
   }, 
   "Boy": {
    "ratio": 7.67, 
+   "degrees": 3, 
    "nlines": 23, 
-   "nedges": 3, 
    "order_app": 15
   }, 
   "Shepherd": {
    "ratio": 8.33, 
+   "degrees": 3, 
    "nlines": 25, 
-   "nedges": 3, 
    "order_app": 50
   }, 
   "Servant": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 46
   }, 
   "REIGNIER": {
    "ratio": 7.88, 
+   "degrees": 8, 
    "nlines": 63, 
-   "nedges": 8, 
    "order_app": 7
   }, 
   "Soldier": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 24
   }, 
   "Officer": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 14
   }, 
   "ALL": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 37
   }, 
   "First Sentinel": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 21
   }, 
   "OF WINCHESTER": {
    "ratio": 11.0, 
+   "degrees": 9, 
    "nlines": 99, 
-   "nedges": 9, 
    "order_app": 3
   }, 
   "JOAN LA PUCELLE": {
    "ratio": 18.6, 
+   "degrees": 15, 
    "nlines": 279, 
-   "nedges": 15, 
    "order_app": 9
   }, 
   "MORTIMER": {
    "ratio": 48.5, 
+   "degrees": 2, 
    "nlines": 97, 
-   "nedges": 2, 
    "order_app": 34
   }, 
   "SUFFOLK": {
    "ratio": 18.6, 
+   "degrees": 10, 
    "nlines": 186, 
-   "nedges": 10, 
    "order_app": 29
   }, 
   "SALISBURY": {
    "ratio": 5.0, 
+   "degrees": 3, 
    "nlines": 15, 
-   "nedges": 3, 
    "order_app": 16
   }, 
   "Lawyer": {
    "ratio": 2.33, 
+   "degrees": 3, 
    "nlines": 7, 
-   "nedges": 3, 
    "order_app": 33
   }, 
   "WOODVILE": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 12
   }, 
   "Captain": {
    "ratio": 2.5, 
+   "degrees": 4, 
    "nlines": 10, 
-   "nedges": 4, 
    "order_app": 25
   }, 
   "Mayor": {
    "ratio": 4.6, 
+   "degrees": 5, 
    "nlines": 23, 
-   "nedges": 5, 
    "order_app": 13
   }, 
   "GLOUCESTER": {
    "ratio": 13.88, 
+   "degrees": 16, 
    "nlines": 222, 
-   "nedges": 16, 
    "order_app": 1
   }
  }, 

@@ -3,717 +3,837 @@
  "acts": [
   [
    {
+    "total_lines": 197, 
+    "deg_assort_coeff": -0.33333333333333409, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.0, 
+    "location": "Elsinore. A platform before the castle.", 
+    "act": "1", 
     "graph_img_f": "imgs/hamlet_1_1.png", 
     "char_data": {
      "MARCELLUS": {
       "ratio": 16.0, 
-      "nlines": 48, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 48
      }, 
      "HORATIO": {
       "ratio": 34.0, 
-      "nlines": 102, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 102
      }, 
      "BERNARDO": {
       "ratio": 11.67, 
-      "nlines": 35, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 35
      }, 
      "FRANCISCO": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }
     }, 
-    "location": "Elsinore. A platform before the castle.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 289, 
+    "deg_assort_coeff": -0.17835760453556487, 
+    "density": 0.2777777777777778, 
+    "scene": "2", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.9722222222222223, 
+    "location": "A room of state in the castle.", 
+    "act": "1", 
     "graph_img_f": "imgs/hamlet_1_2.png", 
     "char_data": {
      "MARCELLUS": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "All": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "HORATIO": {
       "ratio": 25.0, 
-      "nlines": 50, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 50
      }, 
      "LORD POLONIUS": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "LAERTES": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "HAMLET": {
       "ratio": 21.0, 
-      "nlines": 105, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 105
      }, 
      "KING CLAUDIUS": {
       "ratio": 19.0, 
-      "nlines": 95, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 95
      }, 
      "QUEEN GERTRUDE": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "CORNELIUS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "A room of state in the castle.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.3666666666666667
    }, 
    {
+    "total_lines": 143, 
+    "deg_assort_coeff": -0.50000000000000355, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in Polonius' house.", 
+    "act": "1", 
     "graph_img_f": "imgs/hamlet_1_3.png", 
     "char_data": {
      "OPHELIA": {
       "ratio": 10.5, 
-      "nlines": 21, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 21
      }, 
      "LAERTES": {
       "ratio": 27.0, 
-      "nlines": 54, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 54
      }, 
      "LORD POLONIUS": {
       "ratio": 34.0, 
-      "nlines": 68, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 68
      }
     }, 
-    "location": "A room in Polonius' house.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 106, 
+    "deg_assort_coeff": -0.500000000000002, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "The platform.", 
+    "act": "1", 
     "graph_img_f": "imgs/hamlet_1_4.png", 
     "char_data": {
      "MARCELLUS": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "HORATIO": {
       "ratio": 14.0, 
-      "nlines": 28, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 28
      }, 
      "HAMLET": {
       "ratio": 35.0, 
-      "nlines": 70, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 70
      }
     }, 
-    "location": "The platform.", 
-    "scene": "4", 
-    "act": "1"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 220, 
+    "deg_assort_coeff": -0.29391691394658681, 
+    "density": 0.8333333333333334, 
+    "scene": "5", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another part of the platform.", 
+    "act": "1", 
     "graph_img_f": "imgs/hamlet_1_5.png", 
     "char_data": {
      "Ghost": {
       "ratio": 90.0, 
-      "nlines": 90, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 90
      }, 
      "MARCELLUS": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "HORATIO": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }, 
      "HAMLET": {
       "ratio": 34.0, 
-      "nlines": 102, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 102
      }
     }, 
-    "location": "Another part of the platform.", 
-    "scene": "5", 
-    "act": "1"
+    "avg_clustering": 0.5833333333333334
    }
   ], 
   [
    {
+    "total_lines": 134, 
+    "deg_assort_coeff": -0.7168141592920354, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "A room in POLONIUS' house.", 
+    "act": "2", 
     "graph_img_f": "imgs/hamlet_2_1.png", 
     "char_data": {
      "OPHELIA": {
       "ratio": 28.0, 
-      "nlines": 28, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 28
      }, 
      "LORD POLONIUS": {
       "ratio": 45.5, 
-      "nlines": 91, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 91
      }, 
      "REYNALDO": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }
     }, 
-    "location": "A room in POLONIUS' house.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 639, 
+    "deg_assort_coeff": -0.095519694522866863, 
+    "density": 0.5, 
+    "scene": "2", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.6071428571428572, 
+    "location": "A room in the castle.", 
+    "act": "2", 
     "graph_img_f": "imgs/hamlet_2_2.png", 
     "char_data": {
      "GUILDENSTERN": {
       "ratio": 4.5, 
-      "nlines": 18, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 18
      }, 
      "LORD POLONIUS": {
       "ratio": 29.8, 
-      "nlines": 149, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 149
      }, 
      "ROSENCRANTZ": {
       "ratio": 12.0, 
-      "nlines": 48, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 48
      }, 
      "HAMLET": {
       "ratio": 72.0, 
-      "nlines": 288, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 288
      }, 
      "VOLTIMAND": {
       "ratio": 22.0, 
-      "nlines": 22, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 22
      }, 
      "KING CLAUDIUS": {
       "ratio": 10.75, 
-      "nlines": 43, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 43
      }, 
      "QUEEN GERTRUDE": {
       "ratio": 5.5, 
-      "nlines": 22, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 22
      }, 
      "First Player": {
       "ratio": 24.5, 
-      "nlines": 49, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 49
      }
     }, 
-    "location": "A room in the castle.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.5083333333333333
    }
   ], 
   [
    {
+    "total_lines": 210, 
+    "deg_assort_coeff": 0.081632653061224345, 
+    "density": 0.5714285714285714, 
+    "scene": "1", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.4761904761904763, 
+    "location": "A room in the castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/hamlet_3_1.png", 
     "char_data": {
      "GUILDENSTERN": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "LORD POLONIUS": {
       "ratio": 6.75, 
-      "nlines": 27, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 27
      }, 
      "ROSENCRANTZ": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "OPHELIA": {
       "ratio": 8.75, 
-      "nlines": 35, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 35
      }, 
      "HAMLET": {
       "ratio": 40.0, 
-      "nlines": 80, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 80
      }, 
      "KING CLAUDIUS": {
       "ratio": 10.25, 
-      "nlines": 41, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 41
      }, 
      "QUEEN GERTRUDE": {
       "ratio": 2.25, 
-      "nlines": 9, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 9
      }
     }, 
-    "location": "A room in the castle.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.6666666666666667
    }, 
    {
+    "total_lines": 417, 
+    "deg_assort_coeff": -0.51732697818680018, 
+    "density": 0.2087912087912088, 
+    "scene": "2", 
+    "total_degrees": 19, 
+    "avg_shortest_path": 1.7912087912087913, 
+    "location": "A hall in the castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/hamlet_3_2.png", 
     "char_data": {
      "GUILDENSTERN": {
       "ratio": 21.0, 
-      "nlines": 21, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 21
      }, 
      "LORD POLONIUS": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "ROSENCRANTZ": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }, 
      "OPHELIA": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }, 
      "HORATIO": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }, 
      "All": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "HAMLET": {
       "ratio": 18.62, 
-      "nlines": 242, 
-      "nedges": 13
+      "degrees": 13, 
+      "nlines": 242
      }, 
      "KING CLAUDIUS": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "Player Queen": {
       "ratio": 15.5, 
-      "nlines": 31, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 31
      }, 
      "Prologue": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "QUEEN GERTRUDE": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "LUCIANUS": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "Player King": {
       "ratio": 22.5, 
-      "nlines": 45, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 45
      }, 
      "First Player": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "A hall in the castle.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.5769230769230769
    }, 
    {
+    "total_lines": 110, 
+    "deg_assort_coeff": -0.68224299065420557, 
+    "density": 0.6, 
+    "scene": "3", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.4, 
+    "location": "A room in the castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/hamlet_3_3.png", 
     "char_data": {
      "GUILDENSTERN": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "KING CLAUDIUS": {
       "ratio": 13.5, 
-      "nlines": 54, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 54
      }, 
      "LORD POLONIUS": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "ROSENCRANTZ": {
       "ratio": 6.0, 
-      "nlines": 18, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 18
      }, 
      "HAMLET": {
       "ratio": 25.0, 
-      "nlines": 25, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 25
      }
     }, 
-    "location": "A room in the castle.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.5999999999999999
    }, 
    {
+    "total_lines": 244, 
+    "deg_assort_coeff": -0.61339262359403612, 
+    "density": 0.6666666666666666, 
+    "scene": "4", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The Queen's closet.", 
+    "act": "3", 
     "graph_img_f": "imgs/hamlet_3_4.png", 
     "char_data": {
      "QUEEN GERTRUDE": {
       "ratio": 24.5, 
-      "nlines": 49, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 49
      }, 
      "Ghost": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "LORD POLONIUS": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "HAMLET": {
       "ratio": 60.33, 
-      "nlines": 181, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 181
      }
     }, 
-    "location": "The Queen's closet.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333334
    }
   ], 
   [
    {
+    "total_lines": 46, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/hamlet_4_1.png", 
     "char_data": {
      "QUEEN GERTRUDE": {
       "ratio": 13.0, 
-      "nlines": 13, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 13
      }, 
      "KING CLAUDIUS": {
       "ratio": 33.0, 
-      "nlines": 33, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 33
      }
     }, 
-    "location": "A room in the castle.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 34, 
+    "deg_assort_coeff": -0.47058823529411764, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another room in the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/hamlet_4_2.png", 
     "char_data": {
      "GUILDENSTERN": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "ROSENCRANTZ": {
       "ratio": 11.0, 
-      "nlines": 11, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 11
      }, 
      "HAMLET": {
       "ratio": 11.0, 
-      "nlines": 22, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 22
      }
     }, 
-    "location": "Another room in the castle.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 80, 
+    "deg_assort_coeff": -0.63295880149812733, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another room in the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/hamlet_4_3.png", 
     "char_data": {
      "KING CLAUDIUS": {
       "ratio": 24.5, 
-      "nlines": 49, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 49
      }, 
      "ROSENCRANTZ": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "HAMLET": {
       "ratio": 26.0, 
-      "nlines": 26, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 26
      }
     }, 
-    "location": "Another room in the castle.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 73, 
+    "deg_assort_coeff": -0.66268350973028389, 
+    "density": 0.8333333333333334, 
+    "scene": "4", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "A plain in Denmark.", 
+    "act": "4", 
     "graph_img_f": "imgs/hamlet_4_4.png", 
     "char_data": {
      "PRINCE FORTINBRAS": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "Captain": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "ROSENCRANTZ": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "HAMLET": {
       "ratio": 16.33, 
-      "nlines": 49, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 49
      }
     }, 
-    "location": "A plain in Denmark.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 253, 
+    "deg_assort_coeff": 0.051659483964850927, 
+    "density": 0.5714285714285714, 
+    "scene": "5", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.4761904761904763, 
+    "location": "Elsinore. A room in the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/hamlet_4_5.png", 
     "char_data": {
      "Gentleman": {
       "ratio": 8.0, 
-      "nlines": 24, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 24
      }, 
      "HORATIO": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "OPHELIA": {
       "ratio": 28.0, 
-      "nlines": 84, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 84
      }, 
      "LAERTES": {
       "ratio": 12.0, 
-      "nlines": 48, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 48
      }, 
      "Danes": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "KING CLAUDIUS": {
       "ratio": 14.6, 
-      "nlines": 73, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 73
      }, 
      "QUEEN GERTRUDE": {
       "ratio": 3.6, 
-      "nlines": 18, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 18
      }
     }, 
-    "location": "Elsinore. A room in the castle.", 
-    "scene": "5", 
-    "act": "4"
+    "avg_clustering": 0.7619047619047619
    }, 
    {
+    "total_lines": 36, 
+    "deg_assort_coeff": -0.81818181818181823, 
+    "density": 0.6666666666666666, 
+    "scene": "6", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another room in the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/hamlet_4_6.png", 
     "char_data": {
      "Servant": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "First Sailor": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "HORATIO": {
       "ratio": 15.0, 
-      "nlines": 30, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 30
      }
     }, 
-    "location": "Another room in the castle.", 
-    "scene": "6", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 217, 
+    "deg_assort_coeff": -0.5989633948817622, 
+    "density": 0.6666666666666666, 
+    "scene": "7", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another room in the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/hamlet_4_7.png", 
     "char_data": {
      "QUEEN GERTRUDE": {
       "ratio": 10.5, 
-      "nlines": 21, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 21
      }, 
      "KING CLAUDIUS": {
       "ratio": 47.67, 
-      "nlines": 143, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 143
      }, 
      "LAERTES": {
       "ratio": 24.0, 
-      "nlines": 48, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 48
      }, 
      "Messenger": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }
     }, 
-    "location": "Another room in the castle.", 
-    "scene": "7", 
-    "act": "4"
+    "avg_clustering": 0.5833333333333333
    }
   ], 
   [
    {
+    "total_lines": 326, 
+    "deg_assort_coeff": 0.021578402784309655, 
+    "density": 0.3055555555555556, 
+    "scene": "1", 
+    "total_degrees": 11, 
+    "avg_shortest_path": 2.0555555555555554, 
+    "location": "A churchyard.", 
+    "act": "5", 
     "graph_img_f": "imgs/hamlet_5_1.png", 
     "char_data": {
      "All": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "Second Clown": {
       "ratio": 19.0, 
-      "nlines": 19, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 19
      }, 
      "LAERTES": {
       "ratio": 6.67, 
-      "nlines": 20, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 20
      }, 
      "HAMLET": {
       "ratio": 27.6, 
-      "nlines": 138, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 138
      }, 
      "KING CLAUDIUS": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "HORATIO": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "QUEEN GERTRUDE": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "First Priest": {
       "ratio": 13.0, 
-      "nlines": 13, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 13
      }, 
      "First Clown": {
       "ratio": 49.5, 
-      "nlines": 99, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 99
      }
     }, 
-    "location": "A churchyard.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.20740740740740737
    }, 
    {
+    "total_lines": 448, 
+    "deg_assort_coeff": -0.24487958227062442, 
+    "density": 0.37777777777777777, 
+    "scene": "2", 
+    "total_degrees": 17, 
+    "avg_shortest_path": 1.8444444444444446, 
+    "location": "A hall in the castle.", 
+    "act": "5", 
     "graph_img_f": "imgs/hamlet_5_2.png", 
     "char_data": {
      "All": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "HORATIO": {
       "ratio": 13.5, 
-      "nlines": 54, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 54
      }, 
      "First Ambassador": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "LAERTES": {
       "ratio": 9.75, 
-      "nlines": 39, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 39
      }, 
      "HAMLET": {
       "ratio": 33.43, 
-      "nlines": 234, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 234
      }, 
      "KING CLAUDIUS": {
       "ratio": 6.0, 
-      "nlines": 30, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 30
      }, 
      "OSRIC": {
       "ratio": 12.0, 
-      "nlines": 48, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 48
      }, 
      "QUEEN GERTRUDE": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "Lord": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "PRINCE FORTINBRAS": {
       "ratio": 10.5, 
-      "nlines": 21, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 21
      }
     }, 
-    "location": "A hall in the castle.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.6766666666666666
    }
   ]
  ], 
@@ -758,212 +878,212 @@
  "char_data": {
   "GUILDENSTERN": {
    "ratio": 12.25, 
+   "degrees": 4, 
    "nlines": 49, 
-   "nedges": 4, 
    "order_app": 15
   }, 
   "First Priest": {
    "ratio": 13.0, 
+   "degrees": 1, 
    "nlines": 13, 
-   "nedges": 1, 
    "order_app": 31
   }, 
   "Gentleman": {
    "ratio": 8.0, 
+   "degrees": 3, 
    "nlines": 24, 
-   "nedges": 3, 
    "order_app": 24
   }, 
   "LUCIANUS": {
    "ratio": 7.0, 
+   "degrees": 1, 
    "nlines": 7, 
-   "nedges": 1, 
    "order_app": 21
   }, 
   "OSRIC": {
    "ratio": 12.0, 
+   "degrees": 4, 
    "nlines": 48, 
-   "nedges": 4, 
    "order_app": 32
   }, 
   "Lord": {
    "ratio": 7.0, 
+   "degrees": 1, 
    "nlines": 7, 
-   "nedges": 1, 
    "order_app": 33
   }, 
   "PRINCE FORTINBRAS": {
    "ratio": 7.75, 
+   "degrees": 4, 
    "nlines": 31, 
-   "nedges": 4, 
    "order_app": 22
   }, 
   "First Ambassador": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 34
   }, 
   "MARCELLUS": {
    "ratio": 13.0, 
+   "degrees": 6, 
    "nlines": 78, 
-   "nedges": 6, 
    "order_app": 3
   }, 
   "ROSENCRANTZ": {
    "ratio": 18.5, 
+   "degrees": 6, 
    "nlines": 111, 
-   "nedges": 6, 
    "order_app": 14
   }, 
   "Captain": {
    "ratio": 4.33, 
+   "degrees": 3, 
    "nlines": 13, 
-   "nedges": 3, 
    "order_app": 23
   }, 
   "Player King": {
    "ratio": 22.5, 
+   "degrees": 2, 
    "nlines": 45, 
-   "nedges": 2, 
    "order_app": 19
   }, 
   "Ghost": {
    "ratio": 96.0, 
+   "degrees": 1, 
    "nlines": 96, 
-   "nedges": 1, 
    "order_app": 12
   }, 
   "First Sailor": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 27
   }, 
   "HORATIO": {
    "ratio": 25.5, 
+   "degrees": 12, 
    "nlines": 306, 
-   "nedges": 12, 
    "order_app": 2
   }, 
   "BERNARDO": {
    "ratio": 11.67, 
+   "degrees": 3, 
    "nlines": 35, 
-   "nedges": 3, 
    "order_app": 0
   }, 
   "Servant": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 26
   }, 
   "LAERTES": {
    "ratio": 27.0, 
+   "degrees": 8, 
    "nlines": 216, 
-   "nedges": 8, 
    "order_app": 6
   }, 
   "HAMLET": {
    "ratio": 74.38, 
+   "degrees": 21, 
    "nlines": 1562, 
-   "nedges": 21, 
    "order_app": 8
   }, 
   "Second Clown": {
    "ratio": 19.0, 
+   "degrees": 1, 
    "nlines": 19, 
-   "nedges": 1, 
    "order_app": 30
   }, 
   "Prologue": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 18
   }, 
   "First Player": {
    "ratio": 26.0, 
+   "degrees": 2, 
    "nlines": 52, 
-   "nedges": 2, 
    "order_app": 17
   }, 
   "First Clown": {
    "ratio": 49.5, 
+   "degrees": 2, 
    "nlines": 99, 
-   "nedges": 2, 
    "order_app": 29
   }, 
   "All": {
    "ratio": 1.25, 
+   "degrees": 4, 
    "nlines": 5, 
-   "nedges": 4, 
    "order_app": 10
   }, 
   "FRANCISCO": {
    "ratio": 4.0, 
+   "degrees": 3, 
    "nlines": 12, 
-   "nedges": 3, 
    "order_app": 1
   }, 
   "LORD POLONIUS": {
    "ratio": 46.0, 
+   "degrees": 8, 
    "nlines": 368, 
-   "nedges": 8, 
    "order_app": 7
   }, 
   "OPHELIA": {
    "ratio": 30.83, 
+   "degrees": 6, 
    "nlines": 185, 
-   "nedges": 6, 
    "order_app": 11
   }, 
   "Danes": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 25
   }, 
   "REYNALDO": {
    "ratio": 15.0, 
+   "degrees": 1, 
    "nlines": 15, 
-   "nedges": 1, 
    "order_app": 13
   }, 
   "VOLTIMAND": {
    "ratio": 22.0, 
+   "degrees": 1, 
    "nlines": 22, 
-   "nedges": 1, 
    "order_app": 16
   }, 
   "KING CLAUDIUS": {
    "ratio": 41.36, 
+   "degrees": 14, 
    "nlines": 579, 
-   "nedges": 14, 
    "order_app": 4
   }, 
   "Player Queen": {
    "ratio": 15.5, 
+   "degrees": 2, 
    "nlines": 31, 
-   "nedges": 2, 
    "order_app": 20
   }, 
   "QUEEN GERTRUDE": {
    "ratio": 16.6, 
+   "degrees": 10, 
    "nlines": 166, 
-   "nedges": 10, 
    "order_app": 9
   }, 
   "Messenger": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 28
   }, 
   "CORNELIUS": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 5
   }
  }, 

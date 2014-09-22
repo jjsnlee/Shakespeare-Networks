@@ -3,669 +3,789 @@
  "acts": [
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 42, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "0", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "Induction", 
+    "act": "0", 
+    "graph_img_f": "imgs/2henryiv_0_0.png", 
     "char_data": {
      "RUMOUR": {
       "ratio": 0, 
-      "nlines": 42, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 42
      }
     }, 
-    "location": "Induction", 
-    "scene": "0", 
-    "act": "0"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 232, 
+    "deg_assort_coeff": -0.63173121791880482, 
+    "density": 0.6, 
+    "scene": "1", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.4, 
+    "location": "The same.", 
+    "act": "1", 
+    "graph_img_f": "imgs/2henryiv_1_1.png", 
     "char_data": {
      "TRAVERS": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "NORTHUMBERLAND": {
       "ratio": 29.67, 
-      "nlines": 89, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 89
      }, 
      "LORD BARDOLPH": {
       "ratio": 11.0, 
-      "nlines": 44, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 44
      }, 
      "Porter": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "MORTON": {
       "ratio": 39.0, 
-      "nlines": 78, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 78
      }
     }, 
-    "location": "The same.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.6
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 250, 
+    "deg_assort_coeff": -0.066666666666666666, 
+    "density": 1.6666666666666667, 
+    "scene": "2", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.0, 
+    "location": "London. A street.", 
+    "act": "1", 
+    "graph_img_f": "imgs/2henryiv_1_2.png", 
     "char_data": {
      "Servant": {
       "ratio": 3.75, 
-      "nlines": 15, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 15
      }, 
      "FALSTAFF": {
       "ratio": 55.25, 
-      "nlines": 221, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 221
      }, 
      "Page": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }
     }, 
-    "location": "London. A street.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 1.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 115, 
+    "deg_assort_coeff": -0.25550660792951629, 
+    "density": 0.8333333333333334, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "York. The Archbishop's palace.", 
+    "act": "1", 
+    "graph_img_f": "imgs/2henryiv_1_3.png", 
     "char_data": {
      "ARCHBISHOP OF YORK": {
       "ratio": 11.33, 
-      "nlines": 34, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 34
      }, 
      "MOWBRAY": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "LORD BARDOLPH": {
       "ratio": 23.0, 
-      "nlines": 46, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 46
      }, 
      "HASTINGS": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }
     }, 
-    "location": "York. The Archbishop's palace.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.8333333333333333
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 185, 
+    "deg_assort_coeff": -0.14029850746268743, 
+    "density": 0.8, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.5, 
+    "location": "London. A street.", 
+    "act": "2", 
+    "graph_img_f": "imgs/2henryiv_2_1.png", 
     "char_data": {
      "FALSTAFF": {
       "ratio": 15.6, 
-      "nlines": 78, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 78
      }, 
      "MISTRESS QUICKLY": {
       "ratio": 17.6, 
-      "nlines": 88, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 88
      }, 
      "SNARE": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "FANG": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "GOWER": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }
     }, 
-    "location": "London. A street.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.5333333333333333
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 169, 
+    "deg_assort_coeff": -0.2951520912547535, 
+    "density": 0.8333333333333334, 
+    "scene": "2", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "London. Another street.", 
+    "act": "2", 
+    "graph_img_f": "imgs/2henryiv_2_2.png", 
     "char_data": {
      "POINS": {
       "ratio": 29.0, 
-      "nlines": 58, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 58
      }, 
      "PRINCE HENRY": {
       "ratio": 28.0, 
-      "nlines": 84, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 84
      }, 
      "BARDOLPH": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "Page": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }
     }, 
-    "location": "London. Another street.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 73, 
+    "deg_assort_coeff": -0.49999999999999989, 
+    "density": 2.0, 
+    "scene": "3", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.0, 
+    "location": "Warkworth. Before the castle.", 
+    "act": "2", 
+    "graph_img_f": "imgs/2henryiv_2_3.png", 
     "char_data": {
      "NORTHUMBERLAND": {
       "ratio": 9.0, 
-      "nlines": 27, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 27
      }, 
      "LADY PERCY": {
       "ratio": 46.0, 
-      "nlines": 46, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 46
      }
     }, 
-    "location": "Warkworth. Before the castle.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 394, 
+    "deg_assort_coeff": -0.25600974796383114, 
+    "density": 0.41818181818181815, 
+    "scene": "4", 
+    "total_degrees": 23, 
+    "avg_shortest_path": 1.709090909090909, 
+    "location": "London. The Boar's-head Tavern in Eastcheap.", 
+    "act": "2", 
+    "graph_img_f": "imgs/2henryiv_2_4.png", 
     "char_data": {
      "POINS": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "MISTRESS QUICKLY": {
       "ratio": 14.33, 
-      "nlines": 86, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 86
      }, 
      "DOLL TEARSHEET": {
       "ratio": 8.88, 
-      "nlines": 71, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 71
      }, 
      "BARDOLPH": {
       "ratio": 2.25, 
-      "nlines": 9, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 9
      }, 
      "PETO": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "First Drawer": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "FALSTAFF": {
       "ratio": 16.14, 
-      "nlines": 113, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 113
      }, 
      "Second Drawer": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "PRINCE HENRY": {
       "ratio": 7.6, 
-      "nlines": 38, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 38
      }, 
      "PISTOL": {
       "ratio": 7.2, 
-      "nlines": 36, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 36
      }, 
      "Page": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }
     }, 
-    "location": "London. The Boar's-head Tavern in Eastcheap.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.5303030303030303
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 115, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Westminster. The palace.", 
+    "act": "3", 
+    "graph_img_f": "imgs/2henryiv_3_1.png", 
     "char_data": {
      "KING HENRY IV": {
       "ratio": 84.0, 
-      "nlines": 84, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 84
      }, 
      "WARWICK": {
       "ratio": 31.0, 
-      "nlines": 31, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 31
      }
     }, 
-    "location": "Westminster. The palace.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 320, 
+    "deg_assort_coeff": -0.48256051295343755, 
+    "density": 0.5277777777777778, 
+    "scene": "2", 
+    "total_degrees": 19, 
+    "avg_shortest_path": 1.4722222222222223, 
+    "location": "Gloucestershire. Before SHALLOW'S house.", 
+    "act": "3", 
+    "graph_img_f": "imgs/2henryiv_3_2.png", 
     "char_data": {
      "BARDOLPH": {
       "ratio": 3.5, 
-      "nlines": 21, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 21
      }, 
      "WART": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "SHALLOW": {
       "ratio": 16.43, 
-      "nlines": 115, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 115
      }, 
      "BULLCALF": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "MOULDY": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "FALSTAFF": {
       "ratio": 15.63, 
-      "nlines": 125, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 125
      }, 
      "SHADOW": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "FEEBLE": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "SILENCE": {
       "ratio": 3.5, 
-      "nlines": 14, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 14
      }
     }, 
-    "location": "Gloucestershire. Before SHALLOW'S house.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.7055555555555555
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 240, 
+    "deg_assort_coeff": 0.0, 
+    "density": 0.8, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "Yorkshire. Gaultree Forest.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryiv_4_1.png", 
     "char_data": {
      "ARCHBISHOP OF YORK": {
       "ratio": 31.33, 
-      "nlines": 94, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 94
      }, 
      "MOWBRAY": {
       "ratio": 11.25, 
-      "nlines": 45, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 45
      }, 
      "Messenger": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "WESTMORELAND": {
       "ratio": 27.0, 
-      "nlines": 81, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 81
      }, 
      "HASTINGS": {
       "ratio": 4.0, 
-      "nlines": 16, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 16
      }
     }, 
-    "location": "Yorkshire. Gaultree Forest.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.8666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 137, 
+    "deg_assort_coeff": -0.24999999999999714, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.0, 
+    "location": "Another part of the forest.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryiv_4_2.png", 
     "char_data": {
      "LANCASTER": {
       "ratio": 17.75, 
-      "nlines": 71, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 71
      }, 
      "ARCHBISHOP OF YORK": {
       "ratio": 6.5, 
-      "nlines": 26, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 26
      }, 
      "MOWBRAY": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "WESTMORELAND": {
       "ratio": 4.5, 
-      "nlines": 18, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 18
      }, 
      "HASTINGS": {
       "ratio": 3.5, 
-      "nlines": 14, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 14
      }
     }, 
-    "location": "Another part of the forest.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 1.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 139, 
+    "deg_assort_coeff": -0.57446808510638347, 
+    "density": 0.5, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.6, 
+    "location": "Another part of the forest.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryiv_4_3.png", 
     "char_data": {
      "LANCASTER": {
       "ratio": 8.33, 
-      "nlines": 25, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 25
      }, 
      "FALSTAFF": {
       "ratio": 34.67, 
-      "nlines": 104, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 104
      }, 
      "COLEVILE": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "BARDOLPH": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "WESTMORELAND": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }
     }, 
-    "location": "Another part of the forest.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.3333333333333333
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 139, 
+    "deg_assort_coeff": -0.44567219152854415, 
+    "density": 0.6666666666666666, 
+    "scene": "4", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Westminster. The Jerusalem Chamber.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryiv_4_4.png", 
     "char_data": {
      "KING HENRY IV": {
       "ratio": 16.0, 
-      "nlines": 80, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 80
      }, 
      "CLARENCE": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "WESTMORELAND": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "WARWICK": {
       "ratio": 4.5, 
-      "nlines": 18, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 18
      }, 
      "HARCOURT": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }, 
      "GLOUCESTER": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }
     }, 
-    "location": "Westminster. The Jerusalem Chamber.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.6944444444444445
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 255, 
+    "deg_assort_coeff": -0.56448202959830696, 
+    "density": 0.6666666666666666, 
+    "scene": "5", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another chamber.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryiv_4_5.png", 
     "char_data": {
      "LANCASTER": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "KING HENRY IV": {
       "ratio": 28.8, 
-      "nlines": 144, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 144
      }, 
      "CLARENCE": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "WARWICK": {
       "ratio": 4.25, 
-      "nlines": 17, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 17
      }, 
      "PRINCE HENRY": {
       "ratio": 21.0, 
-      "nlines": 84, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 84
      }, 
      "GLOUCESTER": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }
     }, 
-    "location": "Another chamber.", 
-    "scene": "5", 
-    "act": "4"
+    "avg_clustering": 0.6944444444444445
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 87, 
+    "deg_assort_coeff": -0.76445086705202336, 
+    "density": 0.5, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.5, 
+    "location": "Gloucestershire. SHALLOW'S house.", 
+    "act": "5", 
+    "graph_img_f": "imgs/2henryiv_5_1.png", 
     "char_data": {
      "BARDOLPH": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "FALSTAFF": {
       "ratio": 32.0, 
-      "nlines": 32, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 32
      }, 
      "SHALLOW": {
       "ratio": 10.0, 
-      "nlines": 30, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 30
      }, 
      "DAVY": {
       "ratio": 24.0, 
-      "nlines": 24, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 24
      }
     }, 
-    "location": "Gloucestershire. SHALLOW'S house.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 151, 
+    "deg_assort_coeff": -0.15001585791309982, 
+    "density": 0.5333333333333333, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.9333333333333333, 
+    "location": "Westminster. The palace.", 
+    "act": "5", 
+    "graph_img_f": "imgs/2henryiv_5_2.png", 
     "char_data": {
      "LANCASTER": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "Princes": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "CLARENCE": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "KING HENRY V": {
       "ratio": 25.5, 
-      "nlines": 102, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 102
      }, 
      "WARWICK": {
       "ratio": 5.2, 
-      "nlines": 26, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 26
      }, 
      "GLOUCESTER": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }
     }, 
-    "location": "Westminster. The palace.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.27777777777777773
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 150, 
+    "deg_assort_coeff": -0.16466724125882673, 
+    "density": 0.8666666666666667, 
+    "scene": "3", 
+    "total_degrees": 13, 
+    "avg_shortest_path": 1.1333333333333333, 
+    "location": "Gloucestershire. SHALLOW'S orchard.", 
+    "act": "5", 
+    "graph_img_f": "imgs/2henryiv_5_3.png", 
     "char_data": {
      "BARDOLPH": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "SHALLOW": {
       "ratio": 7.2, 
-      "nlines": 36, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 36
      }, 
      "DAVY": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "FALSTAFF": {
       "ratio": 6.8, 
-      "nlines": 34, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 34
      }, 
      "PISTOL": {
       "ratio": 7.0, 
-      "nlines": 28, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 28
      }, 
      "SILENCE": {
       "ratio": 8.5, 
-      "nlines": 34, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 34
      }
     }, 
-    "location": "Gloucestershire. SHALLOW'S orchard.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.8222222222222221
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 32, 
+    "deg_assort_coeff": -0.50000000000000233, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "London. A street.", 
+    "act": "5", 
+    "graph_img_f": "imgs/2henryiv_5_4.png", 
     "char_data": {
      "MISTRESS QUICKLY": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "First Beadle": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "DOLL TEARSHEET": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }
     }, 
-    "location": "London. A street.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 1.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 154, 
+    "deg_assort_coeff": -0.030538302277432712, 
+    "density": 0.42857142857142855, 
+    "scene": "5", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 2.0, 
+    "location": "A public place near Westminster Abbey.", 
+    "act": "5", 
+    "graph_img_f": "imgs/2henryiv_5_5.png", 
     "char_data": {
      "LANCASTER": {
       "ratio": 17.0, 
-      "nlines": 51, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 51
      }, 
      "KING HENRY IV": {
       "ratio": 28.0, 
-      "nlines": 28, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 28
      }, 
      "First Groom": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "SHALLOW": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "Second Groom": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "FALSTAFF": {
       "ratio": 6.67, 
-      "nlines": 40, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 40
      }, 
      "PISTOL": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }
     }, 
-    "location": "A public place near Westminster Abbey.", 
-    "scene": "5", 
-    "act": "5"
+    "avg_clustering": 0.21428571428571427
    }
   ]
  ], 
@@ -722,284 +842,284 @@
  "char_data": {
   "TRAVERS": {
    "ratio": 8.0, 
+   "degrees": 2, 
    "nlines": 16, 
-   "nedges": 2, 
    "order_app": 4
   }, 
   "SHALLOW": {
    "ratio": 21.44, 
+   "degrees": 9, 
    "nlines": 193, 
-   "nedges": 9, 
    "order_app": 27
   }, 
   "WARWICK": {
    "ratio": 10.22, 
+   "degrees": 9, 
    "nlines": 92, 
-   "nedges": 9, 
    "order_app": 26
   }, 
   "DAVY": {
    "ratio": 9.25, 
+   "degrees": 4, 
    "nlines": 37, 
-   "nedges": 4, 
    "order_app": 41
   }, 
   "FALSTAFF": {
    "ratio": 31.13, 
+   "degrees": 24, 
    "nlines": 747, 
-   "nedges": 24, 
    "order_app": 6
   }, 
   "Messenger": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 34
   }, 
   "LADY PERCY": {
    "ratio": 46.0, 
+   "degrees": 1, 
    "nlines": 46, 
-   "nedges": 1, 
    "order_app": 19
   }, 
   "SHADOW": {
    "ratio": 1.67, 
+   "degrees": 3, 
    "nlines": 5, 
-   "nedges": 3, 
    "order_app": 29
   }, 
   "FEEBLE": {
    "ratio": 4.0, 
+   "degrees": 3, 
    "nlines": 12, 
-   "nedges": 3, 
    "order_app": 32
   }, 
   "Porter": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 2
   }, 
   "Princes": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 43
   }, 
   "POINS": {
    "ratio": 17.0, 
+   "degrees": 4, 
    "nlines": 68, 
-   "nedges": 4, 
    "order_app": 17
   }, 
   "KING HENRY IV": {
    "ratio": 42.0, 
+   "degrees": 8, 
    "nlines": 336, 
-   "nedges": 8, 
    "order_app": 25
   }, 
   "MISTRESS QUICKLY": {
    "ratio": 16.73, 
+   "degrees": 11, 
    "nlines": 184, 
-   "nedges": 11, 
    "order_app": 12
   }, 
   "FANG": {
    "ratio": 2.33, 
+   "degrees": 3, 
    "nlines": 7, 
-   "nedges": 3, 
    "order_app": 13
   }, 
   "ARCHBISHOP OF YORK": {
    "ratio": 30.8, 
+   "degrees": 5, 
    "nlines": 154, 
-   "nedges": 5, 
    "order_app": 9
   }, 
   "MOWBRAY": {
    "ratio": 11.8, 
+   "degrees": 5, 
    "nlines": 59, 
-   "nedges": 5, 
    "order_app": 10
   }, 
   "NORTHUMBERLAND": {
    "ratio": 19.33, 
+   "degrees": 6, 
    "nlines": 116, 
-   "nedges": 6, 
    "order_app": 3
   }, 
   "MOULDY": {
    "ratio": 4.0, 
+   "degrees": 3, 
    "nlines": 12, 
-   "nedges": 3, 
    "order_app": 30
   }, 
   "First Beadle": {
    "ratio": 5.0, 
+   "degrees": 2, 
    "nlines": 10, 
-   "nedges": 2, 
    "order_app": 44
   }, 
   "WESTMORELAND": {
    "ratio": 15.86, 
+   "degrees": 7, 
    "nlines": 111, 
-   "nedges": 7, 
    "order_app": 35
   }, 
   "SNARE": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 14
   }, 
   "PISTOL": {
    "ratio": 10.13, 
+   "degrees": 8, 
    "nlines": 81, 
-   "nedges": 8, 
    "order_app": 23
   }, 
   "First Drawer": {
    "ratio": 5.0, 
+   "degrees": 2, 
    "nlines": 10, 
-   "nedges": 2, 
    "order_app": 20
   }, 
   "HASTINGS": {
    "ratio": 9.83, 
+   "degrees": 6, 
    "nlines": 59, 
-   "nedges": 6, 
    "order_app": 11
   }, 
   "LANCASTER": {
    "ratio": 11.92, 
+   "degrees": 13, 
    "nlines": 155, 
-   "nedges": 13, 
    "order_app": 36
   }, 
   "DOLL TEARSHEET": {
    "ratio": 9.22, 
+   "degrees": 9, 
    "nlines": 83, 
-   "nedges": 9, 
    "order_app": 22
   }, 
   "CLARENCE": {
    "ratio": 4.67, 
+   "degrees": 6, 
    "nlines": 28, 
-   "nedges": 6, 
    "order_app": 39
   }, 
   "Servant": {
    "ratio": 3.75, 
+   "degrees": 4, 
    "nlines": 15, 
-   "nedges": 4, 
    "order_app": 8
   }, 
   "WART": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 31
   }, 
   "BULLCALF": {
    "ratio": 4.67, 
+   "degrees": 3, 
    "nlines": 14, 
-   "nedges": 3, 
    "order_app": 33
   }, 
   "Second Groom": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 46
   }, 
   "PRINCE HENRY": {
    "ratio": 18.73, 
+   "degrees": 11, 
    "nlines": 206, 
-   "nedges": 11, 
    "order_app": 16
   }, 
   "MORTON": {
    "ratio": 39.0, 
+   "degrees": 2, 
    "nlines": 78, 
-   "nedges": 2, 
    "order_app": 5
   }, 
   "Page": {
    "ratio": 4.83, 
+   "degrees": 6, 
    "nlines": 29, 
-   "nedges": 6, 
    "order_app": 7
   }, 
   "SILENCE": {
    "ratio": 8.0, 
+   "degrees": 6, 
    "nlines": 48, 
-   "nedges": 6, 
    "order_app": 28
   }, 
   "RUMOUR": {
    "ratio": 0, 
+   "degrees": 0, 
    "nlines": 42, 
-   "nedges": 0, 
    "order_app": 0
   }, 
   "COLEVILE": {
    "ratio": 4.0, 
+   "degrees": 2, 
    "nlines": 8, 
-   "nedges": 2, 
    "order_app": 37
   }, 
   "BARDOLPH": {
    "ratio": 3.92, 
+   "degrees": 13, 
    "nlines": 51, 
-   "nedges": 13, 
    "order_app": 18
   }, 
   "KING HENRY V": {
    "ratio": 25.5, 
+   "degrees": 4, 
    "nlines": 102, 
-   "nedges": 4, 
    "order_app": 42
   }, 
   "LORD BARDOLPH": {
    "ratio": 15.0, 
+   "degrees": 6, 
    "nlines": 90, 
-   "nedges": 6, 
    "order_app": 1
   }, 
   "PETO": {
    "ratio": 6.0, 
+   "degrees": 1, 
    "nlines": 6, 
-   "nedges": 1, 
    "order_app": 24
   }, 
   "Second Drawer": {
    "ratio": 6.5, 
+   "degrees": 2, 
    "nlines": 13, 
-   "nedges": 2, 
    "order_app": 21
   }, 
   "HARCOURT": {
    "ratio": 8.0, 
+   "degrees": 1, 
    "nlines": 8, 
-   "nedges": 1, 
    "order_app": 40
   }, 
   "First Groom": {
    "ratio": 2.5, 
+   "degrees": 2, 
    "nlines": 5, 
-   "nedges": 2, 
    "order_app": 45
   }, 
   "GOWER": {
    "ratio": 10.0, 
+   "degrees": 1, 
    "nlines": 10, 
-   "nedges": 1, 
    "order_app": 15
   }, 
   "GLOUCESTER": {
    "ratio": 3.6, 
+   "degrees": 5, 
    "nlines": 18, 
-   "nedges": 5, 
    "order_app": 38
   }
  }, 

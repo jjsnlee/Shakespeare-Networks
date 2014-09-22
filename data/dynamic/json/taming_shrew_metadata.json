@@ -3,666 +3,750 @@
  "acts": [
   [
    {
+    "total_lines": 148, 
+    "deg_assort_coeff": -0.6871741397288843, 
+    "density": 0.2857142857142857, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.8928571428571428, 
+    "location": "Before an alehouse on a heath.", 
+    "act": "0", 
     "graph_img_f": "imgs/taming_shrew_0_1.png", 
     "char_data": {
      "A Player": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "SLY": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "Hostess": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "Servant": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "Second Huntsman": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "Players": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "First Huntsman": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "Lord": {
       "ratio": 18.83, 
-      "nlines": 113, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 113
      }
     }, 
-    "location": "Before an alehouse on a heath.", 
-    "scene": "1", 
-    "act": "0"
+    "avg_clustering": 0.25833333333333336
    }, 
    {
+    "total_lines": 148, 
+    "deg_assort_coeff": -0.48693586698337354, 
+    "density": 0.42857142857142855, 
+    "scene": "2", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.5714285714285714, 
+    "location": "A bedchamber in the Lord's house.", 
+    "act": "0", 
     "graph_img_f": "imgs/taming_shrew_0_2.png", 
     "char_data": {
      "ALL": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "First Servant": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "SLY": {
       "ratio": 7.57, 
-      "nlines": 53, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 53
      }, 
      "Third Servant": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "Second Servant": {
       "ratio": 3.0, 
-      "nlines": 12, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 12
      }, 
      "Messenger": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }, 
      "Lord": {
       "ratio": 8.25, 
-      "nlines": 33, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 33
      }, 
      "Page": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }
     }, 
-    "location": "A bedchamber in the Lord's house.", 
-    "scene": "2", 
-    "act": "0"
+    "avg_clustering": 0.48809523809523814
    }
   ], 
   [
    {
+    "total_lines": 267, 
+    "deg_assort_coeff": -0.061872819962435724, 
+    "density": 0.2727272727272727, 
+    "scene": "1", 
+    "total_degrees": 18, 
+    "avg_shortest_path": 2.378787878787879, 
+    "location": "Padua. A public place.", 
+    "act": "1", 
     "graph_img_f": "imgs/taming_shrew_1_1.png", 
     "char_data": {
      "HORTENSIO": {
       "ratio": 8.33, 
-      "nlines": 25, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 25
      }, 
      "First Servant": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "TRANIO": {
       "ratio": 16.0, 
-      "nlines": 64, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 64
      }, 
      "BAPTISTA": {
       "ratio": 8.33, 
-      "nlines": 25, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 25
      }, 
      "HORTENSIA": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "BIANCA": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "LUCENTIO": {
       "ratio": 19.2, 
-      "nlines": 96, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 96
      }, 
      "BIONDELLO": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "GREMIO": {
       "ratio": 5.4, 
-      "nlines": 27, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 27
      }, 
      "KATHARINA": {
       "ratio": 2.6, 
-      "nlines": 13, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 13
      }, 
      "Page": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "SLY": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }
     }, 
-    "location": "Padua. A public place.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.3444444444444444
    }, 
    {
+    "total_lines": 290, 
+    "deg_assort_coeff": -0.051684069261235713, 
+    "density": 0.7142857142857143, 
+    "scene": "2", 
+    "total_degrees": 15, 
+    "avg_shortest_path": 1.2857142857142858, 
+    "location": "Padua. Before HORTENSIO'S house.", 
+    "act": "1", 
     "graph_img_f": "imgs/taming_shrew_1_2.png", 
     "char_data": {
      "HORTENSIO": {
       "ratio": 15.6, 
-      "nlines": 78, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 78
      }, 
      "GRUMIO": {
       "ratio": 12.75, 
-      "nlines": 51, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 51
      }, 
      "TRANIO": {
       "ratio": 5.67, 
-      "nlines": 34, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 34
      }, 
      "GREMIO": {
       "ratio": 7.8, 
-      "nlines": 39, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 39
      }, 
      "BIONDELLO": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "LUCENTIO": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "PETRUCHIO": {
       "ratio": 16.0, 
-      "nlines": 80, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 80
      }
     }, 
-    "location": "Padua. Before HORTENSIO'S house.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.7571428571428572
    }
   ], 
   [
    {
+    "total_lines": 444, 
+    "deg_assort_coeff": -0.38295517432208276, 
+    "density": 0.5714285714285714, 
+    "scene": "1", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.5238095238095237, 
+    "location": "Padua. A room in BAPTISTA'S house.", 
+    "act": "2", 
     "graph_img_f": "imgs/taming_shrew_2_1.png", 
     "char_data": {
      "HORTENSIO": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "TRANIO": {
       "ratio": 15.67, 
-      "nlines": 47, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 47
      }, 
      "BAPTISTA": {
       "ratio": 15.2, 
-      "nlines": 76, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 76
      }, 
      "PETRUCHIO": {
       "ratio": 33.8, 
-      "nlines": 169, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 169
      }, 
      "BIANCA": {
       "ratio": 17.0, 
-      "nlines": 17, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 17
      }, 
      "GREMIO": {
       "ratio": 15.5, 
-      "nlines": 62, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 62
      }, 
      "KATHARINA": {
       "ratio": 14.25, 
-      "nlines": 57, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 57
      }
     }, 
-    "location": "Padua. A room in BAPTISTA'S house.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.6476190476190476
    }
   ], 
   [
    {
+    "total_lines": 99, 
+    "deg_assort_coeff": -0.21869158878504674, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Padua. BAPTISTA'S house.", 
+    "act": "3", 
     "graph_img_f": "imgs/taming_shrew_3_1.png", 
     "char_data": {
      "BIANCA": {
       "ratio": 11.67, 
-      "nlines": 35, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 35
      }, 
      "Servant": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "HORTENSIO": {
       "ratio": 15.5, 
-      "nlines": 31, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 31
      }, 
      "LUCENTIO": {
       "ratio": 15.0, 
-      "nlines": 30, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 30
      }
     }, 
-    "location": "Padua. BAPTISTA'S house.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 266, 
+    "deg_assort_coeff": 0.057047909166437046, 
+    "density": 0.4444444444444444, 
+    "scene": "2", 
+    "total_degrees": 20, 
+    "avg_shortest_path": 1.6444444444444444, 
+    "location": "Padua. Before BAPTISTA'S house.", 
+    "act": "3", 
     "graph_img_f": "imgs/taming_shrew_3_2.png", 
     "char_data": {
      "GRUMIO": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "TRANIO": {
       "ratio": 7.17, 
-      "nlines": 43, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 43
      }, 
      "BAPTISTA": {
       "ratio": 8.2, 
-      "nlines": 41, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 41
      }, 
      "PETRUCHIO": {
       "ratio": 9.29, 
-      "nlines": 65, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 65
      }, 
      "BIANCA": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "LUCENTIO": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "BIONDELLO": {
       "ratio": 14.0, 
-      "nlines": 42, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 42
      }, 
      "GREMIO": {
       "ratio": 6.0, 
-      "nlines": 36, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 36
      }, 
      "KATHARINA": {
       "ratio": 5.6, 
-      "nlines": 28, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 28
      }, 
      "KATARINA": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }
     }, 
-    "location": "Padua. Before BAPTISTA'S house.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.5976190476190476
    }
   ], 
   [
    {
+    "total_lines": 217, 
+    "deg_assort_coeff": 0.21983465215811682, 
+    "density": 0.3333333333333333, 
+    "scene": "1", 
+    "total_degrees": 15, 
+    "avg_shortest_path": 2.022222222222222, 
+    "location": "PETRUCHIO'S country house.", 
+    "act": "4", 
     "graph_img_f": "imgs/taming_shrew_4_1.png", 
     "char_data": {
      "NICHOLAS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "GRUMIO": {
       "ratio": 23.0, 
-      "nlines": 92, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 92
      }, 
      "First Servant": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "PETRUCHIO": {
       "ratio": 10.5, 
-      "nlines": 84, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 84
      }, 
      "JOSEPH": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "CURTIS": {
       "ratio": 13.5, 
-      "nlines": 27, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 27
      }, 
      "PHILIP": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "PETER": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "KATHARINA": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "NATHANIEL": {
       "ratio": 0.8, 
-      "nlines": 4, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 4
      }
     }, 
-    "location": "PETRUCHIO'S country house.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.32333333333333336
    }, 
    {
+    "total_lines": 132, 
+    "deg_assort_coeff": -0.38441890166028098, 
+    "density": 0.5333333333333333, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.4666666666666666, 
+    "location": "Padua. Before BAPTISTA'S house.", 
+    "act": "4", 
     "graph_img_f": "imgs/taming_shrew_4_2.png", 
     "char_data": {
      "HORTENSIO": {
       "ratio": 13.5, 
-      "nlines": 27, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 27
      }, 
      "TRANIO": {
       "ratio": 14.0, 
-      "nlines": 70, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 70
      }, 
      "Pedant": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }, 
      "BIANCA": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "LUCENTIO": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "BIONDELLO": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }
     }, 
-    "location": "Padua. Before BAPTISTA'S house.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.6333333333333333
    }, 
    {
+    "total_lines": 204, 
+    "deg_assort_coeff": -0.38449590511154863, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "A room in PETRUCHIO'S house.", 
+    "act": "4", 
     "graph_img_f": "imgs/taming_shrew_4_3.png", 
     "char_data": {
      "HORTENSIO": {
       "ratio": 3.0, 
-      "nlines": 12, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 12
      }, 
      "GRUMIO": {
       "ratio": 8.75, 
-      "nlines": 35, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 35
      }, 
      "PETRUCHIO": {
       "ratio": 18.2, 
-      "nlines": 91, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 91
      }, 
      "Tailor": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "Haberdasher": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "KATHARINA": {
       "ratio": 16.0, 
-      "nlines": 48, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 48
      }
     }, 
-    "location": "A room in PETRUCHIO'S house.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.6944444444444445
    }, 
    {
+    "total_lines": 114, 
+    "deg_assort_coeff": 0.0023310023310024967, 
+    "density": 0.6, 
+    "scene": "4", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.5, 
+    "location": "Padua. Before BAPTISTA'S house.", 
+    "act": "4", 
     "graph_img_f": "imgs/taming_shrew_4_4.png", 
     "char_data": {
      "Pedant": {
       "ratio": 11.5, 
-      "nlines": 23, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 23
      }, 
      "LUCENTIO": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "TRANIO": {
       "ratio": 10.0, 
-      "nlines": 30, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 30
      }, 
      "BAPTISTA": {
       "ratio": 7.33, 
-      "nlines": 22, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 22
      }, 
      "BIONDELLO": {
       "ratio": 9.0, 
-      "nlines": 27, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 27
      }
     }, 
-    "location": "Padua. Before BAPTISTA'S house.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.5333333333333333
    }, 
    {
+    "total_lines": 84, 
+    "deg_assort_coeff": -0.32941176470588313, 
+    "density": 0.8333333333333334, 
+    "scene": "5", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "A public road.", 
+    "act": "4", 
     "graph_img_f": "imgs/taming_shrew_4_5.png", 
     "char_data": {
      "VINCENTIO": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "HORTENSIO": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "KATHARINA": {
       "ratio": 11.0, 
-      "nlines": 22, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 22
      }, 
      "PETRUCHIO": {
       "ratio": 15.0, 
-      "nlines": 45, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 45
      }
     }, 
-    "location": "A public road.", 
-    "scene": "5", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }
   ], 
   [
    {
+    "total_lines": 150, 
+    "deg_assort_coeff": -0.20800522571917873, 
+    "density": 0.5333333333333333, 
+    "scene": "1", 
+    "total_degrees": 24, 
+    "avg_shortest_path": 1.488888888888889, 
+    "location": "Padua. Before LUCENTIO'S house.", 
+    "act": "5", 
     "graph_img_f": "imgs/taming_shrew_5_1.png", 
     "char_data": {
      "TRANIO": {
       "ratio": 2.75, 
-      "nlines": 11, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 11
      }, 
      "BAPTISTA": {
       "ratio": 2.4, 
-      "nlines": 12, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 12
      }, 
      "Pedant": {
       "ratio": 3.75, 
-      "nlines": 15, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 15
      }, 
      "PETRUCHIO": {
       "ratio": 3.8, 
-      "nlines": 19, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 19
      }, 
      "BIANCA": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "LUCENTIO": {
       "ratio": 3.2, 
-      "nlines": 16, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 16
      }, 
      "VINCENTIO": {
       "ratio": 5.13, 
-      "nlines": 41, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 41
      }, 
      "BIONDELLO": {
       "ratio": 4.0, 
-      "nlines": 16, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 16
      }, 
      "GREMIO": {
       "ratio": 1.75, 
-      "nlines": 14, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 14
      }, 
      "KATHARINA": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }
     }, 
-    "location": "Padua. Before LUCENTIO'S house.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.7464285714285714
    }, 
    {
+    "total_lines": 215, 
+    "deg_assort_coeff": -0.23550999107789228, 
+    "density": 0.41818181818181815, 
+    "scene": "2", 
+    "total_degrees": 23, 
+    "avg_shortest_path": 1.6181818181818182, 
+    "location": "Padua. LUCENTIO'S house.", 
+    "act": "5", 
     "graph_img_f": "imgs/taming_shrew_5_2.png", 
     "char_data": {
      "HORTENSIO": {
       "ratio": 6.33, 
-      "nlines": 19, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 19
      }, 
      "TRANIO": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "BAPTISTA": {
       "ratio": 2.17, 
-      "nlines": 13, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 13
      }, 
      "VINCENTIO": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "KATHARINA": {
       "ratio": 17.0, 
-      "nlines": 51, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 51
      }, 
      "BIANCA": {
       "ratio": 1.8, 
-      "nlines": 9, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 9
      }, 
      "LUCENTIO": {
       "ratio": 4.67, 
-      "nlines": 28, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 28
      }, 
      "BIONDELLO": {
       "ratio": 1.5, 
-      "nlines": 6, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 6
      }, 
      "GREMIO": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "PETRUCHIO": {
       "ratio": 7.67, 
-      "nlines": 69, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 69
      }, 
      "Widow": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }
     }, 
-    "location": "Padua. LUCENTIO'S house.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.6757575757575758
    }
   ]
  ], 
@@ -709,224 +793,224 @@
  "char_data": {
   "CURTIS": {
    "ratio": 13.5, 
+   "degrees": 2, 
    "nlines": 27, 
-   "nedges": 2, 
    "order_app": 26
   }, 
   "TRANIO": {
    "ratio": 27.55, 
+   "degrees": 11, 
    "nlines": 303, 
-   "nedges": 11, 
    "order_app": 15
   }, 
   "BAPTISTA": {
    "ratio": 18.9, 
+   "degrees": 10, 
    "nlines": 189, 
-   "nedges": 10, 
    "order_app": 16
   }, 
   "Second Servant": {
    "ratio": 3.0, 
+   "degrees": 4, 
    "nlines": 12, 
-   "nedges": 4, 
    "order_app": 9
   }, 
   "Messenger": {
    "ratio": 8.0, 
+   "degrees": 1, 
    "nlines": 8, 
-   "nedges": 1, 
    "order_app": 13
   }, 
   "Tailor": {
    "ratio": 5.67, 
+   "degrees": 3, 
    "nlines": 17, 
-   "nedges": 3, 
    "order_app": 34
   }, 
   "Lord": {
    "ratio": 16.22, 
+   "degrees": 9, 
    "nlines": 146, 
-   "nedges": 9, 
    "order_app": 2
   }, 
   "KATARINA": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 25
   }, 
   "HORTENSIO": {
    "ratio": 19.64, 
+   "degrees": 11, 
    "nlines": 216, 
-   "nedges": 11, 
    "order_app": 19
   }, 
   "A Player": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 7
   }, 
   "HORTENSIA": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 20
   }, 
   "NATHANIEL": {
    "ratio": 0.8, 
+   "degrees": 5, 
    "nlines": 4, 
-   "nedges": 5, 
    "order_app": 27
   }, 
   "Pedant": {
    "ratio": 8.83, 
+   "degrees": 6, 
    "nlines": 53, 
-   "nedges": 6, 
    "order_app": 32
   }, 
   "LUCENTIO": {
    "ratio": 22.22, 
+   "degrees": 9, 
    "nlines": 200, 
-   "nedges": 9, 
    "order_app": 14
   }, 
   "BIONDELLO": {
    "ratio": 13.25, 
+   "degrees": 8, 
    "nlines": 106, 
-   "nedges": 8, 
    "order_app": 22
   }, 
   "NICHOLAS": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 30
   }, 
   "JOSEPH": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 29
   }, 
   "GRUMIO": {
    "ratio": 19.89, 
+   "degrees": 9, 
    "nlines": 179, 
-   "nedges": 9, 
    "order_app": 24
   }, 
   "SLY": {
    "ratio": 8.63, 
+   "degrees": 8, 
    "nlines": 69, 
-   "nedges": 8, 
    "order_app": 0
   }, 
   "Hostess": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 1
   }, 
   "Servant": {
    "ratio": 2.5, 
+   "degrees": 2, 
    "nlines": 5, 
-   "nedges": 2, 
    "order_app": 5
   }, 
   "Third Servant": {
    "ratio": 4.0, 
+   "degrees": 3, 
    "nlines": 12, 
-   "nedges": 3, 
    "order_app": 10
   }, 
   "PETRUCHIO": {
    "ratio": 29.62, 
+   "degrees": 21, 
    "nlines": 622, 
-   "nedges": 21, 
    "order_app": 23
   }, 
   "BIANCA": {
    "ratio": 7.4, 
+   "degrees": 10, 
    "nlines": 74, 
-   "nedges": 10, 
    "order_app": 21
   }, 
   "Players": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 6
   }, 
   "First Huntsman": {
    "ratio": 4.5, 
+   "degrees": 2, 
    "nlines": 9, 
-   "nedges": 2, 
    "order_app": 3
   }, 
   "PHILIP": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 28
   }, 
   "VINCENTIO": {
    "ratio": 5.78, 
+   "degrees": 9, 
    "nlines": 52, 
-   "nedges": 9, 
    "order_app": 35
   }, 
   "Page": {
    "ratio": 16.0, 
+   "degrees": 1, 
    "nlines": 16, 
-   "nedges": 1, 
    "order_app": 12
   }, 
   "Widow": {
    "ratio": 3.67, 
+   "degrees": 3, 
    "nlines": 11, 
-   "nedges": 3, 
    "order_app": 36
   }, 
   "ALL": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 11
   }, 
   "PETER": {
    "ratio": 1.0, 
+   "degrees": 3, 
    "nlines": 3, 
-   "nedges": 3, 
    "order_app": 31
   }, 
   "First Servant": {
    "ratio": 3.2, 
+   "degrees": 5, 
    "nlines": 16, 
-   "nedges": 5, 
    "order_app": 8
   }, 
   "Second Huntsman": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 4
   }, 
   "GREMIO": {
    "ratio": 13.92, 
+   "degrees": 13, 
    "nlines": 181, 
-   "nedges": 13, 
    "order_app": 17
   }, 
   "Haberdasher": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 33
   }, 
   "KATHARINA": {
    "ratio": 25.11, 
+   "degrees": 9, 
    "nlines": 226, 
-   "nedges": 9, 
    "order_app": 18
   }
  }, 

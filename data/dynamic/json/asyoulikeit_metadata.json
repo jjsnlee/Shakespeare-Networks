@@ -3,638 +3,770 @@
  "acts": [
   [
    {
+    "total_lines": 169, 
+    "deg_assort_coeff": -0.71745755333043171, 
+    "density": 0.5, 
+    "scene": "1", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.5, 
+    "location": "Orchard of Oliver's house.", 
+    "act": "1", 
     "graph_img_f": "imgs/asyoulikeit_1_1.png", 
     "char_data": {
      "CHARLES": {
       "ratio": 36.0, 
-      "nlines": 36, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 36
      }, 
      "DENNIS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "OLIVER": {
       "ratio": 15.5, 
-      "nlines": 62, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 62
      }, 
      "ADAM": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "ORLANDO": {
       "ratio": 30.5, 
-      "nlines": 61, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 61
      }
     }, 
-    "location": "Orchard of Oliver's house.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.4333333333333334
    }, 
    {
+    "total_lines": 279, 
+    "deg_assort_coeff": -0.20880585249948616, 
+    "density": 0.7619047619047619, 
+    "scene": "2", 
+    "total_degrees": 16, 
+    "avg_shortest_path": 1.2380952380952381, 
+    "location": "Lawn before the Duke's palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/asyoulikeit_1_2.png", 
     "char_data": {
      "CHARLES": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "ORLANDO": {
       "ratio": 8.0, 
-      "nlines": 40, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 40
      }, 
      "ROSALIND": {
       "ratio": 11.6, 
-      "nlines": 58, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 58
      }, 
      "LE BEAU": {
       "ratio": 9.2, 
-      "nlines": 46, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 46
      }, 
      "CELIA": {
       "ratio": 14.0, 
-      "nlines": 84, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 84
      }, 
      "DUKE FREDERICK": {
       "ratio": 4.4, 
-      "nlines": 22, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 22
      }, 
      "TOUCHSTONE": {
       "ratio": 8.0, 
-      "nlines": 24, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 24
      }
     }, 
-    "location": "Lawn before the Duke's palace.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.8380952380952381
    }, 
    {
+    "total_lines": 141, 
+    "deg_assort_coeff": -0.49999999999999983, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in the palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/asyoulikeit_1_3.png", 
     "char_data": {
      "ROSALIND": {
       "ratio": 26.0, 
-      "nlines": 52, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 52
      }, 
      "DUKE FREDERICK": {
       "ratio": 12.5, 
-      "nlines": 25, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 25
      }, 
      "CELIA": {
       "ratio": 32.0, 
-      "nlines": 64, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 64
      }
     }, 
-    "location": "A room in the palace.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 1.0
    }
   ], 
   [
    {
+    "total_lines": 74, 
+    "deg_assort_coeff": -0.90000000000000002, 
+    "density": 0.5, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.5, 
+    "location": "The Forest of Arden.", 
+    "act": "2", 
     "graph_img_f": "imgs/asyoulikeit_2_1.png", 
     "char_data": {
      "First Lord": {
       "ratio": 40.0, 
-      "nlines": 40, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 40
      }, 
      "Second Lord": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "AMIENS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "DUKE SENIOR": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }
     }, 
-    "location": "The Forest of Arden.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 22, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in the palace.", 
+    "act": "2", 
     "graph_img_f": "imgs/asyoulikeit_2_2.png", 
     "char_data": {
      "First Lord": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "Second Lord": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "DUKE FREDERICK": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }
     }, 
-    "location": "A room in the palace.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 78, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Before OLIVER'S house.", 
+    "act": "2", 
     "graph_img_f": "imgs/asyoulikeit_2_3.png", 
     "char_data": {
      "ORLANDO": {
       "ratio": 23.0, 
-      "nlines": 23, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 23
      }, 
      "ADAM": {
       "ratio": 55.0, 
-      "nlines": 55, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 55
      }
     }, 
-    "location": "Before OLIVER'S house.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 102, 
+    "deg_assort_coeff": -0.47995586612725266, 
+    "density": 0.8, 
+    "scene": "4", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "The Forest of Arden.", 
+    "act": "2", 
     "graph_img_f": "imgs/asyoulikeit_2_4.png", 
     "char_data": {
      "CORIN": {
       "ratio": 6.75, 
-      "nlines": 27, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 27
      }, 
      "ROSALIND": {
       "ratio": 6.75, 
-      "nlines": 27, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 27
      }, 
      "SILVIUS": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }, 
      "TOUCHSTONE": {
       "ratio": 7.33, 
-      "nlines": 22, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 22
      }, 
      "CELIA": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }
     }, 
-    "location": "The Forest of Arden.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.8666666666666666
    }, 
    {
+    "total_lines": 59, 
+    "deg_assort_coeff": -0.49999999999998401, 
+    "density": 2.0, 
+    "scene": "5", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.0, 
+    "location": "The Forest.", 
+    "act": "2", 
     "graph_img_f": "imgs/asyoulikeit_2_5.png", 
     "char_data": {
      "AMIENS": {
       "ratio": 18.0, 
-      "nlines": 18, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 18
      }, 
      "JAQUES": {
       "ratio": 13.67, 
-      "nlines": 41, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 41
      }
     }, 
-    "location": "The Forest.", 
-    "scene": "5", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 19, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "6", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The forest.", 
+    "act": "2", 
     "graph_img_f": "imgs/asyoulikeit_2_6.png", 
     "char_data": {
      "ORLANDO": {
       "ratio": 16.0, 
-      "nlines": 16, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 16
      }, 
      "ADAM": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "The forest.", 
-    "scene": "6", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 210, 
+    "deg_assort_coeff": -0.64594594594594623, 
+    "density": 0.4666666666666667, 
+    "scene": "7", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.5333333333333334, 
+    "location": "The forest.", 
+    "act": "2", 
     "graph_img_f": "imgs/asyoulikeit_2_7.png", 
     "char_data": {
      "First Lord": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "DUKE SENIOR": {
       "ratio": 10.8, 
-      "nlines": 54, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 54
      }, 
      "AMIENS": {
       "ratio": 17.0, 
-      "nlines": 17, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 17
      }, 
      "ORLANDO": {
       "ratio": 11.0, 
-      "nlines": 33, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 33
      }, 
      "ADAM": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "JAQUES": {
       "ratio": 50.5, 
-      "nlines": 101, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 101
      }
     }, 
-    "location": "The forest.", 
-    "scene": "7", 
-    "act": "2"
+    "avg_clustering": 0.4777777777777778
    }
   ], 
   [
    {
+    "total_lines": 19, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in the palace.", 
+    "act": "3", 
     "graph_img_f": "imgs/asyoulikeit_3_1.png", 
     "char_data": {
      "OLIVER": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "DUKE FREDERICK": {
       "ratio": 17.0, 
-      "nlines": 17, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 17
      }
     }, 
-    "location": "A room in the palace.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 417, 
+    "deg_assort_coeff": -0.41708965354423505, 
+    "density": 0.6, 
+    "scene": "2", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.4, 
+    "location": "The forest.", 
+    "act": "3", 
     "graph_img_f": "imgs/asyoulikeit_3_2.png", 
     "char_data": {
      "CELIA": {
       "ratio": 34.5, 
-      "nlines": 69, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 69
      }, 
      "ORLANDO": {
       "ratio": 20.33, 
-      "nlines": 61, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 61
      }, 
      "CORIN": {
       "ratio": 10.67, 
-      "nlines": 32, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 32
      }, 
      "ROSALIND": {
       "ratio": 33.6, 
-      "nlines": 168, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 168
      }, 
      "JAQUES": {
       "ratio": 10.5, 
-      "nlines": 21, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 21
      }, 
      "TOUCHSTONE": {
       "ratio": 22.0, 
-      "nlines": 66, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 66
      }
     }, 
-    "location": "The forest.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.7333333333333333
    }, 
    {
+    "total_lines": 96, 
+    "deg_assort_coeff": -0.44503120499279913, 
+    "density": 0.8333333333333334, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The forest.", 
+    "act": "3", 
     "graph_img_f": "imgs/asyoulikeit_3_3.png", 
     "char_data": {
      "AUDREY": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "SIR OLIVER MARTEXT": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "TOUCHSTONE": {
       "ratio": 22.67, 
-      "nlines": 68, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 68
      }, 
      "JAQUES": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }
     }, 
-    "location": "The forest.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 59, 
+    "deg_assort_coeff": -0.50000000000000067, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "The forest.", 
+    "act": "3", 
     "graph_img_f": "imgs/asyoulikeit_3_4.png", 
     "char_data": {
      "CORIN": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "ROSALIND": {
       "ratio": 10.5, 
-      "nlines": 21, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 21
      }, 
      "CELIA": {
       "ratio": 14.0, 
-      "nlines": 28, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 28
      }
     }, 
-    "location": "The forest.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 146, 
+    "deg_assort_coeff": -0.68612191958495461, 
+    "density": 0.6666666666666666, 
+    "scene": "5", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another part of the forest.", 
+    "act": "3", 
     "graph_img_f": "imgs/asyoulikeit_3_5.png", 
     "char_data": {
      "ROSALIND": {
       "ratio": 43.0, 
-      "nlines": 43, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 43
      }, 
      "SILVIUS": {
       "ratio": 30.0, 
-      "nlines": 30, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 30
      }, 
      "PHEBE": {
       "ratio": 36.5, 
-      "nlines": 73, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 73
      }
     }, 
-    "location": "Another part of the forest.", 
-    "scene": "5", 
-    "act": "3"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 203, 
+    "deg_assort_coeff": -0.65201867618785947, 
+    "density": 0.8333333333333334, 
+    "scene": "1", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The forest.", 
+    "act": "4", 
     "graph_img_f": "imgs/asyoulikeit_4_1.png", 
     "char_data": {
      "ROSALIND": {
       "ratio": 46.0, 
-      "nlines": 138, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 138
      }, 
      "JAQUES": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }, 
      "ORLANDO": {
       "ratio": 12.0, 
-      "nlines": 36, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 36
      }, 
      "CELIA": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }
     }, 
-    "location": "The forest.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 21, 
+    "deg_assort_coeff": -0.92592592592592593, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The forest.", 
+    "act": "4", 
     "graph_img_f": "imgs/asyoulikeit_4_2.png", 
     "char_data": {
      "A Lord": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "Forester": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "JAQUES": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }
     }, 
-    "location": "The forest.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 192, 
+    "deg_assort_coeff": -0.16279069767441948, 
+    "density": 0.8333333333333334, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The forest.", 
+    "act": "4", 
     "graph_img_f": "imgs/asyoulikeit_4_3.png", 
     "char_data": {
      "ROSALIND": {
       "ratio": 25.0, 
-      "nlines": 75, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 75
      }, 
      "OLIVER": {
       "ratio": 40.0, 
-      "nlines": 80, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 80
      }, 
      "SILVIUS": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "CELIA": {
       "ratio": 7.67, 
-      "nlines": 23, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 23
      }
     }, 
-    "location": "The forest.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }
   ], 
   [
    {
+    "total_lines": 63, 
+    "deg_assort_coeff": -0.63494387506100614, 
+    "density": 0.8333333333333334, 
+    "scene": "1", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The forest.", 
+    "act": "5", 
     "graph_img_f": "imgs/asyoulikeit_5_1.png", 
     "char_data": {
      "AUDREY": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "WILLIAM": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "TOUCHSTONE": {
       "ratio": 14.33, 
-      "nlines": 43, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 43
      }, 
      "CORIN": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }
     }, 
-    "location": "The forest.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 130, 
+    "deg_assort_coeff": -0.55763239875389403, 
+    "density": 0.8, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "The forest.", 
+    "act": "5", 
     "graph_img_f": "imgs/asyoulikeit_5_2.png", 
     "char_data": {
      "ORLANDO": {
       "ratio": 6.75, 
-      "nlines": 27, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 27
      }, 
      "ROSALIND": {
       "ratio": 18.25, 
-      "nlines": 73, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 73
      }, 
      "OLIVER": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "SILVIUS": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "PHEBE": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }
     }, 
-    "location": "The forest.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.8666666666666666
    }, 
    {
+    "total_lines": 41, 
+    "deg_assort_coeff": -0.562500000000003, 
+    "density": 0.8333333333333334, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The forest.", 
+    "act": "5", 
     "graph_img_f": "imgs/asyoulikeit_5_3.png", 
     "char_data": {
      "AUDREY": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "First Page": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "TOUCHSTONE": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "Second Page": {
       "ratio": 11.0, 
-      "nlines": 22, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 22
      }
     }, 
-    "location": "The forest.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 233, 
+    "deg_assort_coeff": -0.31952241638333201, 
+    "density": 0.4444444444444444, 
+    "scene": "4", 
+    "total_degrees": 16, 
+    "avg_shortest_path": 1.6388888888888888, 
+    "location": "The forest.", 
+    "act": "5", 
     "graph_img_f": "imgs/asyoulikeit_5_4.png", 
     "char_data": {
      "JAQUES DE BOYS": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "DUKE SENIOR": {
       "ratio": 4.71, 
-      "nlines": 33, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 33
      }, 
      "HYMEN": {
       "ratio": 15.5, 
-      "nlines": 31, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 31
      }, 
      "ORLANDO": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "PHEBE": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "ROSALIND": {
       "ratio": 9.4, 
-      "nlines": 47, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 47
      }, 
      "JAQUES": {
       "ratio": 8.75, 
-      "nlines": 35, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 35
      }, 
      "SILVIUS": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "TOUCHSTONE": {
       "ratio": 24.5, 
-      "nlines": 49, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 49
      }
     }, 
-    "location": "The forest.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 0.5867724867724866
    }
   ]
  ], 
@@ -671,164 +803,164 @@
  "char_data": {
   "DUKE SENIOR": {
    "ratio": 10.55, 
+   "degrees": 11, 
    "nlines": 116, 
-   "nedges": 11, 
    "order_app": 10
   }, 
   "CELIA": {
    "ratio": 31.78, 
+   "degrees": 9, 
    "nlines": 286, 
-   "nedges": 9, 
    "order_app": 5
   }, 
   "ORLANDO": {
    "ratio": 25.83, 
+   "degrees": 12, 
    "nlines": 310, 
-   "nedges": 12, 
    "order_app": 0
   }, 
   "ROSALIND": {
    "ratio": 58.5, 
+   "degrees": 12, 
    "nlines": 702, 
-   "nedges": 12, 
    "order_app": 6
   }, 
   "LE BEAU": {
    "ratio": 9.2, 
+   "degrees": 5, 
    "nlines": 46, 
-   "nedges": 5, 
    "order_app": 8
   }, 
   "JAQUES": {
    "ratio": 19.75, 
+   "degrees": 12, 
    "nlines": 237, 
-   "nedges": 12, 
    "order_app": 16
   }, 
   "Second Lord": {
    "ratio": 3.67, 
+   "degrees": 3, 
    "nlines": 11, 
-   "nedges": 3, 
    "order_app": 13
   }, 
   "DENNIS": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 3
   }, 
   "First Lord": {
    "ratio": 15.67, 
+   "degrees": 3, 
    "nlines": 47, 
-   "nedges": 3, 
    "order_app": 12
   }, 
   "OLIVER": {
    "ratio": 22.0, 
+   "degrees": 7, 
    "nlines": 154, 
-   "nedges": 7, 
    "order_app": 2
   }, 
   "WILLIAM": {
    "ratio": 4.33, 
+   "degrees": 3, 
    "nlines": 13, 
-   "nedges": 3, 
    "order_app": 22
   }, 
   "CHARLES": {
    "ratio": 10.25, 
+   "degrees": 4, 
    "nlines": 41, 
-   "nedges": 4, 
    "order_app": 4
   }, 
   "Forester": {
    "ratio": 12.0, 
+   "degrees": 1, 
    "nlines": 12, 
-   "nedges": 1, 
    "order_app": 21
   }, 
   "A Lord": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 20
   }, 
   "ADAM": {
    "ratio": 22.33, 
+   "degrees": 3, 
    "nlines": 67, 
-   "nedges": 3, 
    "order_app": 1
   }, 
   "SILVIUS": {
    "ratio": 15.4, 
+   "degrees": 5, 
    "nlines": 77, 
-   "nedges": 5, 
    "order_app": 15
   }, 
   "TOUCHSTONE": {
    "ratio": 25.64, 
+   "degrees": 11, 
    "nlines": 282, 
-   "nedges": 11, 
    "order_app": 7
   }, 
   "HYMEN": {
    "ratio": 15.5, 
+   "degrees": 2, 
    "nlines": 31, 
-   "nedges": 2, 
    "order_app": 25
   }, 
   "JAQUES DE BOYS": {
    "ratio": 5.67, 
+   "degrees": 3, 
    "nlines": 17, 
-   "nedges": 3, 
    "order_app": 26
   }, 
   "AMIENS": {
    "ratio": 19.0, 
+   "degrees": 2, 
    "nlines": 38, 
-   "nedges": 2, 
    "order_app": 11
   }, 
   "PHEBE": {
    "ratio": 17.6, 
+   "degrees": 5, 
    "nlines": 88, 
-   "nedges": 5, 
    "order_app": 19
   }, 
   "AUDREY": {
    "ratio": 4.75, 
+   "degrees": 4, 
    "nlines": 19, 
-   "nedges": 4, 
    "order_app": 17
   }, 
   "First Page": {
    "ratio": 1.67, 
+   "degrees": 3, 
    "nlines": 5, 
-   "nedges": 3, 
    "order_app": 23
   }, 
   "DUKE FREDERICK": {
    "ratio": 9.13, 
+   "degrees": 8, 
    "nlines": 73, 
-   "nedges": 8, 
    "order_app": 9
   }, 
   "CORIN": {
    "ratio": 11.67, 
+   "degrees": 6, 
    "nlines": 70, 
-   "nedges": 6, 
    "order_app": 14
   }, 
   "Second Page": {
    "ratio": 11.0, 
+   "degrees": 2, 
    "nlines": 22, 
-   "nedges": 2, 
    "order_app": 24
   }, 
   "SIR OLIVER MARTEXT": {
    "ratio": 2.5, 
+   "degrees": 2, 
    "nlines": 5, 
-   "nedges": 2, 
    "order_app": 18
   }
  }, 

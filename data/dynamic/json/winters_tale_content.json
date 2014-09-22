@@ -3279,6 +3279,51 @@
   ], 
   [
    {
+    "location": "Enter Time, the Chorus.", 
+    "lines": [
+     [
+      "Time", 
+      [
+       "I, that please some, try all, both joy and terror (4,1,142)", 
+       "Of good and bad, that makes and unfolds error, (4,1,143)", 
+       "Now take upon me, in the name of Time, (4,1,144)", 
+       "To use my wings. Impute it not a crime (4,1,145)", 
+       "To me or my swift passage, that I slide (4,1,146)", 
+       "O'er sixteen years and leave the growth untried (4,1,147)", 
+       "Of that wide gap, since it is in my power (4,1,148)", 
+       "To o'erthrow law and in one self-born hour (4,1,149)", 
+       "To plant and o'erwhelm custom. Let me pass (4,1,150)", 
+       "The same I am, ere ancient'st order was (4,1,151)", 
+       "Or what is now received: I witness to (4,1,152)", 
+       "The times that brought them in; so shall I do (4,1,153)", 
+       "To the freshest things now reigning and make stale (4,1,154)", 
+       "The glistering of this present, as my tale (4,1,155)", 
+       "Now seems to it. Your patience this allowing, (4,1,156)", 
+       "I turn my glass and give my scene such growing (4,1,157)", 
+       "As you had slept between: Leontes leaving, (4,1,158)", 
+       "The effects of his fond jealousies so grieving (4,1,159)", 
+       "That he shuts up himself, imagine me, (4,1,160)", 
+       "Gentle spectators, that I now may be (4,1,161)", 
+       "In fair Bohemia, and remember well, (4,1,162)", 
+       "I mentioned a son o' the king's, which Florizel (4,1,163)", 
+       "I now name to you; and with speed so pace (4,1,164)", 
+       "To speak of Perdita, now grown in grace (4,1,165)", 
+       "Equal with wondering: what of her ensues (4,1,166)", 
+       "I list not prophecy; but let Time's news (4,1,167)", 
+       "Be known when 'tis brought forth. (4,1,168)", 
+       "A shepherd's daughter, (4,1,169)", 
+       "And what to her adheres, which follows after, (4,1,170)", 
+       "Is the argument of Time. Of this allow, (4,1,171)", 
+       "If ever you have spent time worse ere now; (4,1,172)", 
+       "If never, yet that Time himself doth say (4,1,173)", 
+       "He wishes earnestly you never may. (4,1,174)"
+      ]
+     ]
+    ], 
+    "scene": "1", 
+    "act": "4"
+   }, 
+   {
     "location": "Bohemia. The palace of POLIXENES.", 
     "lines": [
      [
@@ -3387,44 +3432,6 @@
    {
     "location": "A road near the Shepherd's cottage.", 
     "lines": [
-     [
-      "Time", 
-      [
-       "I, that please some, try all, both joy and terror (4,3,142)", 
-       "Of good and bad, that makes and unfolds error, (4,3,143)", 
-       "Now take upon me, in the name of Time, (4,3,144)", 
-       "To use my wings. Impute it not a crime (4,3,145)", 
-       "To me or my swift passage, that I slide (4,3,146)", 
-       "O'er sixteen years and leave the growth untried (4,3,147)", 
-       "Of that wide gap, since it is in my power (4,3,148)", 
-       "To o'erthrow law and in one self-born hour (4,3,149)", 
-       "To plant and o'erwhelm custom. Let me pass (4,3,150)", 
-       "The same I am, ere ancient'st order was (4,3,151)", 
-       "Or what is now received: I witness to (4,3,152)", 
-       "The times that brought them in; so shall I do (4,3,153)", 
-       "To the freshest things now reigning and make stale (4,3,154)", 
-       "The glistering of this present, as my tale (4,3,155)", 
-       "Now seems to it. Your patience this allowing, (4,3,156)", 
-       "I turn my glass and give my scene such growing (4,3,157)", 
-       "As you had slept between: Leontes leaving, (4,3,158)", 
-       "The effects of his fond jealousies so grieving (4,3,159)", 
-       "That he shuts up himself, imagine me, (4,3,160)", 
-       "Gentle spectators, that I now may be (4,3,161)", 
-       "In fair Bohemia, and remember well, (4,3,162)", 
-       "I mentioned a son o' the king's, which Florizel (4,3,163)", 
-       "I now name to you; and with speed so pace (4,3,164)", 
-       "To speak of Perdita, now grown in grace (4,3,165)", 
-       "Equal with wondering: what of her ensues (4,3,166)", 
-       "I list not prophecy; but let Time's news (4,3,167)", 
-       "Be known when 'tis brought forth. (4,3,168)", 
-       "A shepherd's daughter, (4,3,169)", 
-       "And what to her adheres, which follows after, (4,3,170)", 
-       "Is the argument of Time. Of this allow, (4,3,171)", 
-       "If ever you have spent time worse ere now; (4,3,172)", 
-       "If never, yet that Time himself doth say (4,3,173)", 
-       "He wishes earnestly you never may. (4,3,174)"
-      ]
-     ], 
      [
       "AUTOLYCUS", 
       [

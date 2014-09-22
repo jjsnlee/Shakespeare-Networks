@@ -3,379 +3,433 @@
  "acts": [
   [
    {
+    "total_lines": 77, 
+    "deg_assort_coeff": -0.7112676056338012, 
+    "density": 0.42857142857142855, 
+    "scene": "1", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.5714285714285714, 
+    "location": "On a ship at sea: a tempestuous noise", 
+    "act": "1", 
     "graph_img_f": "imgs/tempest_1_1.png", 
     "char_data": {
      "SEBASTIAN": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "ALONSO": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "GONZALO": {
       "ratio": 8.0, 
-      "nlines": 24, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 24
      }, 
      "ANTONIO": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "Master": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "Boatswain": {
       "ratio": 5.5, 
-      "nlines": 33, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 33
      }, 
      "Mariners": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }
     }, 
-    "location": "On a ship at sea: a tempestuous noise", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.4571428571428572
    }, 
    {
+    "total_lines": 618, 
+    "deg_assort_coeff": -0.52837028918303619, 
+    "density": 0.6, 
+    "scene": "2", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.5, 
+    "location": "The island. Before PROSPERO'S cell.", 
+    "act": "1", 
     "graph_img_f": "imgs/tempest_1_2.png", 
     "char_data": {
      "PROSPERO": {
       "ratio": 93.25, 
-      "nlines": 373, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 373
      }, 
      "ARIEL": {
       "ratio": 71.0, 
-      "nlines": 71, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 71
      }, 
      "FERDINAND": {
       "ratio": 14.0, 
-      "nlines": 56, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 56
      }, 
      "CALIBAN": {
       "ratio": 31.0, 
-      "nlines": 31, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 31
      }, 
      "MIRANDA": {
       "ratio": 43.5, 
-      "nlines": 87, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 87
      }
     }, 
-    "location": "The island. Before PROSPERO'S cell.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.4333333333333334
    }
   ], 
   [
    {
+    "total_lines": 374, 
+    "deg_assort_coeff": -0.27591886244693253, 
+    "density": 0.6190476190476191, 
+    "scene": "1", 
+    "total_degrees": 13, 
+    "avg_shortest_path": 1.4285714285714286, 
+    "location": "Another part of the island.", 
+    "act": "2", 
     "graph_img_f": "imgs/tempest_2_1.png", 
     "char_data": {
      "FRANCISCO": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "ALONSO": {
       "ratio": 5.2, 
-      "nlines": 26, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 26
      }, 
      "GONZALO": {
       "ratio": 22.5, 
-      "nlines": 90, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 90
      }, 
      "ANTONIO": {
       "ratio": 25.2, 
-      "nlines": 126, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 126
      }, 
      "ARIEL": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "ADRIAN": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "SEBASTIAN": {
       "ratio": 19.6, 
-      "nlines": 98, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 98
      }
     }, 
-    "location": "Another part of the island.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.6761904761904762
    }, 
    {
+    "total_lines": 196, 
+    "deg_assort_coeff": -0.50000000000000655, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "Another part of the island.", 
+    "act": "2", 
     "graph_img_f": "imgs/tempest_2_2.png", 
     "char_data": {
      "CALIBAN": {
       "ratio": 28.5, 
-      "nlines": 57, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 57
      }, 
      "TRINCULO": {
       "ratio": 29.0, 
-      "nlines": 58, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 58
      }, 
      "STEPHANO": {
       "ratio": 40.5, 
-      "nlines": 81, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 81
      }
     }, 
-    "location": "Another part of the island.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 1.0
    }
   ], 
   [
    {
+    "total_lines": 117, 
+    "deg_assort_coeff": -0.49999999999999972, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "Before PROSPERO'S Cell.", 
+    "act": "3", 
     "graph_img_f": "imgs/tempest_3_1.png", 
     "char_data": {
      "PROSPERO": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "FERDINAND": {
       "ratio": 30.5, 
-      "nlines": 61, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 61
      }, 
      "MIRANDA": {
       "ratio": 22.5, 
-      "nlines": 45, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 45
      }
     }, 
-    "location": "Before PROSPERO'S Cell.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 156, 
+    "deg_assort_coeff": -0.54311701941577806, 
+    "density": 0.8333333333333334, 
+    "scene": "2", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "Another part of the island.", 
+    "act": "3", 
     "graph_img_f": "imgs/tempest_3_2.png", 
     "char_data": {
      "ARIEL": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "CALIBAN": {
       "ratio": 20.67, 
-      "nlines": 62, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 62
      }, 
      "TRINCULO": {
       "ratio": 15.0, 
-      "nlines": 30, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 30
      }, 
      "STEPHANO": {
       "ratio": 20.0, 
-      "nlines": 60, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 60
      }
     }, 
-    "location": "Another part of the island.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 137, 
+    "deg_assort_coeff": -0.15998846929951177, 
+    "density": 0.42857142857142855, 
+    "scene": "3", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.6785714285714286, 
+    "location": "Another part of the island.", 
+    "act": "3", 
     "graph_img_f": "imgs/tempest_3_3.png", 
     "char_data": {
      "FRANCISCO": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "ALONSO": {
       "ratio": 5.6, 
-      "nlines": 28, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 28
      }, 
      "GONZALO": {
       "ratio": 7.25, 
-      "nlines": 29, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 29
      }, 
      "ANTONIO": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "PROSPERO": {
       "ratio": 4.0, 
-      "nlines": 16, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 16
      }, 
      "ADRIAN": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "SEBASTIAN": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "ARIEL": {
       "ratio": 16.5, 
-      "nlines": 33, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 33
      }
     }, 
-    "location": "Another part of the island.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.3833333333333333
    }
   ], 
   [
    {
+    "total_lines": 307, 
+    "deg_assort_coeff": -0.11009822890311116, 
+    "density": 0.3111111111111111, 
+    "scene": "1", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 2.1555555555555554, 
+    "location": "Before PROSPERO'S cell.", 
+    "act": "4", 
     "graph_img_f": "imgs/tempest_4_1.png", 
     "char_data": {
      "IRIS": {
       "ratio": 22.0, 
-      "nlines": 44, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 44
      }, 
      "CERES": {
       "ratio": 8.33, 
-      "nlines": 25, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 25
      }, 
      "JUNO": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "PROSPERO": {
       "ratio": 18.17, 
-      "nlines": 109, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 109
      }, 
      "CALIBAN": {
       "ratio": 6.67, 
-      "nlines": 20, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 20
      }, 
      "ARIEL": {
       "ratio": 32.0, 
-      "nlines": 32, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 32
      }, 
      "MIRANDA": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "FERDINAND": {
       "ratio": 9.0, 
-      "nlines": 27, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 27
      }, 
      "TRINCULO": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }, 
      "STEPHANO": {
       "ratio": 8.33, 
-      "nlines": 25, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 25
      }
     }, 
-    "location": "Before PROSPERO'S cell.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.38
    }
   ], 
   [
    {
+    "total_lines": 400, 
+    "deg_assort_coeff": -0.2171009219283194, 
+    "density": 0.42424242424242425, 
+    "scene": "1", 
+    "total_degrees": 28, 
+    "avg_shortest_path": 1.6363636363636365, 
+    "location": "Before PROSPERO'S cell.", 
+    "act": "5", 
     "graph_img_f": "imgs/tempest_5_1.png", 
     "char_data": {
      "GONZALO": {
       "ratio": 6.5, 
-      "nlines": 26, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 26
      }, 
      "PROSPERO": {
       "ratio": 22.6, 
-      "nlines": 226, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 226
      }, 
      "CALIBAN": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "ANTONIO": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "ARIEL": {
       "ratio": 8.0, 
-      "nlines": 24, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 24
      }, 
      "ALONSO": {
       "ratio": 6.33, 
-      "nlines": 57, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 57
      }, 
      "MIRANDA": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "Boatswain": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "FERDINAND": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "SEBASTIAN": {
       "ratio": 1.29, 
-      "nlines": 9, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 9
      }, 
      "TRINCULO": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "STEPHANO": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }
     }, 
-    "location": "Before PROSPERO'S cell.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.666005291005291
    }
   ]
  ], 
@@ -404,116 +458,116 @@
  "char_data": {
   "IRIS": {
    "ratio": 22.0, 
+   "degrees": 2, 
    "nlines": 44, 
-   "nedges": 2, 
    "order_app": 16
   }, 
   "Mariners": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 6
   }, 
   "CERES": {
    "ratio": 8.33, 
+   "degrees": 3, 
    "nlines": 25, 
-   "nedges": 3, 
    "order_app": 17
   }, 
   "JUNO": {
    "ratio": 2.67, 
+   "degrees": 3, 
    "nlines": 8, 
-   "nedges": 3, 
    "order_app": 18
   }, 
   "ADRIAN": {
    "ratio": 4.33, 
+   "degrees": 3, 
    "nlines": 13, 
-   "nedges": 3, 
    "order_app": 12
   }, 
   "ALONSO": {
    "ratio": 9.42, 
+   "degrees": 12, 
    "nlines": 113, 
-   "nedges": 12, 
    "order_app": 2
   }, 
   "TRINCULO": {
    "ratio": 27.0, 
+   "degrees": 4, 
    "nlines": 108, 
-   "nedges": 4, 
    "order_app": 14
   }, 
   "GONZALO": {
    "ratio": 24.14, 
+   "degrees": 7, 
    "nlines": 169, 
-   "nedges": 7, 
    "order_app": 4
   }, 
   "ANTONIO": {
    "ratio": 21.43, 
+   "degrees": 7, 
    "nlines": 150, 
-   "nedges": 7, 
    "order_app": 3
   }, 
   "PROSPERO": {
    "ratio": 56.54, 
+   "degrees": 13, 
    "nlines": 735, 
-   "nedges": 13, 
    "order_app": 8
   }, 
   "FRANCISCO": {
    "ratio": 3.67, 
+   "degrees": 3, 
    "nlines": 11, 
-   "nedges": 3, 
    "order_app": 13
   }, 
   "Master": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 0
   }, 
   "STEPHANO": {
    "ratio": 28.5, 
+   "degrees": 6, 
    "nlines": 171, 
-   "nedges": 6, 
    "order_app": 15
   }, 
   "MIRANDA": {
    "ratio": 47.0, 
+   "degrees": 3, 
    "nlines": 141, 
-   "nedges": 3, 
    "order_app": 7
   }, 
   "Boatswain": {
    "ratio": 7.14, 
+   "degrees": 7, 
    "nlines": 50, 
-   "nedges": 7, 
    "order_app": 1
   }, 
   "FERDINAND": {
    "ratio": 22.57, 
+   "degrees": 7, 
    "nlines": 158, 
-   "nedges": 7, 
    "order_app": 11
   }, 
   "SEBASTIAN": {
    "ratio": 10.42, 
+   "degrees": 12, 
    "nlines": 125, 
-   "nedges": 12, 
    "order_app": 5
   }, 
   "CALIBAN": {
    "ratio": 29.67, 
+   "degrees": 6, 
    "nlines": 178, 
-   "nedges": 6, 
    "order_app": 10
   }, 
   "ARIEL": {
    "ratio": 22.13, 
+   "degrees": 8, 
    "nlines": 177, 
-   "nedges": 8, 
    "order_app": 9
   }
  }, 

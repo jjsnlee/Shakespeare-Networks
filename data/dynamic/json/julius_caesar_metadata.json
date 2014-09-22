@@ -3,731 +3,839 @@
  "acts": [
   [
    {
+    "total_lines": 76, 
+    "deg_assort_coeff": -0.15384615384615416, 
+    "density": 0.8333333333333334, 
+    "scene": "1", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "Rome. A street.", 
+    "act": "1", 
     "graph_img_f": "imgs/julius_caesar_1_1.png", 
     "char_data": {
      "FLAVIUS": {
       "ratio": 9.33, 
-      "nlines": 28, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 28
      }, 
      "Second Commoner": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "First Commoner": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "MARULLUS": {
       "ratio": 10.33, 
-      "nlines": 31, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 31
      }
     }, 
-    "location": "Rome. A street.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 338, 
+    "deg_assort_coeff": 0.3268339004510572, 
+    "density": 0.42857142857142855, 
+    "scene": "2", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.5714285714285714, 
+    "location": "A public place.", 
+    "act": "1", 
     "graph_img_f": "imgs/julius_caesar_1_2.png", 
     "char_data": {
      "CASCA": {
       "ratio": 21.67, 
-      "nlines": 65, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 65
      }, 
      "CASSIUS": {
       "ratio": 49.33, 
-      "nlines": 148, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 148
      }, 
      "CALPURNIA": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "CAESAR": {
       "ratio": 7.0, 
-      "nlines": 42, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 42
      }, 
      "Soothsayer": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "ANTONY": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "BRUTUS": {
       "ratio": 24.33, 
-      "nlines": 73, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 73
      }
     }, 
-    "location": "A public place.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.4571428571428572
    }, 
    {
+    "total_lines": 177, 
+    "deg_assort_coeff": -0.49787955894826175, 
+    "density": 0.5, 
+    "scene": "3", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "The same. A street.", 
+    "act": "1", 
     "graph_img_f": "imgs/julius_caesar_1_3.png", 
     "char_data": {
      "CINNA": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }, 
      "CASCA": {
       "ratio": 29.5, 
-      "nlines": 59, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 59
      }, 
      "CICERO": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }, 
      "CASSIUS": {
       "ratio": 50.0, 
-      "nlines": 100, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 100
      }
     }, 
-    "location": "The same. A street.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 370, 
+    "deg_assort_coeff": -0.39190517490604265, 
+    "density": 0.3111111111111111, 
+    "scene": "1", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.7777777777777777, 
+    "location": "Rome. BRUTUS's orchard.", 
+    "act": "2", 
     "graph_img_f": "imgs/julius_caesar_2_1.png", 
     "char_data": {
      "DECIUS BRUTUS": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "CASCA": {
       "ratio": 2.5, 
-      "nlines": 10, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 10
      }, 
      "PORTIA": {
       "ratio": 62.0, 
-      "nlines": 62, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 62
      }, 
      "CINNA": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "LIGARIUS": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }, 
      "CASSIUS": {
       "ratio": 9.5, 
-      "nlines": 38, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 38
      }, 
      "METELLUS CIMBER": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "LUCIUS": {
       "ratio": 21.0, 
-      "nlines": 21, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 21
      }, 
      "TREBONIUS": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "BRUTUS": {
       "ratio": 24.38, 
-      "nlines": 195, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 195
      }
     }, 
-    "location": "Rome. BRUTUS's orchard.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.4809523809523809
    }, 
    {
+    "total_lines": 146, 
+    "deg_assort_coeff": -0.84765661688738614, 
+    "density": 0.2857142857142857, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.7142857142857142, 
+    "location": "CAESAR's house.", 
+    "act": "2", 
     "graph_img_f": "imgs/julius_caesar_2_2.png", 
     "char_data": {
      "DECIUS BRUTUS": {
       "ratio": 25.0, 
-      "nlines": 25, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 25
      }, 
      "CALPURNIA": {
       "ratio": 13.0, 
-      "nlines": 26, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 26
      }, 
      "Servant": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "BRUTUS": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "TREBONIUS": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "PUBLIUS": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "ANTONY": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "CAESAR": {
       "ratio": 11.14, 
-      "nlines": 78, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 78
      }
     }, 
-    "location": "CAESAR's house.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.25595238095238093
    }, 
    {
+    "total_lines": 16, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "3", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "A street near the Capitol.", 
+    "act": "2", 
     "graph_img_f": "imgs/julius_caesar_2_3.png", 
     "char_data": {
      "ARTEMIDORUS": {
       "ratio": 0, 
-      "nlines": 16, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 16
      }
     }, 
-    "location": "A street near the Capitol.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 53, 
+    "deg_assort_coeff": -0.97590361445783136, 
+    "density": 0.6666666666666666, 
+    "scene": "4", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another part of the same street, before the house of BRUTUS.", 
+    "act": "2", 
     "graph_img_f": "imgs/julius_caesar_2_4.png", 
     "char_data": {
      "Soothsayer": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }, 
      "LUCIUS": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "PORTIA": {
       "ratio": 15.5, 
-      "nlines": 31, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 31
      }
     }, 
-    "location": "Another part of the same street, before the house of BRUTUS.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 332, 
+    "deg_assort_coeff": -0.29880927336222612, 
+    "density": 0.32967032967032966, 
+    "scene": "1", 
+    "total_degrees": 30, 
+    "avg_shortest_path": 1.7802197802197801, 
+    "location": "Rome. Before the Capitol; the Senate sitting above.", 
+    "act": "3", 
     "graph_img_f": "imgs/julius_caesar_3_1.png", 
     "char_data": {
      "DECIUS BRUTUS": {
       "ratio": 1.4, 
-      "nlines": 7, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 7
      }, 
      "CASCA": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "CAESAR": {
       "ratio": 2.67, 
-      "nlines": 24, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 24
      }, 
      "TREBONIUS": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "Servant": {
       "ratio": 11.5, 
-      "nlines": 23, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 23
      }, 
      "CASSIUS": {
       "ratio": 6.6, 
-      "nlines": 66, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 66
      }, 
      "ARTEMIDORUS": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "CINNA": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "PUBLIUS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "METELLUS CIMBER": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "POPILIUS": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "Soothsayer": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "ANTONY": {
       "ratio": 33.33, 
-      "nlines": 100, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 100
      }, 
      "BRUTUS": {
       "ratio": 8.3, 
-      "nlines": 83, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 83
      }
     }, 
-    "location": "Rome. Before the Capitol; the Senate sitting above.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.7650226757369615
    }, 
    {
+    "total_lines": 289, 
+    "deg_assort_coeff": -0.29008741196871862, 
+    "density": 0.4888888888888889, 
+    "scene": "2", 
+    "total_degrees": 22, 
+    "avg_shortest_path": 1.5333333333333334, 
+    "location": "The Forum.", 
+    "act": "3", 
     "graph_img_f": "imgs/julius_caesar_3_2.png", 
     "char_data": {
      "All": {
       "ratio": 2.0, 
-      "nlines": 10, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 10
      }, 
      "First Citizen": {
       "ratio": 3.0, 
-      "nlines": 18, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 18
      }, 
      "Servant": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "Citizens": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "Second Citizen": {
       "ratio": 2.83, 
-      "nlines": 17, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 17
      }, 
      "Fourth Citizen": {
       "ratio": 3.75, 
-      "nlines": 15, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 15
      }, 
      "ANTONY": {
       "ratio": 18.88, 
-      "nlines": 151, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 151
      }, 
      "BRUTUS": {
       "ratio": 10.6, 
-      "nlines": 53, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 53
      }, 
      "Third Citizen": {
       "ratio": 3.4, 
-      "nlines": 17, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 17
      }, 
      "Several Citizens": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "The Forum.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.5388095238095238
    }, 
    {
+    "total_lines": 37, 
+    "deg_assort_coeff": -0.32686084142394295, 
+    "density": 0.9, 
+    "scene": "3", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.1, 
+    "location": "A street.", 
+    "act": "3", 
     "graph_img_f": "imgs/julius_caesar_3_3.png", 
     "char_data": {
      "Second Citizen": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "First Citizen": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "CINNA THE POET": {
       "ratio": 3.75, 
-      "nlines": 15, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 15
      }, 
      "Third Citizen": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "Fourth Citizen": {
       "ratio": 1.5, 
-      "nlines": 6, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 6
      }
     }, 
-    "location": "A street.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.9
    }
   ], 
   [
    {
+    "total_lines": 56, 
+    "deg_assort_coeff": -0.50000000000000211, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "A house in Rome.", 
+    "act": "4", 
     "graph_img_f": "imgs/julius_caesar_4_1.png", 
     "char_data": {
      "OCTAVIUS": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "ANTONY": {
       "ratio": 19.0, 
-      "nlines": 38, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 38
      }, 
      "LEPIDUS": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }
     }, 
-    "location": "A house in Rome.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 60, 
+    "deg_assort_coeff": -0.1477422183252961, 
+    "density": 0.3333333333333333, 
+    "scene": "2", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.8571428571428572, 
+    "location": "Camp near Sardis. Before BRUTUS's tent.", 
+    "act": "4", 
     "graph_img_f": "imgs/julius_caesar_4_2.png", 
     "char_data": {
      "First Soldier": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "Second Soldier": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "CASSIUS": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "PINDARUS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "Third Soldier": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "LUCILIUS": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "BRUTUS": {
       "ratio": 9.25, 
-      "nlines": 37, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 37
      }
     }, 
-    "location": "Camp near Sardis. Before BRUTUS's tent.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 371, 
+    "deg_assort_coeff": -0.45358388485291934, 
+    "density": 0.28888888888888886, 
+    "scene": "3", 
+    "total_degrees": 13, 
+    "avg_shortest_path": 1.8444444444444446, 
+    "location": "Brutus's tent.", 
+    "act": "4", 
     "graph_img_f": "imgs/julius_caesar_4_3.png", 
     "char_data": {
      "GHOST": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "CLAUDIUS": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "VARRO": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "TITINIUS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "CASSIUS": {
       "ratio": 33.67, 
-      "nlines": 101, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 101
      }, 
      "MESSALA": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "Poet": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "LUCILIUS": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "LUCIUS": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "BRUTUS": {
       "ratio": 27.25, 
-      "nlines": 218, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 218
      }
     }, 
-    "location": "Brutus's tent.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.4809523809523809
    }
   ], 
   [
    {
+    "total_lines": 141, 
+    "deg_assort_coeff": -0.36459924134193616, 
+    "density": 0.47619047619047616, 
+    "scene": "1", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.619047619047619, 
+    "location": "The plains of Philippi.", 
+    "act": "5", 
     "graph_img_f": "imgs/julius_caesar_5_1.png", 
     "char_data": {
      "CASSIUS": {
       "ratio": 9.8, 
-      "nlines": 49, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 49
      }, 
      "MESSALA": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "OCTAVIUS": {
       "ratio": 9.0, 
-      "nlines": 27, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 27
      }, 
      "Messenger": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "LUCILIUS": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "ANTONY": {
       "ratio": 5.75, 
-      "nlines": 23, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 23
      }, 
      "BRUTUS": {
       "ratio": 8.5, 
-      "nlines": 34, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 34
      }
     }, 
-    "location": "The plains of Philippi.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.5095238095238095
    }, 
    {
+    "total_lines": 8, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "2", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "The same. The field of battle.", 
+    "act": "5", 
     "graph_img_f": "imgs/julius_caesar_5_2.png", 
     "char_data": {
      "BRUTUS": {
       "ratio": 0, 
-      "nlines": 8, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 8
      }
     }, 
-    "location": "The same. The field of battle.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 132, 
+    "deg_assort_coeff": -0.13763480168159387, 
+    "density": 0.5333333333333333, 
+    "scene": "3", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.6, 
+    "location": "Another part of the field.", 
+    "act": "5", 
     "graph_img_f": "imgs/julius_caesar_5_3.png", 
     "char_data": {
      "TITINIUS": {
       "ratio": 9.0, 
-      "nlines": 36, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 36
      }, 
      "CASSIUS": {
       "ratio": 18.5, 
-      "nlines": 37, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 37
      }, 
      "MESSALA": {
       "ratio": 6.33, 
-      "nlines": 19, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 19
      }, 
      "PINDARUS": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "CATO": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "BRUTUS": {
       "ratio": 6.67, 
-      "nlines": 20, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 20
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.5277777777777778
    }, 
    {
+    "total_lines": 37, 
+    "deg_assort_coeff": -0.26923076923076883, 
+    "density": 0.4, 
+    "scene": "4", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.9333333333333333, 
+    "location": "Another part of the field.", 
+    "act": "5", 
     "graph_img_f": "imgs/julius_caesar_5_4.png", 
     "char_data": {
      "First Soldier": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "Second Soldier": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "CATO": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "LUCILIUS": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "ANTONY": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "BRUTUS": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 0.27777777777777773
    }, 
    {
+    "total_lines": 98, 
+    "deg_assort_coeff": 0.0083153680320286506, 
+    "density": 0.3888888888888889, 
+    "scene": "5", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.8611111111111112, 
+    "location": "Another part of the field.", 
+    "act": "5", 
     "graph_img_f": "imgs/julius_caesar_5_5.png", 
     "char_data": {
      "CLITUS": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "STRATO": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "MESSALA": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "OCTAVIUS": {
       "ratio": 2.4, 
-      "nlines": 12, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 12
      }, 
      "VOLUMNIUS": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "LUCILIUS": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "ANTONY": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "BRUTUS": {
       "ratio": 9.6, 
-      "nlines": 48, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 48
      }, 
      "DARDANIUS": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "5", 
-    "act": "5"
+    "avg_clustering": 0.7259259259259259
    }
   ]
  ], 
@@ -787,302 +895,302 @@
  "char_data": {
   "PORTIA": {
    "ratio": 31.0, 
+   "degrees": 3, 
    "nlines": 93, 
-   "nedges": 3, 
    "order_app": 17
   }, 
   "Second Citizen": {
    "ratio": 2.75, 
+   "degrees": 8, 
    "nlines": 22, 
-   "nedges": 8, 
    "order_app": 25
   }, 
   "VARRO": {
    "ratio": 3.67, 
+   "degrees": 3, 
    "nlines": 11, 
-   "nedges": 3, 
    "order_app": 41
   }, 
   "Second Soldier": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 36
   }, 
   "MARULLUS": {
    "ratio": 10.33, 
+   "degrees": 3, 
    "nlines": 31, 
-   "nedges": 3, 
    "order_app": 2
   }, 
   "First Soldier": {
    "ratio": 1.5, 
+   "degrees": 4, 
    "nlines": 6, 
-   "nedges": 4, 
    "order_app": 35
   }, 
   "CLITUS": {
    "ratio": 3.33, 
+   "degrees": 3, 
    "nlines": 10, 
-   "nedges": 3, 
    "order_app": 46
   }, 
   "CLAUDIUS": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 43
   }, 
   "METELLUS CIMBER": {
    "ratio": 6.0, 
+   "degrees": 3, 
    "nlines": 18, 
-   "nedges": 3, 
    "order_app": 15
   }, 
   "STRATO": {
    "ratio": 1.75, 
+   "degrees": 4, 
    "nlines": 7, 
-   "nedges": 4, 
    "order_app": 49
   }, 
   "Messenger": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 44
   }, 
   "Poet": {
    "ratio": 2.67, 
+   "degrees": 3, 
    "nlines": 8, 
-   "nedges": 3, 
    "order_app": 38
   }, 
   "Soothsayer": {
    "ratio": 6.33, 
+   "degrees": 3, 
    "nlines": 19, 
-   "nedges": 3, 
    "order_app": 8
   }, 
   "MESSALA": {
    "ratio": 5.43, 
+   "degrees": 7, 
    "nlines": 38, 
-   "nedges": 7, 
    "order_app": 39
   }, 
   "BRUTUS": {
    "ratio": 23.55, 
+   "degrees": 33, 
    "nlines": 777, 
-   "nedges": 33, 
    "order_app": 9
   }, 
   "Several Citizens": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 29
   }, 
   "CASCA": {
    "ratio": 22.83, 
+   "degrees": 6, 
    "nlines": 137, 
-   "nedges": 6, 
    "order_app": 5
   }, 
   "TITINIUS": {
    "ratio": 9.75, 
+   "degrees": 4, 
    "nlines": 39, 
-   "nedges": 4, 
    "order_app": 40
   }, 
   "LIGARIUS": {
    "ratio": 15.0, 
+   "degrees": 1, 
    "nlines": 15, 
-   "nedges": 1, 
    "order_app": 18
   }, 
   "CICERO": {
    "ratio": 9.0, 
+   "degrees": 1, 
    "nlines": 9, 
-   "nedges": 1, 
    "order_app": 11
   }, 
   "LUCIUS": {
    "ratio": 13.0, 
+   "degrees": 3, 
    "nlines": 39, 
-   "nedges": 3, 
    "order_app": 13
   }, 
   "PINDARUS": {
    "ratio": 5.0, 
+   "degrees": 4, 
    "nlines": 20, 
-   "nedges": 4, 
    "order_app": 34
   }, 
   "CAESAR": {
    "ratio": 11.08, 
+   "degrees": 13, 
    "nlines": 144, 
-   "nedges": 13, 
    "order_app": 4
   }, 
   "LUCILIUS": {
    "ratio": 4.0, 
+   "degrees": 7, 
    "nlines": 28, 
-   "nedges": 7, 
    "order_app": 33
   }, 
   "ANTONY": {
    "ratio": 19.76, 
+   "degrees": 17, 
    "nlines": 336, 
-   "nedges": 17, 
    "order_app": 7
   }, 
   "DARDANIUS": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 47
   }, 
   "GHOST": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 42
   }, 
   "DECIUS BRUTUS": {
    "ratio": 8.8, 
+   "degrees": 5, 
    "nlines": 44, 
-   "nedges": 5, 
    "order_app": 14
   }, 
   "First Citizen": {
    "ratio": 3.14, 
+   "degrees": 7, 
    "nlines": 22, 
-   "nedges": 7, 
    "order_app": 24
   }, 
   "Servant": {
    "ratio": 8.5, 
+   "degrees": 4, 
    "nlines": 34, 
-   "nedges": 4, 
    "order_app": 19
   }, 
   "VOLUMNIUS": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 48
   }, 
   "Citizens": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 23
   }, 
   "CASSIUS": {
    "ratio": 30.33, 
+   "degrees": 18, 
    "nlines": 546, 
-   "nedges": 18, 
    "order_app": 10
   }, 
   "CALPURNIA": {
    "ratio": 13.5, 
+   "degrees": 2, 
    "nlines": 27, 
-   "nedges": 2, 
    "order_app": 6
   }, 
   "Fourth Citizen": {
    "ratio": 3.5, 
+   "degrees": 6, 
    "nlines": 21, 
-   "nedges": 6, 
    "order_app": 28
   }, 
   "LEPIDUS": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 32
   }, 
   "PUBLIUS": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 20
   }, 
   "Third Soldier": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 37
   }, 
   "CINNA THE POET": {
    "ratio": 3.75, 
+   "degrees": 4, 
    "nlines": 15, 
-   "nedges": 4, 
    "order_app": 30
   }, 
   "FLAVIUS": {
    "ratio": 9.33, 
+   "degrees": 3, 
    "nlines": 28, 
-   "nedges": 3, 
    "order_app": 0
   }, 
   "OCTAVIUS": {
    "ratio": 7.57, 
+   "degrees": 7, 
    "nlines": 53, 
-   "nedges": 7, 
    "order_app": 31
   }, 
   "Third Citizen": {
    "ratio": 4.0, 
+   "degrees": 6, 
    "nlines": 24, 
-   "nedges": 6, 
    "order_app": 26
   }, 
   "All": {
    "ratio": 2.0, 
+   "degrees": 5, 
    "nlines": 10, 
-   "nedges": 5, 
    "order_app": 27
   }, 
   "CINNA": {
    "ratio": 3.6, 
+   "degrees": 5, 
    "nlines": 18, 
-   "nedges": 5, 
    "order_app": 12
   }, 
   "ARTEMIDORUS": {
    "ratio": 6.67, 
+   "degrees": 3, 
    "nlines": 20, 
-   "nedges": 3, 
    "order_app": 21
   }, 
   "CATO": {
    "ratio": 8.0, 
+   "degrees": 1, 
    "nlines": 8, 
-   "nedges": 1, 
    "order_app": 45
   }, 
   "TREBONIUS": {
    "ratio": 3.67, 
+   "degrees": 3, 
    "nlines": 11, 
-   "nedges": 3, 
    "order_app": 16
   }, 
   "POPILIUS": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 22
   }, 
   "Second Commoner": {
    "ratio": 8.0, 
+   "degrees": 2, 
    "nlines": 16, 
-   "nedges": 2, 
    "order_app": 3
   }, 
   "First Commoner": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 1
   }
  }, 

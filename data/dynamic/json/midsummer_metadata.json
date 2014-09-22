@@ -3,489 +3,543 @@
  "acts": [
   [
    {
+    "total_lines": 262, 
+    "deg_assort_coeff": -0.17572792551092811, 
+    "density": 0.47619047619047616, 
+    "scene": "1", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.5714285714285714, 
+    "location": "Athens. The palace of THESEUS.", 
+    "act": "1", 
     "graph_img_f": "imgs/midsummer_1_1.png", 
     "char_data": {
      "THESEUS": {
       "ratio": 13.4, 
-      "nlines": 67, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 67
      }, 
      "HERMIA": {
       "ratio": 18.67, 
-      "nlines": 56, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 56
      }, 
      "DEMETRIUS": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "EGEUS": {
       "ratio": 15.5, 
-      "nlines": 31, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 31
      }, 
      "HELENA": {
       "ratio": 22.0, 
-      "nlines": 44, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 44
      }, 
      "LYSANDER": {
       "ratio": 11.4, 
-      "nlines": 57, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 57
      }, 
      "HIPPOLYTA": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }
     }, 
-    "location": "Athens. The palace of THESEUS.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.6238095238095239
    }, 
    {
+    "total_lines": 102, 
+    "deg_assort_coeff": -0.81586021505376416, 
+    "density": 0.3333333333333333, 
+    "scene": "2", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "Athens. QUINCE'S house.", 
+    "act": "1", 
     "graph_img_f": "imgs/midsummer_1_2.png", 
     "char_data": {
      "ALL": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "BOTTOM": {
       "ratio": 26.0, 
-      "nlines": 52, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 52
      }, 
      "FLUTE": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "SNOUT": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "SNUG": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "STARVELING": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "QUINCE": {
       "ratio": 7.0, 
-      "nlines": 42, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 42
      }
     }, 
-    "location": "Athens. QUINCE'S house.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.29523809523809524
    }
   ], 
   [
    {
+    "total_lines": 281, 
+    "deg_assort_coeff": -0.47592931139549116, 
+    "density": 0.4666666666666667, 
+    "scene": "1", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.5333333333333334, 
+    "location": "A wood near Athens.", 
+    "act": "2", 
     "graph_img_f": "imgs/midsummer_2_1.png", 
     "char_data": {
      "DEMETRIUS": {
       "ratio": 11.5, 
-      "nlines": 23, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 23
      }, 
      "PUCK": {
       "ratio": 19.5, 
-      "nlines": 39, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 39
      }, 
      "TITANIA": {
       "ratio": 73.0, 
-      "nlines": 73, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 73
      }, 
      "HELENA": {
       "ratio": 18.0, 
-      "nlines": 36, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 36
      }, 
      "Fairy": {
       "ratio": 14.5, 
-      "nlines": 29, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 29
      }, 
      "OBERON": {
       "ratio": 16.2, 
-      "nlines": 81, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 81
      }
     }, 
-    "location": "A wood near Athens.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.7000000000000001
    }, 
    {
+    "total_lines": 169, 
+    "deg_assort_coeff": 0.10770767437989012, 
+    "density": 0.2857142857142857, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 2.4285714285714284, 
+    "location": "Another part of the wood.", 
+    "act": "2", 
     "graph_img_f": "imgs/midsummer_2_2.png", 
     "char_data": {
      "DEMETRIUS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "HERMIA": {
       "ratio": 14.5, 
-      "nlines": 29, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 29
      }, 
      "PUCK": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }, 
      "TITANIA": {
       "ratio": 25.0, 
-      "nlines": 25, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 25
      }, 
      "HELENA": {
       "ratio": 11.0, 
-      "nlines": 33, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 33
      }, 
      "LYSANDER": {
       "ratio": 15.0, 
-      "nlines": 45, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 45
      }, 
      "Fairy": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "OBERON": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }
     }, 
-    "location": "Another part of the wood.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 208, 
+    "deg_assort_coeff": -0.24562004875076143, 
+    "density": 0.30303030303030304, 
+    "scene": "1", 
+    "total_degrees": 20, 
+    "avg_shortest_path": 1.878787878787879, 
+    "location": "The wood. TITANIA lying asleep.", 
+    "act": "3", 
     "graph_img_f": "imgs/midsummer_3_1.png", 
     "char_data": {
      "ALL": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "PUCK": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "BOTTOM": {
       "ratio": 10.33, 
-      "nlines": 93, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 93
      }, 
      "MOTH": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "PEASEBLOSSOM": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "FLUTE": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "MUSTARDSEED": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "TITANIA": {
       "ratio": 12.0, 
-      "nlines": 36, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 36
      }, 
      "SNOUT": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "COBWEB": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "STARVELING": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "QUINCE": {
       "ratio": 9.25, 
-      "nlines": 37, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 37
      }
     }, 
-    "location": "The wood. TITANIA lying asleep.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.488425925925926
    }, 
    {
+    "total_lines": 513, 
+    "deg_assort_coeff": -0.048052944561677358, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.380952380952381, 
+    "location": "Another part of the wood.", 
+    "act": "3", 
     "graph_img_f": "imgs/midsummer_3_2.png", 
     "char_data": {
      "DEMETRIUS": {
       "ratio": 13.4, 
-      "nlines": 67, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 67
      }, 
      "HERMIA": {
       "ratio": 16.6, 
-      "nlines": 83, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 83
      }, 
      "PUCK": {
       "ratio": 22.8, 
-      "nlines": 114, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 114
      }, 
      "HELENA": {
       "ratio": 23.6, 
-      "nlines": 118, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 118
      }, 
      "LYSANDER": {
       "ratio": 15.75, 
-      "nlines": 63, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 63
      }, 
      "HERNIA": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "OBERON": {
       "ratio": 22.33, 
-      "nlines": 67, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 67
      }
     }, 
-    "location": "Another part of the wood.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.7142857142857143
    }
   ], 
   [
    {
+    "total_lines": 236, 
+    "deg_assort_coeff": -0.16557183762843056, 
+    "density": 0.21978021978021978, 
+    "scene": "1", 
+    "total_degrees": 20, 
+    "avg_shortest_path": 2.3076923076923075, 
+    "location": "The same. LYSANDER, DEMETRIUS, HELENA, and HERMIA", 
+    "act": "4", 
     "graph_img_f": "imgs/midsummer_4_1.png", 
     "char_data": {
      "THESEUS": {
       "ratio": 8.8, 
-      "nlines": 44, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 44
      }, 
      "DEMETRIUS": {
       "ratio": 4.17, 
-      "nlines": 25, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 25
      }, 
      "BOTTOM": {
       "ratio": 9.2, 
-      "nlines": 46, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 46
      }, 
      "PEASEBLOSSOM": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "HERMIA": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "PUCK": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "MUSTARDSEED": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "TITANIA": {
       "ratio": 7.75, 
-      "nlines": 31, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 31
      }, 
      "EGEUS": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "HELENA": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "LYSANDER": {
       "ratio": 2.5, 
-      "nlines": 10, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 10
      }, 
      "COBWEB": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "HIPPOLYTA": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "OBERON": {
       "ratio": 23.5, 
-      "nlines": 47, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 47
      }
     }, 
-    "location": "The same. LYSANDER, DEMETRIUS, HELENA, and HERMIA", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.43809523809523815
    }, 
    {
+    "total_lines": 44, 
+    "deg_assort_coeff": -0.5934959349593496, 
+    "density": 0.6, 
+    "scene": "2", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.4, 
+    "location": "Athens. QUINCE'S house.", 
+    "act": "4", 
     "graph_img_f": "imgs/midsummer_4_2.png", 
     "char_data": {
      "QUINCE": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "SNUG": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "BOTTOM": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }, 
      "FLUTE": {
       "ratio": 3.5, 
-      "nlines": 14, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 14
      }, 
      "STARVELING": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "Athens. QUINCE'S house.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.6
    }
   ], 
   [
    {
+    "total_lines": 462, 
+    "deg_assort_coeff": -0.37898792982077328, 
+    "density": 0.26666666666666666, 
+    "scene": "1", 
+    "total_degrees": 28, 
+    "avg_shortest_path": 2.057142857142857, 
+    "location": "Athens. The palace of THESEUS.", 
+    "act": "5", 
     "graph_img_f": "imgs/midsummer_5_1.png", 
     "char_data": {
      "Pyramus": {
       "ratio": 15.25, 
-      "nlines": 61, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 61
      }, 
      "THESEUS": {
       "ratio": 11.75, 
-      "nlines": 141, 
-      "nedges": 12
+      "degrees": 12, 
+      "nlines": 141
      }, 
      "DEMETRIUS": {
       "ratio": 2.67, 
-      "nlines": 24, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 24
      }, 
      "BOTTOM": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "Wall": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "Moonshine": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "PUCK": {
       "ratio": 19.0, 
-      "nlines": 38, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 38
      }, 
      "LYSANDER": {
       "ratio": 2.5, 
-      "nlines": 10, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 10
      }, 
      "TITANIA": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "Thisbe": {
       "ratio": 7.4, 
-      "nlines": 37, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 37
      }, 
      "Lion": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "HIPPOLYTA": {
       "ratio": 5.75, 
-      "nlines": 23, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 23
      }, 
      "Prologue": {
       "ratio": 36.0, 
-      "nlines": 36, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 36
      }, 
      "PHILOSTRATE": {
       "ratio": 25.0, 
-      "nlines": 25, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 25
      }, 
      "OBERON": {
       "ratio": 14.5, 
-      "nlines": 29, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 29
      }
     }, 
-    "location": "Athens. The palace of THESEUS.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.52006734006734
    }
   ]
  ], 
@@ -525,182 +579,182 @@
  "char_data": {
   "MOTH": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 20
   }, 
   "PEASEBLOSSOM": {
    "ratio": 1.33, 
+   "degrees": 3, 
    "nlines": 4, 
-   "nedges": 3, 
    "order_app": 18
   }, 
   "PUCK": {
    "ratio": 20.73, 
+   "degrees": 11, 
    "nlines": 228, 
-   "nedges": 11, 
    "order_app": 14
   }, 
   "EGEUS": {
    "ratio": 14.0, 
+   "degrees": 3, 
    "nlines": 42, 
-   "nedges": 3, 
    "order_app": 2
   }, 
   "HELENA": {
    "ratio": 39.17, 
+   "degrees": 6, 
    "nlines": 235, 
-   "nedges": 6, 
    "order_app": 6
   }, 
   "SNUG": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 12
   }, 
   "STARVELING": {
    "ratio": 1.25, 
+   "degrees": 4, 
    "nlines": 5, 
-   "nedges": 4, 
    "order_app": 10
   }, 
   "HERNIA": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 22
   }, 
   "Pyramus": {
    "ratio": 15.25, 
+   "degrees": 4, 
    "nlines": 61, 
-   "nedges": 4, 
    "order_app": 26
   }, 
   "BOTTOM": {
    "ratio": 17.67, 
+   "degrees": 12, 
    "nlines": 212, 
-   "nedges": 12, 
    "order_app": 8
   }, 
   "HERMIA": {
    "ratio": 28.5, 
+   "degrees": 6, 
    "nlines": 171, 
-   "nedges": 6, 
    "order_app": 3
   }, 
   "FLUTE": {
    "ratio": 5.2, 
+   "degrees": 5, 
    "nlines": 26, 
-   "nedges": 5, 
    "order_app": 9
   }, 
   "MUSTARDSEED": {
    "ratio": 1.67, 
+   "degrees": 3, 
    "nlines": 5, 
-   "nedges": 3, 
    "order_app": 21
   }, 
   "QUINCE": {
    "ratio": 12.29, 
+   "degrees": 7, 
    "nlines": 86, 
-   "nedges": 7, 
    "order_app": 7
   }, 
   "THESEUS": {
    "ratio": 16.8, 
+   "degrees": 15, 
    "nlines": 252, 
-   "nedges": 15, 
    "order_app": 0
   }, 
   "Moonshine": {
    "ratio": 2.0, 
+   "degrees": 3, 
    "nlines": 6, 
-   "nedges": 3, 
    "order_app": 29
   }, 
   "TITANIA": {
    "ratio": 24.29, 
+   "degrees": 7, 
    "nlines": 170, 
-   "nedges": 7, 
    "order_app": 17
   }, 
   "SNOUT": {
    "ratio": 2.33, 
+   "degrees": 3, 
    "nlines": 7, 
-   "nedges": 3, 
    "order_app": 11
   }, 
   "LYSANDER": {
    "ratio": 20.56, 
+   "degrees": 9, 
    "nlines": 185, 
-   "nedges": 9, 
    "order_app": 5
   }, 
   "COBWEB": {
    "ratio": 1.33, 
+   "degrees": 3, 
    "nlines": 4, 
-   "nedges": 3, 
    "order_app": 19
   }, 
   "Prologue": {
    "ratio": 36.0, 
+   "degrees": 1, 
    "nlines": 36, 
-   "nedges": 1, 
    "order_app": 24
   }, 
   "Fairy": {
    "ratio": 11.0, 
+   "degrees": 3, 
    "nlines": 33, 
-   "nedges": 3, 
    "order_app": 15
   }, 
   "ALL": {
    "ratio": 0.5, 
+   "degrees": 4, 
    "nlines": 2, 
-   "nedges": 4, 
    "order_app": 13
   }, 
   "Wall": {
    "ratio": 4.33, 
+   "degrees": 3, 
    "nlines": 13, 
-   "nedges": 3, 
    "order_app": 25
   }, 
   "DEMETRIUS": {
    "ratio": 10.29, 
+   "degrees": 14, 
    "nlines": 144, 
-   "nedges": 14, 
    "order_app": 4
   }, 
   "Thisbe": {
    "ratio": 7.4, 
+   "degrees": 5, 
    "nlines": 37, 
-   "nedges": 5, 
    "order_app": 27
   }, 
   "Lion": {
    "ratio": 3.33, 
+   "degrees": 3, 
    "nlines": 10, 
-   "nedges": 3, 
    "order_app": 28
   }, 
   "HIPPOLYTA": {
    "ratio": 8.75, 
+   "degrees": 4, 
    "nlines": 35, 
-   "nedges": 4, 
    "order_app": 1
   }, 
   "PHILOSTRATE": {
    "ratio": 25.0, 
+   "degrees": 1, 
    "nlines": 25, 
-   "nedges": 1, 
    "order_app": 23
   }, 
   "OBERON": {
    "ratio": 33.43, 
+   "degrees": 7, 
    "nlines": 234, 
-   "nedges": 7, 
    "order_app": 16
   }
  }, 

@@ -3,404 +3,458 @@
  "acts": [
   [
    {
+    "total_lines": 306, 
+    "deg_assort_coeff": -0.28792742498255436, 
+    "density": 0.8, 
+    "scene": "1", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.2, 
+    "location": "The king of Navarre's park.", 
+    "act": "1", 
     "graph_img_f": "imgs/lll_1_1.png", 
     "char_data": {
      "DULL": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "DUMAIN": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "COSTARD": {
-      "ratio": 12.67, 
-      "nlines": 38, 
-      "nedges": 3
+      "ratio": 12.33, 
+      "degrees": 3, 
+      "nlines": 37
      }, 
      "FERDINAND": {
       "ratio": 22.4, 
-      "nlines": 112, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 112
      }, 
      "BIRON": {
       "ratio": 25.4, 
-      "nlines": 127, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 127
      }, 
      "LONGAVILLE": {
       "ratio": 3.75, 
-      "nlines": 15, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 15
      }
     }, 
-    "location": "The king of Navarre's park.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.8444444444444444
    }, 
    {
+    "total_lines": 174, 
+    "deg_assort_coeff": -0.50153566147195994, 
+    "density": 0.5333333333333333, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.5333333333333334, 
+    "location": "The same.", 
+    "act": "1", 
     "graph_img_f": "imgs/lll_1_2.png", 
     "char_data": {
-     "ADRIANO DE ARMADO": {
-      "ratio": 21.75, 
-      "nlines": 87, 
-      "nedges": 4
-     }, 
      "MOTH": {
-      "ratio": 23.0, 
-      "nlines": 92, 
-      "nedges": 4
+      "ratio": 15.25, 
+      "degrees": 4, 
+      "nlines": 61
+     }, 
+     "DON ADRIANO DE ARMADO": {
+      "ratio": 21.5, 
+      "degrees": 4, 
+      "nlines": 86
      }, 
      "ARMADO": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "JAQUENETTA": {
-      "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "ratio": 3.0, 
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "COSTARD": {
-      "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "ratio": 6.5, 
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "DULL": {
-      "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "ratio": 2.33, 
+      "degrees": 3, 
+      "nlines": 7
      }
     }, 
-    "location": "The same.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.5833333333333333
    }
   ], 
   [
    {
+    "total_lines": 278, 
+    "deg_assort_coeff": -0.29896013864818494, 
+    "density": 0.4222222222222222, 
+    "scene": "1", 
+    "total_degrees": 19, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "The same.", 
+    "act": "2", 
     "graph_img_f": "imgs/lll_2_1.png", 
     "char_data": {
      "First Lord": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "PRINCESS": {
       "ratio": 9.57, 
-      "nlines": 67, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 67
      }, 
      "BOYET": {
-      "ratio": 10.57, 
-      "nlines": 74, 
-      "nedges": 7
+      "ratio": 10.43, 
+      "degrees": 7, 
+      "nlines": 73
      }, 
      "KATHARINE": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "ROSALINE": {
       "ratio": 5.8, 
-      "nlines": 29, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 29
      }, 
      "DUMAIN": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "FERDINAND": {
       "ratio": 16.0, 
-      "nlines": 48, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 48
      }, 
      "MARIA": {
       "ratio": 7.33, 
-      "nlines": 22, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 22
      }, 
      "BIRON": {
       "ratio": 3.8, 
-      "nlines": 19, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 19
      }, 
      "LONGAVILLE": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }
     }, 
-    "location": "The same.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.6676190476190476
    }
   ], 
   [
    {
+    "total_lines": 205, 
+    "deg_assort_coeff": 0.18467904917717257, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The same.", 
+    "act": "3", 
     "graph_img_f": "imgs/lll_3_1.png", 
     "char_data": {
      "MOTH": {
-      "ratio": 38.5, 
-      "nlines": 77, 
-      "nedges": 2
+      "ratio": 28.5, 
+      "degrees": 2, 
+      "nlines": 57
      }, 
-     "COSTARD": {
-      "ratio": 15.67, 
-      "nlines": 47, 
-      "nedges": 3
+     "DON ADRIANO DE ARMADO": {
+      "ratio": 28.5, 
+      "degrees": 2, 
+      "nlines": 57
      }, 
      "BIRON": {
-      "ratio": 52.0, 
-      "nlines": 52, 
-      "nedges": 1
+      "ratio": 51.0, 
+      "degrees": 1, 
+      "nlines": 51
      }, 
-     "ADRIANO DE ARMADO": {
-      "ratio": 28.5, 
-      "nlines": 57, 
-      "nedges": 2
+     "COSTARD": {
+      "ratio": 13.33, 
+      "degrees": 3, 
+      "nlines": 40
      }
     }, 
-    "location": "The same.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333334
    }
   ], 
   [
    {
+    "total_lines": 169, 
+    "deg_assort_coeff": -0.16437856882517313, 
+    "density": 0.5333333333333333, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.6, 
+    "location": "The same.", 
+    "act": "4", 
     "graph_img_f": "imgs/lll_4_1.png", 
     "char_data": {
      "Forester": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "ROSALINE": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "BOYET": {
       "ratio": 16.5, 
-      "nlines": 66, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 66
      }, 
      "COSTARD": {
-      "ratio": 10.33, 
-      "nlines": 31, 
-      "nedges": 3
+      "ratio": 10.0, 
+      "degrees": 3, 
+      "nlines": 30
      }, 
      "PRINCESS": {
       "ratio": 17.33, 
-      "nlines": 52, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 52
      }, 
      "MARIA": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }
     }, 
-    "location": "The same.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.5277777777777778
    }, 
    {
+    "total_lines": 176, 
+    "deg_assort_coeff": -0.35632815720764122, 
+    "density": 0.7, 
+    "scene": "2", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The same.", 
+    "act": "4", 
     "graph_img_f": "imgs/lll_4_2.png", 
     "char_data": {
      "JAQUENETTA": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "HOLOFERNES": {
-      "ratio": 26.5, 
-      "nlines": 106, 
-      "nedges": 4
+      "ratio": 26.25, 
+      "degrees": 4, 
+      "nlines": 105
      }, 
      "SIR NATHANIEL": {
       "ratio": 16.33, 
-      "nlines": 49, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 49
      }, 
      "DULL": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "COSTARD": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }
     }, 
-    "location": "The same.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.7666666666666666
    }, 
    {
+    "total_lines": 412, 
+    "deg_assort_coeff": -0.62554941159790045, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The same.", 
+    "act": "4", 
     "graph_img_f": "imgs/lll_4_3.png", 
     "char_data": {
      "DUMAIN": {
       "ratio": 15.33, 
-      "nlines": 46, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 46
      }, 
      "JAQUENETTA": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "COSTARD": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "FERDINAND": {
       "ratio": 16.2, 
-      "nlines": 81, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 81
      }, 
      "BIRON": {
-      "ratio": 48.4, 
-      "nlines": 242, 
-      "nedges": 5
+      "ratio": 48.2, 
+      "degrees": 5, 
+      "nlines": 241
      }, 
      "LONGAVILLE": {
       "ratio": 11.33, 
-      "nlines": 34, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 34
      }
     }, 
-    "location": "The same.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333334
    }
   ], 
   [
    {
+    "total_lines": 146, 
+    "deg_assort_coeff": -0.6504972291809008, 
+    "density": 0.4666666666666667, 
+    "scene": "1", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.5333333333333334, 
+    "location": "The same.", 
+    "act": "5", 
     "graph_img_f": "imgs/lll_5_1.png", 
     "char_data": {
      "MOTH": {
-      "ratio": 7.33, 
-      "nlines": 22, 
-      "nedges": 3
+      "ratio": 6.0, 
+      "degrees": 3, 
+      "nlines": 18
      }, 
-     "ADRIANO DE ARMADO": {
+     "DON ADRIANO DE ARMADO": {
       "ratio": 22.0, 
-      "nlines": 44, 
-      "nedges": 2
-     }, 
-     "HOLOFERNES": {
-      "ratio": 13.0, 
-      "nlines": 65, 
-      "nedges": 5
+      "degrees": 2, 
+      "nlines": 44
      }, 
      "COSTARD": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
+     }, 
+     "HOLOFERNES": {
+      "ratio": 11.2, 
+      "degrees": 5, 
+      "nlines": 56
      }, 
      "SIR NATHANIEL": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "DULL": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "The same.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.4777777777777778
    }, 
    {
+    "total_lines": 989, 
+    "deg_assort_coeff": -0.25612232267843776, 
+    "density": 0.5523809523809524, 
+    "scene": "2", 
+    "total_degrees": 58, 
+    "avg_shortest_path": 1.457142857142857, 
+    "location": "The same.", 
+    "act": "5", 
     "graph_img_f": "imgs/lll_5_2.png", 
     "char_data": {
      "MOTH": {
-      "ratio": 3.5, 
-      "nlines": 14, 
-      "nedges": 4
+      "ratio": 3.25, 
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "MARIA": {
       "ratio": 2.29, 
-      "nlines": 16, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 16
      }, 
      "PRINCESS": {
-      "ratio": 16.18, 
-      "nlines": 178, 
-      "nedges": 11
+      "ratio": 16.0, 
+      "degrees": 11, 
+      "nlines": 176
      }, 
      "BOYET": {
       "ratio": 7.57, 
-      "nlines": 106, 
-      "nedges": 14
+      "degrees": 14, 
+      "nlines": 106
+     }, 
+     "DON ADRIANO DE ARMADO": {
+      "ratio": 9.0, 
+      "degrees": 10, 
+      "nlines": 90
      }, 
      "MERCADE": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "ROSALINE": {
       "ratio": 19.0, 
-      "nlines": 133, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 133
      }, 
      "KATHARINE": {
       "ratio": 6.5, 
-      "nlines": 39, 
-      "nedges": 6
-     }, 
-     "ADRIANO DE ARMADO": {
-      "ratio": 9.1, 
-      "nlines": 91, 
-      "nedges": 10
+      "degrees": 6, 
+      "nlines": 39
      }, 
      "COSTARD": {
-      "ratio": 8.86, 
-      "nlines": 62, 
-      "nedges": 7
+      "ratio": 8.57, 
+      "degrees": 7, 
+      "nlines": 60
      }, 
      "DUMAIN": {
-      "ratio": 3.55, 
-      "nlines": 39, 
-      "nedges": 11
+      "ratio": 3.0, 
+      "degrees": 11, 
+      "nlines": 33
      }, 
      "HOLOFERNES": {
       "ratio": 4.75, 
-      "nlines": 19, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 19
      }, 
      "FERDINAND": {
-      "ratio": 10.25, 
-      "nlines": 82, 
-      "nedges": 8
+      "ratio": 10.13, 
+      "degrees": 8, 
+      "nlines": 81
      }, 
      "SIR NATHANIEL": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "BIRON": {
-      "ratio": 15.46, 
-      "nlines": 201, 
-      "nedges": 13
+      "ratio": 15.08, 
+      "degrees": 13, 
+      "nlines": 196
      }, 
      "LONGAVILLE": {
-      "ratio": 2.13, 
-      "nlines": 17, 
-      "nedges": 8
+      "ratio": 2.0, 
+      "degrees": 8, 
+      "nlines": 16
      }
     }, 
-    "location": "The same.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.79018537018537
    }
   ]
  ], 
@@ -411,7 +465,7 @@
   "BIRON", 
   "DULL", 
   "COSTARD", 
-  "ADRIANO DE ARMADO", 
+  "DON ADRIANO DE ARMADO", 
   "MOTH", 
   "ARMADO", 
   "JAQUENETTA", 
@@ -430,122 +484,122 @@
  "char_data": {
   "First Lord": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 12
   }, 
   "SIR NATHANIEL": {
    "ratio": 11.33, 
+   "degrees": 6, 
    "nlines": 68, 
-   "nedges": 6, 
    "order_app": 17
   }, 
-  "ARMADO": {
-   "ratio": 1.0, 
-   "nlines": 1, 
-   "nedges": 1, 
-   "order_app": 8
-  }, 
   "PRINCESS": {
-   "ratio": 22.85, 
-   "nlines": 297, 
-   "nedges": 13, 
+   "ratio": 22.69, 
+   "degrees": 13, 
+   "nlines": 295, 
    "order_app": 11
   }, 
   "MOTH": {
-   "ratio": 25.63, 
-   "nlines": 205, 
-   "nedges": 8, 
+   "ratio": 18.63, 
+   "degrees": 8, 
+   "nlines": 149, 
    "order_app": 7
   }, 
   "MERCADE": {
    "ratio": 1.33, 
+   "degrees": 3, 
    "nlines": 4, 
-   "nedges": 3, 
    "order_app": 19
   }, 
   "Forester": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 16
   }, 
   "BIRON": {
-   "ratio": 42.73, 
-   "nlines": 641, 
-   "nedges": 15, 
+   "ratio": 42.27, 
+   "degrees": 15, 
+   "nlines": 634, 
    "order_app": 3
   }, 
   "BOYET": {
-   "ratio": 17.57, 
-   "nlines": 246, 
-   "nedges": 14, 
+   "ratio": 17.5, 
+   "degrees": 14, 
+   "nlines": 245, 
    "order_app": 10
   }, 
-  "JAQUENETTA": {
-   "ratio": 3.67, 
-   "nlines": 22, 
-   "nedges": 6, 
-   "order_app": 9
+  "DON ADRIANO DE ARMADO": {
+   "ratio": 21.31, 
+   "degrees": 13, 
+   "nlines": 277, 
+   "order_app": 6
   }, 
   "KATHARINE": {
    "ratio": 7.83, 
+   "degrees": 6, 
    "nlines": 47, 
-   "nedges": 6, 
    "order_app": 14
   }, 
   "ROSALINE": {
    "ratio": 24.71, 
+   "degrees": 7, 
    "nlines": 173, 
-   "nedges": 7, 
    "order_app": 15
   }, 
-  "ADRIANO DE ARMADO": {
-   "ratio": 21.46, 
-   "nlines": 279, 
-   "nedges": 13, 
-   "order_app": 6
+  "ARMADO": {
+   "ratio": 1.0, 
+   "degrees": 1, 
+   "nlines": 1, 
+   "order_app": 8
   }, 
   "HOLOFERNES": {
-   "ratio": 21.11, 
-   "nlines": 190, 
-   "nedges": 9, 
+   "ratio": 20.0, 
+   "degrees": 9, 
+   "nlines": 180, 
    "order_app": 18
   }, 
   "DUMAIN": {
-   "ratio": 8.73, 
-   "nlines": 96, 
-   "nedges": 11, 
+   "ratio": 8.18, 
+   "degrees": 11, 
+   "nlines": 90, 
    "order_app": 2
   }, 
   "COSTARD": {
-   "ratio": 18.0, 
-   "nlines": 216, 
-   "nedges": 12, 
+   "ratio": 16.83, 
+   "degrees": 12, 
+   "nlines": 202, 
    "order_app": 5
   }, 
   "FERDINAND": {
-   "ratio": 32.3, 
-   "nlines": 323, 
-   "nedges": 10, 
+   "ratio": 32.2, 
+   "degrees": 10, 
+   "nlines": 322, 
    "order_app": 0
   }, 
   "MARIA": {
    "ratio": 5.38, 
+   "degrees": 8, 
    "nlines": 43, 
-   "nedges": 8, 
    "order_app": 13
   }, 
   "DULL": {
-   "ratio": 3.44, 
-   "nlines": 31, 
-   "nedges": 9, 
+   "ratio": 3.22, 
+   "degrees": 9, 
+   "nlines": 29, 
    "order_app": 4
   }, 
+  "JAQUENETTA": {
+   "ratio": 2.83, 
+   "degrees": 6, 
+   "nlines": 17, 
+   "order_app": 9
+  }, 
   "LONGAVILLE": {
-   "ratio": 8.0, 
-   "nlines": 72, 
-   "nedges": 9, 
+   "ratio": 7.89, 
+   "degrees": 9, 
+   "nlines": 71, 
    "order_app": 1
   }
  }, 

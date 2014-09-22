@@ -3,805 +3,961 @@
  "acts": [
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 346, 
+    "deg_assort_coeff": -0.33813074174363772, 
+    "density": 0.4222222222222222, 
+    "scene": "1", 
+    "total_degrees": 19, 
+    "avg_shortest_path": 1.6888888888888889, 
+    "location": "King Lear's palace.", 
+    "act": "1", 
+    "graph_img_f": "imgs/lear_1_1.png", 
     "char_data": {
      "ALBANY": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "KING LEAR": {
       "ratio": 15.88, 
-      "nlines": 127, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 127
      }, 
      "KING OF FRANCE": {
       "ratio": 8.25, 
-      "nlines": 33, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 33
      }, 
      "CORDELIA": {
       "ratio": 9.4, 
-      "nlines": 47, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 47
      }, 
      "BURGUNDY": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "GONERIL": {
       "ratio": 7.75, 
-      "nlines": 31, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 31
      }, 
      "EDMUND": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "KENT": {
       "ratio": 11.75, 
-      "nlines": 47, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 47
      }, 
      "REGAN": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "GLOUCESTER": {
       "ratio": 9.0, 
-      "nlines": 27, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 27
      }
     }, 
-    "location": "King Lear's palace.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.7854761904761904
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 197, 
+    "deg_assort_coeff": -0.88888888888888884, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The Earl of Gloucester's castle.", 
+    "act": "1", 
+    "graph_img_f": "imgs/lear_1_2.png", 
     "char_data": {
      "EDMUND": {
       "ratio": 63.5, 
-      "nlines": 127, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 127
      }, 
      "EDGAR": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "GLOUCESTER": {
       "ratio": 60.0, 
-      "nlines": 60, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 60
      }
     }, 
-    "location": "The Earl of Gloucester's castle.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 29, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The Duke of Albany's palace.", 
+    "act": "1", 
+    "graph_img_f": "imgs/lear_1_3.png", 
     "char_data": {
      "OSWALD": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "GONERIL": {
       "ratio": 25.0, 
-      "nlines": 25, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 25
      }
     }, 
-    "location": "The Duke of Albany's palace.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 385, 
+    "deg_assort_coeff": -0.40111998904101842, 
+    "density": 0.5238095238095238, 
+    "scene": "4", 
+    "total_degrees": 11, 
+    "avg_shortest_path": 1.4761904761904763, 
+    "location": "A hall in the same.", 
+    "act": "1", 
+    "graph_img_f": "imgs/lear_1_4.png", 
     "char_data": {
      "Fool": {
       "ratio": 35.67, 
-      "nlines": 107, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 107
      }, 
      "ALBANY": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "KING LEAR": {
       "ratio": 22.67, 
-      "nlines": 136, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 136
      }, 
      "Knight": {
       "ratio": 14.0, 
-      "nlines": 14, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 14
      }, 
      "GONERIL": {
       "ratio": 18.25, 
-      "nlines": 73, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 73
      }, 
      "KENT": {
       "ratio": 12.33, 
-      "nlines": 37, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 37
      }, 
      "OSWALD": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }
     }, 
-    "location": "A hall in the same.", 
-    "scene": "4", 
-    "act": "1"
+    "avg_clustering": 0.5476190476190476
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 51, 
+    "deg_assort_coeff": -0.61668366768672789, 
+    "density": 0.6666666666666666, 
+    "scene": "5", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Court before the same.", 
+    "act": "1", 
+    "graph_img_f": "imgs/lear_1_5.png", 
     "char_data": {
      "Fool": {
       "ratio": 13.0, 
-      "nlines": 26, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 26
      }, 
      "KING LEAR": {
       "ratio": 7.0, 
-      "nlines": 21, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 21
      }, 
      "Gentleman": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "KENT": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }
     }, 
-    "location": "Court before the same.", 
-    "scene": "5", 
-    "act": "1"
+    "avg_clustering": 0.5833333333333333
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 150, 
+    "deg_assort_coeff": -0.56677018633540377, 
+    "density": 0.5333333333333333, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.4666666666666666, 
+    "location": "GLOUCESTER's castle.", 
+    "act": "2", 
+    "graph_img_f": "imgs/lear_2_1.png", 
     "char_data": {
      "EDGAR": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "EDMUND": {
       "ratio": 13.4, 
-      "nlines": 67, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 67
      }, 
      "CURAN": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "CORNWALL": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "REGAN": {
       "ratio": 7.67, 
-      "nlines": 23, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 23
      }, 
      "GLOUCESTER": {
       "ratio": 11.67, 
-      "nlines": 35, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 35
      }
     }, 
-    "location": "GLOUCESTER's castle.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.5499999999999999
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 185, 
+    "deg_assort_coeff": -0.39543900461739018, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Before Gloucester's castle.", 
+    "act": "2", 
+    "graph_img_f": "imgs/lear_2_2.png", 
     "char_data": {
      "CORNWALL": {
       "ratio": 8.0, 
-      "nlines": 32, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 32
      }, 
      "EDMUND": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "KENT": {
       "ratio": 20.6, 
-      "nlines": 103, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 103
      }, 
      "OSWALD": {
       "ratio": 8.33, 
-      "nlines": 25, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 25
      }, 
      "REGAN": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "GLOUCESTER": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }
     }, 
-    "location": "Before Gloucester's castle.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.8055555555555555
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 22, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "3", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "A wood.", 
+    "act": "2", 
+    "graph_img_f": "imgs/lear_2_3.png", 
     "char_data": {
      "EDGAR": {
       "ratio": 0, 
-      "nlines": 22, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 22
      }
     }, 
-    "location": "A wood.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 358, 
+    "deg_assort_coeff": -0.36124556552644049, 
+    "density": 0.5357142857142857, 
+    "scene": "4", 
+    "total_degrees": 15, 
+    "avg_shortest_path": 1.4642857142857142, 
+    "location": "Before GLOUCESTER's castle. KENT in the stocks.", 
+    "act": "2", 
+    "graph_img_f": "imgs/lear_2_4.png", 
     "char_data": {
      "Fool": {
       "ratio": 21.0, 
-      "nlines": 42, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 42
      }, 
      "KING LEAR": {
       "ratio": 25.14, 
-      "nlines": 176, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 176
      }, 
      "Gentleman": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "CORNWALL": {
       "ratio": 3.75, 
-      "nlines": 15, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 15
      }, 
      "GONERIL": {
       "ratio": 3.75, 
-      "nlines": 15, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 15
      }, 
      "KENT": {
       "ratio": 10.67, 
-      "nlines": 32, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 32
      }, 
      "REGAN": {
       "ratio": 15.25, 
-      "nlines": 61, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 61
      }, 
      "GLOUCESTER": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }
     }, 
-    "location": "Before GLOUCESTER's castle. KENT in the stocks.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.880952380952381
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 59, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A heath.", 
+    "act": "3", 
+    "graph_img_f": "imgs/lear_3_1.png", 
     "char_data": {
      "Gentleman": {
       "ratio": 17.0, 
-      "nlines": 17, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 17
      }, 
      "KENT": {
       "ratio": 42.0, 
-      "nlines": 42, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 42
      }
     }, 
-    "location": "A heath.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 103, 
+    "deg_assort_coeff": -0.50000000000000211, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "Another part of the heath. Storm still.", 
+    "act": "3", 
+    "graph_img_f": "imgs/lear_3_2.png", 
     "char_data": {
      "Fool": {
       "ratio": 20.5, 
-      "nlines": 41, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 41
      }, 
      "KING LEAR": {
       "ratio": 22.5, 
-      "nlines": 45, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 45
      }, 
      "KENT": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }
     }, 
-    "location": "Another part of the heath. Storm still.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 1.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 27, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Gloucester's castle.", 
+    "act": "3", 
+    "graph_img_f": "imgs/lear_3_3.png", 
     "char_data": {
      "EDMUND": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "GLOUCESTER": {
       "ratio": 20.0, 
-      "nlines": 20, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 20
      }
     }, 
-    "location": "Gloucester's castle.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 198, 
+    "deg_assort_coeff": -0.43145995860531466, 
+    "density": 0.9, 
+    "scene": "4", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.1, 
+    "location": "The heath. Before a hovel.", 
+    "act": "3", 
+    "graph_img_f": "imgs/lear_3_4.png", 
     "char_data": {
      "Fool": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "KING LEAR": {
       "ratio": 17.75, 
-      "nlines": 71, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 71
      }, 
      "KENT": {
       "ratio": 5.0, 
-      "nlines": 20, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 20
      }, 
      "EDGAR": {
       "ratio": 18.25, 
-      "nlines": 73, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 73
      }, 
      "GLOUCESTER": {
       "ratio": 8.0, 
-      "nlines": 24, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 24
      }
     }, 
-    "location": "The heath. Before a hovel.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.9
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 26, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "5", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Gloucester's castle.", 
+    "act": "3", 
+    "graph_img_f": "imgs/lear_3_5.png", 
     "char_data": {
      "EDMUND": {
       "ratio": 14.0, 
-      "nlines": 14, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 14
      }, 
      "CORNWALL": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }
     }, 
-    "location": "Gloucester's castle.", 
-    "scene": "5", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 128, 
+    "deg_assort_coeff": -0.048150444306674936, 
+    "density": 0.8, 
+    "scene": "6", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "A chamber in a farmhouse adjoining the castle.", 
+    "act": "3", 
+    "graph_img_f": "imgs/lear_3_6.png", 
     "char_data": {
      "Fool": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "KING LEAR": {
       "ratio": 12.0, 
-      "nlines": 36, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 36
      }, 
      "KENT": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "EDGAR": {
       "ratio": 11.5, 
-      "nlines": 46, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 46
      }, 
      "GLOUCESTER": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }
     }, 
-    "location": "A chamber in a farmhouse adjoining the castle.", 
-    "scene": "6", 
-    "act": "3"
+    "avg_clustering": 0.6666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 131, 
+    "deg_assort_coeff": -0.38389158942778023, 
+    "density": 0.35714285714285715, 
+    "scene": "7", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.8214285714285714, 
+    "location": "Gloucester's castle.", 
+    "act": "3", 
+    "graph_img_f": "imgs/lear_3_7.png", 
     "char_data": {
      "First Servant": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "Third Servant": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "Second Servant": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "CORNWALL": {
       "ratio": 8.0, 
-      "nlines": 48, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 48
      }, 
      "GONERIL": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "OSWALD": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "REGAN": {
       "ratio": 5.25, 
-      "nlines": 21, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 21
      }, 
      "GLOUCESTER": {
       "ratio": 16.5, 
-      "nlines": 33, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 33
      }
     }, 
-    "location": "Gloucester's castle.", 
-    "scene": "7", 
-    "act": "3"
+    "avg_clustering": 0.4625
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 94, 
+    "deg_assort_coeff": -0.50000000000000555, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "The heath.", 
+    "act": "4", 
+    "graph_img_f": "imgs/lear_4_1.png", 
     "char_data": {
      "Old Man": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "EDGAR": {
       "ratio": 18.5, 
-      "nlines": 37, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 37
      }, 
      "GLOUCESTER": {
       "ratio": 22.5, 
-      "nlines": 45, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 45
      }
     }, 
-    "location": "The heath.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 1.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 119, 
+    "deg_assort_coeff": -0.33678756476684085, 
+    "density": 0.5, 
+    "scene": "2", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.5, 
+    "location": "Before ALBANY's palace.", 
+    "act": "4", 
+    "graph_img_f": "imgs/lear_4_2.png", 
     "char_data": {
      "OSWALD": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "GONERIL": {
       "ratio": 11.25, 
-      "nlines": 45, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 45
      }, 
      "Messenger": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }, 
      "EDMUND": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "ALBANY": {
       "ratio": 22.0, 
-      "nlines": 44, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 44
      }
     }, 
-    "location": "Before ALBANY's palace.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.4333333333333334
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 63, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The French camp near Dover.", 
+    "act": "4", 
+    "graph_img_f": "imgs/lear_4_3.png", 
     "char_data": {
      "Gentleman": {
       "ratio": 33.0, 
-      "nlines": 33, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 33
      }, 
      "KENT": {
       "ratio": 30.0, 
-      "nlines": 30, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 30
      }
     }, 
-    "location": "The French camp near Dover.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 35, 
+    "deg_assort_coeff": -1.0, 
+    "density": 0.6666666666666666, 
+    "scene": "4", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The same. A tent.", 
+    "act": "4", 
+    "graph_img_f": "imgs/lear_4_4.png", 
     "char_data": {
      "Messenger": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "CORDELIA": {
       "ratio": 14.0, 
-      "nlines": 28, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 28
      }, 
      "Doctor": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }
     }, 
-    "location": "The same. A tent.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 46, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "5", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Gloucester's castle.", 
+    "act": "4", 
+    "graph_img_f": "imgs/lear_4_5.png", 
     "char_data": {
      "OSWALD": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "REGAN": {
       "ratio": 34.0, 
-      "nlines": 34, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 34
      }
     }, 
-    "location": "Gloucester's castle.", 
-    "scene": "5", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 326, 
+    "deg_assort_coeff": -0.48980680969153828, 
+    "density": 0.7, 
+    "scene": "6", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "Fields near Dover.", 
+    "act": "4", 
+    "graph_img_f": "imgs/lear_4_6.png", 
     "char_data": {
      "OSWALD": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }, 
      "KING LEAR": {
       "ratio": 35.33, 
-      "nlines": 106, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 106
      }, 
      "Gentleman": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "EDGAR": {
       "ratio": 30.25, 
-      "nlines": 121, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 121
      }, 
      "GLOUCESTER": {
       "ratio": 22.0, 
-      "nlines": 66, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 66
      }
     }, 
-    "location": "Fields near Dover.", 
-    "scene": "6", 
-    "act": "4"
+    "avg_clustering": 0.7666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 113, 
+    "deg_assort_coeff": -0.26757106823914173, 
+    "density": 0.9, 
+    "scene": "7", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.1, 
+    "location": "A tent in the French camp. LEAR on a bed asleep,", 
+    "act": "4", 
+    "graph_img_f": "imgs/lear_4_7.png", 
     "char_data": {
      "KING LEAR": {
       "ratio": 8.25, 
-      "nlines": 33, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 33
      }, 
      "Gentleman": {
       "ratio": 2.25, 
-      "nlines": 9, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 9
      }, 
      "CORDELIA": {
       "ratio": 10.5, 
-      "nlines": 42, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 42
      }, 
      "KENT": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "Doctor": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }
     }, 
-    "location": "A tent in the French camp. LEAR on a bed asleep,", 
-    "scene": "7", 
-    "act": "4"
+    "avg_clustering": 0.9
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 86, 
+    "deg_assort_coeff": 0.05699481865284755, 
+    "density": 0.7, 
+    "scene": "1", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The British camp, near Dover.", 
+    "act": "5", 
+    "graph_img_f": "imgs/lear_5_1.png", 
     "char_data": {
      "GONERIL": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "REGAN": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "EDMUND": {
       "ratio": 11.33, 
-      "nlines": 34, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 34
      }, 
      "EDGAR": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "ALBANY": {
       "ratio": 6.0, 
-      "nlines": 18, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 18
      }
     }, 
-    "location": "The British camp, near Dover.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.7666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 16, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A field between the two camps.", 
+    "act": "5", 
+    "graph_img_f": "imgs/lear_5_2.png", 
     "char_data": {
      "EDGAR": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "GLOUCESTER": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }
     }, 
-    "location": "A field between the two camps.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 417, 
+    "deg_assort_coeff": -0.31875427931198974, 
+    "density": 0.509090909090909, 
+    "scene": "3", 
+    "total_degrees": 28, 
+    "avg_shortest_path": 1.5272727272727273, 
+    "location": "The British camp near Dover.", 
+    "act": "5", 
+    "graph_img_f": "imgs/lear_5_3.png", 
     "char_data": {
      "ALBANY": {
       "ratio": 11.89, 
-      "nlines": 107, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 107
      }, 
      "KING LEAR": {
       "ratio": 9.33, 
-      "nlines": 56, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 56
      }, 
      "Gentleman": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "CORDELIA": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "EDGAR": {
       "ratio": 11.43, 
-      "nlines": 80, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 80
      }, 
      "Herald": {
       "ratio": 2.33, 
-      "nlines": 14, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 14
      }, 
      "GONERIL": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "EDMUND": {
       "ratio": 9.11, 
-      "nlines": 82, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 82
      }, 
      "KENT": {
       "ratio": 6.0, 
-      "nlines": 24, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 24
      }, 
      "REGAN": {
       "ratio": 9.0, 
-      "nlines": 18, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 18
      }, 
      "Captain": {
       "ratio": 1.8, 
-      "nlines": 9, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 9
      }
     }, 
-    "location": "The British camp near Dover.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.798989898989899
    }
   ]
  ], 
@@ -836,152 +992,152 @@
  "char_data": {
   "Gentleman": {
    "ratio": 12.14, 
+   "degrees": 7, 
    "nlines": 85, 
-   "nedges": 7, 
    "order_app": 14
   }, 
   "Doctor": {
    "ratio": 6.0, 
+   "degrees": 3, 
    "nlines": 18, 
-   "nedges": 3, 
    "order_app": 22
   }, 
   "Old Man": {
    "ratio": 6.0, 
+   "degrees": 2, 
    "nlines": 12, 
-   "nedges": 2, 
    "order_app": 20
   }, 
   "Second Servant": {
    "ratio": 2.5, 
+   "degrees": 2, 
    "nlines": 5, 
-   "nedges": 2, 
    "order_app": 18
   }, 
   "CORNWALL": {
    "ratio": 13.44, 
+   "degrees": 9, 
    "nlines": 121, 
-   "nedges": 9, 
    "order_app": 16
   }, 
   "Messenger": {
    "ratio": 6.33, 
+   "degrees": 3, 
    "nlines": 19, 
-   "nedges": 3, 
    "order_app": 21
   }, 
   "Fool": {
    "ratio": 48.0, 
+   "degrees": 5, 
    "nlines": 240, 
-   "nedges": 5, 
    "order_app": 13
   }, 
   "ALBANY": {
    "ratio": 18.4, 
+   "degrees": 10, 
    "nlines": 184, 
-   "nedges": 10, 
    "order_app": 7
   }, 
   "KING OF FRANCE": {
    "ratio": 8.25, 
+   "degrees": 4, 
    "nlines": 33, 
-   "nedges": 4, 
    "order_app": 9
   }, 
   "CORDELIA": {
    "ratio": 12.2, 
+   "degrees": 10, 
    "nlines": 122, 
-   "nedges": 10, 
    "order_app": 5
   }, 
   "BURGUNDY": {
    "ratio": 4.0, 
+   "degrees": 3, 
    "nlines": 12, 
-   "nedges": 3, 
    "order_app": 8
   }, 
   "CURAN": {
    "ratio": 10.0, 
+   "degrees": 1, 
    "nlines": 10, 
-   "nedges": 1, 
    "order_app": 15
   }, 
   "EDMUND": {
    "ratio": 24.0, 
+   "degrees": 14, 
    "nlines": 336, 
-   "nedges": 14, 
    "order_app": 2
   }, 
   "Third Servant": {
    "ratio": 6.0, 
+   "degrees": 1, 
    "nlines": 6, 
-   "nedges": 1, 
    "order_app": 19
   }, 
   "KING LEAR": {
    "ratio": 47.47, 
+   "degrees": 17, 
    "nlines": 807, 
-   "nedges": 17, 
    "order_app": 3
   }, 
   "Knight": {
    "ratio": 14.0, 
+   "degrees": 1, 
    "nlines": 14, 
-   "nedges": 1, 
    "order_app": 12
   }, 
   "EDGAR": {
    "ratio": 34.33, 
+   "degrees": 12, 
    "nlines": 412, 
-   "nedges": 12, 
    "order_app": 10
   }, 
   "Herald": {
    "ratio": 2.33, 
+   "degrees": 6, 
    "nlines": 14, 
-   "nedges": 6, 
    "order_app": 24
   }, 
   "GONERIL": {
    "ratio": 18.0, 
+   "degrees": 12, 
    "nlines": 216, 
-   "nedges": 12, 
    "order_app": 4
   }, 
   "OSWALD": {
    "ratio": 10.25, 
+   "degrees": 8, 
    "nlines": 82, 
-   "nedges": 8, 
    "order_app": 11
   }, 
   "REGAN": {
    "ratio": 19.6, 
+   "degrees": 10, 
    "nlines": 196, 
-   "nedges": 10, 
    "order_app": 6
   }, 
   "First Servant": {
    "ratio": 5.0, 
+   "degrees": 2, 
    "nlines": 10, 
-   "nedges": 2, 
    "order_app": 17
   }, 
   "KENT": {
    "ratio": 35.18, 
+   "degrees": 11, 
    "nlines": 387, 
-   "nedges": 11, 
    "order_app": 0
   }, 
   "Captain": {
    "ratio": 1.8, 
+   "degrees": 5, 
    "nlines": 9, 
-   "nedges": 5, 
    "order_app": 23
   }, 
   "GLOUCESTER": {
    "ratio": 36.0, 
+   "degrees": 10, 
    "nlines": 360, 
-   "nedges": 10, 
    "order_app": 1
   }
  }, 

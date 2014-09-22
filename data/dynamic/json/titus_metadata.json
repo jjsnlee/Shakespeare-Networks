@@ -3,544 +3,628 @@
  "acts": [
   [
    {
+    "total_lines": 533, 
+    "deg_assort_coeff": -0.2925035676614744, 
+    "density": 0.2761904761904762, 
+    "scene": "1", 
+    "total_degrees": 29, 
+    "avg_shortest_path": 1.9047619047619047, 
+    "location": "Rome. Before the Capitol.", 
+    "act": "1", 
     "graph_img_f": "imgs/titus_1_1.png", 
     "char_data": {
      "TITUS ANDRONICUS": {
       "ratio": 13.27, 
-      "nlines": 146, 
-      "nedges": 11
+      "degrees": 11, 
+      "nlines": 146
      }, 
      "SATURNINUS": {
       "ratio": 18.0, 
-      "nlines": 108, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 108
      }, 
      "BASSIANUS": {
       "ratio": 10.8, 
-      "nlines": 54, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 54
      }, 
      "MARCUS ANDRONICUS": {
       "ratio": 12.5, 
-      "nlines": 75, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 75
      }, 
      "CHIRON": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "MARTIUS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "DEMETRIUS": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "Tribunes": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "LUCIUS": {
       "ratio": 4.57, 
-      "nlines": 32, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 32
      }, 
      "All": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "TAMORA": {
       "ratio": 17.0, 
-      "nlines": 68, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 68
      }, 
      "LAVINIA": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "Captain": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "MUTIUS": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "QUINTUS": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }
     }, 
-    "location": "Rome. Before the Capitol.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.5268686868686869
    }
   ], 
   [
    {
+    "total_lines": 147, 
+    "deg_assort_coeff": -0.49999999999999645, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "Rome. Before the Palace.", 
+    "act": "2", 
     "graph_img_f": "imgs/titus_2_1.png", 
     "char_data": {
      "CHIRON": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }, 
      "AARON": {
       "ratio": 46.0, 
-      "nlines": 92, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 92
      }, 
      "DEMETRIUS": {
       "ratio": 17.5, 
-      "nlines": 35, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 35
      }
     }, 
-    "location": "Rome. Before the Palace.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 32, 
+    "deg_assort_coeff": -0.40000000000000097, 
+    "density": 0.4666666666666667, 
+    "scene": "2", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "A forest near Rome. Horns and cry of hounds heard.", 
+    "act": "2", 
     "graph_img_f": "imgs/titus_2_2.png", 
     "char_data": {
      "TITUS ANDRONICUS": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "SATURNINUS": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "MARCUS ANDRONICUS": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "DEMETRIUS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "LAVINIA": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "BASSIANUS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }
     }, 
-    "location": "A forest near Rome. Horns and cry of hounds heard.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.611111111111111
    }, 
    {
+    "total_lines": 326, 
+    "deg_assort_coeff": -0.3445675536427068, 
+    "density": 0.4444444444444444, 
+    "scene": "3", 
+    "total_degrees": 20, 
+    "avg_shortest_path": 1.6222222222222222, 
+    "location": "A lonely part of the forest.", 
+    "act": "2", 
     "graph_img_f": "imgs/titus_2_3.png", 
     "char_data": {
      "TITUS ANDRONICUS": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "SATURNINUS": {
       "ratio": 7.2, 
-      "nlines": 36, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 36
      }, 
      "CHIRON": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "MARTIUS": {
       "ratio": 7.75, 
-      "nlines": 31, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 31
      }, 
      "DEMETRIUS": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "AARON": {
       "ratio": 9.0, 
-      "nlines": 45, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 45
      }, 
      "TAMORA": {
       "ratio": 11.13, 
-      "nlines": 89, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 89
      }, 
      "LAVINIA": {
       "ratio": 12.25, 
-      "nlines": 49, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 49
      }, 
      "BASSIANUS": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "QUINTUS": {
       "ratio": 8.67, 
-      "nlines": 26, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 26
      }
     }, 
-    "location": "A lonely part of the forest.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.7688095238095238
    }, 
    {
+    "total_lines": 60, 
+    "deg_assort_coeff": -0.49494949494949497, 
+    "density": 0.6666666666666666, 
+    "scene": "4", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Another part of the forest.", 
+    "act": "2", 
     "graph_img_f": "imgs/titus_2_4.png", 
     "char_data": {
      "CHIRON": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "DEMETRIUS": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "MARCUS": {
       "ratio": 48.0, 
-      "nlines": 48, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 48
      }
     }, 
-    "location": "Another part of the forest.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 318, 
+    "deg_assort_coeff": -0.54579025110783008, 
+    "density": 0.7, 
+    "scene": "1", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "Rome. A street.", 
+    "act": "3", 
     "graph_img_f": "imgs/titus_3_1.png", 
     "char_data": {
      "MARCUS ANDRONICUS": {
       "ratio": 12.25, 
-      "nlines": 49, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 49
      }, 
      "TITUS ANDRONICUS": {
       "ratio": 49.25, 
-      "nlines": 197, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 197
      }, 
      "AARON": {
       "ratio": 11.5, 
-      "nlines": 23, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 23
      }, 
      "Messenger": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "LUCIUS": {
       "ratio": 20.5, 
-      "nlines": 41, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 41
      }
     }, 
-    "location": "Rome. A street.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.8
    }, 
    {
+    "total_lines": 89, 
+    "deg_assort_coeff": -0.49999999999999983, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in Titus's house. A banquet set out.", 
+    "act": "3", 
     "graph_img_f": "imgs/titus_3_2.png", 
     "char_data": {
      "MARCUS ANDRONICUS": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "TITUS ANDRONICUS": {
       "ratio": 38.5, 
-      "nlines": 77, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 77
      }, 
      "Young LUCIUS": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "A room in Titus's house. A banquet set out.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 1.0
    }
   ], 
   [
    {
+    "total_lines": 136, 
+    "deg_assort_coeff": -0.500000000000001, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "Rome. Titus's garden.", 
+    "act": "4", 
     "graph_img_f": "imgs/titus_4_1.png", 
     "char_data": {
      "MARCUS ANDRONICUS": {
       "ratio": 25.5, 
-      "nlines": 51, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 51
      }, 
      "TITUS ANDRONICUS": {
       "ratio": 30.0, 
-      "nlines": 60, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 60
      }, 
      "Young LUCIUS": {
       "ratio": 12.5, 
-      "nlines": 25, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 25
      }
     }, 
-    "location": "Rome. Titus's garden.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 197, 
+    "deg_assort_coeff": -0.5213373016761027, 
+    "density": 0.8, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "The same. A room in the palace.", 
+    "act": "4", 
     "graph_img_f": "imgs/titus_4_2.png", 
     "char_data": {
      "CHIRON": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "AARON": {
       "ratio": 29.25, 
-      "nlines": 117, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 117
      }, 
      "DEMETRIUS": {
       "ratio": 7.75, 
-      "nlines": 31, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 31
      }, 
      "Young LUCIUS": {
       "ratio": 8.5, 
-      "nlines": 17, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 17
      }, 
      "Nurse": {
       "ratio": 6.33, 
-      "nlines": 19, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 19
      }
     }, 
-    "location": "The same. A room in the palace.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.8666666666666666
    }, 
    {
+    "total_lines": 124, 
+    "deg_assort_coeff": -0.35989879822896931, 
+    "density": 0.8333333333333334, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The same. A public place.", 
+    "act": "4", 
     "graph_img_f": "imgs/titus_4_3.png", 
     "char_data": {
      "MARCUS ANDRONICUS": {
       "ratio": 6.33, 
-      "nlines": 19, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 19
      }, 
      "TITUS ANDRONICUS": {
       "ratio": 27.0, 
-      "nlines": 81, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 81
      }, 
      "PUBLIUS": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "Clown": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }
     }, 
-    "location": "The same. A public place.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 121, 
+    "deg_assort_coeff": -0.6037735849056628, 
+    "density": 0.8333333333333334, 
+    "scene": "4", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The same. Before the palace.", 
+    "act": "4", 
     "graph_img_f": "imgs/titus_4_4.png", 
     "char_data": {
      "AEMILIUS": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "SATURNINUS": {
       "ratio": 19.0, 
-      "nlines": 57, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 57
      }, 
      "TAMORA": {
       "ratio": 15.67, 
-      "nlines": 47, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 47
      }, 
      "Clown": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }
     }, 
-    "location": "The same. Before the palace.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }
   ], 
   [
    {
+    "total_lines": 172, 
+    "deg_assort_coeff": -0.44101123595505637, 
+    "density": 0.42857142857142855, 
+    "scene": "1", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.5714285714285714, 
+    "location": "Plains near Rome.", 
+    "act": "5", 
     "graph_img_f": "imgs/titus_5_1.png", 
     "char_data": {
      "Second Goth": {
       "ratio": 21.0, 
-      "nlines": 21, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 21
      }, 
      "First Goth": {
       "ratio": 2.5, 
-      "nlines": 10, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 10
      }, 
      "AEMILIUS": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "Third Goth": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "LUCIUS": {
       "ratio": 7.67, 
-      "nlines": 46, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 46
      }, 
      "AARON": {
       "ratio": 43.0, 
-      "nlines": 86, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 86
      }, 
      "All the Goths": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }
     }, 
-    "location": "Plains near Rome.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.5285714285714286
    }, 
    {
+    "total_lines": 219, 
+    "deg_assort_coeff": -0.46043111807264819, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Rome. Before TITUS's house.", 
+    "act": "5", 
     "graph_img_f": "imgs/titus_5_2.png", 
     "char_data": {
      "TITUS ANDRONICUS": {
       "ratio": 28.0, 
-      "nlines": 140, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 140
      }, 
      "MARCUS ANDRONICUS": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "CHIRON": {
       "ratio": 1.0, 
-      "nlines": 4, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 4
      }, 
      "DEMETRIUS": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "PUBLIUS": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "TAMORA": {
       "ratio": 16.25, 
-      "nlines": 65, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 65
      }
     }, 
-    "location": "Rome. Before TITUS's house.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.8055555555555555
    }, 
    {
+    "total_lines": 222, 
+    "deg_assort_coeff": -0.17884809700235799, 
+    "density": 0.3111111111111111, 
+    "scene": "3", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 2.066666666666667, 
+    "location": "Court of TITUS's house. A banquet set out.", 
+    "act": "5", 
     "graph_img_f": "imgs/titus_5_3.png", 
     "char_data": {
      "TITUS ANDRONICUS": {
       "ratio": 16.0, 
-      "nlines": 32, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 32
      }, 
      "SATURNINUS": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "First Goth": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "AEMILIUS": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "MARCUS ANDRONICUS": {
       "ratio": 16.5, 
-      "nlines": 66, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 66
      }, 
      "All": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "LUCIUS": {
       "ratio": 12.0, 
-      "nlines": 84, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 84
      }, 
      "Young LUCIUS": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "AARON": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "TAMORA": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }
     }, 
-    "location": "Court of TITUS's house. A banquet set out.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.3904761904761905
    }
   ]
  ], 
@@ -577,164 +661,164 @@
  "char_data": {
   "AEMILIUS": {
    "ratio": 3.14, 
+   "degrees": 7, 
    "nlines": 22, 
-   "nedges": 7, 
    "order_app": 22
   }, 
   "Young LUCIUS": {
    "ratio": 8.17, 
+   "degrees": 6, 
    "nlines": 49, 
-   "nedges": 6, 
    "order_app": 18
   }, 
   "All": {
    "ratio": 1.33, 
+   "degrees": 3, 
    "nlines": 4, 
-   "nedges": 3, 
    "order_app": 14
   }, 
   "TAMORA": {
    "ratio": 22.58, 
+   "degrees": 12, 
    "nlines": 271, 
-   "nedges": 12, 
    "order_app": 6
   }, 
   "Nurse": {
    "ratio": 6.33, 
+   "degrees": 3, 
    "nlines": 19, 
-   "nedges": 3, 
    "order_app": 19
   }, 
   "BASSIANUS": {
    "ratio": 8.63, 
+   "degrees": 8, 
    "nlines": 69, 
-   "nedges": 8, 
    "order_app": 1
   }, 
   "TITUS ANDRONICUS": {
    "ratio": 42.17, 
+   "degrees": 18, 
    "nlines": 759, 
-   "nedges": 18, 
    "order_app": 4
   }, 
   "MARTIUS": {
    "ratio": 6.4, 
+   "degrees": 5, 
    "nlines": 32, 
-   "nedges": 5, 
    "order_app": 13
   }, 
   "LUCIUS": {
    "ratio": 14.5, 
+   "degrees": 14, 
    "nlines": 203, 
-   "nedges": 14, 
    "order_app": 5
   }, 
   "MUTIUS": {
    "ratio": 2.67, 
+   "degrees": 3, 
    "nlines": 8, 
-   "nedges": 3, 
    "order_app": 11
   }, 
   "Second Goth": {
    "ratio": 21.0, 
+   "degrees": 1, 
    "nlines": 21, 
-   "nedges": 1, 
    "order_app": 25
   }, 
   "CHIRON": {
    "ratio": 7.71, 
+   "degrees": 7, 
    "nlines": 54, 
-   "nedges": 7, 
    "order_app": 7
   }, 
   "Tribunes": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 10
   }, 
   "Clown": {
    "ratio": 5.75, 
+   "degrees": 4, 
    "nlines": 23, 
-   "nedges": 4, 
    "order_app": 21
   }, 
   "Third Goth": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 26
   }, 
   "AARON": {
    "ratio": 28.69, 
+   "degrees": 13, 
    "nlines": 373, 
-   "nedges": 13, 
    "order_app": 15
   }, 
   "PUBLIUS": {
    "ratio": 5.0, 
+   "degrees": 3, 
    "nlines": 15, 
-   "nedges": 3, 
    "order_app": 20
   }, 
   "LAVINIA": {
    "ratio": 10.17, 
+   "degrees": 6, 
    "nlines": 61, 
-   "nedges": 6, 
    "order_app": 9
   }, 
   "QUINTUS": {
    "ratio": 6.6, 
+   "degrees": 5, 
    "nlines": 33, 
-   "nedges": 5, 
    "order_app": 12
   }, 
   "MARCUS": {
    "ratio": 48.0, 
+   "degrees": 1, 
    "nlines": 48, 
-   "nedges": 1, 
    "order_app": 16
   }, 
   "SATURNINUS": {
    "ratio": 20.09, 
+   "degrees": 11, 
    "nlines": 221, 
-   "nedges": 11, 
    "order_app": 0
   }, 
   "First Goth": {
    "ratio": 2.75, 
+   "degrees": 4, 
    "nlines": 11, 
-   "nedges": 4, 
    "order_app": 23
   }, 
   "MARCUS ANDRONICUS": {
    "ratio": 21.15, 
+   "degrees": 13, 
    "nlines": 275, 
-   "nedges": 13, 
    "order_app": 2
   }, 
   "DEMETRIUS": {
    "ratio": 11.56, 
+   "degrees": 9, 
    "nlines": 104, 
-   "nedges": 9, 
    "order_app": 8
   }, 
   "All the Goths": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 24
   }, 
   "Messenger": {
    "ratio": 4.0, 
+   "degrees": 2, 
    "nlines": 8, 
-   "nedges": 2, 
    "order_app": 17
   }, 
   "Captain": {
    "ratio": 3.5, 
+   "degrees": 2, 
    "nlines": 7, 
-   "nedges": 2, 
    "order_app": 3
   }
  }, 

@@ -3,658 +3,760 @@
  "acts": [
   [
    {
+    "total_lines": 326, 
+    "deg_assort_coeff": -0.33111036209553002, 
+    "density": 0.4090909090909091, 
+    "scene": "1", 
+    "total_degrees": 27, 
+    "avg_shortest_path": 1.6818181818181819, 
+    "location": "Athens. A hall in Timon's house.", 
+    "act": "1", 
     "graph_img_f": "imgs/timon_1_1.png", 
     "char_data": {
      "Merchant": {
       "ratio": 2.0, 
-      "nlines": 14, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 14
      }, 
      "TIMON": {
       "ratio": 7.4, 
-      "nlines": 74, 
-      "nedges": 10
+      "degrees": 10, 
+      "nlines": 74
      }, 
      "Poet": {
       "ratio": 16.0, 
-      "nlines": 80, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 80
      }, 
      "First Lord": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "Old Athenian": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }, 
      "APEMANTUS": {
       "ratio": 5.56, 
-      "nlines": 50, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 50
      }, 
      "Messenger": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "ALCIBIADES": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "LUCILIUS": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "Second Lord": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "Jeweller": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "Painter": {
       "ratio": 6.4, 
-      "nlines": 32, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 32
      }
     }, 
-    "location": "Athens. A hall in Timon's house.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.7514550264550266
    }, 
    {
+    "total_lines": 284, 
+    "deg_assort_coeff": -0.49680464148059345, 
+    "density": 0.225, 
+    "scene": "2", 
+    "total_degrees": 27, 
+    "avg_shortest_path": 1.8416666666666666, 
+    "location": "A banqueting-room in Timon's house.", 
+    "act": "1", 
     "graph_img_f": "imgs/timon_1_2.png", 
     "char_data": {
      "TIMON": {
       "ratio": 8.07, 
-      "nlines": 113, 
-      "nedges": 14
+      "degrees": 14, 
+      "nlines": 113
      }, 
      "First Lord": {
       "ratio": 2.0, 
-      "nlines": 12, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 12
      }, 
      "All": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "First Lady": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "VENTIDIUS": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }, 
      "ALCIBIADES": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "Servant": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "Third Servant": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "Third Lord": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "All Lords": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "Second Servant": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "Cupid": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "APEMANTUS": {
       "ratio": 13.5, 
-      "nlines": 81, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 81
      }, 
      "FLAVIUS": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }, 
      "Second Lord": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "All Ladies": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }
     }, 
-    "location": "A banqueting-room in Timon's house.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.4888049450549451
    }
   ], 
   [
    {
+    "total_lines": 40, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A Senator's house.", 
+    "act": "2", 
     "graph_img_f": "imgs/timon_2_1.png", 
     "char_data": {
      "Senator": {
       "ratio": 37.0, 
-      "nlines": 37, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 37
      }, 
      "CAPHIS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "A Senator's house.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 273, 
+    "deg_assort_coeff": -0.46131045241809948, 
+    "density": 0.4444444444444444, 
+    "scene": "2", 
+    "total_degrees": 16, 
+    "avg_shortest_path": 1.9444444444444444, 
+    "location": "The same. A hall in Timon's house.", 
+    "act": "2", 
     "graph_img_f": "imgs/timon_2_2.png", 
     "char_data": {
      "TIMON": {
       "ratio": 22.0, 
-      "nlines": 88, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 88
      }, 
      "All Servants": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "Fool": {
       "ratio": 4.17, 
-      "nlines": 25, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 25
      }, 
      "APEMANTUS": {
       "ratio": 5.17, 
-      "nlines": 31, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 31
      }, 
      "FLAMINIUS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "Servants": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "FLAVIUS": {
       "ratio": 21.0, 
-      "nlines": 84, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 84
      }, 
      "Page": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "CAPHIS": {
       "ratio": 5.6, 
-      "nlines": 28, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 28
      }
     }, 
-    "location": "The same. A hall in Timon's house.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.5185185185185186
    }
   ], 
   [
    {
+    "total_lines": 69, 
+    "deg_assort_coeff": -0.50000000000000078, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in Lucullus' house.", 
+    "act": "3", 
     "graph_img_f": "imgs/timon_3_1.png", 
     "char_data": {
      "Servant": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "FLAMINIUS": {
       "ratio": 14.0, 
-      "nlines": 28, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 28
      }, 
      "LUCULLUS": {
       "ratio": 19.0, 
-      "nlines": 38, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 38
      }
     }, 
-    "location": "A room in Lucullus' house.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 94, 
+    "deg_assort_coeff": -0.053203040173724681, 
+    "density": 0.5, 
+    "scene": "2", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.6, 
+    "location": "A public place.", 
+    "act": "3", 
     "graph_img_f": "imgs/timon_3_2.png", 
     "char_data": {
      "LUCILIUS": {
       "ratio": 14.33, 
-      "nlines": 43, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 43
      }, 
      "SERVILIUS": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "Third Stranger": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "First Stranger": {
       "ratio": 10.67, 
-      "nlines": 32, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 32
      }, 
      "Second Stranger": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }
     }, 
-    "location": "A public place.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.3333333333333333
    }, 
    {
+    "total_lines": 48, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in Sempronius' house.", 
+    "act": "3", 
     "graph_img_f": "imgs/timon_3_3.png", 
     "char_data": {
      "Servant": {
       "ratio": 20.0, 
-      "nlines": 20, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 20
      }, 
      "SEMPRONIUS": {
       "ratio": 28.0, 
-      "nlines": 28, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 28
      }
     }, 
-    "location": "A room in Sempronius' house.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 148, 
+    "deg_assort_coeff": -0.32213015547900908, 
+    "density": 0.6944444444444444, 
+    "scene": "4", 
+    "total_degrees": 25, 
+    "avg_shortest_path": 1.4722222222222223, 
+    "location": "The same. A hall in Timon's house.", 
+    "act": "3", 
     "graph_img_f": "imgs/timon_3_4.png", 
     "char_data": {
      "TIMON": {
       "ratio": 3.11, 
-      "nlines": 28, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 28
      }, 
      "FLAMINIUS": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "First Servant": {
       "ratio": 1.71, 
-      "nlines": 12, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 12
      }, 
      "SERVILIUS": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "TITUS": {
       "ratio": 2.5, 
-      "nlines": 20, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 20
      }, 
      "Second Servant": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "PHILOTUS": {
       "ratio": 3.2, 
-      "nlines": 16, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 16
      }, 
      "FLAVIUS": {
       "ratio": 4.17, 
-      "nlines": 25, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 25
      }, 
      "HORTENSIUS": {
       "ratio": 3.67, 
-      "nlines": 22, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 22
      }
     }, 
-    "location": "The same. A hall in Timon's house.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.7277777777777777
    }, 
    {
+    "total_lines": 128, 
+    "deg_assort_coeff": -0.67710843373493979, 
+    "density": 0.6666666666666666, 
+    "scene": "5", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The same. The senate-house. The Senate sitting.", 
+    "act": "3", 
     "graph_img_f": "imgs/timon_3_5.png", 
     "char_data": {
      "ALCIBIADES": {
       "ratio": 27.0, 
-      "nlines": 81, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 81
      }, 
      "Second Senator": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "Third Senator": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "First Senator": {
       "ratio": 17.0, 
-      "nlines": 34, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 34
      }
     }, 
-    "location": "The same. The senate-house. The Senate sitting.", 
-    "scene": "5", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 127, 
+    "deg_assort_coeff": 0.052982403203906313, 
+    "density": 0.5714285714285714, 
+    "scene": "6", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.5238095238095237, 
+    "location": "The same. A banqueting-room in Timon's house.", 
+    "act": "3", 
     "graph_img_f": "imgs/timon_3_6.png", 
     "char_data": {
      "TIMON": {
       "ratio": 11.8, 
-      "nlines": 59, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 59
      }, 
      "First Lord": {
       "ratio": 6.5, 
-      "nlines": 26, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 26
      }, 
      "Some Others": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "Fourth Lord": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "Third Lord": {
       "ratio": 2.5, 
-      "nlines": 10, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 10
      }, 
      "Some Speak": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "Second Lord": {
       "ratio": 6.5, 
-      "nlines": 26, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 26
      }
     }, 
-    "location": "The same. A banqueting-room in Timon's house.", 
-    "scene": "6", 
-    "act": "3"
+    "avg_clustering": 0.8428571428571427
    }
   ], 
   [
    {
+    "total_lines": 41, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "1", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "Without the walls of Athens.", 
+    "act": "4", 
     "graph_img_f": "imgs/timon_4_1.png", 
     "char_data": {
      "TIMON": {
       "ratio": 0, 
-      "nlines": 41, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 41
      }
     }, 
-    "location": "Without the walls of Athens.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 56, 
+    "deg_assort_coeff": -0.65765765765765771, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Athens. A room in Timon's house.", 
+    "act": "4", 
     "graph_img_f": "imgs/timon_4_2.png", 
     "char_data": {
      "Third Servant": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "First Servant": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "Second Servant": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "FLAVIUS": {
       "ratio": 11.67, 
-      "nlines": 35, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 35
      }
     }, 
-    "location": "Athens. A room in Timon's house.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.5833333333333334
    }, 
    {
+    "total_lines": 547, 
+    "deg_assort_coeff": -0.1857518088837373, 
+    "density": 0.35555555555555557, 
+    "scene": "3", 
+    "total_degrees": 16, 
+    "avg_shortest_path": 1.7333333333333334, 
+    "location": "Woods and cave, near the seashore.", 
+    "act": "4", 
     "graph_img_f": "imgs/timon_4_3.png", 
     "char_data": {
      "TIMON": {
       "ratio": 42.5, 
-      "nlines": 340, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 340
      }, 
      "ALCIBIADES": {
       "ratio": 17.0, 
-      "nlines": 34, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 34
      }, 
      "Banditti": {
       "ratio": 1.0, 
-      "nlines": 4, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 4
      }, 
      "Third Bandit": {
       "ratio": 1.5, 
-      "nlines": 6, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 6
      }, 
      "Second Bandit": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "APEMANTUS": {
       "ratio": 94.0, 
-      "nlines": 94, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 94
      }, 
      "TIMANDRA": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "FLAVIUS": {
       "ratio": 18.5, 
-      "nlines": 37, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 37
      }, 
      "First Bandit": {
       "ratio": 2.6, 
-      "nlines": 13, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 13
      }, 
      "PHRYNIA": {
       "ratio": 11.0, 
-      "nlines": 11, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 11
      }
     }, 
-    "location": "Woods and cave, near the seashore.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.6445238095238095
    }
   ], 
   [
    {
+    "total_lines": 261, 
+    "deg_assort_coeff": -0.39258866579786261, 
+    "density": 0.47619047619047616, 
+    "scene": "1", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.5238095238095237, 
+    "location": "The woods. Before Timon's cave.", 
+    "act": "5", 
     "graph_img_f": "imgs/timon_5_1.png", 
     "char_data": {
      "TIMON": {
       "ratio": 21.0, 
-      "nlines": 126, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 126
      }, 
      "Both": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }, 
      "FLAVIUS": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "Poet": {
       "ratio": 12.5, 
-      "nlines": 25, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 25
      }, 
      "Second Senator": {
       "ratio": 8.67, 
-      "nlines": 26, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 26
      }, 
      "First Senator": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }, 
      "Painter": {
       "ratio": 18.0, 
-      "nlines": 36, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 36
      }
     }, 
-    "location": "The woods. Before Timon's cave.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.7523809523809524
    }, 
    {
+    "total_lines": 21, 
+    "deg_assort_coeff": -0.31707317073170765, 
+    "density": 0.5, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "Before the walls of Athens.", 
+    "act": "5", 
     "graph_img_f": "imgs/timon_5_2.png", 
     "char_data": {
      "Second Senator": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "Messenger": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "Third Senator": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "First Senator": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }
     }, 
-    "location": "Before the walls of Athens.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 11, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "3", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "The woods. Timon's cave, and a rude tomb seen.", 
+    "act": "5", 
     "graph_img_f": "imgs/timon_5_3.png", 
     "char_data": {
      "Soldier": {
       "ratio": 0, 
-      "nlines": 11, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 11
      }
     }, 
-    "location": "The woods. Timon's cave, and a rude tomb seen.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 106, 
+    "deg_assort_coeff": -0.33333333333333259, 
+    "density": 0.4, 
+    "scene": "4", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.7333333333333334, 
+    "location": "Before the walls of Athens.", 
+    "act": "5", 
     "graph_img_f": "imgs/timon_5_4.png", 
     "char_data": {
      "ALCIBIADES": {
       "ratio": 12.5, 
-      "nlines": 50, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 50
      }, 
      "Both": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "Soldier": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "Second Senator": {
       "ratio": 8.0, 
-      "nlines": 24, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 24
      }, 
      "First Senator": {
       "ratio": 11.0, 
-      "nlines": 22, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 22
      }, 
      "First Senator ": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }
     }, 
-    "location": "Before the walls of Athens.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 0.25
    }
   ]
  ], 
@@ -719,332 +821,332 @@
  "char_data": {
   "First Bandit": {
    "ratio": 2.6, 
+   "degrees": 5, 
    "nlines": 13, 
-   "nedges": 5, 
    "order_app": 48
   }, 
   "Banditti": {
    "ratio": 1.0, 
+   "degrees": 4, 
    "nlines": 4, 
-   "nedges": 4, 
    "order_app": 51
   }, 
   "First Lady": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 16
   }, 
   "First Stranger": {
    "ratio": 10.67, 
+   "degrees": 3, 
    "nlines": 32, 
-   "nedges": 3, 
    "order_app": 31
   }, 
   "VENTIDIUS": {
    "ratio": 9.0, 
+   "degrees": 1, 
    "nlines": 9, 
-   "nedges": 1, 
    "order_app": 12
   }, 
   "Both": {
    "ratio": 4.0, 
+   "degrees": 2, 
    "nlines": 8, 
-   "nedges": 2, 
    "order_app": 52
   }, 
   "HORTENSIUS": {
    "ratio": 3.67, 
+   "degrees": 6, 
    "nlines": 22, 
-   "nedges": 6, 
    "order_app": 38
   }, 
   "Second Servant": {
    "ratio": 4.75, 
+   "degrees": 4, 
    "nlines": 19, 
-   "nedges": 4, 
    "order_app": 20
   }, 
   "Cupid": {
    "ratio": 6.0, 
+   "degrees": 1, 
    "nlines": 6, 
-   "nedges": 1, 
    "order_app": 15
   }, 
   "Messenger": {
    "ratio": 5.5, 
+   "degrees": 4, 
    "nlines": 22, 
-   "nedges": 4, 
    "order_app": 5
   }, 
   "Poet": {
    "ratio": 21.0, 
+   "degrees": 5, 
    "nlines": 105, 
-   "nedges": 5, 
    "order_app": 0
   }, 
   "Second Lord": {
    "ratio": 7.33, 
+   "degrees": 6, 
    "nlines": 44, 
-   "nedges": 6, 
    "order_app": 11
   }, 
   "Second Senator": {
    "ratio": 10.5, 
+   "degrees": 6, 
    "nlines": 63, 
-   "nedges": 6, 
    "order_app": 41
   }, 
   "Old Athenian": {
    "ratio": 9.67, 
+   "degrees": 3, 
    "nlines": 29, 
-   "nedges": 3, 
    "order_app": 6
   }, 
   "TIMANDRA": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 47
   }, 
   "SERVILIUS": {
    "ratio": 5.5, 
+   "degrees": 4, 
    "nlines": 22, 
-   "nedges": 4, 
    "order_app": 33
   }, 
   "Merchant": {
    "ratio": 2.0, 
+   "degrees": 7, 
    "nlines": 14, 
-   "nedges": 7, 
    "order_app": 2
   }, 
   "First Lord": {
    "ratio": 5.33, 
+   "degrees": 9, 
    "nlines": 48, 
-   "nedges": 9, 
    "order_app": 10
   }, 
   "FLAMINIUS": {
    "ratio": 7.4, 
+   "degrees": 5, 
    "nlines": 37, 
-   "nedges": 5, 
    "order_app": 29
   }, 
   "Second Stranger": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 32
   }, 
   "Third Bandit": {
    "ratio": 1.5, 
+   "degrees": 4, 
    "nlines": 6, 
-   "nedges": 4, 
    "order_app": 50
   }, 
   "Page": {
    "ratio": 4.0, 
+   "degrees": 2, 
    "nlines": 8, 
-   "nedges": 2, 
    "order_app": 27
   }, 
   "Second Bandit": {
    "ratio": 1.33, 
+   "degrees": 3, 
    "nlines": 4, 
-   "nedges": 3, 
    "order_app": 49
   }, 
   "LUCILIUS": {
    "ratio": 8.17, 
+   "degrees": 6, 
    "nlines": 49, 
-   "nedges": 6, 
    "order_app": 7
   }, 
   "Jeweller": {
    "ratio": 2.67, 
+   "degrees": 3, 
    "nlines": 8, 
-   "nedges": 3, 
    "order_app": 3
   }, 
   "Painter": {
    "ratio": 13.6, 
+   "degrees": 5, 
    "nlines": 68, 
-   "nedges": 5, 
    "order_app": 1
   }, 
   "LUCULLUS": {
    "ratio": 19.0, 
+   "degrees": 2, 
    "nlines": 38, 
-   "nedges": 2, 
    "order_app": 30
   }, 
   "ALCIBIADES": {
    "ratio": 19.0, 
+   "degrees": 9, 
    "nlines": 171, 
-   "nedges": 9, 
    "order_app": 9
   }, 
   "Some Others": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 44
   }, 
   "Servant": {
    "ratio": 4.29, 
+   "degrees": 7, 
    "nlines": 30, 
-   "nedges": 7, 
    "order_app": 14
   }, 
   "Third Servant": {
    "ratio": 5.0, 
+   "degrees": 2, 
    "nlines": 10, 
-   "nedges": 2, 
    "order_app": 21
   }, 
   "TITUS": {
    "ratio": 2.5, 
+   "degrees": 8, 
    "nlines": 20, 
-   "nedges": 8, 
    "order_app": 37
   }, 
   "All Lords": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 22
   }, 
   "APEMANTUS": {
    "ratio": 17.07, 
+   "degrees": 15, 
    "nlines": 256, 
-   "nedges": 15, 
    "order_app": 8
   }, 
   "First Senator ": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 54
   }, 
   "Servants": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 28
   }, 
   "FLAVIUS": {
    "ratio": 15.86, 
+   "degrees": 14, 
    "nlines": 222, 
-   "nedges": 14, 
    "order_app": 18
   }, 
   "Senator": {
    "ratio": 37.0, 
+   "degrees": 1, 
    "nlines": 37, 
-   "nedges": 1, 
    "order_app": 23
   }, 
   "All Ladies": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 17
   }, 
   "PHRYNIA": {
    "ratio": 11.0, 
+   "degrees": 1, 
    "nlines": 11, 
-   "nedges": 1, 
    "order_app": 46
   }, 
   "Third Stranger": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 34
   }, 
   "TIMON": {
    "ratio": 21.73, 
+   "degrees": 40, 
    "nlines": 869, 
-   "nedges": 40, 
    "order_app": 4
   }, 
   "All Servants": {
    "ratio": 3.5, 
+   "degrees": 2, 
    "nlines": 7, 
-   "nedges": 2, 
    "order_app": 25
   }, 
   "All": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 19
   }, 
   "Fool": {
    "ratio": 4.17, 
+   "degrees": 6, 
    "nlines": 25, 
-   "nedges": 6, 
    "order_app": 26
   }, 
   "First Servant": {
    "ratio": 2.57, 
+   "degrees": 7, 
    "nlines": 18, 
-   "nedges": 7, 
    "order_app": 36
   }, 
   "Soldier": {
    "ratio": 16.0, 
+   "degrees": 1, 
    "nlines": 16, 
-   "nedges": 1, 
    "order_app": 53
   }, 
   "Third Lord": {
    "ratio": 2.4, 
+   "degrees": 5, 
    "nlines": 12, 
-   "nedges": 5, 
    "order_app": 13
   }, 
   "Third Senator": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 42
   }, 
   "PHILOTUS": {
    "ratio": 3.2, 
+   "degrees": 5, 
    "nlines": 16, 
-   "nedges": 5, 
    "order_app": 39
   }, 
   "CAPHIS": {
    "ratio": 5.17, 
+   "degrees": 6, 
    "nlines": 31, 
-   "nedges": 6, 
    "order_app": 24
   }, 
   "Some Speak": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 43
   }, 
   "SEMPRONIUS": {
    "ratio": 28.0, 
+   "degrees": 1, 
    "nlines": 28, 
-   "nedges": 1, 
    "order_app": 35
   }, 
   "First Senator": {
    "ratio": 14.83, 
+   "degrees": 6, 
    "nlines": 89, 
-   "nedges": 6, 
    "order_app": 40
   }, 
   "Fourth Lord": {
    "ratio": 1.33, 
+   "degrees": 3, 
    "nlines": 4, 
-   "nedges": 3, 
    "order_app": 45
   }
  }, 

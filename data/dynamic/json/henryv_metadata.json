@@ -3,851 +3,1019 @@
  "acts": [
   [
    {
+    "total_lines": 35, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "0", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "PROLOGUE", 
+    "act": "1", 
     "graph_img_f": "imgs/henryv_1_0.png", 
     "char_data": {
      "Chorus": {
       "ratio": 0, 
-      "nlines": 35, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 35
      }
     }, 
-    "location": "PROLOGUE", 
-    "scene": "0", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 103, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "London. An ante-chamber in the KING'S palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/henryv_1_1.png", 
     "char_data": {
      "ELY": {
       "ratio": 21.0, 
-      "nlines": 21, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 21
      }, 
      "CANTERBURY": {
       "ratio": 82.0, 
-      "nlines": 82, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 82
      }
     }, 
-    "location": "London. An ante-chamber in the KING'S palace.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 320, 
+    "deg_assort_coeff": -0.36159600997506108, 
+    "density": 0.6, 
+    "scene": "2", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.4666666666666666, 
+    "location": "The same. The Presence chamber.", 
+    "act": "1", 
     "graph_img_f": "imgs/henryv_1_2.png", 
     "char_data": {
      "First Ambassador": {
       "ratio": 17.0, 
-      "nlines": 17, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 17
      }, 
      "KING HENRY V": {
       "ratio": 31.25, 
-      "nlines": 125, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 125
      }, 
      "CANTERBURY": {
       "ratio": 35.25, 
-      "nlines": 141, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 141
      }, 
      "ELY": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "WESTMORELAND": {
       "ratio": 4.67, 
-      "nlines": 14, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 14
      }, 
      "EXETER": {
       "ratio": 4.0, 
-      "nlines": 16, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 16
      }
     }, 
-    "location": "The same. The Presence chamber.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.6388888888888888
    }
   ], 
   [
    {
+    "total_lines": 43, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "0", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "PROLOGUE", 
+    "act": "2", 
     "graph_img_f": "imgs/henryv_2_0.png", 
     "char_data": {
      "Chorus": {
       "ratio": 0, 
-      "nlines": 43, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 43
      }
     }, 
-    "location": "PROLOGUE", 
-    "scene": "0", 
-    "act": "2"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 125, 
+    "deg_assort_coeff": -0.35091342335186654, 
+    "density": 0.8, 
+    "scene": "1", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "London. A street.", 
+    "act": "2", 
     "graph_img_f": "imgs/henryv_2_1.png", 
     "char_data": {
      "BARDOLPH": {
       "ratio": 5.75, 
-      "nlines": 23, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 23
      }, 
      "Boy": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "PISTOL": {
       "ratio": 10.75, 
-      "nlines": 43, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 43
      }, 
      "Hostess": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "NYM": {
       "ratio": 13.0, 
-      "nlines": 39, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 39
      }
     }, 
-    "location": "London. A street.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.8666666666666666
    }, 
    {
+    "total_lines": 199, 
+    "deg_assort_coeff": 0.34220679012345623, 
+    "density": 0.5238095238095238, 
+    "scene": "2", 
+    "total_degrees": 11, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "Southampton. A council-chamber.", 
+    "act": "2", 
     "graph_img_f": "imgs/henryv_2_2.png", 
     "char_data": {
      "BEDFORD": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "CAMBRIDGE": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "SCROOP": {
       "ratio": 3.0, 
-      "nlines": 12, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 12
      }, 
      "KING HENRY V": {
       "ratio": 34.75, 
-      "nlines": 139, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 139
      }, 
      "GREY": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "WESTMORELAND": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "EXETER": {
       "ratio": 3.0, 
-      "nlines": 12, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 12
      }
     }, 
-    "location": "Southampton. A council-chamber.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.8095238095238094
    }, 
    {
+    "total_lines": 62, 
+    "deg_assort_coeff": -0.30599369085173372, 
+    "density": 0.9, 
+    "scene": "3", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.1, 
+    "location": "London. Before a tavern.", 
+    "act": "2", 
     "graph_img_f": "imgs/henryv_2_3.png", 
     "char_data": {
      "BARDOLPH": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "Boy": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "PISTOL": {
       "ratio": 4.0, 
-      "nlines": 16, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 16
      }, 
      "Hostess": {
       "ratio": 7.0, 
-      "nlines": 28, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 28
      }, 
      "NYM": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }
     }, 
-    "location": "London. Before a tavern.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.9
    }, 
    {
+    "total_lines": 155, 
+    "deg_assort_coeff": -0.37614678899082638, 
+    "density": 0.5, 
+    "scene": "4", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.6, 
+    "location": "France. The KING'S palace.", 
+    "act": "2", 
     "graph_img_f": "imgs/henryv_2_4.png", 
     "char_data": {
      "Messenger": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "DAUPHIN": {
       "ratio": 13.0, 
-      "nlines": 39, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 39
      }, 
      "KING OF FRANCE": {
       "ratio": 15.0, 
-      "nlines": 45, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 45
      }, 
      "Constable": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }, 
      "EXETER": {
       "ratio": 28.5, 
-      "nlines": 57, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 57
      }
     }, 
-    "location": "France. The KING'S palace.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.3333333333333333
    }
   ], 
   [
    {
+    "total_lines": 37, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "0", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "PROLOGUE", 
+    "act": "3", 
     "graph_img_f": "imgs/henryv_3_0.png", 
     "char_data": {
      "Chorus": {
       "ratio": 0, 
-      "nlines": 37, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 37
      }
     }, 
-    "location": "PROLOGUE", 
-    "scene": "0", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 35, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "1", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "France. Before Harfleur.", 
+    "act": "3", 
     "graph_img_f": "imgs/henryv_3_1.png", 
     "char_data": {
      "KING HENRY V": {
       "ratio": 0, 
-      "nlines": 35, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 35
      }
     }, 
-    "location": "France. Before Harfleur.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 144, 
+    "deg_assort_coeff": 0.043672360248446535, 
+    "density": 0.4642857142857143, 
+    "scene": "2", 
+    "total_degrees": 13, 
+    "avg_shortest_path": 1.8214285714285714, 
+    "location": "The same.", 
+    "act": "3", 
     "graph_img_f": "imgs/henryv_3_2.png", 
     "char_data": {
      "Boy": {
       "ratio": 8.75, 
-      "nlines": 35, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 35
      }, 
      "BARDOLPH": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "JAMY": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "NYM": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "MACMORRIS": {
       "ratio": 6.67, 
-      "nlines": 20, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 20
      }, 
      "FLUELLEN": {
       "ratio": 9.2, 
-      "nlines": 46, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 46
      }, 
      "PISTOL": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "GOWER": {
       "ratio": 2.75, 
-      "nlines": 11, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 11
      }
     }, 
-    "location": "The same.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 59, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The same. Before the gates.", 
+    "act": "3", 
     "graph_img_f": "imgs/henryv_3_3.png", 
     "char_data": {
      "KING HENRY V": {
       "ratio": 52.0, 
-      "nlines": 52, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 52
      }, 
      "GOVERNOR": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }
     }, 
-    "location": "The same. Before the gates.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 56, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The FRENCH KING's palace.", 
+    "act": "3", 
     "graph_img_f": "imgs/henryv_3_4.png", 
     "char_data": {
      "KATHARINE": {
       "ratio": 36.0, 
-      "nlines": 36, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 36
      }, 
      "ALICE": {
       "ratio": 20.0, 
-      "nlines": 20, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 20
      }
     }, 
-    "location": "The FRENCH KING's palace.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 70, 
+    "deg_assort_coeff": -0.33333333333333331, 
+    "density": 1.0, 
+    "scene": "5", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.0, 
+    "location": "The same.", 
+    "act": "3", 
     "graph_img_f": "imgs/henryv_3_5.png", 
     "char_data": {
      "Constable": {
       "ratio": 7.0, 
-      "nlines": 21, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 21
      }, 
      "BOURBON": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "DAUPHIN": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "KING OF FRANCE": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }
     }, 
-    "location": "The same.", 
-    "scene": "5", 
-    "act": "3"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 180, 
+    "deg_assort_coeff": -0.058055152394775024, 
+    "density": 0.4, 
+    "scene": "6", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.8666666666666667, 
+    "location": "The English camp in Picardy.", 
+    "act": "3", 
     "graph_img_f": "imgs/henryv_3_6.png", 
     "char_data": {
      "PISTOL": {
       "ratio": 22.0, 
-      "nlines": 22, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 22
      }, 
      "KING HENRY V": {
       "ratio": 15.33, 
-      "nlines": 46, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 46
      }, 
      "FLUELLEN": {
       "ratio": 21.33, 
-      "nlines": 64, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 64
      }, 
      "MONTJOY": {
       "ratio": 12.5, 
-      "nlines": 25, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 25
      }, 
      "GOWER": {
       "ratio": 22.0, 
-      "nlines": 22, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 22
      }, 
      "GLOUCESTER": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }
     }, 
-    "location": "The English camp in Picardy.", 
-    "scene": "6", 
-    "act": "3"
+    "avg_clustering": 0.38888888888888884
    }, 
    {
+    "total_lines": 143, 
+    "deg_assort_coeff": -0.60483549351944355, 
+    "density": 0.7, 
+    "scene": "7", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The French camp, near Agincourt:", 
+    "act": "3", 
     "graph_img_f": "imgs/henryv_3_7.png", 
     "char_data": {
      "ORLEANS": {
       "ratio": 8.5, 
-      "nlines": 34, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 34
      }, 
      "DAUPHIN": {
       "ratio": 25.5, 
-      "nlines": 51, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 51
      }, 
      "Messenger": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "Constable": {
       "ratio": 12.25, 
-      "nlines": 49, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 49
      }, 
      "RAMBURES": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }
     }, 
-    "location": "The French camp, near Agincourt:", 
-    "scene": "7", 
-    "act": "3"
+    "avg_clustering": 0.8
    }
   ], 
   [
    {
+    "total_lines": 54, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "0", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "PROLOGUE", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_0.png", 
     "char_data": {
      "Chorus": {
       "ratio": 0, 
-      "nlines": 54, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 54
      }
     }, 
-    "location": "PROLOGUE", 
-    "scene": "0", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 319, 
+    "deg_assort_coeff": -0.4396177237185061, 
+    "density": 0.3333333333333333, 
+    "scene": "1", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "The English camp at Agincourt.", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_1.png", 
     "char_data": {
      "BATES": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "ERPINGHAM": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "KING HENRY V": {
       "ratio": 26.63, 
-      "nlines": 213, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 213
      }, 
      "COURT": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "FLUELLEN": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "PISTOL": {
       "ratio": 18.0, 
-      "nlines": 18, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 18
      }, 
      "GOWER": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "WILLIAMS": {
       "ratio": 19.5, 
-      "nlines": 39, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 39
      }, 
      "GLOUCESTER": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "The English camp at Agincourt.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.7566137566137566
    }, 
    {
+    "total_lines": 67, 
+    "deg_assort_coeff": -0.14728682170542634, 
+    "density": 0.4, 
+    "scene": "2", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.8, 
+    "location": "The French camp.", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_2.png", 
     "char_data": {
      "ORLEANS": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "Constable": {
       "ratio": 10.33, 
-      "nlines": 31, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 31
      }, 
      "GRANDPRE": {
       "ratio": 18.0, 
-      "nlines": 18, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 18
      }, 
      "Messenger": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "DAUPHIN": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "RAMBURES": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }
     }, 
-    "location": "The French camp.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 142, 
+    "deg_assort_coeff": -0.24818577648766207, 
+    "density": 0.35714285714285715, 
+    "scene": "3", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.9642857142857142, 
+    "location": "The English camp.", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_3.png", 
     "char_data": {
      "BEDFORD": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "GLOUCESTER": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "YORK": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "KING HENRY V": {
       "ratio": 24.75, 
-      "nlines": 99, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 99
      }, 
      "EXETER": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "WESTMORELAND": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "MONTJOY": {
       "ratio": 14.0, 
-      "nlines": 14, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 14
      }, 
      "SALISBURY": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }
     }, 
-    "location": "The English camp.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.20833333333333331
    }, 
    {
+    "total_lines": 74, 
+    "deg_assort_coeff": -0.5, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "The field of battle.", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_4.png", 
     "char_data": {
      "French Soldier": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }, 
      "Boy": {
       "ratio": 15.5, 
-      "nlines": 31, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 31
      }, 
      "PISTOL": {
       "ratio": 14.0, 
-      "nlines": 28, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 28
      }
     }, 
-    "location": "The field of battle.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 26, 
+    "deg_assort_coeff": -0.57024793388430228, 
+    "density": 0.8333333333333334, 
+    "scene": "5", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "Another part of the field.", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_5.png", 
     "char_data": {
      "ORLEANS": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "Constable": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "DAUPHIN": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "BOURBON": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "5", 
-    "act": "4"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
+    "total_lines": 41, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "6", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Another part of the field.", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_6.png", 
     "char_data": {
      "KING HENRY V": {
       "ratio": 14.0, 
-      "nlines": 14, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 14
      }, 
      "EXETER": {
       "ratio": 27.0, 
-      "nlines": 27, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 27
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "6", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 186, 
+    "deg_assort_coeff": -0.4696571680023458, 
+    "density": 0.42857142857142855, 
+    "scene": "7", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.5714285714285714, 
+    "location": "Another part of the field.", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_7.png", 
     "char_data": {
      "KING HENRY V": {
       "ratio": 10.5, 
-      "nlines": 63, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 63
      }, 
      "EXETER": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "FLUELLEN": {
       "ratio": 25.67, 
-      "nlines": 77, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 77
      }, 
      "MONTJOY": {
       "ratio": 16.0, 
-      "nlines": 16, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 16
      }, 
      "GOWER": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }, 
      "WILLIAMS": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "GLOUCESTER": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "7", 
-    "act": "4"
+    "avg_clustering": 0.6952380952380953
    }, 
    {
+    "total_lines": 131, 
+    "deg_assort_coeff": -0.50338857067902587, 
+    "density": 0.38095238095238093, 
+    "scene": "8", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.8095238095238095, 
+    "location": "Before KING HENRY'S pavilion.", 
+    "act": "4", 
     "graph_img_f": "imgs/henryv_4_8.png", 
     "char_data": {
      "KING HENRY V": {
       "ratio": 15.0, 
-      "nlines": 60, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 60
      }, 
      "Herald": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "WARWICK": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "FLUELLEN": {
       "ratio": 10.25, 
-      "nlines": 41, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 41
      }, 
      "GOWER": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "WILLIAMS": {
       "ratio": 7.33, 
-      "nlines": 22, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 22
      }, 
      "EXETER": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }
     }, 
-    "location": "Before KING HENRY'S pavilion.", 
-    "scene": "8", 
-    "act": "4"
+    "avg_clustering": 0.3095238095238095
    }
   ], 
   [
    {
+    "total_lines": 46, 
+    "deg_assort_coeff": -1, 
+    "density": 0.0, 
+    "scene": "0", 
+    "total_degrees": 0, 
+    "avg_shortest_path": -1, 
+    "location": "PROLOGUE", 
+    "act": "5", 
     "graph_img_f": "imgs/henryv_5_0.png", 
     "char_data": {
      "Chorus": {
       "ratio": 0, 
-      "nlines": 46, 
-      "nedges": 0
+      "degrees": 0, 
+      "nlines": 46
      }
     }, 
-    "location": "PROLOGUE", 
-    "scene": "0", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 91, 
+    "deg_assort_coeff": -0.50000000000000078, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "France. The English camp.", 
+    "act": "5", 
     "graph_img_f": "imgs/henryv_5_1.png", 
     "char_data": {
      "FLUELLEN": {
       "ratio": 25.5, 
-      "nlines": 51, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 51
      }, 
      "PISTOL": {
       "ratio": 12.0, 
-      "nlines": 24, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 24
      }, 
      "GOWER": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }
     }, 
-    "location": "France. The English camp.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 394, 
+    "deg_assort_coeff": -0.34939185368777714, 
+    "density": 0.2909090909090909, 
+    "scene": "2", 
+    "total_degrees": 16, 
+    "avg_shortest_path": 1.8181818181818181, 
+    "location": "France. A royal palace.", 
+    "act": "5", 
     "graph_img_f": "imgs/henryv_5_2.png", 
     "char_data": {
      "ALL": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "FRENCH KING": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "KING OF FRANCE": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "QUEEN ISABEL": {
       "ratio": 6.25, 
-      "nlines": 25, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 25
      }, 
      "ALICE": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "BURGUNDY": {
       "ratio": 34.0, 
-      "nlines": 68, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 68
      }, 
      "KING HENRY V": {
       "ratio": 24.22, 
-      "nlines": 218, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 218
      }, 
      "Chorus": {
       "ratio": 16.0, 
-      "nlines": 16, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 16
      }, 
      "WESTMORELAND": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "KATHARINE": {
       "ratio": 11.5, 
-      "nlines": 23, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 23
      }, 
      "EXETER": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }
     }, 
-    "location": "France. A royal palace.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.5126262626262627
    }
   ]
  ], 
@@ -903,278 +1071,278 @@
  "char_data": {
   "BEDFORD": {
    "ratio": 2.0, 
+   "degrees": 4, 
    "nlines": 8, 
-   "nedges": 4, 
    "order_app": 12
   }, 
   "COURT": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 33
   }, 
   "ORLEANS": {
    "ratio": 8.4, 
+   "degrees": 5, 
    "nlines": 42, 
-   "nedges": 5, 
    "order_app": 30
   }, 
   "WARWICK": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 40
   }, 
   "QUEEN ISABEL": {
    "ratio": 6.25, 
+   "degrees": 4, 
    "nlines": 25, 
-   "nedges": 4, 
    "order_app": 42
   }, 
   "JAMY": {
    "ratio": 4.0, 
+   "degrees": 3, 
    "nlines": 12, 
-   "nedges": 3, 
    "order_app": 22
   }, 
   "Messenger": {
    "ratio": 1.5, 
+   "degrees": 4, 
    "nlines": 6, 
-   "nedges": 4, 
    "order_app": 19
   }, 
   "BURGUNDY": {
    "ratio": 34.0, 
+   "degrees": 2, 
    "nlines": 68, 
-   "nedges": 2, 
    "order_app": 43
   }, 
   "NYM": {
    "ratio": 12.25, 
+   "degrees": 4, 
    "nlines": 49, 
-   "nedges": 4, 
    "order_app": 8
   }, 
   "FLUELLEN": {
    "ratio": 36.88, 
+   "degrees": 8, 
    "nlines": 295, 
-   "nedges": 8, 
    "order_app": 20
   }, 
   "BOURBON": {
    "ratio": 4.75, 
+   "degrees": 4, 
    "nlines": 19, 
-   "nedges": 4, 
    "order_app": 27
   }, 
   "DAUPHIN": {
    "ratio": 19.83, 
+   "degrees": 6, 
    "nlines": 119, 
-   "nedges": 6, 
    "order_app": 17
   }, 
   "FRENCH KING": {
    "ratio": 5.0, 
+   "degrees": 3, 
    "nlines": 15, 
-   "nedges": 3, 
    "order_app": 44
   }, 
   "KING OF FRANCE": {
    "ratio": 11.86, 
+   "degrees": 7, 
    "nlines": 83, 
-   "nedges": 7, 
    "order_app": 16
   }, 
   "SCROOP": {
    "ratio": 3.0, 
+   "degrees": 4, 
    "nlines": 12, 
-   "nedges": 4, 
    "order_app": 13
   }, 
   "GREY": {
    "ratio": 5.0, 
+   "degrees": 3, 
    "nlines": 15, 
-   "nedges": 3, 
    "order_app": 15
   }, 
   "GOVERNOR": {
    "ratio": 7.0, 
+   "degrees": 1, 
    "nlines": 7, 
-   "nedges": 1, 
    "order_app": 24
   }, 
   "CANTERBURY": {
    "ratio": 55.75, 
+   "degrees": 4, 
    "nlines": 223, 
-   "nedges": 4, 
    "order_app": 1
   }, 
   "MACMORRIS": {
    "ratio": 6.67, 
+   "degrees": 3, 
    "nlines": 20, 
-   "nedges": 3, 
    "order_app": 23
   }, 
   "PISTOL": {
    "ratio": 20.5, 
+   "degrees": 8, 
    "nlines": 164, 
-   "nedges": 8, 
    "order_app": 9
   }, 
   "WESTMORELAND": {
    "ratio": 6.75, 
+   "degrees": 4, 
    "nlines": 27, 
-   "nedges": 4, 
    "order_app": 5
   }, 
   "Boy": {
    "ratio": 11.0, 
+   "degrees": 7, 
    "nlines": 77, 
-   "nedges": 7, 
    "order_app": 11
   }, 
   "BATES": {
    "ratio": 5.67, 
+   "degrees": 3, 
    "nlines": 17, 
-   "nedges": 3, 
    "order_app": 34
   }, 
   "First Ambassador": {
    "ratio": 17.0, 
+   "degrees": 1, 
    "nlines": 17, 
-   "nedges": 1, 
    "order_app": 6
   }, 
   "Hostess": {
    "ratio": 11.0, 
+   "degrees": 4, 
    "nlines": 44, 
-   "nedges": 4, 
    "order_app": 10
   }, 
   "Constable": {
    "ratio": 16.71, 
+   "degrees": 7, 
    "nlines": 117, 
-   "nedges": 7, 
    "order_app": 18
   }, 
   "ALICE": {
    "ratio": 13.5, 
+   "degrees": 2, 
    "nlines": 27, 
-   "nedges": 2, 
    "order_app": 26
   }, 
   "Chorus": {
    "ratio": 231.0, 
+   "degrees": 1, 
    "nlines": 231, 
-   "nedges": 1, 
    "order_app": 0
   }, 
   "ELY": {
    "ratio": 14.0, 
+   "degrees": 2, 
    "nlines": 28, 
-   "nedges": 2, 
    "order_app": 2
   }, 
   "YORK": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 38
   }, 
   "RAMBURES": {
    "ratio": 2.25, 
+   "degrees": 4, 
    "nlines": 9, 
-   "nedges": 4, 
    "order_app": 31
   }, 
   "French Soldier": {
    "ratio": 7.5, 
+   "degrees": 2, 
    "nlines": 15, 
-   "nedges": 2, 
    "order_app": 39
   }, 
   "Herald": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 41
   }, 
   "ALL": {
    "ratio": 0.67, 
+   "degrees": 3, 
    "nlines": 2, 
-   "nedges": 3, 
    "order_app": 45
   }, 
   "CAMBRIDGE": {
    "ratio": 5.0, 
+   "degrees": 3, 
    "nlines": 15, 
-   "nedges": 3, 
    "order_app": 14
   }, 
   "BARDOLPH": {
    "ratio": 7.75, 
+   "degrees": 4, 
    "nlines": 31, 
-   "nedges": 4, 
    "order_app": 7
   }, 
   "GRANDPRE": {
    "ratio": 18.0, 
+   "degrees": 1, 
    "nlines": 18, 
-   "nedges": 1, 
    "order_app": 36
   }, 
   "ERPINGHAM": {
    "ratio": 4.5, 
+   "degrees": 2, 
    "nlines": 9, 
-   "nedges": 2, 
    "order_app": 32
   }, 
   "KING HENRY V": {
    "ratio": 38.0, 
+   "degrees": 28, 
    "nlines": 1064, 
-   "nedges": 28, 
    "order_app": 3
   }, 
   "MONTJOY": {
    "ratio": 27.5, 
+   "degrees": 2, 
    "nlines": 55, 
-   "nedges": 2, 
    "order_app": 28
   }, 
   "SALISBURY": {
    "ratio": 3.0, 
+   "degrees": 3, 
    "nlines": 9, 
-   "nedges": 3, 
    "order_app": 37
   }, 
   "KATHARINE": {
    "ratio": 29.5, 
+   "degrees": 2, 
    "nlines": 59, 
-   "nedges": 2, 
    "order_app": 25
   }, 
   "EXETER": {
    "ratio": 12.0, 
+   "degrees": 11, 
    "nlines": 132, 
-   "nedges": 11, 
    "order_app": 4
   }, 
   "GOWER": {
    "ratio": 9.71, 
+   "degrees": 7, 
    "nlines": 68, 
-   "nedges": 7, 
    "order_app": 21
   }, 
   "WILLIAMS": {
    "ratio": 18.25, 
+   "degrees": 4, 
    "nlines": 73, 
-   "nedges": 4, 
    "order_app": 35
   }, 
   "GLOUCESTER": {
    "ratio": 1.0, 
+   "degrees": 5, 
    "nlines": 5, 
-   "nedges": 5, 
    "order_app": 29
   }
  }, 

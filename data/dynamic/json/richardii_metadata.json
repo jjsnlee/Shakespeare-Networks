@@ -3,639 +3,753 @@
  "acts": [
   [
    {
+    "total_lines": 210, 
+    "deg_assort_coeff": -0.69047619047619047, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "London. KING RICHARD II's palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/richardii_1_1.png", 
     "char_data": {
      "KING RICHARD II": {
       "ratio": 19.67, 
-      "nlines": 59, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 59
      }, 
      "HENRY BOLINGBROKE": {
       "ratio": 30.0, 
-      "nlines": 60, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 60
      }, 
      "JOHN OF GAUNT": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }, 
      "THOMAS MOWBRAY": {
       "ratio": 41.5, 
-      "nlines": 83, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 83
      }
     }, 
-    "location": "London. KING RICHARD II's palace.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 75, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The DUKE OF LANCASTER'S palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/richardii_1_2.png", 
     "char_data": {
      "DUCHESS": {
       "ratio": 59.0, 
-      "nlines": 59, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 59
      }, 
      "JOHN OF GAUNT": {
       "ratio": 16.0, 
-      "nlines": 16, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 16
      }
     }, 
-    "location": "The DUKE OF LANCASTER'S palace.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 318, 
+    "deg_assort_coeff": 0.16870775408855984, 
+    "density": 0.5, 
+    "scene": "3", 
+    "total_degrees": 14, 
+    "avg_shortest_path": 1.5, 
+    "location": "The lists at Coventry.", 
+    "act": "1", 
     "graph_img_f": "imgs/richardii_1_3.png", 
     "char_data": {
      "Lord Marshal": {
       "ratio": 3.71, 
-      "nlines": 26, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 26
      }, 
      "THOMAS MOWBRAY": {
       "ratio": 18.0, 
-      "nlines": 54, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 54
      }, 
      "DUKE OF AUMERLE": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "JOHN OF GAUNT": {
       "ratio": 20.67, 
-      "nlines": 62, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 62
      }, 
      "Second Herald": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "KING RICHARD II": {
       "ratio": 15.6, 
-      "nlines": 78, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 78
      }, 
      "HENRY BOLINGBROKE": {
       "ratio": 19.75, 
-      "nlines": 79, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 79
      }, 
      "First Herald": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }
     }, 
-    "location": "The lists at Coventry.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.8458333333333332
    }, 
    {
+    "total_lines": 67, 
+    "deg_assort_coeff": -0.92800488102501522, 
+    "density": 0.4, 
+    "scene": "4", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.6, 
+    "location": "The court.", 
+    "act": "1", 
     "graph_img_f": "imgs/richardii_1_4.png", 
     "char_data": {
      "KING RICHARD II": {
       "ratio": 10.25, 
-      "nlines": 41, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 41
      }, 
      "All": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "GREEN": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "BUSHY": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "DUKE OF AUMERLE": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }
     }, 
-    "location": "The court.", 
-    "scene": "4", 
-    "act": "1"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 307, 
+    "deg_assort_coeff": -0.26164267569855881, 
+    "density": 0.47619047619047616, 
+    "scene": "1", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.7142857142857142, 
+    "location": "Ely House.", 
+    "act": "2", 
     "graph_img_f": "imgs/richardii_2_1.png", 
     "char_data": {
      "NORTHUMBERLAND": {
       "ratio": 12.5, 
-      "nlines": 50, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 50
      }, 
      "QUEEN": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "DUKE OF YORK": {
       "ratio": 18.75, 
-      "nlines": 75, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 75
      }, 
      "JOHN OF GAUNT": {
       "ratio": 53.5, 
-      "nlines": 107, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 107
      }, 
      "KING RICHARD II": {
       "ratio": 10.75, 
-      "nlines": 43, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 43
      }, 
      "LORD WILLOUGHBY": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "LORD ROSS": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }
     }, 
-    "location": "Ely House.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.7619047619047619
    }, 
    {
+    "total_lines": 158, 
+    "deg_assort_coeff": -0.1076923076923077, 
+    "density": 0.5333333333333333, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.6, 
+    "location": "The palace.", 
+    "act": "2", 
     "graph_img_f": "imgs/richardii_2_2.png", 
     "char_data": {
      "Servant": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "QUEEN": {
       "ratio": 13.67, 
-      "nlines": 41, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 41
      }, 
      "GREEN": {
       "ratio": 8.33, 
-      "nlines": 25, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 25
      }, 
      "BAGOT": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "DUKE OF YORK": {
       "ratio": 14.67, 
-      "nlines": 44, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 44
      }, 
      "BUSHY": {
       "ratio": 8.25, 
-      "nlines": 33, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 33
      }
     }, 
-    "location": "The palace.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.5277777777777778
    }, 
    {
+    "total_lines": 178, 
+    "deg_assort_coeff": -0.36222767277449175, 
+    "density": 0.5714285714285714, 
+    "scene": "3", 
+    "total_degrees": 12, 
+    "avg_shortest_path": 1.4285714285714286, 
+    "location": "Wilds in Gloucestershire.", 
+    "act": "2", 
     "graph_img_f": "imgs/richardii_2_3.png", 
     "char_data": {
      "LORD BERKELEY": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "NORTHUMBERLAND": {
       "ratio": 7.0, 
-      "nlines": 35, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 35
      }, 
      "LORD ROSS": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "HENRY PERCY": {
       "ratio": 11.0, 
-      "nlines": 22, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 22
      }, 
      "LORD WILLOUGHBY": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "HENRY BOLINGBROKE": {
       "ratio": 9.67, 
-      "nlines": 58, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 58
      }, 
      "DUKE OF YORK": {
       "ratio": 16.67, 
-      "nlines": 50, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 50
      }
     }, 
-    "location": "Wilds in Gloucestershire.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.6857142857142857
    }, 
    {
+    "total_lines": 26, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "A camp in Wales.", 
+    "act": "2", 
     "graph_img_f": "imgs/richardii_2_4.png", 
     "char_data": {
      "EARL OF SALISBURY": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "Captain": {
       "ratio": 16.0, 
-      "nlines": 16, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 16
      }
     }, 
-    "location": "A camp in Wales.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 46, 
+    "deg_assort_coeff": -0.59999999999999998, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Bristol. Before the castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/richardii_3_1.png", 
     "char_data": {
      "HENRY BOLINGBROKE": {
       "ratio": 13.33, 
-      "nlines": 40, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 40
      }, 
      "GREEN": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "DUKE OF YORK": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "BUSHY": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "Bristol. Before the castle.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 224, 
+    "deg_assort_coeff": -0.59281437125748693, 
+    "density": 0.7, 
+    "scene": "2", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The coast of Wales. A castle in view.", 
+    "act": "3", 
     "graph_img_f": "imgs/richardii_3_2.png", 
     "char_data": {
      "KING RICHARD II": {
       "ratio": 37.5, 
-      "nlines": 150, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 150
      }, 
      "EARL OF SALISBURY": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "BISHOP OF CARLISLE": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "DUKE OF AUMERLE": {
       "ratio": 3.0, 
-      "nlines": 12, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 12
      }, 
      "SIR STEPHEN SCROOP": {
       "ratio": 18.5, 
-      "nlines": 37, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 37
      }
     }, 
-    "location": "The coast of Wales. A castle in view.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.8
    }, 
    {
+    "total_lines": 223, 
+    "deg_assort_coeff": -0.42803030303030115, 
+    "density": 0.6, 
+    "scene": "3", 
+    "total_degrees": 9, 
+    "avg_shortest_path": 1.4666666666666666, 
+    "location": "Wales. Before Flint castle.", 
+    "act": "3", 
     "graph_img_f": "imgs/richardii_3_3.png", 
     "char_data": {
      "NORTHUMBERLAND": {
       "ratio": 7.75, 
-      "nlines": 31, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 31
      }, 
      "HENRY PERCY": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "KING RICHARD II": {
       "ratio": 27.5, 
-      "nlines": 110, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 110
      }, 
      "HENRY BOLINGBROKE": {
       "ratio": 14.5, 
-      "nlines": 58, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 58
      }, 
      "DUKE OF AUMERLE": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "DUKE OF YORK": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }
     }, 
-    "location": "Wales. Before Flint castle.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.6388888888888888
    }, 
    {
+    "total_lines": 116, 
+    "deg_assort_coeff": -0.46921443736730362, 
+    "density": 0.4, 
+    "scene": "4", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.8, 
+    "location": "LANGLEY. The DUKE OF YORK's garden.", 
+    "act": "3", 
     "graph_img_f": "imgs/richardii_3_4.png", 
     "char_data": {
      "Servant": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "QUEEN": {
       "ratio": 15.67, 
-      "nlines": 47, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 47
      }, 
      "Lady": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "Gardener": {
       "ratio": 23.0, 
-      "nlines": 46, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 46
      }, 
      "GARDENER": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }
     }, 
-    "location": "LANGLEY. The DUKE OF YORK's garden.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.0
    }
   ], 
   [
    {
+    "total_lines": 349, 
+    "deg_assort_coeff": -0.23191878897935636, 
+    "density": 0.2878787878787879, 
+    "scene": "1", 
+    "total_degrees": 19, 
+    "avg_shortest_path": 1.893939393939394, 
+    "location": "Westminster Hall.", 
+    "act": "4", 
     "graph_img_f": "imgs/richardii_4_1.png", 
     "char_data": {
      "LORD FITZWATER": {
       "ratio": 11.5, 
-      "nlines": 23, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 23
      }, 
      "HENRY BOLINGBROKE": {
       "ratio": 6.14, 
-      "nlines": 43, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 43
      }, 
      "DUKE OF SURREY": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "NORTHUMBERLAND": {
       "ratio": 5.0, 
-      "nlines": 15, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 15
      }, 
      "HENRY PERCY": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "Abbot": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "Lord": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "KING RICHARD II": {
       "ratio": 45.67, 
-      "nlines": 137, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 137
      }, 
      "BAGOT": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "BISHOP OF CARLISLE": {
       "ratio": 12.25, 
-      "nlines": 49, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 49
      }, 
      "DUKE OF AUMERLE": {
       "ratio": 3.25, 
-      "nlines": 26, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 26
      }, 
      "DUKE OF YORK": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }
     }, 
-    "location": "Westminster Hall.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.6259920634920635
    }
   ], 
   [
    {
+    "total_lines": 105, 
+    "deg_assort_coeff": -0.500000000000001, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "London. A street leading to the Tower.", 
+    "act": "5", 
     "graph_img_f": "imgs/richardii_5_1.png", 
     "char_data": {
      "KING RICHARD II": {
       "ratio": 32.5, 
-      "nlines": 65, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 65
      }, 
      "QUEEN": {
       "ratio": 16.5, 
-      "nlines": 33, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 33
      }, 
      "NORTHUMBERLAND": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }
     }, 
-    "location": "London. A street leading to the Tower.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 134, 
+    "deg_assort_coeff": -0.50000000000000089, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "The DUKE OF YORK's palace.", 
+    "act": "5", 
     "graph_img_f": "imgs/richardii_5_2.png", 
     "char_data": {
      "DUCHESS OF YORK": {
       "ratio": 23.0, 
-      "nlines": 46, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 46
      }, 
      "DUKE OF AUMERLE": {
       "ratio": 5.5, 
-      "nlines": 11, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 11
      }, 
      "DUKE OF YORK": {
       "ratio": 38.5, 
-      "nlines": 77, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 77
      }
     }, 
-    "location": "The DUKE OF YORK's palace.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 159, 
+    "deg_assort_coeff": -0.57450721222918566, 
+    "density": 0.7, 
+    "scene": "3", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "A royal palace.", 
+    "act": "5", 
     "graph_img_f": "imgs/richardii_5_3.png", 
     "char_data": {
      "DUCHESS OF YORK": {
       "ratio": 17.0, 
-      "nlines": 51, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 51
      }, 
      "HENRY PERCY": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "HENRY BOLINGBROKE": {
       "ratio": 14.75, 
-      "nlines": 59, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 59
      }, 
      "DUKE OF AUMERLE": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "DUKE OF YORK": {
       "ratio": 10.0, 
-      "nlines": 30, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 30
      }
     }, 
-    "location": "A royal palace.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.7
    }, 
    {
+    "total_lines": 13, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The same.", 
+    "act": "5", 
     "graph_img_f": "imgs/richardii_5_4.png", 
     "char_data": {
      "Servant": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "EXTON": {
       "ratio": 11.0, 
-      "nlines": 11, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 11
      }
     }, 
-    "location": "The same.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 129, 
+    "deg_assort_coeff": -0.7142857142857143, 
+    "density": 0.6666666666666666, 
+    "scene": "5", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Pomfret castle.", 
+    "act": "5", 
     "graph_img_f": "imgs/richardii_5_5.png", 
     "char_data": {
      "Keeper": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "KING RICHARD II": {
       "ratio": 34.33, 
-      "nlines": 103, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 103
      }, 
      "Groom": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "EXTON": {
       "ratio": 7.0, 
-      "nlines": 7, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 7
      }
     }, 
-    "location": "Pomfret castle.", 
-    "scene": "5", 
-    "act": "5"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 58, 
+    "deg_assort_coeff": -0.97402597402597402, 
+    "density": 0.4, 
+    "scene": "6", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.6, 
+    "location": "Windsor castle.", 
+    "act": "5", 
     "graph_img_f": "imgs/richardii_5_6.png", 
     "char_data": {
      "LORD FITZWATER": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "HENRY BOLINGBROKE": {
       "ratio": 9.75, 
-      "nlines": 39, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 39
      }, 
      "HENRY PERCY": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "NORTHUMBERLAND": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "EXTON": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }
     }, 
-    "location": "Windsor castle.", 
-    "scene": "6", 
-    "act": "5"
+    "avg_clustering": 0.0
    }
   ]
  ], 
@@ -681,218 +795,218 @@
  "char_data": {
   "LORD BERKELEY": {
    "ratio": 4.5, 
+   "degrees": 2, 
    "nlines": 9, 
-   "nedges": 2, 
    "order_app": 20
   }, 
   "GREEN": {
    "ratio": 6.4, 
+   "degrees": 5, 
    "nlines": 32, 
-   "nedges": 5, 
    "order_app": 9
   }, 
   "Lord": {
    "ratio": 5.0, 
+   "degrees": 1, 
    "nlines": 5, 
-   "nedges": 1, 
    "order_app": 29
   }, 
   "DUCHESS OF YORK": {
    "ratio": 32.33, 
+   "degrees": 3, 
    "nlines": 97, 
-   "nedges": 3, 
    "order_app": 32
   }, 
   "KING RICHARD II": {
    "ratio": 46.24, 
+   "degrees": 17, 
    "nlines": 786, 
-   "nedges": 17, 
    "order_app": 0
   }, 
   "BISHOP OF CARLISLE": {
    "ratio": 12.6, 
+   "degrees": 5, 
    "nlines": 63, 
-   "nedges": 5, 
    "order_app": 23
   }, 
   "First Herald": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 7
   }, 
   "Gardener": {
    "ratio": 23.0, 
+   "degrees": 2, 
    "nlines": 46, 
-   "nedges": 2, 
    "order_app": 26
   }, 
   "NORTHUMBERLAND": {
    "ratio": 15.89, 
+   "degrees": 9, 
    "nlines": 143, 
-   "nedges": 9, 
    "order_app": 14
   }, 
   "DUCHESS": {
    "ratio": 59.0, 
+   "degrees": 1, 
    "nlines": 59, 
-   "nedges": 1, 
    "order_app": 4
   }, 
   "HENRY PERCY": {
    "ratio": 15.33, 
+   "degrees": 3, 
    "nlines": 46, 
-   "nedges": 3, 
    "order_app": 19
   }, 
   "Second Herald": {
    "ratio": 3.5, 
+   "degrees": 2, 
    "nlines": 7, 
-   "nedges": 2, 
    "order_app": 8
   }, 
   "Keeper": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 35
   }, 
   "Lady": {
    "ratio": 6.0, 
+   "degrees": 1, 
    "nlines": 6, 
-   "nedges": 1, 
    "order_app": 25
   }, 
   "LORD ROSS": {
    "ratio": 7.33, 
+   "degrees": 3, 
    "nlines": 22, 
-   "nedges": 3, 
    "order_app": 15
   }, 
   "Abbot": {
    "ratio": 3.67, 
+   "degrees": 3, 
    "nlines": 11, 
-   "nedges": 3, 
    "order_app": 31
   }, 
   "LORD FITZWATER": {
    "ratio": 9.0, 
+   "degrees": 3, 
    "nlines": 27, 
-   "nedges": 3, 
    "order_app": 28
   }, 
   "Servant": {
    "ratio": 5.67, 
+   "degrees": 3, 
    "nlines": 17, 
-   "nedges": 3, 
    "order_app": 17
   }, 
   "Groom": {
    "ratio": 6.5, 
+   "degrees": 2, 
    "nlines": 13, 
-   "nedges": 2, 
    "order_app": 34
   }, 
   "EARL OF SALISBURY": {
    "ratio": 7.0, 
+   "degrees": 3, 
    "nlines": 21, 
-   "nedges": 3, 
    "order_app": 22
   }, 
   "JOHN OF GAUNT": {
    "ratio": 38.6, 
+   "degrees": 5, 
    "nlines": 193, 
-   "nedges": 5, 
    "order_app": 1
   }, 
   "SIR STEPHEN SCROOP": {
    "ratio": 18.5, 
+   "degrees": 2, 
    "nlines": 37, 
-   "nedges": 2, 
    "order_app": 24
   }, 
   "LORD WILLOUGHBY": {
    "ratio": 3.25, 
+   "degrees": 4, 
    "nlines": 13, 
-   "nedges": 4, 
    "order_app": 16
   }, 
   "HENRY BOLINGBROKE": {
    "ratio": 22.95, 
+   "degrees": 19, 
    "nlines": 436, 
-   "nedges": 19, 
    "order_app": 2
   }, 
   "All": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 11
   }, 
   "Lord Marshal": {
    "ratio": 3.71, 
+   "degrees": 7, 
    "nlines": 26, 
-   "nedges": 7, 
    "order_app": 5
   }, 
   "THOMAS MOWBRAY": {
    "ratio": 45.67, 
+   "degrees": 3, 
    "nlines": 137, 
-   "nedges": 3, 
    "order_app": 3
   }, 
   "DUKE OF SURREY": {
    "ratio": 5.0, 
+   "degrees": 2, 
    "nlines": 10, 
-   "nedges": 2, 
    "order_app": 30
   }, 
   "QUEEN": {
    "ratio": 15.25, 
+   "degrees": 8, 
    "nlines": 122, 
-   "nedges": 8, 
    "order_app": 13
   }, 
   "GARDENER": {
    "ratio": 7.0, 
+   "degrees": 1, 
    "nlines": 7, 
-   "nedges": 1, 
    "order_app": 27
   }, 
   "BAGOT": {
    "ratio": 5.75, 
+   "degrees": 4, 
    "nlines": 23, 
-   "nedges": 4, 
    "order_app": 18
   }, 
   "Captain": {
    "ratio": 16.0, 
+   "degrees": 1, 
    "nlines": 16, 
-   "nedges": 1, 
    "order_app": 21
   }, 
   "DUKE OF AUMERLE": {
    "ratio": 6.14, 
+   "degrees": 14, 
    "nlines": 86, 
-   "nedges": 14, 
    "order_app": 6
   }, 
   "DUKE OF YORK": {
    "ratio": 30.3, 
+   "degrees": 10, 
    "nlines": 303, 
-   "nedges": 10, 
    "order_app": 12
   }, 
   "BUSHY": {
    "ratio": 6.5, 
+   "degrees": 6, 
    "nlines": 39, 
-   "nedges": 6, 
    "order_app": 10
   }, 
   "EXTON": {
    "ratio": 7.67, 
+   "degrees": 3, 
    "nlines": 23, 
-   "nedges": 3, 
    "order_app": 33
   }
  }, 

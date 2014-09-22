@@ -3,1054 +3,1198 @@
  "acts": [
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 268, 
+    "deg_assort_coeff": -0.034917301128903552, 
+    "density": 0.32727272727272727, 
+    "scene": "1", 
+    "total_degrees": 18, 
+    "avg_shortest_path": 2.018181818181818, 
+    "location": "London. The palace.", 
+    "act": "1", 
+    "graph_img_f": "imgs/2henryvi_1_1.png", 
     "char_data": {
      "ALL": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "KING HENRY VI": {
       "ratio": 5.4, 
-      "nlines": 27, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 27
      }, 
      "QUEEN MARGARET": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "SUFFOLK": {
       "ratio": 6.67, 
-      "nlines": 20, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 20
      }, 
      "BUCKINGHAM": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "CARDINAL": {
       "ratio": 8.0, 
-      "nlines": 32, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 32
      }, 
      "YORK": {
       "ratio": 18.67, 
-      "nlines": 56, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 56
      }, 
      "WARWICK": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "SOMERSET": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "GLOUCESTER": {
       "ratio": 12.4, 
-      "nlines": 62, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 62
      }, 
      "SALISBURY": {
       "ratio": 7.25, 
-      "nlines": 29, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 29
      }
     }, 
-    "location": "London. The palace.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.609090909090909
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 112, 
+    "deg_assort_coeff": -0.24559023066485819, 
+    "density": 0.5, 
+    "scene": "2", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "GLOUCESTER'S house.", 
+    "act": "1", 
+    "graph_img_f": "imgs/2henryvi_1_2.png", 
     "char_data": {
      "DUCHESS": {
       "ratio": 27.0, 
-      "nlines": 54, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 54
      }, 
      "GLOUCESTER": {
       "ratio": 13.0, 
-      "nlines": 26, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 26
      }, 
      "Messenger": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "HUME": {
       "ratio": 29.0, 
-      "nlines": 29, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 29
      }
     }, 
-    "location": "GLOUCESTER'S house.", 
-    "scene": "2", 
-    "act": "1"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 233, 
+    "deg_assort_coeff": -0.18598775039922216, 
+    "density": 0.31666666666666665, 
+    "scene": "3", 
+    "total_degrees": 38, 
+    "avg_shortest_path": 1.8166666666666667, 
+    "location": "The palace.", 
+    "act": "1", 
+    "graph_img_f": "imgs/2henryvi_1_3.png", 
     "char_data": {
      "ALL": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "KING HENRY VI": {
       "ratio": 2.0, 
-      "nlines": 10, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 10
      }, 
      "QUEEN MARGARET": {
       "ratio": 7.5, 
-      "nlines": 60, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 60
      }, 
      "SUFFOLK": {
       "ratio": 5.44, 
-      "nlines": 49, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 49
      }, 
      "DUCHESS": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "BUCKINGHAM": {
       "ratio": 2.0, 
-      "nlines": 10, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 10
      }, 
      "Second Petitioner": {
       "ratio": 2.0, 
-      "nlines": 6, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 6
      }, 
      "SALISBURY": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "CARDINAL": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "YORK": {
       "ratio": 2.5, 
-      "nlines": 15, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 15
      }, 
      "WARWICK": {
       "ratio": 1.33, 
-      "nlines": 8, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 8
      }, 
      "HORNER": {
       "ratio": 2.75, 
-      "nlines": 11, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 11
      }, 
      "First Petitioner": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "SOMERSET": {
       "ratio": 0.83, 
-      "nlines": 5, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 5
      }, 
      "PETER": {
       "ratio": 2.33, 
-      "nlines": 14, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 14
      }, 
      "GLOUCESTER": {
       "ratio": 3.67, 
-      "nlines": 22, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 22
      }
     }, 
-    "location": "The palace.", 
-    "scene": "3", 
-    "act": "1"
+    "avg_clustering": 0.3741567460317461
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 96, 
+    "deg_assort_coeff": -0.2347266881028939, 
+    "density": 0.38095238095238093, 
+    "scene": "4", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.9523809523809523, 
+    "location": "GLOUCESTER's garden.", 
+    "act": "1", 
+    "graph_img_f": "imgs/2henryvi_1_4.png", 
     "char_data": {
      "MARGARET JOURDAIN": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "BOLINGBROKE": {
       "ratio": 7.25, 
-      "nlines": 29, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 29
      }, 
      "DUCHESS": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "BUCKINGHAM": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "YORK": {
       "ratio": 12.0, 
-      "nlines": 36, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 36
      }, 
      "Spirit": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "HUME": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "GLOUCESTER's garden.", 
-    "scene": "4", 
-    "act": "1"
+    "avg_clustering": 0.35714285714285715
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 225, 
+    "deg_assort_coeff": -0.4095710047196861, 
+    "density": 0.45454545454545453, 
+    "scene": "1", 
+    "total_degrees": 25, 
+    "avg_shortest_path": 1.5818181818181818, 
+    "location": "Saint Alban's.", 
+    "act": "2", 
+    "graph_img_f": "imgs/2henryvi_2_1.png", 
     "char_data": {
      "KING HENRY VI": {
       "ratio": 5.57, 
-      "nlines": 39, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 39
      }, 
      "Wife": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "QUEEN MARGARET": {
       "ratio": 3.33, 
-      "nlines": 10, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 10
      }, 
      "Beadle": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "SUFFOLK": {
       "ratio": 2.17, 
-      "nlines": 13, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 13
      }, 
      "BUCKINGHAM": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "CARDINAL": {
       "ratio": 4.83, 
-      "nlines": 29, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 29
      }, 
      "Townsman": {
       "ratio": 1.33, 
-      "nlines": 4, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 4
      }, 
      "SIMPCOX": {
       "ratio": 3.71, 
-      "nlines": 26, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 26
      }, 
      "Mayor": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "GLOUCESTER": {
       "ratio": 8.78, 
-      "nlines": 79, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 79
      }
     }, 
-    "location": "Saint Alban's.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.7167388167388168
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 84, 
+    "deg_assort_coeff": -0.40000000000000052, 
+    "density": 0.8333333333333334, 
+    "scene": "2", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "London. YORK'S garden.", 
+    "act": "2", 
+    "graph_img_f": "imgs/2henryvi_2_2.png", 
     "char_data": {
      "BOTH": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "SALISBURY": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "YORK": {
       "ratio": 19.67, 
-      "nlines": 59, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 59
      }, 
      "WARWICK": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }
     }, 
-    "location": "London. YORK'S garden.", 
-    "scene": "2", 
-    "act": "2"
+    "avg_clustering": 0.8333333333333333
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 106, 
+    "deg_assort_coeff": 0.19674796747967513, 
+    "density": 0.2878787878787879, 
+    "scene": "3", 
+    "total_degrees": 19, 
+    "avg_shortest_path": 2.106060606060606, 
+    "location": "A hall of justice.", 
+    "act": "2", 
+    "graph_img_f": "imgs/2henryvi_2_3.png", 
     "char_data": {
      "GLOUCESTER": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "YORK": {
       "ratio": 2.33, 
-      "nlines": 14, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 14
      }, 
      "KING HENRY VI": {
       "ratio": 5.6, 
-      "nlines": 28, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 28
      }, 
      "QUEEN MARGARET": {
       "ratio": 3.0, 
-      "nlines": 12, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 12
      }, 
      "SUFFOLK": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "DUCHESS": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "First Neighbour": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "SALISBURY": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "HORNER": {
       "ratio": 3.25, 
-      "nlines": 13, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 13
      }, 
      "PETER": {
       "ratio": 2.75, 
-      "nlines": 11, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 11
      }, 
      "Third Neighbour": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "Second Neighbour": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }
     }, 
-    "location": "A hall of justice.", 
-    "scene": "3", 
-    "act": "2"
+    "avg_clustering": 0.47222222222222227
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 116, 
+    "deg_assort_coeff": -0.76422193237684355, 
+    "density": 0.38095238095238093, 
+    "scene": "4", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.619047619047619, 
+    "location": "A street.", 
+    "act": "2", 
+    "graph_img_f": "imgs/2henryvi_2_4.png", 
     "char_data": {
      "DUCHESS": {
       "ratio": 19.0, 
-      "nlines": 57, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 57
      }, 
      "Sheriff": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "Servant": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "Herald": {
       "ratio": 2.0, 
-      "nlines": 2, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 2
      }, 
      "Servants": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "STANLEY": {
       "ratio": 3.5, 
-      "nlines": 7, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 7
      }, 
      "GLOUCESTER": {
       "ratio": 7.33, 
-      "nlines": 44, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 44
      }
     }, 
-    "location": "A street.", 
-    "scene": "4", 
-    "act": "2"
+    "avg_clustering": 0.39999999999999997
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 394, 
+    "deg_assort_coeff": -0.23151825752722544, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 24, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The Abbey at Bury St. Edmund's.", 
+    "act": "3", 
+    "graph_img_f": "imgs/2henryvi_3_1.png", 
     "char_data": {
      "KING HENRY VI": {
       "ratio": 7.33, 
-      "nlines": 44, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 44
      }, 
      "QUEEN MARGARET": {
       "ratio": 11.5, 
-      "nlines": 69, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 69
      }, 
      "SUFFOLK": {
       "ratio": 12.6, 
-      "nlines": 63, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 63
      }, 
      "BUCKINGHAM": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "CARDINAL": {
       "ratio": 4.29, 
-      "nlines": 30, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 30
      }, 
      "YORK": {
       "ratio": 12.38, 
-      "nlines": 99, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 99
      }, 
      "SOMERSET": {
       "ratio": 1.75, 
-      "nlines": 7, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 7
      }, 
      "Post": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }, 
      "GLOUCESTER": {
       "ratio": 11.83, 
-      "nlines": 71, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 71
      }
     }, 
-    "location": "The Abbey at Bury St. Edmund's.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.7698412698412698
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 435, 
+    "deg_assort_coeff": -0.21140889181661662, 
+    "density": 0.25757575757575757, 
+    "scene": "2", 
+    "total_degrees": 17, 
+    "avg_shortest_path": 2.090909090909091, 
+    "location": "Bury St. Edmund's. A room of state.", 
+    "act": "3", 
+    "graph_img_f": "imgs/2henryvi_3_2.png", 
     "char_data": {
      "First Murder": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "VAUX": {
       "ratio": 11.0, 
-      "nlines": 11, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 11
      }, 
      "QUEEN MARGARET": {
       "ratio": 21.83, 
-      "nlines": 131, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 131
      }, 
      "KING HENRY VI": {
       "ratio": 20.25, 
-      "nlines": 81, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 81
      }, 
      "Commons": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }, 
      "SUFFOLK": {
       "ratio": 14.57, 
-      "nlines": 102, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 102
      }, 
      "First Murderer": {
       "ratio": 2.0, 
-      "nlines": 4, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 4
      }, 
      "CARDINAL": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "SALISBURY": {
       "ratio": 14.5, 
-      "nlines": 29, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 29
      }, 
      "WARWICK": {
       "ratio": 22.0, 
-      "nlines": 66, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 66
      }, 
      "SOMERSET": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "Second Murderer": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }
     }, 
-    "location": "Bury St. Edmund's. A room of state.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.3142857142857143
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 35, 
+    "deg_assort_coeff": -0.57024793388429884, 
+    "density": 0.8333333333333334, 
+    "scene": "3", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "A bedchamber.", 
+    "act": "3", 
+    "graph_img_f": "imgs/2henryvi_3_3.png", 
     "char_data": {
      "KING HENRY VI": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "CARDINAL": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "SALISBURY": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "WARWICK": {
       "ratio": 1.0, 
-      "nlines": 3, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 3
      }
     }, 
-    "location": "A bedchamber.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.8333333333333333
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 157, 
+    "deg_assort_coeff": 0.036062341208146172, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 10, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The coast of Kent.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_1.png", 
     "char_data": {
      "WHITMORE": {
       "ratio": 5.25, 
-      "nlines": 21, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 21
      }, 
      "First Gentleman": {
       "ratio": 1.6, 
-      "nlines": 8, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 8
      }, 
      "SUFFOLK": {
       "ratio": 19.67, 
-      "nlines": 59, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 59
      }, 
      "Master": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "Second Gentleman": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "Captain": {
       "ratio": 16.5, 
-      "nlines": 66, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 66
      }
     }, 
-    "location": "The coast of Kent.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 0.8055555555555555
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 88, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "10", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Kent. IDEN's garden.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_10.png", 
     "char_data": {
      "IDEN": {
       "ratio": 43.0, 
-      "nlines": 43, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 43
      }, 
      "CADE": {
       "ratio": 45.0, 
-      "nlines": 45, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 45
      }
     }, 
-    "location": "Kent. IDEN's garden.", 
-    "scene": "10", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 187, 
+    "deg_assort_coeff": -0.39067366674373993, 
+    "density": 0.3090909090909091, 
+    "scene": "2", 
+    "total_degrees": 17, 
+    "avg_shortest_path": 1.8363636363636364, 
+    "location": "Blackheath.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_2.png", 
     "char_data": {
      "ALL": {
       "ratio": 1.25, 
-      "nlines": 5, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 5
      }, 
      "HOLLAND": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "Clerk": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "SIR HUMPHREY": {
       "ratio": 4.25, 
-      "nlines": 17, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 17
      }, 
      "SMITH": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "BEVIS": {
       "ratio": 13.0, 
-      "nlines": 13, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 13
      }, 
      "DICK": {
       "ratio": 7.33, 
-      "nlines": 22, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 22
      }, 
      "MICHAEL": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "CADE": {
       "ratio": 10.11, 
-      "nlines": 91, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 91
      }, 
      "CLERK": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "WILLIAM STAFFORD": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }
     }, 
-    "location": "Blackheath.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.5328282828282828
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 20, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "3", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "Another part of Blackheath.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_3.png", 
     "char_data": {
      "DICK": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "CADE": {
       "ratio": 16.0, 
-      "nlines": 16, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 16
      }
     }, 
-    "location": "Another part of Blackheath.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 63, 
+    "deg_assort_coeff": -0.25605737546036056, 
+    "density": 0.8, 
+    "scene": "4", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 1.2, 
+    "location": "London. The palace.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_4.png", 
     "char_data": {
      "QUEEN MARGARET": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }, 
      "SAY": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "BUCKINGHAM": {
       "ratio": 1.5, 
-      "nlines": 6, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 6
      }, 
      "Messenger": {
       "ratio": 5.33, 
-      "nlines": 16, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 16
      }, 
      "KING HENRY VI": {
       "ratio": 4.25, 
-      "nlines": 17, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 17
      }
     }, 
-    "location": "London. The palace.", 
-    "scene": "4", 
-    "act": "4"
+    "avg_clustering": 0.8666666666666666
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 13, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "5", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "London. The Tower.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_5.png", 
     "char_data": {
      "First Citizen": {
       "ratio": 4.0, 
-      "nlines": 4, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 4
      }, 
      "SCALES": {
       "ratio": 9.0, 
-      "nlines": 9, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 9
      }
     }, 
-    "location": "London. The Tower.", 
-    "scene": "5", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 18, 
+    "deg_assort_coeff": -0.59999999999999998, 
+    "density": 0.6666666666666666, 
+    "scene": "6", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "London. Cannon Street.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_6.png", 
     "char_data": {
      "Soldier": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "DICK": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "SMITH": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "CADE": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }
     }, 
-    "location": "London. Cannon Street.", 
-    "scene": "6", 
-    "act": "4"
+    "avg_clustering": 0.5833333333333334
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 132, 
+    "deg_assort_coeff": -0.46888217522658643, 
+    "density": 0.39285714285714285, 
+    "scene": "7", 
+    "total_degrees": 11, 
+    "avg_shortest_path": 1.7142857142857142, 
+    "location": "London. Smithfield.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_7.png", 
     "char_data": {
      "ALL": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "HOLLAND": {
       "ratio": 1.67, 
-      "nlines": 5, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 5
      }, 
      "BEVIS": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "DICK": {
       "ratio": 2.67, 
-      "nlines": 8, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 8
      }, 
      "SMITH": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "SAY": {
       "ratio": 10.25, 
-      "nlines": 41, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 41
      }, 
      "Messenger": {
       "ratio": 5.0, 
-      "nlines": 5, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 5
      }, 
      "CADE": {
       "ratio": 11.17, 
-      "nlines": 67, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 67
      }
     }, 
-    "location": "London. Smithfield.", 
-    "scene": "7", 
-    "act": "4"
+    "avg_clustering": 0.49166666666666664
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 73, 
+    "deg_assort_coeff": 0.0, 
+    "density": 0.6666666666666666, 
+    "scene": "8", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Southwark.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_8.png", 
     "char_data": {
      "BUCKINGHAM": {
       "ratio": 6.0, 
-      "nlines": 12, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 12
      }, 
      "ALL": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "CADE": {
       "ratio": 15.5, 
-      "nlines": 31, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 31
      }, 
      "CLIFFORD": {
       "ratio": 13.5, 
-      "nlines": 27, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 27
      }
     }, 
-    "location": "Southwark.", 
-    "scene": "8", 
-    "act": "4"
+    "avg_clustering": 0.0
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 53, 
+    "deg_assort_coeff": -0.64971751412429302, 
+    "density": 0.4, 
+    "scene": "9", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.6, 
+    "location": "Kenilworth Castle.", 
+    "act": "4", 
+    "graph_img_f": "imgs/2henryvi_4_9.png", 
     "char_data": {
      "ALL": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }, 
      "KING HENRY VI": {
       "ratio": 6.8, 
-      "nlines": 34, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 34
      }, 
      "BUCKINGHAM": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "Messenger": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "SOMERSET": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "CLIFFORD": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "Kenilworth Castle.", 
-    "scene": "9", 
-    "act": "4"
+    "avg_clustering": 0.35000000000000003
    }
   ], 
   [
    {
-    "graph_img_f": null, 
+    "total_lines": 231, 
+    "deg_assort_coeff": -0.2755425432374497, 
+    "density": 0.30303030303030304, 
+    "scene": "1", 
+    "total_degrees": 20, 
+    "avg_shortest_path": 1.9242424242424243, 
+    "location": "Fields between Dartford and Blackheath.", 
+    "act": "5", 
+    "graph_img_f": "imgs/2henryvi_5_1.png", 
     "char_data": {
      "IDEN": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "RICHARD": {
       "ratio": 3.67, 
-      "nlines": 11, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 11
      }, 
      "KING HENRY VI": {
       "ratio": 5.67, 
-      "nlines": 34, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 34
      }, 
      "QUEEN MARGARET": {
       "ratio": 2.5, 
-      "nlines": 10, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 10
      }, 
      "CLIFFORD": {
       "ratio": 3.67, 
-      "nlines": 22, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 22
      }, 
      "BUCKINGHAM": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "EDWARD": {
       "ratio": 0.5, 
-      "nlines": 1, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 1
      }, 
      "YORK": {
       "ratio": 13.86, 
-      "nlines": 97, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 97
      }, 
      "WARWICK": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }, 
      "SOMERSET": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }, 
      "YOUNG CLIFFORD": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "SALISBURY": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }
     }, 
-    "location": "Fields between Dartford and Blackheath.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.5015873015873016
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 106, 
+    "deg_assort_coeff": 0.1829155060352832, 
+    "density": 0.38095238095238093, 
+    "scene": "2", 
+    "total_degrees": 8, 
+    "avg_shortest_path": 2.0476190476190474, 
+    "location": "Saint Alban's.", 
+    "act": "5", 
+    "graph_img_f": "imgs/2henryvi_5_2.png", 
     "char_data": {
      "RICHARD": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "KING HENRY VI": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "QUEEN MARGARET": {
       "ratio": 4.33, 
-      "nlines": 13, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 13
      }, 
      "YOUNG CLIFFORD": {
       "ratio": 15.67, 
-      "nlines": 47, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 47
      }, 
      "YORK": {
       "ratio": 5.67, 
-      "nlines": 17, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 17
      }, 
      "WARWICK": {
       "ratio": 7.0, 
-      "nlines": 14, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 14
      }, 
      "CLIFFORD": {
       "ratio": 3.0, 
-      "nlines": 6, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 6
      }
     }, 
-    "location": "Saint Alban's.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.5714285714285714
    }, 
    {
-    "graph_img_f": null, 
+    "total_lines": 37, 
+    "deg_assort_coeff": -0.7142857142857143, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "Fields near St. Alban's.", 
+    "act": "5", 
+    "graph_img_f": "imgs/2henryvi_5_3.png", 
     "char_data": {
      "SALISBURY": {
       "ratio": 4.0, 
-      "nlines": 8, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 8
      }, 
      "YORK": {
       "ratio": 4.0, 
-      "nlines": 12, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 12
      }, 
      "RICHARD": {
       "ratio": 4.5, 
-      "nlines": 9, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 9
      }, 
      "WARWICK": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }
     }, 
-    "location": "Fields near St. Alban's.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.5833333333333333
    }
   ]
  ], 
@@ -1125,392 +1269,392 @@
  "char_data": {
   "IDEN": {
    "ratio": 13.5, 
+   "degrees": 4, 
    "nlines": 54, 
-   "nedges": 4, 
    "order_app": 61
   }, 
   "DICK": {
    "ratio": 7.2, 
+   "degrees": 5, 
    "nlines": 36, 
-   "nedges": 5, 
    "order_app": 49
   }, 
   "HOLLAND": {
    "ratio": 4.75, 
+   "degrees": 4, 
    "nlines": 19, 
-   "nedges": 4, 
    "order_app": 47
   }, 
   "Sheriff": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 33
   }, 
   "Clerk": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 51
   }, 
   "BOLINGBROKE": {
    "ratio": 7.25, 
+   "degrees": 4, 
    "nlines": 29, 
-   "nedges": 4, 
    "order_app": 18
   }, 
   "SMITH": {
    "ratio": 3.75, 
+   "degrees": 4, 
    "nlines": 15, 
-   "nedges": 4, 
    "order_app": 50
   }, 
   "CLERK": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 52
   }, 
   "BUCKINGHAM": {
    "ratio": 5.93, 
+   "degrees": 14, 
    "nlines": 83, 
-   "nedges": 14, 
    "order_app": 9
   }, 
   "Second Neighbour": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 28
   }, 
   "Messenger": {
    "ratio": 5.33, 
+   "degrees": 6, 
    "nlines": 32, 
-   "nedges": 6, 
    "order_app": 12
   }, 
   "CADE": {
    "ratio": 18.79, 
+   "degrees": 14, 
    "nlines": 263, 
-   "nedges": 14, 
    "order_app": 48
   }, 
   "WARWICK": {
    "ratio": 13.9, 
+   "degrees": 10, 
    "nlines": 139, 
-   "nedges": 10, 
    "order_app": 7
   }, 
   "BOTH": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 26
   }, 
   "RICHARD": {
    "ratio": 4.67, 
+   "degrees": 6, 
    "nlines": 28, 
-   "nedges": 6, 
    "order_app": 63
   }, 
   "KING HENRY VI": {
    "ratio": 16.6, 
+   "degrees": 20, 
    "nlines": 332, 
-   "nedges": 20, 
    "order_app": 1
   }, 
   "WHITMORE": {
    "ratio": 5.25, 
+   "degrees": 4, 
    "nlines": 21, 
-   "nedges": 4, 
    "order_app": 45
   }, 
   "BEVIS": {
    "ratio": 7.0, 
+   "degrees": 2, 
    "nlines": 14, 
-   "nedges": 2, 
    "order_app": 46
   }, 
   "First Murder": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 38
   }, 
   "First Gentleman": {
    "ratio": 1.6, 
+   "degrees": 5, 
    "nlines": 8, 
-   "nedges": 5, 
    "order_app": 42
   }, 
   "First Murderer": {
    "ratio": 2.0, 
+   "degrees": 2, 
    "nlines": 4, 
-   "nedges": 2, 
    "order_app": 36
   }, 
   "Second Murderer": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 37
   }, 
   "DUCHESS": {
    "ratio": 13.78, 
+   "degrees": 9, 
    "nlines": 124, 
-   "nedges": 9, 
    "order_app": 11
   }, 
   "VAUX": {
    "ratio": 11.0, 
+   "degrees": 1, 
    "nlines": 11, 
-   "nedges": 1, 
    "order_app": 40
   }, 
   "SAY": {
    "ratio": 7.14, 
+   "degrees": 7, 
    "nlines": 50, 
-   "nedges": 7, 
    "order_app": 56
   }, 
   "Third Neighbour": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 29
   }, 
   "Master": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 43
   }, 
   "HORNER": {
    "ratio": 4.0, 
+   "degrees": 6, 
    "nlines": 24, 
-   "nedges": 6, 
    "order_app": 17
   }, 
   "STANLEY": {
    "ratio": 3.5, 
+   "degrees": 2, 
    "nlines": 7, 
-   "nedges": 2, 
    "order_app": 34
   }, 
   "SOMERSET": {
    "ratio": 3.13, 
+   "degrees": 8, 
    "nlines": 25, 
-   "nedges": 8, 
    "order_app": 10
   }, 
   "PETER": {
    "ratio": 3.13, 
+   "degrees": 8, 
    "nlines": 25, 
-   "nedges": 8, 
    "order_app": 16
   }, 
   "Spirit": {
    "ratio": 5.0, 
+   "degrees": 2, 
    "nlines": 10, 
-   "nedges": 2, 
    "order_app": 19
   }, 
   "HUME": {
    "ratio": 16.0, 
+   "degrees": 2, 
    "nlines": 32, 
-   "nedges": 2, 
    "order_app": 13
   }, 
   "SCALES": {
    "ratio": 9.0, 
+   "degrees": 1, 
    "nlines": 9, 
-   "nedges": 1, 
    "order_app": 57
   }, 
   "First Citizen": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 58
   }, 
   "Wife": {
    "ratio": 2.0, 
+   "degrees": 4, 
    "nlines": 8, 
-   "nedges": 4, 
    "order_app": 23
   }, 
   "Servant": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 31
   }, 
   "MICHAEL": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 53
   }, 
   "Commons": {
    "ratio": 1.0, 
+   "degrees": 3, 
    "nlines": 3, 
-   "nedges": 3, 
    "order_app": 39
   }, 
   "Herald": {
    "ratio": 2.0, 
+   "degrees": 1, 
    "nlines": 2, 
-   "nedges": 1, 
    "order_app": 32
   }, 
   "First Neighbour": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 27
   }, 
   "Second Petitioner": {
    "ratio": 2.0, 
+   "degrees": 3, 
    "nlines": 6, 
-   "nedges": 3, 
    "order_app": 15
   }, 
   "YORK": {
    "ratio": 19.29, 
+   "degrees": 21, 
    "nlines": 405, 
-   "nedges": 21, 
    "order_app": 8
   }, 
   "Servants": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 30
   }, 
   "Second Gentleman": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 44
   }, 
   "Post": {
    "ratio": 3.0, 
+   "degrees": 2, 
    "nlines": 6, 
-   "nedges": 2, 
    "order_app": 35
   }, 
   "WILLIAM STAFFORD": {
    "ratio": 2.33, 
+   "degrees": 3, 
    "nlines": 7, 
-   "nedges": 3, 
    "order_app": 55
   }, 
   "CLIFFORD": {
    "ratio": 7.25, 
+   "degrees": 8, 
    "nlines": 58, 
-   "nedges": 8, 
    "order_app": 60
   }, 
   "ALL": {
    "ratio": 1.89, 
+   "degrees": 9, 
    "nlines": 17, 
-   "nedges": 9, 
    "order_app": 3
   }, 
   "Captain": {
    "ratio": 16.5, 
+   "degrees": 4, 
    "nlines": 66, 
-   "nedges": 4, 
    "order_app": 41
   }, 
   "Soldier": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 59
   }, 
   "SIR HUMPHREY": {
    "ratio": 4.25, 
+   "degrees": 4, 
    "nlines": 17, 
-   "nedges": 4, 
    "order_app": 54
   }, 
   "QUEEN MARGARET": {
    "ratio": 18.33, 
+   "degrees": 18, 
    "nlines": 330, 
-   "nedges": 18, 
    "order_app": 2
   }, 
   "MARGARET JOURDAIN": {
    "ratio": 4.0, 
+   "degrees": 1, 
    "nlines": 4, 
-   "nedges": 1, 
    "order_app": 20
   }, 
   "Beadle": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 25
   }, 
   "SUFFOLK": {
    "ratio": 16.21, 
+   "degrees": 19, 
    "nlines": 308, 
-   "nedges": 19, 
    "order_app": 0
   }, 
   "YOUNG CLIFFORD": {
    "ratio": 12.5, 
+   "degrees": 4, 
    "nlines": 50, 
-   "nedges": 4, 
    "order_app": 64
   }, 
   "EDWARD": {
    "ratio": 0.5, 
+   "degrees": 2, 
    "nlines": 1, 
-   "nedges": 2, 
    "order_app": 62
   }, 
   "CARDINAL": {
    "ratio": 10.09, 
+   "degrees": 11, 
    "nlines": 111, 
-   "nedges": 11, 
    "order_app": 5
   }, 
   "SALISBURY": {
    "ratio": 8.64, 
+   "degrees": 11, 
    "nlines": 95, 
-   "nedges": 11, 
    "order_app": 6
   }, 
   "SIMPCOX": {
    "ratio": 3.71, 
+   "degrees": 7, 
    "nlines": 26, 
-   "nedges": 7, 
    "order_app": 22
   }, 
   "First Petitioner": {
    "ratio": 2.67, 
+   "degrees": 3, 
    "nlines": 8, 
-   "nedges": 3, 
    "order_app": 14
   }, 
   "GLOUCESTER": {
    "ratio": 15.24, 
+   "degrees": 21, 
    "nlines": 320, 
-   "nedges": 21, 
    "order_app": 4
   }, 
   "Mayor": {
    "ratio": 3.0, 
+   "degrees": 1, 
    "nlines": 3, 
-   "nedges": 1, 
    "order_app": 24
   }, 
   "Townsman": {
    "ratio": 1.33, 
+   "degrees": 3, 
    "nlines": 4, 
-   "nedges": 3, 
    "order_app": 21
   }
  }, 

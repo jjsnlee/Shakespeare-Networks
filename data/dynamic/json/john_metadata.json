@@ -3,550 +3,646 @@
  "acts": [
   [
    {
+    "total_lines": 285, 
+    "deg_assort_coeff": -0.51248760256063597, 
+    "density": 0.39285714285714285, 
+    "scene": "1", 
+    "total_degrees": 11, 
+    "avg_shortest_path": 1.75, 
+    "location": "KING JOHN'S palace.", 
+    "act": "1", 
     "graph_img_f": "imgs/john_1_1.png", 
     "char_data": {
      "BASTARD": {
       "ratio": 29.4, 
-      "nlines": 147, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 147
      }, 
      "QUEEN ELINOR": {
       "ratio": 7.5, 
-      "nlines": 30, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 30
      }, 
      "LADY FAULCONBRIDGE": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }, 
      "ROBERT": {
       "ratio": 11.0, 
-      "nlines": 22, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 22
      }, 
      "ESSEX": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "CHATILLON": {
       "ratio": 8.0, 
-      "nlines": 16, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 16
      }, 
      "KING JOHN": {
       "ratio": 10.2, 
-      "nlines": 51, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 51
      }, 
      "GURNEY": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }
     }, 
-    "location": "KING JOHN'S palace.", 
-    "scene": "1", 
-    "act": "1"
+    "avg_clustering": 0.5125000000000001
    }
   ], 
   [
    {
+    "total_lines": 621, 
+    "deg_assort_coeff": -0.18109543596273472, 
+    "density": 0.38461538461538464, 
+    "scene": "1", 
+    "total_degrees": 30, 
+    "avg_shortest_path": 1.7564102564102564, 
+    "location": "France. Before Angiers.", 
+    "act": "2", 
     "graph_img_f": "imgs/john_2_1.png", 
     "char_data": {
      "BLANCH": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }, 
      "BASTARD": {
       "ratio": 18.0, 
-      "nlines": 126, 
-      "nedges": 7
+      "degrees": 7, 
+      "nlines": 126
      }, 
      "First Citizen": {
       "ratio": 13.0, 
-      "nlines": 65, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 65
      }, 
      "QUEEN ELINOR": {
       "ratio": 3.5, 
-      "nlines": 21, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 21
      }, 
      "English Herald": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "LEWIS": {
       "ratio": 5.8, 
-      "nlines": 29, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 29
      }, 
      "ARTHUR": {
       "ratio": 3.0, 
-      "nlines": 9, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 9
      }, 
      "KING PHILIP": {
       "ratio": 13.56, 
-      "nlines": 122, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 122
      }, 
      "CHATILLON": {
       "ratio": 26.0, 
-      "nlines": 26, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 26
      }, 
      "AUSTRIA": {
       "ratio": 5.6, 
-      "nlines": 28, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 28
      }, 
      "French Herald": {
       "ratio": 6.5, 
-      "nlines": 13, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 13
      }, 
      "KING JOHN": {
       "ratio": 13.13, 
-      "nlines": 105, 
-      "nedges": 8
+      "degrees": 8, 
+      "nlines": 105
      }, 
      "CONSTANCE": {
       "ratio": 9.8, 
-      "nlines": 49, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 49
      }
     }, 
-    "location": "France. Before Angiers.", 
-    "scene": "1", 
-    "act": "2"
+    "avg_clustering": 0.4637973137973138
    }
   ], 
   [
    {
+    "total_lines": 361, 
+    "deg_assort_coeff": -0.41178790867025961, 
+    "density": 0.41818181818181815, 
+    "scene": "1", 
+    "total_degrees": 23, 
+    "avg_shortest_path": 1.6181818181818182, 
+    "location": "The French King's pavilion.", 
+    "act": "3", 
     "graph_img_f": "imgs/john_3_1.png", 
     "char_data": {
      "BLANCH": {
       "ratio": 6.75, 
-      "nlines": 27, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 27
      }, 
      "BASTARD": {
       "ratio": 1.8, 
-      "nlines": 9, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 9
      }, 
      "CARDINAL PANDULPH": {
       "ratio": 11.83, 
-      "nlines": 71, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 71
      }, 
      "QUEEN ELINOR": {
       "ratio": 0.67, 
-      "nlines": 2, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 2
      }, 
      "LEWIS": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "ARTHUR": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "KING PHILIP": {
       "ratio": 12.0, 
-      "nlines": 48, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 48
      }, 
      "AUSTRIA": {
       "ratio": 2.33, 
-      "nlines": 7, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 7
      }, 
      "SALISBURY": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "CONSTANCE": {
       "ratio": 16.11, 
-      "nlines": 145, 
-      "nedges": 9
+      "degrees": 9, 
+      "nlines": 145
      }, 
      "KING JOHN": {
       "ratio": 6.17, 
-      "nlines": 37, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 37
      }
     }, 
-    "location": "The French King's pavilion.", 
-    "scene": "1", 
-    "act": "3"
+    "avg_clustering": 0.4287878787878788
    }, 
    {
+    "total_lines": 13, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "2", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The same. Plains near Angiers.", 
+    "act": "3", 
     "graph_img_f": "imgs/john_3_2.png", 
     "char_data": {
      "BASTARD": {
       "ratio": 10.0, 
-      "nlines": 10, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 10
      }, 
      "KING JOHN": {
       "ratio": 3.0, 
-      "nlines": 3, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 3
      }
     }, 
-    "location": "The same. Plains near Angiers.", 
-    "scene": "2", 
-    "act": "3"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 87, 
+    "deg_assort_coeff": -0.59587628865979325, 
+    "density": 0.4, 
+    "scene": "3", 
+    "total_degrees": 6, 
+    "avg_shortest_path": 1.6, 
+    "location": "The same.", 
+    "act": "3", 
     "graph_img_f": "imgs/john_3_3.png", 
     "char_data": {
      "BASTARD": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "QUEEN ELINOR": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "ARTHUR": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "KING JOHN": {
       "ratio": 14.0, 
-      "nlines": 70, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 70
      }, 
      "HUBERT": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }, 
      "ELINOR": {
       "ratio": 1.0, 
-      "nlines": 2, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 2
      }
     }, 
-    "location": "The same.", 
-    "scene": "3", 
-    "act": "3"
+    "avg_clustering": 0.35000000000000003
    }, 
    {
+    "total_lines": 189, 
+    "deg_assort_coeff": -0.57024793388435557, 
+    "density": 0.8333333333333334, 
+    "scene": "4", 
+    "total_degrees": 5, 
+    "avg_shortest_path": 1.1666666666666667, 
+    "location": "The same. KING PHILIP'S tent.", 
+    "act": "3", 
     "graph_img_f": "imgs/john_3_4.png", 
     "char_data": {
      "KING PHILIP": {
       "ratio": 9.33, 
-      "nlines": 28, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 28
      }, 
      "LEWIS": {
       "ratio": 9.5, 
-      "nlines": 19, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 19
      }, 
      "CARDINAL PANDULPH": {
       "ratio": 22.33, 
-      "nlines": 67, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 67
      }, 
      "CONSTANCE": {
       "ratio": 37.5, 
-      "nlines": 75, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 75
      }
     }, 
-    "location": "The same. KING PHILIP'S tent.", 
-    "scene": "4", 
-    "act": "3"
+    "avg_clustering": 0.8333333333333333
    }
   ], 
   [
    {
+    "total_lines": 153, 
+    "deg_assort_coeff": -0.50000000000000067, 
+    "density": 1.0, 
+    "scene": "1", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "A room in a castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/john_4_1.png", 
     "char_data": {
      "ARTHUR": {
       "ratio": 49.5, 
-      "nlines": 99, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 99
      }, 
      "First Executioner": {
       "ratio": 1.5, 
-      "nlines": 3, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 3
      }, 
      "HUBERT": {
       "ratio": 25.5, 
-      "nlines": 51, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 51
      }
     }, 
-    "location": "A room in a castle.", 
-    "scene": "1", 
-    "act": "4"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 287, 
+    "deg_assort_coeff": -0.8238617480890672, 
+    "density": 0.3333333333333333, 
+    "scene": "2", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.6666666666666667, 
+    "location": "KING JOHN'S palace.", 
+    "act": "4", 
     "graph_img_f": "imgs/john_4_2.png", 
     "char_data": {
      "PEMBROKE": {
       "ratio": 29.0, 
-      "nlines": 58, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 58
      }, 
      "BASTARD": {
       "ratio": 23.0, 
-      "nlines": 23, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 23
      }, 
      "Messenger": {
       "ratio": 15.0, 
-      "nlines": 15, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 15
      }, 
      "KING JOHN": {
       "ratio": 21.17, 
-      "nlines": 127, 
-      "nedges": 6
+      "degrees": 6, 
+      "nlines": 127
      }, 
      "HUBERT": {
       "ratio": 35.0, 
-      "nlines": 35, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 35
      }, 
      "PETER": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }, 
      "SALISBURY": {
       "ratio": 14.0, 
-      "nlines": 28, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 28
      }
     }, 
-    "location": "KING JOHN'S palace.", 
-    "scene": "2", 
-    "act": "4"
+    "avg_clustering": 0.2952380952380952
    }, 
    {
+    "total_lines": 177, 
+    "deg_assort_coeff": -0.46201304424467055, 
+    "density": 0.7333333333333333, 
+    "scene": "3", 
+    "total_degrees": 11, 
+    "avg_shortest_path": 1.2666666666666666, 
+    "location": "Before the castle.", 
+    "act": "4", 
     "graph_img_f": "imgs/john_4_3.png", 
     "char_data": {
      "PEMBROKE": {
       "ratio": 4.25, 
-      "nlines": 17, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 17
      }, 
      "BASTARD": {
       "ratio": 14.5, 
-      "nlines": 58, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 58
      }, 
      "BIGOT": {
       "ratio": 2.0, 
-      "nlines": 8, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 8
      }, 
      "ARTHUR": {
       "ratio": 13.0, 
-      "nlines": 13, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 13
      }, 
      "SALISBURY": {
       "ratio": 11.2, 
-      "nlines": 56, 
-      "nedges": 5
+      "degrees": 5, 
+      "nlines": 56
      }, 
      "HUBERT": {
       "ratio": 6.25, 
-      "nlines": 25, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 25
      }
     }, 
-    "location": "Before the castle.", 
-    "scene": "3", 
-    "act": "4"
+    "avg_clustering": 0.7666666666666666
    }
   ], 
   [
    {
+    "total_lines": 85, 
+    "deg_assort_coeff": -0.77168949771689499, 
+    "density": 0.6666666666666666, 
+    "scene": "1", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "KING JOHN'S palace.", 
+    "act": "5", 
     "graph_img_f": "imgs/john_5_1.png", 
     "char_data": {
      "BASTARD": {
       "ratio": 44.0, 
-      "nlines": 44, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 44
      }, 
      "KING JOHN": {
       "ratio": 14.5, 
-      "nlines": 29, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 29
      }, 
      "CARDINAL PANDULPH": {
       "ratio": 12.0, 
-      "nlines": 12, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 12
      }
     }, 
-    "location": "KING JOHN'S palace.", 
-    "scene": "1", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 187, 
+    "deg_assort_coeff": -0.665389527458493, 
+    "density": 0.6666666666666666, 
+    "scene": "2", 
+    "total_degrees": 4, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "LEWIS's camp at St. Edmundsbury.", 
+    "act": "5", 
     "graph_img_f": "imgs/john_5_2.png", 
     "char_data": {
      "LEWIS": {
       "ratio": 28.67, 
-      "nlines": 86, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 86
      }, 
      "BASTARD": {
       "ratio": 27.0, 
-      "nlines": 54, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 54
      }, 
      "SALISBURY": {
       "ratio": 32.0, 
-      "nlines": 32, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 32
      }, 
      "CARDINAL PANDULPH": {
       "ratio": 7.5, 
-      "nlines": 15, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 15
      }
     }, 
-    "location": "LEWIS's camp at St. Edmundsbury.", 
-    "scene": "2", 
-    "act": "5"
+    "avg_clustering": 0.5833333333333333
    }, 
    {
+    "total_lines": 19, 
+    "deg_assort_coeff": -0.81818181818181823, 
+    "density": 0.6666666666666666, 
+    "scene": "3", 
+    "total_degrees": 2, 
+    "avg_shortest_path": 1.3333333333333333, 
+    "location": "The field of battle.", 
+    "act": "5", 
     "graph_img_f": "imgs/john_5_3.png", 
     "char_data": {
      "Messenger": {
       "ratio": 8.0, 
-      "nlines": 8, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 8
      }, 
      "KING JOHN": {
       "ratio": 5.0, 
-      "nlines": 10, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 10
      }, 
      "HUBERT": {
       "ratio": 1.0, 
-      "nlines": 1, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 1
      }
     }, 
-    "location": "The field of battle.", 
-    "scene": "3", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 64, 
+    "deg_assort_coeff": -0.5, 
+    "density": 1.0, 
+    "scene": "4", 
+    "total_degrees": 3, 
+    "avg_shortest_path": 1.0, 
+    "location": "Another part of the field.", 
+    "act": "5", 
     "graph_img_f": "imgs/john_5_4.png", 
     "char_data": {
      "PEMBROKE": {
       "ratio": 2.5, 
-      "nlines": 5, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 5
      }, 
      "MELUN": {
       "ratio": 19.5, 
-      "nlines": 39, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 39
      }, 
      "SALISBURY": {
       "ratio": 10.0, 
-      "nlines": 20, 
-      "nedges": 2
+      "degrees": 2, 
+      "nlines": 20
      }
     }, 
-    "location": "Another part of the field.", 
-    "scene": "4", 
-    "act": "5"
+    "avg_clustering": 1.0
    }, 
    {
+    "total_lines": 25, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "5", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "The French camp.", 
+    "act": "5", 
     "graph_img_f": "imgs/john_5_5.png", 
     "char_data": {
      "LEWIS": {
       "ratio": 19.0, 
-      "nlines": 19, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 19
      }, 
      "Messenger": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }
     }, 
-    "location": "The French camp.", 
-    "scene": "5", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 49, 
+    "deg_assort_coeff": -1, 
+    "density": 1.0, 
+    "scene": "6", 
+    "total_degrees": 1, 
+    "avg_shortest_path": 1.0, 
+    "location": "An open place in the neighbourhood of Swinstead Abbey.", 
+    "act": "5", 
     "graph_img_f": "imgs/john_5_6.png", 
     "char_data": {
      "BASTARD": {
       "ratio": 21.0, 
-      "nlines": 21, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 21
      }, 
      "HUBERT": {
       "ratio": 28.0, 
-      "nlines": 28, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 28
      }
     }, 
-    "location": "An open place in the neighbourhood of Swinstead Abbey.", 
-    "scene": "6", 
-    "act": "5"
+    "avg_clustering": 0.0
    }, 
    {
+    "total_lines": 130, 
+    "deg_assort_coeff": -0.53540027764924258, 
+    "density": 0.7, 
+    "scene": "7", 
+    "total_degrees": 7, 
+    "avg_shortest_path": 1.3, 
+    "location": "The orchard in Swinstead Abbey.", 
+    "act": "5", 
     "graph_img_f": "imgs/john_5_7.png", 
     "char_data": {
      "PRINCE HENRY": {
       "ratio": 8.0, 
-      "nlines": 32, 
-      "nedges": 4
+      "degrees": 4, 
+      "nlines": 32
      }, 
      "BASTARD": {
       "ratio": 14.0, 
-      "nlines": 42, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 42
      }, 
      "PEMBROKE": {
       "ratio": 6.0, 
-      "nlines": 6, 
-      "nedges": 1
+      "degrees": 1, 
+      "nlines": 6
      }, 
      "KING JOHN": {
       "ratio": 9.67, 
-      "nlines": 29, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 29
      }, 
      "SALISBURY": {
       "ratio": 7.0, 
-      "nlines": 21, 
-      "nedges": 3
+      "degrees": 3, 
+      "nlines": 21
      }
     }, 
-    "location": "The orchard in Swinstead Abbey.", 
-    "scene": "7", 
-    "act": "5"
+    "avg_clustering": 0.7
    }
   ]
  ], 
@@ -584,170 +680,170 @@
  "char_data": {
   "BASTARD": {
    "ratio": 31.71, 
+   "degrees": 17, 
    "nlines": 539, 
-   "nedges": 17, 
    "order_app": 4
   }, 
   "French Herald": {
    "ratio": 6.5, 
+   "degrees": 2, 
    "nlines": 13, 
-   "nedges": 2, 
    "order_app": 15
   }, 
   "CARDINAL PANDULPH": {
    "ratio": 23.57, 
+   "degrees": 7, 
    "nlines": 165, 
-   "nedges": 7, 
    "order_app": 18
   }, 
   "English Herald": {
    "ratio": 6.5, 
+   "degrees": 2, 
    "nlines": 13, 
-   "nedges": 2, 
    "order_app": 16
   }, 
   "BIGOT": {
    "ratio": 2.0, 
+   "degrees": 4, 
    "nlines": 8, 
-   "nedges": 4, 
    "order_app": 25
   }, 
   "Messenger": {
    "ratio": 14.5, 
+   "degrees": 2, 
    "nlines": 29, 
-   "nedges": 2, 
    "order_app": 23
   }, 
   "HUBERT": {
    "ratio": 21.14, 
+   "degrees": 7, 
    "nlines": 148, 
-   "nedges": 7, 
    "order_app": 20
   }, 
   "GURNEY": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 7
   }, 
   "PEMBROKE": {
    "ratio": 12.29, 
+   "degrees": 7, 
    "nlines": 86, 
-   "nedges": 7, 
    "order_app": 22
   }, 
   "LADY FAULCONBRIDGE": {
    "ratio": 15.0, 
+   "degrees": 1, 
    "nlines": 15, 
-   "nedges": 1, 
    "order_app": 6
   }, 
   "ROBERT": {
    "ratio": 11.0, 
+   "degrees": 2, 
    "nlines": 22, 
-   "nedges": 2, 
    "order_app": 5
   }, 
   "ESSEX": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 3
   }, 
   "KING PHILIP": {
    "ratio": 19.8, 
+   "degrees": 10, 
    "nlines": 198, 
-   "nedges": 10, 
    "order_app": 12
   }, 
   "AUSTRIA": {
    "ratio": 5.83, 
+   "degrees": 6, 
    "nlines": 35, 
-   "nedges": 6, 
    "order_app": 10
   }, 
   "First Executioner": {
    "ratio": 1.5, 
+   "degrees": 2, 
    "nlines": 3, 
-   "nedges": 2, 
    "order_app": 21
   }, 
   "KING JOHN": {
    "ratio": 23.05, 
+   "degrees": 20, 
    "nlines": 461, 
-   "nedges": 20, 
    "order_app": 0
   }, 
   "ELINOR": {
    "ratio": 1.0, 
+   "degrees": 2, 
    "nlines": 2, 
-   "nedges": 2, 
    "order_app": 19
   }, 
   "First Citizen": {
    "ratio": 13.0, 
+   "degrees": 5, 
    "nlines": 65, 
-   "nedges": 5, 
    "order_app": 14
   }, 
   "MELUN": {
    "ratio": 19.5, 
+   "degrees": 2, 
    "nlines": 39, 
-   "nedges": 2, 
    "order_app": 26
   }, 
   "PRINCE HENRY": {
    "ratio": 8.0, 
+   "degrees": 4, 
    "nlines": 32, 
-   "nedges": 4, 
    "order_app": 27
   }, 
   "CONSTANCE": {
    "ratio": 29.89, 
+   "degrees": 9, 
    "nlines": 269, 
-   "nedges": 9, 
    "order_app": 11
   }, 
   "BLANCH": {
    "ratio": 10.5, 
+   "degrees": 4, 
    "nlines": 42, 
-   "nedges": 4, 
    "order_app": 13
   }, 
   "PETER": {
    "ratio": 1.0, 
+   "degrees": 1, 
    "nlines": 1, 
-   "nedges": 1, 
    "order_app": 24
   }, 
   "QUEEN ELINOR": {
    "ratio": 6.0, 
+   "degrees": 9, 
    "nlines": 54, 
-   "nedges": 9, 
    "order_app": 2
   }, 
   "CHATILLON": {
    "ratio": 14.0, 
+   "degrees": 3, 
    "nlines": 42, 
-   "nedges": 3, 
    "order_app": 1
   }, 
   "ARTHUR": {
    "ratio": 17.57, 
+   "degrees": 7, 
    "nlines": 123, 
-   "nedges": 7, 
    "order_app": 9
   }, 
   "SALISBURY": {
    "ratio": 16.3, 
+   "degrees": 10, 
    "nlines": 163, 
-   "nedges": 10, 
    "order_app": 17
   }, 
   "LEWIS": {
    "ratio": 16.1, 
+   "degrees": 10, 
    "nlines": 161, 
-   "nedges": 10, 
    "order_app": 8
   }
  }, 
