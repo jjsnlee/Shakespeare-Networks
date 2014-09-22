@@ -237,7 +237,7 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 			  topic = original_topicIndex.length-1;
 			}
 			
-			console.log('The currently selected topic is: '+topic);
+			//console.log('The currently selected topic is: '+topic);
 			// Problem here when going from a larger dataset to a smaller one
 			
 	    // Terms are going to be sorted by distinctiveness!

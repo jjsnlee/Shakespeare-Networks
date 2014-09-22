@@ -42,6 +42,14 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
     termTopicProbModel = m['termTopicProbModel'];
     termFrequencyModel = m['termFrequencyModel'];
     stateModel = m['stateModel'];
+    // probably a much better way to do this...
+    if(stateModel && stateModel.get('doubleClickTopic')) {
+      var topicIndex = stateModel.get('doubleClickTopic');
+      //var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex];
+      //var topicLabel = termTopicProbModel.attributes.topicIndex[topicIndex];
+      var topicLabel = 'Topic '+(topicIndex+1);
+      getSelectedTopic($scope.$parent.LDAModel, topicIndex, topicLabel);
+    }
   }
 
   var models, termTopicProbModel, termFrequencyModel, stateModel;
@@ -131,7 +139,7 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
     console.log('Will fetch data for topicIndex: ' + topicIndex);
     $scope.selectedTopic = topicLabel;
     selectedTopicIndex = topicIndex;
-    $http.get('/shakespeare/corpus/lda/'+LdaModel+'/'+topicIndex).success(function(data) {
+    $http.get('/shakespeare/corpus/topicModels/'+LdaModel+'/'+topicIndex).success(function(data) {
       data = data.map(function(c) {
         return {
           'char'  : c[0], 
@@ -145,13 +153,4 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   };
   
   termiteMsgService.registerTopicHandler(getSelectedTopic);
-  
-  // probably a much better way to do this...
-	if(stateModel.get('doubleClickTopic')) {
-	  var topicIndex = stateModel.get('doubleClickTopic');
-	  //var topicLabel = termTopicMatrixView.parentModel.attributes.topicIndex[topicIndex];
-	  //var topicLabel = termTopicProbModel.attributes.topicIndex[topicIndex];
-	  var topicLabel = 'Topic '+(topicIndex+1);
-	  getSelectedTopic($scope.$parent.LDAModel, topicIndex, topicLabel);
-	}
 });

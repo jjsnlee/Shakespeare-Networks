@@ -346,7 +346,7 @@ class AffinityPropagationResult(_ModelResult):
             #_, labels = affinity_propagation(edge_model.covariance_)
             #n_labels = labels.max()
         # can do anything with Affinity Propagation
-        super(LDAResult, self).__init__(label, ctxt, model, init_model=init_model)
+        super(AffinityPropagationResult, self).__init__(label, ctxt, model, init_model=init_model)
 
 class LDAResult(_ModelResult):
     def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None):
@@ -355,10 +355,8 @@ class LDAResult(_ModelResult):
             dictionary = lda_ctxt.dictionary
             lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
             self.model = lda
-        
         super(LDAResult, self).__init__(label, lda_ctxt, lda, init_model=init_model)
         self._docs_per_topic = None
-    
     @property
     def term_topic_matrix(self):
         return self.lda.state.sstats
@@ -449,19 +447,6 @@ def get_lda_rslt(label, reload_ctx=False, cls=None):
         
         CACHED_MODEL_RSLTS[label] = cls.load(label)
     return CACHED_MODEL_RSLTS[label]
-
-MODEL_KEYS = {
-  'shakespeare-char-scene-bow-100-50'    : 'char_scene-bow_2014-06-29_19.49.11_100_50_lda',
-  'shakespeare-char-scene-tfidf-50-50'   : 'char-scene-tfidf_2014-08-24_23.04.15_50_50_lda',
-  'shakespeare-char-scene-tfidf-50-50-v2': 'char-scene-tfidf_2014-08-26_00.43.50_50_50_lda',
-  
-  'shakespeare-char-scene-tfidf-50-100'  : 'char-scene-tfidf_2014-08-26_01.47.56_50_100_lda',
-  'shakespeare-char-scene-tfidf-50-200'  : 'char-scene-tfidf_2014-08-29_23.00.09_50_200_lda',
-  'shakespeare-char-scene-bow-50-200'    : 'char-scene-bow_2014-08-30_14.32.36_50_200_lda',
-
-  'shakespeare-char-nmf-50-250'          : ('nmf-char-2014-09-20_02.06.43-50-250', NMFResult),
-  'shakespeare-char-nmf-50-200'          : ('nmf-char-2014-09-20_03.22.31-50-200', NMFResult),
-}
 
 from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, ComputeSeriation, \
     ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer

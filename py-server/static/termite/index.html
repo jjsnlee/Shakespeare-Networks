@@ -34,7 +34,7 @@
 
 <script type="text/javascript">
 
-termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService) {
+termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgService) {
 
   var stateModel, seriatedTermTopicProbM, termTopicProbM, termFrequencyModel;  
 
@@ -60,7 +60,7 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
 
     initUserControlViewComponents(stateModel);
 
-    var basedir = '/static/data/'+ldaModel
+    var basedir = '/shakespeare/corpus/topicModels/'+ldaModel+'/termite'
     seriatedTermTopicProbM.url = basedir+"/seriated-parameters.json";
     termTopicProbM.url = basedir+"/filtered-parameters.json";
     termFrequencyModel.url = basedir+"/global-term-freqs.json";
@@ -175,16 +175,6 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
     };
   };
 
-  // initialize parent and state model where needed
-  $scope.LDAModels = [
-    'shakespeare-char-scene-bow-50-200',
-    'shakespeare-char-scene-tfidf-50-200',
-    'shakespeare-char-scene-tfidf-50-100',
-    'shakespeare-char-scene-tfidf-50-50',
-    'shakespeare-char-scene-tfidf-50-50-v2',
-    'shakespeare-char-scene-bow-100-50',
-  ];
-  $scope.LDAModel = $scope.LDAModels[0];
   $scope.changeModel = function() {
     console.log('$scope.LDAModel: '+$scope.LDAModel);
     $('.termTopicMatrixContainer').empty();
@@ -196,7 +186,33 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
 	  $scope.$$childHead.docName    = '';
 	  $scope.$$childHead.docContent = '';
   };
-  loadPage($scope.LDAModel);
+
+  $http.get('/shakespeare/corpus/topicModels').success(function(data) {
+	  $scope.LDAModels = data;
+	  $scope.LDAModel = $scope.LDAModels[0];
+	  loadPage($scope.LDAModel);
+	  $scope.$$childHead.setModels($scope.getModels());
+  });
+
+/*
+	$http.get('/shakespeare/corpus/topicModels').success(function(data) {
+	  // initialize parent and state model where needed
+	  $scope.LDAModels = [
+	    'shakespeare-char-nmf-50-200',
+	    //'shakespeare-char-nmf-50-250',
+	    'shakespeare-char-scene-bow-50-200',
+	    'shakespeare-char-scene-tfidf-50-200',
+	    'shakespeare-char-scene-tfidf-50-100',
+	    'shakespeare-char-scene-tfidf-50-50',
+	    'shakespeare-char-scene-tfidf-50-50-v2',
+	    'shakespeare-char-scene-bow-100-50'
+	  ];
+	}).error(function(data) {
+	  $scope.LDAModels = ['Error loading models...'];
+	  //var content = $sce.trustAsHtml(data);
+	  //$scope.docContent = content;
+	});
+*/
 });
 </script>
 
@@ -275,8 +291,8 @@ termiteTopics.controller('msgCtrl', function($scope, $window, termiteMsgService)
 .wrapper1 { height: 20px; }
 .div1     { width:100%; height:20px; }
 .charText { color: #666; font-family: Verdana; font-size: 8pt;padding:10px 5px 10px; }
-.popupDiv { width:40%; height:60%; position:absolute; 
-  top:10%; left:30%; border:10px solid #eee; background: white; 
+.popupDiv { width:30%; height:60%; position:absolute; 
+  top:30%; right:5%; border:10px solid #eee; background: white; 
   overflow:none; padding:0px 0px 0px; 
 }
 
@@ -315,7 +331,7 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
           <span style="color: #666; font-family: Verdana; font-size: 8pt;">
             {{selectedTopic}}
           </span>
-          <table border=1 cellpadding=1 cellspacing=0 width=250>
+          <table border=1 cellpadding=1 cellspacing=0 width=200>
             <tr ng-repeat="doc in topDocsForTopic" style="color:#666; font-family:Verdana; font-size:8pt;">
               <td><a href="" ng-click="getDocContent(doc.char)">{{doc.char}}</a></td>
               <td>{{doc.score}}</td>
@@ -348,13 +364,8 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 	  </div>
 
     <div id="pageFooter">
-      Termite | Topic Model Visualization
-      <br/>
-      <span class="credits">
-        Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group
-      </span>
-      <br/>
-      http://termite.stanford.edu | Version 1.1
+      Termite | Topic Model Visualization | Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group
+      | http://termite.stanford.edu | Version 1.1
     </div>
   </div>
 </div>
