@@ -222,6 +222,7 @@ class _ModelResult(object):
     @property
     def termite_data(self):
         if self.__termite_data is None:
+            from shakespeare.clusters_termite import TermiteData
             self.__termite_data = TermiteData(self)
         return self.__termite_data
     def generate_viz(self):
@@ -258,23 +259,38 @@ class _ModelResult(object):
     def docs_per_topic(self):
         pass
 
-class RBMPipelineResult(_ModelResult):
+# class RBMPipelineResult(_ModelResult):
+#     def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200):
+#         def init_model():
+#             from sklearn.neural_network import BernoulliRBM
+#             from sklearn import linear_model
+#             pass
+#         super(RBMPipelineResult, self).__init__(label, ctxt, model, init_model=init_model)
+        
+class RBMResult(_ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200):
         def init_model():
             from sklearn.neural_network import BernoulliRBM
-            from sklearn import linear_model
-            pass
-        super(RBMPipelineResult, self).__init__(label, ctxt, model, init_model=init_model)
-        
-class RBMResult(_ModelResult):
-    def __init__(self, label, ctxt, model=None, ntopics=16, npasses=10):
-        def init_model():
-            from sklearn.neural_network import BernoulliRBM
+            # learning_rate - highly recommended to tune this...
             self.model = BernoulliRBM(n_components=ntopics,
                                       random_state=0, 
                                       n_iter=npasses,
                                       verbose=True)
         super(RBMResult, self).__init__(label, ctxt, model, init_model=init_model)
+
+class GMMResult(_ModelResult):
+    def __init__(self, label, ctxt, model=None, ntopics=10, npasses=200): 
+        def init_model():
+            from sklearn.mixture import GMM
+            self.model = GMM(n_components=ntopics, 
+                             #init=None, sparseness=None, 
+                             #beta=1, eta=0.1, tol=0.0001, max_iter=npasses, nls_max_iter=2000, 
+                             #random_state=None
+                             )
+            self.H = self.model.fit_transform(ctxt.corpus)
+        super(GMMResult, self).__init__(label, ctxt, model, init_model=init_model)
+#         self._docs_per_topic = None
+#         self._topics_per_doc = None
 
 class NMFResult(_ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=10, npasses=200): 
@@ -423,6 +439,10 @@ class LDAResult(_ModelResult):
     def perplexity(self):
         return perplexity_score(join(self.basedir, 'gensim.log'))
 
+def top_terms(df, term):
+    term_col = df[term]
+    return term_col[term_col > 1e-6]
+
 def perplexity_score(logfile):
     ppx_scores = []
     with open(logfile) as fh:
@@ -447,79 +467,6 @@ def get_lda_rslt(label, reload_ctx=False, cls=None):
         
         CACHED_MODEL_RSLTS[label] = cls.load(label)
     return CACHED_MODEL_RSLTS[label]
-
-from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, ComputeSeriation, \
-    ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer
-
-class TermiteData(object):
-    def __init__(self, model_rslt, from_cache=False):
-        #assert(isinstance(lda_rslt, LDAResult))
-        model_ctxt = model_rslt.model_ctxt
-        
-        self.model_ctxt = model_ctxt
-        self.basepath = join(get_models_base_dir(), model_rslt.label, 'termite')
-
-        model = Model()
-        model.term_topic_matrix = model_rslt.term_topic_matrix.T
-        model.topic_index = map(lambda n: 'Topic %d' % (n+1), range(model_rslt.num_topics))
-        model.term_index = model_ctxt.get_terms()
-        self.model = model
-
-        tokens = Tokens()
-        tokens.data = dict(self.docs_tokenized_zipped())
-        self.tokens = tokens
-        
-        self._saliency = None
-        self._similarity = None
-        self._seriation = None
-    
-    def docs_zipped(self):
-        return [(t, c) for t,c in zip(self.model_ctxt.doc_names, self.model_ctxt.doc_contents)]
-
-    def docs_tokenized_zipped(self):
-        doc_contents_tokenized = [simple_preprocess(doc) for doc in self.model_ctxt.doc_contents]
-        return [(t, c) for t,c in zip(self.model_ctxt.doc_names, doc_contents_tokenized)]
-
-    @property
-    def saliency(self):
-        if self._saliency is None:
-            saliency_calc = ComputeSaliency(self.model)
-            saliency_calc.execute()
-            self._saliency = saliency_calc.saliency
-            SaliencyRWer.write(self._saliency, self.basepath) 
-        return self._saliency
-    @property
-    def similarity(self):
-        if self._similarity is None:
-            similarity_calc = ComputeSimilarity()
-            similarity_calc.execute(self.tokens)
-            self._similarity = similarity_calc.similarity
-            SimilarityRWer.write(self._similarity, self.basepath)
-        return self._similarity
-    @property
-    def seriation(self):
-        if self._seriation is None:
-            seriation_calc = ComputeSeriation()
-            seriation_calc.execute(self.saliency, self.similarity)
-            self._seriation = seriation_calc.seriation
-            SeriationRWer.write(self._seriation, self.basepath)
-        return self._seriation
-    def data_for_client(self):
-        from termite.prepare_data_for_client import Client 
-        client = Client()
-        client.prepareSeriatedParameters(self.model, self.seriation)
-        client.prepareFilteredParameters(self.seriation, self.saliency)
-        client.prepareGlobalTermFreqs(self.saliency)
-        ClientRWer.write(client, self.basepath)
-        return client
-
-    def load(self, which):
-        if which=='saliency':
-            self._saliency = SaliencyRWer.read(self.basepath)
-        elif which=='seriation':
-            self._seriation = SeriationRWer.read(self.basepath)
-        elif which=='similarity':
-            self._similarity = SimilarityRWer.read(self.basepath)
 
 def runs_affine_prop(mat):
     from sklearn import cluster, covariance, manifold
