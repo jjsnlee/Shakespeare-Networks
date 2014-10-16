@@ -21,6 +21,24 @@ def ensure_path(d):
     if not os.path.exists(d):
         os.makedirs(d)
 
+import logging
+
+def setup_sysout_handler(logger_name):
+    logger = logging.getLogger(logger_name)
+#     formatter = logging.Formatter('[%(levelname)s] [%(name)s] [%(asctime)s] [%(lineno)s]: %(message)s')
+#     #stdout_handler = logging.StreamHandler()
+#     
+#     print 'logger.handlers:', logger.handlers
+#     if logger.handlers:
+#         hdlr = logger.handlers[0]
+#     else:
+#         hdlr = logging.StreamHandler()
+#         logger.addHandler(hdlr)
+# 
+#     hdlr.setFormatter(formatter)
+
+    return logger
+
 if __name__ == '__main__':
     _root_dir = None
     get_root_dir()
