@@ -152,21 +152,11 @@ class PlayJSONMetadataEncoder(PlayEncoderBase):
             
             d['avg_clustering'] = field_val(nx.average_clustering)
             d['avg_shortest_path'] = field_val(nx.average_shortest_path_length)
+            d['closeness_vitality'] = field_val(nx.closeness_vitality)
 
             d['deg_assort_coeff'] = field_val(lambda(G): nx.degree_assortativity_coefficient(G, weight='weight'))
             if math.isnan(d['deg_assort_coeff']):
                 d['deg_assort_coeff'] = -1
-
-#             try:
-#                 d['deg_assort_coeff'] = nx.degree_assortativity_coefficient(sceneG)
-#                 if math.isnan(d['deg_assort_coeff']):
-#                     d['deg_assort_coeff'] = -1                
-#             except:
-#                 d['deg_assort_coeff'] = -1
-#             try:
-#                 d['avg_shortest_path'] = nx.average_shortest_path_length(sceneG)
-#             except:
-#                 d['avg_shortest_path'] = -1
             
             total_lines = 0
             cnxs = nx.degree(sceneG)

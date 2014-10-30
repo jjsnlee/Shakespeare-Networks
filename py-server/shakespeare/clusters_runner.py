@@ -1,4 +1,5 @@
 from shakespeare import clusters as sc
+from shakespeare import clusters_termite
 from shakespeare.clusters import LDAContext, LDAResult, get_lda_rslt
 import plays_n_graphs as png
 from pcibook import nmf, clusters
@@ -35,21 +36,24 @@ def main(label=None, train_new=False):
         lda_key = '2014-05-13 00:50:36.652535_50_50.lda'
         lda_rslt = get_lda_rslt(lda_key)
 
-    td = sc.TermiteData(lda_rslt)
+    td = clusters_termite.TermiteData(lda_rslt)
     #td.saliency
     #td.similarity
     #td.seriation
     td.data_for_client()
     return td
 
-def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=False):
+def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=True):
     play_ctx = png.get_plays_ctx(ctx)
     prc_ctx = ClustersCtxt(play_ctx)
     prc_ctx.preproc(by=by) # by='Char'
     doc_titles, docs_content = get_doc_content(prc_ctx)
 
     t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-    label = '%s_%s_%s_%s_lda' % (baselabel, t, ntopics, npasses)
+    baselabel = 'char' if by=='Char' else 'char-scene'
+    baselabel += '-bow' if as_bow else '-tfidf'
+    
+    label = 'lda-%s_%s_%s_%s' % (baselabel, t, ntopics, npasses)
     basedir = join(sc.get_models_base_dir(), label)
     os.makedirs(basedir)
     logfile = join(basedir, 'gensim.log')
@@ -68,6 +72,7 @@ def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene',
     # Do this N number of times
     lda_rslt = LDAResult(label, lda_ctxt, ntopics=ntopics, npasses=npasses)
     lda_rslt.save()
+    fh.close()
 
     return lda_rslt
 
@@ -77,7 +82,8 @@ def doLDA(baselabel, ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene',
 #     tfidf_model = TfidfModel( )
 
 from clusters import ModelContext
-def create_model_ctxt(ctx='shakespeare', by='Char/Scene', ):
+def create_model_ctxt(ctx='shakespeare', by='Char'):
+    # by='Char', 'Char/Scene'
     play_ctx = png.get_plays_ctx(ctx)
     prc_ctx = ClustersCtxt(play_ctx)
     prc_ctx.preproc(by=by) # by='Char'
@@ -93,6 +99,21 @@ def doNMF(ntopics=50, npasses=200):
     print 'Label:', label
     print 'Started', t
     model_rslt = NMFResult(label, model_ctxt, ntopics=ntopics, npasses=npasses)
+    ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+    print 'Completed:', ended
+    return model_rslt
+
+def doRBM(ntopics=50, npasses=200, verbose=True):
+    from clusters import RBMResult
+    model_ctxt = create_model_ctxt(by='Char')
+    t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+    label = 'rbm-char-%s-%s-%s' % (t, ntopics, npasses)
+    print 'Label:', label
+    print 'Started', t
+    model_rslt = RBMResult(label, model_ctxt, 
+                           ntopics=ntopics, 
+                           npasses=npasses, 
+                           verbose=verbose)
     ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
     print 'Completed:', ended
     return model_rslt

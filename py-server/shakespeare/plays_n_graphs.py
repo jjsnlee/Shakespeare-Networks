@@ -259,8 +259,8 @@ def draw_graph(scene_title, G):
     c = 'b'
     nx.draw_networkx_edges(G, pos, edge_color=c, width=1, alpha=0.5)
     nx.draw_networkx_nodes(G, pos, node_size=node_size, node_color=c, alpha=0.5)
-    # not sure what this is for...
-    nx.draw_networkx_nodes(G, pos, node_size=5, node_color='k')
+    # not sure what this was for...
+    #nx.draw_networkx_nodes(G, pos, node_size=5, node_color='k')
 
     # would be good to have a little "judder" b/n nodes
     # need to fix the label spacing, or should figure it 

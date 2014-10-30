@@ -112,7 +112,8 @@ class LDAContext(object):
             # remove stop words and words that appear only once
             stop_ids = [dictionary.token2id[stopword] for stopword in stopwds
                         if stopword in dictionary.token2id]
-            once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.iteritems() if docfreq == 1]
+            once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.iteritems() 
+                        if docfreq == 1]
 
             dictionary.filter_tokens(stop_ids + once_ids) # remove stop words and words that appear only once
             #dictionary.filter_tokens(stop_ids)
@@ -218,7 +219,7 @@ class _ModelResult(object):
         return self.model.components_
     @property
     def num_topics(self):
-        return self.model.n_components_
+        return self.model.n_components
     @property
     def termite_data(self):
         if self.__termite_data is None:
@@ -268,14 +269,16 @@ class _ModelResult(object):
 #         super(RBMPipelineResult, self).__init__(label, ctxt, model, init_model=init_model)
         
 class RBMResult(_ModelResult):
-    def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200):
+    def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200, verbose=True):
         def init_model():
             from sklearn.neural_network import BernoulliRBM
             # learning_rate - highly recommended to tune this...
             self.model = BernoulliRBM(n_components=ntopics,
                                       random_state=0, 
                                       n_iter=npasses,
-                                      verbose=True)
+                                      verbose=verbose
+                                      )
+            self.model.fit(ctxt.corpus)
         super(RBMResult, self).__init__(label, ctxt, model, init_model=init_model)
 
 class GMMResult(_ModelResult):
@@ -365,11 +368,14 @@ class AffinityPropagationResult(_ModelResult):
         super(AffinityPropagationResult, self).__init__(label, ctxt, model, init_model=init_model)
 
 class LDAResult(_ModelResult):
-    def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None):
+    def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None, *model_params):
         def init_model():
             corpus = lda_ctxt.corpus 
             dictionary = lda_ctxt.dictionary
-            lda = LdaModel(corpus, num_topics=ntopics, id2word=dictionary.id2token, passes=npasses)
+            lda = LdaModel(corpus, num_topics=ntopics, 
+                           id2word=dictionary.id2token, 
+                           passes=npasses,
+                           *model_params)
             self.model = lda
         super(LDAResult, self).__init__(label, lda_ctxt, lda, init_model=init_model)
         self._docs_per_topic = None
@@ -586,60 +592,6 @@ def runs_multi_nmf(mat, nruns=5, pc=16, iters=100):
         runs.append((w,h))
     return runs
 
-def plot_wd_cnts(mat, pct_min=0, pct_max=100, mincnt=10):
-    """ Useful to see the top words """
-    cnts = mat.sum()
-    cnts.sort()
-    cnts = cnts[cnts>mincnt]
-    wdcnts = cnts.values
-    wds = cnts.keys()
-
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    
-    pos = np.arange(len(wds))+0.5    #Center bars on the Y-axis ticks
-
-    _rects = ax.barh(pos, wdcnts, align='center', height=.5, color='m')
-    plt.yticks(pos, wds)
-    
-    ax.set_xlabel('Counts')
-    ax.set_ylabel('Word Bins')
-    ax.grid(True)
-    plt.show()
-
-def plot_cnt_distrib(cnts, cnt_min=5, cnt_max=100):
-#    import matplotlib.mlab as mlab
-    
-    vals = cnts.values()
-    nbins = 100
-    step = (cnt_max-cnt_min) / nbins
-    bin_lbls = range(cnt_min, cnt_max, step)
-
-#    for k,v in cnts:
-#        if v > cnt_min and v <= cnt_max:
-#            pass
-
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    n, bins, patches = ax.hist(vals, bins=bin_lbls, 
-                               #normed=1, facecolor='green', alpha=0.75,
-                               log=True,
-                               range=[cnt_min, cnt_max]
-                               )
-
-    #bincenters = 0.5*(bins[1:]+bins[:-1])
-    # add a 'best fit' line for the normal PDF
-    #y = mlab.normpdf( bincenters, mu, sigma)
-    #l = ax.plot(bincenters, y, 'r--', linewidth=1)
-
-    ax.set_xlabel('Word Bins')
-    ax.set_ylabel('Counts')
-    #ax.set_title(r'$\mathrm{Histogram\ of\ IQ:}\ \mu=100,\ \sigma=15$')
-    #ax.set_xlim(40, 160)
-    #ax.set_ylim(0, 0.03)
-    ax.grid(True)
-    plt.show()
-
 def analyze_factors(mat, runs):
     for n in range(len(runs)):
         w,h = runs[n]
@@ -648,69 +600,6 @@ def analyze_factors(mat, runs):
         nmf.showarticles(mat.index, tps, ptns, out='output/articles_%d.txt'%n)
     # it would be good to be able to get the difference between different runs
 
-def plot_factors(plays, dp, tp): #mat
-    """ 
-    Taken largely from http://matplotlib.org/examples/api/radar_chart.html
-    """
-    import radar_chart
-    
-    #nruns = len(dp.items)
-    nfactors = len(dp.minor_axis)
-    #spoke_angles = range(nfactors)
-    
-    #docs = mat.index
-    docs = set([p.type for p in plays.values()])
-
-    theta = radar_chart.radar_factory(nfactors, frame='polygon')
-
-    #data = radar_chart.example_data()
-    fig = plt.figure(figsize=(9, 9))
-    fig.subplots_adjust(wspace=0.25, hspace=0.20, top=0.85, bottom=0.05)
-
-    pc = plays_n_graphs.play_classifications
-    colors = ['b', 'r', 'g']
-    #colors = ['b', 'r', 'g', 'm', 'y']
-    #colors = [(np.random.rand(), np.random.rand(), np.random.rand()) for _n in range(len(docs))]
-
-    # Plot the four cases from the example data on separate axes
-    for n in range(2):
-        title = 'Run %d'%n
-        ax = fig.add_subplot(2, 2, 2*n+1, projection='radar')
-        #plt.rgrids([0.2, 0.4, 0.6, 0.8])
-        ax.set_title(title, weight='bold', size='medium', position=(0.5, 1.1),
-                     horizontalalignment='center', verticalalignment='center')
-
-        spoke_labels = []
-        for f in range(nfactors):
-            top_factors = tp.ix[n][f].copy()
-            top_factors.sort()
-            top_factors = top_factors[::-1].head(5).keys()
-            #print top_factors
-            #spoke_labels += ','.join(top_factors)
-            spoke_labels.append(','.join(top_factors))
-        
-        # strength of factors
-        #factor_str = dp.ix[n].values
-        grpd = dp.ix[n].groupby(lambda p: pc[p])
-        factor_str = grpd.sum().values
-        
-        for d, color in zip(factor_str, colors):
-            ax.plot(theta, d, color=color)
-            ax.fill(theta, d, facecolor=color, alpha=0.25)
-        ax.set_varlabels(spoke_labels)
-
-    # add legend relative to top-left plot
-    plt.subplot(2, 2, 1)
-    legend = plt.legend(docs, 
-                        loc=(1.2, -.95),
-                        #loc='center right', 
-                        labelspacing=0.1)
-    plt.setp(legend.get_texts(), fontsize='small')
-
-#    plt.figtext(0.5, 0.965, 
-#                '5-Factor Solution Profiles Across Four Scenarios',
-#                ha='center', color='black', weight='bold', size='large')
-    plt.show()
 
 def make_matricesXXX(ngdf, min_cnt=2, max_threshold=1.0, ret_skipped=False):
     """ 

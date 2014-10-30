@@ -93,7 +93,7 @@ class CorpusDataJsonHandler:
         def copy_d(d):
             new_d = dict([(k,d[k]) for k in [
                 'density','location','total_degrees','graph_img_f','total_lines',
-                'avg_clustering','deg_assort_coeff','avg_shortest_path']])
+                'closeness_vitality','avg_clustering','deg_assort_coeff','avg_shortest_path']])
             new_d['scene'] ='Act %s, Sc %s' % (p['act'], p['scene'])
             return new_d
         
