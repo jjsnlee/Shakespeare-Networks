@@ -8,9 +8,9 @@ div, p {
  border: 0;
 }
 
-#pageBackground {
+/*#pageBackground {*/
  /* padding: 20px; */
-}
+/*}*/
 #pageFrame {
  border: 1px solid #999;
  box-shadow: 0 0 25px #999;
