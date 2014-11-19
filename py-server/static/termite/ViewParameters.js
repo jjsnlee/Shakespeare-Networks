@@ -17,7 +17,11 @@ var HIGHLIGHT = "red";
 var DEFAULT = "default";
 var DESELECT = "deselect";
 
-var colorNames = ["orange", "blue", "green", "purple", "brown", "pink"];
+var colorNames = [
+    "orange", "blue", "green", "purple", "brown", "pink",
+    "aqua", "fuchsia", "gray", "lime", "maroon", "navy", "olive", "red", "silver", 
+    "teal", "yellow"
+    ];
 var colorObjs = [];
 
 /**

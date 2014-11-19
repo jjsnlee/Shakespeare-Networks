@@ -1,11 +1,8 @@
 function initUserControlViewComponents(stateModel) {
   var affinityNumTermsSlider = new AffinityNumTermsSlider( {model: stateModel} );
   var salientNumTermsSlider = new SalientNumTermsSlider( {model: stateModel} );
-  var userDefinedTermsBox = new UserDefinedTermsBox( {model:stateModel} );
   var addTopTwenty = new AddTopTwenty( {model:stateModel} );
-  //var sortDescription = new SortDescription( {model:stateModel} );
   var clearAllButton = new ClearAllButton( { model:stateModel } ); 
-  var clearSortButton = new ClearSortButton( { model:stateModel } );
 }
 
 // Expects to be bound to the state model
@@ -66,6 +63,7 @@ var SalientNumTermsSlider = Backbone.View.extend({
 
 // User Defined Terms
 // Expects to be bound to the state model
+/*
 var FoundTermsView = Backbone.View.extend({
 	el : 'div.FoundTermsView',
 	render : function() {
@@ -86,22 +84,7 @@ var UnfoundTermsView = Backbone.View.extend({
 			d3.select( this.el ).style("visibility", "hidden");
 		}
 	} 
-});
-
-// Expects to be bound to the state model
-var UserDefinedTermsBox = Backbone.View.extend({
-	el: 'input.UserDefinedTermsBox',
-	events : {
-		'keyup' : function(e) {
-			this.model.setVisibleTerms(e.target.value);
-		}
-	},
-	initialize : function() {
-		this.model.on( "change:visibleTerms", function(value) {
-			d3.select(this.el)[0][0].value = this.model.get("visibleTerms").join(", ");
-		}, this);
-	}
-});
+});*/
 
 // Expects to be bound to the state model
 var AddTopTwenty = Backbone.View.extend({
@@ -162,12 +145,3 @@ var ClearAllButton = Backbone.View.extend({
 	}
 });
 
-// Expects to be bound to the state model
-var ClearSortButton = Backbone.View.extend({
-	el: 'button.clearSort',
-	events : {
-		'click' : function(e) {
-			this.model.clearSorting();
-		}
-	}
-});

@@ -8,7 +8,7 @@
 	Designed to take in a subset of the full list of terms, topics, and matrix. 
 */
 
-var SeriatedTermTopicProbabilityModel = Backbone.Model.extend({
+var ParentTermTopicProbabilityModel = Backbone.Model.extend({
 	defaults : {
 		"matrix" : null,
 		"termIndex" : null,
@@ -26,7 +26,7 @@ var SeriatedTermTopicProbabilityModel = Backbone.Model.extend({
  *
  * @private
  */
-SeriatedTermTopicProbabilityModel.prototype.initModel = function ( fullModel ) {
+ParentTermTopicProbabilityModel.prototype.initModel = function ( fullModel ) {
 	this.parentModel = filteredModel;
 };
 
@@ -38,7 +38,7 @@ SeriatedTermTopicProbabilityModel.prototype.initModel = function ( fullModel ) {
  * @param { string } the location of datafile to load values from
  * @return { void }
  */
-SeriatedTermTopicProbabilityModel.prototype.load = function () {
+ParentTermTopicProbabilityModel.prototype.load = function () {
 	var successHandler = function( model, response, options )
 	{
 		this.trigger("loaded:seriated");	
