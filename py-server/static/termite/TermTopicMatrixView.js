@@ -11,11 +11,11 @@
 	Additionally, uses parameters defined in ViewParameters.js.
 */
 var MATRIX_CONTAINER_PADDING = {
-	left_separation: 8,
+	left_separation: 80,
 	top_separation: 5,
-	//left: 110,
+	left: 10,
 	left: 80,
-	right: 20,
+	right: 0,
 	top: 60,
 	bottom: 60,
 	fullWidth : function( numTopics ) { 
@@ -25,7 +25,7 @@ var MATRIX_CONTAINER_PADDING = {
 		return this.top + this.bottom + MATRIX_ENCODING_PARAMETERS.packing() * numTerms 
 	}
 };
-	
+
 var MATRIX_ENCODING_PARAMETERS = {
 	NUM_TOPICS : 0,
 	NUM_TERMS : 0,
@@ -49,19 +49,15 @@ var MATRIX_ENCODING_PARAMETERS = {
 //			totalCirclePixels += sparseMatrix[i].value * Math.PI;
 //		// Add up # pixels:  prob * Math.PI;
 //		var totalMatrixPixels = numTopics * numTerms * this.packing() * this.packing();
-//		
 //		var targetPixels = ( totalMatrixPixels * this.TARGET_PIXEL_DENSITY );
 //		var observedPixels = totalCirclePixels;
 //		var areaScale = targetPixels / observedPixels;
 //		var radiusScale = Math.sqrt( areaScale );
-		
 		//var totalCirclePixels = 0.0;
 		//for ( var i in sparseMatrix )
 		//	totalCirclePixels += radiusScale * radiusScale * ( sparseMatrix[i].value ) * Math.PI;
-		
-		// It wasn't clear to me that it was useful to scale the radii of the circles
-		// based on the number of items in the matrix 
-		
+
+		// Not clear to me that it is useful to scale the radii of the circles based on the number of items in the matrix 
 		//return radiusScale;
 		return 1;
 	}
@@ -92,7 +88,6 @@ var TermTopicMatrixView = Backbone.View.extend({
 		this.highlightedTopic = null;
 		
 		this.receivedColors = null;
-		
 	}
 });
 /** 
@@ -310,7 +305,7 @@ TermTopicMatrixView.prototype.updateLeftLabelView = function(){
 	this.leftLabelLayer.selectAll( "text" ).data( termIndex )
 		.attr( "class", function(d) { return ["leftLabel", this.normalColor, getTermClassTag(d)].join(" ") }.bind(this))
 		.on( "mouseover", function(d) { this.trigger( "mouseover:term", d ) }.bind(this))
-		.attr( "transform", function(d,i) { 
+		.attr( "transform", function(d,i) {
 		  return "translate(" 
 		      + (this.xs(0)-MATRIX_CONTAINER_PADDING.left_separation) 
 		      + "," 
@@ -359,7 +354,6 @@ TermTopicMatrixView.prototype.onSelectionTopicChanged = function( model, value )
 
 /** 
  * Highlights elements based on term and/or topic
- *
  * @private
  */
 TermTopicMatrixView.prototype.highlight = function( term, topic ) {
@@ -434,7 +428,6 @@ TermTopicMatrixView.prototype.clickTopic = function( obj ){
 };
 /** 
  * topic selection behavior
- *
  * @private
  */
 TermTopicMatrixView.prototype.selectTopic = function( topic, colorClass ) {
@@ -454,65 +447,3 @@ TermTopicMatrixView.prototype.selectTopic = function( topic, colorClass ) {
 		this.selectedTopics[topic] = colorClass;
 	}
 };
-
-
-//function dragmove(d) {
-//  var x = d3.event.x;
-//  var y = d3.event.y;
-//  d3.select(this).attr("transform", "translate(" + x + "," + y + ")");
-//}
-//  var drag = d3.behavior.drag()
-//    .on("dragstart", function(){
-//        //do some drag start stuff...
-//        console.log('Started dragging...')
-//    })
-//    .on("drag", function(d){
-//        //hey we're dragging, let's update some stuff
-//        console.log('Dragging...');
-//        //dragmove(d);
-//        var x = d3.event.x;
-//            var y = d3.event.y;
-//            d3.select(this).attr("transform", "translate(" + x + "," + y + ")");
-//    })
-//    .on("dragend", function(){
-//        //we're done, end some stuff
-//        console.log('Done dragging...')
-//    });
-//  d3.selectAll(".topLabel").call(drag);
-//$(".topLabel").draggable({
-//  revert: true,
-//  revertDuration: 200,
-//  cursorAt: { left: -2, top: -2 }, 
-//
-//  // Register what we're dragging with the drop manager
-//  start: function (e) {
-//      console.log('Started dragging...');
-//      // Getting the datum from the standard event target requires more work.
-//      DragDropManager.dragged = d3.select(e.target).datum();
-//  },
-//  // Set cursors based on matches, prepare for a drop
-//  drag: function (e) {
-//      matches = DragDropManager.draggedMatchesTarget();
-//      body.style("cursor",function() {
-//          return (matches) ? "copy" : "move";
-//      });
-//      // Eliminate the animation on revert for matches.
-//      // We have to set the revert duration here instead of "stop"
-//      // in order to have the change take effect.
-//      $(e.target).draggable("option","revertDuration",(matches) ? 0 : 200)
-//  },
-//  // Handle the end state. For this example, disable correct drops
-//  // then reset the standard cursor.
-//  stop: function (e,ui) {
-//      console.log('Done dragging...');
-//      // Dropped on a non-matching target.
-//      if (!DragDropManager.draggedMatchesTarget()) return;
-//      $(e.target).draggable("disable");
-//      $("body").css("cursor","");
-//  }
-//});
-//  this.topLabelLayer.selectAll( "text" ).data( topicIndex )
-//      .attr( "id", function(d, i) { 
-//          //return ["topLabel", this.selectedTopics[i], getTopicClassTag(d)].join(" ")
-//          return getTopicClassTag(d) 
-//      }.bind(this)); //.draggable();

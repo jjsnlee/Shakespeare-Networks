@@ -26,21 +26,21 @@ var HISTOGRAM_ENCODING_PARAMETERS = {
 	LOOSE_NUM_TOPICS: 20,
 	DENSE_PACKING: 12,
 	LOOSE_PACKING: 18,
-	packing : function()
-	{
+	packing : function() 	{
 		return 12;
 	}
 };
-var HISTORGRAM_CONTAINER_PADDING = {
+var HISTOGRAM_CONTAINER_PADDING = {
 	left_separation: 10,
 	top: 60,
 	//left: 130,
-	left: 80, 
+	left: 10, 
 	right: 0,
 	bottom: 60,
-	width: 150,
+	width: 70,
 	fullWidth : function() { return this.left + this.right + this.width },
-	fullHeight : function( numTopics, numTerms ) { return this.top + this.bottom + HISTOGRAM_ENCODING_PARAMETERS.packing() * numTerms }
+	fullHeight : function( numTopics, numTerms ) { return this.top 
+	   + this.bottom + HISTOGRAM_ENCODING_PARAMETERS.packing() * numTerms }
 };
 	
 var TermFrequencyView = Backbone.View.extend({
@@ -77,7 +77,6 @@ var TermFrequencyView = Backbone.View.extend({
 
 /**
  * Initialize Term Frequency View's parent model
- *
  * @private
  */
 TermFrequencyView.prototype.initModel = function( model, state ){
@@ -86,7 +85,6 @@ TermFrequencyView.prototype.initModel = function( model, state ){
 
 /** 
  * Initialize/render histogram view's elements for the first time
- *
  * @private
  */
 TermFrequencyView.prototype.load = function(){
@@ -103,7 +101,6 @@ TermFrequencyView.prototype.update = function() {
 
 /**
  * Transforms the topical frequency matrix into a form appropriate for d3 stacked bars
- *
  * @private
  */
 TermFrequencyView.prototype.prepareStackedBars = function() {
@@ -137,7 +134,6 @@ TermFrequencyView.prototype.prepareStackedBars = function() {
  *	-svg layers
  *	-encoders
  *  -etc.
- *
  * @private
  */
 TermFrequencyView.prototype.renderInit = function() {
@@ -153,41 +149,38 @@ TermFrequencyView.prototype.renderInit = function() {
 			maxFreq = termFreq[termIndex[i]];
 	}
 	this.line_length = d3.scale.linear().domain([0, maxFreq]).range( 
-	   [ 0, HISTORGRAM_CONTAINER_PADDING.width ] );
+	   [ 0, HISTOGRAM_CONTAINER_PADDING.width ] );
 
 	// init svg layers
 	var container =	d3.select(this.el);
-	this.svg = container.append( "svg:svg" )
-		.style( "cursor", "default" )
-		.style( "width", HISTORGRAM_CONTAINER_PADDING.fullWidth() + "px" )
-	this.svgTermLabelLayer = this.svg.append( "svg:g" )
-		.attr( "class", "termLabelLayer" )
-		.attr( "transform", "translate(" + HISTORGRAM_CONTAINER_PADDING.left + "," + HISTORGRAM_CONTAINER_PADDING.top + ")" );
-	this.svgTermBarLayer = this.svg.append( "svg:g" )
-		.attr( "class", "termBarLayer" )
-		.attr( "transform", "translate(" + HISTORGRAM_CONTAINER_PADDING.left + "," + HISTORGRAM_CONTAINER_PADDING.top + ")" );
-	this.overlayLayer = this.svg.append( "svg:g" )
-		.attr( "class", "overlayLayer")
-		.attr( "transform", "translate(" + HISTORGRAM_CONTAINER_PADDING.left + "," + HISTORGRAM_CONTAINER_PADDING.top + ")" );
-	this.svgTopicalBarLayer = this.svg.append( "svg:g" )
-		.attr( "class", "topicalBarLayer" )
-		.attr( "transform", "translate(" + HISTORGRAM_CONTAINER_PADDING.left + "," + HISTORGRAM_CONTAINER_PADDING.top + ")" );
-	this.svgTermHighlightLayer = this.svg.append( "svg:g" )
-		.attr( "class", "termHighlightLayer" )
-		.attr( "transform", "translate(" + HISTORGRAM_CONTAINER_PADDING.left + "," + HISTORGRAM_CONTAINER_PADDING.top + ")" );
+	var transform_fn = 
+    	"translate(" + HISTOGRAM_CONTAINER_PADDING.left + "," + HISTOGRAM_CONTAINER_PADDING.top + ")";
+	
+	var view = this;
+	function addLayer(layerNm) {
+    return view.svg.append("svg:g")
+        .attr("class", layerNm)
+        .attr("transform", transform_fn);
+	};
+	
+	this.svg = container.append("svg:svg").style("cursor", "default")
+		.style("width", HISTOGRAM_CONTAINER_PADDING.fullWidth() + "px")
+	this.svgTermLabelLayer = addLayer("termLabelLayer");
+	this.svgTermBarLayer = addLayer("termBarLayer");
+	this.overlayLayer = addLayer("overlayLayer");
+	this.svgTopicalBarLayer = addLayer("topicalBarLayer");
+	this.svgTermHighlightLayer = addLayer("termHighlightLayer");
 };
 
 /** 
  * Update histogram view's elements based on parent model's termIndex and term frequencies
- *
  * @private
  */
 TermFrequencyView.prototype.renderUpdate = function() {
 	var termIndex = this.parentModel.get("termIndex");
 	var termFreq = this.parentModel.get("totalTermFreqs");
 
-	this.svg
-		.style( "height", HISTORGRAM_CONTAINER_PADDING.fullHeight( 
+	this.svg.style( "height", HISTOGRAM_CONTAINER_PADDING.fullHeight( 
 		  HISTOGRAM_ENCODING_PARAMETERS.NUM_TOPICS, termIndex.length ) + "px" )
 	
 	this.ys.domain( [ 0, termIndex.length ] )
@@ -196,15 +189,16 @@ TermFrequencyView.prototype.renderUpdate = function() {
 	this.svgTermLabelLayer.selectAll( "text" ).data( termIndex ).exit().remove();
 	this.svgTermLabelLayer.selectAll( "text" ).data( termIndex ).enter().append( "svg:text" )
 		.on( "mouseout", function() { this.trigger( "mouseout:term", "" ) }.bind(this))
-		.attr( "x", -HISTORGRAM_CONTAINER_PADDING.left_separation )
+		.attr( "x", -HISTOGRAM_CONTAINER_PADDING.left_separation )
 		.attr( "y", 3 )
 
   // The word labels
-	this.svgTermLabelLayer.selectAll( "text" ).data( termIndex )	
+/*	this.svgTermLabelLayer.selectAll( "text" ).data( termIndex )	
 		.attr( "class", function(d) { return ["termLabel", "HISTnormal", getTermClassTag(d)].join(" ") })
 		.attr( "transform", function(d,i) { return "translate(0," + this.ys(i+0.5) + ")" }.bind(this) )
 		.on( "mouseover", function(d) { this.trigger( "mouseover:term", d ) }.bind(this))
 		.text( function(d) { return d } );
+*/
 
 	this.svgTermBarLayer.selectAll("line").data(termIndex).exit().remove();
 	this.svgTermBarLayer.selectAll("line").data(termIndex).enter().append("svg:line")

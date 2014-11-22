@@ -1,21 +1,7 @@
-function initUserControlViewComponents(stateModel) {
-  var affinityNumTermsSlider = new AffinityNumTermsSlider( {model: stateModel} );
-  var salientNumTermsSlider = new SalientNumTermsSlider( {model: stateModel} );
-  var addTopTwenty = new AddTopTwenty( {model:stateModel} );
-  var clearAllButton = new ClearAllButton( { model:stateModel } ); 
-}
-
-// Expects to be bound to the state model
-var TotalTermsView = Backbone.View.extend({
-	el : 'div.TotalTermsView',
-	render : function() {
-		d3.select(this.el).text( this.model.get("totalTerms") );
-	}
-});
 
 // Affinity Number Terms
 // Need to bound to the state model
-var AffinityNumTermsView = Backbone.View.extend({
+/*var AffinityNumTermsView = Backbone.View.extend({
 	el : 'div.AffinityNumTermsView',
 	render : function() {
 		d3.select(this.el).text( this.model.get("numAffinityTerms") );
@@ -35,11 +21,11 @@ var AffinityNumTermsSlider = Backbone.View.extend({
 			d3.select(this.el)[0][0].value = this.model.get("numAffinityTerms");
 		}, this);
 	}
-});
+});*/
 
 // Salient Number Terms
 // Expects to be bound to the state model
-var SalientNumTermsView = Backbone.View.extend({
+/*var SalientNumTermsView = Backbone.View.extend({
 	el : 'div.SalientNumTermsView',
 	render : function() {
 		d3.select(this.el).text( this.model.get("numSalientTerms") );
@@ -59,7 +45,7 @@ var SalientNumTermsSlider = Backbone.View.extend({
 			d3.select(this.el)[0][0].value = this.model.get("numSalientTerms");
 		}, this);
 	}
-});
+});*/
 
 // User Defined Terms
 // Expects to be bound to the state model
@@ -87,7 +73,7 @@ var UnfoundTermsView = Backbone.View.extend({
 });*/
 
 // Expects to be bound to the state model
-var AddTopTwenty = Backbone.View.extend({
+/*var AddTopTwenty = Backbone.View.extend({
 	el: 'input.TopTwentyAddition',
 	events : {
 		'change' : function(e) {
@@ -99,7 +85,7 @@ var AddTopTwenty = Backbone.View.extend({
 			d3.select(this.el)[0][0].checked = this.model.get("addTopTwenty");
 		}, this);
 	}
-});
+});*/
 
 // Expects to be bound to the state model
 //var SortDescription = Backbone.View.extend({
@@ -134,14 +120,4 @@ var AddTopTwenty = Backbone.View.extend({
 //		}, this);
 //	}
 //});
-
-// Expects to be bound to the state model
-var ClearAllButton = Backbone.View.extend({
-	el: 'button.clearAll',
-	events : {
-		'click' : function(e) {
-			this.model.clearAllSelectedTopics();
-		}
-	}
-});
 

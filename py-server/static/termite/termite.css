@@ -7,10 +7,6 @@ div, p {
  margin: 0;
  border: 0;
 }
-
-/*#pageBackground {*/
- /* padding: 20px; */
-/*}*/
 #pageFrame {
  border: 1px solid #999;
  box-shadow: 0 0 25px #999;
@@ -41,7 +37,7 @@ div, p {
  color: #666;
  font-family: Verdana;
  font-size: 8pt;
- padding: 10px 20px;
+ /*padding: 10px 20px;*/
  border-left: 1px solid #999;
 }
 

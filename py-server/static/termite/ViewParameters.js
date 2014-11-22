@@ -94,6 +94,7 @@ function getTermClassTag( term ){
 function sanitize( text ){
 	// Need to account for non-alphanumeric characters
 	// Return a unique identifier for any input string
-	return text.replace( /[^A-Za-z0-9]/g, "_" );
+	if(text)
+	   return text.replace( /[^A-Za-z0-9]/g, "_" );
 }
 /** end class labeling helper functions **/

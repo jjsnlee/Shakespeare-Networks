@@ -52,7 +52,7 @@ text.topLabel {
 	cursor: pointer;
 }
 text.leftLabel {
-	text-anchor: end;
+	/*text-anchor: end;*/
 }
 text.normal {
 	fill: #808080;
@@ -160,7 +160,7 @@ circle.red {
 }
 /* histogram color objects */
 text.termLabel{
-	text-anchor: end;
+	text-anchor: middle;
 }
 text.HISTnormal {
 	fill: #808080;
