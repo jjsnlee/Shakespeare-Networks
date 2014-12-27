@@ -31,6 +31,14 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
 
   var stateModel, parentTTPModel, ttProbModel, tFreqModel;  
 
+	// Get rid of his...
+	var TotalTermsView = Backbone.View.extend({
+	    el : 'div.TotalTermsView',
+	    render : function() {
+	        d3.select(this.el).text( this.model.get("totalTerms") );
+	    }
+	});
+
   function loadPage(ldaModel) {
     // create backbone models and views
     stateModel = new StateModel();
@@ -46,10 +54,10 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
 
       // init user control views
     var totalTermsView = new TotalTermsView( {model: stateModel} );
-    var affinityNumTermsView = new AffinityNumTermsView( {model: stateModel} );
-    var salientNumTermsView = new SalientNumTermsView( {model: stateModel} );
 
-    initUserControlViewComponents(stateModel);
+    stateModel.set("numAffinityTerms", 70);
+    stateModel.set("numSalientTerms", 70);
+    stateModel.set("addTopTwenty", true);
 
     var basedir = '/shakespeare/corpus/topicModels/'+ldaModel+'/termite'
     parentTTPModel.url = basedir+"/seriated-parameters.json";
@@ -117,9 +125,6 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
       tFreqView.listenTo( tFreqModel, "change:termIndex", tFreqView.renderUpdate.bind( tFreqView ));
     });
 
-    // initialize user controls listeners that catch state model changes
-    affinityNumTermsView.listenTo( stateModel, 'change:numAffinityTerms', affinityNumTermsView.render );
-    salientNumTermsView.listenTo( stateModel, 'change:numSalientTerms', salientNumTermsView.render );
     totalTermsView.listenTo( stateModel, 'change:totalTerms', totalTermsView.render );
 
     // initialize state model listeners that catch view events
@@ -158,6 +163,10 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
       tFreqModel : tFreqModel 
     };
   };
+  
+  $scope.clearTopics = function() {
+    stateModel.clearAllSelectedTopics();
+  };
 
   $scope.changeModel = function() {
     console.log('$scope.LDAModel: '+$scope.LDAModel);
@@ -190,7 +199,7 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   // As an index
   var selectedTopicIndex = -1;
   
-  $scope.showTopicDetails = 1;
+  //$scope.showTopicDetails = 1;
 
   $scope.setModels = function(m) {
     models = m;
@@ -236,7 +245,6 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
 
   $scope.getDocContent = function(charNm) {
     console.log('charNm: '+charNm);
-    $scope.showTopicDetails = 1;
     $http.get('/shakespeare/corpus/characters/'+charNm).success(function(data) {
       console.log('data: '+data);
       var termTopicScoreMatrix = termTopicProbModel.get('matrix');
