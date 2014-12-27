@@ -4,6 +4,11 @@
   [
    {
     "total_lines": 119, 
+    "closeness_vitality": {
+     "TROILUS": 8.0, 
+     "PANDARUS": 6.0, 
+     "AENEAS": 6.0
+    }, 
     "deg_assort_coeff": -0.69024856596558315, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -33,6 +38,12 @@
    }, 
    {
     "total_lines": 296, 
+    "closeness_vitality": {
+     "Boy": 10.0, 
+     "PANDARUS": 14.0, 
+     "CRESSIDA": 8.0, 
+     "ALEXANDER": 8.0
+    }, 
     "deg_assort_coeff": -0.5754146034740234, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -67,7 +78,14 @@
    }, 
    {
     "total_lines": 406, 
-    "deg_assort_coeff": -0.46006278339728357, 
+    "closeness_vitality": {
+     "AGAMEMNON": 20.0, 
+     "NESTOR": 10.0, 
+     "MENELAUS": 14.0, 
+     "ULYSSES": 10.0, 
+     "AENEAS": 10.0
+    }, 
+    "deg_assort_coeff": -0.46006278339727846, 
     "density": 0.7, 
     "scene": "3", 
     "total_degrees": 7, 
@@ -108,7 +126,13 @@
   [
    {
     "total_lines": 131, 
-    "deg_assort_coeff": -0.36496777973052164, 
+    "closeness_vitality": {
+     "ACHILLES": 6.0, 
+     "AJAX": 8.0, 
+     "THERSITES": 6.0, 
+     "PATROCLUS": 8.0
+    }, 
+    "deg_assort_coeff": -0.36496777973052202, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -142,7 +166,15 @@
    }, 
    {
     "total_lines": 224, 
-    "deg_assort_coeff": -0.40542907180385146, 
+    "closeness_vitality": {
+     "PARIS": 14.0, 
+     "PRIAM": 12.0, 
+     "HECTOR": 12.0, 
+     "TROILUS": 26.0, 
+     "HELENUS": 18.0, 
+     "CASSANDRA": 14.0
+    }, 
+    "deg_assort_coeff": -0.4054290718038534, 
     "density": 0.6666666666666666, 
     "scene": "2", 
     "total_degrees": 10, 
@@ -186,7 +218,17 @@
    }, 
    {
     "total_lines": 278, 
-    "deg_assort_coeff": -0.10950771759978344, 
+    "closeness_vitality": {
+     "AGAMEMNON": 18.0, 
+     "ULYSSES": 10.0, 
+     "PATROCLUS": 14.0, 
+     "DIOMEDES": 26.0, 
+     "AJAX": 22.0, 
+     "ACHILLES": 30.0, 
+     "THERSITES": 26.0, 
+     "NESTOR": 26.0
+    }, 
+    "deg_assort_coeff": -0.10950771759978158, 
     "density": 0.5, 
     "scene": "3", 
     "total_degrees": 14, 
@@ -242,6 +284,12 @@
   [
    {
     "total_lines": 154, 
+    "closeness_vitality": {
+     "Servant": 10.0, 
+     "PARIS": 8.0, 
+     "PANDARUS": 14.0, 
+     "HELEN": 8.0
+    }, 
     "deg_assort_coeff": -0.60152639895060067, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -276,6 +324,12 @@
    }, 
    {
     "total_lines": 216, 
+    "closeness_vitality": {
+     "Boy": 10.0, 
+     "PANDARUS": 14.0, 
+     "CRESSIDA": 8.0, 
+     "TROILUS": 8.0
+    }, 
     "deg_assort_coeff": 0.1865546218487395, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -310,7 +364,19 @@
    }, 
    {
     "total_lines": 330, 
-    "deg_assort_coeff": -0.16821104670839349, 
+    "closeness_vitality": {
+     "AGAMEMNON": 64.0, 
+     "ULYSSES": 26.0, 
+     "PATROCLUS": 32.0, 
+     "DIOMEDES": 38.0, 
+     "CALCHAS": 42.0, 
+     "AJAX": 38.0, 
+     "MENELAUS": 38.0, 
+     "ACHILLES": 80.0, 
+     "THERSITES": 36.0, 
+     "NESTOR": 32.0
+    }, 
+    "deg_assort_coeff": -0.16821104670839288, 
     "density": 0.3111111111111111, 
     "scene": "3", 
     "total_degrees": 14, 
@@ -376,7 +442,13 @@
   [
    {
     "total_lines": 86, 
-    "deg_assort_coeff": -0.36029411764706082, 
+    "closeness_vitality": {
+     "PARIS": 6.0, 
+     "DEIPHOBUS": 8.0, 
+     "DIOMEDES": 8.0, 
+     "AENEAS": 6.0
+    }, 
+    "deg_assort_coeff": -0.36029411764706087, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -410,7 +482,13 @@
    }, 
    {
     "total_lines": 123, 
-    "deg_assort_coeff": -0.11396586529638619, 
+    "closeness_vitality": {
+     "TROILUS": 6.0, 
+     "PANDARUS": 6.0, 
+     "AENEAS": 8.0, 
+     "CRESSIDA": 8.0
+    }, 
+    "deg_assort_coeff": -0.11396586529638696, 
     "density": 0.8333333333333334, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -444,6 +522,10 @@
    }, 
    {
     "total_lines": 15, 
+    "closeness_vitality": {
+     "PARIS": 2.0, 
+     "TROILUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -468,7 +550,16 @@
    }, 
    {
     "total_lines": 165, 
-    "deg_assort_coeff": -0.1294857160727404, 
+    "closeness_vitality": {
+     "AENEAS": 18.0, 
+     "PARIS": 18.0, 
+     "PANDARUS": 22.0, 
+     "DIOMEDES": 24.0, 
+     "DEIPHOBUS": 26.0, 
+     "TROILUS": 64.0, 
+     "CRESSIDA": 22.0
+    }, 
+    "deg_assort_coeff": -0.12948571607274101, 
     "density": 0.42857142857142855, 
     "scene": "4", 
     "total_degrees": 9, 
@@ -517,7 +608,22 @@
    }, 
    {
     "total_lines": 333, 
-    "deg_assort_coeff": -0.21794268797398028, 
+    "closeness_vitality": {
+     "ALL": 44.0, 
+     "AENEAS": 40.0, 
+     "AGAMEMNON": 22.0, 
+     "ULYSSES": 8.0, 
+     "PATROCLUS": 44.0, 
+     "AJAX": 38.0, 
+     "HECTOR": 32.0, 
+     "DIOMEDES": 36.0, 
+     "MENELAUS": 38.0, 
+     "ACHILLES": 36.0, 
+     "TROILUS": 42.0, 
+     "NESTOR": 34.0, 
+     "CRESSIDA": 44.0
+    }, 
+    "deg_assort_coeff": -0.21794268797397592, 
     "density": 0.47435897435897434, 
     "scene": "5", 
     "total_degrees": 37, 
@@ -598,7 +704,19 @@
   [
    {
     "total_lines": 114, 
-    "deg_assort_coeff": 0.13814999141925613, 
+    "closeness_vitality": {
+     "AGAMEMNON": 28.0, 
+     "ULYSSES": 28.0, 
+     "PATROCLUS": 38.0, 
+     "DIOMEDES": 32.0, 
+     "HECTOR": 46.0, 
+     "AJAX": 32.0, 
+     "MENELAUS": 36.0, 
+     "ACHILLES": 20.0, 
+     "TROILUS": 34.0, 
+     "THERSITES": 28.0
+    }, 
+    "deg_assort_coeff": 0.13814999141925494, 
     "density": 0.4, 
     "scene": "1", 
     "total_degrees": 18, 
@@ -662,6 +780,12 @@
    }, 
    {
     "total_lines": 63, 
+    "closeness_vitality": {
+     "TROILUS": 18.0, 
+     "ALL": 10.0, 
+     "AENEAS": 10.0, 
+     "PANDARUS": 10.0
+    }, 
     "deg_assort_coeff": -0.98461538461538467, 
     "density": 0.5, 
     "scene": "10", 
@@ -696,7 +820,16 @@
    }, 
    {
     "total_lines": 228, 
-    "deg_assort_coeff": -0.30438202247191287, 
+    "closeness_vitality": {
+     "AENEAS": 20.0, 
+     "ULYSSES": 12.0, 
+     "CALCHAS": 20.0, 
+     "DIOMEDES": 16.0, 
+     "TROILUS": 12.0, 
+     "THERSITES": 16.0, 
+     "CRESSIDA": 16.0
+    }, 
+    "deg_assort_coeff": -0.30438202247191037, 
     "density": 0.6190476190476191, 
     "scene": "2", 
     "total_degrees": 13, 
@@ -745,7 +878,15 @@
    }, 
    {
     "total_lines": 133, 
-    "deg_assort_coeff": -0.42878338278931555, 
+    "closeness_vitality": {
+     "ANDROMACHE": 18.0, 
+     "PANDARUS": 20.0, 
+     "PRIAM": 14.0, 
+     "HECTOR": 12.0, 
+     "TROILUS": 30.0, 
+     "CASSANDRA": 12.0
+    }, 
+    "deg_assort_coeff": -0.42878338278931732, 
     "density": 0.6, 
     "scene": "3", 
     "total_degrees": 9, 
@@ -789,6 +930,12 @@
    }, 
    {
     "total_lines": 42, 
+    "closeness_vitality": {
+     "TROILUS": 8.0, 
+     "THERSITES": 14.0, 
+     "DIOMEDES": 8.0, 
+     "HECTOR": 10.0
+    }, 
     "deg_assort_coeff": -0.30909090909090908, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -823,6 +970,15 @@
    }, 
    {
     "total_lines": 58, 
+    "closeness_vitality": {
+     "AGAMEMNON": 22.0, 
+     "ULYSSES": 22.0, 
+     "Servant": 24.0, 
+     "DIOMEDES": 14.0, 
+     "AJAX": 24.0, 
+     "ACHILLES": 26.0, 
+     "NESTOR": 36.0
+    }, 
     "deg_assort_coeff": -0.45454545454545453, 
     "density": 0.38095238095238093, 
     "scene": "5", 
@@ -872,7 +1028,14 @@
    }, 
    {
     "total_lines": 44, 
-    "deg_assort_coeff": -0.29032258064516814, 
+    "closeness_vitality": {
+     "HECTOR": 28.0, 
+     "TROILUS": 30.0, 
+     "AJAX": 14.0, 
+     "DIOMEDES": 14.0, 
+     "ACHILLES": 18.0
+    }, 
+    "deg_assort_coeff": -0.29032258064517108, 
     "density": 0.5, 
     "scene": "6", 
     "total_degrees": 5, 
@@ -911,6 +1074,11 @@
    }, 
    {
     "total_lines": 29, 
+    "closeness_vitality": {
+     "MARGARELON": 6.0, 
+     "ACHILLES": 6.0, 
+     "THERSITES": 8.0
+    }, 
     "deg_assort_coeff": -0.52941176470588236, 
     "density": 0.6666666666666666, 
     "scene": "7", 
@@ -940,6 +1108,11 @@
    }, 
    {
     "total_lines": 28, 
+    "closeness_vitality": {
+     "HECTOR": 6.0, 
+     "ACHILLES": 8.0, 
+     "MYRMIDONS": 6.0
+    }, 
     "deg_assort_coeff": -0.92592592592592593, 
     "density": 0.6666666666666666, 
     "scene": "8", 
@@ -969,6 +1142,12 @@
    }, 
    {
     "total_lines": 12, 
+    "closeness_vitality": {
+     "DIOMEDES": 8.0, 
+     "NESTOR": 8.0, 
+     "AGAMEMNON": 8.0, 
+     "AJAX": 8.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.6666666666666666, 
     "scene": "9", 

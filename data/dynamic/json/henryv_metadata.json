@@ -4,6 +4,9 @@
   [
    {
     "total_lines": 35, 
+    "closeness_vitality": {
+     "Chorus": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -23,6 +26,10 @@
    }, 
    {
     "total_lines": 103, 
+    "closeness_vitality": {
+     "ELY": 2.0, 
+     "CANTERBURY": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -47,7 +54,15 @@
    }, 
    {
     "total_lines": 320, 
-    "deg_assort_coeff": -0.36159600997506108, 
+    "closeness_vitality": {
+     "First Ambassador": 20.0, 
+     "KING HENRY V": 30.0, 
+     "CANTERBURY": 12.0, 
+     "ELY": 18.0, 
+     "WESTMORELAND": 14.0, 
+     "EXETER": 12.0
+    }, 
+    "deg_assort_coeff": -0.36159600997506258, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 9, 
@@ -93,6 +108,9 @@
   [
    {
     "total_lines": 43, 
+    "closeness_vitality": {
+     "Chorus": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -112,6 +130,13 @@
    }, 
    {
     "total_lines": 125, 
+    "closeness_vitality": {
+     "BARDOLPH": 8.0, 
+     "Boy": 12.0, 
+     "PISTOL": 8.0, 
+     "Hostess": 10.0, 
+     "NYM": 10.0
+    }, 
     "deg_assort_coeff": -0.35091342335186654, 
     "density": 0.8, 
     "scene": "1", 
@@ -151,7 +176,16 @@
    }, 
    {
     "total_lines": 199, 
-    "deg_assort_coeff": 0.34220679012345623, 
+    "closeness_vitality": {
+     "BEDFORD": 24.0, 
+     "CAMBRIDGE": 22.0, 
+     "SCROOP": 16.0, 
+     "KING HENRY V": 16.0, 
+     "GREY": 22.0, 
+     "WESTMORELAND": 24.0, 
+     "EXETER": 56.0
+    }, 
+    "deg_assort_coeff": 0.34220679012345584, 
     "density": 0.5238095238095238, 
     "scene": "2", 
     "total_degrees": 11, 
@@ -200,6 +234,13 @@
    }, 
    {
     "total_lines": 62, 
+    "closeness_vitality": {
+     "BARDOLPH": 8.0, 
+     "Boy": 10.0, 
+     "PISTOL": 8.0, 
+     "Hostess": 8.0, 
+     "NYM": 10.0
+    }, 
     "deg_assort_coeff": -0.30599369085173372, 
     "density": 0.9, 
     "scene": "3", 
@@ -239,7 +280,14 @@
    }, 
    {
     "total_lines": 155, 
-    "deg_assort_coeff": -0.37614678899082638, 
+    "closeness_vitality": {
+     "Messenger": 16.0, 
+     "DAUPHIN": 24.0, 
+     "KING OF FRANCE": 24.0, 
+     "Constable": 16.0, 
+     "EXETER": 12.0
+    }, 
+    "deg_assort_coeff": -0.37614678899082643, 
     "density": 0.5, 
     "scene": "4", 
     "total_degrees": 5, 
@@ -280,6 +328,9 @@
   [
    {
     "total_lines": 37, 
+    "closeness_vitality": {
+     "Chorus": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -299,6 +350,9 @@
    }, 
    {
     "total_lines": 35, 
+    "closeness_vitality": {
+     "KING HENRY V": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "1", 
@@ -318,7 +372,17 @@
    }, 
    {
     "total_lines": 144, 
-    "deg_assort_coeff": 0.043672360248446535, 
+    "closeness_vitality": {
+     "Boy": 16.0, 
+     "BARDOLPH": 38.0, 
+     "JAMY": 28.0, 
+     "NYM": 62.0, 
+     "MACMORRIS": 28.0, 
+     "FLUELLEN": 16.0, 
+     "PISTOL": 22.0, 
+     "GOWER": 22.0
+    }, 
+    "deg_assort_coeff": 0.043672360248446979, 
     "density": 0.4642857142857143, 
     "scene": "2", 
     "total_degrees": 13, 
@@ -372,6 +436,10 @@
    }, 
    {
     "total_lines": 59, 
+    "closeness_vitality": {
+     "KING HENRY V": 2.0, 
+     "GOVERNOR": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -396,6 +464,10 @@
    }, 
    {
     "total_lines": 56, 
+    "closeness_vitality": {
+     "KATHARINE": 2.0, 
+     "ALICE": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -420,6 +492,12 @@
    }, 
    {
     "total_lines": 70, 
+    "closeness_vitality": {
+     "Constable": 6.0, 
+     "BOURBON": 6.0, 
+     "DAUPHIN": 6.0, 
+     "KING OF FRANCE": 6.0
+    }, 
     "deg_assort_coeff": -0.33333333333333331, 
     "density": 1.0, 
     "scene": "5", 
@@ -454,7 +532,15 @@
    }, 
    {
     "total_lines": 180, 
-    "deg_assort_coeff": -0.058055152394775024, 
+    "closeness_vitality": {
+     "PISTOL": 22.0, 
+     "KING HENRY V": 46.0, 
+     "FLUELLEN": 50.0, 
+     "MONTJOY": 20.0, 
+     "GOWER": 22.0, 
+     "GLOUCESTER": 20.0
+    }, 
+    "deg_assort_coeff": -0.058055152394775072, 
     "density": 0.4, 
     "scene": "6", 
     "total_degrees": 6, 
@@ -498,7 +584,14 @@
    }, 
    {
     "total_lines": 143, 
-    "deg_assort_coeff": -0.60483549351944355, 
+    "closeness_vitality": {
+     "ORLEANS": 8.0, 
+     "DAUPHIN": 12.0, 
+     "Messenger": 12.0, 
+     "Constable": 8.0, 
+     "RAMBURES": 12.0
+    }, 
+    "deg_assort_coeff": -0.60483549351944188, 
     "density": 0.7, 
     "scene": "7", 
     "total_degrees": 7, 
@@ -539,6 +632,9 @@
   [
    {
     "total_lines": 54, 
+    "closeness_vitality": {
+     "Chorus": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -558,7 +654,18 @@
    }, 
    {
     "total_lines": 319, 
-    "deg_assort_coeff": -0.4396177237185061, 
+    "closeness_vitality": {
+     "BATES": 26.0, 
+     "ERPINGHAM": 28.0, 
+     "KING HENRY V": 108.0, 
+     "COURT": 28.0, 
+     "FLUELLEN": 28.0, 
+     "PISTOL": 30.0, 
+     "GOWER": 28.0, 
+     "WILLIAMS": 28.0, 
+     "GLOUCESTER": 28.0
+    }, 
+    "deg_assort_coeff": -0.43961772371850544, 
     "density": 0.3333333333333333, 
     "scene": "1", 
     "total_degrees": 12, 
@@ -617,7 +724,15 @@
    }, 
    {
     "total_lines": 67, 
-    "deg_assort_coeff": -0.14728682170542634, 
+    "closeness_vitality": {
+     "ORLEANS": 22.0, 
+     "Constable": 34.0, 
+     "GRANDPRE": 22.0, 
+     "Messenger": 18.0, 
+     "DAUPHIN": 34.0, 
+     "RAMBURES": 18.0
+    }, 
+    "deg_assort_coeff": -0.14728682170542642, 
     "density": 0.4, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -661,7 +776,17 @@
    }, 
    {
     "total_lines": 142, 
-    "deg_assort_coeff": -0.24818577648766207, 
+    "closeness_vitality": {
+     "BEDFORD": 58.0, 
+     "GLOUCESTER": 36.0, 
+     "YORK": 34.0, 
+     "KING HENRY V": 82.0, 
+     "EXETER": 26.0, 
+     "WESTMORELAND": 22.0, 
+     "MONTJOY": 34.0, 
+     "SALISBURY": 22.0
+    }, 
+    "deg_assort_coeff": -0.24818577648766343, 
     "density": 0.35714285714285715, 
     "scene": "3", 
     "total_degrees": 10, 
@@ -715,7 +840,12 @@
    }, 
    {
     "total_lines": 74, 
-    "deg_assort_coeff": -0.5, 
+    "closeness_vitality": {
+     "French Soldier": 4.0, 
+     "Boy": 4.0, 
+     "PISTOL": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000167, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -744,7 +874,13 @@
    }, 
    {
     "total_lines": 26, 
-    "deg_assort_coeff": -0.57024793388430228, 
+    "closeness_vitality": {
+     "ORLEANS": 6.0, 
+     "Constable": 6.0, 
+     "DAUPHIN": 8.0, 
+     "BOURBON": 8.0
+    }, 
+    "deg_assort_coeff": -0.57024793388430617, 
     "density": 0.8333333333333334, 
     "scene": "5", 
     "total_degrees": 5, 
@@ -778,6 +914,10 @@
    }, 
    {
     "total_lines": 41, 
+    "closeness_vitality": {
+     "KING HENRY V": 2.0, 
+     "EXETER": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "6", 
@@ -802,7 +942,16 @@
    }, 
    {
     "total_lines": 186, 
-    "deg_assort_coeff": -0.4696571680023458, 
+    "closeness_vitality": {
+     "KING HENRY V": 56.0, 
+     "EXETER": 20.0, 
+     "FLUELLEN": 18.0, 
+     "MONTJOY": 22.0, 
+     "GOWER": 20.0, 
+     "WILLIAMS": 20.0, 
+     "GLOUCESTER": 20.0
+    }, 
+    "deg_assort_coeff": -0.46965716800234669, 
     "density": 0.42857142857142855, 
     "scene": "7", 
     "total_degrees": 9, 
@@ -851,6 +1000,15 @@
    }, 
    {
     "total_lines": 131, 
+    "closeness_vitality": {
+     "KING HENRY V": 60.0, 
+     "Herald": 26.0, 
+     "WARWICK": 26.0, 
+     "FLUELLEN": 40.0, 
+     "GOWER": 24.0, 
+     "WILLIAMS": 18.0, 
+     "EXETER": 26.0
+    }, 
     "deg_assort_coeff": -0.50338857067902587, 
     "density": 0.38095238095238093, 
     "scene": "8", 
@@ -902,6 +1060,9 @@
   [
    {
     "total_lines": 46, 
+    "closeness_vitality": {
+     "Chorus": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -921,7 +1082,12 @@
    }, 
    {
     "total_lines": 91, 
-    "deg_assort_coeff": -0.50000000000000078, 
+    "closeness_vitality": {
+     "FLUELLEN": 4.0, 
+     "PISTOL": 4.0, 
+     "GOWER": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999944, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -950,6 +1116,19 @@
    }, 
    {
     "total_lines": 394, 
+    "closeness_vitality": {
+     "ALL": 34.0, 
+     "FRENCH KING": 32.0, 
+     "KING OF FRANCE": 38.0, 
+     "QUEEN ISABEL": 34.0, 
+     "ALICE": 38.0, 
+     "BURGUNDY": 38.0, 
+     "KING HENRY V": 94.0, 
+     "Chorus": 40.0, 
+     "WESTMORELAND": 36.0, 
+     "KATHARINE": 38.0, 
+     "EXETER": 48.0
+    }, 
     "deg_assort_coeff": -0.34939185368777714, 
     "density": 0.2909090909090909, 
     "scene": "2", 

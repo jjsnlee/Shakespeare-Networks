@@ -4,6 +4,10 @@
   [
    {
     "total_lines": 109, 
+    "closeness_vitality": {
+     "KING HENRY IV": 2.0, 
+     "WESTMORELAND": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -28,7 +32,12 @@
    }, 
    {
     "total_lines": 210, 
-    "deg_assort_coeff": -0.50000000000000022, 
+    "closeness_vitality": {
+     "POINS": 4.0, 
+     "FALSTAFF": 4.0, 
+     "PRINCE HENRY": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999989, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -57,6 +66,13 @@
    }, 
    {
     "total_lines": 319, 
+    "closeness_vitality": {
+     "KING HENRY IV": 8.0, 
+     "HOTSPUR": 8.0, 
+     "NORTHUMBERLAND": 10.0, 
+     "SIR WALTER BLUNT": 12.0, 
+     "EARL OF WORCESTER": 10.0
+    }, 
     "deg_assort_coeff": -0.20317185313520358, 
     "density": 0.8, 
     "scene": "3", 
@@ -98,7 +114,14 @@
   [
    {
     "total_lines": 97, 
-    "deg_assort_coeff": -0.24338624338624446, 
+    "closeness_vitality": {
+     "Ostler": 16.0, 
+     "GADSHILL": 24.0, 
+     "First Carrier": 24.0, 
+     "Chamberlain": 16.0, 
+     "Second Carrier": 12.0
+    }, 
+    "deg_assort_coeff": -0.24338624338624076, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -137,7 +160,18 @@
    }, 
    {
     "total_lines": 114, 
-    "deg_assort_coeff": -0.18660287081339744, 
+    "closeness_vitality": {
+     "POINS": 28.0, 
+     "BARDOLPH": 32.0, 
+     "PETO": 38.0, 
+     "FALSTAFF": 90.0, 
+     "Thieves": 40.0, 
+     "First Traveller": 30.0, 
+     "Travellers": 30.0, 
+     "PRINCE HENRY": 26.0, 
+     "GADSHILL": 30.0
+    }, 
+    "deg_assort_coeff": -0.18660287081339716, 
     "density": 0.3333333333333333, 
     "scene": "2", 
     "total_degrees": 12, 
@@ -196,6 +230,11 @@
    }, 
    {
     "total_lines": 126, 
+    "closeness_vitality": {
+     "Servant": 6.0, 
+     "HOTSPUR": 8.0, 
+     "LADY PERCY": 6.0
+    }, 
     "deg_assort_coeff": -0.73134328358208955, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -225,7 +264,20 @@
    }, 
    {
     "total_lines": 556, 
-    "deg_assort_coeff": -0.50117160455961862, 
+    "closeness_vitality": {
+     "POINS": 34.0, 
+     "Sheriff": 36.0, 
+     "Hostess": 36.0, 
+     "BARDOLPH": 34.0, 
+     "PETO": 32.0, 
+     "Vintner": 38.0, 
+     "FALSTAFF": 28.0, 
+     "Carrier": 36.0, 
+     "PRINCE HENRY": 104.0, 
+     "GADSHILL": 34.0, 
+     "FRANCIS": 36.0
+    }, 
+    "deg_assort_coeff": -0.50117160455961729, 
     "density": 0.34545454545454546, 
     "scene": "4", 
     "total_degrees": 19, 
@@ -296,7 +348,14 @@
   [
    {
     "total_lines": 279, 
-    "deg_assort_coeff": -0.24251968503937099, 
+    "closeness_vitality": {
+     "GLENDOWER": 12.0, 
+     "HOTSPUR": 20.0, 
+     "MORTIMER": 10.0, 
+     "EARL OF WORCESTER": 12.0, 
+     "LADY PERCY": 14.0
+    }, 
+    "deg_assort_coeff": -0.24251968503936999, 
     "density": 0.7, 
     "scene": "1", 
     "total_degrees": 7, 
@@ -335,6 +394,11 @@
    }, 
    {
     "total_lines": 184, 
+    "closeness_vitality": {
+     "KING HENRY IV": 8.0, 
+     "SIR WALTER BLUNT": 6.0, 
+     "PRINCE HENRY": 6.0
+    }, 
     "deg_assort_coeff": -0.66666666666666663, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -364,6 +428,12 @@
    }, 
    {
     "total_lines": 210, 
+    "closeness_vitality": {
+     "BARDOLPH": 6.0, 
+     "FALSTAFF": 6.0, 
+     "Hostess": 6.0, 
+     "PRINCE HENRY": 6.0
+    }, 
     "deg_assort_coeff": -0.3333333333333337, 
     "density": 1.0, 
     "scene": "3", 
@@ -400,6 +470,14 @@
   [
    {
     "total_lines": 146, 
+    "closeness_vitality": {
+     "WORCESTER": 16.0, 
+     "VERNON": 16.0, 
+     "Messenger": 16.0, 
+     "EARL OF WORCESTER": 16.0, 
+     "EARL OF DOUGLAS": 14.0, 
+     "HOTSPUR": 34.0
+    }, 
     "deg_assort_coeff": -0.45467703998552561, 
     "density": 0.5333333333333333, 
     "scene": "1", 
@@ -444,7 +522,13 @@
    }, 
    {
     "total_lines": 84, 
-    "deg_assort_coeff": -0.99009900990098998, 
+    "closeness_vitality": {
+     "BARDOLPH": 10.0, 
+     "FALSTAFF": 18.0, 
+     "WESTMORELAND": 10.0, 
+     "PRINCE HENRY": 10.0
+    }, 
+    "deg_assort_coeff": -0.99009900990098965, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -478,7 +562,14 @@
    }, 
    {
     "total_lines": 124, 
-    "deg_assort_coeff": -0.10060153495125546, 
+    "closeness_vitality": {
+     "EARL OF DOUGLAS": 12.0, 
+     "HOTSPUR": 10.0, 
+     "VERNON": 10.0, 
+     "EARL OF WORCESTER": 6.0, 
+     "SIR WALTER BLUNT": 12.0
+    }, 
+    "deg_assort_coeff": -0.10060153495125428, 
     "density": 0.7, 
     "scene": "3", 
     "total_degrees": 7, 
@@ -517,6 +608,10 @@
    }, 
    {
     "total_lines": 43, 
+    "closeness_vitality": {
+     "ARCHBISHOP OF YORK": 2.0, 
+     "SIR MICHAEL": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -543,7 +638,13 @@
   [
    {
     "total_lines": 148, 
-    "deg_assort_coeff": -0.59958720330237569, 
+    "closeness_vitality": {
+     "FALSTAFF": 8.0, 
+     "PRINCE HENRY": 6.0, 
+     "EARL OF WORCESTER": 8.0, 
+     "KING HENRY IV": 6.0
+    }, 
+    "deg_assort_coeff": -0.59958720330237714, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -577,6 +678,13 @@
    }, 
    {
     "total_lines": 108, 
+    "closeness_vitality": {
+     "EARL OF DOUGLAS": 12.0, 
+     "VERNON": 12.0, 
+     "Messenger": 14.0, 
+     "HOTSPUR": 20.0, 
+     "EARL OF WORCESTER": 10.0
+    }, 
     "deg_assort_coeff": -0.72699197035207086, 
     "density": 0.6, 
     "scene": "2", 
@@ -616,7 +724,14 @@
    }, 
    {
     "total_lines": 69, 
-    "deg_assort_coeff": -0.4814814814814854, 
+    "closeness_vitality": {
+     "FALSTAFF": 28.0, 
+     "EARL OF DOUGLAS": 14.0, 
+     "SIR WALTER BLUNT": 14.0, 
+     "HOTSPUR": 30.0, 
+     "PRINCE HENRY": 18.0
+    }, 
+    "deg_assort_coeff": -0.48148148148148306, 
     "density": 0.5, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -655,7 +770,16 @@
    }, 
    {
     "total_lines": 189, 
-    "deg_assort_coeff": -0.43916811091854557, 
+    "closeness_vitality": {
+     "LANCASTER": 18.0, 
+     "KING HENRY IV": 14.0, 
+     "FALSTAFF": 18.0, 
+     "WESTMORELAND": 20.0, 
+     "PRINCE HENRY": 8.0, 
+     "EARL OF DOUGLAS": 20.0, 
+     "HOTSPUR": 18.0
+    }, 
+    "deg_assort_coeff": -0.43916811091854446, 
     "density": 0.5714285714285714, 
     "scene": "4", 
     "total_degrees": 12, 
@@ -704,6 +828,12 @@
    }, 
    {
     "total_lines": 48, 
+    "closeness_vitality": {
+     "LANCASTER": 8.0, 
+     "KING HENRY IV": 14.0, 
+     "EARL OF WORCESTER": 10.0, 
+     "PRINCE HENRY": 8.0
+    }, 
     "deg_assort_coeff": -0.66666666666666663, 
     "density": 0.6666666666666666, 
     "scene": "5", 

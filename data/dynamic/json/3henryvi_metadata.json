@@ -4,7 +4,22 @@
   [
    {
     "total_lines": 286, 
-    "deg_assort_coeff": -0.17239103638755598, 
+    "closeness_vitality": {
+     "PRINCE EDWARD": 48.0, 
+     "NORFOLK": 44.0, 
+     "RICHARD": 36.0, 
+     "KING HENRY VI": 108.0, 
+     "QUEEN MARGARET": 48.0, 
+     "NORTHUMBERLAND": 42.0, 
+     "CLIFFORD": 42.0, 
+     "MONTAGUE": 40.0, 
+     "EDWARD": 52.0, 
+     "YORK": 34.0, 
+     "WARWICK": 26.0, 
+     "EXETER": 42.0, 
+     "WESTMORELAND": 42.0
+    }, 
+    "deg_assort_coeff": -0.17239103638755879, 
     "density": 0.38461538461538464, 
     "scene": "1", 
     "total_degrees": 30, 
@@ -83,6 +98,14 @@
    }, 
    {
     "total_lines": 81, 
+    "closeness_vitality": {
+     "RICHARD": 16.0, 
+     "MONTAGUE": 14.0, 
+     "EDWARD": 14.0, 
+     "Messenger": 18.0, 
+     "YORK": 24.0, 
+     "JOHN MORTIMER": 16.0
+    }, 
     "deg_assort_coeff": -0.34969966048576651, 
     "density": 0.5333333333333333, 
     "scene": "2", 
@@ -127,6 +150,11 @@
    }, 
    {
     "total_lines": 59, 
+    "closeness_vitality": {
+     "RUTLAND": 6.0, 
+     "CLIFFORD": 8.0, 
+     "Tutor": 6.0
+    }, 
     "deg_assort_coeff": -0.64079822616407978, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -156,7 +184,13 @@
    }, 
    {
     "total_lines": 189, 
-    "deg_assort_coeff": -0.33333333333330017, 
+    "closeness_vitality": {
+     "QUEEN MARGARET": 6.0, 
+     "NORTHUMBERLAND": 6.0, 
+     "YORK": 6.0, 
+     "CLIFFORD": 6.0
+    }, 
+    "deg_assort_coeff": -0.33333333333329662, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 6, 
@@ -192,7 +226,13 @@
   [
    {
     "total_lines": 213, 
-    "deg_assort_coeff": -0.33333333333333359, 
+    "closeness_vitality": {
+     "EDWARD": 6.0, 
+     "Messenger": 6.0, 
+     "RICHARD": 6.0, 
+     "WARWICK": 6.0
+    }, 
+    "deg_assort_coeff": -0.33333333333333354, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 6, 
@@ -226,7 +266,20 @@
    }, 
    {
     "total_lines": 180, 
-    "deg_assort_coeff": -0.10198321775943088, 
+    "closeness_vitality": {
+     "PRINCE EDWARD": 36.0, 
+     "RICHARD": 26.0, 
+     "KING HENRY VI": 30.0, 
+     "QUEEN MARGARET": 30.0, 
+     "NORTHUMBERLAND": 36.0, 
+     "PRINCE": 40.0, 
+     "EDWARD": 72.0, 
+     "Messenger": 44.0, 
+     "WARWICK": 28.0, 
+     "GEORGE": 46.0, 
+     "CLIFFORD": 62.0
+    }, 
+    "deg_assort_coeff": -0.10198321775943378, 
     "density": 0.43636363636363634, 
     "scene": "2", 
     "total_degrees": 24, 
@@ -295,7 +348,13 @@
    }, 
    {
     "total_lines": 60, 
-    "deg_assort_coeff": -0.6182572614107904, 
+    "closeness_vitality": {
+     "EDWARD": 6.0, 
+     "GEORGE": 8.0, 
+     "RICHARD": 8.0, 
+     "WARWICK": 6.0
+    }, 
+    "deg_assort_coeff": -0.61825726141079151, 
     "density": 0.8333333333333334, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -329,6 +388,10 @@
    }, 
    {
     "total_lines": 15, 
+    "closeness_vitality": {
+     "RICHARD": 2.0, 
+     "CLIFFORD": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -353,7 +416,15 @@
    }, 
    {
     "total_lines": 145, 
-    "deg_assort_coeff": 0.077272727272727007, 
+    "closeness_vitality": {
+     "PRINCE EDWARD": 16.0, 
+     "KING HENRY VI": 40.0, 
+     "QUEEN MARGARET": 20.0, 
+     "Father": 18.0, 
+     "Son": 18.0, 
+     "EXETER": 16.0
+    }, 
+    "deg_assort_coeff": 0.077272727272727354, 
     "density": 0.4666666666666667, 
     "scene": "5", 
     "total_degrees": 7, 
@@ -397,7 +468,14 @@
    }, 
    {
     "total_lines": 115, 
-    "deg_assort_coeff": -0.39359267734554004, 
+    "closeness_vitality": {
+     "CLIFFORD": 14.0, 
+     "EDWARD": 20.0, 
+     "GEORGE": 10.0, 
+     "RICHARD": 10.0, 
+     "WARWICK": 10.0
+    }, 
+    "deg_assort_coeff": -0.3935926773455401, 
     "density": 0.7, 
     "scene": "6", 
     "total_degrees": 7, 
@@ -438,7 +516,12 @@
   [
    {
     "total_lines": 103, 
-    "deg_assort_coeff": -0.50000000000000255, 
+    "closeness_vitality": {
+     "First Keeper": 4.0, 
+     "Second Keeper": 4.0, 
+     "KING HENRY VI": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000044, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -467,7 +550,14 @@
    }, 
    {
     "total_lines": 215, 
-    "deg_assort_coeff": -0.5315821839585364, 
+    "closeness_vitality": {
+     "LADY GREY": 10.0, 
+     "KING EDWARD IV": 20.0, 
+     "CLARENCE": 10.0, 
+     "Nobleman": 14.0, 
+     "GLOUCESTER": 10.0
+    }, 
+    "deg_assort_coeff": -0.53158218395853452, 
     "density": 0.7, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -506,6 +596,15 @@
    }, 
    {
     "total_lines": 283, 
+    "closeness_vitality": {
+     "PRINCE EDWARD": 16.0, 
+     "QUEEN MARGARET": 16.0, 
+     "KING LEWIS XI": 10.0, 
+     "WARWICK": 12.0, 
+     "OXFORD": 18.0, 
+     "BONA": 18.0, 
+     "Post": 20.0
+    }, 
     "deg_assort_coeff": -0.22273024167210984, 
     "density": 0.6190476190476191, 
     "scene": "3", 
@@ -557,7 +656,17 @@
   [
    {
     "total_lines": 155, 
-    "deg_assort_coeff": -0.38024336592622782, 
+    "closeness_vitality": {
+     "CLARENCE": 14.0, 
+     "MONTAGUE": 26.0, 
+     "KING EDWARD IV": 38.0, 
+     "QUEEN ELIZABETH": 28.0, 
+     "SOMERSET": 28.0, 
+     "HASTINGS": 22.0, 
+     "Post": 24.0, 
+     "GLOUCESTER": 22.0
+    }, 
+    "deg_assort_coeff": -0.38024336592622704, 
     "density": 0.42857142857142855, 
     "scene": "1", 
     "total_degrees": 12, 
@@ -611,6 +720,10 @@
    }, 
    {
     "total_lines": 32, 
+    "closeness_vitality": {
+     "CLARENCE": 2.0, 
+     "WARWICK": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -635,6 +748,15 @@
    }, 
    {
     "total_lines": 72, 
+    "closeness_vitality": {
+     "Second Watchman": 14.0, 
+     "Third Watchman": 24.0, 
+     "First Watchman": 18.0, 
+     "KING EDWARD IV": 22.0, 
+     "WARWICK": 50.0, 
+     "OXFORD": 22.0, 
+     "SOMERSET": 20.0
+    }, 
     "deg_assort_coeff": -0.25000000000000105, 
     "density": 0.47619047619047616, 
     "scene": "3", 
@@ -684,6 +806,10 @@
    }, 
    {
     "total_lines": 36, 
+    "closeness_vitality": {
+     "QUEEN ELIZABETH": 2.0, 
+     "RIVERS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -708,7 +834,13 @@
    }, 
    {
     "total_lines": 32, 
-    "deg_assort_coeff": -0.63716814159292134, 
+    "closeness_vitality": {
+     "KING EDWARD IV": 6.0, 
+     "Huntsman": 8.0, 
+     "GLOUCESTER": 6.0, 
+     "HASTINGS": 8.0
+    }, 
+    "deg_assort_coeff": -0.63716814159292123, 
     "density": 0.8333333333333334, 
     "scene": "5", 
     "total_degrees": 5, 
@@ -742,6 +874,15 @@
    }, 
    {
     "total_lines": 107, 
+    "closeness_vitality": {
+     "CLARENCE": 22.0, 
+     "KING HENRY VI": 40.0, 
+     "Lieutenant": 26.0, 
+     "WARWICK": 40.0, 
+     "OXFORD": 28.0, 
+     "Post": 26.0, 
+     "SOMERSET": 44.0
+    }, 
     "deg_assort_coeff": -0.27198829458624613, 
     "density": 0.38095238095238093, 
     "scene": "6", 
@@ -791,7 +932,16 @@
    }, 
    {
     "total_lines": 96, 
-    "deg_assort_coeff": -0.27513728460518933, 
+    "closeness_vitality": {
+     "All": 20.0, 
+     "KING EDWARD IV": 12.0, 
+     "MONTAGUE": 12.0, 
+     "Soldier": 20.0, 
+     "HASTINGS": 12.0, 
+     "Mayor": 18.0, 
+     "GLOUCESTER": 16.0
+    }, 
+    "deg_assort_coeff": -0.27513728460518833, 
     "density": 0.6190476190476191, 
     "scene": "7", 
     "total_degrees": 13, 
@@ -840,7 +990,17 @@
    }, 
    {
     "total_lines": 69, 
-    "deg_assort_coeff": -0.21780604133545226, 
+    "closeness_vitality": {
+     "CLARENCE": 30.0, 
+     "KING HENRY VI": 108.0, 
+     "MONTAGUE": 30.0, 
+     "KING EDWARD IV": 74.0, 
+     "WARWICK": 30.0, 
+     "OXFORD": 30.0, 
+     "EXETER": 90.0, 
+     "GLOUCESTER": 44.0
+    }, 
+    "deg_assort_coeff": -0.21780604133545325, 
     "density": 0.32142857142857145, 
     "scene": "8", 
     "total_degrees": 9, 
@@ -896,7 +1056,19 @@
   [
    {
     "total_lines": 125, 
-    "deg_assort_coeff": -0.65827828457586213, 
+    "closeness_vitality": {
+     "CLARENCE": 34.0, 
+     "Second Messenger": 36.0, 
+     "First Messenger": 36.0, 
+     "MONTAGUE": 32.0, 
+     "KING EDWARD IV": 28.0, 
+     "EDWARD": 40.0, 
+     "WARWICK": 80.0, 
+     "OXFORD": 32.0, 
+     "SOMERSET": 30.0, 
+     "GLOUCESTER": 62.0
+    }, 
+    "deg_assort_coeff": -0.65827828457586202, 
     "density": 0.3333333333333333, 
     "scene": "1", 
     "total_degrees": 15, 
@@ -960,6 +1132,12 @@
    }, 
    {
     "total_lines": 54, 
+    "closeness_vitality": {
+     "OXFORD": 10.0, 
+     "KING EDWARD IV": 10.0, 
+     "SOMERSET": 10.0, 
+     "WARWICK": 18.0
+    }, 
     "deg_assort_coeff": -0.80000000000000004, 
     "density": 0.5, 
     "scene": "2", 
@@ -994,6 +1172,11 @@
    }, 
    {
     "total_lines": 25, 
+    "closeness_vitality": {
+     "KING EDWARD IV": 4.0, 
+     "CLARENCE": 4.0, 
+     "GLOUCESTER": 4.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -1023,6 +1206,14 @@
    }, 
    {
     "total_lines": 85, 
+    "closeness_vitality": {
+     "PRINCE EDWARD": 14.0, 
+     "QUEEN MARGARET": 12.0, 
+     "KING EDWARD IV": 16.0, 
+     "Messenger": 16.0, 
+     "OXFORD": 6.0, 
+     "SOMERSET": 16.0
+    }, 
     "deg_assort_coeff": -0.46411483253588515, 
     "density": 0.6, 
     "scene": "4", 
@@ -1067,7 +1258,16 @@
    }, 
    {
     "total_lines": 99, 
-    "deg_assort_coeff": -0.029966379184330261, 
+    "closeness_vitality": {
+     "PRINCE EDWARD": 16.0, 
+     "CLARENCE": 16.0, 
+     "QUEEN MARGARET": 8.0, 
+     "KING EDWARD IV": 8.0, 
+     "OXFORD": 20.0, 
+     "SOMERSET": 20.0, 
+     "GLOUCESTER": 16.0
+    }, 
+    "deg_assort_coeff": -0.029966379184330115, 
     "density": 0.6190476190476191, 
     "scene": "5", 
     "total_degrees": 13, 
@@ -1116,6 +1316,10 @@
    }, 
    {
     "total_lines": 98, 
+    "closeness_vitality": {
+     "GLOUCESTER": 2.0, 
+     "KING HENRY VI": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "6", 
@@ -1140,6 +1344,12 @@
    }, 
    {
     "total_lines": 48, 
+    "closeness_vitality": {
+     "KING EDWARD IV": 8.0, 
+     "GLOUCESTER": 8.0, 
+     "QUEEN ELIZABETH": 8.0, 
+     "CLARENCE": 8.0
+    }, 
     "deg_assort_coeff": 0.0, 
     "density": 0.6666666666666666, 
     "scene": "7", 

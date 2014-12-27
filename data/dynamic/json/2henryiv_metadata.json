@@ -4,6 +4,9 @@
   [
    {
     "total_lines": 42, 
+    "closeness_vitality": {
+     "RUMOUR": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -25,7 +28,14 @@
   [
    {
     "total_lines": 232, 
-    "deg_assort_coeff": -0.63173121791880482, 
+    "closeness_vitality": {
+     "TRAVERS": 12.0, 
+     "NORTHUMBERLAND": 10.0, 
+     "LORD BARDOLPH": 20.0, 
+     "Porter": 14.0, 
+     "MORTON": 12.0
+    }, 
+    "deg_assort_coeff": -0.63173121791880493, 
     "density": 0.6, 
     "scene": "1", 
     "total_degrees": 6, 
@@ -64,6 +74,11 @@
    }, 
    {
     "total_lines": 250, 
+    "closeness_vitality": {
+     "Servant": 4.0, 
+     "FALSTAFF": 4.0, 
+     "Page": 4.0
+    }, 
     "deg_assort_coeff": -0.066666666666666666, 
     "density": 1.6666666666666667, 
     "scene": "2", 
@@ -93,7 +108,13 @@
    }, 
    {
     "total_lines": 115, 
-    "deg_assort_coeff": -0.25550660792951629, 
+    "closeness_vitality": {
+     "ARCHBISHOP OF YORK": 6.0, 
+     "MOWBRAY": 8.0, 
+     "LORD BARDOLPH": 8.0, 
+     "HASTINGS": 6.0
+    }, 
+    "deg_assort_coeff": -0.25550660792951646, 
     "density": 0.8333333333333334, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -129,7 +150,14 @@
   [
    {
     "total_lines": 185, 
-    "deg_assort_coeff": -0.14029850746268743, 
+    "closeness_vitality": {
+     "FALSTAFF": 24.0, 
+     "MISTRESS QUICKLY": 10.0, 
+     "SNARE": 14.0, 
+     "FANG": 10.0, 
+     "GOWER": 16.0
+    }, 
+    "deg_assort_coeff": -0.14029850746268649, 
     "density": 0.8, 
     "scene": "1", 
     "total_degrees": 8, 
@@ -168,6 +196,12 @@
    }, 
    {
     "total_lines": 169, 
+    "closeness_vitality": {
+     "POINS": 8.0, 
+     "PRINCE HENRY": 6.0, 
+     "BARDOLPH": 6.0, 
+     "Page": 8.0
+    }, 
     "deg_assort_coeff": -0.2951520912547535, 
     "density": 0.8333333333333334, 
     "scene": "2", 
@@ -202,6 +236,10 @@
    }, 
    {
     "total_lines": 73, 
+    "closeness_vitality": {
+     "NORTHUMBERLAND": 2.0, 
+     "LADY PERCY": 2.0
+    }, 
     "deg_assort_coeff": -0.49999999999999989, 
     "density": 2.0, 
     "scene": "3", 
@@ -226,7 +264,20 @@
    }, 
    {
     "total_lines": 394, 
-    "deg_assort_coeff": -0.25600974796383114, 
+    "closeness_vitality": {
+     "POINS": 36.0, 
+     "MISTRESS QUICKLY": 18.0, 
+     "DOLL TEARSHEET": 6.0, 
+     "BARDOLPH": 34.0, 
+     "PETO": 48.0, 
+     "First Drawer": 38.0, 
+     "FALSTAFF": 26.0, 
+     "Second Drawer": 42.0, 
+     "PRINCE HENRY": 76.0, 
+     "PISTOL": 32.0, 
+     "Page": 38.0
+    }, 
+    "deg_assort_coeff": -0.25600974796382991, 
     "density": 0.41818181818181815, 
     "scene": "4", 
     "total_degrees": 23, 
@@ -297,6 +348,10 @@
   [
    {
     "total_lines": 115, 
+    "closeness_vitality": {
+     "KING HENRY IV": 2.0, 
+     "WARWICK": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -321,6 +376,17 @@
    }, 
    {
     "total_lines": 320, 
+    "closeness_vitality": {
+     "BARDOLPH": 20.0, 
+     "WART": 30.0, 
+     "SHALLOW": 18.0, 
+     "BULLCALF": 26.0, 
+     "MOULDY": 26.0, 
+     "FALSTAFF": 44.0, 
+     "SHADOW": 26.0, 
+     "FEEBLE": 26.0, 
+     "SILENCE": 24.0
+    }, 
     "deg_assort_coeff": -0.48256051295343755, 
     "density": 0.5277777777777778, 
     "scene": "2", 
@@ -382,6 +448,13 @@
   [
    {
     "total_lines": 240, 
+    "closeness_vitality": {
+     "ARCHBISHOP OF YORK": 10.0, 
+     "MOWBRAY": 8.0, 
+     "Messenger": 12.0, 
+     "WESTMORELAND": 10.0, 
+     "HASTINGS": 8.0
+    }, 
     "deg_assort_coeff": 0.0, 
     "density": 0.8, 
     "scene": "1", 
@@ -421,7 +494,14 @@
    }, 
    {
     "total_lines": 137, 
-    "deg_assort_coeff": -0.24999999999999714, 
+    "closeness_vitality": {
+     "LANCASTER": 8.0, 
+     "ARCHBISHOP OF YORK": 8.0, 
+     "MOWBRAY": 8.0, 
+     "WESTMORELAND": 8.0, 
+     "HASTINGS": 8.0
+    }, 
+    "deg_assort_coeff": -0.25000000000000078, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 10, 
@@ -460,7 +540,14 @@
    }, 
    {
     "total_lines": 139, 
-    "deg_assort_coeff": -0.57446808510638347, 
+    "closeness_vitality": {
+     "LANCASTER": 24.0, 
+     "FALSTAFF": 24.0, 
+     "COLEVILE": 12.0, 
+     "BARDOLPH": 16.0, 
+     "WESTMORELAND": 16.0
+    }, 
+    "deg_assort_coeff": -0.57446808510638425, 
     "density": 0.5, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -499,7 +586,15 @@
    }, 
    {
     "total_lines": 139, 
-    "deg_assort_coeff": -0.44567219152854415, 
+    "closeness_vitality": {
+     "KING HENRY IV": 26.0, 
+     "CLARENCE": 12.0, 
+     "WESTMORELAND": 14.0, 
+     "WARWICK": 12.0, 
+     "HARCOURT": 18.0, 
+     "GLOUCESTER": 14.0
+    }, 
+    "deg_assort_coeff": -0.44567219152854604, 
     "density": 0.6666666666666666, 
     "scene": "4", 
     "total_degrees": 10, 
@@ -543,7 +638,15 @@
    }, 
    {
     "total_lines": 255, 
-    "deg_assort_coeff": -0.56448202959830696, 
+    "closeness_vitality": {
+     "LANCASTER": 18.0, 
+     "KING HENRY IV": 26.0, 
+     "CLARENCE": 14.0, 
+     "WARWICK": 12.0, 
+     "PRINCE HENRY": 12.0, 
+     "GLOUCESTER": 14.0
+    }, 
+    "deg_assort_coeff": -0.56448202959831018, 
     "density": 0.6666666666666666, 
     "scene": "5", 
     "total_degrees": 10, 
@@ -589,7 +692,13 @@
   [
    {
     "total_lines": 87, 
-    "deg_assort_coeff": -0.76445086705202336, 
+    "closeness_vitality": {
+     "BARDOLPH": 10.0, 
+     "FALSTAFF": 10.0, 
+     "SHALLOW": 18.0, 
+     "DAVY": 10.0
+    }, 
+    "deg_assort_coeff": -0.76445086705202359, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -623,7 +732,15 @@
    }, 
    {
     "total_lines": 151, 
-    "deg_assort_coeff": -0.15001585791309982, 
+    "closeness_vitality": {
+     "LANCASTER": 38.0, 
+     "Princes": 26.0, 
+     "CLARENCE": 18.0, 
+     "KING HENRY V": 42.0, 
+     "WARWICK": 48.0, 
+     "GLOUCESTER": 24.0
+    }, 
+    "deg_assort_coeff": -0.15001585791309918, 
     "density": 0.5333333333333333, 
     "scene": "2", 
     "total_degrees": 8, 
@@ -667,7 +784,15 @@
    }, 
    {
     "total_lines": 150, 
-    "deg_assort_coeff": -0.16466724125882673, 
+    "closeness_vitality": {
+     "BARDOLPH": 12.0, 
+     "SHALLOW": 10.0, 
+     "DAVY": 12.0, 
+     "FALSTAFF": 10.0, 
+     "PISTOL": 12.0, 
+     "SILENCE": 12.0
+    }, 
+    "deg_assort_coeff": -0.16466724125882284, 
     "density": 0.8666666666666667, 
     "scene": "3", 
     "total_degrees": 13, 
@@ -711,7 +836,12 @@
    }, 
    {
     "total_lines": 32, 
-    "deg_assort_coeff": -0.50000000000000233, 
+    "closeness_vitality": {
+     "MISTRESS QUICKLY": 4.0, 
+     "First Beadle": 4.0, 
+     "DOLL TEARSHEET": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000111, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -740,6 +870,15 @@
    }, 
    {
     "total_lines": 154, 
+    "closeness_vitality": {
+     "LANCASTER": 30.0, 
+     "KING HENRY IV": 26.0, 
+     "First Groom": 52.0, 
+     "SHALLOW": 22.0, 
+     "Second Groom": 32.0, 
+     "FALSTAFF": 74.0, 
+     "PISTOL": 48.0
+    }, 
     "deg_assort_coeff": -0.030538302277432712, 
     "density": 0.42857142857142855, 
     "scene": "5", 

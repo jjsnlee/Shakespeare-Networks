@@ -4,6 +4,7 @@
   [
    {
     "total_lines": 0, 
+    "closeness_vitality": {}, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -17,7 +18,21 @@
    }, 
    {
     "total_lines": 252, 
-    "deg_assort_coeff": 0.25724346517438373, 
+    "closeness_vitality": {
+     "First Citizen": 52.0, 
+     "SAMPSON": 172.0, 
+     "TYBALT": 38.0, 
+     "LADY CAPULET": 70.0, 
+     "ROMEO": 56.0, 
+     "MONTAGUE": -2.0, 
+     "LADY MONTAGUE": 46.0, 
+     "GREGORY": 66.0, 
+     "ABRAHAM": 66.0, 
+     "PRINCE": 58.0, 
+     "BENVOLIO": 224.0, 
+     "CAPULET": 114.0
+    }, 
+    "deg_assort_coeff": 0.25724346517438385, 
     "density": 0.22727272727272727, 
     "scene": "1", 
     "total_degrees": 15, 
@@ -91,7 +106,14 @@
    }, 
    {
     "total_lines": 109, 
-    "deg_assort_coeff": 0.19661733615221946, 
+    "closeness_vitality": {
+     "PARIS": 18.0, 
+     "Servant": 30.0, 
+     "CAPULET": 28.0, 
+     "BENVOLIO": 14.0, 
+     "ROMEO": 14.0
+    }, 
+    "deg_assort_coeff": 0.19661733615221938, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -130,7 +152,13 @@
    }, 
    {
     "total_lines": 114, 
-    "deg_assort_coeff": -0.1162862909486107, 
+    "closeness_vitality": {
+     "Servant": 8.0, 
+     "Nurse": 8.0, 
+     "LADY CAPULET": 6.0, 
+     "JULIET": 6.0
+    }, 
+    "deg_assort_coeff": -0.11628629094861108, 
     "density": 0.8333333333333334, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -164,7 +192,12 @@
    }, 
    {
     "total_lines": 121, 
-    "deg_assort_coeff": -0.50000000000000044, 
+    "closeness_vitality": {
+     "MERCUTIO": 4.0, 
+     "BENVOLIO": 4.0, 
+     "ROMEO": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999994, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -193,7 +226,19 @@
    }, 
    {
     "total_lines": 160, 
-    "deg_assort_coeff": -0.099116478259193411, 
+    "closeness_vitality": {
+     "Second Capulet": 42.0, 
+     "First Servant": 54.0, 
+     "Servant": 42.0, 
+     "Second Servant": 90.0, 
+     "ROMEO": 100.0, 
+     "TYBALT": 34.0, 
+     "Nurse": 40.0, 
+     "CAPULET": 138.0, 
+     "BENVOLIO": 42.0, 
+     "JULIET": 32.0
+    }, 
+    "deg_assort_coeff": -0.099116478259192828, 
     "density": 0.26666666666666666, 
     "scene": "5", 
     "total_degrees": 12, 
@@ -259,6 +304,9 @@
   [
    {
     "total_lines": 15, 
+    "closeness_vitality": {
+     "Chorus": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -278,6 +326,11 @@
    }, 
    {
     "total_lines": 48, 
+    "closeness_vitality": {
+     "MERCUTIO": 6.0, 
+     "BENVOLIO": 8.0, 
+     "ROMEO": 6.0
+    }, 
     "deg_assort_coeff": -0.45251396648044695, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -307,6 +360,11 @@
    }, 
    {
     "total_lines": 213, 
+    "closeness_vitality": {
+     "Nurse": 6.0, 
+     "ROMEO": 6.0, 
+     "JULIET": 8.0
+    }, 
     "deg_assort_coeff": -0.40794627867935085, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -336,6 +394,10 @@
    }, 
    {
     "total_lines": 99, 
+    "closeness_vitality": {
+     "FRIAR LAURENCE": 2.0, 
+     "ROMEO": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -360,7 +422,15 @@
    }, 
    {
     "total_lines": 215, 
-    "deg_assort_coeff": -0.242331243727548, 
+    "closeness_vitality": {
+     "MERCUTIO": 14.0, 
+     "ROMEO": 34.0, 
+     "Nurse": 30.0, 
+     "PETER": 20.0, 
+     "NURSE": 22.0, 
+     "BENVOLIO": 18.0
+    }, 
+    "deg_assort_coeff": -0.24233124372754675, 
     "density": 0.4666666666666667, 
     "scene": "4", 
     "total_degrees": 7, 
@@ -404,6 +474,10 @@
    }, 
    {
     "total_lines": 83, 
+    "closeness_vitality": {
+     "Nurse": 2.0, 
+     "JULIET": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -428,6 +502,11 @@
    }, 
    {
     "total_lines": 39, 
+    "closeness_vitality": {
+     "ROMEO": 4.0, 
+     "FRIAR LAURENCE": 4.0, 
+     "JULIET": 4.0
+    }, 
     "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "6", 
@@ -459,7 +538,17 @@
   [
    {
     "total_lines": 218, 
-    "deg_assort_coeff": 0.27322504106588702, 
+    "closeness_vitality": {
+     "MERCUTIO": 24.0, 
+     "First Citizen": 26.0, 
+     "TYBALT": 34.0, 
+     "LADY CAPULET": 26.0, 
+     "ROMEO": 24.0, 
+     "MONTAGUE": 34.0, 
+     "PRINCE": 54.0, 
+     "BENVOLIO": 80.0
+    }, 
+    "deg_assort_coeff": 0.27322504106588802, 
     "density": 0.39285714285714285, 
     "scene": "1", 
     "total_degrees": 11, 
@@ -513,6 +602,10 @@
    }, 
    {
     "total_lines": 150, 
+    "closeness_vitality": {
+     "Nurse": 2.0, 
+     "JULIET": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -537,7 +630,12 @@
    }, 
    {
     "total_lines": 188, 
-    "deg_assort_coeff": -0.500000000000002, 
+    "closeness_vitality": {
+     "Nurse": 4.0, 
+     "FRIAR LAURENCE": 4.0, 
+     "ROMEO": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999906, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -566,6 +664,11 @@
    }, 
    {
     "total_lines": 38, 
+    "closeness_vitality": {
+     "PARIS": 4.0, 
+     "LADY CAPULET": 4.0, 
+     "CAPULET": 4.0
+    }, 
     "deg_assort_coeff": -0.50000000000000078, 
     "density": 1.0, 
     "scene": "4", 
@@ -595,7 +698,14 @@
    }, 
    {
     "total_lines": 265, 
-    "deg_assort_coeff": -0.3292128974607203, 
+    "closeness_vitality": {
+     "Nurse": 10.0, 
+     "ROMEO": 12.0, 
+     "LADY CAPULET": 12.0, 
+     "JULIET": 6.0, 
+     "CAPULET": 10.0
+    }, 
+    "deg_assort_coeff": -0.32921289746071913, 
     "density": 0.7, 
     "scene": "5", 
     "total_degrees": 7, 
@@ -636,7 +746,12 @@
   [
    {
     "total_lines": 130, 
-    "deg_assort_coeff": -0.50000000000000788, 
+    "closeness_vitality": {
+     "PARIS": 4.0, 
+     "FRIAR LAURENCE": 4.0, 
+     "JULIET": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000133, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -665,7 +780,15 @@
    }, 
    {
     "total_lines": 53, 
-    "deg_assort_coeff": -0.73168963016678812, 
+    "closeness_vitality": {
+     "LADY CAPULET": 16.0, 
+     "Second Servant": 18.0, 
+     "Nurse": 18.0, 
+     "CAPULET": 46.0, 
+     "LADY  CAPULET": 18.0, 
+     "JULIET": 16.0
+    }, 
+    "deg_assort_coeff": -0.7316896301667879, 
     "density": 0.4, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -709,6 +832,10 @@
    }, 
    {
     "total_lines": 63, 
+    "closeness_vitality": {
+     "LADY CAPULET": 2.0, 
+     "JULIET": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -733,7 +860,14 @@
    }, 
    {
     "total_lines": 39, 
-    "deg_assort_coeff": -0.76991150442477918, 
+    "closeness_vitality": {
+     "LADY CAPULET": 12.0, 
+     "Nurse": 12.0, 
+     "First Servant": 14.0, 
+     "Second Servant": 14.0, 
+     "CAPULET": 28.0
+    }, 
+    "deg_assort_coeff": -0.76991150442477929, 
     "density": 0.5, 
     "scene": "4", 
     "total_degrees": 5, 
@@ -772,7 +906,19 @@
    }, 
    {
     "total_lines": 151, 
-    "deg_assort_coeff": -0.51907377170847702, 
+    "closeness_vitality": {
+     "Musician": 50.0, 
+     "Third Musician": 50.0, 
+     "PARIS": 42.0, 
+     "FRIAR LAURENCE": 36.0, 
+     "LADY CAPULET": 42.0, 
+     "Second Musician": 38.0, 
+     "First Musician": 152.0, 
+     "Nurse": 12.0, 
+     "PETER": 126.0, 
+     "CAPULET": 36.0
+    }, 
+    "deg_assort_coeff": -0.51907377170847535, 
     "density": 0.3111111111111111, 
     "scene": "5", 
     "total_degrees": 14, 
@@ -838,6 +984,11 @@
   [
    {
     "total_lines": 94, 
+    "closeness_vitality": {
+     "BALTHASAR": 6.0, 
+     "Apothecary": 6.0, 
+     "ROMEO": 8.0
+    }, 
     "deg_assort_coeff": -0.96078431372549022, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -867,6 +1018,10 @@
    }, 
    {
     "total_lines": 33, 
+    "closeness_vitality": {
+     "FRIAR JOHN": 2.0, 
+     "FRIAR LAURENCE": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -891,7 +1046,22 @@
    }, 
    {
     "total_lines": 354, 
-    "deg_assort_coeff": 0.024638236839487591, 
+    "closeness_vitality": {
+     "PARIS": 54.0, 
+     "Third Watchman": 58.0, 
+     "FRIAR LAURENCE": 42.0, 
+     "Second Watchman": 58.0, 
+     "JULIET": 46.0, 
+     "ROMEO": 46.0, 
+     "MONTAGUE": 54.0, 
+     "BALTHASAR": 46.0, 
+     "LADY CAPULET": 54.0, 
+     "First Watchman": 142.0, 
+     "PAGE": 10.0, 
+     "PRINCE": -10.0, 
+     "CAPULET": 44.0
+    }, 
+    "deg_assort_coeff": 0.024638236839489097, 
     "density": 0.28205128205128205, 
     "scene": "3", 
     "total_degrees": 22, 

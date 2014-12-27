@@ -4,7 +4,16 @@
   [
    {
     "total_lines": 77, 
-    "deg_assort_coeff": -0.7112676056338012, 
+    "closeness_vitality": {
+     "SEBASTIAN": 18.0, 
+     "ALONSO": 22.0, 
+     "GONZALO": 18.0, 
+     "ANTONIO": 18.0, 
+     "Master": 22.0, 
+     "Boatswain": 60.0, 
+     "Mariners": 22.0
+    }, 
+    "deg_assort_coeff": -0.71126760563380309, 
     "density": 0.42857142857142855, 
     "scene": "1", 
     "total_degrees": 9, 
@@ -53,7 +62,14 @@
    }, 
    {
     "total_lines": 618, 
-    "deg_assort_coeff": -0.52837028918303619, 
+    "closeness_vitality": {
+     "PROSPERO": 28.0, 
+     "ARIEL": 14.0, 
+     "FERDINAND": 12.0, 
+     "CALIBAN": 14.0, 
+     "MIRANDA": 12.0
+    }, 
+    "deg_assort_coeff": -0.52837028918303663, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -94,7 +110,16 @@
   [
    {
     "total_lines": 374, 
-    "deg_assort_coeff": -0.27591886244693253, 
+    "closeness_vitality": {
+     "FRANCISCO": 24.0, 
+     "ALONSO": 36.0, 
+     "GONZALO": 16.0, 
+     "ANTONIO": 14.0, 
+     "ARIEL": 18.0, 
+     "ADRIAN": 20.0, 
+     "SEBASTIAN": 14.0
+    }, 
+    "deg_assort_coeff": -0.27591886244693153, 
     "density": 0.6190476190476191, 
     "scene": "1", 
     "total_degrees": 13, 
@@ -143,7 +168,12 @@
    }, 
    {
     "total_lines": 196, 
-    "deg_assort_coeff": -0.50000000000000655, 
+    "closeness_vitality": {
+     "CALIBAN": 4.0, 
+     "TRINCULO": 4.0, 
+     "STEPHANO": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999833, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -174,7 +204,12 @@
   [
    {
     "total_lines": 117, 
-    "deg_assort_coeff": -0.49999999999999972, 
+    "closeness_vitality": {
+     "PROSPERO": 4.0, 
+     "FERDINAND": 4.0, 
+     "MIRANDA": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000033, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -203,7 +238,13 @@
    }, 
    {
     "total_lines": 156, 
-    "deg_assort_coeff": -0.54311701941577806, 
+    "closeness_vitality": {
+     "ARIEL": 8.0, 
+     "CALIBAN": 6.0, 
+     "TRINCULO": 8.0, 
+     "STEPHANO": 6.0
+    }, 
+    "deg_assort_coeff": -0.54311701941577772, 
     "density": 0.8333333333333334, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -237,7 +278,17 @@
    }, 
    {
     "total_lines": 137, 
-    "deg_assort_coeff": -0.15998846929951177, 
+    "closeness_vitality": {
+     "FRANCISCO": 26.0, 
+     "ALONSO": 14.0, 
+     "GONZALO": 50.0, 
+     "ANTONIO": 22.0, 
+     "PROSPERO": 14.0, 
+     "ADRIAN": 32.0, 
+     "SEBASTIAN": 22.0, 
+     "ARIEL": 26.0
+    }, 
+    "deg_assort_coeff": -0.15998846929950974, 
     "density": 0.42857142857142855, 
     "scene": "3", 
     "total_degrees": 12, 
@@ -293,7 +344,19 @@
   [
    {
     "total_lines": 307, 
-    "deg_assort_coeff": -0.11009822890311116, 
+    "closeness_vitality": {
+     "IRIS": 34.0, 
+     "CERES": 94.0, 
+     "JUNO": 56.0, 
+     "PROSPERO": 152.0, 
+     "CALIBAN": 36.0, 
+     "ARIEL": 42.0, 
+     "MIRANDA": 36.0, 
+     "FERDINAND": 28.0, 
+     "TRINCULO": 50.0, 
+     "STEPHANO": 36.0
+    }, 
+    "deg_assort_coeff": -0.11009822890311051, 
     "density": 0.3111111111111111, 
     "scene": "1", 
     "total_degrees": 14, 
@@ -359,7 +422,21 @@
   [
    {
     "total_lines": 400, 
-    "deg_assort_coeff": -0.2171009219283194, 
+    "closeness_vitality": {
+     "GONZALO": 36.0, 
+     "PROSPERO": 12.0, 
+     "CALIBAN": 36.0, 
+     "ANTONIO": 42.0, 
+     "ARIEL": 42.0, 
+     "ALONSO": 4.0, 
+     "MIRANDA": 38.0, 
+     "Boatswain": 40.0, 
+     "FERDINAND": 40.0, 
+     "SEBASTIAN": 26.0, 
+     "TRINCULO": 38.0, 
+     "STEPHANO": 36.0
+    }, 
+    "deg_assort_coeff": -0.21710092192831984, 
     "density": 0.42424242424242425, 
     "scene": "1", 
     "total_degrees": 28, 

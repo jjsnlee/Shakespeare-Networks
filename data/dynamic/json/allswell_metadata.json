@@ -4,6 +4,14 @@
   [
    {
     "total_lines": 230, 
+    "closeness_vitality": {
+     "BERTRAM": 20.0, 
+     "LAFEU": 14.0, 
+     "PAROLLES": 18.0, 
+     "HELENA": 40.0, 
+     "COUNTESS": 14.0, 
+     "Page": 18.0
+    }, 
     "deg_assort_coeff": -0.31989039929770424, 
     "density": 0.5333333333333333, 
     "scene": "1", 
@@ -48,7 +56,13 @@
    }, 
    {
     "total_lines": 88, 
-    "deg_assort_coeff": -0.97635135135135109, 
+    "closeness_vitality": {
+     "BERTRAM": 10.0, 
+     "KING": 18.0, 
+     "Second Lord": 10.0, 
+     "First Lord": 10.0
+    }, 
+    "deg_assort_coeff": -0.97635135135135065, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -82,7 +96,13 @@
    }, 
    {
     "total_lines": 266, 
-    "deg_assort_coeff": -0.91349809885931577, 
+    "closeness_vitality": {
+     "HELENA": 10.0, 
+     "COUNTESS": 18.0, 
+     "Clown": 10.0, 
+     "Steward": 10.0
+    }, 
+    "deg_assort_coeff": -0.9134980988593151, 
     "density": 0.5, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -118,7 +138,17 @@
   [
    {
     "total_lines": 231, 
-    "deg_assort_coeff": -0.26725104898010094, 
+    "closeness_vitality": {
+     "KING": 70.0, 
+     "First Lord": 20.0, 
+     "BERTRAM": 26.0, 
+     "LAFEU": 24.0, 
+     "PAROLLES": 22.0, 
+     "HELENA": 30.0, 
+     "Both": 30.0, 
+     "Second Lord": 20.0
+    }, 
+    "deg_assort_coeff": -0.26725104898010049, 
     "density": 0.42857142857142855, 
     "scene": "1", 
     "total_degrees": 12, 
@@ -172,6 +202,10 @@
    }, 
    {
     "total_lines": 65, 
+    "closeness_vitality": {
+     "COUNTESS": 2.0, 
+     "Clown": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -196,7 +230,18 @@
    }, 
    {
     "total_lines": 312, 
-    "deg_assort_coeff": 0.057647653258159737, 
+    "closeness_vitality": {
+     "KING": 26.0, 
+     "All": 34.0, 
+     "Fourth Lord": 28.0, 
+     "First Lord": 34.0, 
+     "BERTRAM": 32.0, 
+     "LAFEU": 8.0, 
+     "PAROLLES": 34.0, 
+     "HELENA": 104.0, 
+     "Second Lord": 34.0
+    }, 
+    "deg_assort_coeff": 0.057647653258159452, 
     "density": 0.3333333333333333, 
     "scene": "3", 
     "total_degrees": 12, 
@@ -255,6 +300,11 @@
    }, 
    {
     "total_lines": 59, 
+    "closeness_vitality": {
+     "PAROLLES": 4.0, 
+     "HELENA": 4.0, 
+     "Clown": 4.0
+    }, 
     "deg_assort_coeff": -0.499999999999996, 
     "density": 1.0, 
     "scene": "4", 
@@ -284,6 +334,12 @@
    }, 
    {
     "total_lines": 102, 
+    "closeness_vitality": {
+     "BERTRAM": 14.0, 
+     "PAROLLES": 8.0, 
+     "LAFEU": 8.0, 
+     "HELENA": 10.0
+    }, 
     "deg_assort_coeff": -0.64174454828660432, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -320,6 +376,11 @@
   [
    {
     "total_lines": 28, 
+    "closeness_vitality": {
+     "DUKE": 8.0, 
+     "Second Lord": 6.0, 
+     "First Lord": 6.0
+    }, 
     "deg_assort_coeff": -0.81818181818181823, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -349,6 +410,13 @@
    }, 
    {
     "total_lines": 143, 
+    "closeness_vitality": {
+     "Second Gentleman": 12.0, 
+     "COUNTESS": 6.0, 
+     "First Gentleman": 10.0, 
+     "Clown": 12.0, 
+     "HELENA": 10.0
+    }, 
     "deg_assort_coeff": -0.3761402571975267, 
     "density": 0.7, 
     "scene": "2", 
@@ -388,6 +456,10 @@
    }, 
    {
     "total_lines": 15, 
+    "closeness_vitality": {
+     "BERTRAM": 2.0, 
+     "DUKE": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -412,6 +484,10 @@
    }, 
    {
     "total_lines": 46, 
+    "closeness_vitality": {
+     "COUNTESS": 2.0, 
+     "Steward": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -436,6 +512,14 @@
    }, 
    {
     "total_lines": 121, 
+    "closeness_vitality": {
+     "BOTH": 20.0, 
+     "MARIANA": 16.0, 
+     "DIANA": 14.0, 
+     "PAROLLES": 16.0, 
+     "HELENA": 30.0, 
+     "Widow": 14.0
+    }, 
     "deg_assort_coeff": -0.25595238095238093, 
     "density": 0.5333333333333333, 
     "scene": "5", 
@@ -480,7 +564,13 @@
    }, 
    {
     "total_lines": 117, 
-    "deg_assort_coeff": -0.33333333333333443, 
+    "closeness_vitality": {
+     "BERTRAM": 6.0, 
+     "First Lord": 6.0, 
+     "Second Lord": 6.0, 
+     "PAROLLES": 6.0
+    }, 
+    "deg_assort_coeff": -0.33333333333333426, 
     "density": 1.0, 
     "scene": "6", 
     "total_degrees": 6, 
@@ -514,6 +604,10 @@
    }, 
    {
     "total_lines": 55, 
+    "closeness_vitality": {
+     "HELENA": 2.0, 
+     "Widow": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "7", 
@@ -540,7 +634,14 @@
   [
    {
     "total_lines": 99, 
-    "deg_assort_coeff": -0.6109324758842446, 
+    "closeness_vitality": {
+     "PAROLLES": 10.0, 
+     "First Soldier": 12.0, 
+     "Second Lord": 20.0, 
+     "Second Soldier": 14.0, 
+     "All": 12.0
+    }, 
+    "deg_assort_coeff": -0.61093247588424482, 
     "density": 0.6, 
     "scene": "1", 
     "total_degrees": 6, 
@@ -579,6 +680,10 @@
    }, 
    {
     "total_lines": 88, 
+    "closeness_vitality": {
+     "BERTRAM": 2.0, 
+     "DIANA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -603,7 +708,15 @@
    }, 
    {
     "total_lines": 329, 
-    "deg_assort_coeff": -0.20111654356947514, 
+    "closeness_vitality": {
+     "First Lord": 8.0, 
+     "First Soldier": 12.0, 
+     "Servant": 16.0, 
+     "PAROLLES": 14.0, 
+     "BERTRAM": 12.0, 
+     "Second Lord": 12.0
+    }, 
+    "deg_assort_coeff": -0.20111654356947128, 
     "density": 0.7333333333333333, 
     "scene": "3", 
     "total_degrees": 11, 
@@ -647,6 +760,11 @@
    }, 
    {
     "total_lines": 41, 
+    "closeness_vitality": {
+     "DIANA": 6.0, 
+     "HELENA": 8.0, 
+     "Widow": 6.0
+    }, 
     "deg_assort_coeff": -1.0, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -676,6 +794,11 @@
    }, 
    {
     "total_lines": 99, 
+    "closeness_vitality": {
+     "LAFEU": 8.0, 
+     "COUNTESS": 6.0, 
+     "Clown": 6.0
+    }, 
     "deg_assort_coeff": -0.70313302516692344, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -707,6 +830,11 @@
   [
    {
     "total_lines": 46, 
+    "closeness_vitality": {
+     "HELENA": 4.0, 
+     "Gentleman": 4.0, 
+     "Widow": 4.0
+    }, 
     "deg_assort_coeff": -0.49999999999999928, 
     "density": 1.0, 
     "scene": "1", 
@@ -736,6 +864,11 @@
    }, 
    {
     "total_lines": 58, 
+    "closeness_vitality": {
+     "PAROLLES": 8.0, 
+     "LAFEU": 6.0, 
+     "Clown": 6.0
+    }, 
     "deg_assort_coeff": -0.88888888888888884, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -765,7 +898,18 @@
    }, 
    {
     "total_lines": 395, 
-    "deg_assort_coeff": -0.34635618923438777, 
+    "closeness_vitality": {
+     "KING": 42.0, 
+     "BERTRAM": 22.0, 
+     "DIANA": 20.0, 
+     "LAFEU": 20.0, 
+     "Gentleman": 30.0, 
+     "PAROLLES": 26.0, 
+     "HELENA": 26.0, 
+     "COUNTESS": 24.0, 
+     "Widow": 28.0
+    }, 
+    "deg_assort_coeff": -0.34635618923438855, 
     "density": 0.5555555555555556, 
     "scene": "3", 
     "total_degrees": 20, 

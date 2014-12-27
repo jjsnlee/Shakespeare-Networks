@@ -4,6 +4,11 @@
   [
    {
     "total_lines": 45, 
+    "closeness_vitality": {
+     "DUKE ORSINO": 8.0, 
+     "CURIO": 6.0, 
+     "VALENTINE": 6.0
+    }, 
     "deg_assort_coeff": -0.81818181818181823, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -33,6 +38,10 @@
    }, 
    {
     "total_lines": 67, 
+    "closeness_vitality": {
+     "Captain": 2.0, 
+     "VIOLA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -57,7 +66,12 @@
    }, 
    {
     "total_lines": 130, 
-    "deg_assort_coeff": -0.50000000000000566, 
+    "closeness_vitality": {
+     "MARIA": 4.0, 
+     "SIR TOBY BELCH": 4.0, 
+     "SIR ANDREW": 4.0
+    }, 
+    "deg_assort_coeff": -0.499999999999998, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -86,6 +100,11 @@
    }, 
    {
     "total_lines": 48, 
+    "closeness_vitality": {
+     "DUKE ORSINO": 6.0, 
+     "VIOLA": 8.0, 
+     "VALENTINE": 6.0
+    }, 
     "deg_assort_coeff": -0.63295880149812733, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -115,7 +134,15 @@
    }, 
    {
     "total_lines": 315, 
-    "deg_assort_coeff": -0.48195080396123824, 
+    "closeness_vitality": {
+     "SIR TOBY BELCH": 16.0, 
+     "MALVOLIO": 16.0, 
+     "Clown": 12.0, 
+     "OLIVIA": 6.0, 
+     "VIOLA": 16.0, 
+     "MARIA": 14.0
+    }, 
+    "deg_assort_coeff": -0.48195080396123946, 
     "density": 0.6, 
     "scene": "5", 
     "total_degrees": 9, 
@@ -161,6 +188,10 @@
   [
    {
     "total_lines": 45, 
+    "closeness_vitality": {
+     "SEBASTIAN": 2.0, 
+     "ANTONIO": 2.0
+    }, 
     "deg_assort_coeff": -0.49999999999999201, 
     "density": 2.0, 
     "scene": "1", 
@@ -185,6 +216,10 @@
    }, 
    {
     "total_lines": 42, 
+    "closeness_vitality": {
+     "MALVOLIO": 2.0, 
+     "VIOLA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -209,7 +244,14 @@
    }, 
    {
     "total_lines": 189, 
-    "deg_assort_coeff": -0.13898480662983295, 
+    "closeness_vitality": {
+     "SIR ANDREW": 10.0, 
+     "SIR TOBY BELCH": 8.0, 
+     "MALVOLIO": 10.0, 
+     "Clown": 8.0, 
+     "MARIA": 8.0
+    }, 
+    "deg_assort_coeff": -0.13898480662983412, 
     "density": 0.9, 
     "scene": "3", 
     "total_degrees": 9, 
@@ -248,7 +290,13 @@
    }, 
    {
     "total_lines": 137, 
-    "deg_assort_coeff": -0.82045454545454577, 
+    "closeness_vitality": {
+     "DUKE ORSINO": 18.0, 
+     "CURIO": 10.0, 
+     "VIOLA": 10.0, 
+     "Clown": 10.0
+    }, 
+    "deg_assort_coeff": -0.8204545454545451, 
     "density": 0.5, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -282,6 +330,13 @@
    }, 
    {
     "total_lines": 206, 
+    "closeness_vitality": {
+     "SIR ANDREW": 10.0, 
+     "FABIAN": 10.0, 
+     "SIR TOBY BELCH": 8.0, 
+     "MALVOLIO": 8.0, 
+     "MARIA": 12.0
+    }, 
     "deg_assort_coeff": -0.51587097554705341, 
     "density": 0.8, 
     "scene": "5", 
@@ -323,6 +378,13 @@
   [
    {
     "total_lines": 170, 
+    "closeness_vitality": {
+     "SIR TOBY BELCH": 12.0, 
+     "OLIVIA": 12.0, 
+     "VIOLA": 20.0, 
+     "Clown": 14.0, 
+     "SIR ANDREW": 10.0
+    }, 
     "deg_assort_coeff": -0.3386640663091175, 
     "density": 0.6, 
     "scene": "1", 
@@ -362,6 +424,12 @@
    }, 
    {
     "total_lines": 82, 
+    "closeness_vitality": {
+     "FABIAN": 8.0, 
+     "SIR TOBY BELCH": 14.0, 
+     "SIR ANDREW": 8.0, 
+     "MARIA": 10.0
+    }, 
     "deg_assort_coeff": -0.64069952305246425, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -396,6 +464,10 @@
    }, 
    {
     "total_lines": 54, 
+    "closeness_vitality": {
+     "SEBASTIAN": 2.0, 
+     "ANTONIO": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -420,7 +492,20 @@
    }, 
    {
     "total_lines": 408, 
-    "deg_assort_coeff": 0.11884247771344407, 
+    "closeness_vitality": {
+     "SIR TOBY BELCH": 18.0, 
+     "Servant": 52.0, 
+     "MALVOLIO": 36.0, 
+     "ANTONIO": 22.0, 
+     "FABIAN": 34.0, 
+     "OLIVIA": 84.0, 
+     "First Officer": 42.0, 
+     "VIOLA": 30.0, 
+     "Second Officer": 48.0, 
+     "MARIA": 36.0, 
+     "SIR ANDREW": 32.0
+    }, 
+    "deg_assort_coeff": 0.11884247771344503, 
     "density": 0.4, 
     "scene": "4", 
     "total_degrees": 22, 
@@ -491,6 +576,13 @@
   [
    {
     "total_lines": 67, 
+    "closeness_vitality": {
+     "SIR TOBY BELCH": 8.0, 
+     "SEBASTIAN": 8.0, 
+     "OLIVIA": 12.0, 
+     "Clown": 10.0, 
+     "SIR ANDREW": 10.0
+    }, 
     "deg_assort_coeff": -0.39848589125946315, 
     "density": 0.8, 
     "scene": "1", 
@@ -530,7 +622,13 @@
    }, 
    {
     "total_lines": 130, 
-    "deg_assort_coeff": -0.2096401933869442, 
+    "closeness_vitality": {
+     "SIR TOBY BELCH": 6.0, 
+     "MALVOLIO": 8.0, 
+     "Clown": 6.0, 
+     "MARIA": 8.0
+    }, 
+    "deg_assort_coeff": -0.2096401933869444, 
     "density": 0.8333333333333334, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -564,6 +662,10 @@
    }, 
    {
     "total_lines": 37, 
+    "closeness_vitality": {
+     "SEBASTIAN": 2.0, 
+     "OLIVIA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -590,7 +692,21 @@
   [
    {
     "total_lines": 436, 
-    "deg_assort_coeff": -0.52094530531705607, 
+    "closeness_vitality": {
+     "DUKE ORSINO": 18.0, 
+     "SIR TOBY BELCH": 36.0, 
+     "MALVOLIO": 42.0, 
+     "Clown": 32.0, 
+     "ANTONIO": 36.0, 
+     "FABIAN": 38.0, 
+     "OLIVIA": 16.0, 
+     "First Officer": 42.0, 
+     "VIOLA": 30.0, 
+     "SEBASTIAN": 36.0, 
+     "Priest": 40.0, 
+     "SIR ANDREW": 36.0
+    }, 
+    "deg_assort_coeff": -0.52094530531705541, 
     "density": 0.4393939393939394, 
     "scene": "1", 
     "total_degrees": 29, 

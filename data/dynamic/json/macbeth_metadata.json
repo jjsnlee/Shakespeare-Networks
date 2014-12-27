@@ -4,6 +4,12 @@
   [
    {
     "total_lines": 14, 
+    "closeness_vitality": {
+     "First Witch": 8.0, 
+     "Second Witch": 8.0, 
+     "ALL": 10.0, 
+     "Third Witch": 14.0
+    }, 
     "deg_assort_coeff": -0.29341317365269459, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -38,7 +44,14 @@
    }, 
    {
     "total_lines": 79, 
-    "deg_assort_coeff": -0.071742313323572476, 
+    "closeness_vitality": {
+     "DUNCAN": 8.0, 
+     "MALCOLM": 8.0, 
+     "ROSS": 12.0, 
+     "LENNOX": 12.0, 
+     "Sergeant": 12.0
+    }, 
+    "deg_assort_coeff": -0.071742313323572379, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -77,7 +90,17 @@
    }, 
    {
     "total_lines": 177, 
-    "deg_assort_coeff": -0.10070160957490881, 
+    "closeness_vitality": {
+     "ALL": 26.0, 
+     "ANGUS": 28.0, 
+     "Third Witch": 20.0, 
+     "MACBETH": 12.0, 
+     "BANQUO": 12.0, 
+     "First Witch": 16.0, 
+     "Second Witch": 28.0, 
+     "ROSS": 28.0
+    }, 
+    "deg_assort_coeff": -0.1007016095749069, 
     "density": 0.42857142857142855, 
     "scene": "3", 
     "total_degrees": 12, 
@@ -131,7 +154,13 @@
    }, 
    {
     "total_lines": 68, 
-    "deg_assort_coeff": -0.86206896551724133, 
+    "closeness_vitality": {
+     "MALCOLM": 10.0, 
+     "MACBETH": 10.0, 
+     "BANQUO": 10.0, 
+     "DUNCAN": 18.0
+    }, 
+    "deg_assort_coeff": -0.86206896551724066, 
     "density": 0.5, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -165,6 +194,11 @@
    }, 
    {
     "total_lines": 86, 
+    "closeness_vitality": {
+     "Messenger": 6.0, 
+     "MACBETH": 6.0, 
+     "LADY MACBETH": 8.0
+    }, 
     "deg_assort_coeff": -0.92592592592592593, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -194,6 +228,11 @@
    }, 
    {
     "total_lines": 39, 
+    "closeness_vitality": {
+     "BANQUO": 6.0, 
+     "LADY MACBETH": 6.0, 
+     "DUNCAN": 8.0
+    }, 
     "deg_assort_coeff": -0.81818181818181823, 
     "density": 0.6666666666666666, 
     "scene": "6", 
@@ -223,6 +262,10 @@
    }, 
    {
     "total_lines": 94, 
+    "closeness_vitality": {
+     "MACBETH": 2.0, 
+     "LADY MACBETH": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "7", 
@@ -249,6 +292,11 @@
   [
    {
     "total_lines": 77, 
+    "closeness_vitality": {
+     "FLEANCE": 6.0, 
+     "BANQUO": 8.0, 
+     "MACBETH": 6.0
+    }, 
     "deg_assort_coeff": -0.69659442724458209, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -278,6 +326,10 @@
    }, 
    {
     "total_lines": 99, 
+    "closeness_vitality": {
+     "MACBETH": 2.0, 
+     "LADY MACBETH": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -302,7 +354,18 @@
    }, 
    {
     "total_lines": 202, 
-    "deg_assort_coeff": -0.3764897373648205, 
+    "closeness_vitality": {
+     "ALL": 26.0, 
+     "MACDUFF": 48.0, 
+     "MALCOLM": 22.0, 
+     "LENNOX": 26.0, 
+     "LADY MACBETH": 26.0, 
+     "MACBETH": 18.0, 
+     "DONALBAIN": 30.0, 
+     "BANQUO": 24.0, 
+     "Porter": 32.0
+    }, 
+    "deg_assort_coeff": -0.37648973736482022, 
     "density": 0.4722222222222222, 
     "scene": "3", 
     "total_degrees": 17, 
@@ -361,6 +424,11 @@
    }, 
    {
     "total_lines": 53, 
+    "closeness_vitality": {
+     "MACDUFF": 6.0, 
+     "Old Man": 6.0, 
+     "ROSS": 8.0
+    }, 
     "deg_assort_coeff": -0.75757575757575757, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -392,7 +460,16 @@
   [
    {
     "total_lines": 164, 
-    "deg_assort_coeff": -0.77268195413758767, 
+    "closeness_vitality": {
+     "Both Murderers": 22.0, 
+     "MACBETH": 68.0, 
+     "LADY MACBETH": 22.0, 
+     "Second Murderer": 20.0, 
+     "First Murderer": 20.0, 
+     "BANQUO": 22.0, 
+     "ATTENDANT": 22.0
+    }, 
+    "deg_assort_coeff": -0.77268195413758667, 
     "density": 0.3333333333333333, 
     "scene": "1", 
     "total_degrees": 7, 
@@ -441,6 +518,11 @@
    }, 
    {
     "total_lines": 65, 
+    "closeness_vitality": {
+     "Servant": 6.0, 
+     "MACBETH": 6.0, 
+     "LADY MACBETH": 8.0
+    }, 
     "deg_assort_coeff": -0.77168949771689499, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -470,6 +552,12 @@
    }, 
    {
     "total_lines": 36, 
+    "closeness_vitality": {
+     "First Murderer": 6.0, 
+     "Third Murderer": 6.0, 
+     "BANQUO": 6.0, 
+     "Second Murderer": 6.0
+    }, 
     "deg_assort_coeff": -0.33333333333333176, 
     "density": 1.0, 
     "scene": "3", 
@@ -504,7 +592,15 @@
    }, 
    {
     "total_lines": 177, 
-    "deg_assort_coeff": -0.74033389188853771, 
+    "closeness_vitality": {
+     "Lords": 18.0, 
+     "LENNOX": 16.0, 
+     "MACBETH": 38.0, 
+     "LADY MACBETH": 14.0, 
+     "First Murderer": 18.0, 
+     "ROSS": 16.0
+    }, 
+    "deg_assort_coeff": -0.7403338918885366, 
     "density": 0.4666666666666667, 
     "scene": "4", 
     "total_degrees": 7, 
@@ -548,6 +644,10 @@
    }, 
    {
     "total_lines": 39, 
+    "closeness_vitality": {
+     "First Witch": 2.0, 
+     "HECATE": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -572,6 +672,10 @@
    }, 
    {
     "total_lines": 56, 
+    "closeness_vitality": {
+     "Lord": 2.0, 
+     "LENNOX": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "6", 
@@ -598,7 +702,19 @@
   [
    {
     "total_lines": 189, 
-    "deg_assort_coeff": -0.44865363438714728, 
+    "closeness_vitality": {
+     "ALL": 24.0, 
+     "LENNOX": 38.0, 
+     "Second Apparition": 34.0, 
+     "HECATE": 42.0, 
+     "Third Witch": 32.0, 
+     "MACBETH": 54.0, 
+     "First Witch": 20.0, 
+     "Second Witch": 66.0, 
+     "Third Apparition": 34.0, 
+     "First Apparition": 34.0
+    }, 
+    "deg_assort_coeff": -0.44865363438714712, 
     "density": 0.37777777777777777, 
     "scene": "1", 
     "total_degrees": 17, 
@@ -662,7 +778,14 @@
    }, 
    {
     "total_lines": 101, 
-    "deg_assort_coeff": -0.73507099786033925, 
+    "closeness_vitality": {
+     "LADY MACDUFF": 28.0, 
+     "First Murderer": 12.0, 
+     "ROSS": 14.0, 
+     "Messenger": 14.0, 
+     "Son": 12.0
+    }, 
+    "deg_assort_coeff": -0.73507099786033891, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -701,6 +824,12 @@
    }, 
    {
     "total_lines": 285, 
+    "closeness_vitality": {
+     "Doctor": 10.0, 
+     "MALCOLM": 14.0, 
+     "MACDUFF": 8.0, 
+     "ROSS": 8.0
+    }, 
     "deg_assort_coeff": -0.34104046242774566, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -737,7 +866,12 @@
   [
    {
     "total_lines": 77, 
-    "deg_assort_coeff": -0.50000000000000056, 
+    "closeness_vitality": {
+     "Gentlewoman": 4.0, 
+     "LADY MACBETH": 4.0, 
+     "Doctor": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999972, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -766,7 +900,13 @@
    }, 
    {
     "total_lines": 38, 
-    "deg_assort_coeff": -0.57024793388430228, 
+    "closeness_vitality": {
+     "ANGUS": 8.0, 
+     "LENNOX": 8.0, 
+     "MENTEITH": 6.0, 
+     "CAITHNESS": 6.0
+    }, 
+    "deg_assort_coeff": -0.57024793388430617, 
     "density": 0.8333333333333334, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -800,7 +940,13 @@
    }, 
    {
     "total_lines": 75, 
-    "deg_assort_coeff": -0.99723756906077388, 
+    "closeness_vitality": {
+     "Servant": 10.0, 
+     "SEYTON": 10.0, 
+     "MACBETH": 18.0, 
+     "Doctor": 10.0
+    }, 
+    "deg_assort_coeff": -0.99723756906077343, 
     "density": 0.5, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -834,7 +980,14 @@
    }, 
    {
     "total_lines": 28, 
-    "deg_assort_coeff": -0.58333333333333615, 
+    "closeness_vitality": {
+     "SIWARD": 8.0, 
+     "Soldiers": 12.0, 
+     "MALCOLM": 8.0, 
+     "MACDUFF": 12.0, 
+     "MENTEITH": 12.0
+    }, 
+    "deg_assort_coeff": -0.58333333333333648, 
     "density": 0.7, 
     "scene": "4", 
     "total_degrees": 7, 
@@ -873,6 +1026,11 @@
    }, 
    {
     "total_lines": 62, 
+    "closeness_vitality": {
+     "SEYTON": 6.0, 
+     "Messenger": 6.0, 
+     "MACBETH": 8.0
+    }, 
     "deg_assort_coeff": -0.92592592592592593, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -902,6 +1060,11 @@
    }, 
    {
     "total_lines": 12, 
+    "closeness_vitality": {
+     "SIWARD": 8.0, 
+     "MALCOLM": 6.0, 
+     "MACDUFF": 6.0
+    }, 
     "deg_assort_coeff": -1.0, 
     "density": 0.6666666666666666, 
     "scene": "6", 
@@ -931,6 +1094,13 @@
    }, 
    {
     "total_lines": 42, 
+    "closeness_vitality": {
+     "SIWARD": 32.0, 
+     "YOUNG SIWARD": 20.0, 
+     "MACDUFF": 36.0, 
+     "MACBETH": 32.0, 
+     "MALCOLM": 20.0
+    }, 
     "deg_assort_coeff": 0.31125827814569534, 
     "density": 0.4, 
     "scene": "7", 
@@ -970,6 +1140,14 @@
    }, 
    {
     "total_lines": 94, 
+    "closeness_vitality": {
+     "ALL": 16.0, 
+     "MACDUFF": 14.0, 
+     "SIWARD": 12.0, 
+     "MALCOLM": 8.0, 
+     "MACBETH": 16.0, 
+     "ROSS": 16.0
+    }, 
     "deg_assort_coeff": -0.1136890951276102, 
     "density": 0.5333333333333333, 
     "scene": "8", 

@@ -4,7 +4,16 @@
   [
    {
     "total_lines": 232, 
-    "deg_assort_coeff": -0.43504531722054263, 
+    "closeness_vitality": {
+     "POSTHUMUS LEONATUS": 20.0, 
+     "CYMBELINE": 20.0, 
+     "IMOGEN": 18.0, 
+     "PISANIO": 22.0, 
+     "QUEEN": 54.0, 
+     "First Gentleman": 48.0, 
+     "Second Gentleman": 30.0
+    }, 
+    "deg_assort_coeff": -0.43504531722054574, 
     "density": 0.47619047619047616, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -53,7 +62,12 @@
    }, 
    {
     "total_lines": 35, 
-    "deg_assort_coeff": -0.50000000000000266, 
+    "closeness_vitality": {
+     "First Lord": 4.0, 
+     "Second Lord": 4.0, 
+     "CLOTEN": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999839, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -82,6 +96,11 @@
    }, 
    {
     "total_lines": 50, 
+    "closeness_vitality": {
+     "PISANIO": 6.0, 
+     "Lady": 6.0, 
+     "IMOGEN": 8.0
+    }, 
     "deg_assort_coeff": -0.51057401812688818, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -111,6 +130,12 @@
    }, 
    {
     "total_lines": 167, 
+    "closeness_vitality": {
+     "POSTHUMUS LEONATUS": 6.0, 
+     "IACHIMO": 6.0, 
+     "Frenchman": 6.0, 
+     "PHILARIO": 6.0
+    }, 
     "deg_assort_coeff": -0.33333333333333348, 
     "density": 1.0, 
     "scene": "4", 
@@ -145,7 +170,13 @@
    }, 
    {
     "total_lines": 110, 
-    "deg_assort_coeff": -0.69834710743801698, 
+    "closeness_vitality": {
+     "PISANIO": 10.0, 
+     "CORNELIUS": 10.0, 
+     "First Lady": 10.0, 
+     "QUEEN": 18.0
+    }, 
+    "deg_assort_coeff": -0.69834710743801631, 
     "density": 0.5, 
     "scene": "5", 
     "total_degrees": 3, 
@@ -179,7 +210,12 @@
    }, 
    {
     "total_lines": 248, 
-    "deg_assort_coeff": -0.50000000000000011, 
+    "closeness_vitality": {
+     "PISANIO": 4.0, 
+     "IACHIMO": 4.0, 
+     "IMOGEN": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000022, 
     "density": 1.0, 
     "scene": "6", 
     "total_degrees": 3, 
@@ -210,7 +246,12 @@
   [
    {
     "total_lines": 66, 
-    "deg_assort_coeff": -0.50000000000000122, 
+    "closeness_vitality": {
+     "First Lord": 4.0, 
+     "Second Lord": 4.0, 
+     "CLOTEN": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999911, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -239,7 +280,20 @@
    }, 
    {
     "total_lines": 252, 
-    "deg_assort_coeff": -0.20455145728510526, 
+    "closeness_vitality": {
+     "First Lord": 28.0, 
+     "CLOTEN": 150.0, 
+     "CYMBELINE": 40.0, 
+     "IMOGEN": 66.0, 
+     "PISANIO": 50.0, 
+     "IACHIMO": 40.0, 
+     "Messenger": 42.0, 
+     "Second Lord": 44.0, 
+     "QUEEN": 42.0, 
+     "Lady": 38.0, 
+     "Scene III": 46.0
+    }, 
+    "deg_assort_coeff": -0.20455145728510499, 
     "density": 0.2727272727272727, 
     "scene": "2", 
     "total_degrees": 15, 
@@ -308,7 +362,12 @@
    }, 
    {
     "total_lines": 200, 
-    "deg_assort_coeff": -0.49999999999999972, 
+    "closeness_vitality": {
+     "POSTHUMUS LEONATUS": 4.0, 
+     "IACHIMO": 4.0, 
+     "PHILARIO": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000033, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -337,6 +396,9 @@
    }, 
    {
     "total_lines": 36, 
+    "closeness_vitality": {
+     "POSTHUMUS LEONATUS": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "5", 
@@ -358,7 +420,13 @@
   [
    {
     "total_lines": 98, 
-    "deg_assort_coeff": -0.16279069767441876, 
+    "closeness_vitality": {
+     "CAIUS LUCIUS": 6.0, 
+     "CLOTEN": 6.0, 
+     "CYMBELINE": 8.0, 
+     "QUEEN": 8.0
+    }, 
+    "deg_assort_coeff": -0.16279069767441892, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -392,6 +460,10 @@
    }, 
    {
     "total_lines": 93, 
+    "closeness_vitality": {
+     "PISANIO": 2.0, 
+     "IMOGEN": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -416,6 +488,11 @@
    }, 
    {
     "total_lines": 117, 
+    "closeness_vitality": {
+     "BELARIUS": 4.0, 
+     "GUIDERIUS": 4.0, 
+     "ARVIRAGUS": 4.0
+    }, 
     "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "3", 
@@ -445,6 +522,10 @@
    }, 
    {
     "total_lines": 222, 
+    "closeness_vitality": {
+     "PISANIO": 2.0, 
+     "IMOGEN": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -469,7 +550,15 @@
    }, 
    {
     "total_lines": 199, 
-    "deg_assort_coeff": 0.024964672633067213, 
+    "closeness_vitality": {
+     "CAIUS LUCIUS": 14.0, 
+     "CLOTEN": 30.0, 
+     "CYMBELINE": 12.0, 
+     "PISANIO": 20.0, 
+     "QUEEN": 12.0, 
+     "Attendant": 18.0
+    }, 
+    "deg_assort_coeff": 0.024964672633066461, 
     "density": 0.6, 
     "scene": "5", 
     "total_degrees": 9, 
@@ -513,7 +602,13 @@
    }, 
    {
     "total_lines": 121, 
-    "deg_assort_coeff": -0.33333333333333487, 
+    "closeness_vitality": {
+     "BELARIUS": 6.0, 
+     "GUIDERIUS": 6.0, 
+     "IMOGEN": 6.0, 
+     "ARVIRAGUS": 6.0
+    }, 
+    "deg_assort_coeff": -0.33333333333333459, 
     "density": 1.0, 
     "scene": "6", 
     "total_degrees": 6, 
@@ -547,6 +642,11 @@
    }, 
    {
     "total_lines": 20, 
+    "closeness_vitality": {
+     "First Tribune": 8.0, 
+     "Second Senator": 6.0, 
+     "First Senator": 6.0
+    }, 
     "deg_assort_coeff": -0.92592592592592593, 
     "density": 0.6666666666666666, 
     "scene": "7", 
@@ -578,6 +678,9 @@
   [
    {
     "total_lines": 27, 
+    "closeness_vitality": {
+     "CLOTEN": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "1", 
@@ -597,7 +700,17 @@
    }, 
    {
     "total_lines": 510, 
-    "deg_assort_coeff": 0.29239658452876593, 
+    "closeness_vitality": {
+     "CAIUS LUCIUS": 58.0, 
+     "CLOTEN": 32.0, 
+     "IMOGEN": 80.0, 
+     "ARVIRAGUS": 24.0, 
+     "BELARIUS": 22.0, 
+     "Soothsayer": 36.0, 
+     "GUIDERIUS": 22.0, 
+     "Captain": 26.0
+    }, 
+    "deg_assort_coeff": 0.29239658452876555, 
     "density": 0.4642857142857143, 
     "scene": "2", 
     "total_degrees": 13, 
@@ -651,7 +764,12 @@
    }, 
    {
     "total_lines": 57, 
-    "deg_assort_coeff": -0.50000000000000167, 
+    "closeness_vitality": {
+     "First Lord": 4.0, 
+     "PISANIO": 4.0, 
+     "CYMBELINE": 4.0
+    }, 
+    "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -680,6 +798,11 @@
    }, 
    {
     "total_lines": 68, 
+    "closeness_vitality": {
+     "BELARIUS": 4.0, 
+     "GUIDERIUS": 4.0, 
+     "ARVIRAGUS": 4.0
+    }, 
     "deg_assort_coeff": -0.50000000000000266, 
     "density": 1.0, 
     "scene": "4", 
@@ -711,6 +834,9 @@
   [
    {
     "total_lines": 34, 
+    "closeness_vitality": {
+     "POSTHUMUS LEONATUS": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "1", 
@@ -730,6 +856,12 @@
    }, 
    {
     "total_lines": 26, 
+    "closeness_vitality": {
+     "BELARIUS": 8.0, 
+     "GUIDERIUS": 8.0, 
+     "IACHIMO": 8.0, 
+     "CAIUS LUCIUS": 8.0
+    }, 
     "deg_assort_coeff": 0.0, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -764,6 +896,12 @@
    }, 
    {
     "total_lines": 109, 
+    "closeness_vitality": {
+     "Lord": 10.0, 
+     "First Captain": 8.0, 
+     "POSTHUMUS LEONATUS": 14.0, 
+     "Second Captain": 8.0
+    }, 
     "deg_assort_coeff": -0.16740366392924827, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -798,6 +936,19 @@
    }, 
    {
     "total_lines": 219, 
+    "closeness_vitality": {
+     "First Gaoler": 38.0, 
+     "POSTHUMUS LEONATUS": 8.0, 
+     "Second Brother": 42.0, 
+     "First Brother": 38.0, 
+     "All": 44.0, 
+     "Sicilius Leonatus": 172.0, 
+     "Jupiter": 42.0, 
+     "Second Gaoler": 46.0, 
+     "Mother": 42.0, 
+     "Messenger": 46.0, 
+     "Posthumus Leonatus": 36.0
+    }, 
     "deg_assort_coeff": -0.48339801638637342, 
     "density": 0.2909090909090909, 
     "scene": "4", 
@@ -867,7 +1018,21 @@
    }, 
    {
     "total_lines": 595, 
-    "deg_assort_coeff": -0.31688350771358265, 
+    "closeness_vitality": {
+     "CAIUS LUCIUS": 36.0, 
+     "POSTHUMUS LEONATUS": 32.0, 
+     "First Lady": 42.0, 
+     "CYMBELINE": 44.0, 
+     "IMOGEN": 30.0, 
+     "PISANIO": 34.0, 
+     "IACHIMO": 40.0, 
+     "ARVIRAGUS": 36.0, 
+     "BELARIUS": 34.0, 
+     "Soothsayer": 40.0, 
+     "GUIDERIUS": 32.0, 
+     "CORNELIUS": 38.0
+    }, 
+    "deg_assort_coeff": -0.31688350771358359, 
     "density": 0.42424242424242425, 
     "scene": "5", 
     "total_degrees": 28, 

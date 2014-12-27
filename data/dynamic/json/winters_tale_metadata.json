@@ -4,6 +4,10 @@
   [
    {
     "total_lines": 46, 
+    "closeness_vitality": {
+     "CAMILLO": 2.0, 
+     "ARCHIDAMUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -28,7 +32,14 @@
    }, 
    {
     "total_lines": 546, 
-    "deg_assort_coeff": -0.49595828406381448, 
+    "closeness_vitality": {
+     "CAMILLO": 12.0, 
+     "MAMILLIUS": 14.0, 
+     "LEONTES": 20.0, 
+     "POLIXENES": 10.0, 
+     "HERMIONE": 12.0
+    }, 
+    "deg_assort_coeff": -0.49595828406381454, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -69,7 +80,16 @@
   [
    {
     "total_lines": 238, 
-    "deg_assort_coeff": -0.088769734882334167, 
+    "closeness_vitality": {
+     "First Lord": 26.0, 
+     "First Lady": 22.0, 
+     "LEONTES": 62.0, 
+     "Second Lady": 22.0, 
+     "HERMIONE": 64.0, 
+     "MAMILLIUS": 22.0, 
+     "ANTIGONUS": 26.0
+    }, 
+    "deg_assort_coeff": -0.088769734882336179, 
     "density": 0.47619047619047616, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -118,7 +138,12 @@
    }, 
    {
     "total_lines": 89, 
-    "deg_assort_coeff": -0.50000000000000089, 
+    "closeness_vitality": {
+     "EMILIA": 4.0, 
+     "Gaoler": 4.0, 
+     "PAULINA": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000022, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -147,7 +172,17 @@
    }, 
    {
     "total_lines": 255, 
-    "deg_assort_coeff": -0.42378968208292134, 
+    "closeness_vitality": {
+     "First Lord": 22.0, 
+     "PAULINA": 18.0, 
+     "First Servant": 28.0, 
+     "LEONTES": 34.0, 
+     "Lords": 24.0, 
+     "Servant": 26.0, 
+     "Second Servant": 28.0, 
+     "ANTIGONUS": 18.0
+    }, 
+    "deg_assort_coeff": -0.42378968208292112, 
     "density": 0.42857142857142855, 
     "scene": "3", 
     "total_degrees": 12, 
@@ -203,6 +238,10 @@
   [
    {
     "total_lines": 28, 
+    "closeness_vitality": {
+     "DION": 2.0, 
+     "CLEOMENES": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -227,6 +266,16 @@
    }, 
    {
     "total_lines": 276, 
+    "closeness_vitality": {
+     "Lords": 28.0, 
+     "PAULINA": 26.0, 
+     "LEONTES": 34.0, 
+     "First Lord": 22.0, 
+     "Servant": 28.0, 
+     "CLEOMENES": 24.0, 
+     "HERMIONE": 18.0, 
+     "Officer": 18.0
+    }, 
     "deg_assort_coeff": -0.35796537155165264, 
     "density": 0.42857142857142855, 
     "scene": "2", 
@@ -281,6 +330,12 @@
    }, 
    {
     "total_lines": 145, 
+    "closeness_vitality": {
+     "Shepherd": 18.0, 
+     "Mariner": 12.0, 
+     "ANTIGONUS": 18.0, 
+     "Clown": 12.0
+    }, 
     "deg_assort_coeff": 0.32599118942731276, 
     "density": 0.5, 
     "scene": "3", 
@@ -317,6 +372,9 @@
   [
    {
     "total_lines": 34, 
+    "closeness_vitality": {
+     "Time": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "1", 
@@ -336,6 +394,10 @@
    }, 
    {
     "total_lines": 55, 
+    "closeness_vitality": {
+     "CAMILLO": 2.0, 
+     "POLIXENES": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -360,6 +422,10 @@
    }, 
    {
     "total_lines": 131, 
+    "closeness_vitality": {
+     "AUTOLYCUS": 2.0, 
+     "Clown": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -384,7 +450,20 @@
    }, 
    {
     "total_lines": 961, 
-    "deg_assort_coeff": -0.22140421764248705, 
+    "closeness_vitality": {
+     "Shepherd": 26.0, 
+     "MOPSA": 34.0, 
+     "AUTOLYCUS": 56.0, 
+     "Servant": 32.0, 
+     "POLIXENES": 30.0, 
+     "Clown": 20.0, 
+     "DORCAS": 34.0, 
+     "Shepard": 40.0, 
+     "PERDITA": 28.0, 
+     "FLORIZEL": 30.0, 
+     "CAMILLO": 28.0
+    }, 
+    "deg_assort_coeff": -0.22140421764248366, 
     "density": 0.5454545454545454, 
     "scene": "4", 
     "total_degrees": 30, 
@@ -455,7 +534,17 @@
   [
    {
     "total_lines": 288, 
-    "deg_assort_coeff": -0.45770100626044891, 
+    "closeness_vitality": {
+     "PAULINA": 50.0, 
+     "LEONTES": 70.0, 
+     "DION": 32.0, 
+     "Gentleman": 24.0, 
+     "CLEOMENES": 24.0, 
+     "Lord": 24.0, 
+     "PERDITA": 26.0, 
+     "FLORIZEL": 26.0
+    }, 
+    "deg_assort_coeff": -0.45770100626044774, 
     "density": 0.39285714285714285, 
     "scene": "1", 
     "total_degrees": 11, 
@@ -509,7 +598,15 @@
    }, 
    {
     "total_lines": 177, 
-    "deg_assort_coeff": 0.098712446351931382, 
+    "closeness_vitality": {
+     "Shepherd": 20.0, 
+     "AUTOLYCUS": 46.0, 
+     "Third Gentleman": 20.0, 
+     "First Gentleman": 46.0, 
+     "Clown": 20.0, 
+     "Second Gentleman": 20.0
+    }, 
+    "deg_assort_coeff": 0.098712446351930772, 
     "density": 0.4666666666666667, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -553,6 +650,14 @@
    }, 
    {
     "total_lines": 188, 
+    "closeness_vitality": {
+     "PAULINA": 24.0, 
+     "LEONTES": 14.0, 
+     "POLIXENES": 14.0, 
+     "HERMIONE": 18.0, 
+     "CAMILLO": 16.0, 
+     "PERDITA": 16.0
+    }, 
     "deg_assort_coeff": -0.54825082508250822, 
     "density": 0.5333333333333333, 
     "scene": "3", 

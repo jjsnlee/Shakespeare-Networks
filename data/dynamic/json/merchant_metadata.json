@@ -4,7 +4,15 @@
   [
    {
     "total_lines": 192, 
-    "deg_assort_coeff": -0.079365079365077987, 
+    "closeness_vitality": {
+     "SALARINO": 30.0, 
+     "ANTONIO": 14.0, 
+     "BASSANIO": 12.0, 
+     "LORENZO": 14.0, 
+     "GRATIANO": 16.0, 
+     "SALANIO": 20.0
+    }, 
+    "deg_assort_coeff": -0.079365079365079416, 
     "density": 0.6, 
     "scene": "1", 
     "total_degrees": 9, 
@@ -48,6 +56,11 @@
    }, 
    {
     "total_lines": 130, 
+    "closeness_vitality": {
+     "Servant": 6.0, 
+     "PORTIA": 8.0, 
+     "NERISSA": 6.0
+    }, 
     "deg_assort_coeff": -0.4049586776859504, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -77,7 +90,12 @@
    }, 
    {
     "total_lines": 187, 
-    "deg_assort_coeff": -0.50000000000000233, 
+    "closeness_vitality": {
+     "SHYLOCK": 4.0, 
+     "BASSANIO": 4.0, 
+     "ANTONIO": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000122, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -108,6 +126,10 @@
   [
    {
     "total_lines": 50, 
+    "closeness_vitality": {
+     "MOROCCO": 2.0, 
+     "PORTIA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -132,7 +154,14 @@
    }, 
    {
     "total_lines": 209, 
-    "deg_assort_coeff": 0.44348894348894302, 
+    "closeness_vitality": {
+     "LAUNCELOT": 12.0, 
+     "GOBBO": 12.0, 
+     "BASSANIO": 24.0, 
+     "LEONARDO": 12.0, 
+     "GRATIANO": 12.0
+    }, 
+    "deg_assort_coeff": 0.44348894348894319, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -171,6 +200,10 @@
    }, 
    {
     "total_lines": 23, 
+    "closeness_vitality": {
+     "LAUNCELOT": 2.0, 
+     "JESSICA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -195,7 +228,14 @@
    }, 
    {
     "total_lines": 46, 
-    "deg_assort_coeff": -0.33928571428571608, 
+    "closeness_vitality": {
+     "LAUNCELOT": 12.0, 
+     "SALARINO": 10.0, 
+     "LORENZO": 6.0, 
+     "SALANIO": 12.0, 
+     "GRATIANO": 10.0
+    }, 
+    "deg_assort_coeff": -0.3392857142857158, 
     "density": 0.8, 
     "scene": "4", 
     "total_degrees": 8, 
@@ -234,7 +274,12 @@
    }, 
    {
     "total_lines": 61, 
-    "deg_assort_coeff": -0.50000000000000233, 
+    "closeness_vitality": {
+     "LAUNCELOT": 4.0, 
+     "SHYLOCK": 4.0, 
+     "JESSICA": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999933, 
     "density": 1.0, 
     "scene": "5", 
     "total_degrees": 3, 
@@ -263,6 +308,13 @@
    }, 
    {
     "total_lines": 77, 
+    "closeness_vitality": {
+     "GRATIANO": 8.0, 
+     "SALARINO": 12.0, 
+     "LORENZO": 8.0, 
+     "JESSICA": 12.0, 
+     "ANTONIO": 12.0
+    }, 
     "deg_assort_coeff": -0.45833333333333459, 
     "density": 0.7, 
     "scene": "6", 
@@ -302,6 +354,10 @@
    }, 
    {
     "total_lines": 84, 
+    "closeness_vitality": {
+     "PORTIA": 2.0, 
+     "MOROCCO": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "7", 
@@ -326,6 +382,10 @@
    }, 
    {
     "total_lines": 56, 
+    "closeness_vitality": {
+     "SALARINO": 2.0, 
+     "SALANIO": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "8", 
@@ -350,7 +410,13 @@
    }, 
    {
     "total_lines": 108, 
-    "deg_assort_coeff": -0.94117647058823595, 
+    "closeness_vitality": {
+     "Servant": 10.0, 
+     "PORTIA": 18.0, 
+     "NERISSA": 10.0, 
+     "ARRAGON": 10.0
+    }, 
+    "deg_assort_coeff": -0.94117647058823528, 
     "density": 0.5, 
     "scene": "9", 
     "total_degrees": 3, 
@@ -386,6 +452,13 @@
   [
    {
     "total_lines": 124, 
+    "closeness_vitality": {
+     "Servant": 12.0, 
+     "SALARINO": 10.0, 
+     "SHYLOCK": 20.0, 
+     "SALANIO": 12.0, 
+     "TUBAL": 14.0
+    }, 
     "deg_assort_coeff": -0.38026398491514762, 
     "density": 0.6, 
     "scene": "1", 
@@ -425,7 +498,17 @@
    }, 
    {
     "total_lines": 342, 
-    "deg_assort_coeff": -0.40197275414471167, 
+    "closeness_vitality": {
+     "PORTIA": 6.0, 
+     "ALL": 24.0, 
+     "JESSICA": 24.0, 
+     "GRATIANO": 20.0, 
+     "BASSANIO": 18.0, 
+     "LORENZO": 24.0, 
+     "NERISSA": 22.0, 
+     "SALERIO": 18.0
+    }, 
+    "deg_assort_coeff": -0.40197275414471162, 
     "density": 0.5357142857142857, 
     "scene": "2", 
     "total_degrees": 15, 
@@ -479,7 +562,12 @@
    }, 
    {
     "total_lines": 41, 
-    "deg_assort_coeff": -0.50000000000000167, 
+    "closeness_vitality": {
+     "SALARINO": 4.0, 
+     "SHYLOCK": 4.0, 
+     "ANTONIO": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000011, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -508,6 +596,13 @@
    }, 
    {
     "total_lines": 90, 
+    "closeness_vitality": {
+     "PORTIA": 28.0, 
+     "LORENZO": 12.0, 
+     "JESSICA": 12.0, 
+     "NERISSA": 14.0, 
+     "BALTHASAR": 14.0
+    }, 
     "deg_assort_coeff": -0.67979002624671969, 
     "density": 0.5, 
     "scene": "4", 
@@ -547,6 +642,11 @@
    }, 
    {
     "total_lines": 89, 
+    "closeness_vitality": {
+     "LAUNCELOT": 4.0, 
+     "LORENZO": 4.0, 
+     "JESSICA": 4.0
+    }, 
     "deg_assort_coeff": -0.49999999999999645, 
     "density": 1.0, 
     "scene": "5", 
@@ -578,7 +678,18 @@
   [
    {
     "total_lines": 485, 
-    "deg_assort_coeff": -0.10056424922989875, 
+    "closeness_vitality": {
+     "DUKE": 68.0, 
+     "PORTIA": 22.0, 
+     "Clerk": 30.0, 
+     "ANTONIO": 22.0, 
+     "BASSANIO": 22.0, 
+     "SHYLOCK": 20.0, 
+     "GRATIANO": 22.0, 
+     "NERISSA": 24.0, 
+     "SALERIO": 30.0
+    }, 
+    "deg_assort_coeff": -0.10056424922989936, 
     "density": 0.5555555555555556, 
     "scene": "1", 
     "total_degrees": 20, 
@@ -637,6 +748,11 @@
    }, 
    {
     "total_lines": 26, 
+    "closeness_vitality": {
+     "PORTIA": 4.0, 
+     "NERISSA": 4.0, 
+     "GRATIANO": 4.0
+    }, 
     "deg_assort_coeff": -0.50000000000000067, 
     "density": 1.0, 
     "scene": "2", 
@@ -668,7 +784,18 @@
   [
    {
     "total_lines": 338, 
-    "deg_assort_coeff": -0.31626105471219768, 
+    "closeness_vitality": {
+     "PORTIA": 14.0, 
+     "JESSICA": 36.0, 
+     "ANTONIO": 32.0, 
+     "BASSANIO": 30.0, 
+     "LAUNCELOT": 36.0, 
+     "LORENZO": 112.0, 
+     "GRATIANO": 30.0, 
+     "NERISSA": 24.0, 
+     "STEPHANO": 36.0
+    }, 
+    "deg_assort_coeff": -0.3162610547121969, 
     "density": 0.3888888888888889, 
     "scene": "1", 
     "total_degrees": 14, 

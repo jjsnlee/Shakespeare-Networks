@@ -4,6 +4,12 @@
   [
    {
     "total_lines": 170, 
+    "closeness_vitality": {
+     "BRAKENBURY": 8.0, 
+     "GLOUCESTER / KING RICHARD III": 14.0, 
+     "CLARENCE": 8.0, 
+     "HASTINGS": 10.0
+    }, 
     "deg_assort_coeff": -0.61538461538461542, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -38,6 +44,12 @@
    }, 
    {
     "total_lines": 285, 
+    "closeness_vitality": {
+     "GENTLEMEN": 10.0, 
+     "GLOUCESTER / KING RICHARD III": 18.0, 
+     "Gentleman": 10.0, 
+     "LADY ANNE": 10.0
+    }, 
     "deg_assort_coeff": -0.53566878980891708, 
     "density": 0.5, 
     "scene": "2", 
@@ -72,7 +84,20 @@
    }, 
    {
     "total_lines": 373, 
-    "deg_assort_coeff": -0.28044509985601129, 
+    "closeness_vitality": {
+     "CATESBY": 36.0, 
+     "QUEEN MARGARET": 28.0, 
+     "GLOUCESTER / KING RICHARD III": 66.0, 
+     "GREY": 36.0, 
+     "RIVERS": 26.0, 
+     "First Murderer": 44.0, 
+     "BUCKINGHAM": 28.0, 
+     "QUEEN ELIZABETH": 18.0, 
+     "DERBY": 36.0, 
+     "DORSET": 32.0, 
+     "HASTINGS": 36.0
+    }, 
+    "deg_assort_coeff": -0.28044509985601274, 
     "density": 0.45454545454545453, 
     "scene": "3", 
     "total_degrees": 25, 
@@ -141,6 +166,14 @@
    }, 
    {
     "total_lines": 284, 
+    "closeness_vitality": {
+     "Both": 18.0, 
+     "CLARENCE": 38.0, 
+     "Second murderer": 18.0, 
+     "First Murderer": 14.0, 
+     "BRAKENBURY": 14.0, 
+     "Second Murderer": 14.0
+    }, 
     "deg_assort_coeff": -0.32797379782641062, 
     "density": 0.5333333333333333, 
     "scene": "4", 
@@ -187,7 +220,16 @@
   [
    {
     "total_lines": 149, 
-    "deg_assort_coeff": -0.26248216833095656, 
+    "closeness_vitality": {
+     "BUCKINGHAM": 16.0, 
+     "GLOUCESTER / KING RICHARD III": 14.0, 
+     "RIVERS": 16.0, 
+     "KING EDWARD IV": 12.0, 
+     "QUEEN ELIZABETH": 16.0, 
+     "DORSET": 16.0, 
+     "HASTINGS": 18.0
+    }, 
+    "deg_assort_coeff": -0.262482168330956, 
     "density": 0.7142857142857143, 
     "scene": "1", 
     "total_degrees": 15, 
@@ -236,7 +278,19 @@
    }, 
    {
     "total_lines": 160, 
-    "deg_assort_coeff": -0.11841249186727279, 
+    "closeness_vitality": {
+     "Boy": 34.0, 
+     "GLOUCESTER / KING RICHARD III": 16.0, 
+     "RIVERS": 30.0, 
+     "BUCKINGHAM": 30.0, 
+     "QUEEN ELIZABETH": 18.0, 
+     "DUCHESS OF YORK": 10.0, 
+     "Girl": 34.0, 
+     "DORSET": 32.0, 
+     "Children": 36.0, 
+     "HASTINGS": 38.0
+    }, 
+    "deg_assort_coeff": -0.11841249186727423, 
     "density": 0.4, 
     "scene": "2", 
     "total_degrees": 18, 
@@ -300,7 +354,12 @@
    }, 
    {
     "total_lines": 51, 
-    "deg_assort_coeff": -0.50000000000000155, 
+    "closeness_vitality": {
+     "Second Citizen": 4.0, 
+     "First Citizen": 4.0, 
+     "Third Citizen": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999428, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -329,6 +388,13 @@
    }, 
    {
     "total_lines": 81, 
+    "closeness_vitality": {
+     "DUCHESS OF YORK": 8.0, 
+     "ARCHBISHOP OF YORK": 10.0, 
+     "Messenger": 10.0, 
+     "QUEEN ELIZABETH": 8.0, 
+     "YORK": 12.0
+    }, 
     "deg_assort_coeff": -0.37406340057636889, 
     "density": 0.8, 
     "scene": "4", 
@@ -370,7 +436,17 @@
   [
    {
     "total_lines": 210, 
-    "deg_assort_coeff": -0.18954044731278599, 
+    "closeness_vitality": {
+     "PRINCE EDWARD": 16.0, 
+     "CATESBY": 24.0, 
+     "GLOUCESTER / KING RICHARD III": 16.0, 
+     "BUCKINGHAM": 6.0, 
+     "Lord Mayor": 26.0, 
+     "CARDINAL": 26.0, 
+     "YORK": 22.0, 
+     "HASTINGS": 22.0
+    }, 
+    "deg_assort_coeff": -0.18954044731278583, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 14, 
@@ -424,7 +500,17 @@
    }, 
    {
     "total_lines": 138, 
-    "deg_assort_coeff": -0.65651727677044003, 
+    "closeness_vitality": {
+     "CATESBY": 24.0, 
+     "Pursuivant": 24.0, 
+     "BUCKINGHAM": 26.0, 
+     "Priest": 24.0, 
+     "Messenger": 24.0, 
+     "STANLEY": 26.0, 
+     "LORD STANLEY": 26.0, 
+     "HASTINGS": 90.0
+    }, 
+    "deg_assort_coeff": -0.65651727677044203, 
     "density": 0.32142857142857145, 
     "scene": "2", 
     "total_degrees": 9, 
@@ -478,6 +564,12 @@
    }, 
    {
     "total_lines": 26, 
+    "closeness_vitality": {
+     "RATCLIFF": 8.0, 
+     "RIVERS": 8.0, 
+     "GREY": 8.0, 
+     "VAUGHAN": 8.0
+    }, 
     "deg_assort_coeff": 0.0, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -512,7 +604,16 @@
    }, 
    {
     "total_lines": 119, 
-    "deg_assort_coeff": -0.53588516746411696, 
+    "closeness_vitality": {
+     "LOVEL": 22.0, 
+     "GLOUCESTER / KING RICHARD III": 16.0, 
+     "BUCKINGHAM": 16.0, 
+     "DERBY": 16.0, 
+     "BISHOP OF ELY": 16.0, 
+     "RATCLIFF": 22.0, 
+     "HASTINGS": 48.0
+    }, 
+    "deg_assort_coeff": -0.53588516746411408, 
     "density": 0.5714285714285714, 
     "scene": "4", 
     "total_degrees": 12, 
@@ -561,6 +662,12 @@
    }, 
    {
     "total_lines": 116, 
+    "closeness_vitality": {
+     "BUCKINGHAM": 8.0, 
+     "Lord Mayor": 8.0, 
+     "GLOUCESTER / KING RICHARD III": 14.0, 
+     "LOVEL": 10.0
+    }, 
     "deg_assort_coeff": -0.67032967032967028, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -595,6 +702,9 @@
    }, 
    {
     "total_lines": 15, 
+    "closeness_vitality": {
+     "Scrivener": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "6", 
@@ -614,7 +724,14 @@
    }, 
    {
     "total_lines": 261, 
-    "deg_assort_coeff": -0.29773226042428724, 
+    "closeness_vitality": {
+     "CATESBY": 10.0, 
+     "BUCKINGHAM": 10.0, 
+     "Lord Mayor": 12.0, 
+     "GLOUCESTER / KING RICHARD III": 6.0, 
+     "ANOTHER": 12.0
+    }, 
+    "deg_assort_coeff": -0.29773226042428663, 
     "density": 0.7, 
     "scene": "7", 
     "total_degrees": 7, 
@@ -655,7 +772,15 @@
   [
    {
     "total_lines": 113, 
-    "deg_assort_coeff": -0.51566265060241134, 
+    "closeness_vitality": {
+     "LADY ANNE": 10.0, 
+     "QUEEN ELIZABETH": 10.0, 
+     "BRAKENBURY": 14.0, 
+     "DUCHESS OF YORK": 14.0, 
+     "DORSET": 16.0, 
+     "LORD STANLEY": 12.0
+    }, 
+    "deg_assort_coeff": -0.51566265060240968, 
     "density": 0.7333333333333333, 
     "scene": "1", 
     "total_degrees": 11, 
@@ -699,7 +824,15 @@
    }, 
    {
     "total_lines": 146, 
-    "deg_assort_coeff": -0.76261614867029892, 
+    "closeness_vitality": {
+     "CATESBY": 16.0, 
+     "GLOUCESTER / KING RICHARD III": 38.0, 
+     "BUCKINGHAM": 14.0, 
+     "TYRREL": 16.0, 
+     "STANLEY": 18.0, 
+     "Page": 18.0
+    }, 
+    "deg_assort_coeff": -0.76261614867029792, 
     "density": 0.4666666666666667, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -743,6 +876,11 @@
    }, 
    {
     "total_lines": 64, 
+    "closeness_vitality": {
+     "CATESBY": 6.0, 
+     "TYRREL": 6.0, 
+     "GLOUCESTER / KING RICHARD III": 8.0
+    }, 
     "deg_assort_coeff": -0.87050359712230219, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -772,7 +910,20 @@
    }, 
    {
     "total_lines": 582, 
-    "deg_assort_coeff": -0.1583843280882648, 
+    "closeness_vitality": {
+     "CATESBY": 42.0, 
+     "QUEEN MARGARET": 54.0, 
+     "GLOUCESTER / KING RICHARD III": 178.0, 
+     "RATCLIFF": 42.0, 
+     "Second Messenger": 46.0, 
+     "Messenger": 48.0, 
+     "QUEEN ELIZABETH": 38.0, 
+     "Third Messenger": 20.0, 
+     "DUCHESS OF YORK": 38.0, 
+     "STANLEY": 26.0, 
+     "Fourth Messenger": 40.0
+    }, 
+    "deg_assort_coeff": -0.15838432808826472, 
     "density": 0.2727272727272727, 
     "scene": "4", 
     "total_degrees": 15, 
@@ -841,6 +992,10 @@
    }, 
    {
     "total_lines": 20, 
+    "closeness_vitality": {
+     "CHRISTOPHER": 2.0, 
+     "DERBY": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -867,6 +1022,10 @@
   [
    {
     "total_lines": 30, 
+    "closeness_vitality": {
+     "BUCKINGHAM": 2.0, 
+     "Sheriff": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -891,6 +1050,12 @@
    }, 
    {
     "total_lines": 25, 
+    "closeness_vitality": {
+     "RICHMOND": 8.0, 
+     "OXFORD": 8.0, 
+     "BLUNT": 8.0, 
+     "HERBERT": 8.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -925,7 +1090,30 @@
    }, 
    {
     "total_lines": 415, 
-    "deg_assort_coeff": -0.071253419512126159, 
+    "closeness_vitality": {
+     "SURREY": 140.0, 
+     "LORDS": 126.0, 
+     "All": 62.0, 
+     "NORFOLK": 140.0, 
+     "Ghost of HASTINGS": 6.0, 
+     "Ghost of RIVERS": 38.0, 
+     "of Prince Edward": -274.0, 
+     "CATESBY": 140.0, 
+     "of young Princes": -82.0, 
+     "GLOUCESTER / KING RICHARD III": 472.0, 
+     "RICHMOND": -224.0, 
+     "Ghost of VAUGHAN": 86.0, 
+     "BLUNT": 148.0, 
+     "Messenger": 140.0, 
+     "of King Henry VI": -138.0, 
+     "DERBY": 126.0, 
+     "Ghost of GREY": 78.0, 
+     "Ghost of LADY ANNE": -202.0, 
+     "of BUCKINGHAM": -354.0, 
+     "Ghost of CLARENCE": -34.0, 
+     "RATCLIFF": 140.0
+    }, 
+    "deg_assort_coeff": -0.071253419512125882, 
     "density": 0.10952380952380952, 
     "scene": "3", 
     "total_degrees": 23, 
@@ -1044,6 +1232,10 @@
    }, 
    {
     "total_lines": 15, 
+    "closeness_vitality": {
+     "CATESBY": 2.0, 
+     "GLOUCESTER / KING RICHARD III": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -1068,6 +1260,10 @@
    }, 
    {
     "total_lines": 43, 
+    "closeness_vitality": {
+     "RICHMOND": 2.0, 
+     "DERBY": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 

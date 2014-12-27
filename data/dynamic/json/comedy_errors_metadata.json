@@ -4,6 +4,11 @@
   [
    {
     "total_lines": 159, 
+    "closeness_vitality": {
+     "DUKE SOLINUS": 4.0, 
+     "AEGEON": 4.0, 
+     "Gaoler": 4.0
+    }, 
     "deg_assort_coeff": -0.50000000000000022, 
     "density": 1.0, 
     "scene": "1", 
@@ -33,7 +38,13 @@
    }, 
    {
     "total_lines": 109, 
-    "deg_assort_coeff": -0.76445086705202336, 
+    "closeness_vitality": {
+     "First Merchant": 10.0, 
+     "ANTIPHOLUS OF SYRACUSE": 18.0, 
+     "DROMIO OF SYRACUSE": 10.0, 
+     "DROMIO OF EPHESUS": 10.0
+    }, 
+    "deg_assort_coeff": -0.76445086705202359, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -69,7 +80,12 @@
   [
    {
     "total_lines": 119, 
-    "deg_assort_coeff": -0.50000000000000155, 
+    "closeness_vitality": {
+     "ADRIANA": 4.0, 
+     "LUCIANA": 4.0, 
+     "DROMIO OF EPHESUS": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000033, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -98,7 +114,13 @@
    }, 
    {
     "total_lines": 218, 
-    "deg_assort_coeff": -0.33333333333333343, 
+    "closeness_vitality": {
+     "DROMIO OF SYRACUSE": 6.0, 
+     "ANTIPHOLUS OF SYRACUSE": 6.0, 
+     "LUCIANA": 6.0, 
+     "ADRIANA": 6.0
+    }, 
+    "deg_assort_coeff": -0.33333333333333348, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -134,7 +156,16 @@
   [
    {
     "total_lines": 150, 
-    "deg_assort_coeff": -0.37561153483849408, 
+    "closeness_vitality": {
+     "ANGELO": 18.0, 
+     "DROMIO OF SYRACUSE": 16.0, 
+     "ANTIPHOLUS OF EPHESUS": 12.0, 
+     "LUCE": 16.0, 
+     "DROMIO OF EPHESUS": 12.0, 
+     "BALTHAZAR": 18.0, 
+     "ADRIANA": 16.0
+    }, 
+    "deg_assort_coeff": -0.37561153483849402, 
     "density": 0.7142857142857143, 
     "scene": "1", 
     "total_degrees": 15, 
@@ -183,7 +214,13 @@
    }, 
    {
     "total_lines": 187, 
-    "deg_assort_coeff": -0.8669617893755831, 
+    "closeness_vitality": {
+     "ANGELO": 10.0, 
+     "LUCIANA": 10.0, 
+     "ANTIPHOLUS OF SYRACUSE": 18.0, 
+     "DROMIO OF SYRACUSE": 10.0
+    }, 
+    "deg_assort_coeff": -0.86696178937558255, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -219,7 +256,15 @@
   [
    {
     "total_lines": 118, 
-    "deg_assort_coeff": -0.57658746730553512, 
+    "closeness_vitality": {
+     "ANGELO": 12.0, 
+     "DROMIO OF SYRACUSE": 16.0, 
+     "ANTIPHOLUS OF EPHESUS": 26.0, 
+     "Officer": 14.0, 
+     "Second Merchant": 14.0, 
+     "DROMIO OF EPHESUS": 18.0
+    }, 
+    "deg_assort_coeff": -0.57658746730553667, 
     "density": 0.6, 
     "scene": "1", 
     "total_degrees": 9, 
@@ -263,7 +308,12 @@
    }, 
    {
     "total_lines": 78, 
-    "deg_assort_coeff": -0.50000000000000078, 
+    "closeness_vitality": {
+     "LUCIANA": 4.0, 
+     "ADRIANA": 4.0, 
+     "DROMIO OF SYRACUSE": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000022, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -292,7 +342,12 @@
    }, 
    {
     "total_lines": 97, 
-    "deg_assort_coeff": -0.500000000000001, 
+    "closeness_vitality": {
+     "Courtezan": 4.0, 
+     "ANTIPHOLUS OF SYRACUSE": 4.0, 
+     "DROMIO OF SYRACUSE": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999961, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -321,7 +376,18 @@
    }, 
    {
     "total_lines": 170, 
-    "deg_assort_coeff": -0.056031698178215177, 
+    "closeness_vitality": {
+     "DROMIO OF SYRACUSE": 46.0, 
+     "ANTIPHOLUS OF EPHESUS": 22.0, 
+     "Courtezan": 30.0, 
+     "Officer": 90.0, 
+     "LUCIANA": 28.0, 
+     "PINCH": 22.0, 
+     "ANTIPHOLUS OF SYRACUSE": 76.0, 
+     "ADRIANA": 22.0, 
+     "DROMIO OF EPHESUS": 24.0
+    }, 
+    "deg_assort_coeff": -0.056031698178216148, 
     "density": 0.5555555555555556, 
     "scene": "4", 
     "total_degrees": 20, 
@@ -382,7 +448,22 @@
   [
    {
     "total_lines": 448, 
-    "deg_assort_coeff": -0.35141820682455593, 
+    "closeness_vitality": {
+     "ANGELO": 36.0, 
+     "DROMIO OF SYRACUSE": 36.0, 
+     "Servant": 44.0, 
+     "AEMELIA": 34.0, 
+     "AEGEON": 40.0, 
+     "Courtezan": 42.0, 
+     "DUKE SOLINUS": 20.0, 
+     "ADRIANA": 26.0, 
+     "LUCIANA": 40.0, 
+     "ANTIPHOLUS OF EPHESUS": 26.0, 
+     "Second Merchant": 38.0, 
+     "ANTIPHOLUS OF SYRACUSE": 34.0, 
+     "DROMIO OF EPHESUS": 34.0
+    }, 
+    "deg_assort_coeff": -0.35141820682455982, 
     "density": 0.5256410256410257, 
     "scene": "1", 
     "total_degrees": 41, 

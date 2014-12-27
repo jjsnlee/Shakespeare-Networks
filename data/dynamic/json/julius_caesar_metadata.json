@@ -4,7 +4,13 @@
   [
    {
     "total_lines": 76, 
-    "deg_assort_coeff": -0.15384615384615416, 
+    "closeness_vitality": {
+     "FLAVIUS": 6.0, 
+     "Second Commoner": 8.0, 
+     "First Commoner": 8.0, 
+     "MARULLUS": 6.0
+    }, 
+    "deg_assort_coeff": -0.15384615384615413, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -38,7 +44,16 @@
    }, 
    {
     "total_lines": 338, 
-    "deg_assort_coeff": 0.3268339004510572, 
+    "closeness_vitality": {
+     "CASCA": 18.0, 
+     "CASSIUS": 18.0, 
+     "CALPURNIA": 22.0, 
+     "CAESAR": 60.0, 
+     "Soothsayer": 22.0, 
+     "ANTONY": 22.0, 
+     "BRUTUS": 18.0
+    }, 
+    "deg_assort_coeff": 0.32683390045105604, 
     "density": 0.42857142857142855, 
     "scene": "2", 
     "total_degrees": 9, 
@@ -87,7 +102,13 @@
    }, 
    {
     "total_lines": 177, 
-    "deg_assort_coeff": -0.49787955894826175, 
+    "closeness_vitality": {
+     "CINNA": 12.0, 
+     "CASCA": 18.0, 
+     "CICERO": 12.0, 
+     "CASSIUS": 18.0
+    }, 
+    "deg_assort_coeff": -0.4978795589482613, 
     "density": 0.5, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -123,7 +144,19 @@
   [
    {
     "total_lines": 370, 
-    "deg_assort_coeff": -0.39190517490604265, 
+    "closeness_vitality": {
+     "DECIUS BRUTUS": 40.0, 
+     "CASCA": 26.0, 
+     "PORTIA": 36.0, 
+     "CINNA": 30.0, 
+     "LIGARIUS": 36.0, 
+     "CASSIUS": 26.0, 
+     "METELLUS CIMBER": 34.0, 
+     "LUCIUS": 36.0, 
+     "TREBONIUS": 32.0, 
+     "BRUTUS": 102.0
+    }, 
+    "deg_assort_coeff": -0.39190517490604232, 
     "density": 0.3111111111111111, 
     "scene": "1", 
     "total_degrees": 14, 
@@ -187,6 +220,16 @@
    }, 
    {
     "total_lines": 146, 
+    "closeness_vitality": {
+     "DECIUS BRUTUS": 26.0, 
+     "CALPURNIA": 24.0, 
+     "Servant": 24.0, 
+     "BRUTUS": 26.0, 
+     "TREBONIUS": 26.0, 
+     "PUBLIUS": 26.0, 
+     "ANTONY": 26.0, 
+     "CAESAR": 94.0
+    }, 
     "deg_assort_coeff": -0.84765661688738614, 
     "density": 0.2857142857142857, 
     "scene": "2", 
@@ -241,6 +284,9 @@
    }, 
    {
     "total_lines": 16, 
+    "closeness_vitality": {
+     "ARTEMIDORUS": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "3", 
@@ -260,6 +306,11 @@
    }, 
    {
     "total_lines": 53, 
+    "closeness_vitality": {
+     "Soothsayer": 6.0, 
+     "LUCIUS": 6.0, 
+     "PORTIA": 8.0
+    }, 
     "deg_assort_coeff": -0.97590361445783136, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -291,7 +342,23 @@
   [
    {
     "total_lines": 332, 
-    "deg_assort_coeff": -0.29880927336222612, 
+    "closeness_vitality": {
+     "DECIUS BRUTUS": 42.0, 
+     "CASCA": 46.0, 
+     "CAESAR": -2.0, 
+     "TREBONIUS": 52.0, 
+     "Servant": 54.0, 
+     "CASSIUS": 30.0, 
+     "ARTEMIDORUS": 54.0, 
+     "CINNA": 44.0, 
+     "PUBLIUS": 50.0, 
+     "METELLUS CIMBER": 46.0, 
+     "POPILIUS": 52.0, 
+     "Soothsayer": 56.0, 
+     "ANTONY": 50.0, 
+     "BRUTUS": -2.0
+    }, 
+    "deg_assort_coeff": -0.29880927336222529, 
     "density": 0.32967032967032966, 
     "scene": "1", 
     "total_degrees": 30, 
@@ -375,7 +442,19 @@
    }, 
    {
     "total_lines": 289, 
-    "deg_assort_coeff": -0.29008741196871862, 
+    "closeness_vitality": {
+     "All": 26.0, 
+     "First Citizen": 24.0, 
+     "Servant": 36.0, 
+     "Citizens": 32.0, 
+     "Second Citizen": 22.0, 
+     "Fourth Citizen": 28.0, 
+     "ANTONY": 48.0, 
+     "BRUTUS": 28.0, 
+     "Third Citizen": 26.0, 
+     "Several Citizens": 32.0
+    }, 
+    "deg_assort_coeff": -0.29008741196871596, 
     "density": 0.4888888888888889, 
     "scene": "2", 
     "total_degrees": 22, 
@@ -439,7 +518,14 @@
    }, 
    {
     "total_lines": 37, 
-    "deg_assort_coeff": -0.32686084142394295, 
+    "closeness_vitality": {
+     "Second Citizen": 8.0, 
+     "First Citizen": 10.0, 
+     "CINNA THE POET": 8.0, 
+     "Third Citizen": 10.0, 
+     "Fourth Citizen": 8.0
+    }, 
+    "deg_assort_coeff": -0.32686084142394767, 
     "density": 0.9, 
     "scene": "3", 
     "total_degrees": 9, 
@@ -480,7 +566,12 @@
   [
    {
     "total_lines": 56, 
-    "deg_assort_coeff": -0.50000000000000211, 
+    "closeness_vitality": {
+     "OCTAVIUS": 4.0, 
+     "ANTONY": 4.0, 
+     "LEPIDUS": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999917, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -509,7 +600,16 @@
    }, 
    {
     "total_lines": 60, 
-    "deg_assort_coeff": -0.1477422183252961, 
+    "closeness_vitality": {
+     "First Soldier": 14.0, 
+     "Second Soldier": 22.0, 
+     "CASSIUS": 14.0, 
+     "PINDARUS": 26.0, 
+     "Third Soldier": 22.0, 
+     "LUCILIUS": 26.0, 
+     "BRUTUS": 58.0
+    }, 
+    "deg_assort_coeff": -0.14774221832529572, 
     "density": 0.3333333333333333, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -558,7 +658,19 @@
    }, 
    {
     "total_lines": 371, 
-    "deg_assort_coeff": -0.45358388485291934, 
+    "closeness_vitality": {
+     "GHOST": 36.0, 
+     "CLAUDIUS": 34.0, 
+     "VARRO": 32.0, 
+     "TITINIUS": 36.0, 
+     "CASSIUS": 30.0, 
+     "MESSALA": 34.0, 
+     "Poet": 74.0, 
+     "LUCILIUS": 46.0, 
+     "LUCIUS": 34.0, 
+     "BRUTUS": 138.0
+    }, 
+    "deg_assort_coeff": -0.45358388485291878, 
     "density": 0.28888888888888886, 
     "scene": "3", 
     "total_degrees": 13, 
@@ -624,7 +736,16 @@
   [
    {
     "total_lines": 141, 
-    "deg_assort_coeff": -0.36459924134193616, 
+    "closeness_vitality": {
+     "CASSIUS": 36.0, 
+     "MESSALA": 24.0, 
+     "OCTAVIUS": 18.0, 
+     "Messenger": 26.0, 
+     "LUCILIUS": 22.0, 
+     "ANTONY": 40.0, 
+     "BRUTUS": 16.0
+    }, 
+    "deg_assort_coeff": -0.36459924134193805, 
     "density": 0.47619047619047616, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -673,6 +794,9 @@
    }, 
    {
     "total_lines": 8, 
+    "closeness_vitality": {
+     "BRUTUS": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "2", 
@@ -692,6 +816,14 @@
    }, 
    {
     "total_lines": 132, 
+    "closeness_vitality": {
+     "TITINIUS": 8.0, 
+     "CASSIUS": 18.0, 
+     "MESSALA": 14.0, 
+     "PINDARUS": 16.0, 
+     "CATO": 22.0, 
+     "BRUTUS": 34.0
+    }, 
     "deg_assort_coeff": -0.13763480168159387, 
     "density": 0.5333333333333333, 
     "scene": "3", 
@@ -736,7 +868,15 @@
    }, 
    {
     "total_lines": 37, 
-    "deg_assort_coeff": -0.26923076923076883, 
+    "closeness_vitality": {
+     "First Soldier": 38.0, 
+     "Second Soldier": 24.0, 
+     "CATO": 26.0, 
+     "LUCILIUS": 48.0, 
+     "ANTONY": 18.0, 
+     "BRUTUS": 42.0
+    }, 
+    "deg_assort_coeff": -0.26923076923076888, 
     "density": 0.4, 
     "scene": "4", 
     "total_degrees": 6, 
@@ -780,7 +920,18 @@
    }, 
    {
     "total_lines": 98, 
-    "deg_assort_coeff": 0.0083153680320286506, 
+    "closeness_vitality": {
+     "CLITUS": 32.0, 
+     "STRATO": 24.0, 
+     "MESSALA": 32.0, 
+     "OCTAVIUS": 12.0, 
+     "VOLUMNIUS": 34.0, 
+     "LUCILIUS": 34.0, 
+     "ANTONY": 34.0, 
+     "BRUTUS": 100.0, 
+     "DARDANIUS": 34.0
+    }, 
+    "deg_assort_coeff": 0.0083153680320291502, 
     "density": 0.3888888888888889, 
     "scene": "5", 
     "total_degrees": 14, 

@@ -4,6 +4,7 @@
   [
    {
     "total_lines": 0, 
+    "closeness_vitality": {}, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -17,6 +18,13 @@
    }, 
    {
     "total_lines": 189, 
+    "closeness_vitality": {
+     "Daughter": 12.0, 
+     "ANTIOCHUS": 28.0, 
+     "Messenger": 14.0, 
+     "PERICLES": 12.0, 
+     "THALIARD": 14.0
+    }, 
     "deg_assort_coeff": -0.7136659436008681, 
     "density": 0.5, 
     "scene": "1", 
@@ -56,6 +64,12 @@
    }, 
    {
     "total_lines": 136, 
+    "closeness_vitality": {
+     "First Lord": 8.0, 
+     "Second Lord": 8.0, 
+     "PERICLES": 8.0, 
+     "HELICANUS": 8.0
+    }, 
     "deg_assort_coeff": 0.0, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -90,6 +104,10 @@
    }, 
    {
     "total_lines": 42, 
+    "closeness_vitality": {
+     "THALIARD": 2.0, 
+     "HELICANUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -114,6 +132,13 @@
    }, 
    {
     "total_lines": 113, 
+    "closeness_vitality": {
+     "CLEON": 34.0, 
+     "Lord": 16.0, 
+     "All": 18.0, 
+     "PERICLES": 28.0, 
+     "DIONYZA": 16.0
+    }, 
     "deg_assort_coeff": -0.23523316062176167, 
     "density": 0.4, 
     "scene": "4", 
@@ -155,7 +180,13 @@
   [
    {
     "total_lines": 166, 
-    "deg_assort_coeff": -0.33333333333333359, 
+    "closeness_vitality": {
+     "First Fisherman": 6.0, 
+     "Second Fisherman": 6.0, 
+     "PERICLES": 6.0, 
+     "Third Fisherman": 6.0
+    }, 
+    "deg_assort_coeff": -0.33333333333333381, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 6, 
@@ -189,7 +220,14 @@
    }, 
    {
     "total_lines": 69, 
-    "deg_assort_coeff": 0.087591240875912246, 
+    "closeness_vitality": {
+     "First Lord": 12.0, 
+     "Third Lord": 12.0, 
+     "THAISA": 16.0, 
+     "Second Lord": 14.0, 
+     "SIMONIDES": 24.0
+    }, 
+    "deg_assort_coeff": 0.08759124087591226, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -228,6 +266,15 @@
    }, 
    {
     "total_lines": 129, 
+    "closeness_vitality": {
+     "SIMONIDES": 54.0, 
+     "First Knight": 26.0, 
+     "KNIGHTS": 24.0, 
+     "Knights": 24.0, 
+     "PERICLES": 40.0, 
+     "THAISA": 20.0, 
+     "Marshal": 20.0
+    }, 
     "deg_assort_coeff": -0.54821751273205188, 
     "density": 0.38095238095238093, 
     "scene": "3", 
@@ -277,7 +324,16 @@
    }, 
    {
     "total_lines": 104, 
-    "deg_assort_coeff": -0.38065043976273155, 
+    "closeness_vitality": {
+     "First Lord": 6.0, 
+     "All": 20.0, 
+     "HELICANUS": 38.0, 
+     "Third Lord": 22.0, 
+     "ESCANES": 20.0, 
+     "Second Lord": 18.0, 
+     "GOWER": 26.0
+    }, 
+    "deg_assort_coeff": -0.38065043976273266, 
     "density": 0.42857142857142855, 
     "scene": "4", 
     "total_degrees": 9, 
@@ -326,7 +382,16 @@
    }, 
    {
     "total_lines": 104, 
-    "deg_assort_coeff": -0.81170820162219171, 
+    "closeness_vitality": {
+     "BOTH": 22.0, 
+     "Third Knight": 22.0, 
+     "SIMONIDES": 68.0, 
+     "First Knight": 22.0, 
+     "PERICLES": 20.0, 
+     "THAISA": 20.0, 
+     "Second Knight": 22.0
+    }, 
+    "deg_assort_coeff": -0.81170820162219026, 
     "density": 0.3333333333333333, 
     "scene": "5", 
     "total_degrees": 7, 
@@ -377,7 +442,14 @@
   [
    {
     "total_lines": 155, 
-    "deg_assort_coeff": -0.73588516746411525, 
+    "closeness_vitality": {
+     "First Sailor": 12.0, 
+     "PERICLES": 28.0, 
+     "LYCHORIDA": 14.0, 
+     "GOWER": 14.0, 
+     "Second Sailor": 12.0
+    }, 
+    "deg_assort_coeff": -0.73588516746411514, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -416,7 +488,16 @@
    }, 
    {
     "total_lines": 138, 
-    "deg_assort_coeff": -0.71532846715328324, 
+    "closeness_vitality": {
+     "First Servant": 20.0, 
+     "CERIMON": 48.0, 
+     "First Gentleman": 20.0, 
+     "Servant": 22.0, 
+     "PHILEMON": 22.0, 
+     "Second Gentleman": 16.0, 
+     "THAISA": 20.0
+    }, 
+    "deg_assort_coeff": -0.71532846715328458, 
     "density": 0.42857142857142855, 
     "scene": "2", 
     "total_degrees": 9, 
@@ -465,7 +546,12 @@
    }, 
    {
     "total_lines": 49, 
-    "deg_assort_coeff": -0.50000000000000033, 
+    "closeness_vitality": {
+     "CLEON": 4.0, 
+     "PERICLES": 4.0, 
+     "DIONYZA": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000067, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -494,6 +580,10 @@
    }, 
    {
     "total_lines": 19, 
+    "closeness_vitality": {
+     "CERIMON": 2.0, 
+     "THAISA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -520,6 +610,9 @@
   [
    {
     "total_lines": 53, 
+    "closeness_vitality": {
+     "GOWER": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -539,7 +632,15 @@
    }, 
    {
     "total_lines": 120, 
-    "deg_assort_coeff": 0.10711111111111096, 
+    "closeness_vitality": {
+     "LEONINE": 40.0, 
+     "Second Pirate": 20.0, 
+     "DIONYZA": 18.0, 
+     "First Pirate": 16.0, 
+     "Third Pirate": 16.0, 
+     "MARINA": 18.0
+    }, 
+    "deg_assort_coeff": 0.1071111111111112, 
     "density": 0.4666666666666667, 
     "scene": "1", 
     "total_degrees": 7, 
@@ -583,7 +684,14 @@
    }, 
    {
     "total_lines": 146, 
-    "deg_assort_coeff": -0.48589590782677788, 
+    "closeness_vitality": {
+     "MARINA": 12.0, 
+     "First Pirate": 14.0, 
+     "BOULT": 20.0, 
+     "Pandar": 12.0, 
+     "Bawd": 10.0
+    }, 
+    "deg_assort_coeff": -0.48589590782677838, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -622,6 +730,11 @@
    }, 
    {
     "total_lines": 117, 
+    "closeness_vitality": {
+     "CLEON": 6.0, 
+     "GOWER": 6.0, 
+     "DIONYZA": 8.0
+    }, 
     "deg_assort_coeff": -0.41119221411192214, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -651,6 +764,7 @@
    }, 
    {
     "total_lines": 0, 
+    "closeness_vitality": {}, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "4", 
@@ -664,6 +778,10 @@
    }, 
    {
     "total_lines": 10, 
+    "closeness_vitality": {
+     "Second Gentleman": 2.0, 
+     "First Gentleman": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -688,6 +806,13 @@
    }, 
    {
     "total_lines": 196, 
+    "closeness_vitality": {
+     "LYSIMACHUS": 10.0, 
+     "MARINA": 10.0, 
+     "BOULT": 8.0, 
+     "Pandar": 12.0, 
+     "Bawd": 8.0
+    }, 
     "deg_assort_coeff": -0.012853470437017995, 
     "density": 0.8, 
     "scene": "6", 
@@ -729,6 +854,9 @@
   [
    {
     "total_lines": 25, 
+    "closeness_vitality": {
+     "GOWER": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -748,7 +876,17 @@
    }, 
    {
     "total_lines": 319, 
-    "deg_assort_coeff": -0.072697631088634779, 
+    "closeness_vitality": {
+     "First Lord": 24.0, 
+     "HELICANUS": 14.0, 
+     "Tyrian Sailor": 22.0, 
+     "First Gentleman": 28.0, 
+     "LYSIMACHUS": 8.0, 
+     "DIANA": 26.0, 
+     "MARINA": 26.0, 
+     "PERICLES": 20.0
+    }, 
+    "deg_assort_coeff": -0.07269763108863446, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 14, 
@@ -802,6 +940,9 @@
    }, 
    {
     "total_lines": 21, 
+    "closeness_vitality": {
+     "GOWER": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "2", 
@@ -821,7 +962,15 @@
    }, 
    {
     "total_lines": 121, 
-    "deg_assort_coeff": -0.6831278619232124, 
+    "closeness_vitality": {
+     "HELICANUS": 22.0, 
+     "CERIMON": 16.0, 
+     "MARINA": 20.0, 
+     "PERICLES": 44.0, 
+     "THAISA": 34.0, 
+     "GOWER": 20.0
+    }, 
+    "deg_assort_coeff": -0.68312786192321284, 
     "density": 0.4, 
     "scene": "3", 
     "total_degrees": 6, 

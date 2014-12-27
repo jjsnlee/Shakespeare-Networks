@@ -4,7 +4,14 @@
   [
    {
     "total_lines": 74, 
-    "deg_assort_coeff": -0.26811594202898592, 
+    "closeness_vitality": {
+     "PHILO": 14.0, 
+     "CLEOPATRA": 12.0, 
+     "DEMETRIUS": 12.0, 
+     "Attendant": 16.0, 
+     "MARK ANTONY": 24.0
+    }, 
+    "deg_assort_coeff": -0.26811594202898603, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -43,7 +50,20 @@
    }, 
    {
     "total_lines": 215, 
-    "deg_assort_coeff": -0.27595292464429866, 
+    "closeness_vitality": {
+     "CLEOPATRA": 32.0, 
+     "CHARMIAN": 36.0, 
+     "Soothsayer": 50.0, 
+     "Second Messenger": 50.0, 
+     "Messenger": 40.0, 
+     "ALEXAS": 38.0, 
+     "IRAS": 42.0, 
+     "DOMITIUS ENOBARBUS": -10.0, 
+     "MARK ANTONY": 160.0, 
+     "First Attendant": 48.0, 
+     "Second Attendant": 48.0
+    }, 
+    "deg_assort_coeff": -0.27595292464430038, 
     "density": 0.32727272727272727, 
     "scene": "2", 
     "total_degrees": 18, 
@@ -112,6 +132,11 @@
    }, 
    {
     "total_lines": 127, 
+    "closeness_vitality": {
+     "CLEOPATRA": 8.0, 
+     "CHARMIAN": 6.0, 
+     "MARK ANTONY": 6.0
+    }, 
     "deg_assort_coeff": -0.5897634742148119, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -141,7 +166,12 @@
    }, 
    {
     "total_lines": 96, 
-    "deg_assort_coeff": -0.50000000000000044, 
+    "closeness_vitality": {
+     "OCTAVIUS CAESAR": 4.0, 
+     "Messenger": 4.0, 
+     "LEPIDUS": 4.0
+    }, 
+    "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -170,7 +200,13 @@
    }, 
    {
     "total_lines": 93, 
-    "deg_assort_coeff": -0.94936708860759433, 
+    "closeness_vitality": {
+     "CLEOPATRA": 18.0, 
+     "CHARMIAN": 10.0, 
+     "MARDIAN": 10.0, 
+     "ALEXAS": 10.0
+    }, 
+    "deg_assort_coeff": -0.94936708860759511, 
     "density": 0.5, 
     "scene": "5", 
     "total_degrees": 3, 
@@ -206,7 +242,13 @@
   [
    {
     "total_lines": 64, 
-    "deg_assort_coeff": -0.92307692307692257, 
+    "closeness_vitality": {
+     "POMPEY": 18.0, 
+     "VARRIUS": 10.0, 
+     "MENAS": 10.0, 
+     "MENECRATES": 10.0
+    }, 
+    "deg_assort_coeff": -0.92307692307692335, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -240,7 +282,15 @@
    }, 
    {
     "total_lines": 295, 
-    "deg_assort_coeff": -0.067386603911078022, 
+    "closeness_vitality": {
+     "MECAENAS": 14.0, 
+     "AGRIPPA": 12.0, 
+     "OCTAVIUS CAESAR": 12.0, 
+     "LEPIDUS": 12.0, 
+     "DOMITIUS ENOBARBUS": 10.0, 
+     "MARK ANTONY": 12.0
+    }, 
+    "deg_assort_coeff": -0.067386603911074691, 
     "density": 0.8, 
     "scene": "2", 
     "total_degrees": 12, 
@@ -284,6 +334,12 @@
    }, 
    {
     "total_lines": 53, 
+    "closeness_vitality": {
+     "Soothsayer": 10.0, 
+     "OCTAVIA": 10.0, 
+     "OCTAVIUS CAESAR": 10.0, 
+     "MARK ANTONY": 18.0
+    }, 
     "deg_assort_coeff": -0.80000000000000004, 
     "density": 0.5, 
     "scene": "3", 
@@ -318,6 +374,11 @@
    }, 
    {
     "total_lines": 17, 
+    "closeness_vitality": {
+     "LEPIDUS": 8.0, 
+     "MECAENAS": 6.0, 
+     "AGRIPPA": 6.0
+    }, 
     "deg_assort_coeff": -0.81818181818181823, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -347,7 +408,14 @@
    }, 
    {
     "total_lines": 159, 
-    "deg_assort_coeff": -0.74845573095401619, 
+    "closeness_vitality": {
+     "Attendants": 14.0, 
+     "CLEOPATRA": 28.0, 
+     "CHARMIAN": 12.0, 
+     "Messenger": 12.0, 
+     "MARDIAN": 14.0
+    }, 
+    "deg_assort_coeff": -0.7484557309540163, 
     "density": 0.5, 
     "scene": "5", 
     "total_degrees": 5, 
@@ -386,6 +454,14 @@
    }, 
    {
     "total_lines": 167, 
+    "closeness_vitality": {
+     "OCTAVIUS CAESAR": 14.0, 
+     "LEPIDUS": 16.0, 
+     "POMPEY": 34.0, 
+     "DOMITIUS ENOBARBUS": 16.0, 
+     "MENAS": 16.0, 
+     "MARK ANTONY": 16.0
+    }, 
     "deg_assort_coeff": 0.17706617140460715, 
     "density": 0.5333333333333333, 
     "scene": "6", 
@@ -430,7 +506,17 @@
    }, 
    {
     "total_lines": 169, 
-    "deg_assort_coeff": -0.051269649334945919, 
+    "closeness_vitality": {
+     "First Servant": 58.0, 
+     "OCTAVIUS CAESAR": 24.0, 
+     "Second Servant": 36.0, 
+     "LEPIDUS": 22.0, 
+     "POMPEY": 20.0, 
+     "DOMITIUS ENOBARBUS": 20.0, 
+     "MENAS": 22.0, 
+     "MARK ANTONY": 66.0
+    }, 
+    "deg_assort_coeff": -0.051269649334945544, 
     "density": 0.5357142857142857, 
     "scene": "7", 
     "total_degrees": 15, 
@@ -486,6 +572,10 @@
   [
    {
     "total_lines": 43, 
+    "closeness_vitality": {
+     "SILIUS": 2.0, 
+     "VENTIDIUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -510,7 +600,12 @@
    }, 
    {
     "total_lines": 48, 
-    "deg_assort_coeff": -0.50000000000000167, 
+    "closeness_vitality": {
+     "DOMITIUS ENOBARBUS": 4.0, 
+     "SCARUS": 4.0, 
+     "CANIDIUS": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999856, 
     "density": 1.0, 
     "scene": "10", 
     "total_degrees": 3, 
@@ -539,7 +634,15 @@
    }, 
    {
     "total_lines": 84, 
-    "deg_assort_coeff": -0.3268206039076354, 
+    "closeness_vitality": {
+     "All": 20.0, 
+     "CLEOPATRA": 12.0, 
+     "CHARMIAN": 14.0, 
+     "IRAS": 16.0, 
+     "MARK ANTONY": 30.0, 
+     "EROS": 14.0
+    }, 
+    "deg_assort_coeff": -0.32682060390763779, 
     "density": 0.6, 
     "scene": "11", 
     "total_degrees": 9, 
@@ -583,7 +686,13 @@
    }, 
    {
     "total_lines": 46, 
-    "deg_assort_coeff": -0.90298507462686572, 
+    "closeness_vitality": {
+     "OCTAVIUS CAESAR": 18.0, 
+     "DOLABELLA": 10.0, 
+     "THYREUS": 10.0, 
+     "EUPHRONIUS": 10.0
+    }, 
+    "deg_assort_coeff": -0.90298507462686506, 
     "density": 0.5, 
     "scene": "12", 
     "total_degrees": 3, 
@@ -617,7 +726,16 @@
    }, 
    {
     "total_lines": 250, 
-    "deg_assort_coeff": -0.41438906752411481, 
+    "closeness_vitality": {
+     "CLEOPATRA": 16.0, 
+     "First Attendant": 24.0, 
+     "EUPHRONIUS": 24.0, 
+     "DOMITIUS ENOBARBUS": 16.0, 
+     "Attendant": 24.0, 
+     "THYREUS": 18.0, 
+     "MARK ANTONY": 54.0
+    }, 
+    "deg_assort_coeff": -0.41438906752411603, 
     "density": 0.47619047619047616, 
     "scene": "13", 
     "total_degrees": 10, 
@@ -666,6 +784,14 @@
    }, 
    {
     "total_lines": 88, 
+    "closeness_vitality": {
+     "AGRIPPA": 18.0, 
+     "OCTAVIUS CAESAR": 30.0, 
+     "LEPIDUS": 20.0, 
+     "OCTAVIA": 16.0, 
+     "DOMITIUS ENOBARBUS": 14.0, 
+     "MARK ANTONY": 10.0
+    }, 
     "deg_assort_coeff": 0.12240184757505773, 
     "density": 0.5333333333333333, 
     "scene": "2", 
@@ -710,6 +836,12 @@
    }, 
    {
     "total_lines": 69, 
+    "closeness_vitality": {
+     "CLEOPATRA": 14.0, 
+     "CHARMIAN": 8.0, 
+     "Messenger": 8.0, 
+     "ALEXAS": 10.0
+    }, 
     "deg_assort_coeff": -0.71260997067448684, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -744,6 +876,10 @@
    }, 
    {
     "total_lines": 42, 
+    "closeness_vitality": {
+     "OCTAVIA": 2.0, 
+     "MARK ANTONY": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -768,6 +904,10 @@
    }, 
    {
     "total_lines": 26, 
+    "closeness_vitality": {
+     "DOMITIUS ENOBARBUS": 2.0, 
+     "EROS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -792,7 +932,13 @@
    }, 
    {
     "total_lines": 113, 
-    "deg_assort_coeff": -0.35000000000000148, 
+    "closeness_vitality": {
+     "OCTAVIUS CAESAR": 6.0, 
+     "MECAENAS": 6.0, 
+     "OCTAVIA": 8.0, 
+     "AGRIPPA": 8.0
+    }, 
+    "deg_assort_coeff": -0.35000000000000092, 
     "density": 0.8333333333333334, 
     "scene": "6", 
     "total_degrees": 5, 
@@ -826,7 +972,15 @@
    }, 
    {
     "total_lines": 107, 
-    "deg_assort_coeff": -0.12128146453089393, 
+    "closeness_vitality": {
+     "CLEOPATRA": 14.0, 
+     "CANIDIUS": 10.0, 
+     "Soldier": 16.0, 
+     "Messenger": 16.0, 
+     "DOMITIUS ENOBARBUS": 14.0, 
+     "MARK ANTONY": 10.0
+    }, 
+    "deg_assort_coeff": -0.12128146453089365, 
     "density": 0.6666666666666666, 
     "scene": "7", 
     "total_degrees": 10, 
@@ -870,6 +1024,10 @@
    }, 
    {
     "total_lines": 7, 
+    "closeness_vitality": {
+     "OCTAVIUS CAESAR": 2.0, 
+     "TAURUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "8", 
@@ -894,6 +1052,9 @@
    }, 
    {
     "total_lines": 5, 
+    "closeness_vitality": {
+     "MARK ANTONY": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "9", 
@@ -915,6 +1076,10 @@
   [
    {
     "total_lines": 19, 
+    "closeness_vitality": {
+     "OCTAVIUS CAESAR": 2.0, 
+     "MECAENAS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -939,6 +1104,10 @@
    }, 
    {
     "total_lines": 11, 
+    "closeness_vitality": {
+     "SCARUS": 2.0, 
+     "MARK ANTONY": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "10", 
@@ -963,6 +1132,9 @@
    }, 
    {
     "total_lines": 5, 
+    "closeness_vitality": {
+     "OCTAVIUS CAESAR": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "11", 
@@ -982,6 +1154,11 @@
    }, 
    {
     "total_lines": 62, 
+    "closeness_vitality": {
+     "CLEOPATRA": 6.0, 
+     "SCARUS": 6.0, 
+     "MARK ANTONY": 8.0
+    }, 
     "deg_assort_coeff": -1.0, 
     "density": 0.6666666666666666, 
     "scene": "12", 
@@ -1011,6 +1188,10 @@
    }, 
    {
     "total_lines": 14, 
+    "closeness_vitality": {
+     "CLEOPATRA": 2.0, 
+     "CHARMIAN": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "13", 
@@ -1035,7 +1216,18 @@
    }, 
    {
     "total_lines": 184, 
-    "deg_assort_coeff": -0.16544782774875816, 
+    "closeness_vitality": {
+     "All": 32.0, 
+     "MARDIAN": 34.0, 
+     "Second Guard": 14.0, 
+     "First Guard": 28.0, 
+     "DERCETAS": 34.0, 
+     "DIOMEDES": 20.0, 
+     "Third Guard": 32.0, 
+     "MARK ANTONY": 66.0, 
+     "EROS": 34.0
+    }, 
+    "deg_assort_coeff": -0.16544782774875788, 
     "density": 0.3055555555555556, 
     "scene": "14", 
     "total_degrees": 11, 
@@ -1094,6 +1286,14 @@
    }, 
    {
     "total_lines": 113, 
+    "closeness_vitality": {
+     "All": 18.0, 
+     "CLEOPATRA": 50.0, 
+     "CHARMIAN": 38.0, 
+     "DIOMEDES": 20.0, 
+     "IRAS": 24.0, 
+     "MARK ANTONY": 18.0
+    }, 
     "deg_assort_coeff": -0.55604395604395607, 
     "density": 0.4, 
     "scene": "15", 
@@ -1138,6 +1338,12 @@
    }, 
    {
     "total_lines": 60, 
+    "closeness_vitality": {
+     "DOMITIUS ENOBARBUS": 8.0, 
+     "CLEOPATRA": 8.0, 
+     "All": 10.0, 
+     "MARK ANTONY": 14.0
+    }, 
     "deg_assort_coeff": -0.64210526315789473, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -1172,7 +1378,14 @@
    }, 
    {
     "total_lines": 39, 
-    "deg_assort_coeff": -0.50130775937227812, 
+    "closeness_vitality": {
+     "Fourth Soldier": 12.0, 
+     "First Soldier": 6.0, 
+     "All": 12.0, 
+     "Third Soldier": 10.0, 
+     "Second Soldier": 10.0
+    }, 
+    "deg_assort_coeff": -0.5013077593722759, 
     "density": 0.7, 
     "scene": "3", 
     "total_degrees": 7, 
@@ -1211,6 +1424,15 @@
    }, 
    {
     "total_lines": 55, 
+    "closeness_vitality": {
+     "All": 20.0, 
+     "CLEOPATRA": 20.0, 
+     "CHARMIAN": 22.0, 
+     "Soldier": 20.0, 
+     "Captain": 26.0, 
+     "EROS": 22.0, 
+     "MARK ANTONY": 56.0
+    }, 
     "deg_assort_coeff": -0.37419354838709701, 
     "density": 0.42857142857142855, 
     "scene": "4", 
@@ -1260,6 +1482,11 @@
    }, 
    {
     "total_lines": 26, 
+    "closeness_vitality": {
+     "Soldier": 4.0, 
+     "MARK ANTONY": 4.0, 
+     "EROS": 4.0
+    }, 
     "deg_assort_coeff": -0.50000000000000011, 
     "density": 1.0, 
     "scene": "5", 
@@ -1289,6 +1516,13 @@
    }, 
    {
     "total_lines": 49, 
+    "closeness_vitality": {
+     "DOMITIUS ENOBARBUS": 28.0, 
+     "OCTAVIUS CAESAR": 34.0, 
+     "AGRIPPA": 16.0, 
+     "Messenger": 16.0, 
+     "Soldier": 18.0
+    }, 
     "deg_assort_coeff": -0.47572815533980584, 
     "density": 0.4, 
     "scene": "6", 
@@ -1328,6 +1562,12 @@
    }, 
    {
     "total_lines": 25, 
+    "closeness_vitality": {
+     "EROS": 10.0, 
+     "SCARUS": 18.0, 
+     "AGRIPPA": 10.0, 
+     "MARK ANTONY": 10.0
+    }, 
     "deg_assort_coeff": -0.79411764705882326, 
     "density": 0.5, 
     "scene": "7", 
@@ -1362,6 +1602,10 @@
    }, 
    {
     "total_lines": 49, 
+    "closeness_vitality": {
+     "CLEOPATRA": 2.0, 
+     "MARK ANTONY": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "8", 
@@ -1386,7 +1630,13 @@
    }, 
    {
     "total_lines": 48, 
-    "deg_assort_coeff": -0.33333333333332976, 
+    "closeness_vitality": {
+     "First Soldier": 6.0, 
+     "Second Soldier": 6.0, 
+     "Third Soldier": 6.0, 
+     "DOMITIUS ENOBARBUS": 6.0
+    }, 
+    "deg_assort_coeff": -0.33333333333333492, 
     "density": 1.0, 
     "scene": "9", 
     "total_degrees": 6, 
@@ -1422,6 +1672,16 @@
   [
    {
     "total_lines": 98, 
+    "closeness_vitality": {
+     "All": 26.0, 
+     "MECAENAS": 24.0, 
+     "PROCULEIUS": 26.0, 
+     "Egyptian": 26.0, 
+     "OCTAVIUS CAESAR": 94.0, 
+     "AGRIPPA": 24.0, 
+     "DERCETAS": 26.0, 
+     "DOLABELLA": 26.0
+    }, 
     "deg_assort_coeff": -0.79479509422674244, 
     "density": 0.2857142857142857, 
     "scene": "1", 
@@ -1476,7 +1736,21 @@
    }, 
    {
     "total_lines": 469, 
-    "deg_assort_coeff": -0.27328352906891357, 
+    "closeness_vitality": {
+     "SELEUCUS": 44.0, 
+     "PROCULEIUS": 34.0, 
+     "OCTAVIUS CAESAR": 36.0, 
+     "CLEOPATRA": 104.0, 
+     "CHARMIAN": 34.0, 
+     "Clown": 48.0, 
+     "Guard": 48.0, 
+     "GALLUS": 52.0, 
+     "IRAS": 38.0, 
+     "DOLABELLA": 18.0, 
+     "First Guard": 42.0, 
+     "Second Guard": 50.0
+    }, 
+    "deg_assort_coeff": -0.27328352906891401, 
     "density": 0.3181818181818182, 
     "scene": "2", 
     "total_degrees": 21, 

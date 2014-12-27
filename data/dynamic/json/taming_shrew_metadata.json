@@ -4,6 +4,16 @@
   [
    {
     "total_lines": 148, 
+    "closeness_vitality": {
+     "A Player": 28.0, 
+     "SLY": 58.0, 
+     "Hostess": 36.0, 
+     "Servant": 28.0, 
+     "Second Huntsman": 26.0, 
+     "Players": 28.0, 
+     "First Huntsman": 26.0, 
+     "Lord": 102.0
+    }, 
     "deg_assort_coeff": -0.6871741397288843, 
     "density": 0.2857142857142857, 
     "scene": "1", 
@@ -58,6 +68,16 @@
    }, 
    {
     "total_lines": 148, 
+    "closeness_vitality": {
+     "ALL": 26.0, 
+     "First Servant": 22.0, 
+     "SLY": 74.0, 
+     "Third Servant": 22.0, 
+     "Second Servant": 20.0, 
+     "Messenger": 26.0, 
+     "Lord": 20.0, 
+     "Page": 26.0
+    }, 
     "deg_assort_coeff": -0.48693586698337354, 
     "density": 0.42857142857142855, 
     "scene": "2", 
@@ -114,7 +134,21 @@
   [
    {
     "total_lines": 267, 
-    "deg_assort_coeff": -0.061872819962435724, 
+    "closeness_vitality": {
+     "HORTENSIO": 44.0, 
+     "First Servant": 192.0, 
+     "TRANIO": 26.0, 
+     "BAPTISTA": 50.0, 
+     "HORTENSIA": 62.0, 
+     "BIANCA": 46.0, 
+     "LUCENTIO": 204.0, 
+     "BIONDELLO": 50.0, 
+     "GREMIO": 42.0, 
+     "KATHARINA": 40.0, 
+     "Page": 86.0, 
+     "SLY": 150.0
+    }, 
+    "deg_assort_coeff": -0.061872819962436411, 
     "density": 0.2727272727272727, 
     "scene": "1", 
     "total_degrees": 18, 
@@ -188,7 +222,16 @@
    }, 
    {
     "total_lines": 290, 
-    "deg_assort_coeff": -0.051684069261235713, 
+    "closeness_vitality": {
+     "HORTENSIO": 14.0, 
+     "GRUMIO": 16.0, 
+     "TRANIO": 32.0, 
+     "GREMIO": 14.0, 
+     "BIONDELLO": 22.0, 
+     "LUCENTIO": 16.0, 
+     "PETRUCHIO": 14.0
+    }, 
+    "deg_assort_coeff": -0.05168406926123395, 
     "density": 0.7142857142857143, 
     "scene": "2", 
     "total_degrees": 15, 
@@ -239,7 +282,16 @@
   [
    {
     "total_lines": 444, 
-    "deg_assort_coeff": -0.38295517432208276, 
+    "closeness_vitality": {
+     "HORTENSIO": 22.0, 
+     "TRANIO": 20.0, 
+     "BAPTISTA": 14.0, 
+     "PETRUCHIO": 14.0, 
+     "BIANCA": 26.0, 
+     "GREMIO": 16.0, 
+     "KATHARINA": 40.0
+    }, 
+    "deg_assort_coeff": -0.38295517432208143, 
     "density": 0.5714285714285714, 
     "scene": "1", 
     "total_degrees": 12, 
@@ -290,6 +342,12 @@
   [
    {
     "total_lines": 99, 
+    "closeness_vitality": {
+     "BIANCA": 14.0, 
+     "Servant": 10.0, 
+     "HORTENSIO": 8.0, 
+     "LUCENTIO": 8.0
+    }, 
     "deg_assort_coeff": -0.21869158878504674, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -324,7 +382,19 @@
    }, 
    {
     "total_lines": 266, 
-    "deg_assort_coeff": 0.057047909166437046, 
+    "closeness_vitality": {
+     "GRUMIO": 36.0, 
+     "TRANIO": 12.0, 
+     "BAPTISTA": 26.0, 
+     "PETRUCHIO": 16.0, 
+     "BIANCA": 36.0, 
+     "LUCENTIO": 36.0, 
+     "BIONDELLO": 32.0, 
+     "GREMIO": 12.0, 
+     "KATHARINA": 26.0, 
+     "KATARINA": 34.0
+    }, 
+    "deg_assort_coeff": 0.057047909166436081, 
     "density": 0.4444444444444444, 
     "scene": "2", 
     "total_degrees": 20, 
@@ -390,7 +460,19 @@
   [
    {
     "total_lines": 217, 
-    "deg_assort_coeff": 0.21983465215811682, 
+    "closeness_vitality": {
+     "NICHOLAS": 38.0, 
+     "GRUMIO": 30.0, 
+     "First Servant": 42.0, 
+     "PETRUCHIO": 102.0, 
+     "JOSEPH": 50.0, 
+     "CURTIS": 40.0, 
+     "PHILIP": 38.0, 
+     "PETER": 32.0, 
+     "KATHARINA": 42.0, 
+     "NATHANIEL": 128.0
+    }, 
+    "deg_assort_coeff": 0.21983465215811715, 
     "density": 0.3333333333333333, 
     "scene": "1", 
     "total_degrees": 15, 
@@ -454,6 +536,14 @@
    }, 
    {
     "total_lines": 132, 
+    "closeness_vitality": {
+     "HORTENSIO": 16.0, 
+     "TRANIO": 26.0, 
+     "Pedant": 18.0, 
+     "BIANCA": 16.0, 
+     "LUCENTIO": 12.0, 
+     "BIONDELLO": 16.0
+    }, 
     "deg_assort_coeff": -0.38441890166028098, 
     "density": 0.5333333333333333, 
     "scene": "2", 
@@ -498,7 +588,15 @@
    }, 
    {
     "total_lines": 204, 
-    "deg_assort_coeff": -0.38449590511154863, 
+    "closeness_vitality": {
+     "HORTENSIO": 12.0, 
+     "GRUMIO": 12.0, 
+     "PETRUCHIO": 26.0, 
+     "Tailor": 14.0, 
+     "Haberdasher": 18.0, 
+     "KATHARINA": 14.0
+    }, 
+    "deg_assort_coeff": -0.38449590511155107, 
     "density": 0.6666666666666666, 
     "scene": "3", 
     "total_degrees": 10, 
@@ -542,7 +640,14 @@
    }, 
    {
     "total_lines": 114, 
-    "deg_assort_coeff": 0.0023310023310024967, 
+    "closeness_vitality": {
+     "Pedant": 14.0, 
+     "LUCENTIO": 16.0, 
+     "TRANIO": 10.0, 
+     "BAPTISTA": 10.0, 
+     "BIONDELLO": 24.0
+    }, 
+    "deg_assort_coeff": 0.0023310023310024841, 
     "density": 0.6, 
     "scene": "4", 
     "total_degrees": 6, 
@@ -581,7 +686,13 @@
    }, 
    {
     "total_lines": 84, 
-    "deg_assort_coeff": -0.32941176470588313, 
+    "closeness_vitality": {
+     "VINCENTIO": 8.0, 
+     "HORTENSIO": 6.0, 
+     "KATHARINA": 8.0, 
+     "PETRUCHIO": 6.0
+    }, 
+    "deg_assort_coeff": -0.32941176470588301, 
     "density": 0.8333333333333334, 
     "scene": "5", 
     "total_degrees": 5, 
@@ -617,7 +728,19 @@
   [
    {
     "total_lines": 150, 
-    "deg_assort_coeff": -0.20800522571917873, 
+    "closeness_vitality": {
+     "TRANIO": 28.0, 
+     "BAPTISTA": 26.0, 
+     "Pedant": 28.0, 
+     "PETRUCHIO": 26.0, 
+     "BIANCA": 32.0, 
+     "LUCENTIO": 26.0, 
+     "VINCENTIO": 16.0, 
+     "BIONDELLO": 28.0, 
+     "GREMIO": 14.0, 
+     "KATHARINA": 34.0
+    }, 
+    "deg_assort_coeff": -0.20800522571917951, 
     "density": 0.5333333333333333, 
     "scene": "1", 
     "total_degrees": 24, 
@@ -681,7 +804,20 @@
    }, 
    {
     "total_lines": 215, 
-    "deg_assort_coeff": -0.23550999107789228, 
+    "closeness_vitality": {
+     "HORTENSIO": 34.0, 
+     "TRANIO": 38.0, 
+     "BAPTISTA": 28.0, 
+     "VINCENTIO": 40.0, 
+     "KATHARINA": 36.0, 
+     "BIANCA": 26.0, 
+     "LUCENTIO": 22.0, 
+     "BIONDELLO": 32.0, 
+     "GREMIO": 34.0, 
+     "PETRUCHIO": 8.0, 
+     "Widow": 34.0
+    }, 
+    "deg_assort_coeff": -0.23550999107789175, 
     "density": 0.41818181818181815, 
     "scene": "2", 
     "total_degrees": 23, 

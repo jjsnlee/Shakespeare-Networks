@@ -4,6 +4,13 @@
   [
    {
     "total_lines": 188, 
+    "closeness_vitality": {
+     "OF WINCHESTER": 10.0, 
+     "BEDFORD": 10.0, 
+     "GLOUCESTER": 10.0, 
+     "Messenger": 10.0, 
+     "EXETER": 8.0
+    }, 
     "deg_assort_coeff": -0.070175438596491224, 
     "density": 0.8, 
     "scene": "1", 
@@ -43,7 +50,14 @@
    }, 
    {
     "total_lines": 159, 
-    "deg_assort_coeff": -0.15422077922077998, 
+    "closeness_vitality": {
+     "BASTARD OF ORLEANS": 12.0, 
+     "CHARLES": 6.0, 
+     "JOAN LA PUCELLE": 12.0, 
+     "ALENCON": 10.0, 
+     "REIGNIER": 10.0
+    }, 
+    "deg_assort_coeff": -0.15422077922077954, 
     "density": 0.8, 
     "scene": "2", 
     "total_degrees": 8, 
@@ -82,6 +96,15 @@
    }, 
    {
     "total_lines": 105, 
+    "closeness_vitality": {
+     "OF WINCHESTER": 22.0, 
+     "Officer": 22.0, 
+     "WOODVILE": 24.0, 
+     "GLOUCESTER": 66.0, 
+     "Mayor": 20.0, 
+     "Second Warder": 30.0, 
+     "First Warder": 48.0
+    }, 
     "deg_assort_coeff": -0.33471933471933474, 
     "density": 0.38095238095238093, 
     "scene": "3", 
@@ -131,7 +154,15 @@
    }, 
    {
     "total_lines": 118, 
-    "deg_assort_coeff": -0.3673139158576062, 
+    "closeness_vitality": {
+     "Boy": 22.0, 
+     "GARGRAVE": 14.0, 
+     "TALBOT": 30.0, 
+     "Messenger": 20.0, 
+     "SALISBURY": 34.0, 
+     "GLANSDALE": 18.0
+    }, 
+    "deg_assort_coeff": -0.36731391585760526, 
     "density": 0.5333333333333333, 
     "scene": "4", 
     "total_degrees": 8, 
@@ -175,6 +206,10 @@
    }, 
    {
     "total_lines": 47, 
+    "closeness_vitality": {
+     "TALBOT": 2.0, 
+     "JOAN LA PUCELLE": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -199,6 +234,12 @@
    }, 
    {
     "total_lines": 32, 
+    "closeness_vitality": {
+     "CHARLES": 14.0, 
+     "JOAN LA PUCELLE": 10.0, 
+     "REIGNIER": 8.0, 
+     "ALENCON": 8.0
+    }, 
     "deg_assort_coeff": -0.7142857142857143, 
     "density": 0.6666666666666666, 
     "scene": "6", 
@@ -235,7 +276,21 @@
   [
    {
     "total_lines": 92, 
-    "deg_assort_coeff": 0.015653220951233299, 
+    "closeness_vitality": {
+     "BEDFORD": 70.0, 
+     "First Sentinel": 154.0, 
+     "Sentinels": 308.0, 
+     "CHARLES": 210.0, 
+     "JOAN LA PUCELLE": 162.0, 
+     "ALENCON": 304.0, 
+     "BURGUNDY": 70.0, 
+     "REIGNIER": 60.0, 
+     "TALBOT": 310.0, 
+     "Soldier": 92.0, 
+     "BASTARD OF ORLEANS": 60.0, 
+     "Sergeant": 88.0
+    }, 
+    "deg_assort_coeff": 0.01565322095123408, 
     "density": 0.22727272727272727, 
     "scene": "1", 
     "total_degrees": 15, 
@@ -309,6 +364,13 @@
    }, 
    {
     "total_lines": 65, 
+    "closeness_vitality": {
+     "TALBOT": 20.0, 
+     "BEDFORD": 12.0, 
+     "Captain": 14.0, 
+     "Messenger": 12.0, 
+     "BURGUNDY": 10.0
+    }, 
     "deg_assort_coeff": -0.61777777777777731, 
     "density": 0.6, 
     "scene": "2", 
@@ -348,6 +410,12 @@
    }, 
    {
     "total_lines": 102, 
+    "closeness_vitality": {
+     "TALBOT": 8.0, 
+     "OF AUVERGNE": 14.0, 
+     "Messenger": 8.0, 
+     "Porter": 10.0
+    }, 
     "deg_assort_coeff": -0.67032967032967028, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -382,7 +450,15 @@
    }, 
    {
     "total_lines": 155, 
-    "deg_assort_coeff": -0.38970588235294146, 
+    "closeness_vitality": {
+     "PLANTAGENET": 10.0, 
+     "SUFFOLK": 12.0, 
+     "VERNON": 12.0, 
+     "Lawyer": 14.0, 
+     "WARWICK": 14.0, 
+     "SOMERSET": 10.0
+    }, 
+    "deg_assort_coeff": -0.38970588235294168, 
     "density": 0.8, 
     "scene": "4", 
     "total_degrees": 12, 
@@ -426,6 +502,11 @@
    }, 
    {
     "total_lines": 140, 
+    "closeness_vitality": {
+     "First Gaoler": 6.0, 
+     "MORTIMER": 8.0, 
+     "PLANTAGENET": 6.0
+    }, 
     "deg_assort_coeff": -0.64079822616407978, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -457,7 +538,18 @@
   [
    {
     "total_lines": 226, 
-    "deg_assort_coeff": 0.0037637521713931098, 
+    "closeness_vitality": {
+     "ALL": 34.0, 
+     "PLANTAGENET": 26.0, 
+     "KING HENRY VI": 22.0, 
+     "OF WINCHESTER": 28.0, 
+     "WARWICK": 18.0, 
+     "SOMERSET": 22.0, 
+     "GLOUCESTER": 56.0, 
+     "Mayor": 32.0, 
+     "EXETER": 36.0
+    }, 
+    "deg_assort_coeff": 0.0037637521713955288, 
     "density": 0.4444444444444444, 
     "scene": "1", 
     "total_degrees": 16, 
@@ -516,7 +608,21 @@
    }, 
    {
     "total_lines": 157, 
-    "deg_assort_coeff": -0.21476442932879983, 
+    "closeness_vitality": {
+     "First Soldier": 48.0, 
+     "BEDFORD": 30.0, 
+     "JOAN LA PUCELLE": 118.0, 
+     "CHARLES": 38.0, 
+     "Watch": 48.0, 
+     "REIGNIER": 38.0, 
+     "BURGUNDY": 38.0, 
+     "ALENCON": 52.0, 
+     "TALBOT": 78.0, 
+     "BASTARD OF ORLEANS": 46.0, 
+     "Captain": 106.0, 
+     "FASTOLFE": 64.0
+    }, 
+    "deg_assort_coeff": -0.2147644293287988, 
     "density": 0.3333333333333333, 
     "scene": "2", 
     "total_degrees": 22, 
@@ -590,7 +696,14 @@
    }, 
    {
     "total_lines": 96, 
-    "deg_assort_coeff": -0.019195943498734311, 
+    "closeness_vitality": {
+     "JOAN LA PUCELLE": 10.0, 
+     "CHARLES": 6.0, 
+     "BASTARD OF ORLEANS": 12.0, 
+     "ALENCON": 10.0, 
+     "BURGUNDY": 12.0
+    }, 
+    "deg_assort_coeff": -0.01919594349873292, 
     "density": 0.7, 
     "scene": "3", 
     "total_degrees": 7, 
@@ -629,6 +742,13 @@
    }, 
    {
     "total_lines": 49, 
+    "closeness_vitality": {
+     "TALBOT": 16.0, 
+     "BASSET": 18.0, 
+     "VERNON": 28.0, 
+     "KING HENRY VI": 34.0, 
+     "GLOUCESTER": 16.0
+    }, 
     "deg_assort_coeff": 0.3210332103321033, 
     "density": 0.4, 
     "scene": "4", 
@@ -670,7 +790,20 @@
   [
    {
     "total_lines": 206, 
-    "deg_assort_coeff": -0.45038235229301199, 
+    "closeness_vitality": {
+     "BASSET": 32.0, 
+     "KING HENRY VI": 8.0, 
+     "OF WINCHESTER": 46.0, 
+     "TALBOT": 30.0, 
+     "VERNON": 34.0, 
+     "YORK": 32.0, 
+     "WARWICK": 40.0, 
+     "SOMERSET": 40.0, 
+     "GLOUCESTER": 68.0, 
+     "FASTOLFE": 42.0, 
+     "EXETER": 34.0
+    }, 
+    "deg_assort_coeff": -0.45038235229301227, 
     "density": 0.38181818181818183, 
     "scene": "1", 
     "total_degrees": 21, 
@@ -739,6 +872,10 @@
    }, 
    {
     "total_lines": 60, 
+    "closeness_vitality": {
+     "TALBOT": 2.0, 
+     "General": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -763,6 +900,11 @@
    }, 
    {
     "total_lines": 56, 
+    "closeness_vitality": {
+     "Messenger": 6.0, 
+     "YORK": 8.0, 
+     "LUCY": 6.0
+    }, 
     "deg_assort_coeff": -0.61832061068702293, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -792,6 +934,11 @@
    }, 
    {
     "total_lines": 48, 
+    "closeness_vitality": {
+     "SOMERSET": 8.0, 
+     "Captain": 6.0, 
+     "LUCY": 6.0
+    }, 
     "deg_assort_coeff": -0.55251141552511418, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -821,6 +968,10 @@
    }, 
    {
     "total_lines": 56, 
+    "closeness_vitality": {
+     "TALBOT": 2.0, 
+     "JOHN TALBOT": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -845,6 +996,10 @@
    }, 
    {
     "total_lines": 58, 
+    "closeness_vitality": {
+     "TALBOT": 2.0, 
+     "JOHN TALBOT": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "6", 
@@ -869,7 +1024,16 @@
    }, 
    {
     "total_lines": 101, 
-    "deg_assort_coeff": 0.13921360255047913, 
+    "closeness_vitality": {
+     "Servant": 32.0, 
+     "CHARLES": 60.0, 
+     "JOAN LA PUCELLE": 16.0, 
+     "LUCY": 22.0, 
+     "BURGUNDY": 26.0, 
+     "TALBOT": 52.0, 
+     "BASTARD OF ORLEANS": 20.0
+    }, 
+    "deg_assort_coeff": 0.1392136025504781, 
     "density": 0.42857142857142855, 
     "scene": "7", 
     "total_degrees": 9, 
@@ -920,6 +1084,13 @@
   [
    {
     "total_lines": 66, 
+    "closeness_vitality": {
+     "OF WINCHESTER": 28.0, 
+     "KING HENRY VI": 34.0, 
+     "Legate": 18.0, 
+     "GLOUCESTER": 16.0, 
+     "EXETER": 16.0
+    }, 
     "deg_assort_coeff": -0.21212121212121213, 
     "density": 0.4, 
     "scene": "1", 
@@ -959,7 +1130,14 @@
    }, 
    {
     "total_lines": 23, 
-    "deg_assort_coeff": -0.50000000000000089, 
+    "closeness_vitality": {
+     "CHARLES": 8.0, 
+     "Scout": 12.0, 
+     "JOAN LA PUCELLE": 8.0, 
+     "ALENCON": 12.0, 
+     "BURGUNDY": 12.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999978, 
     "density": 0.7, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -998,6 +1176,13 @@
    }, 
    {
     "total_lines": 220, 
+    "closeness_vitality": {
+     "MARGARET": 14.0, 
+     "SUFFOLK": 30.0, 
+     "JOAN LA PUCELLE": 18.0, 
+     "YORK": 28.0, 
+     "REIGNIER": 14.0
+    }, 
     "deg_assort_coeff": -0.14609571788413131, 
     "density": 0.5, 
     "scene": "3", 
@@ -1037,7 +1222,17 @@
    }, 
    {
     "total_lines": 183, 
-    "deg_assort_coeff": -0.19029957203994374, 
+    "closeness_vitality": {
+     "Shepherd": 22.0, 
+     "OF WINCHESTER": 24.0, 
+     "CHARLES": 22.0, 
+     "JOAN LA PUCELLE": 22.0, 
+     "ALENCON": 20.0, 
+     "REIGNIER": 24.0, 
+     "YORK": 8.0, 
+     "WARWICK": 14.0
+    }, 
+    "deg_assort_coeff": -0.19029957203994244, 
     "density": 0.5, 
     "scene": "4", 
     "total_degrees": 14, 
@@ -1091,7 +1286,13 @@
    }, 
    {
     "total_lines": 112, 
-    "deg_assort_coeff": -0.57446808510638381, 
+    "closeness_vitality": {
+     "KING HENRY VI": 8.0, 
+     "SUFFOLK": 6.0, 
+     "GLOUCESTER": 6.0, 
+     "EXETER": 8.0
+    }, 
+    "deg_assort_coeff": -0.57446808510638314, 
     "density": 0.8333333333333334, 
     "scene": "5", 
     "total_degrees": 5, 

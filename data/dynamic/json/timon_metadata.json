@@ -4,7 +4,21 @@
   [
    {
     "total_lines": 326, 
-    "deg_assort_coeff": -0.33111036209553002, 
+    "closeness_vitality": {
+     "Merchant": 34.0, 
+     "TIMON": -42.0, 
+     "Poet": 34.0, 
+     "First Lord": 38.0, 
+     "Old Athenian": 40.0, 
+     "APEMANTUS": 22.0, 
+     "Messenger": 42.0, 
+     "ALCIBIADES": 40.0, 
+     "LUCILIUS": 40.0, 
+     "Second Lord": 48.0, 
+     "Jeweller": 40.0, 
+     "Painter": 34.0
+    }, 
+    "deg_assort_coeff": -0.33111036209553174, 
     "density": 0.4090909090909091, 
     "scene": "1", 
     "total_degrees": 27, 
@@ -78,7 +92,25 @@
    }, 
    {
     "total_lines": 284, 
-    "deg_assort_coeff": -0.49680464148059345, 
+    "closeness_vitality": {
+     "TIMON": 256.0, 
+     "First Lord": 42.0, 
+     "All": 72.0, 
+     "First Lady": 58.0, 
+     "VENTIDIUS": 60.0, 
+     "ALCIBIADES": 54.0, 
+     "Servant": 50.0, 
+     "Third Servant": 60.0, 
+     "Third Lord": 56.0, 
+     "All Lords": 60.0, 
+     "Second Servant": 58.0, 
+     "Cupid": 60.0, 
+     "APEMANTUS": 48.0, 
+     "FLAVIUS": 54.0, 
+     "Second Lord": 52.0, 
+     "All Ladies": 60.0
+    }, 
+    "deg_assort_coeff": -0.49680464148059184, 
     "density": 0.225, 
     "scene": "2", 
     "total_degrees": 27, 
@@ -174,6 +206,10 @@
   [
    {
     "total_lines": 40, 
+    "closeness_vitality": {
+     "Senator": 2.0, 
+     "CAPHIS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -198,7 +234,18 @@
    }, 
    {
     "total_lines": 273, 
-    "deg_assort_coeff": -0.46131045241809948, 
+    "closeness_vitality": {
+     "TIMON": 68.0, 
+     "All Servants": 36.0, 
+     "Fool": 18.0, 
+     "APEMANTUS": 24.0, 
+     "FLAMINIUS": 34.0, 
+     "Servants": 42.0, 
+     "FLAVIUS": 12.0, 
+     "Page": 36.0, 
+     "CAPHIS": 22.0
+    }, 
+    "deg_assort_coeff": -0.46131045241809654, 
     "density": 0.4444444444444444, 
     "scene": "2", 
     "total_degrees": 16, 
@@ -259,7 +306,12 @@
   [
    {
     "total_lines": 69, 
-    "deg_assort_coeff": -0.50000000000000078, 
+    "closeness_vitality": {
+     "Servant": 4.0, 
+     "FLAMINIUS": 4.0, 
+     "LUCULLUS": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999906, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -288,7 +340,14 @@
    }, 
    {
     "total_lines": 94, 
-    "deg_assort_coeff": -0.053203040173724681, 
+    "closeness_vitality": {
+     "LUCILIUS": 24.0, 
+     "SERVILIUS": 16.0, 
+     "Third Stranger": 16.0, 
+     "First Stranger": 24.0, 
+     "Second Stranger": 12.0
+    }, 
+    "deg_assort_coeff": -0.053203040173724743, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -327,6 +386,10 @@
    }, 
    {
     "total_lines": 48, 
+    "closeness_vitality": {
+     "Servant": 2.0, 
+     "SEMPRONIUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -351,7 +414,18 @@
    }, 
    {
     "total_lines": 148, 
-    "deg_assort_coeff": -0.32213015547900908, 
+    "closeness_vitality": {
+     "TIMON": 18.0, 
+     "FLAMINIUS": 28.0, 
+     "First Servant": 22.0, 
+     "SERVILIUS": 30.0, 
+     "TITUS": 44.0, 
+     "Second Servant": 24.0, 
+     "PHILOTUS": 26.0, 
+     "FLAVIUS": 24.0, 
+     "HORTENSIUS": 24.0
+    }, 
+    "deg_assort_coeff": -0.32213015547900531, 
     "density": 0.6944444444444444, 
     "scene": "4", 
     "total_degrees": 25, 
@@ -410,6 +484,12 @@
    }, 
    {
     "total_lines": 128, 
+    "closeness_vitality": {
+     "ALCIBIADES": 14.0, 
+     "Second Senator": 8.0, 
+     "Third Senator": 10.0, 
+     "First Senator": 8.0
+    }, 
     "deg_assort_coeff": -0.67710843373493979, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -444,7 +524,16 @@
    }, 
    {
     "total_lines": 127, 
-    "deg_assort_coeff": 0.052982403203906313, 
+    "closeness_vitality": {
+     "TIMON": 50.0, 
+     "First Lord": 16.0, 
+     "Some Others": 22.0, 
+     "Fourth Lord": 22.0, 
+     "Third Lord": 16.0, 
+     "Some Speak": 22.0, 
+     "Second Lord": 16.0
+    }, 
+    "deg_assort_coeff": 0.052982403203906278, 
     "density": 0.5714285714285714, 
     "scene": "6", 
     "total_degrees": 12, 
@@ -495,6 +584,9 @@
   [
    {
     "total_lines": 41, 
+    "closeness_vitality": {
+     "TIMON": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "1", 
@@ -514,6 +606,12 @@
    }, 
    {
     "total_lines": 56, 
+    "closeness_vitality": {
+     "Third Servant": 10.0, 
+     "First Servant": 8.0, 
+     "Second Servant": 8.0, 
+     "FLAVIUS": 14.0
+    }, 
     "deg_assort_coeff": -0.65765765765765771, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -548,6 +646,18 @@
    }, 
    {
     "total_lines": 547, 
+    "closeness_vitality": {
+     "TIMON": 128.0, 
+     "ALCIBIADES": 34.0, 
+     "Banditti": 28.0, 
+     "Third Bandit": 28.0, 
+     "Second Bandit": 38.0, 
+     "APEMANTUS": 36.0, 
+     "TIMANDRA": 34.0, 
+     "FLAVIUS": 32.0, 
+     "First Bandit": 24.0, 
+     "PHRYNIA": 36.0
+    }, 
     "deg_assort_coeff": -0.1857518088837373, 
     "density": 0.35555555555555557, 
     "scene": "3", 
@@ -614,7 +724,16 @@
   [
    {
     "total_lines": 261, 
-    "deg_assort_coeff": -0.39258866579786261, 
+    "closeness_vitality": {
+     "TIMON": 56.0, 
+     "Both": 22.0, 
+     "FLAVIUS": 18.0, 
+     "Poet": 20.0, 
+     "Second Senator": 18.0, 
+     "First Senator": 18.0, 
+     "Painter": 20.0
+    }, 
+    "deg_assort_coeff": -0.39258866579786361, 
     "density": 0.47619047619047616, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -663,7 +782,13 @@
    }, 
    {
     "total_lines": 21, 
-    "deg_assort_coeff": -0.31707317073170765, 
+    "closeness_vitality": {
+     "Second Senator": 12.0, 
+     "Messenger": 18.0, 
+     "Third Senator": 12.0, 
+     "First Senator": 18.0
+    }, 
+    "deg_assort_coeff": -0.31707317073170727, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -697,6 +822,9 @@
    }, 
    {
     "total_lines": 11, 
+    "closeness_vitality": {
+     "Soldier": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "3", 
@@ -716,7 +844,15 @@
    }, 
    {
     "total_lines": 106, 
-    "deg_assort_coeff": -0.33333333333333259, 
+    "closeness_vitality": {
+     "ALCIBIADES": 44.0, 
+     "Both": 20.0, 
+     "Soldier": 20.0, 
+     "Second Senator": 34.0, 
+     "First Senator": 16.0, 
+     "First Senator ": 22.0
+    }, 
+    "deg_assort_coeff": -0.33333333333333365, 
     "density": 0.4, 
     "scene": "4", 
     "total_degrees": 6, 

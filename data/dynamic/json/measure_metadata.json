@@ -4,6 +4,12 @@
   [
    {
     "total_lines": 93, 
+    "closeness_vitality": {
+     "ANGELO": 8.0, 
+     "DUKE": 10.0, 
+     "DUKE VINCENTIO": 8.0, 
+     "ESCALUS": 14.0
+    }, 
     "deg_assort_coeff": 0.065817409766454352, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -38,7 +44,16 @@
    }, 
    {
     "total_lines": 191, 
-    "deg_assort_coeff": -0.12917778503004201, 
+    "closeness_vitality": {
+     "LUCIO": 8.0, 
+     "First Gentleman": 20.0, 
+     "CLAUDIO": 44.0, 
+     "POMPEY": 20.0, 
+     "MISTRESS OVERDONE": 14.0, 
+     "Provost": 28.0, 
+     "Second Gentleman": 20.0
+    }, 
+    "deg_assort_coeff": -0.12917778503004426, 
     "density": 0.47619047619047616, 
     "scene": "2", 
     "total_degrees": 10, 
@@ -87,6 +102,10 @@
    }, 
    {
     "total_lines": 58, 
+    "closeness_vitality": {
+     "DUKE VINCENTIO": 2.0, 
+     "FRIAR THOMAS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -111,6 +130,11 @@
    }, 
    {
     "total_lines": 102, 
+    "closeness_vitality": {
+     "LUCIO": 6.0, 
+     "ISABELLA": 8.0, 
+     "FRANCISCA": 6.0
+    }, 
     "deg_assort_coeff": -0.47058823529411764, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -142,7 +166,17 @@
   [
    {
     "total_lines": 279, 
-    "deg_assort_coeff": -0.46114429152601155, 
+    "closeness_vitality": {
+     "ANGELO": 50.0, 
+     "FROTH": 26.0, 
+     "Justice": 28.0, 
+     "POMPHEY": 28.0, 
+     "ESCALUS": 64.0, 
+     "POMPEY": 20.0, 
+     "Provost": 32.0, 
+     "ELBOW": 22.0
+    }, 
+    "deg_assort_coeff": -0.46114429152601055, 
     "density": 0.39285714285714285, 
     "scene": "1", 
     "total_degrees": 11, 
@@ -196,6 +230,13 @@
    }, 
    {
     "total_lines": 230, 
+    "closeness_vitality": {
+     "Servant": 12.0, 
+     "ANGELO": 8.0, 
+     "Provost": 8.0, 
+     "ISABELLA": 10.0, 
+     "LUCIO": 10.0
+    }, 
     "deg_assort_coeff": -0.23234740981364335, 
     "density": 0.8, 
     "scene": "2", 
@@ -235,7 +276,12 @@
    }, 
    {
     "total_lines": 51, 
-    "deg_assort_coeff": -0.50000000000000056, 
+    "closeness_vitality": {
+     "DUKE VINCENTIO": 4.0, 
+     "Provost": 4.0, 
+     "JULIET": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999911, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -264,6 +310,11 @@
    }, 
    {
     "total_lines": 204, 
+    "closeness_vitality": {
+     "ANGELO": 8.0, 
+     "Servant": 6.0, 
+     "ISABELLA": 6.0
+    }, 
     "deg_assort_coeff": -0.3739630946334857, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -295,7 +346,13 @@
   [
    {
     "total_lines": 289, 
-    "deg_assort_coeff": -0.2982098675593079, 
+    "closeness_vitality": {
+     "DUKE VINCENTIO": 6.0, 
+     "ISABELLA": 6.0, 
+     "Provost": 8.0, 
+     "CLAUDIO": 8.0
+    }, 
+    "deg_assort_coeff": -0.29820986755930856, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -329,7 +386,16 @@
    }, 
    {
     "total_lines": 279, 
-    "deg_assort_coeff": 0.020753063512501661, 
+    "closeness_vitality": {
+     "LUCIO": 22.0, 
+     "DUKE VINCENTIO": 64.0, 
+     "ESCALUS": 62.0, 
+     "POMPEY": 22.0, 
+     "MISTRESS OVERDONE": 26.0, 
+     "Provost": 26.0, 
+     "ELBOW": 22.0
+    }, 
+    "deg_assort_coeff": 0.02075306351250112, 
     "density": 0.47619047619047616, 
     "scene": "2", 
     "total_degrees": 10, 
@@ -380,7 +446,12 @@
   [
    {
     "total_lines": 84, 
-    "deg_assort_coeff": -0.50000000000000067, 
+    "closeness_vitality": {
+     "DUKE VINCENTIO": 4.0, 
+     "ISABELLA": 4.0, 
+     "MARIANA": 4.0
+    }, 
+    "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -409,7 +480,15 @@
    }, 
    {
     "total_lines": 230, 
-    "deg_assort_coeff": -0.57448067801626046, 
+    "closeness_vitality": {
+     "DUKE VINCENTIO": 16.0, 
+     "CLAUDIO": 18.0, 
+     "POMPEY": 16.0, 
+     "Provost": 42.0, 
+     "Messenger": 16.0, 
+     "ABHORSON": 16.0
+    }, 
+    "deg_assort_coeff": -0.57448067801625968, 
     "density": 0.4666666666666667, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -453,7 +532,16 @@
    }, 
    {
     "total_lines": 190, 
-    "deg_assort_coeff": -0.38994880574165802, 
+    "closeness_vitality": {
+     "LUCIO": 24.0, 
+     "ISABELLA": 22.0, 
+     "BARNARDINE": 18.0, 
+     "DUKE VINCENTIO": 64.0, 
+     "POMPEY": 26.0, 
+     "Provost": 22.0, 
+     "ABHORSON": 18.0
+    }, 
+    "deg_assort_coeff": -0.38994880574165808, 
     "density": 0.42857142857142855, 
     "scene": "3", 
     "total_degrees": 9, 
@@ -502,6 +590,10 @@
    }, 
    {
     "total_lines": 36, 
+    "closeness_vitality": {
+     "ANGELO": 2.0, 
+     "ESCALUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -526,6 +618,10 @@
    }, 
    {
     "total_lines": 18, 
+    "closeness_vitality": {
+     "FRIAR PETER": 2.0, 
+     "DUKE VINCENTIO": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -550,6 +646,11 @@
    }, 
    {
     "total_lines": 19, 
+    "closeness_vitality": {
+     "FRIAR PETER": 6.0, 
+     "ISABELLA": 8.0, 
+     "MARIANA": 6.0
+    }, 
     "deg_assort_coeff": -0.58139534883720934, 
     "density": 0.6666666666666666, 
     "scene": "6", 
@@ -581,7 +682,17 @@
   [
    {
     "total_lines": 602, 
-    "deg_assort_coeff": -0.38784956855660424, 
+    "closeness_vitality": {
+     "ANGELO": 18.0, 
+     "LUCIO": 16.0, 
+     "ISABELLA": 18.0, 
+     "MARIANA": 20.0, 
+     "DUKE VINCENTIO": 38.0, 
+     "ESCALUS": 22.0, 
+     "Provost": 26.0, 
+     "FRIAR PETER": 22.0
+    }, 
+    "deg_assort_coeff": -0.3878495685566043, 
     "density": 0.6071428571428571, 
     "scene": "1", 
     "total_degrees": 17, 

@@ -4,7 +4,17 @@
   [
    {
     "total_lines": 285, 
-    "deg_assort_coeff": -0.51248760256063597, 
+    "closeness_vitality": {
+     "BASTARD": 70.0, 
+     "QUEEN ELINOR": 20.0, 
+     "LADY FAULCONBRIDGE": 30.0, 
+     "ROBERT": 24.0, 
+     "ESSEX": 28.0, 
+     "CHATILLON": 28.0, 
+     "KING JOHN": 14.0, 
+     "GURNEY": 30.0
+    }, 
+    "deg_assort_coeff": -0.51248760256063541, 
     "density": 0.39285714285714285, 
     "scene": "1", 
     "total_degrees": 11, 
@@ -60,7 +70,22 @@
   [
    {
     "total_lines": 621, 
-    "deg_assort_coeff": -0.18109543596273472, 
+    "closeness_vitality": {
+     "BLANCH": 52.0, 
+     "BASTARD": 34.0, 
+     "First Citizen": 28.0, 
+     "QUEEN ELINOR": 32.0, 
+     "English Herald": 56.0, 
+     "LEWIS": 40.0, 
+     "ARTHUR": 50.0, 
+     "KING PHILIP": 58.0, 
+     "CHATILLON": 52.0, 
+     "AUSTRIA": 40.0, 
+     "French Herald": 48.0, 
+     "KING JOHN": 30.0, 
+     "CONSTANCE": 40.0
+    }, 
+    "deg_assort_coeff": -0.181095435962737, 
     "density": 0.38461538461538464, 
     "scene": "1", 
     "total_degrees": 30, 
@@ -141,7 +166,20 @@
   [
    {
     "total_lines": 361, 
-    "deg_assort_coeff": -0.41178790867025961, 
+    "closeness_vitality": {
+     "BLANCH": 32.0, 
+     "BASTARD": 34.0, 
+     "CARDINAL PANDULPH": 28.0, 
+     "QUEEN ELINOR": 34.0, 
+     "LEWIS": 32.0, 
+     "ARTHUR": 40.0, 
+     "KING PHILIP": 32.0, 
+     "AUSTRIA": 34.0, 
+     "SALISBURY": 40.0, 
+     "CONSTANCE": 94.0, 
+     "KING JOHN": 26.0
+    }, 
+    "deg_assort_coeff": -0.4117879086702575, 
     "density": 0.41818181818181815, 
     "scene": "1", 
     "total_degrees": 23, 
@@ -210,6 +248,10 @@
    }, 
    {
     "total_lines": 13, 
+    "closeness_vitality": {
+     "BASTARD": 2.0, 
+     "KING JOHN": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -234,7 +276,15 @@
    }, 
    {
     "total_lines": 87, 
-    "deg_assort_coeff": -0.59587628865979325, 
+    "closeness_vitality": {
+     "BASTARD": 16.0, 
+     "QUEEN ELINOR": 18.0, 
+     "ARTHUR": 18.0, 
+     "KING JOHN": 46.0, 
+     "HUBERT": 18.0, 
+     "ELINOR": 16.0
+    }, 
+    "deg_assort_coeff": -0.59587628865979403, 
     "density": 0.4, 
     "scene": "3", 
     "total_degrees": 6, 
@@ -278,7 +328,13 @@
    }, 
    {
     "total_lines": 189, 
-    "deg_assort_coeff": -0.57024793388435557, 
+    "closeness_vitality": {
+     "KING PHILIP": 6.0, 
+     "LEWIS": 8.0, 
+     "CARDINAL PANDULPH": 6.0, 
+     "CONSTANCE": 8.0
+    }, 
+    "deg_assort_coeff": -0.57024793388437023, 
     "density": 0.8333333333333334, 
     "scene": "4", 
     "total_degrees": 5, 
@@ -314,7 +370,12 @@
   [
    {
     "total_lines": 153, 
-    "deg_assort_coeff": -0.50000000000000067, 
+    "closeness_vitality": {
+     "ARTHUR": 4.0, 
+     "First Executioner": 4.0, 
+     "HUBERT": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000011, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -343,7 +404,16 @@
    }, 
    {
     "total_lines": 287, 
-    "deg_assort_coeff": -0.8238617480890672, 
+    "closeness_vitality": {
+     "PEMBROKE": 20.0, 
+     "BASTARD": 22.0, 
+     "Messenger": 22.0, 
+     "KING JOHN": 68.0, 
+     "HUBERT": 22.0, 
+     "PETER": 22.0, 
+     "SALISBURY": 20.0
+    }, 
+    "deg_assort_coeff": -0.82386174808906554, 
     "density": 0.3333333333333333, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -392,7 +462,15 @@
    }, 
    {
     "total_lines": 177, 
-    "deg_assort_coeff": -0.46201304424467055, 
+    "closeness_vitality": {
+     "PEMBROKE": 12.0, 
+     "BASTARD": 12.0, 
+     "BIGOT": 12.0, 
+     "ARTHUR": 18.0, 
+     "SALISBURY": 26.0, 
+     "HUBERT": 12.0
+    }, 
+    "deg_assort_coeff": -0.46201304424466721, 
     "density": 0.7333333333333333, 
     "scene": "3", 
     "total_degrees": 11, 
@@ -438,6 +516,11 @@
   [
    {
     "total_lines": 85, 
+    "closeness_vitality": {
+     "BASTARD": 6.0, 
+     "KING JOHN": 8.0, 
+     "CARDINAL PANDULPH": 6.0
+    }, 
     "deg_assort_coeff": -0.77168949771689499, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -467,6 +550,12 @@
    }, 
    {
     "total_lines": 187, 
+    "closeness_vitality": {
+     "LEWIS": 14.0, 
+     "BASTARD": 8.0, 
+     "SALISBURY": 10.0, 
+     "CARDINAL PANDULPH": 8.0
+    }, 
     "deg_assort_coeff": -0.665389527458493, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -501,6 +590,11 @@
    }, 
    {
     "total_lines": 19, 
+    "closeness_vitality": {
+     "Messenger": 6.0, 
+     "KING JOHN": 8.0, 
+     "HUBERT": 6.0
+    }, 
     "deg_assort_coeff": -0.81818181818181823, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -530,6 +624,11 @@
    }, 
    {
     "total_lines": 64, 
+    "closeness_vitality": {
+     "PEMBROKE": 4.0, 
+     "MELUN": 4.0, 
+     "SALISBURY": 4.0
+    }, 
     "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "4", 
@@ -559,6 +658,10 @@
    }, 
    {
     "total_lines": 25, 
+    "closeness_vitality": {
+     "LEWIS": 2.0, 
+     "Messenger": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -583,6 +686,10 @@
    }, 
    {
     "total_lines": 49, 
+    "closeness_vitality": {
+     "BASTARD": 2.0, 
+     "HUBERT": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "6", 
@@ -607,7 +714,14 @@
    }, 
    {
     "total_lines": 130, 
-    "deg_assort_coeff": -0.53540027764924258, 
+    "closeness_vitality": {
+     "PRINCE HENRY": 20.0, 
+     "BASTARD": 10.0, 
+     "PEMBROKE": 14.0, 
+     "KING JOHN": 10.0, 
+     "SALISBURY": 10.0
+    }, 
+    "deg_assort_coeff": -0.53540027764923548, 
     "density": 0.7, 
     "scene": "7", 
     "total_degrees": 7, 

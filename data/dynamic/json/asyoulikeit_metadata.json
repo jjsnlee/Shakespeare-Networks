@@ -4,7 +4,14 @@
   [
    {
     "total_lines": 169, 
-    "deg_assort_coeff": -0.71745755333043171, 
+    "closeness_vitality": {
+     "CHARLES": 14.0, 
+     "DENNIS": 14.0, 
+     "OLIVER": 28.0, 
+     "ADAM": 12.0, 
+     "ORLANDO": 12.0
+    }, 
+    "deg_assort_coeff": -0.71745755333043149, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -43,6 +50,15 @@
    }, 
    {
     "total_lines": 279, 
+    "closeness_vitality": {
+     "CHARLES": 18.0, 
+     "ORLANDO": 14.0, 
+     "ROSALIND": 14.0, 
+     "LE BEAU": 14.0, 
+     "CELIA": 10.0, 
+     "DUKE FREDERICK": 14.0, 
+     "TOUCHSTONE": 18.0
+    }, 
     "deg_assort_coeff": -0.20880585249948616, 
     "density": 0.7619047619047619, 
     "scene": "2", 
@@ -92,7 +108,12 @@
    }, 
    {
     "total_lines": 141, 
-    "deg_assort_coeff": -0.49999999999999983, 
+    "closeness_vitality": {
+     "ROSALIND": 4.0, 
+     "DUKE FREDERICK": 4.0, 
+     "CELIA": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999972, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -123,6 +144,12 @@
   [
    {
     "total_lines": 74, 
+    "closeness_vitality": {
+     "First Lord": 10.0, 
+     "Second Lord": 10.0, 
+     "AMIENS": 10.0, 
+     "DUKE SENIOR": 18.0
+    }, 
     "deg_assort_coeff": -0.90000000000000002, 
     "density": 0.5, 
     "scene": "1", 
@@ -157,6 +184,11 @@
    }, 
    {
     "total_lines": 22, 
+    "closeness_vitality": {
+     "First Lord": 4.0, 
+     "Second Lord": 4.0, 
+     "DUKE FREDERICK": 4.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -186,6 +218,10 @@
    }, 
    {
     "total_lines": 78, 
+    "closeness_vitality": {
+     "ORLANDO": 2.0, 
+     "ADAM": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -210,6 +246,13 @@
    }, 
    {
     "total_lines": 102, 
+    "closeness_vitality": {
+     "CORIN": 8.0, 
+     "ROSALIND": 8.0, 
+     "SILVIUS": 12.0, 
+     "TOUCHSTONE": 10.0, 
+     "CELIA": 10.0
+    }, 
     "deg_assort_coeff": -0.47995586612725266, 
     "density": 0.8, 
     "scene": "4", 
@@ -249,6 +292,10 @@
    }, 
    {
     "total_lines": 59, 
+    "closeness_vitality": {
+     "AMIENS": 2.0, 
+     "JAQUES": 2.0
+    }, 
     "deg_assort_coeff": -0.49999999999998401, 
     "density": 2.0, 
     "scene": "5", 
@@ -273,6 +320,10 @@
    }, 
    {
     "total_lines": 19, 
+    "closeness_vitality": {
+     "ORLANDO": 2.0, 
+     "ADAM": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "6", 
@@ -297,6 +348,14 @@
    }, 
    {
     "total_lines": 210, 
+    "closeness_vitality": {
+     "First Lord": 18.0, 
+     "DUKE SENIOR": 38.0, 
+     "AMIENS": 18.0, 
+     "ORLANDO": 14.0, 
+     "ADAM": 16.0, 
+     "JAQUES": 16.0
+    }, 
     "deg_assort_coeff": -0.64594594594594623, 
     "density": 0.4666666666666667, 
     "scene": "7", 
@@ -343,6 +402,10 @@
   [
    {
     "total_lines": 19, 
+    "closeness_vitality": {
+     "OLIVER": 2.0, 
+     "DUKE FREDERICK": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -367,7 +430,15 @@
    }, 
    {
     "total_lines": 417, 
-    "deg_assort_coeff": -0.41708965354423505, 
+    "closeness_vitality": {
+     "CELIA": 16.0, 
+     "ORLANDO": 14.0, 
+     "CORIN": 14.0, 
+     "ROSALIND": 2.0, 
+     "JAQUES": 16.0, 
+     "TOUCHSTONE": 14.0
+    }, 
+    "deg_assort_coeff": -0.4170896535442366, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 9, 
@@ -411,6 +482,12 @@
    }, 
    {
     "total_lines": 96, 
+    "closeness_vitality": {
+     "AUDREY": 8.0, 
+     "SIR OLIVER MARTEXT": 8.0, 
+     "TOUCHSTONE": 6.0, 
+     "JAQUES": 6.0
+    }, 
     "deg_assort_coeff": -0.44503120499279913, 
     "density": 0.8333333333333334, 
     "scene": "3", 
@@ -445,7 +522,12 @@
    }, 
    {
     "total_lines": 59, 
-    "deg_assort_coeff": -0.50000000000000067, 
+    "closeness_vitality": {
+     "CORIN": 4.0, 
+     "ROSALIND": 4.0, 
+     "CELIA": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999978, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -474,6 +556,11 @@
    }, 
    {
     "total_lines": 146, 
+    "closeness_vitality": {
+     "ROSALIND": 6.0, 
+     "SILVIUS": 6.0, 
+     "PHEBE": 8.0
+    }, 
     "deg_assort_coeff": -0.68612191958495461, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -505,7 +592,13 @@
   [
    {
     "total_lines": 203, 
-    "deg_assort_coeff": -0.65201867618785947, 
+    "closeness_vitality": {
+     "ROSALIND": 6.0, 
+     "JAQUES": 8.0, 
+     "ORLANDO": 6.0, 
+     "CELIA": 8.0
+    }, 
+    "deg_assort_coeff": -0.65201867618786091, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -539,6 +632,11 @@
    }, 
    {
     "total_lines": 21, 
+    "closeness_vitality": {
+     "A Lord": 6.0, 
+     "Forester": 6.0, 
+     "JAQUES": 8.0
+    }, 
     "deg_assort_coeff": -0.92592592592592593, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -568,7 +666,13 @@
    }, 
    {
     "total_lines": 192, 
-    "deg_assort_coeff": -0.16279069767441948, 
+    "closeness_vitality": {
+     "ROSALIND": 6.0, 
+     "OLIVER": 8.0, 
+     "SILVIUS": 8.0, 
+     "CELIA": 6.0
+    }, 
+    "deg_assort_coeff": -0.1627906976744195, 
     "density": 0.8333333333333334, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -604,7 +708,13 @@
   [
    {
     "total_lines": 63, 
-    "deg_assort_coeff": -0.63494387506100614, 
+    "closeness_vitality": {
+     "AUDREY": 8.0, 
+     "WILLIAM": 6.0, 
+     "TOUCHSTONE": 6.0, 
+     "CORIN": 8.0
+    }, 
+    "deg_assort_coeff": -0.63494387506100647, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -638,6 +748,13 @@
    }, 
    {
     "total_lines": 130, 
+    "closeness_vitality": {
+     "ORLANDO": 8.0, 
+     "ROSALIND": 8.0, 
+     "OLIVER": 12.0, 
+     "SILVIUS": 10.0, 
+     "PHEBE": 10.0
+    }, 
     "deg_assort_coeff": -0.55763239875389403, 
     "density": 0.8, 
     "scene": "2", 
@@ -677,7 +794,13 @@
    }, 
    {
     "total_lines": 41, 
-    "deg_assort_coeff": -0.562500000000003, 
+    "closeness_vitality": {
+     "AUDREY": 8.0, 
+     "First Page": 6.0, 
+     "TOUCHSTONE": 6.0, 
+     "Second Page": 8.0
+    }, 
+    "deg_assort_coeff": -0.56250000000000255, 
     "density": 0.8333333333333334, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -711,6 +834,17 @@
    }, 
    {
     "total_lines": 233, 
+    "closeness_vitality": {
+     "JAQUES DE BOYS": 28.0, 
+     "DUKE SENIOR": 4.0, 
+     "HYMEN": 28.0, 
+     "ORLANDO": 24.0, 
+     "PHEBE": 24.0, 
+     "ROSALIND": 56.0, 
+     "JAQUES": 26.0, 
+     "SILVIUS": 36.0, 
+     "TOUCHSTONE": 30.0
+    }, 
     "deg_assort_coeff": -0.31952241638333201, 
     "density": 0.4444444444444444, 
     "scene": "4", 

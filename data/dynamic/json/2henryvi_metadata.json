@@ -4,7 +4,20 @@
   [
    {
     "total_lines": 268, 
-    "deg_assort_coeff": -0.034917301128903552, 
+    "closeness_vitality": {
+     "ALL": 48.0, 
+     "KING HENRY VI": 6.0, 
+     "QUEEN MARGARET": 46.0, 
+     "SUFFOLK": 40.0, 
+     "BUCKINGHAM": 36.0, 
+     "CARDINAL": 12.0, 
+     "YORK": 40.0, 
+     "WARWICK": 52.0, 
+     "SOMERSET": 46.0, 
+     "GLOUCESTER": -10.0, 
+     "SALISBURY": 28.0
+    }, 
+    "deg_assort_coeff": -0.034917301128905405, 
     "density": 0.32727272727272727, 
     "scene": "1", 
     "total_degrees": 18, 
@@ -73,7 +86,13 @@
    }, 
    {
     "total_lines": 112, 
-    "deg_assort_coeff": -0.24559023066485819, 
+    "closeness_vitality": {
+     "DUCHESS": 18.0, 
+     "GLOUCESTER": 18.0, 
+     "Messenger": 12.0, 
+     "HUME": 12.0
+    }, 
+    "deg_assort_coeff": -0.2455902306648575, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -107,7 +126,25 @@
    }, 
    {
     "total_lines": 233, 
-    "deg_assort_coeff": -0.18598775039922216, 
+    "closeness_vitality": {
+     "ALL": 72.0, 
+     "KING HENRY VI": 50.0, 
+     "QUEEN MARGARET": 100.0, 
+     "SUFFOLK": 16.0, 
+     "DUCHESS": 58.0, 
+     "BUCKINGHAM": 48.0, 
+     "Second Petitioner": 64.0, 
+     "SALISBURY": 62.0, 
+     "CARDINAL": 58.0, 
+     "YORK": 50.0, 
+     "WARWICK": 44.0, 
+     "HORNER": 58.0, 
+     "First Petitioner": 58.0, 
+     "SOMERSET": 50.0, 
+     "PETER": 42.0, 
+     "GLOUCESTER": 48.0
+    }, 
+    "deg_assort_coeff": -0.18598775039922449, 
     "density": 0.31666666666666665, 
     "scene": "3", 
     "total_degrees": 38, 
@@ -201,6 +238,15 @@
    }, 
    {
     "total_lines": 96, 
+    "closeness_vitality": {
+     "MARGARET JOURDAIN": 32.0, 
+     "BOLINGBROKE": 74.0, 
+     "DUCHESS": 20.0, 
+     "BUCKINGHAM": 28.0, 
+     "YORK": 20.0, 
+     "Spirit": 52.0, 
+     "HUME": 26.0
+    }, 
     "deg_assort_coeff": -0.2347266881028939, 
     "density": 0.38095238095238093, 
     "scene": "4", 
@@ -252,7 +298,20 @@
   [
    {
     "total_lines": 225, 
-    "deg_assort_coeff": -0.4095710047196861, 
+    "closeness_vitality": {
+     "KING HENRY VI": 22.0, 
+     "Wife": 32.0, 
+     "QUEEN MARGARET": 34.0, 
+     "Beadle": 38.0, 
+     "SUFFOLK": 28.0, 
+     "BUCKINGHAM": 40.0, 
+     "CARDINAL": 26.0, 
+     "Townsman": 34.0, 
+     "SIMPCOX": 26.0, 
+     "Mayor": 40.0, 
+     "GLOUCESTER": 58.0
+    }, 
+    "deg_assort_coeff": -0.40957100471968738, 
     "density": 0.45454545454545453, 
     "scene": "1", 
     "total_degrees": 25, 
@@ -321,7 +380,13 @@
    }, 
    {
     "total_lines": 84, 
-    "deg_assort_coeff": -0.40000000000000052, 
+    "closeness_vitality": {
+     "BOTH": 8.0, 
+     "SALISBURY": 8.0, 
+     "YORK": 6.0, 
+     "WARWICK": 6.0
+    }, 
+    "deg_assort_coeff": -0.40000000000000058, 
     "density": 0.8333333333333334, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -355,6 +420,20 @@
    }, 
    {
     "total_lines": 106, 
+    "closeness_vitality": {
+     "GLOUCESTER": 52.0, 
+     "YORK": -44.0, 
+     "KING HENRY VI": 16.0, 
+     "QUEEN MARGARET": 40.0, 
+     "SUFFOLK": 48.0, 
+     "DUCHESS": 56.0, 
+     "First Neighbour": 34.0, 
+     "SALISBURY": 52.0, 
+     "HORNER": 16.0, 
+     "PETER": 32.0, 
+     "Third Neighbour": 50.0, 
+     "Second Neighbour": 56.0
+    }, 
     "deg_assort_coeff": 0.19674796747967513, 
     "density": 0.2878787878787879, 
     "scene": "3", 
@@ -429,6 +508,15 @@
    }, 
    {
     "total_lines": 116, 
+    "closeness_vitality": {
+     "DUCHESS": 18.0, 
+     "Sheriff": 20.0, 
+     "Servant": 22.0, 
+     "Herald": 22.0, 
+     "Servants": 22.0, 
+     "STANLEY": 20.0, 
+     "GLOUCESTER": 60.0
+    }, 
     "deg_assort_coeff": -0.76422193237684355, 
     "density": 0.38095238095238093, 
     "scene": "4", 
@@ -480,6 +568,17 @@
   [
    {
     "total_lines": 394, 
+    "closeness_vitality": {
+     "KING HENRY VI": 20.0, 
+     "QUEEN MARGARET": 20.0, 
+     "SUFFOLK": 22.0, 
+     "BUCKINGHAM": 24.0, 
+     "CARDINAL": 18.0, 
+     "YORK": 14.0, 
+     "SOMERSET": 24.0, 
+     "Post": 28.0, 
+     "GLOUCESTER": 20.0
+    }, 
     "deg_assort_coeff": -0.23151825752722544, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -539,7 +638,21 @@
    }, 
    {
     "total_lines": 435, 
-    "deg_assort_coeff": -0.21140889181661662, 
+    "closeness_vitality": {
+     "First Murder": 46.0, 
+     "VAUX": 54.0, 
+     "QUEEN MARGARET": 178.0, 
+     "KING HENRY VI": 38.0, 
+     "Commons": 46.0, 
+     "SUFFOLK": 150.0, 
+     "First Murderer": 46.0, 
+     "CARDINAL": 54.0, 
+     "SALISBURY": 48.0, 
+     "WARWICK": 40.0, 
+     "SOMERSET": 54.0, 
+     "Second Murderer": 62.0
+    }, 
+    "deg_assort_coeff": -0.21140889181661665, 
     "density": 0.25757575757575757, 
     "scene": "2", 
     "total_degrees": 17, 
@@ -613,7 +726,13 @@
    }, 
    {
     "total_lines": 35, 
-    "deg_assort_coeff": -0.57024793388429884, 
+    "closeness_vitality": {
+     "KING HENRY VI": 6.0, 
+     "CARDINAL": 8.0, 
+     "SALISBURY": 8.0, 
+     "WARWICK": 6.0
+    }, 
+    "deg_assort_coeff": -0.57024793388429917, 
     "density": 0.8333333333333334, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -649,7 +768,15 @@
   [
    {
     "total_lines": 157, 
-    "deg_assort_coeff": 0.036062341208146172, 
+    "closeness_vitality": {
+     "WHITMORE": 12.0, 
+     "First Gentleman": 8.0, 
+     "SUFFOLK": 14.0, 
+     "Master": 16.0, 
+     "Second Gentleman": 16.0, 
+     "Captain": 12.0
+    }, 
+    "deg_assort_coeff": 0.036062341208145048, 
     "density": 0.6666666666666666, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -693,6 +820,10 @@
    }, 
    {
     "total_lines": 88, 
+    "closeness_vitality": {
+     "IDEN": 2.0, 
+     "CADE": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "10", 
@@ -717,7 +848,20 @@
    }, 
    {
     "total_lines": 187, 
-    "deg_assort_coeff": -0.39067366674373993, 
+    "closeness_vitality": {
+     "ALL": 34.0, 
+     "HOLLAND": 88.0, 
+     "Clerk": 38.0, 
+     "SIR HUMPHREY": 34.0, 
+     "SMITH": 36.0, 
+     "BEVIS": 54.0, 
+     "DICK": 36.0, 
+     "MICHAEL": 40.0, 
+     "CADE": 104.0, 
+     "CLERK": 38.0, 
+     "WILLIAM STAFFORD": 36.0
+    }, 
+    "deg_assort_coeff": -0.39067366674373982, 
     "density": 0.3090909090909091, 
     "scene": "2", 
     "total_degrees": 17, 
@@ -786,6 +930,10 @@
    }, 
    {
     "total_lines": 20, 
+    "closeness_vitality": {
+     "DICK": 2.0, 
+     "CADE": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -810,6 +958,13 @@
    }, 
    {
     "total_lines": 63, 
+    "closeness_vitality": {
+     "QUEEN MARGARET": 12.0, 
+     "SAY": 10.0, 
+     "BUCKINGHAM": 8.0, 
+     "Messenger": 10.0, 
+     "KING HENRY VI": 8.0
+    }, 
     "deg_assort_coeff": -0.25605737546036056, 
     "density": 0.8, 
     "scene": "4", 
@@ -849,6 +1004,10 @@
    }, 
    {
     "total_lines": 13, 
+    "closeness_vitality": {
+     "First Citizen": 2.0, 
+     "SCALES": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -873,6 +1032,12 @@
    }, 
    {
     "total_lines": 18, 
+    "closeness_vitality": {
+     "Soldier": 10.0, 
+     "DICK": 8.0, 
+     "SMITH": 8.0, 
+     "CADE": 14.0
+    }, 
     "deg_assort_coeff": -0.59999999999999998, 
     "density": 0.6666666666666666, 
     "scene": "6", 
@@ -907,7 +1072,17 @@
    }, 
    {
     "total_lines": 132, 
-    "deg_assort_coeff": -0.46888217522658643, 
+    "closeness_vitality": {
+     "ALL": 24.0, 
+     "HOLLAND": 24.0, 
+     "BEVIS": 32.0, 
+     "DICK": 22.0, 
+     "SMITH": 26.0, 
+     "SAY": 50.0, 
+     "Messenger": 28.0, 
+     "CADE": 32.0
+    }, 
+    "deg_assort_coeff": -0.46888217522658598, 
     "density": 0.39285714285714285, 
     "scene": "7", 
     "total_degrees": 11, 
@@ -961,6 +1136,12 @@
    }, 
    {
     "total_lines": 73, 
+    "closeness_vitality": {
+     "BUCKINGHAM": 8.0, 
+     "ALL": 8.0, 
+     "CADE": 8.0, 
+     "CLIFFORD": 8.0
+    }, 
     "deg_assort_coeff": 0.0, 
     "density": 0.6666666666666666, 
     "scene": "8", 
@@ -995,7 +1176,15 @@
    }, 
    {
     "total_lines": 53, 
-    "deg_assort_coeff": -0.64971751412429302, 
+    "closeness_vitality": {
+     "ALL": 16.0, 
+     "KING HENRY VI": 46.0, 
+     "BUCKINGHAM": 18.0, 
+     "Messenger": 16.0, 
+     "SOMERSET": 18.0, 
+     "CLIFFORD": 18.0
+    }, 
+    "deg_assort_coeff": -0.64971751412429313, 
     "density": 0.4, 
     "scene": "9", 
     "total_degrees": 6, 
@@ -1041,7 +1230,21 @@
   [
    {
     "total_lines": 231, 
-    "deg_assort_coeff": -0.2755425432374497, 
+    "closeness_vitality": {
+     "IDEN": 44.0, 
+     "RICHARD": 44.0, 
+     "KING HENRY VI": 28.0, 
+     "QUEEN MARGARET": 36.0, 
+     "CLIFFORD": 56.0, 
+     "BUCKINGHAM": 44.0, 
+     "EDWARD": 44.0, 
+     "YORK": 64.0, 
+     "WARWICK": 52.0, 
+     "SOMERSET": 50.0, 
+     "YOUNG CLIFFORD": 48.0, 
+     "SALISBURY": 50.0
+    }, 
+    "deg_assort_coeff": -0.27554254323745114, 
     "density": 0.30303030303030304, 
     "scene": "1", 
     "total_degrees": 20, 
@@ -1115,6 +1318,15 @@
    }, 
    {
     "total_lines": 106, 
+    "closeness_vitality": {
+     "RICHARD": 24.0, 
+     "KING HENRY VI": 32.0, 
+     "QUEEN MARGARET": 52.0, 
+     "YOUNG CLIFFORD": 72.0, 
+     "YORK": 68.0, 
+     "WARWICK": 28.0, 
+     "CLIFFORD": 28.0
+    }, 
     "deg_assort_coeff": 0.1829155060352832, 
     "density": 0.38095238095238093, 
     "scene": "2", 
@@ -1164,6 +1376,12 @@
    }, 
    {
     "total_lines": 37, 
+    "closeness_vitality": {
+     "SALISBURY": 8.0, 
+     "YORK": 14.0, 
+     "RICHARD": 8.0, 
+     "WARWICK": 10.0
+    }, 
     "deg_assort_coeff": -0.7142857142857143, 
     "density": 0.6666666666666666, 
     "scene": "3", 

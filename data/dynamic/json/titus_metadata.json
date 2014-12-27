@@ -4,7 +4,24 @@
   [
    {
     "total_lines": 533, 
-    "deg_assort_coeff": -0.2925035676614744, 
+    "closeness_vitality": {
+     "TITUS ANDRONICUS": 42.0, 
+     "SATURNINUS": 44.0, 
+     "BASSIANUS": 50.0, 
+     "MARCUS ANDRONICUS": 42.0, 
+     "CHIRON": 70.0, 
+     "MARTIUS": 58.0, 
+     "DEMETRIUS": 64.0, 
+     "Tribunes": 60.0, 
+     "LUCIUS": 6.0, 
+     "All": 62.0, 
+     "TAMORA": 32.0, 
+     "LAVINIA": 58.0, 
+     "Captain": 58.0, 
+     "MUTIUS": 52.0, 
+     "QUINTUS": 54.0
+    }, 
+    "deg_assort_coeff": -0.29250356766147578, 
     "density": 0.2761904761904762, 
     "scene": "1", 
     "total_degrees": 29, 
@@ -95,6 +112,11 @@
   [
    {
     "total_lines": 147, 
+    "closeness_vitality": {
+     "CHIRON": 4.0, 
+     "AARON": 4.0, 
+     "DEMETRIUS": 4.0
+    }, 
     "deg_assort_coeff": -0.49999999999999645, 
     "density": 1.0, 
     "scene": "1", 
@@ -124,7 +146,15 @@
    }, 
    {
     "total_lines": 32, 
-    "deg_assort_coeff": -0.40000000000000097, 
+    "closeness_vitality": {
+     "TITUS ANDRONICUS": 34.0, 
+     "SATURNINUS": 40.0, 
+     "MARCUS ANDRONICUS": 16.0, 
+     "DEMETRIUS": 22.0, 
+     "LAVINIA": 18.0, 
+     "BASSIANUS": 18.0
+    }, 
+    "deg_assort_coeff": -0.39999999999999913, 
     "density": 0.4666666666666667, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -168,7 +198,19 @@
    }, 
    {
     "total_lines": 326, 
-    "deg_assort_coeff": -0.3445675536427068, 
+    "closeness_vitality": {
+     "TITUS ANDRONICUS": 32.0, 
+     "SATURNINUS": 24.0, 
+     "CHIRON": 32.0, 
+     "MARTIUS": 28.0, 
+     "DEMETRIUS": 32.0, 
+     "AARON": 24.0, 
+     "TAMORA": -26.0, 
+     "LAVINIA": 30.0, 
+     "BASSIANUS": 30.0, 
+     "QUINTUS": 36.0
+    }, 
+    "deg_assort_coeff": -0.3445675536427083, 
     "density": 0.4444444444444444, 
     "scene": "3", 
     "total_degrees": 20, 
@@ -232,6 +274,11 @@
    }, 
    {
     "total_lines": 60, 
+    "closeness_vitality": {
+     "CHIRON": 6.0, 
+     "DEMETRIUS": 8.0, 
+     "MARCUS": 6.0
+    }, 
     "deg_assort_coeff": -0.49494949494949497, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -263,7 +310,14 @@
   [
    {
     "total_lines": 318, 
-    "deg_assort_coeff": -0.54579025110783008, 
+    "closeness_vitality": {
+     "MARCUS ANDRONICUS": 8.0, 
+     "TITUS ANDRONICUS": 8.0, 
+     "AARON": 12.0, 
+     "Messenger": 12.0, 
+     "LUCIUS": 12.0
+    }, 
+    "deg_assort_coeff": -0.54579025110782942, 
     "density": 0.7, 
     "scene": "1", 
     "total_degrees": 7, 
@@ -302,6 +356,11 @@
    }, 
    {
     "total_lines": 89, 
+    "closeness_vitality": {
+     "MARCUS ANDRONICUS": 4.0, 
+     "TITUS ANDRONICUS": 4.0, 
+     "Young LUCIUS": 4.0
+    }, 
     "deg_assort_coeff": -0.49999999999999983, 
     "density": 1.0, 
     "scene": "2", 
@@ -333,7 +392,12 @@
   [
    {
     "total_lines": 136, 
-    "deg_assort_coeff": -0.500000000000001, 
+    "closeness_vitality": {
+     "MARCUS ANDRONICUS": 4.0, 
+     "TITUS ANDRONICUS": 4.0, 
+     "Young LUCIUS": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999967, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -362,6 +426,13 @@
    }, 
    {
     "total_lines": 197, 
+    "closeness_vitality": {
+     "CHIRON": 10.0, 
+     "AARON": 8.0, 
+     "DEMETRIUS": 8.0, 
+     "Young LUCIUS": 12.0, 
+     "Nurse": 10.0
+    }, 
     "deg_assort_coeff": -0.5213373016761027, 
     "density": 0.8, 
     "scene": "2", 
@@ -401,7 +472,13 @@
    }, 
    {
     "total_lines": 124, 
-    "deg_assort_coeff": -0.35989879822896931, 
+    "closeness_vitality": {
+     "MARCUS ANDRONICUS": 6.0, 
+     "TITUS ANDRONICUS": 6.0, 
+     "PUBLIUS": 8.0, 
+     "Clown": 8.0
+    }, 
+    "deg_assort_coeff": -0.35989879822896992, 
     "density": 0.8333333333333334, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -435,7 +512,13 @@
    }, 
    {
     "total_lines": 121, 
-    "deg_assort_coeff": -0.6037735849056628, 
+    "closeness_vitality": {
+     "AEMILIUS": 8.0, 
+     "SATURNINUS": 6.0, 
+     "TAMORA": 6.0, 
+     "Clown": 8.0
+    }, 
+    "deg_assort_coeff": -0.60377358490566302, 
     "density": 0.8333333333333334, 
     "scene": "4", 
     "total_degrees": 5, 
@@ -471,6 +554,15 @@
   [
    {
     "total_lines": 172, 
+    "closeness_vitality": {
+     "Second Goth": 22.0, 
+     "First Goth": 16.0, 
+     "AEMILIUS": 20.0, 
+     "Third Goth": 22.0, 
+     "LUCIUS": 48.0, 
+     "AARON": 20.0, 
+     "All the Goths": 20.0
+    }, 
     "deg_assort_coeff": -0.44101123595505637, 
     "density": 0.42857142857142855, 
     "scene": "1", 
@@ -520,7 +612,15 @@
    }, 
    {
     "total_lines": 219, 
-    "deg_assort_coeff": -0.46043111807264819, 
+    "closeness_vitality": {
+     "TITUS ANDRONICUS": 8.0, 
+     "MARCUS ANDRONICUS": 16.0, 
+     "CHIRON": 12.0, 
+     "DEMETRIUS": 14.0, 
+     "PUBLIUS": 16.0, 
+     "TAMORA": 12.0
+    }, 
+    "deg_assort_coeff": -0.4604311180726488, 
     "density": 0.6666666666666666, 
     "scene": "2", 
     "total_degrees": 10, 
@@ -564,7 +664,19 @@
    }, 
    {
     "total_lines": 222, 
-    "deg_assort_coeff": -0.17884809700235799, 
+    "closeness_vitality": {
+     "TITUS ANDRONICUS": 98.0, 
+     "SATURNINUS": 120.0, 
+     "First Goth": 40.0, 
+     "AEMILIUS": 34.0, 
+     "MARCUS ANDRONICUS": 30.0, 
+     "All": 36.0, 
+     "LUCIUS": 90.0, 
+     "Young LUCIUS": 38.0, 
+     "AARON": 40.0, 
+     "TAMORA": 58.0
+    }, 
+    "deg_assort_coeff": -0.17884809700235751, 
     "density": 0.3111111111111111, 
     "scene": "3", 
     "total_degrees": 14, 

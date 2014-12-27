@@ -4,7 +4,20 @@
   [
    {
     "total_lines": 306, 
-    "deg_assort_coeff": 0.042794368464130518, 
+    "closeness_vitality": {
+     "All": 50.0, 
+     "First Citizen": 126.0, 
+     "TITUS": 38.0, 
+     "MARCIUS": 140.0, 
+     "MENENIUS": 34.0, 
+     "First Senator": 38.0, 
+     "COMINIUS": 40.0, 
+     "Messenger": 44.0, 
+     "BRUTUS": 58.0, 
+     "Second Citizen": 50.0, 
+     "SICINIUS": 96.0
+    }, 
+    "deg_assort_coeff": 0.042794368464130601, 
     "density": 0.3090909090909091, 
     "scene": "1", 
     "total_degrees": 17, 
@@ -73,6 +86,10 @@
    }, 
    {
     "total_lines": 37, 
+    "closeness_vitality": {
+     "First Soldier": 2.0, 
+     "AUFIDIUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "10", 
@@ -97,7 +114,13 @@
    }, 
    {
     "total_lines": 49, 
-    "deg_assort_coeff": -0.3829787234042567, 
+    "closeness_vitality": {
+     "AUFIDIUS": 6.0, 
+     "All": 8.0, 
+     "Second Senator": 6.0, 
+     "First Senator": 8.0
+    }, 
+    "deg_assort_coeff": -0.38297872340425715, 
     "density": 0.8333333333333334, 
     "scene": "2", 
     "total_degrees": 5, 
@@ -131,7 +154,13 @@
    }, 
    {
     "total_lines": 115, 
-    "deg_assort_coeff": -0.29647881014246114, 
+    "closeness_vitality": {
+     "VALERIA": 8.0, 
+     "VIRGILIA": 6.0, 
+     "Gentlewoman": 8.0, 
+     "VOLUMNIA": 6.0
+    }, 
+    "deg_assort_coeff": -0.29647881014246141, 
     "density": 0.8333333333333334, 
     "scene": "3", 
     "total_degrees": 5, 
@@ -165,7 +194,16 @@
    }, 
    {
     "total_lines": 88, 
-    "deg_assort_coeff": -0.3038904658540672, 
+    "closeness_vitality": {
+     "First Soldier": 40.0, 
+     "All": 22.0, 
+     "LARTIUS": 14.0, 
+     "Second Soldier": 26.0, 
+     "MARCIUS": 40.0, 
+     "Messenger": 22.0, 
+     "First Senator": 26.0
+    }, 
+    "deg_assort_coeff": -0.30389046585406548, 
     "density": 0.47619047619047616, 
     "scene": "4", 
     "total_degrees": 10, 
@@ -214,6 +252,13 @@
    }, 
    {
     "total_lines": 36, 
+    "closeness_vitality": {
+     "LARTIUS": 20.0, 
+     "MARCIUS": 32.0, 
+     "Third Roman": 36.0, 
+     "First Roman": 20.0, 
+     "Second Roman": 32.0
+    }, 
     "deg_assort_coeff": 0.38983050847457629, 
     "density": 0.4, 
     "scene": "5", 
@@ -253,6 +298,11 @@
    }, 
    {
     "total_lines": 112, 
+    "closeness_vitality": {
+     "COMINIUS": 8.0, 
+     "MARCIUS": 6.0, 
+     "Messenger": 6.0
+    }, 
     "deg_assort_coeff": -0.66666666666666663, 
     "density": 0.6666666666666666, 
     "scene": "6", 
@@ -282,6 +332,10 @@
    }, 
    {
     "total_lines": 9, 
+    "closeness_vitality": {
+     "Lieutenant": 2.0, 
+     "LARTIUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "7", 
@@ -306,6 +360,10 @@
    }, 
    {
     "total_lines": 21, 
+    "closeness_vitality": {
+     "MARCIUS": 2.0, 
+     "AUFIDIUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "8", 
@@ -330,7 +388,14 @@
    }, 
    {
     "total_lines": 111, 
-    "deg_assort_coeff": -0.43617021276595858, 
+    "closeness_vitality": {
+     "All": 12.0, 
+     "MARCIUS": 12.0, 
+     "LARTIUS": 10.0, 
+     "COMINIUS": 6.0, 
+     "CORIOLANUS": 10.0
+    }, 
+    "deg_assort_coeff": -0.43617021276595808, 
     "density": 0.8, 
     "scene": "9", 
     "total_degrees": 8, 
@@ -371,7 +436,21 @@
   [
    {
     "total_lines": 303, 
-    "deg_assort_coeff": -0.27425905157069885, 
+    "closeness_vitality": {
+     "Both": 48.0, 
+     "MENENIUS": 28.0, 
+     "COMINIUS": 38.0, 
+     "VALERIA": 44.0, 
+     "VIRGILIA": 44.0, 
+     "All": 54.0, 
+     "Herald": 48.0, 
+     "VOLUMNIA": 32.0, 
+     "Messenger": 60.0, 
+     "SICINIUS": 44.0, 
+     "BRUTUS": 98.0, 
+     "CORIOLANUS": 20.0
+    }, 
+    "deg_assort_coeff": -0.27425905157069952, 
     "density": 0.30303030303030304, 
     "scene": "1", 
     "total_degrees": 20, 
@@ -445,7 +524,19 @@
    }, 
    {
     "total_lines": 195, 
-    "deg_assort_coeff": -0.38707812387078144, 
+    "closeness_vitality": {
+     "SICINIUS": 30.0, 
+     "Senators": 34.0, 
+     "MENENIUS": 76.0, 
+     "COMINIUS": 34.0, 
+     "BRUTUS": 30.0, 
+     "First Officer": 78.0, 
+     "Second Officer": 48.0, 
+     "CORIOLANUS": 30.0, 
+     "First Senator": 28.0, 
+     "Officer": 34.0
+    }, 
+    "deg_assort_coeff": -0.38707812387078128, 
     "density": 0.37777777777777777, 
     "scene": "2", 
     "total_degrees": 17, 
@@ -509,7 +600,24 @@
    }, 
    {
     "total_lines": 298, 
-    "deg_assort_coeff": -0.24728660638045991, 
+    "closeness_vitality": {
+     "MENENIUS": 54.0, 
+     "First Citizen": 48.0, 
+     "Fifth Citizen": 60.0, 
+     "Sixth Citizen": 58.0, 
+     "Citizens": 68.0, 
+     "Second Citizen": 48.0, 
+     "Fourth Citizen": 60.0, 
+     "Both Citizens": 62.0, 
+     "All Citizens": 58.0, 
+     "All": 64.0, 
+     "Seventh Citizen": 80.0, 
+     "CORIOLANUS": 330.0, 
+     "BRUTUS": 60.0, 
+     "Third Citizen": 44.0, 
+     "SICINIUS": 44.0
+    }, 
+    "deg_assort_coeff": -0.24728660638046088, 
     "density": 0.26666666666666666, 
     "scene": "3", 
     "total_degrees": 28, 
@@ -600,7 +708,22 @@
   [
    {
     "total_lines": 434, 
-    "deg_assort_coeff": -0.34061914841182589, 
+    "closeness_vitality": {
+     "MENENIUS": 116.0, 
+     "COMINIUS": 34.0, 
+     "AEdile": 50.0, 
+     "Second Patrician": 50.0, 
+     "BRUTUS": 36.0, 
+     "LARTIUS": 58.0, 
+     "A Patrician": 48.0, 
+     "First Citizen": 54.0, 
+     "Citizens": 40.0, 
+     "SICINIUS": 28.0, 
+     "Second Senator": 48.0, 
+     "First Senator": 40.0, 
+     "CORIOLANUS": 92.0
+    }, 
+    "deg_assort_coeff": -0.34061914841182339, 
     "density": 0.34615384615384615, 
     "scene": "1", 
     "total_degrees": 27, 
@@ -679,7 +802,15 @@
    }, 
    {
     "total_lines": 177, 
-    "deg_assort_coeff": -0.42543008666407856, 
+    "closeness_vitality": {
+     "MENENIUS": 8.0, 
+     "COMINIUS": 14.0, 
+     "A Patrician": 16.0, 
+     "VOLUMNIA": 12.0, 
+     "First Senator": 16.0, 
+     "CORIOLANUS": 12.0
+    }, 
+    "deg_assort_coeff": -0.42543008666408005, 
     "density": 0.6666666666666666, 
     "scene": "2", 
     "total_degrees": 10, 
@@ -723,7 +854,18 @@
    }, 
    {
     "total_lines": 177, 
-    "deg_assort_coeff": -0.32588818898955529, 
+    "closeness_vitality": {
+     "Both Tribunes": 30.0, 
+     "MENENIUS": 24.0, 
+     "COMINIUS": 24.0, 
+     "AEdile": 24.0, 
+     "Citizens": 22.0, 
+     "First Senator": 28.0, 
+     "CORIOLANUS": 38.0, 
+     "BRUTUS": 24.0, 
+     "SICINIUS": 20.0
+    }, 
+    "deg_assort_coeff": -0.32588818898955146, 
     "density": 0.5277777777777778, 
     "scene": "3", 
     "total_degrees": 19, 
@@ -784,6 +926,13 @@
   [
    {
     "total_lines": 65, 
+    "closeness_vitality": {
+     "VIRGILIA": 14.0, 
+     "COMINIUS": 14.0, 
+     "MENENIUS": 14.0, 
+     "VOLUMNIA": 14.0, 
+     "CORIOLANUS": 32.0
+    }, 
     "deg_assort_coeff": -0.97402597402597402, 
     "density": 0.4, 
     "scene": "1", 
@@ -823,7 +972,14 @@
    }, 
    {
     "total_lines": 75, 
-    "deg_assort_coeff": -0.54768786127167868, 
+    "closeness_vitality": {
+     "MENENIUS": 12.0, 
+     "VOLUMNIA": 8.0, 
+     "BRUTUS": 12.0, 
+     "VIRGILIA": 12.0, 
+     "SICINIUS": 8.0
+    }, 
+    "deg_assort_coeff": -0.54768786127167779, 
     "density": 0.7, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -862,6 +1018,10 @@
    }, 
    {
     "total_lines": 50, 
+    "closeness_vitality": {
+     "Roman": 2.0, 
+     "Volsce": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -886,6 +1046,10 @@
    }, 
    {
     "total_lines": 33, 
+    "closeness_vitality": {
+     "CORIOLANUS": 2.0, 
+     "Citizen": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -910,7 +1074,15 @@
    }, 
    {
     "total_lines": 256, 
-    "deg_assort_coeff": -0.27233133892893896, 
+    "closeness_vitality": {
+     "All": 20.0, 
+     "Second Servingman": 12.0, 
+     "Third Servingman": 30.0, 
+     "AUFIDIUS": 16.0, 
+     "First Servingman": 12.0, 
+     "CORIOLANUS": 12.0
+    }, 
+    "deg_assort_coeff": -0.27233133892894307, 
     "density": 0.6666666666666666, 
     "scene": "5", 
     "total_degrees": 10, 
@@ -954,7 +1126,21 @@
    }, 
    {
     "total_lines": 210, 
-    "deg_assort_coeff": -0.2256593694853814, 
+    "closeness_vitality": {
+     "Both Tribunes": 38.0, 
+     "MENENIUS": 24.0, 
+     "First Citizen": 38.0, 
+     "AEdile": 42.0, 
+     "Citizens": 36.0, 
+     "Second Citizen": 40.0, 
+     "Second Messenger": 46.0, 
+     "COMINIUS": 20.0, 
+     "Messenger": 44.0, 
+     "BRUTUS": 16.0, 
+     "Third Citizen": 46.0, 
+     "SICINIUS": 28.0
+    }, 
+    "deg_assort_coeff": -0.22565936948538237, 
     "density": 0.3939393939393939, 
     "scene": "6", 
     "total_degrees": 26, 
@@ -1028,6 +1214,10 @@
    }, 
    {
     "total_lines": 60, 
+    "closeness_vitality": {
+     "Lieutenant": 2.0, 
+     "AUFIDIUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "7", 
@@ -1054,6 +1244,12 @@
   [
    {
     "total_lines": 88, 
+    "closeness_vitality": {
+     "MENENIUS": 14.0, 
+     "COMINIUS": 8.0, 
+     "BRUTUS": 10.0, 
+     "SICINIUS": 8.0
+    }, 
     "deg_assort_coeff": -0.71809328549461815, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -1088,7 +1284,14 @@
    }, 
    {
     "total_lines": 120, 
-    "deg_assort_coeff": -0.058011755686174366, 
+    "closeness_vitality": {
+     "Second Senator": 12.0, 
+     "MENENIUS": 8.0, 
+     "AUFIDIUS": 12.0, 
+     "First Senator": 8.0, 
+     "CORIOLANUS": 12.0
+    }, 
+    "deg_assort_coeff": -0.058011755686174414, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -1127,6 +1330,13 @@
    }, 
    {
     "total_lines": 238, 
+    "closeness_vitality": {
+     "Young MARCIUS": 12.0, 
+     "VIRGILIA": 10.0, 
+     "AUFIDIUS": 14.0, 
+     "VOLUMNIA": 12.0, 
+     "CORIOLANUS": 20.0
+    }, 
     "deg_assort_coeff": -0.41301775147928999, 
     "density": 0.6, 
     "scene": "3", 
@@ -1166,7 +1376,13 @@
    }, 
    {
     "total_lines": 75, 
-    "deg_assort_coeff": -0.55625657202944323, 
+    "closeness_vitality": {
+     "Second Messenger": 8.0, 
+     "MENENIUS": 6.0, 
+     "Messenger": 8.0, 
+     "SICINIUS": 6.0
+    }, 
+    "deg_assort_coeff": -0.55625657202944356, 
     "density": 0.8333333333333334, 
     "scene": "4", 
     "total_degrees": 5, 
@@ -1200,6 +1416,10 @@
    }, 
    {
     "total_lines": 8, 
+    "closeness_vitality": {
+     "All": 2.0, 
+     "First Senator": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -1224,7 +1444,21 @@
    }, 
    {
     "total_lines": 189, 
-    "deg_assort_coeff": -0.32219437482595376, 
+    "closeness_vitality": {
+     "Lords": 38.0, 
+     "All Conspirators": 36.0, 
+     "All The People": 48.0, 
+     "First Lord": 36.0, 
+     "Third Lord": 40.0, 
+     "Second Conspirator": 40.0, 
+     "All The Lords": 44.0, 
+     "Third Conspirator": 42.0, 
+     "First Conspirator": 42.0, 
+     "Second Lord": 28.0, 
+     "AUFIDIUS": 150.0, 
+     "CORIOLANUS": 38.0
+    }, 
+    "deg_assort_coeff": -0.32219437482595381, 
     "density": 0.30303030303030304, 
     "scene": "6", 
     "total_degrees": 20, 

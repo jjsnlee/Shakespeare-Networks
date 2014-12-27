@@ -4,7 +4,16 @@
   [
    {
     "total_lines": 262, 
-    "deg_assort_coeff": -0.17572792551092811, 
+    "closeness_vitality": {
+     "THESEUS": 36.0, 
+     "HERMIA": 18.0, 
+     "DEMETRIUS": 20.0, 
+     "EGEUS": 20.0, 
+     "HELENA": 22.0, 
+     "LYSANDER": 10.0, 
+     "HIPPOLYTA": 24.0
+    }, 
+    "deg_assort_coeff": -0.17572792551092881, 
     "density": 0.47619047619047616, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -53,7 +62,16 @@
    }, 
    {
     "total_lines": 102, 
-    "deg_assort_coeff": -0.81586021505376416, 
+    "closeness_vitality": {
+     "ALL": 20.0, 
+     "BOTTOM": 20.0, 
+     "FLUTE": 22.0, 
+     "SNOUT": 22.0, 
+     "SNUG": 22.0, 
+     "STARVELING": 22.0, 
+     "QUINCE": 68.0
+    }, 
+    "deg_assort_coeff": -0.81586021505376427, 
     "density": 0.3333333333333333, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -104,7 +122,15 @@
   [
    {
     "total_lines": 281, 
-    "deg_assort_coeff": -0.47592931139549116, 
+    "closeness_vitality": {
+     "DEMETRIUS": 16.0, 
+     "PUCK": 16.0, 
+     "TITANIA": 18.0, 
+     "HELENA": 16.0, 
+     "Fairy": 16.0, 
+     "OBERON": 42.0
+    }, 
+    "deg_assort_coeff": -0.47592931139549105, 
     "density": 0.4666666666666667, 
     "scene": "1", 
     "total_degrees": 7, 
@@ -148,6 +174,16 @@
    }, 
    {
     "total_lines": 169, 
+    "closeness_vitality": {
+     "DEMETRIUS": 40.0, 
+     "HERMIA": 32.0, 
+     "PUCK": 36.0, 
+     "TITANIA": 48.0, 
+     "HELENA": 66.0, 
+     "LYSANDER": 108.0, 
+     "Fairy": 82.0, 
+     "OBERON": 102.0
+    }, 
     "deg_assort_coeff": 0.10770767437989012, 
     "density": 0.2857142857142857, 
     "scene": "2", 
@@ -204,7 +240,21 @@
   [
    {
     "total_lines": 208, 
-    "deg_assort_coeff": -0.24562004875076143, 
+    "closeness_vitality": {
+     "ALL": 52.0, 
+     "PUCK": 42.0, 
+     "BOTTOM": 160.0, 
+     "MOTH": 52.0, 
+     "PEASEBLOSSOM": 38.0, 
+     "FLUTE": 42.0, 
+     "MUSTARDSEED": 34.0, 
+     "TITANIA": 38.0, 
+     "SNOUT": 42.0, 
+     "COBWEB": 38.0, 
+     "STARVELING": 44.0, 
+     "QUINCE": 40.0
+    }, 
+    "deg_assort_coeff": -0.2456200487507616, 
     "density": 0.30303030303030304, 
     "scene": "1", 
     "total_degrees": 20, 
@@ -278,7 +328,16 @@
    }, 
    {
     "total_lines": 513, 
-    "deg_assort_coeff": -0.048052944561677358, 
+    "closeness_vitality": {
+     "DEMETRIUS": 14.0, 
+     "HERMIA": 14.0, 
+     "PUCK": 14.0, 
+     "HELENA": 36.0, 
+     "LYSANDER": 16.0, 
+     "HERNIA": 24.0, 
+     "OBERON": 20.0
+    }, 
+    "deg_assort_coeff": -0.048052944561675914, 
     "density": 0.6666666666666666, 
     "scene": "2", 
     "total_degrees": 14, 
@@ -329,7 +388,23 @@
   [
    {
     "total_lines": 236, 
-    "deg_assort_coeff": -0.16557183762843056, 
+    "closeness_vitality": {
+     "THESEUS": 106.0, 
+     "DEMETRIUS": -24.0, 
+     "BOTTOM": 230.0, 
+     "PEASEBLOSSOM": 68.0, 
+     "HERMIA": 66.0, 
+     "PUCK": 70.0, 
+     "MUSTARDSEED": 68.0, 
+     "TITANIA": 180.0, 
+     "EGEUS": 56.0, 
+     "HELENA": 64.0, 
+     "LYSANDER": 54.0, 
+     "COBWEB": 68.0, 
+     "HIPPOLYTA": 72.0, 
+     "OBERON": 70.0
+    }, 
+    "deg_assort_coeff": -0.16557183762843175, 
     "density": 0.21978021978021978, 
     "scene": "1", 
     "total_degrees": 20, 
@@ -413,6 +488,13 @@
    }, 
    {
     "total_lines": 44, 
+    "closeness_vitality": {
+     "QUINCE": 10.0, 
+     "SNUG": 14.0, 
+     "BOTTOM": 12.0, 
+     "FLUTE": 20.0, 
+     "STARVELING": 12.0
+    }, 
     "deg_assort_coeff": -0.5934959349593496, 
     "density": 0.6, 
     "scene": "2", 
@@ -454,7 +536,24 @@
   [
    {
     "total_lines": 462, 
-    "deg_assort_coeff": -0.37898792982077328, 
+    "closeness_vitality": {
+     "Pyramus": 54.0, 
+     "THESEUS": 308.0, 
+     "DEMETRIUS": 44.0, 
+     "BOTTOM": 58.0, 
+     "Wall": 56.0, 
+     "Moonshine": 56.0, 
+     "PUCK": 216.0, 
+     "LYSANDER": 54.0, 
+     "TITANIA": 100.0, 
+     "Thisbe": 52.0, 
+     "Lion": 56.0, 
+     "HIPPOLYTA": 54.0, 
+     "Prologue": 60.0, 
+     "PHILOSTRATE": 60.0, 
+     "OBERON": 172.0
+    }, 
+    "deg_assort_coeff": -0.37898792982077484, 
     "density": 0.26666666666666666, 
     "scene": "1", 
     "total_degrees": 28, 

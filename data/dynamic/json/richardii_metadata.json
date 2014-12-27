@@ -4,6 +4,12 @@
   [
    {
     "total_lines": 210, 
+    "closeness_vitality": {
+     "KING RICHARD II": 14.0, 
+     "HENRY BOLINGBROKE": 8.0, 
+     "JOHN OF GAUNT": 10.0, 
+     "THOMAS MOWBRAY": 8.0
+    }, 
     "deg_assort_coeff": -0.69047619047619047, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -38,6 +44,10 @@
    }, 
    {
     "total_lines": 75, 
+    "closeness_vitality": {
+     "DUCHESS": 2.0, 
+     "JOHN OF GAUNT": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -62,7 +72,17 @@
    }, 
    {
     "total_lines": 318, 
-    "deg_assort_coeff": 0.16870775408855984, 
+    "closeness_vitality": {
+     "Lord Marshal": 54.0, 
+     "THOMAS MOWBRAY": 22.0, 
+     "DUKE OF AUMERLE": 24.0, 
+     "JOHN OF GAUNT": 22.0, 
+     "Second Herald": 24.0, 
+     "KING RICHARD II": 18.0, 
+     "HENRY BOLINGBROKE": 20.0, 
+     "First Herald": 24.0
+    }, 
+    "deg_assort_coeff": 0.16870775408856167, 
     "density": 0.5, 
     "scene": "3", 
     "total_degrees": 14, 
@@ -116,6 +136,13 @@
    }, 
    {
     "total_lines": 67, 
+    "closeness_vitality": {
+     "KING RICHARD II": 32.0, 
+     "All": 14.0, 
+     "GREEN": 14.0, 
+     "BUSHY": 14.0, 
+     "DUKE OF AUMERLE": 14.0
+    }, 
     "deg_assort_coeff": -0.92800488102501522, 
     "density": 0.4, 
     "scene": "4", 
@@ -157,7 +184,16 @@
   [
    {
     "total_lines": 307, 
-    "deg_assort_coeff": -0.26164267569855881, 
+    "closeness_vitality": {
+     "NORTHUMBERLAND": 56.0, 
+     "QUEEN": 24.0, 
+     "DUKE OF YORK": 16.0, 
+     "JOHN OF GAUNT": 24.0, 
+     "KING RICHARD II": 16.0, 
+     "LORD WILLOUGHBY": 24.0, 
+     "LORD ROSS": 24.0
+    }, 
+    "deg_assort_coeff": -0.26164267569856176, 
     "density": 0.47619047619047616, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -206,6 +242,14 @@
    }, 
    {
     "total_lines": 158, 
+    "closeness_vitality": {
+     "Servant": 22.0, 
+     "QUEEN": 14.0, 
+     "GREEN": 16.0, 
+     "BAGOT": 18.0, 
+     "DUKE OF YORK": 34.0, 
+     "BUSHY": 8.0
+    }, 
     "deg_assort_coeff": -0.1076923076923077, 
     "density": 0.5333333333333333, 
     "scene": "2", 
@@ -250,7 +294,16 @@
    }, 
    {
     "total_lines": 178, 
-    "deg_assort_coeff": -0.36222767277449175, 
+    "closeness_vitality": {
+     "LORD BERKELEY": 20.0, 
+     "NORTHUMBERLAND": 14.0, 
+     "LORD ROSS": 18.0, 
+     "HENRY PERCY": 20.0, 
+     "LORD WILLOUGHBY": 18.0, 
+     "HENRY BOLINGBROKE": 8.0, 
+     "DUKE OF YORK": 18.0
+    }, 
+    "deg_assort_coeff": -0.36222767277449081, 
     "density": 0.5714285714285714, 
     "scene": "3", 
     "total_degrees": 12, 
@@ -299,6 +352,10 @@
    }, 
    {
     "total_lines": 26, 
+    "closeness_vitality": {
+     "EARL OF SALISBURY": 2.0, 
+     "Captain": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -325,6 +382,12 @@
   [
    {
     "total_lines": 46, 
+    "closeness_vitality": {
+     "HENRY BOLINGBROKE": 14.0, 
+     "GREEN": 8.0, 
+     "DUKE OF YORK": 10.0, 
+     "BUSHY": 8.0
+    }, 
     "deg_assort_coeff": -0.59999999999999998, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -359,7 +422,14 @@
    }, 
    {
     "total_lines": 224, 
-    "deg_assort_coeff": -0.59281437125748693, 
+    "closeness_vitality": {
+     "KING RICHARD II": 8.0, 
+     "EARL OF SALISBURY": 12.0, 
+     "BISHOP OF CARLISLE": 12.0, 
+     "DUKE OF AUMERLE": 8.0, 
+     "SIR STEPHEN SCROOP": 12.0
+    }, 
+    "deg_assort_coeff": -0.59281437125748604, 
     "density": 0.7, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -398,7 +468,15 @@
    }, 
    {
     "total_lines": 223, 
-    "deg_assort_coeff": -0.42803030303030115, 
+    "closeness_vitality": {
+     "NORTHUMBERLAND": 12.0, 
+     "HENRY PERCY": 18.0, 
+     "KING RICHARD II": 30.0, 
+     "HENRY BOLINGBROKE": 12.0, 
+     "DUKE OF AUMERLE": 20.0, 
+     "DUKE OF YORK": 14.0
+    }, 
+    "deg_assort_coeff": -0.42803030303030204, 
     "density": 0.6, 
     "scene": "3", 
     "total_degrees": 9, 
@@ -442,6 +520,13 @@
    }, 
    {
     "total_lines": 116, 
+    "closeness_vitality": {
+     "Servant": 18.0, 
+     "QUEEN": 34.0, 
+     "Lady": 16.0, 
+     "Gardener": 28.0, 
+     "GARDENER": 16.0
+    }, 
     "deg_assort_coeff": -0.46921443736730362, 
     "density": 0.4, 
     "scene": "4", 
@@ -483,7 +568,21 @@
   [
    {
     "total_lines": 349, 
-    "deg_assort_coeff": -0.23191878897935636, 
+    "closeness_vitality": {
+     "LORD FITZWATER": 46.0, 
+     "HENRY BOLINGBROKE": -20.0, 
+     "DUKE OF SURREY": 46.0, 
+     "NORTHUMBERLAND": 46.0, 
+     "HENRY PERCY": 48.0, 
+     "Abbot": 38.0, 
+     "Lord": 48.0, 
+     "KING RICHARD II": 46.0, 
+     "BAGOT": 40.0, 
+     "BISHOP OF CARLISLE": 36.0, 
+     "DUKE OF AUMERLE": 184.0, 
+     "DUKE OF YORK": 48.0
+    }, 
+    "deg_assort_coeff": -0.23191878897935486, 
     "density": 0.2878787878787879, 
     "scene": "1", 
     "total_degrees": 19, 
@@ -559,7 +658,12 @@
   [
    {
     "total_lines": 105, 
-    "deg_assort_coeff": -0.500000000000001, 
+    "closeness_vitality": {
+     "KING RICHARD II": 4.0, 
+     "QUEEN": 4.0, 
+     "NORTHUMBERLAND": 4.0
+    }, 
+    "deg_assort_coeff": -0.50000000000000022, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -588,7 +692,12 @@
    }, 
    {
     "total_lines": 134, 
-    "deg_assort_coeff": -0.50000000000000089, 
+    "closeness_vitality": {
+     "DUCHESS OF YORK": 4.0, 
+     "DUKE OF AUMERLE": 4.0, 
+     "DUKE OF YORK": 4.0
+    }, 
+    "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -617,7 +726,14 @@
    }, 
    {
     "total_lines": 159, 
-    "deg_assort_coeff": -0.57450721222918566, 
+    "closeness_vitality": {
+     "DUCHESS OF YORK": 10.0, 
+     "HENRY PERCY": 14.0, 
+     "HENRY BOLINGBROKE": 20.0, 
+     "DUKE OF AUMERLE": 10.0, 
+     "DUKE OF YORK": 10.0
+    }, 
+    "deg_assort_coeff": -0.57450721222918355, 
     "density": 0.7, 
     "scene": "3", 
     "total_degrees": 7, 
@@ -656,6 +772,10 @@
    }, 
    {
     "total_lines": 13, 
+    "closeness_vitality": {
+     "Servant": 2.0, 
+     "EXTON": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "4", 
@@ -680,6 +800,12 @@
    }, 
    {
     "total_lines": 129, 
+    "closeness_vitality": {
+     "Keeper": 8.0, 
+     "KING RICHARD II": 14.0, 
+     "Groom": 8.0, 
+     "EXTON": 10.0
+    }, 
     "deg_assort_coeff": -0.7142857142857143, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -714,6 +840,13 @@
    }, 
    {
     "total_lines": 58, 
+    "closeness_vitality": {
+     "LORD FITZWATER": 14.0, 
+     "HENRY BOLINGBROKE": 32.0, 
+     "HENRY PERCY": 14.0, 
+     "NORTHUMBERLAND": 14.0, 
+     "EXTON": 14.0
+    }, 
     "deg_assort_coeff": -0.97402597402597402, 
     "density": 0.4, 
     "scene": "6", 

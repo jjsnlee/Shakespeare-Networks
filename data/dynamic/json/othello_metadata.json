@@ -4,7 +4,12 @@
   [
    {
     "total_lines": 200, 
-    "deg_assort_coeff": -0.5000000000000121, 
+    "closeness_vitality": {
+     "IAGO": 4.0, 
+     "RODERIGO": 4.0, 
+     "BRABANTIO": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999656, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -33,7 +38,15 @@
    }, 
    {
     "total_lines": 123, 
-    "deg_assort_coeff": -0.23415265200517366, 
+    "closeness_vitality": {
+     "RODERIGO": 16.0, 
+     "IAGO": 14.0, 
+     "OTHELLO": 6.0, 
+     "BRABANTIO": 12.0, 
+     "CASSIO": 16.0, 
+     "First Officer": 16.0
+    }, 
+    "deg_assort_coeff": -0.23415265200517477, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 9, 
@@ -77,7 +90,20 @@
    }, 
    {
     "total_lines": 440, 
-    "deg_assort_coeff": -0.28262012650593166, 
+    "closeness_vitality": {
+     "RODERIGO": 104.0, 
+     "DUKE OF VENICE": 30.0, 
+     "IAGO": 62.0, 
+     "Sailor": 42.0, 
+     "Messenger": 40.0, 
+     "First Officer": 40.0, 
+     "OTHELLO": 126.0, 
+     "DESDEMONA": 36.0, 
+     "Second Senator": 44.0, 
+     "First Senator": 34.0, 
+     "BRABANTIO": 34.0
+    }, 
+    "deg_assort_coeff": -0.28262012650593105, 
     "density": 0.34545454545454546, 
     "scene": "3", 
     "total_degrees": 19, 
@@ -148,7 +174,21 @@
   [
    {
     "total_lines": 351, 
-    "deg_assort_coeff": -0.3271724404877096, 
+    "closeness_vitality": {
+     "RODERIGO": 56.0, 
+     "Fourth Gentleman": 48.0, 
+     "Third Gentleman": 44.0, 
+     "Second Gentleman": 44.0, 
+     "First Gentleman": 60.0, 
+     "IAGO": 90.0, 
+     "OTHELLO": 40.0, 
+     "EMILIA": 54.0, 
+     "CASSIO": 222.0, 
+     "DESDEMONA": 38.0, 
+     "MONTANO": 98.0, 
+     "Second Gentlemen": 48.0
+    }, 
+    "deg_assort_coeff": -0.32717244048771049, 
     "density": 0.2727272727272727, 
     "scene": "1", 
     "total_degrees": 18, 
@@ -222,6 +262,9 @@
    }, 
    {
     "total_lines": 13, 
+    "closeness_vitality": {
+     "Herald": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "2", 
@@ -241,7 +284,16 @@
    }, 
    {
     "total_lines": 415, 
-    "deg_assort_coeff": -0.34635727056018911, 
+    "closeness_vitality": {
+     "RODERIGO": 22.0, 
+     "All": 24.0, 
+     "IAGO": 16.0, 
+     "CASSIO": 36.0, 
+     "OTHELLO": 40.0, 
+     "DESDEMONA": 26.0, 
+     "MONTANO": 18.0
+    }, 
+    "deg_assort_coeff": -0.34635727056019106, 
     "density": 0.5238095238095238, 
     "scene": "3", 
     "total_degrees": 11, 
@@ -292,6 +344,13 @@
   [
    {
     "total_lines": 70, 
+    "closeness_vitality": {
+     "IAGO": 16.0, 
+     "EMILIA": 16.0, 
+     "First Musician": 18.0, 
+     "CASSIO": 34.0, 
+     "Clown": 28.0
+    }, 
     "deg_assort_coeff": -0.37931034482758619, 
     "density": 0.4, 
     "scene": "1", 
@@ -331,6 +390,11 @@
    }, 
    {
     "total_lines": 8, 
+    "closeness_vitality": {
+     "IAGO": 6.0, 
+     "OTHELLO": 8.0, 
+     "Gentleman": 6.0
+    }, 
     "deg_assort_coeff": -0.81818181818181823, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -360,7 +424,14 @@
    }, 
    {
     "total_lines": 547, 
-    "deg_assort_coeff": 0.18676316216543759, 
+    "closeness_vitality": {
+     "IAGO": 10.0, 
+     "EMILIA": 10.0, 
+     "CASSIO": 12.0, 
+     "DESDEMONA": 6.0, 
+     "OTHELLO": 12.0
+    }, 
+    "deg_assort_coeff": 0.18676316216543773, 
     "density": 0.7, 
     "scene": "3", 
     "total_degrees": 7, 
@@ -399,6 +470,15 @@
    }, 
    {
     "total_lines": 234, 
+    "closeness_vitality": {
+     "IAGO": 22.0, 
+     "Clown": 24.0, 
+     "BIANCA": 30.0, 
+     "CASSIO": 48.0, 
+     "EMILIA": 20.0, 
+     "OTHELLO": 22.0, 
+     "DESDEMONA": 66.0
+    }, 
     "deg_assort_coeff": -0.40482219530991964, 
     "density": 0.38095238095238093, 
     "scene": "4", 
@@ -450,7 +530,15 @@
   [
    {
     "total_lines": 327, 
-    "deg_assort_coeff": -0.45897866547842431, 
+    "closeness_vitality": {
+     "LODOVICO": 14.0, 
+     "BIANCA": 14.0, 
+     "OTHELLO": 10.0, 
+     "IAGO": 10.0, 
+     "CASSIO": 14.0, 
+     "DESDEMONA": 14.0
+    }, 
+    "deg_assort_coeff": -0.45897866547842331, 
     "density": 0.7333333333333333, 
     "scene": "1", 
     "total_degrees": 11, 
@@ -494,7 +582,14 @@
    }, 
    {
     "total_lines": 281, 
-    "deg_assort_coeff": -0.32419465387251606, 
+    "closeness_vitality": {
+     "IAGO": 24.0, 
+     "EMILIA": 10.0, 
+     "DESDEMONA": 10.0, 
+     "OTHELLO": 14.0, 
+     "RODERIGO": 16.0
+    }, 
+    "deg_assort_coeff": -0.32419465387251611, 
     "density": 0.6, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -533,6 +628,12 @@
    }, 
    {
     "total_lines": 116, 
+    "closeness_vitality": {
+     "LODOVICO": 8.0, 
+     "DESDEMONA": 14.0, 
+     "OTHELLO": 8.0, 
+     "EMILIA": 10.0
+    }, 
     "deg_assort_coeff": -0.08045335268829211, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -569,7 +670,17 @@
   [
    {
     "total_lines": 164, 
-    "deg_assort_coeff": -0.2835278072435225, 
+    "closeness_vitality": {
+     "RODERIGO": 20.0, 
+     "LODOVICO": 20.0, 
+     "GRATIANO": 22.0, 
+     "BIANCA": 26.0, 
+     "CASSIO": 16.0, 
+     "OTHELLO": 28.0, 
+     "IAGO": 60.0, 
+     "EMILIA": 26.0
+    }, 
+    "deg_assort_coeff": -0.28352780724352145, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 14, 
@@ -623,6 +734,17 @@
    }, 
    {
     "total_lines": 442, 
+    "closeness_vitality": {
+     "LODOVICO": 26.0, 
+     "All": 34.0, 
+     "GRATIANO": 24.0, 
+     "IAGO": 26.0, 
+     "CASSIO": 30.0, 
+     "EMILIA": 52.0, 
+     "OTHELLO": 6.0, 
+     "DESDEMONA": 28.0, 
+     "MONTANO": 26.0
+    }, 
     "deg_assort_coeff": -0.33099184549680577, 
     "density": 0.4444444444444444, 
     "scene": "2", 

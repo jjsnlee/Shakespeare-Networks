@@ -4,6 +4,7 @@
   [
    {
     "total_lines": 0, 
+    "closeness_vitality": {}, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "0", 
@@ -17,7 +18,16 @@
    }, 
    {
     "total_lines": 272, 
-    "deg_assort_coeff": -0.27815956782183643, 
+    "closeness_vitality": {
+     "NORFOLK": 18.0, 
+     "ABERGAVENNY": 20.0, 
+     "BRANDON": 20.0, 
+     "BUCKINGHAM": 0.0, 
+     "Sergeant": 22.0, 
+     "CARDINAL WOLSEY": 44.0, 
+     "First Secretary": 28.0
+    }, 
+    "deg_assort_coeff": -0.27815956782183698, 
     "density": 0.47619047619047616, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -66,6 +76,13 @@
    }, 
    {
     "total_lines": 250, 
+    "closeness_vitality": {
+     "NORFOLK": 12.0, 
+     "KING HENRY VIII": 8.0, 
+     "CARDINAL WOLSEY": 10.0, 
+     "QUEEN KATHARINE / KATHARINE": 8.0, 
+     "Surveyor": 10.0
+    }, 
     "deg_assort_coeff": -0.43603340845817312, 
     "density": 0.8, 
     "scene": "2", 
@@ -105,7 +122,12 @@
    }, 
    {
     "total_lines": 85, 
-    "deg_assort_coeff": -0.50000000000000178, 
+    "closeness_vitality": {
+     "SANDS": 4.0, 
+     "Chamberlain": 4.0, 
+     "LOVELL": 4.0
+    }, 
+    "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -134,7 +156,17 @@
    }, 
    {
     "total_lines": 151, 
-    "deg_assort_coeff": -0.50001246478697736, 
+    "closeness_vitality": {
+     "KING HENRY VIII": 26.0, 
+     "CARDINAL WOLSEY": 14.0, 
+     "Servant": 26.0, 
+     "LOVELL": 26.0, 
+     "SANDS": 50.0, 
+     "ANNE": 32.0, 
+     "GUILDFORD": 30.0, 
+     "Chamberlain": 46.0
+    }, 
+    "deg_assort_coeff": -0.50001246478697692, 
     "density": 0.39285714285714285, 
     "scene": "4", 
     "total_degrees": 11, 
@@ -190,6 +222,13 @@
   [
    {
     "total_lines": 198, 
+    "closeness_vitality": {
+     "VAUX": 12.0, 
+     "Second Gentleman": 12.0, 
+     "First Gentleman": 12.0, 
+     "LOVELL": 12.0, 
+     "BUCKINGHAM": 24.0
+    }, 
     "deg_assort_coeff": 0.31634182908545727, 
     "density": 0.6, 
     "scene": "1", 
@@ -229,7 +268,16 @@
    }, 
    {
     "total_lines": 181, 
-    "deg_assort_coeff": -0.20398009950248958, 
+    "closeness_vitality": {
+     "KING HENRY VIII": 10.0, 
+     "NORFOLK": 18.0, 
+     "GARDINER": 22.0, 
+     "SUFFOLK": 14.0, 
+     "CARDINAL WOLSEY": 16.0, 
+     "CARDINAL CAMPEIUS": 22.0, 
+     "Chamberlain": 24.0
+    }, 
+    "deg_assort_coeff": -0.20398009950248783, 
     "density": 0.5238095238095238, 
     "scene": "2", 
     "total_degrees": 11, 
@@ -278,7 +326,12 @@
    }, 
    {
     "total_lines": 132, 
-    "deg_assort_coeff": -0.27307069616837598, 
+    "closeness_vitality": {
+     "ANNE": 4.0, 
+     "Old Lady": 4.0, 
+     "Chamberlain": 4.0
+    }, 
+    "deg_assort_coeff": -0.27307069616837604, 
     "density": 1.3333333333333333, 
     "scene": "3", 
     "total_degrees": 4, 
@@ -307,7 +360,17 @@
    }, 
    {
     "total_lines": 263, 
-    "deg_assort_coeff": -0.27397934087555559, 
+    "closeness_vitality": {
+     "LINCOLN": 28.0, 
+     "KING HENRY VIII": 42.0, 
+     "CARDINAL WOLSEY": 20.0, 
+     "Scribe": 22.0, 
+     "QUEEN KATHARINE / KATHARINE": 14.0, 
+     "Crier": 18.0, 
+     "CARDINAL CAMPEIUS": 22.0, 
+     "GRIFFITH": 26.0
+    }, 
+    "deg_assort_coeff": -0.27397934087555231, 
     "density": 0.5, 
     "scene": "4", 
     "total_degrees": 14, 
@@ -363,7 +426,13 @@
   [
    {
     "total_lines": 207, 
-    "deg_assort_coeff": -0.49427480916030325, 
+    "closeness_vitality": {
+     "CARDINAL CAMPEIUS": 8.0, 
+     "Gentleman": 10.0, 
+     "CARDINAL WOLSEY": 8.0, 
+     "QUEEN KATHARINE / KATHARINE": 14.0
+    }, 
+    "deg_assort_coeff": -0.49427480916030575, 
     "density": 0.8333333333333334, 
     "scene": "1", 
     "total_degrees": 5, 
@@ -397,7 +466,16 @@
    }, 
    {
     "total_lines": 546, 
-    "deg_assort_coeff": -0.23673357162496786, 
+    "closeness_vitality": {
+     "SURREY": 14.0, 
+     "KING HENRY VIII": 16.0, 
+     "NORFOLK": 14.0, 
+     "SUFFOLK": 14.0, 
+     "CARDINAL WOLSEY": 36.0, 
+     "CROMWELL": 24.0, 
+     "Chamberlain": 20.0
+    }, 
+    "deg_assort_coeff": -0.23673357162496719, 
     "density": 0.6666666666666666, 
     "scene": "2", 
     "total_degrees": 14, 
@@ -448,7 +526,13 @@
   [
    {
     "total_lines": 178, 
-    "deg_assort_coeff": 0.28919100369251394, 
+    "closeness_vitality": {
+     "Second Gentleman": 8.0, 
+     "First Gentleman": 8.0, 
+     "Third Gentleman": 14.0, 
+     "Both": 10.0
+    }, 
+    "deg_assort_coeff": 0.28919100369251494, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 6, 
@@ -482,7 +566,14 @@
    }, 
    {
     "total_lines": 201, 
-    "deg_assort_coeff": -0.39347551001512387, 
+    "closeness_vitality": {
+     "PATIENCE": 10.0, 
+     "Messenger": 10.0, 
+     "GRIFFITH": 10.0, 
+     "QUEEN KATHARINE / KATHARINE": 20.0, 
+     "CAPUCIUS": 14.0
+    }, 
+    "deg_assort_coeff": -0.39347551001512332, 
     "density": 0.7, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -523,7 +614,18 @@
   [
    {
     "total_lines": 221, 
-    "deg_assort_coeff": -0.44652896216284438, 
+    "closeness_vitality": {
+     "Boy": 50.0, 
+     "KING HENRY VIII": 130.0, 
+     "GARDINER": 84.0, 
+     "Gentleman": 34.0, 
+     "LOVELL": 102.0, 
+     "DENNY": 30.0, 
+     "CRANMER": 36.0, 
+     "SUFFOLK": 36.0, 
+     "Old Lady": 34.0
+    }, 
+    "deg_assort_coeff": -0.44652896216284521, 
     "density": 0.2777777777777778, 
     "scene": "1", 
     "total_degrees": 10, 
@@ -582,7 +684,13 @@
    }, 
    {
     "total_lines": 46, 
-    "deg_assort_coeff": -0.40740740740741083, 
+    "closeness_vitality": {
+     "Keeper": 12.0, 
+     "DOCTOR BUTTS": 18.0, 
+     "CRANMER": 18.0, 
+     "KING HENRY VIII": 12.0
+    }, 
+    "deg_assort_coeff": -0.40740740740740755, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -616,7 +724,20 @@
    }, 
    {
     "total_lines": 216, 
-    "deg_assort_coeff": 0.0080478270866881033, 
+    "closeness_vitality": {
+     "SURREY": 40.0, 
+     "All": 38.0, 
+     "KING HENRY VIII": 30.0, 
+     "NORFOLK": 34.0, 
+     "Chancellor": 22.0, 
+     "GARDINER": 20.0, 
+     "SUFFOLK": 26.0, 
+     "CRANMER": 18.0, 
+     "Keeper": 38.0, 
+     "CROMWELL": 38.0, 
+     "Chamberlain": 44.0
+    }, 
+    "deg_assort_coeff": 0.0080478270866867051, 
     "density": 0.38181818181818183, 
     "scene": "3", 
     "total_degrees": 21, 
@@ -685,7 +806,12 @@
    }, 
    {
     "total_lines": 99, 
-    "deg_assort_coeff": -0.52631578947368474, 
+    "closeness_vitality": {
+     "Chamberlain": 6.0, 
+     "Porter": 8.0, 
+     "Man": 6.0
+    }, 
+    "deg_assort_coeff": -0.52631578947368463, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -714,6 +840,11 @@
    }, 
    {
     "total_lines": 101, 
+    "closeness_vitality": {
+     "Garter": 6.0, 
+     "KING HENRY VIII": 6.0, 
+     "CRANMER": 8.0
+    }, 
     "deg_assort_coeff": -0.43859649122807015, 
     "density": 0.6666666666666666, 
     "scene": "5", 

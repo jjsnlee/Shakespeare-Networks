@@ -4,7 +4,15 @@
   [
    {
     "total_lines": 306, 
-    "deg_assort_coeff": -0.28792742498255436, 
+    "closeness_vitality": {
+     "DULL": 12.0, 
+     "DUMAIN": 14.0, 
+     "COSTARD": 14.0, 
+     "FERDINAND": 10.0, 
+     "BIRON": 10.0, 
+     "LONGAVILLE": 12.0
+    }, 
+    "deg_assort_coeff": -0.28792742498255453, 
     "density": 0.8, 
     "scene": "1", 
     "total_degrees": 12, 
@@ -48,6 +56,14 @@
    }, 
    {
     "total_lines": 174, 
+    "closeness_vitality": {
+     "MOTH": 30.0, 
+     "DON ADRIANO DE ARMADO": 10.0, 
+     "ARMADO": 20.0, 
+     "JAQUENETTA": 18.0, 
+     "COSTARD": 16.0, 
+     "DULL": 14.0
+    }, 
     "deg_assort_coeff": -0.50153566147195994, 
     "density": 0.5333333333333333, 
     "scene": "2", 
@@ -94,7 +110,19 @@
   [
    {
     "total_lines": 278, 
-    "deg_assort_coeff": -0.29896013864818494, 
+    "closeness_vitality": {
+     "First Lord": 38.0, 
+     "PRINCESS": 56.0, 
+     "BOYET": 6.0, 
+     "KATHARINE": 36.0, 
+     "ROSALINE": 26.0, 
+     "DUMAIN": 34.0, 
+     "FERDINAND": 30.0, 
+     "MARIA": 30.0, 
+     "BIRON": 26.0, 
+     "LONGAVILLE": 36.0
+    }, 
+    "deg_assort_coeff": -0.29896013864817989, 
     "density": 0.4222222222222222, 
     "scene": "1", 
     "total_degrees": 19, 
@@ -160,6 +188,12 @@
   [
    {
     "total_lines": 205, 
+    "closeness_vitality": {
+     "MOTH": 8.0, 
+     "DON ADRIANO DE ARMADO": 8.0, 
+     "BIRON": 10.0, 
+     "COSTARD": 14.0
+    }, 
     "deg_assort_coeff": 0.18467904917717257, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -196,6 +230,14 @@
   [
    {
     "total_lines": 169, 
+    "closeness_vitality": {
+     "Forester": 22.0, 
+     "ROSALINE": 18.0, 
+     "BOYET": 8.0, 
+     "COSTARD": 14.0, 
+     "PRINCESS": 34.0, 
+     "MARIA": 16.0
+    }, 
     "deg_assort_coeff": -0.16437856882517313, 
     "density": 0.5333333333333333, 
     "scene": "1", 
@@ -240,7 +282,14 @@
    }, 
    {
     "total_lines": 176, 
-    "deg_assort_coeff": -0.35632815720764122, 
+    "closeness_vitality": {
+     "JAQUENETTA": 12.0, 
+     "HOLOFERNES": 6.0, 
+     "SIR NATHANIEL": 10.0, 
+     "DULL": 12.0, 
+     "COSTARD": 10.0
+    }, 
+    "deg_assort_coeff": -0.35632815720764016, 
     "density": 0.7, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -279,7 +328,15 @@
    }, 
    {
     "total_lines": 412, 
-    "deg_assort_coeff": -0.62554941159790045, 
+    "closeness_vitality": {
+     "DUMAIN": 14.0, 
+     "JAQUENETTA": 16.0, 
+     "COSTARD": 16.0, 
+     "FERDINAND": 10.0, 
+     "BIRON": 10.0, 
+     "LONGAVILLE": 14.0
+    }, 
+    "deg_assort_coeff": -0.62554941159790156, 
     "density": 0.6666666666666666, 
     "scene": "3", 
     "total_degrees": 10, 
@@ -325,7 +382,15 @@
   [
    {
     "total_lines": 146, 
-    "deg_assort_coeff": -0.6504972291809008, 
+    "closeness_vitality": {
+     "MOTH": 14.0, 
+     "DON ADRIANO DE ARMADO": 16.0, 
+     "COSTARD": 16.0, 
+     "HOLOFERNES": 38.0, 
+     "SIR NATHANIEL": 18.0, 
+     "DULL": 18.0
+    }, 
+    "deg_assort_coeff": -0.65049722918089969, 
     "density": 0.4666666666666667, 
     "scene": "1", 
     "total_degrees": 7, 
@@ -369,7 +434,24 @@
    }, 
    {
     "total_lines": 989, 
-    "deg_assort_coeff": -0.25612232267843776, 
+    "closeness_vitality": {
+     "MOTH": 48.0, 
+     "MARIA": 42.0, 
+     "PRINCESS": 34.0, 
+     "BOYET": 28.0, 
+     "DON ADRIANO DE ARMADO": 40.0, 
+     "MERCADE": 50.0, 
+     "ROSALINE": 42.0, 
+     "KATHARINE": 44.0, 
+     "COSTARD": 42.0, 
+     "DUMAIN": 34.0, 
+     "HOLOFERNES": 48.0, 
+     "FERDINAND": 40.0, 
+     "SIR NATHANIEL": 50.0, 
+     "BIRON": 30.0, 
+     "LONGAVILLE": 40.0
+    }, 
+    "deg_assort_coeff": -0.25612232267843082, 
     "density": 0.5523809523809524, 
     "scene": "2", 
     "total_degrees": 58, 

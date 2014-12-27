@@ -4,7 +4,17 @@
   [
    {
     "total_lines": 300, 
-    "deg_assort_coeff": 0.2184920523488226, 
+    "closeness_vitality": {
+     "HERO": 26.0, 
+     "BEATRICE": 20.0, 
+     "CLAUDIO": 28.0, 
+     "LEONATO": 40.0, 
+     "Messenger": 20.0, 
+     "DON JOHN": 28.0, 
+     "BENEDICK": 20.0, 
+     "DON PEDRO": 16.0
+    }, 
+    "deg_assort_coeff": 0.21849205234882402, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 14, 
@@ -58,6 +68,10 @@
    }, 
    {
     "total_lines": 26, 
+    "closeness_vitality": {
+     "LEONATO": 2.0, 
+     "ANTONIO": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -82,6 +96,11 @@
    }, 
    {
     "total_lines": 68, 
+    "closeness_vitality": {
+     "BORACHIO": 6.0, 
+     "CONRADE": 6.0, 
+     "DON JOHN": 8.0
+    }, 
     "deg_assort_coeff": -1.0, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -113,7 +132,21 @@
   [
    {
     "total_lines": 360, 
-    "deg_assort_coeff": -0.033127541032974626, 
+    "closeness_vitality": {
+     "URSULA": 36.0, 
+     "BORACHIO": 64.0, 
+     "HERO": 44.0, 
+     "BEATRICE": 4.0, 
+     "DON JOHN": 106.0, 
+     "ANTONIO": 42.0, 
+     "MARGARET": 64.0, 
+     "LEONATO": 40.0, 
+     "DON PEDRO": 18.0, 
+     "CLAUDIO": 36.0, 
+     "BENEDICK": 42.0, 
+     "BALTHASAR": 106.0
+    }, 
+    "deg_assort_coeff": -0.033127541032976708, 
     "density": 0.3181818181818182, 
     "scene": "1", 
     "total_degrees": 21, 
@@ -187,6 +220,10 @@
    }, 
    {
     "total_lines": 51, 
+    "closeness_vitality": {
+     "BORACHIO": 2.0, 
+     "DON JOHN": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -211,7 +248,16 @@
    }, 
    {
     "total_lines": 259, 
-    "deg_assort_coeff": 0.074170988153576339, 
+    "closeness_vitality": {
+     "Boy": 22.0, 
+     "BEATRICE": 22.0, 
+     "CLAUDIO": 18.0, 
+     "LEONATO": 18.0, 
+     "DON PEDRO": 16.0, 
+     "BALTHASAR": 20.0, 
+     "BENEDICK": 48.0
+    }, 
+    "deg_assort_coeff": 0.074170988153574924, 
     "density": 0.47619047619047616, 
     "scene": "3", 
     "total_degrees": 10, 
@@ -262,7 +308,13 @@
   [
    {
     "total_lines": 125, 
-    "deg_assort_coeff": -0.5975143403441685, 
+    "closeness_vitality": {
+     "MARGARET": 10.0, 
+     "URSULA": 10.0, 
+     "BEATRICE": 10.0, 
+     "HERO": 18.0
+    }, 
+    "deg_assort_coeff": -0.59751434034416795, 
     "density": 0.5, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -296,6 +348,13 @@
    }, 
    {
     "total_lines": 123, 
+    "closeness_vitality": {
+     "LEONATO": 10.0, 
+     "DON PEDRO": 8.0, 
+     "CLAUDIO": 8.0, 
+     "DON JOHN": 12.0, 
+     "BENEDICK": 10.0
+    }, 
     "deg_assort_coeff": -0.3517187803456982, 
     "density": 0.8, 
     "scene": "2", 
@@ -335,7 +394,16 @@
    }, 
    {
     "total_lines": 166, 
-    "deg_assort_coeff": -0.27127985303123137, 
+    "closeness_vitality": {
+     "DOGBERRY": 6.0, 
+     "VERGES": 22.0, 
+     "BORACHIO": 14.0, 
+     "Second Watchman": 18.0, 
+     "Watchman": 18.0, 
+     "CONRADE": 20.0, 
+     "First Watchman": 16.0
+    }, 
+    "deg_assort_coeff": -0.27127985303123042, 
     "density": 0.5714285714285714, 
     "scene": "3", 
     "total_degrees": 12, 
@@ -384,6 +452,12 @@
    }, 
    {
     "total_lines": 90, 
+    "closeness_vitality": {
+     "MARGARET": 6.0, 
+     "URSULA": 8.0, 
+     "BEATRICE": 8.0, 
+     "HERO": 6.0
+    }, 
     "deg_assort_coeff": -0.39477575160177447, 
     "density": 0.8333333333333334, 
     "scene": "4", 
@@ -418,6 +492,12 @@
    }, 
    {
     "total_lines": 61, 
+    "closeness_vitality": {
+     "VERGES": 8.0, 
+     "LEONATO": 14.0, 
+     "Messenger": 10.0, 
+     "DOGBERRY": 8.0
+    }, 
     "deg_assort_coeff": -0.4890593918726911, 
     "density": 0.6666666666666666, 
     "scene": "5", 
@@ -454,7 +534,17 @@
   [
    {
     "total_lines": 339, 
-    "deg_assort_coeff": -0.048838850253861636, 
+    "closeness_vitality": {
+     "HERO": 18.0, 
+     "BEATRICE": 20.0, 
+     "DON JOHN": 18.0, 
+     "LEONATO": 14.0, 
+     "DON PEDRO": 20.0, 
+     "CLAUDIO": 16.0, 
+     "BENEDICK": 16.0, 
+     "FRIAR FRANCIS": 18.0
+    }, 
+    "deg_assort_coeff": -0.048838850253863961, 
     "density": 0.75, 
     "scene": "1", 
     "total_degrees": 21, 
@@ -508,7 +598,17 @@
    }, 
    {
     "total_lines": 85, 
-    "deg_assort_coeff": -0.52044181943698764, 
+    "closeness_vitality": {
+     "DOGBERRY": 38.0, 
+     "Second Watchman": 24.0, 
+     "BORACHIO": 28.0, 
+     "VERGES": 22.0, 
+     "First Watchman": 24.0, 
+     "Sexton": 46.0, 
+     "Watchman": 30.0, 
+     "CONRADE": 26.0
+    }, 
+    "deg_assort_coeff": -0.52044181943698731, 
     "density": 0.39285714285714285, 
     "scene": "2", 
     "total_degrees": 11, 
@@ -564,6 +664,16 @@
   [
    {
     "total_lines": 342, 
+    "closeness_vitality": {
+     "DOGBERRY": 18.0, 
+     "BORACHIO": 22.0, 
+     "VERGES": 26.0, 
+     "CLAUDIO": 18.0, 
+     "ANTONIO": 22.0, 
+     "LEONATO": 14.0, 
+     "DON PEDRO": 14.0, 
+     "BENEDICK": 26.0
+    }, 
     "deg_assort_coeff": -0.2741655326540321, 
     "density": 0.5714285714285714, 
     "scene": "1", 
@@ -618,6 +728,12 @@
    }, 
    {
     "total_lines": 95, 
+    "closeness_vitality": {
+     "MARGARET": 10.0, 
+     "URSULA": 8.0, 
+     "BEATRICE": 8.0, 
+     "BENEDICK": 14.0
+    }, 
     "deg_assort_coeff": -0.58267716535433067, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -652,6 +768,11 @@
    }, 
    {
     "total_lines": 36, 
+    "closeness_vitality": {
+     "Lord": 6.0, 
+     "DON PEDRO": 6.0, 
+     "CLAUDIO": 8.0
+    }, 
     "deg_assort_coeff": -0.62500000000000122, 
     "density": 1.0, 
     "scene": "3", 
@@ -681,7 +802,18 @@
    }, 
    {
     "total_lines": 142, 
-    "deg_assort_coeff": -0.42568208815451108, 
+    "closeness_vitality": {
+     "HERO": 26.0, 
+     "BEATRICE": 28.0, 
+     "CLAUDIO": 22.0, 
+     "ANTONIO": 26.0, 
+     "LEONATO": 20.0, 
+     "DON PEDRO": 22.0, 
+     "FRIAR FRANCIS": 26.0, 
+     "BENEDICK": 42.0, 
+     "Messenger": 30.0
+    }, 
+    "deg_assort_coeff": -0.42568208815451258, 
     "density": 0.5, 
     "scene": "4", 
     "total_degrees": 18, 

@@ -4,6 +4,12 @@
   [
    {
     "total_lines": 197, 
+    "closeness_vitality": {
+     "MARCELLUS": 6.0, 
+     "HORATIO": 6.0, 
+     "BERNARDO": 6.0, 
+     "FRANCISCO": 6.0
+    }, 
     "deg_assort_coeff": -0.33333333333333409, 
     "density": 1.0, 
     "scene": "1", 
@@ -38,7 +44,18 @@
    }, 
    {
     "total_lines": 289, 
-    "deg_assort_coeff": -0.17835760453556487, 
+    "closeness_vitality": {
+     "MARCELLUS": 34.0, 
+     "All": 36.0, 
+     "HORATIO": 34.0, 
+     "LORD POLONIUS": 36.0, 
+     "LAERTES": 36.0, 
+     "HAMLET": 108.0, 
+     "KING CLAUDIUS": 112.0, 
+     "QUEEN GERTRUDE": 28.0, 
+     "CORNELIUS": 36.0
+    }, 
+    "deg_assort_coeff": -0.1783576045355651, 
     "density": 0.2777777777777778, 
     "scene": "2", 
     "total_degrees": 10, 
@@ -97,7 +114,12 @@
    }, 
    {
     "total_lines": 143, 
-    "deg_assort_coeff": -0.50000000000000355, 
+    "closeness_vitality": {
+     "OPHELIA": 4.0, 
+     "LAERTES": 4.0, 
+     "LORD POLONIUS": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999883, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -126,7 +148,12 @@
    }, 
    {
     "total_lines": 106, 
-    "deg_assort_coeff": -0.500000000000002, 
+    "closeness_vitality": {
+     "MARCELLUS": 4.0, 
+     "HORATIO": 4.0, 
+     "HAMLET": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999917, 
     "density": 1.0, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -155,7 +182,13 @@
    }, 
    {
     "total_lines": 220, 
-    "deg_assort_coeff": -0.29391691394658681, 
+    "closeness_vitality": {
+     "Ghost": 10.0, 
+     "MARCELLUS": 8.0, 
+     "HORATIO": 8.0, 
+     "HAMLET": 14.0
+    }, 
+    "deg_assort_coeff": -0.29391691394658737, 
     "density": 0.8333333333333334, 
     "scene": "5", 
     "total_degrees": 5, 
@@ -191,6 +224,11 @@
   [
    {
     "total_lines": 134, 
+    "closeness_vitality": {
+     "OPHELIA": 6.0, 
+     "LORD POLONIUS": 8.0, 
+     "REYNALDO": 6.0
+    }, 
     "deg_assort_coeff": -0.7168141592920354, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -220,7 +258,17 @@
    }, 
    {
     "total_lines": 639, 
-    "deg_assort_coeff": -0.095519694522866863, 
+    "closeness_vitality": {
+     "GUILDENSTERN": 20.0, 
+     "LORD POLONIUS": 12.0, 
+     "ROSENCRANTZ": 22.0, 
+     "HAMLET": 20.0, 
+     "VOLTIMAND": 32.0, 
+     "KING CLAUDIUS": 50.0, 
+     "QUEEN GERTRUDE": 20.0, 
+     "First Player": 26.0
+    }, 
+    "deg_assort_coeff": -0.095519694522866072, 
     "density": 0.5, 
     "scene": "2", 
     "total_degrees": 14, 
@@ -276,7 +324,16 @@
   [
    {
     "total_lines": 210, 
-    "deg_assort_coeff": 0.081632653061224345, 
+    "closeness_vitality": {
+     "GUILDENSTERN": 22.0, 
+     "LORD POLONIUS": 14.0, 
+     "ROSENCRANTZ": 14.0, 
+     "OPHELIA": 14.0, 
+     "HAMLET": 22.0, 
+     "KING CLAUDIUS": 16.0, 
+     "QUEEN GERTRUDE": 14.0
+    }, 
+    "deg_assort_coeff": 0.081632653061224456, 
     "density": 0.5714285714285714, 
     "scene": "1", 
     "total_degrees": 12, 
@@ -325,7 +382,23 @@
    }, 
    {
     "total_lines": 417, 
-    "deg_assort_coeff": -0.51732697818680018, 
+    "closeness_vitality": {
+     "GUILDENSTERN": 50.0, 
+     "LORD POLONIUS": 46.0, 
+     "ROSENCRANTZ": 48.0, 
+     "OPHELIA": 48.0, 
+     "HORATIO": 50.0, 
+     "All": 48.0, 
+     "HAMLET": 282.0, 
+     "KING CLAUDIUS": 46.0, 
+     "Player Queen": 48.0, 
+     "Prologue": 48.0, 
+     "QUEEN GERTRUDE": 46.0, 
+     "LUCIANUS": 50.0, 
+     "Player King": 48.0, 
+     "First Player": 50.0
+    }, 
+    "deg_assort_coeff": -0.51732697818679929, 
     "density": 0.2087912087912088, 
     "scene": "2", 
     "total_degrees": 19, 
@@ -409,6 +482,13 @@
    }, 
    {
     "total_lines": 110, 
+    "closeness_vitality": {
+     "GUILDENSTERN": 12.0, 
+     "KING CLAUDIUS": 20.0, 
+     "LORD POLONIUS": 12.0, 
+     "ROSENCRANTZ": 10.0, 
+     "HAMLET": 14.0
+    }, 
     "deg_assort_coeff": -0.68224299065420557, 
     "density": 0.6, 
     "scene": "3", 
@@ -448,6 +528,12 @@
    }, 
    {
     "total_lines": 244, 
+    "closeness_vitality": {
+     "QUEEN GERTRUDE": 8.0, 
+     "Ghost": 10.0, 
+     "LORD POLONIUS": 8.0, 
+     "HAMLET": 14.0
+    }, 
     "deg_assort_coeff": -0.61339262359403612, 
     "density": 0.6666666666666666, 
     "scene": "4", 
@@ -484,6 +570,10 @@
   [
    {
     "total_lines": 46, 
+    "closeness_vitality": {
+     "QUEEN GERTRUDE": 2.0, 
+     "KING CLAUDIUS": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -508,6 +598,11 @@
    }, 
    {
     "total_lines": 34, 
+    "closeness_vitality": {
+     "GUILDENSTERN": 6.0, 
+     "ROSENCRANTZ": 6.0, 
+     "HAMLET": 8.0
+    }, 
     "deg_assort_coeff": -0.47058823529411764, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -537,6 +632,11 @@
    }, 
    {
     "total_lines": 80, 
+    "closeness_vitality": {
+     "KING CLAUDIUS": 8.0, 
+     "ROSENCRANTZ": 6.0, 
+     "HAMLET": 6.0
+    }, 
     "deg_assort_coeff": -0.63295880149812733, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -566,7 +666,13 @@
    }, 
    {
     "total_lines": 73, 
-    "deg_assort_coeff": -0.66268350973028389, 
+    "closeness_vitality": {
+     "PRINCE FORTINBRAS": 8.0, 
+     "Captain": 6.0, 
+     "ROSENCRANTZ": 8.0, 
+     "HAMLET": 6.0
+    }, 
+    "deg_assort_coeff": -0.66268350973028411, 
     "density": 0.8333333333333334, 
     "scene": "4", 
     "total_degrees": 5, 
@@ -600,7 +706,16 @@
    }, 
    {
     "total_lines": 253, 
-    "deg_assort_coeff": 0.051659483964850927, 
+    "closeness_vitality": {
+     "Gentleman": 18.0, 
+     "HORATIO": 22.0, 
+     "OPHELIA": 18.0, 
+     "LAERTES": 16.0, 
+     "Danes": 22.0, 
+     "KING CLAUDIUS": 12.0, 
+     "QUEEN GERTRUDE": 10.0
+    }, 
+    "deg_assort_coeff": 0.051659483964851038, 
     "density": 0.5714285714285714, 
     "scene": "5", 
     "total_degrees": 12, 
@@ -649,6 +764,11 @@
    }, 
    {
     "total_lines": 36, 
+    "closeness_vitality": {
+     "Servant": 6.0, 
+     "First Sailor": 6.0, 
+     "HORATIO": 8.0
+    }, 
     "deg_assort_coeff": -0.81818181818181823, 
     "density": 0.6666666666666666, 
     "scene": "6", 
@@ -678,6 +798,12 @@
    }, 
    {
     "total_lines": 217, 
+    "closeness_vitality": {
+     "QUEEN GERTRUDE": 8.0, 
+     "KING CLAUDIUS": 14.0, 
+     "LAERTES": 8.0, 
+     "Messenger": 10.0
+    }, 
     "deg_assort_coeff": -0.5989633948817622, 
     "density": 0.6666666666666666, 
     "scene": "7", 
@@ -714,7 +840,18 @@
   [
    {
     "total_lines": 326, 
-    "deg_assort_coeff": 0.021578402784309655, 
+    "closeness_vitality": {
+     "All": 36.0, 
+     "Second Clown": 46.0, 
+     "LAERTES": 68.0, 
+     "HAMLET": 84.0, 
+     "KING CLAUDIUS": 32.0, 
+     "HORATIO": 32.0, 
+     "QUEEN GERTRUDE": 20.0, 
+     "First Priest": 42.0, 
+     "First Clown": 76.0
+    }, 
+    "deg_assort_coeff": 0.021578402784309985, 
     "density": 0.3055555555555556, 
     "scene": "1", 
     "total_degrees": 11, 
@@ -773,7 +910,19 @@
    }, 
    {
     "total_lines": 448, 
-    "deg_assort_coeff": -0.24487958227062442, 
+    "closeness_vitality": {
+     "All": 36.0, 
+     "HORATIO": 104.0, 
+     "First Ambassador": 42.0, 
+     "LAERTES": 32.0, 
+     "HAMLET": 46.0, 
+     "KING CLAUDIUS": 30.0, 
+     "OSRIC": 28.0, 
+     "QUEEN GERTRUDE": 34.0, 
+     "Lord": 38.0, 
+     "PRINCE FORTINBRAS": 42.0
+    }, 
+    "deg_assort_coeff": -0.24487958227062456, 
     "density": 0.37777777777777777, 
     "scene": "2", 
     "total_degrees": 17, 

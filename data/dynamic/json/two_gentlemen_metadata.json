@@ -4,6 +4,11 @@
   [
    {
     "total_lines": 148, 
+    "closeness_vitality": {
+     "PROTEUS": 8.0, 
+     "SPEED": 6.0, 
+     "VALENTINE": 6.0
+    }, 
     "deg_assort_coeff": -0.79973499905356804, 
     "density": 0.6666666666666666, 
     "scene": "1", 
@@ -33,6 +38,10 @@
    }, 
    {
     "total_lines": 151, 
+    "closeness_vitality": {
+     "LUCETTA": 2.0, 
+     "JULIA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "2", 
@@ -57,7 +66,12 @@
    }, 
    {
     "total_lines": 96, 
-    "deg_assort_coeff": -0.50000000000000178, 
+    "closeness_vitality": {
+     "ANTONIO": 4.0, 
+     "PROTEUS": 4.0, 
+     "PANTHINO": 4.0
+    }, 
+    "deg_assort_coeff": -0.5, 
     "density": 1.0, 
     "scene": "3", 
     "total_degrees": 3, 
@@ -88,7 +102,12 @@
   [
    {
     "total_lines": 165, 
-    "deg_assort_coeff": -0.50000000000000067, 
+    "closeness_vitality": {
+     "SILVIA": 4.0, 
+     "SPEED": 4.0, 
+     "VALENTINE": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999967, 
     "density": 1.0, 
     "scene": "1", 
     "total_degrees": 3, 
@@ -117,6 +136,11 @@
    }, 
    {
     "total_lines": 26, 
+    "closeness_vitality": {
+     "PROTEUS": 8.0, 
+     "JULIA": 6.0, 
+     "PANTHINO": 6.0
+    }, 
     "deg_assort_coeff": -0.66666666666666663, 
     "density": 0.6666666666666666, 
     "scene": "2", 
@@ -146,6 +170,10 @@
    }, 
    {
     "total_lines": 60, 
+    "closeness_vitality": {
+     "LAUNCE": 2.0, 
+     "PANTHINO": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -170,7 +198,15 @@
    }, 
    {
     "total_lines": 224, 
-    "deg_assort_coeff": -0.40246073505558339, 
+    "closeness_vitality": {
+     "DUKE": 16.0, 
+     "SILVIA": 10.0, 
+     "VALENTINE": 10.0, 
+     "PROTEUS": 14.0, 
+     "SPEED": 16.0, 
+     "THURIO": 14.0
+    }, 
+    "deg_assort_coeff": -0.40246073505558433, 
     "density": 0.6666666666666666, 
     "scene": "4", 
     "total_degrees": 10, 
@@ -214,6 +250,10 @@
    }, 
    {
     "total_lines": 51, 
+    "closeness_vitality": {
+     "LAUNCE": 2.0, 
+     "SPEED": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "5", 
@@ -238,6 +278,9 @@
    }, 
    {
     "total_lines": 44, 
+    "closeness_vitality": {
+     "PROTEUS": 0.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 0.0, 
     "scene": "6", 
@@ -257,6 +300,10 @@
    }, 
    {
     "total_lines": 91, 
+    "closeness_vitality": {
+     "LUCETTA": 2.0, 
+     "JULIA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "7", 
@@ -283,7 +330,14 @@
   [
    {
     "total_lines": 383, 
-    "deg_assort_coeff": 0.101672655185231, 
+    "closeness_vitality": {
+     "DUKE": 14.0, 
+     "LAUNCE": 24.0, 
+     "PROTEUS": 10.0, 
+     "SPEED": 16.0, 
+     "VALENTINE": 10.0
+    }, 
+    "deg_assort_coeff": 0.10167265518523148, 
     "density": 0.6, 
     "scene": "1", 
     "total_degrees": 6, 
@@ -322,7 +376,12 @@
    }, 
    {
     "total_lines": 100, 
-    "deg_assort_coeff": -0.50000000000000089, 
+    "closeness_vitality": {
+     "DUKE": 4.0, 
+     "PROTEUS": 4.0, 
+     "THURIO": 4.0
+    }, 
+    "deg_assort_coeff": -0.49999999999999983, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 3, 
@@ -353,7 +412,14 @@
   [
    {
     "total_lines": 77, 
-    "deg_assort_coeff": -0.20420603474550247, 
+    "closeness_vitality": {
+     "Third Outlaw": 8.0, 
+     "SPEED": 10.0, 
+     "Second Outlaw": 10.0, 
+     "First Outlaw": 8.0, 
+     "VALENTINE": 8.0
+    }, 
+    "deg_assort_coeff": -0.20420603474550475, 
     "density": 0.9, 
     "scene": "1", 
     "total_degrees": 9, 
@@ -392,7 +458,14 @@
    }, 
    {
     "total_lines": 149, 
-    "deg_assort_coeff": -0.28646798802224782, 
+    "closeness_vitality": {
+     "Host": 12.0, 
+     "PROTEUS": 8.0, 
+     "SILVIA": 12.0, 
+     "JULIA": 8.0, 
+     "THURIO": 12.0
+    }, 
+    "deg_assort_coeff": -0.28646798802224521, 
     "density": 0.7, 
     "scene": "2", 
     "total_degrees": 7, 
@@ -431,6 +504,10 @@
    }, 
    {
     "total_lines": 52, 
+    "closeness_vitality": {
+     "EGLAMOUR": 2.0, 
+     "SILVIA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "3", 
@@ -455,7 +532,13 @@
    }, 
    {
     "total_lines": 214, 
-    "deg_assort_coeff": 0.10731297282151842, 
+    "closeness_vitality": {
+     "LAUNCE": 12.0, 
+     "PROTEUS": 18.0, 
+     "SILVIA": 12.0, 
+     "JULIA": 18.0
+    }, 
+    "deg_assort_coeff": 0.10731297282151814, 
     "density": 0.5, 
     "scene": "4", 
     "total_degrees": 3, 
@@ -491,6 +574,10 @@
   [
    {
     "total_lines": 15, 
+    "closeness_vitality": {
+     "EGLAMOUR": 2.0, 
+     "SILVIA": 2.0
+    }, 
     "deg_assort_coeff": -1, 
     "density": 1.0, 
     "scene": "1", 
@@ -515,7 +602,13 @@
    }, 
    {
     "total_lines": 66, 
-    "deg_assort_coeff": -0.33333333333333365, 
+    "closeness_vitality": {
+     "DUKE": 6.0, 
+     "PROTEUS": 6.0, 
+     "JULIA": 6.0, 
+     "THURIO": 6.0
+    }, 
+    "deg_assort_coeff": -0.3333333333333337, 
     "density": 1.0, 
     "scene": "2", 
     "total_degrees": 6, 
@@ -549,6 +642,12 @@
    }, 
    {
     "total_lines": 16, 
+    "closeness_vitality": {
+     "SILVIA": 8.0, 
+     "Second Outlaw": 8.0, 
+     "First Outlaw": 14.0, 
+     "Third Outlaw": 10.0
+    }, 
     "deg_assort_coeff": -0.65765765765765771, 
     "density": 0.6666666666666666, 
     "scene": "3", 
@@ -583,7 +682,16 @@
    }, 
    {
     "total_lines": 185, 
-    "deg_assort_coeff": -0.23958432643722158, 
+    "closeness_vitality": {
+     "DUKE": 20.0, 
+     "SILVIA": 18.0, 
+     "JULIA": 16.0, 
+     "VALENTINE": 44.0, 
+     "Outlaws": 20.0, 
+     "PROTEUS": 18.0, 
+     "THURIO": 20.0
+    }, 
+    "deg_assort_coeff": -0.23958432643722047, 
     "density": 0.5238095238095238, 
     "scene": "4", 
     "total_degrees": 11, 
