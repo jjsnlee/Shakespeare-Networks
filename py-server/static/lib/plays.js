@@ -321,14 +321,8 @@ function createAllPlaysSplineChart(allPlaysData, containerName, isPlayActive, wh
 }
 
 function initDensityChart(scope, compile, allPlaysData, containerName) {
-//	var playAggrData = allPlaysData.map(function(playData) {
-//    if(!isPlayActive(playData.name))
-//      playData.visible = false;
-//    return playData;
-//  });
 	var allPlays = Object.keys(allPlaysData);
 	allPlays.sort();
-	
   var templ = '<div style="width:600px;overflow:none"><table border=1 cellpadding=1 cellspacing=1>'
 	$.each(allPlays, function(idx, playName) {
 		var play = allPlaysData[playName];
@@ -336,14 +330,38 @@ function initDensityChart(scope, compile, allPlaysData, containerName) {
 			templ += '<tr><td style="font-size:10pt">'+play.title+'</td>';
 			$.each(play.scenes, function(idx, scene) {
 				if(scene.total_degrees > 10) {
-					templ += '<td><img src="/' + scene.graph_img_f + '" height="23%" '+
+					templ += '<td><img src="/' + scene.graph_img_f + '" height="18%" '+
 						'ng-click="sceneOpen($event,\''+ playName+'\','+idx+')"/></td>';
 				}
 			});
 			templ += '</tr>';
 		}
   });
-  templ += '</table></div>'
+  templ += '</table></div>';
+	
+	/*
+	var col1 = col2 = '';
+  $.each(allPlays, function(idx, playName) {
+		var play = allPlaysData[playName];
+		if(scope.isPlayActive(playName)) {
+			col1 += '<tr height="120"><td style="font-size:10pt">'+play.title+'</td></tr>';
+			col2 += '<tr height="120">';
+			$.each(play.scenes, function(idx, scene) {
+				if(scene.total_degrees > 10) {
+					col2 += '<td><img src="/' + scene.graph_img_f + '" height="23%" '+
+						'ng-click="sceneOpen($event,\''+ playName+'\','+idx+')"/></td>';
+				}
+			});
+			col2 += '</tr>';
+		}
+  });
+  var templ = '<div style="overflow:none"><table border=0 cellpadding=0 cellspacing=0><tr valign="top"><td>';
+  templ += '<table border=1 cellpadding=1 cellspacing=1>'+col1+'</table>';
+  templ += '</td><td>';
+  templ += '<div style="width:600px;overflow:none"><table border=1 cellpadding=1 cellspacing=1>'+col2+'</table></div>';
+  templ += '</td></tr></table></div>';
+	*/
+  
 	//templ += '<div id="innerContainer"></div>'
 	$('div#'+containerName).html(compile(templ)(scope));
 }
@@ -448,6 +466,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
             sc_avg_clustering : scene.avg_clustering,
             sc_avg_shortest_path : scene.avg_shortest_path,
             sc_deg_assort_coeff : scene.deg_assort_coeff,
+            sc_closeness_vitality : scene.closeness_vitality,
             sc_density : scene.density,
             sc_location : scene.location,
             sc_graph_img_f : scene.graph_img_f  
@@ -517,6 +536,7 @@ function initDegreeChart(scope, compile, allPlaysData, containerName) {
 	      				
 	      				+ 'Avg Clustering:' + pt.sc_avg_clustering.toFixed(4) + '<br>'
 	      				+ 'Avg Shortest Path:' + pt.sc_avg_shortest_path.toFixed(4) + '<br>'
+	      				+ 'Closeness Vitality:' + pt.sc_closeness_vitality + '<br>'
 	      				+ 'Degree Assortativity Coefficient:' + pt.sc_deg_assort_coeff.toFixed(4) + '<br>'
 	      				+ 'Density:' + pt.sc_density.toFixed(4) + '<br>'
 	      				+ '<img src="/' + pt.sc_graph_img_f + '" height="23%"/>'  
