@@ -13,8 +13,10 @@ def view_imgs(req):
     img = req.path
     img = img.replace('/', '', 1)
     img = join(helper.get_dynamic_rootdir(), img)
+    print 'img:', img
     image_data = open(img, "rb").read()
-    return HttpResponse(image_data, mimetype="image/png")
+    return HttpResponse(image_data, content_type="image/png")
+    #return HttpResponse(image_data)
 
 def view_static(req):
     filepath = req.path
