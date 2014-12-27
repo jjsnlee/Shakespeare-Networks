@@ -1,6 +1,4 @@
-import plays_n_graphs
 import numpy as np
-import matplotlib.pyplot as plt
 import json, sys, os, re
 import logging
 import pandas as pd
@@ -31,7 +29,7 @@ def get_ts():
     return datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 
 def get_models_base_dir():
-    return join(helper.get_dynamic_rootdir(), 'lda')
+    return join(helper.get_dynamic_rootdir(), 'models')
 
 class ModelContext(object):
     def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=True, 
@@ -116,6 +114,8 @@ class LDAContext(object):
                         if docfreq == 1]
 
             dictionary.filter_tokens(stop_ids + once_ids) # remove stop words and words that appear only once
+
+            dictionary.filter_extremes(no_below=5, no_above=0.5)
             #dictionary.filter_tokens(stop_ids)
             dictionary.compactify()
             # MANDATORY! to trigger the id2token creation
@@ -205,7 +205,8 @@ class LDAContext(object):
 #     cluster2 = [j for i,j in zip(corpus_scores, doc_nms) if i[1][1] > threshold]
 #     cluster3 = [j for i,j in zip(corpus_scores, doc_nms) if i[2][1] > threshold]
 
-class _ModelResult(object):
+
+class ModelResult(object):
     def __init__(self, label, ctxt, model=None, init_model=None, ntopics=None, npasses=None):
         if model:
             self.model = model
@@ -214,23 +215,29 @@ class _ModelResult(object):
         self.label = label
         self.model_ctxt = ctxt
         self.__termite_data = None
+
     @property
     def term_topic_matrix(self):
         return self.model.components_
+
     @property
     def num_topics(self):
         return self.model.n_components
+
     @property
     def termite_data(self):
         if self.__termite_data is None:
             from shakespeare.clusters_termite import TermiteData
             self.__termite_data = TermiteData(self)
         return self.__termite_data
+
     def generate_viz(self):
         self.termite_data.data_for_client()
+
     @property
     def basedir(self):
         return join(get_models_base_dir(), self.label)
+
     def _ensure_basedir(self):
         #basedir = join(get_models_base_dir(), self.label)
         # http://stackoverflow.com/questions/273192/check-if-a-directory-exists-and-create-it-if-necessary
@@ -242,12 +249,14 @@ class _ModelResult(object):
         except OSError as exception:
             if exception.errno != errno.EEXIST:
                 raise
+
     def save(self):
         # save the classifier
         self._ensure_basedir()
         fname = join(self.basedir, 'classifier.pkl')
         _ = joblib.dump(self.model, fname, compress=9)
         self.model_ctxt.save_corpus(basedir=self.basedir)
+
     @classmethod
     def load(cls, label):
         basedir = join(get_models_base_dir(), label)
@@ -256,57 +265,25 @@ class _ModelResult(object):
         rslt = cls(label, ctxt, model=joblib.load(fname))
         assert rslt.model.components_.shape[1] == len(rslt.model_ctxt.get_terms()) 
         return rslt
+
     @property
     def docs_per_topic(self):
         pass
 
-# class RBMPipelineResult(_ModelResult):
-#     def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200):
-#         def init_model():
-#             from sklearn.neural_network import BernoulliRBM
-#             from sklearn import linear_model
-#             pass
-#         super(RBMPipelineResult, self).__init__(label, ctxt, model, init_model=init_model)
-        
-class RBMResult(_ModelResult):
-    def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200, verbose=True):
-        def init_model():
-            from sklearn.neural_network import BernoulliRBM
-            # learning_rate - highly recommended to tune this...
-            self.model = BernoulliRBM(n_components=ntopics,
-                                      random_state=0, 
-                                      n_iter=npasses,
-                                      verbose=verbose
-                                      )
-            self.model.fit(ctxt.corpus)
-        super(RBMResult, self).__init__(label, ctxt, model, init_model=init_model)
 
-class GMMResult(_ModelResult):
-    def __init__(self, label, ctxt, model=None, ntopics=10, npasses=200): 
-        def init_model():
-            from sklearn.mixture import GMM
-            self.model = GMM(n_components=ntopics, 
-                             #init=None, sparseness=None, 
-                             #beta=1, eta=0.1, tol=0.0001, max_iter=npasses, nls_max_iter=2000, 
-                             #random_state=None
-                             )
-            self.H = self.model.fit_transform(ctxt.corpus)
-        super(GMMResult, self).__init__(label, ctxt, model, init_model=init_model)
-#         self._docs_per_topic = None
-#         self._topics_per_doc = None
-
-class NMFResult(_ModelResult):
-    def __init__(self, label, ctxt, model=None, ntopics=10, npasses=200): 
+class NMFResult(ModelResult):
+    def __init__(self, label, ctxt, model=None, ntopics=10, npasses=200):
         def init_model():
             from sklearn.decomposition import NMF
-            self.model = NMF(n_components=ntopics, 
-                             init=None, sparseness=None, 
-                             beta=1, eta=0.1, tol=0.0001, max_iter=npasses, nls_max_iter=2000, 
+            self.model = NMF(n_components=ntopics,
+                             init=None, sparseness=None,
+                             beta=1, eta=0.1, tol=0.0001, max_iter=npasses, nls_max_iter=2000,
                              random_state=None)
             self.H = self.model.fit_transform(ctxt.corpus)
         super(NMFResult, self).__init__(label, ctxt, model, init_model=init_model)
         self._docs_per_topic = None
         self._topics_per_doc = None
+
     def save(self):
         super(NMFResult, self).save()
         fname = join(self.basedir, 'classifier_H.pkl')
@@ -318,6 +295,7 @@ class NMFResult(_ModelResult):
         fname = join(basedir, 'classifier_H.pkl')
         rslt.H = joblib.load(fname)
         return rslt
+
     @property
     def topics_per_doc(self):
         if self._topics_per_doc is None:
@@ -340,7 +318,43 @@ class NMFResult(_ModelResult):
             self._topics_per_doc = d2
         return self._docs_per_topic
 
-class AffinityPropagationResult(_ModelResult):
+
+# class RBMPipelineResult(_ModelResult):
+#     def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200):
+#         def init_model():
+#             from sklearn.neural_network import BernoulliRBM
+#             from sklearn import linear_model
+#             pass
+#         super(RBMPipelineResult, self).__init__(label, ctxt, model, init_model=init_model)
+# class RBMResult(ModelResult):
+#     def __init__(self, label, ctxt, model=None, ntopics=16, npasses=200, verbose=True):
+#         def init_model():
+#             from sklearn.neural_network import BernoulliRBM
+#             # learning_rate - highly recommended to tune this...
+#             self.model = BernoulliRBM(n_components=ntopics,
+#                                       random_state=0,
+#                                       n_iter=npasses,
+#                                       verbose=verbose
+#                                       )
+#             self.model.fit(ctxt.corpus)
+#         super(RBMResult, self).__init__(label, ctxt, model, init_model=init_model)
+
+class GMMResult(ModelResult):
+    def __init__(self, label, ctxt, model=None, ntopics=10, npasses=200): 
+        def init_model():
+            from sklearn.mixture import GMM
+            self.model = GMM(n_components=ntopics, 
+                             #init=None, sparseness=None, 
+                             #beta=1, eta=0.1, tol=0.0001, max_iter=npasses, nls_max_iter=2000, 
+                             #random_state=None
+                             )
+            self.H = self.model.fit_transform(ctxt.corpus)
+        super(GMMResult, self).__init__(label, ctxt, model, init_model=init_model)
+#         self._docs_per_topic = None
+#         self._topics_per_doc = None
+
+
+class AffinityPropagationResult(ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
         def init_model():
             from sklearn.covariance import GraphLassoCV
@@ -367,7 +381,8 @@ class AffinityPropagationResult(_ModelResult):
         # can do anything with Affinity Propagation
         super(AffinityPropagationResult, self).__init__(label, ctxt, model, init_model=init_model)
 
-class LDAResult(_ModelResult):
+
+class LDAResult(ModelResult):
     def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None, *model_params):
         def init_model():
             corpus = lda_ctxt.corpus 
@@ -445,9 +460,11 @@ class LDAResult(_ModelResult):
     def perplexity(self):
         return perplexity_score(join(self.basedir, 'gensim.log'))
 
+
 def top_terms(df, term):
     term_col = df[term]
     return term_col[term_col > 1e-6]
+
 
 def perplexity_score(logfile):
     ppx_scores = []
@@ -459,6 +476,7 @@ def perplexity_score(logfile):
                 ppx_scores.append(m.group(2))
         # -12.572 per-word bound, 6088.5 perplexity
     return ppx_scores
+
 
 CACHED_MODEL_RSLTS = {}
 def get_lda_rslt(label, reload_ctx=False, cls=None):

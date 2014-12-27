@@ -2,9 +2,9 @@ from shakespeare import clusters as sc
 from shakespeare import clusters_termite
 from shakespeare.clusters import LDAContext, LDAResult, get_lda_rslt
 import plays_n_graphs as png
-from pcibook import nmf, clusters
 from os.path import join
 import pandas as pd
+import numpy as np
 
 from datetime import datetime
 import time
@@ -60,19 +60,22 @@ def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=Tru
     
     # Need this to analyze the perplexity
     logger = logging.getLogger('gensim.models.ldamodel')
-    fh = logging.FileHandler(logfile)
-    fh.setLevel(logging.DEBUG)
-    fh.setFormatter(logging.Formatter('%(asctime)s : %(levelname)s : %(message)s'))
-    logger.addHandler(fh)
-    #logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    
-    lda_ctxt = LDAContext(doc_titles, docs_content, stopwds=_get_stopwords(), as_bow=as_bow)
-    #lda_ctxt.save_corpus()
-    
-    # Do this N number of times
-    lda_rslt = LDAResult(label, lda_ctxt, ntopics=ntopics, npasses=npasses)
-    lda_rslt.save()
-    fh.close()
+    try:
+        fh = logging.FileHandler(logfile)
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(logging.Formatter('%(asctime)s : %(levelname)s : %(message)s'))
+        logger.addHandler(fh)
+        #logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+        
+        lda_ctxt = LDAContext(doc_titles, docs_content, stopwds=_get_stopwords(), as_bow=as_bow)
+        #lda_ctxt.save_corpus()
+        
+        # Do this N number of times
+        lda_rslt = LDAResult(label, lda_ctxt, ntopics=ntopics, npasses=npasses)
+        lda_rslt.save()
+    finally:
+        logger.removeHandler(fh)
+        fh.close()
 
     return lda_rslt
 
@@ -103,6 +106,24 @@ def doNMF(ntopics=50, npasses=200):
     print 'Completed:', ended
     return model_rslt
 
+def doDBScan(by='Char'):
+    from sklearn import metrics, cluster
+    model_ctxt = create_model_ctxt(by=by)
+    X = model_ctxt.corpus
+    for r in np.arange(2, 20, 5):
+        #for n in range(5, 21, 15):
+        st = time.time()
+        db = cluster.DBSCAN(eps=r,
+                            #min_samples=n,
+                            algorithm='kd_tree')
+        db.fit(X)
+        end = time.time()
+
+        labels = db.labels_
+        silh_score = metrics.silhouette_score(X, labels, metric='euclidean')
+        print 'r: %s, sc: %s, took %s secs'  % (r, silh_score, end-st)
+
+
 def doRBM(ntopics=50, npasses=200, verbose=True):
     from clusters import RBMResult
     model_ctxt = create_model_ctxt(by='Char')
@@ -118,23 +139,11 @@ def doRBM(ntopics=50, npasses=200, verbose=True):
     print 'Completed:', ended
     return model_rslt
 
+
 def doAffProp(ctx='shakespeare', by='Char/Scene', ):
     from clusters import AffinityPropagationResult
     pass
 
-def perplexity_scores():
-    basedir = sc.get_models_base_dir()
-    rslts = {}
-    for d in os.listdir(basedir):
-        if d.startswith('.') or d=='old':
-            continue
-        try:
-            logfile = join(basedir, d, 'gensim.log')
-            rslts[d] = sc.perplexity_score(logfile)
-        except:
-            # some of these may not have the logs
-            pass
-    return rslts
 
 def _get_stopwords():
     from nltk.corpus import stopwords
@@ -372,6 +381,7 @@ def process_data(prc_ctx,
 #     return json.dumps(json_out, ensure_ascii=False)
 
 def doNMF2(prc_ctx):
+    from pcibook import nmf, clusters
     #-- NMF
     mat = process_data(prc_ctx, max_df=.8) # ngram data frame
     #mat = sc.process_data(prc_ctx, max_df=.8, raw=True) # ngram data frame

@@ -150,12 +150,13 @@ class CorpusDataJsonHandler:
         MODEL_KEYS = {
           'char-scene-bow-LDA-100-50'    : 'lda-char-scene-bow_2014-06-29_19.49.11_100_50',
           'char-scene-bow-LDA-50-200'    : 'lda-char-scene-bow_2014-08-30_14.32.36_50_200',
-
+          
           'char-scene-tfidf-LDA-50-50'   : 'lda-char-scene-tfidf_2014-08-24_23.04.15_50_50',
           'char-scene-tfidf-LDA-50-50-v2': 'lda-char-scene-tfidf_2014-08-26_00.43.50_50_50',
           'char-scene-tfidf-LDA-50-100'  : 'lda-char-scene-tfidf_2014-08-26_01.47.56_50_100',
           'char-scene-tfidf-LDA-50-200'  : 'lda-char-scene-tfidf_2014-08-29_23.00.09_50_200',
-          
+
+          'char-bow-LDA-20-100'          : 'lda-char-bow_2014-11-01_02.22.42_20_100',          
           'char-bow-LDA-50-200'          : 'lda-char-bow_2014-09-21_23.33.07_50_200',
           'char-bow-NMF-50-250'          : ('nmf-char-2014-09-20_02.06.43-50-250', clusters.NMFResult),
           'char-bow-NMF-50-200'          : ('nmf-char-2014-09-20_03.22.31-50-200', clusters.NMFResult),
@@ -231,16 +232,23 @@ class CorpusDataJsonHandler:
         char_lines = []
         prev = curr = None
         for cl in char.clean_lines:
-            if prev is None \
-                    or prev.act!=cl.act \
-                    or prev.scene!=cl.scene \
-                    or int(prev.lineno)+1!=int(cl.lineno):
-                curr = []
-                char_lines.append(curr)
-            li = str(cl)
-            curr.append(li)
-            prev = cl
+            try:
+                if prev is None \
+                        or prev.act!=cl.act \
+                        or prev.scene!=cl.scene \
+                        or int(prev.lineno)+1!=int(cl.lineno):
+                    curr = []
+                    char_lines.append(curr)
+                li = str(cl)
+                curr.append(li)
 
+            except Exception as e:
+                logger.error('Problem parsing [%s] [%s] [%s], [%s]', char_lines, prev, cl, cl.lineno)
+                li = '[Problem parsing: [%s] [%s]]' % (cl, cl.lineno)
+                curr.append(li)
+                #raise e
+            prev = cl
+                
         #print 'char_lines: ', char_lines
         #char_lines = char_lines.replace('france', '<yellow>france</yellow>')
         

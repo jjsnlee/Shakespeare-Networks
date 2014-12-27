@@ -2,14 +2,31 @@ import matplotlib.pyplot as plt
 import plays_n_graphs
 import numpy as np
 import pandas as pd
+import clusters as sc
+from os.path import join
+import os
 
-def plot_char_cnts(ctx):
-    fig, ax = plt.subplots()
+def close_plots(func):
+    def func_wrapper(*a, **k):
+        try:
+            func(*a, **k)
+        finally:
+            plt.close('all') 
+    return func_wrapper
+
+@close_plots
+def plot_char_wd_cnts(ctx, binwidth=1000, as_hist=True):
+    _fig, ax = plt.subplots()
     #plt.subplot(1, 1, 1)
-    idx = range(len(ctx.doc_contents))
     y = np.array([len(c) for c in ctx.doc_contents])
     y.sort()
-    ax.bar(idx, y, alpha=0.5)
+    
+    if as_hist:
+        ax.hist(y, bins=np.arange(min(y), max(y) + binwidth, binwidth))
+    else:
+        idx = range(len(ctx.doc_contents))
+        ax.bar(idx, y, alpha=0.5)
+    
     #plt.xticks(idx, x, rotation=70)
     plt.title(r'Words per Character')
     ax.grid(True)
@@ -19,6 +36,47 @@ def create_char_data(ctx):
     wds = pd.Series([len(c) for c in ctx.doc_contents], index=ctx.doc_names)
     return wds
 
+def distrib_of_terms(ctx):
+    corpus = ctx.corpus
+    wd_occurs = (corpus>0).sum()
+    chars = corpus.shape[0]
+    
+
+@close_plots
+def plot_perplexity_scores():
+    ppx_scores = _perplexity_scores()
+    fig, ax = plt.subplots()
+
+    for k,v in ppx_scores.iteritems():
+        v = map(float, v)
+        print k,v[-1]
+        #line,_ = plt.plot(v, label=k)
+        ax.plot(v, label=k)
+        #print line
+        #labels.append(k)
+        #lines.append(line)
+    ax.legend(loc=1,prop={'size':8})
+    plt.yscale('log')
+    #ax.legend(handles=lines, loc=3)
+    plt.title(r'Perplexity Scores')
+    ax.grid(True)
+    plt.show()
+
+def _perplexity_scores():
+    basedir = sc.get_models_base_dir()
+    rslts = {}
+    for d in os.listdir(basedir):
+        if d.startswith('.') or d=='old':
+            continue
+        try:
+            logfile = join(basedir, d, 'gensim.log')
+            rslts[d] = sc.perplexity_score(logfile)
+        except:
+            # some of these may not have the logs
+            pass
+    return rslts
+
+@close_plots
 def plot_cnt_distrib(cnts, cnt_min=5, cnt_max=100):
 #    import matplotlib.mlab as mlab
     
@@ -52,7 +110,7 @@ def plot_cnt_distrib(cnts, cnt_min=5, cnt_max=100):
     ax.grid(True)
     plt.show()
 
-
+@close_plots
 def plot_wd_cnts(mat, pct_min=0, pct_max=100, mincnt=10):
     """ Useful to see the top words """
     cnts = mat.sum()
