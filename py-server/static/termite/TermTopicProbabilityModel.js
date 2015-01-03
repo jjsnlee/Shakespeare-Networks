@@ -218,33 +218,37 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 	// Basically using the Object to replicate a Set, to get unique values
 	var termsToDisplay = _.object(original_termIndex, []);
 	var addlTerms = _.map(this.visibleTopTerms, function(t) {
-	   return _.object(t, []);
+		return _.object(t, []);
 	});
-	
+
 	termsToDisplay = _.reduce(addlTerms, function(memo, t) {
-	   return _.extend(memo, t)
+		return _.extend(memo, t)
 	}, termsToDisplay);
 
 	termsToDisplay = _.keys(termsToDisplay);
 
-  var subset = [];
-	// sort the terms
-	for ( var i = 0; i < termsToDisplay.length; i++ ){
-		var term = termsToDisplay[i];
-		if( chooseTerm( term ) ){
-			var topic = this.stateModel.get("doubleClickTopic");
-			if(topic > original_topicIndex.length) {
-			  topic = original_topicIndex.length-1;
+	var subset = [];
+	
+	// FIXME Need to test for cases where there is no topic selected
+	var topic = this.stateModel.get("doubleClickTopic");
+	if(topic) {
+		// sort the terms
+		for(var i=0; i<termsToDisplay.length; i++) {
+			var term = termsToDisplay[i];
+			if(chooseTerm( term ) ){
+				if(topic > original_topicIndex.length) {
+					topic = original_topicIndex.length-1;
+				}
+				
+				//console.log('The currently selected topic is: '+topic);
+				// Problem here when going from a larger dataset to a smaller one
+				
+				// Terms are going to be sorted by distinctiveness!
+				// Is this across the entire corpus?
+				subset.push( [term, 
+				    original_submatrix[topic][term]
+				        *this.termDistinctivenessMap[term]]);
 			}
-			
-			//console.log('The currently selected topic is: '+topic);
-			// Problem here when going from a larger dataset to a smaller one
-			
-	    // Terms are going to be sorted by distinctiveness!
-	    // Is this across the entire corpus?
-			subset.push( [term, 
-			    original_submatrix[topic][term]
-			        *this.termDistinctivenessMap[term]]);
 		}
 	}
 
@@ -265,7 +269,7 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 	});
 
 	// update model and state attributes
-  matrix = [];	
+	matrix = [];	
 	termIndex = []
 
 	for(var i=0; i<subset.length; i++){

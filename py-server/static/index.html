@@ -21,24 +21,24 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 <body ng-app="termiteTopicDisplay">
 <div id="pageFrame" ng-controller="msgCtrl">
 
-  <div id="pageControl">
-	  <div class="section group">
-	    <div class="col span_2_of_8">
-		    <select name="LDAModel" ng-model="LDAModel"
-		      ng-options="m for m in LDAModels"
-		      ng-change="changeModel()" style="width:280px">
-		    </select>
-	    </div>
-	    <div class="col span_1_of_8">
-        <button type="button" class="clearAll" ng-click="clearTopics()" style="width: 150px">
-            Clear all topic selections</button>
-      </div>
-      <div class="col span_5_of_8">
-        Currently showing
-        <div class="TotalTermsView" style="display:inline">25</div> total terms.
-	    </div>        
-	  </div>
-  </div>
+	<div id="pageControl">
+		<div class="section group">
+		  <div class="col span_2_of_8">
+		   <select name="LDAModel" ng-model="LDAModel"
+		     ng-options="m for m in LDAModels"
+		     ng-change="changeModel()" style="width:280px">
+		   </select>
+		  </div>
+		  <div class="col span_1_of_8">
+		     <button type="button" class="clearAll" ng-click="clearTopics()" style="width: 150px">
+		         Clear all topic selections</button>
+		   </div>
+		   <div class="col span_5_of_8">
+		     Currently showing
+		     <div class="TotalTermsView" style="display:inline">25</div> total terms.
+		  </div>        
+		</div>
+	</div>
     
   <div id="pageContent" ng-controller="contentCtrl">
 	  <div class="section group">
@@ -68,30 +68,32 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 		       <div ng-bind-html="docContent"></div>
 		      </div>
 		    </div>
-	  </div>
+	  	</div>
 
-    <div class="col span_5_of_8" align="right" 
-       style="vertical-align:top;height:800px;overflow-y:scroll;overflow-x:auto;">
-	    <!-- Frequent terms --> 
-	    <div class="col span_1_of_8" align="right">
-	        <div class="termFrequencyContainer"></div>
-	    </div>
-	    <div class="col span_4_of_8" align="left">
-	        <!-- Main matrix -->
-	        <div class="termTopicMatrixContainer"></div>
-	    </div>
-	  </div>
-  </div>
+			<div class="col span_5_of_8" align="right" 
+			   style="vertical-align:top;height:800px;overflow-y:scroll;overflow-x:auto;">
+			 <!-- Frequent terms --> 
+			 <div class="col span_1_of_8" align="right">
+			     <div class="termFrequencyContainer"></div>
+			 </div>
+			 <div class="col span_4_of_8" align="left">
+			     <!-- Main matrix -->
+			      <div class="termTopicMatrixContainer"></div>
+			  </div>
+			</div>
+		</div>
 
-  <div id="pageDetails">
-    <p>This visualization shows the topical distribution of words in a corpus.</p>
-    <p>The area of a circle is proportional to a word's frequency in a topic.</p>
-  </div>
+		<div id="pageDetails">
+		  <p>This visualization shows the topical distribution of words in a corpus.</p>
+		  <p>The area of a circle is proportional to a word's frequency in a topic.</p>
+		</div>
+		
+		<div id="pageFooter">
+		  Termite | Topic Model Visualization | Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group
+		  | http://termite.stanford.edu | Version 1.1
+		</div>
 
-  <div id="pageFooter">
-    Termite | Topic Model Visualization | Visualization by Jason Chuang, Ashley Jin, Stanford Vis Group
-    | http://termite.stanford.edu | Version 1.1
-  </div>
+	</div>
 
 </div>
 
