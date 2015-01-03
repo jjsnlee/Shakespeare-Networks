@@ -1,7 +1,8 @@
 from unittest import TestCase
 #from shakespeare import clusters as sc
-from shakespeare.clusters import TermiteData
-from shakespeare.clusters_runner import ClustersCtxt, process_data
+from shakespeare.clusters import ModelContext
+from shakespeare.clusters_termite import TermiteData
+from shakespeare.clusters_runner import ClustersCtxt, get_doc_content
 from shakespeare.plays_n_graphs import Line, Character
 import numpy as np
 #import pandas as pd
@@ -59,8 +60,11 @@ class ShakespeareClustersRunnerTest(TestCase):
     def test_process_data(self):
         play_ctx = self.create_test_play()
         prc_ctx = ClustersCtxt(play_ctx)
-        prc_ctx.preproc()
-        ngdf = process_data(prc_ctx, minlines=1, stopwords=set(['and']), min_df=1)
+        doc_titles, docs_content = get_doc_content(prc_ctx, 
+                                                   minlines=1)
+        model_ctx = ModelContext(doc_titles, docs_content,
+                                 min_df=1)
+        ngdf = model_ctx.corpus
         
         expected = ['Test Play', 'Test Play 2']
         self.assertTrue(len(ngdf.index)==len(expected) 
@@ -100,13 +104,11 @@ class ShakespeareClustersRunnerTest(TestCase):
         
         play_ctx = self.create_test_play(data_cllbk=data_cllbk)
         
-        prc_ctx = ClustersCtxt(play_ctx)
-        prc_ctx.preproc(by='Char')
+        prc_ctx = ClustersCtxt(play_ctx, by='Char')
         docs = set([repr(d) for d in prc_ctx.documents])
         self.assertEquals(docs, set(['Char A in Test Play', 'Char B in Test Play']))
         
-        prc_ctx = ClustersCtxt(play_ctx)
-        prc_ctx.preproc(by='Char/Scene')
+        prc_ctx = ClustersCtxt(play_ctx, by='Char/Scene')
         docs = set([repr(d) for d in prc_ctx.documents])
         
         expected = set([
@@ -117,7 +119,12 @@ class ShakespeareClustersRunnerTest(TestCase):
         ])
         
         self.assertEquals(docs, expected)
-        ngdf = process_data(prc_ctx, minlines=1, stopwords=set(['and']), min_df=1)
+        
+        doc_titles, docs_content = get_doc_content(prc_ctx, 
+                                                   minlines=1)
+        model_ctx = ModelContext(doc_titles, docs_content,
+                                 min_df=1)
+        ngdf = model_ctx.corpus
         print ngdf
 
         actual_docs = set(ngdf.index.tolist())

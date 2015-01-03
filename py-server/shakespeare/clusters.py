@@ -20,7 +20,7 @@ rootdir = helper.get_root_dir()
 if join(rootdir, 'py-external') not in sys.path:
     sys.path.append(join(rootdir, 'py-external'))
 
-from pcibook import nmf
+#from pcibook import nmf
 
 from datetime import datetime
 import time
@@ -32,7 +32,8 @@ def get_models_base_dir():
     return join(helper.get_dynamic_rootdir(), 'models')
 
 class ModelContext(object):
-    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=True, 
+    def __init__(self, doc_nms, doc_contents, 
+                 from_cache=None, stopwds=None, as_bow=True, 
                  min_df=2, # in at least 2 documents
                  max_df=1.0
                  ):

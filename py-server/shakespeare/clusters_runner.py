@@ -22,13 +22,7 @@ def main(label=None, train_new=False):
     maybe:
         - reduce the sample size by removing characters with x # of lines
     """
-    #import shakespeare.clusters as sc
-    #import shakespeare.clusters_runner as scr
     if train_new:
-#         play_ctx = png.get_plays_ctx('shakespeare')
-#         prc_ctx = ClustersCtxt(play_ctx)
-#         prc_ctx.preproc(by='Char/Scene') # by='Char'
-#         lda_rslt = doLDA(prc_ctx)
         lda_rslt = doLDA(label, ntopics=50, npasses=50)
     else:
         #lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
@@ -45,9 +39,9 @@ def main(label=None, train_new=False):
 
 def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=True):
     play_ctx = png.get_plays_ctx(ctx)
-    prc_ctx = ClustersCtxt(play_ctx)
-    prc_ctx.preproc(by=by) # by='Char'
-    doc_titles, docs_content = get_doc_content(prc_ctx)
+    prc_ctx = ClustersCtxt(play_ctx, by=by)
+    #prc_ctx.preproc(by=by) # by='Char'
+    doc_titles, docs_content = prc_ctx.get_doc_content()
 
     t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
     baselabel = 'char' if by=='Char' else 'char-scene'
@@ -88,9 +82,8 @@ from clusters import ModelContext
 def create_model_ctxt(ctx='shakespeare', by='Char'):
     # by='Char', 'Char/Scene'
     play_ctx = png.get_plays_ctx(ctx)
-    prc_ctx = ClustersCtxt(play_ctx)
-    prc_ctx.preproc(by=by) # by='Char'
-    doc_titles, docs_content = get_doc_content(prc_ctx)
+    prc_ctx = ClustersCtxt(play_ctx, by=by)
+    doc_titles, docs_content = prc_ctx.get_doc_content()
     ctxt = ModelContext(doc_titles, docs_content, stopwds=_get_stopwords())
     return ctxt
 
@@ -123,7 +116,6 @@ def doDBScan(by='Char'):
         silh_score = metrics.silhouette_score(X, labels, metric='euclidean')
         print 'r: %s, sc: %s, took %s secs'  % (r, silh_score, end-st)
 
-
 def doRBM(ntopics=50, npasses=200, verbose=True):
     from clusters import RBMResult
     model_ctxt = create_model_ctxt(by='Char')
@@ -139,11 +131,9 @@ def doRBM(ntopics=50, npasses=200, verbose=True):
     print 'Completed:', ended
     return model_rslt
 
-
 def doAffProp(ctx='shakespeare', by='Char/Scene', ):
-    from clusters import AffinityPropagationResult
+    #from clusters import AffinityPropagationResult
     pass
-
 
 def _get_stopwords():
     from nltk.corpus import stopwords
@@ -167,51 +157,77 @@ def _get_stopwords():
     stopwds = stopwds.union(addl_stopwds)
     return stopwds
 
+class ClustersCtxtI:
+    @property
+    def documents(self):
+        pass
+
+class EEBOClustersCtxt(object):
+    def __init__(self):
+        self._documents = None
+        self.basedir = '/home/jason/Projects/RenaissanceNLP/data/Global Renaissance/raw'
+    @property
+    def documents(self):
+        pass
+    def get_doc_content(self, minlines=10):
+        doc_titles   = []
+        docs_content = []
+        return doc_titles, docs_content
+
 class ClustersCtxt(object):
-    def __init__(self, play_ctx):
+    def __init__(self, play_ctx, by='Play'):
         from plays_n_graphs import RootPlayCtx
         assert(isinstance(play_ctx, RootPlayCtx))
-        
-        chars_per_play = {}
-        for play_alias in play_ctx.map_by_alias:
-            p = play_ctx.get_play(play_alias)
-            chars_per_play[play_alias] = set(p.characters.keys())
-        
         self.plays = play_ctx.play_details
         self.reset()
-        self.chars_per_play = chars_per_play
-        self.documents = [] # plays, characters, etc
+        self._documents = None # plays, characters, etc
+        self.by = by
         # remove documents: scenes/characters with very few lines
         #self.min_lines_per_doc = 10
+
+#     @property  
+#     def chars_per_play(self):
+#         if self._chars_per_play is None:
+#             chars_per_play = {}
+#             for play_alias in play_ctx.map_by_alias:
+#                 p = play_ctx.get_play(play_alias)
+#                 chars_per_play[play_alias] = set(p.characters.keys())
+#             self._chars_per_play = chars_per_play 
+#         return self._chars_per_play
 
     def reset(self):
         self.pruned_characters = {}
         self.pruned_max_terms = []
 
-    def preproc(self, plays_to_filter=None, by='Play'):
+    @property
+    def documents(self):
+        if self._documents is None:
+            self._preproc()
+        return self._documents
+
+    def _preproc(self, plays_to_filter=None):
         """
         get all the characters, the key should be name and play
         then all their lines, and relationships?
         it could be an interesting game of clustering
         """
-        
-        assert(by in ['Play', 'Char', 'Char/Scene'])
+        assert(self.by in ['Play', 'Char', 'Char/Scene'])
         plays = self.plays.values()
         if plays_to_filter:
             plays_to_filter = set(plays_to_filter)
             plays = [k for k in plays if k.title in plays_to_filter]
         self.reset()
         
-        if by == 'Play':
-            self.documents = plays
+        if self.by == 'Play':
+            self._documents = plays
         
-        elif by == 'Char':
+        elif self.by == 'Char':
             clines = []
             for p in plays:
                 clines.extend(p.characters.values())
-            self.documents = clines
+            self._documents = clines
         
-        elif by == 'Char/Scene':
+        elif self.by == 'Char/Scene':
             from plays_n_graphs import Character
             clines = []
             for p in plays:
@@ -226,42 +242,42 @@ class ClustersCtxt(object):
                         artif_char = Character(char_name, c.play)
                         artif_char._cleaned_lines = char_lines[k] 
                         clines.append(artif_char)
-            self.documents = clines
-        
-def get_character_names(prc_ctx):
-    #name_d = helper.init_name_dict()
-    all_c_in_play = set()
-    for play_name in prc_ctx.plays.keys():
-        # Only characters in ALL CAPS are considered major, do not 
-        # include minor characters in the list of stopwords.
-        # There may be minor characters in the play
-        # such as "Lord" in Hamlet. Do not want those terms to be removed. 
-        c_in_play = prc_ctx.chars_per_play[play_name]
-        c_in_play = set([c.lower() for c in c_in_play if c.isupper()])
-        for c in c_in_play:
-            v = prc_ctx.pruned_characters.setdefault(c, set())
-            v.add(play_name)
-        all_c_in_play.update(c_in_play)
-    return all_c_in_play
+            self._documents = clines
 
-def get_doc_content(prc_ctx, minlines=10):
-    doc_titles   = []
-    docs_content = []
-    for doc in prc_ctx.documents:
-        lines = doc.clean_lines
-        # remove documents: scenes/characters with very few lines
-        if len(lines) < minlines:
-            logger.info('Skipping [%s] since it had too few lines.', str(doc))
-            continue
-        lines = ' '.join([li.spoken_line for li in lines])
-        lines = lines.replace('--', ' ') # for now just replace these...
-        #print lines+"|"
-        lines = lines.lower()
-        docs_content.append(lines)
-        doc_titles.append(str(doc))
-    return doc_titles, docs_content
+    def get_doc_content(self, minlines=10):
+        doc_titles   = []
+        docs_content = []
+        for doc in self.documents:
+            lines = doc.clean_lines
+            # remove documents: scenes/characters with very few lines
+            if len(lines) < minlines:
+                logger.info('Skipping [%s] since it had too few lines.', str(doc))
+                continue
+            lines = ' '.join([li.spoken_line for li in lines])
+            lines = lines.replace('--', ' ') # for now just replace these...
+            #print lines+"|"
+            lines = lines.lower()
+            docs_content.append(lines)
+            doc_titles.append(str(doc))
+        return doc_titles, docs_content
 
-def process_data(prc_ctx,
+# def get_character_names(prc_ctx):
+#     #name_d = helper.init_name_dict()
+#     all_c_in_play = set()
+#     for play_name in prc_ctx.plays.keys():
+#         # Only characters in ALL CAPS are considered major, do not 
+#         # include minor characters in the list of stopwords.
+#         # There may be minor characters in the play
+#         # such as "Lord" in Hamlet. Do not want those terms to be removed. 
+#         c_in_play = prc_ctx.chars_per_play[play_name]
+#         c_in_play = set([c.lower() for c in c_in_play if c.isupper()])
+#         for c in c_in_play:
+#             v = prc_ctx.pruned_characters.setdefault(c, set())
+#             v.add(play_name)
+#         all_c_in_play.update(c_in_play)
+#     return all_c_in_play
+
+def process_data_old(prc_ctx,
                  min_df=2, # in at least 2 documents
                  max_df=1.0,
                  minlines=10,
