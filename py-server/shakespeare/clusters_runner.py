@@ -162,24 +162,34 @@ class ClustersCtxtI:
     def documents(self):
         pass
 
+import json
 class EEBOClustersCtxt(object):
     def __init__(self):
         self._documents = None
         self.basedir = '/home/jason/Projects/RenaissanceNLP/data/Global Renaissance/raw'
     @property
     def documents(self):
-        pass
+        fname = join(self.basedir, 'all_entries_summary.json')
+        docs_json = json.loads(open(fname, 'r').read())
+        return docs_json.values()
+    
     def get_doc_content(self, minlines=10):
         #def iter_():
         doc_titles   = []
         docs_content = []
         for doc in self.documents:
+            
+            docpath = join(self.basedir, doc['group_dir'], doc['short_title']+'_content.json')
+            docjson = json.loads(open(docpath, 'r').read())
+            
+            content_lines = []
+            
             #lines = doc.clean_lines
             # remove documents: scenes/characters with very few lines
-            if len(lines) < minlines:
+            if len(content_lines) < minlines:
                 logger.info('Skipping [%s] since it had too few lines.', str(doc))
                 continue
-            lines = ' '.join([li.spoken_line for li in lines])
+            lines = ' '.join([li.spoken_line for li in content_lines])
 
             #print lines+"|"
             lines = lines.lower()
