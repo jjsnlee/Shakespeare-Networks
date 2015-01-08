@@ -166,36 +166,51 @@ import json
 class EEBOClustersCtxt(object):
     def __init__(self):
         self._documents = None
-        self.basedir = '/home/jason/Projects/RenaissanceNLP/data/Global Renaissance/raw'
+        self.basedir = join(helper.get_root_dir(), 
+                            '../RenaissanceNLP/data/Global Renaissance/raw/')
     @property
     def documents(self):
         fname = join(self.basedir, 'all_entries_summary.json')
         docs_json = json.loads(open(fname, 'r').read())
         return docs_json.values()
     
-    def get_doc_content(self, minlines=10):
-        #def iter_():
-        doc_titles   = []
-        docs_content = []
-        for doc in self.documents:
-            
-            docpath = join(self.basedir, doc['group_dir'], doc['short_title']+'_content.json')
-            docjson = json.loads(open(docpath, 'r').read())
-            
-            content_lines = []
-            
-            #lines = doc.clean_lines
-            # remove documents: scenes/characters with very few lines
-            if len(content_lines) < minlines:
-                logger.info('Skipping [%s] since it had too few lines.', str(doc))
-                continue
-            lines = ' '.join([li.spoken_line for li in content_lines])
+    def get_doc_content(self, minlines=10, getmax=None):
+        docs = self.documents
+        docs = docs[:getmax] if getmax else docs 
 
-            #print lines+"|"
-            lines = lines.lower()
-            docs_content.append(lines)
-            doc_titles.append(str(doc))
-            yield doc_titles, docs_content
+        def include_doc(d):
+            pass
+        def create_title(d):
+            return d['short_title']+''
+
+        docs_titles = [create_title(doc) for doc in docs if include_doc(doc)]
+        
+        def docs_content_iterator():
+            for doc in docs:
+                docpath = join(self.basedir, 
+                               doc['group_dir'], 
+                               doc['short_title']+'_content.json')
+                docjson = json.loads(open(docpath, 'r').read())
+                if not include_doc(doc):
+                    continue
+                for i, section in enumerate(docjson):
+                    section_nm = section['section']
+                    section_content = section['content']
+                    yield section_content
+
+        return docs_titles, docs_content_iterator
+
+#             #lines = doc.clean_lines
+#             # remove documents: scenes/characters with very few lines
+#             if len(content_lines) < minlines:
+#                 logger.info('Skipping [%s] since it had too few lines.', str(doc))
+#                 continue
+#             lines = ' '.join([li.spoken_line for li in content_lines])
+#             #print lines+"|"
+#             lines = lines.lower()
+#             docs_content.append(lines)
+#             doc_titles.append(str(doc))
+#             yield doc_titles, docs_content
         #return iter_
         
 class ClustersCtxt(object):
