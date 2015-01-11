@@ -39,7 +39,7 @@ def main(label=None, train_new=False):
 
 def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=True):
     play_ctx = png.get_plays_ctx(ctx)
-    prc_ctx = ClustersCtxt(play_ctx, by=by)
+    prc_ctx = DocumentsCtxt(play_ctx, by=by)
     #prc_ctx.preproc(by=by) # by='Char'
     doc_titles, docs_content = prc_ctx.get_doc_content()
 
@@ -82,7 +82,7 @@ from clusters import ModelContext
 def create_model_ctxt(ctx='shakespeare', by='Char'):
     # by='Char', 'Char/Scene'
     play_ctx = png.get_plays_ctx(ctx)
-    prc_ctx = ClustersCtxt(play_ctx, by=by)
+    prc_ctx = DocumentsCtxt(play_ctx, by=by)
     doc_titles, docs_content = prc_ctx.get_doc_content()
     ctxt = ModelContext(doc_titles, docs_content, stopwds=_get_stopwords())
     return ctxt
@@ -157,15 +157,15 @@ def _get_stopwords():
     stopwds = stopwds.union(addl_stopwds)
     return stopwds
 
-class ClustersCtxtI:
+class DocumentsCtxtI:
     @property
     def documents(self):
         pass
 
 import json
-class EEBOClustersCtxt(object):
+class EEBODocumentsCtxt(object):
     def __init__(self):
-        self._documents = None
+        self.pseudodoc_titles = None
         self.basedir = join(helper.get_root_dir(), 
                             '../RenaissanceNLP/data/Global Renaissance/raw/')
     @property
@@ -179,13 +179,14 @@ class EEBOClustersCtxt(object):
         docs = docs[:getmax] if getmax else docs 
 
         def include_doc(d):
-            pass
+            return True
         def create_title(d):
             return d['short_title']+''
 
         docs_titles = [create_title(doc) for doc in docs if include_doc(doc)]
         
         def docs_content_iterator():
+            self.pseudodoc_titles = []
             for doc in docs:
                 docpath = join(self.basedir, 
                                doc['group_dir'], 
@@ -195,25 +196,14 @@ class EEBOClustersCtxt(object):
                     continue
                 for i, section in enumerate(docjson):
                     section_nm = section['section']
-                    section_content = section['content']
+                    section_content = ' '.join(section['content'])
+                    print 'Yielding [%s] - [%s]' % (doc['short_title'], section_nm)
+                    self.pseudodoc_titles.append('%s - %s'%(doc['short_title'], section_nm))
                     yield section_content
 
         return docs_titles, docs_content_iterator
-
-#             #lines = doc.clean_lines
-#             # remove documents: scenes/characters with very few lines
-#             if len(content_lines) < minlines:
-#                 logger.info('Skipping [%s] since it had too few lines.', str(doc))
-#                 continue
-#             lines = ' '.join([li.spoken_line for li in content_lines])
-#             #print lines+"|"
-#             lines = lines.lower()
-#             docs_content.append(lines)
-#             doc_titles.append(str(doc))
-#             yield doc_titles, docs_content
-        #return iter_
         
-class ClustersCtxt(object):
+class DocumentsCtxt(object):
     def __init__(self, play_ctx, by='Play'):
         from plays_n_graphs import RootPlayCtx
         assert(isinstance(play_ctx, RootPlayCtx))
