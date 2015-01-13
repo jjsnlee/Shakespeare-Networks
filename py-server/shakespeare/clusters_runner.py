@@ -3,7 +3,7 @@ from shakespeare import clusters_termite
 from shakespeare.clusters import LDAContext, LDAResult, get_lda_rslt
 import plays_n_graphs as png
 from os.path import join
-import pandas as pd
+#import pandas as pd
 import numpy as np
 
 from datetime import datetime
@@ -164,6 +164,16 @@ class DocumentsCtxtI:
 
 import json
 class EEBODocumentsCtxt(object):
+    """
+    import shakespeare.clusters_runner as scr
+    import shakespeare.clusters as sc
+    c=scr.EEBODocumentsCtxt()
+    titles,itfn=c.get_doc_content(getmax=10)
+    ldac=sc.LDAContext(titles,itfn(),stopwds=scr._get_stopwords())
+    ldar=sc.LDAResult('eebo-test', ldac, ntopics=10, npasses=20)
+    ldar.save()
+    ldar.termite_data.data_for_client()    
+    """
     def __init__(self):
         self.pseudodoc_titles = None
         self.basedir = join(helper.get_root_dir(), 
@@ -194,7 +204,7 @@ class EEBODocumentsCtxt(object):
                 docjson = json.loads(open(docpath, 'r').read())
                 if not include_doc(doc):
                     continue
-                for i, section in enumerate(docjson):
+                for _i, section in enumerate(docjson):
                     section_nm = section['section']
                     section_content = ' '.join(section['content'])
                     print 'Yielding [%s] - [%s]' % (doc['short_title'], section_nm)
@@ -202,19 +212,20 @@ class EEBODocumentsCtxt(object):
                     yield section_content
 
         return docs_titles, docs_content_iterator
-        
+
 class DocumentsCtxt(object):
     def __init__(self, play_ctx, by='Play'):
         from plays_n_graphs import RootPlayCtx
         assert(isinstance(play_ctx, RootPlayCtx))
-        self.plays = play_ctx.play_details
-        self.reset()
+        #self.plays = play_ctx.play_details
+        self.plays = dict([(p, play_ctx.get_play(p)) for p in play_ctx.map_by_alias.keys()])
+        #self.reset()
         self._documents = None # plays, characters, etc
         self.by = by
         # remove documents: scenes/characters with very few lines
         #self.min_lines_per_doc = 10
 
-#     @property  
+#     @property
 #     def chars_per_play(self):
 #         if self._chars_per_play is None:
 #             chars_per_play = {}
@@ -224,9 +235,9 @@ class DocumentsCtxt(object):
 #             self._chars_per_play = chars_per_play 
 #         return self._chars_per_play
 
-    def reset(self):
-        self.pruned_characters = {}
-        self.pruned_max_terms = []
+#     def reset(self):
+#         self.pruned_characters = {}
+#         self.pruned_max_terms = []
 
     @property
     def documents(self):
@@ -245,7 +256,7 @@ class DocumentsCtxt(object):
         if plays_to_filter:
             plays_to_filter = set(plays_to_filter)
             plays = [k for k in plays if k.title in plays_to_filter]
-        self.reset()
+        #self.reset()
         
         if self.by == 'Play':
             self._documents = plays
@@ -306,125 +317,6 @@ class DocumentsCtxt(object):
 #         all_c_in_play.update(c_in_play)
 #     return all_c_in_play
 
-def process_data_old(prc_ctx,
-                 min_df=2, # in at least 2 documents
-                 max_df=1.0,
-                 minlines=10,
-                 raw = False,
-                 stopwords=_get_stopwords()
-                 ):
-    
-    all_c_in_play = get_character_names(prc_ctx)
-    
-    #import PorterStemmer
-    
-    doc_titles, docs_content = get_doc_content(prc_ctx, minlines=minlines)
-
-    from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-    if raw: 
-        vectorizer = CountVectorizer
-    else:
-        vectorizer = TfidfVectorizer
-        
-    # Do unigrams
-    cv = vectorizer(min_df=min_df,
-                    max_df=max_df,
-                    charset_error="ignore",
-                    stop_words=stopwords|all_c_in_play, 
-                    )
-    
-    cnts = cv.fit_transform(docs_content).toarray()
-    uni = pd.DataFrame(cnts, columns=cv.get_feature_names(), index=doc_titles)
-    ngdf = uni
-
-#    cv = CountVectorizer(min_df=2,  # in at least 2 documents
-#                         charset_error="ignore",
-#                         #stop_words=stopwds|c_in_play, 
-#                         ngram_range=(2, 3)
-#                         )
-#    cnts = cv.fit_transform(docs).toarray()
-#    ngs = pd.DataFrame(cnts, columns=cv.get_feature_names(), index=plays)
-#    # Filter ngrams which end with a stopword        
-#    keep = np.array([n.split(' ')[-1] not in stopwds for n in ngs.columns])
-#    ngs = ngs.T[keep]
-#    ngdf = pd.DataFrame.join(uni, ngs.T)
-    # Remove terms which show up frequently
-#    ngdf = ngdf.replace(0, float('Nan'))
-#    nzero_cnts = ngdf.count()
-#    rm_max = nzero_cnts > max_df*len(doc_titles)
-#    prc_ctx.pruned_max_terms = ngdf.columns[rm_max]
-#    ngdf = ngdf.T[rm_max==False]
-
-    prc_ctx.pruned_max_terms = cv.stop_words_
-    ngdf.fillna(0, inplace=True)
-    
-    # Transpose to have plays/documents on the index
-    # Keep as is to have the terms on the index
-    return ngdf
-
-#def prepare_json(lda, lda_ctxt):
-    #lda = LdaModel.load(dataset_nm)
-    #lda_ctxt = LDAContext.load_corpus()
-    #import pandas as pd
-    #df = pd.DataFrame(lda.state.sstats, columns=lda_ctxt.get_terms())
-    # N = topics
-    # T - top terms (~400)
-    # V - vocabulary
-    #ntopics = lda.num_topics
-    # topicIndex (1..N)
-    # topicMapping (1..N)
-    # termIndex (1..T)
-    # matrix (T x N)
-    #topic_mapping = range(ntopics)
-    #topic_index = map(lambda n: 'Topic %d' % n+1, topic_mapping) 
-#     term_index = None
-#     matrix = None
-# 
-#     # termOrderMap (1..T)
-#     # termRankMap (1..T)
-#     # termDistinctivenessMap (1..V?)
-#     # termSailiencyMap (1..V)
-#     term_order_map = None
-#     term_rank_map = None
-#     term_distinctiveness_map = None
-#     term_saliency_map = None
-#     
-#     # termFreqMap (1..V)
-#     term_frequency_map = None
-#     
-#     if which_json == 'seriated-parameters.json':
-#         json_out = \
-#         {
-#         'topicIndex'   : topic_index,
-#         'topicMapping' : topic_mapping,
-#         'termIndex'    : term_index,
-#         'matrix'       : matrix
-#         }
-#     elif which_json == 'filtered-parameters.json':
-#         json_out = \
-#         {
-#         'termOrderMap' : term_order_map,
-#         'termRankMap'  : term_rank_map,
-#         'termDistinctivenessMap' : term_distinctiveness_map,
-#         'termSailiencyMap'       : term_saliency_map 
-#         }
-#     elif which_json == 'global-term_freqs.json':
-#         # same as in the seriated-parameters.json
-#         # topicIndex (1..N)
-#         # topicMapping (1..N)
-#         # termIndex (1..T)
-#         # matrix (T x N)
-#         
-#         json_out = \
-#         {
-#         'topicIndex'   : topic_index,
-#         'topicMapping' : topic_mapping,
-#         'termIndex'    : term_index,
-#         'matrix'       : matrix,
-#         'termFreqMap'  : term_frequency_map
-#         }
-#     return json.dumps(json_out, ensure_ascii=False)
-
 def doNMF2(prc_ctx):
     from pcibook import nmf, clusters
     #-- NMF
@@ -441,7 +333,7 @@ def doNMF2(prc_ctx):
     tps, ptns = nmf.showfeatures(w, h, mat.index, mat.columns)
     nmf.showarticles(mat.index, tps, ptns)
     #-- 
-    runs = sc.runs_multi_nmf(mat=mat, nruns=5)
+    _runs = sc.runs_multi_nmf(mat=mat, nruns=5)
     #runs = sc.runs_lda(mat=mat, nruns=5)
     
 if (__name__=="__main__"):
