@@ -5,12 +5,17 @@ def get_root_dir():
     global _root_dir
     if _root_dir is None:
         full_currdir = os.path.abspath(os.path.curdir)
-        path_re = re.compile('^(.+)/py-server')
+        path_re = re.compile('^(.+)/(?:py-server|py-tests)')
         print full_currdir
         m = path_re.search(full_currdir)
-        if not m:
-            raise Exception('Cannot find the py-server directory in the path.')
-        _root_dir = m.group(1)
+        if m:
+            _root_dir = m.group(1)
+        else:
+            # This is really only for the sake of the unit tests
+            if os.path.exists(os.path.join(full_currdir, 'py-server')):
+                _root_dir = full_currdir
+            else:
+                raise Exception('Cannot find the py-server or py-tests directory in the path.')
         print 'Root Directory:', _root_dir
     return _root_dir
 

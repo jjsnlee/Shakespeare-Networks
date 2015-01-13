@@ -1,6 +1,10 @@
 from unittest import TestCase
-from shakespeare.plays_n_graphs import ShakespearePlayCtx, Play, Scene, _init_graphs
 import networkx as nx
+
+import os
+print 'os.path.curdir:', os.path.abspath(os.path.curdir)
+
+from shakespeare.plays_n_graphs import ShakespearePlayCtx, Play, Scene, _init_graphs
 
 nolines = lambda c: ['Line %i' % (i+1) for i in range(c)]
 
