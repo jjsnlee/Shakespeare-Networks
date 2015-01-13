@@ -13,19 +13,27 @@ class ShakespeareClustersTest(TestCase):
          'how now! how now! do you hear this? content.',
          'how now! how now! do you hear this? content.'
         ]
-        lda_ctx = sc.LDAContext(doc_nms, doc_content)
+        lda_ctx = sc.LDAContext(doc_nms, doc_content, terms_min=2)
         print 'lda_ctx:', lda_ctx.corpus
+        self.assertEquals(len(lda_ctx.corpus), 4)
+        self.assertEquals(len(lda_ctx.dictionary.token2id), 13)
+        # You is removed b/c it is in every sentence in the corpus 
+        self.assertTrue('you' not in lda_ctx.dictionary.token2id.keys())
+        self.assertEquals(set(lda_ctx.dictionary.token2id.keys()), 
+                          set('where is lord helicanus he can resolve how now do hear this content'.split()))
 
     def test_lda_results(self):
-#        from gensim.models.ldamodel import LdaModel
-        doc_nms = ['Doc 1', 'Doc 2'] 
-        doc_contents = ['Here are some contents', 'Another document\'s contents']
-        lda_ctxt = sc.LDAContext(doc_nms, doc_contents)
-#         corpus = lda_ctxt.corpus 
-#         dictionary = lda_ctxt.dictionary
+        doc_nms = ['Doc 1', 'Doc 2', 'Doc 3', 'Doc 4', 'Doc 5', 'Doc 6'] 
+        doc_contents = ['Here are some contents', 'Here are some contents', 
+                        'Another document\'s contents', 'Another document\'s contents', 
+                        'One more set of words.', 'One more set of words.']
+        lda_ctx = sc.LDAContext(doc_nms, doc_contents, terms_min=1)
+        self.assertEquals(len(lda_ctx.dictionary.token2id), 10)
         #lda = LdaModel(corpus, num_topics=2, id2word=dictionary.id2token, passes=2)
-        lda_rslt = sc.LDAResult('Some label', lda_ctxt, ntopics=2, npasses=2)
+        lda_rslt = sc.LDAResult('Some label', lda_ctx, ntopics=2, npasses=2)
         print 'docs_per_topic:', lda_rslt.docs_per_topic
+        df = lda_rslt.as_dataframe()
+        self.assertEquals(df.shape, (2, 10))
 
     def test_make_matrices(self):
         ngrams = [ 

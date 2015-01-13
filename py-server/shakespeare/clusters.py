@@ -96,7 +96,8 @@ class ModelContext(object):
         return ModelContext(doc_nms, doc_contents, from_cache=ctxjson, stopwds=stopwds, as_bow=as_bow)
 
 class LDAContext(object):
-    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=True):
+    def __init__(self, doc_nms, doc_contents, from_cache=None, stopwds=None, as_bow=True,
+                 terms_min=5, terms_max=0.5):
         self.doc_names = doc_nms
         self.doc_contents = doc_contents
         self.doc_contents_tokenized = [simple_preprocess(doc) for doc in doc_contents]
@@ -116,7 +117,7 @@ class LDAContext(object):
 
             dictionary.filter_tokens(stop_ids + once_ids) # remove stop words and words that appear only once
 
-            dictionary.filter_extremes(no_below=5, no_above=0.5)
+            dictionary.filter_extremes(no_below=terms_min, no_above=terms_max)
             #dictionary.filter_tokens(stop_ids)
             dictionary.compactify()
             # MANDATORY! to trigger the id2token creation
@@ -162,8 +163,8 @@ class LDAContext(object):
         {
          'corpus'       : self.corpus,
          'stopwords'    : list(self.stopwords),
-         'doc_titles'   : self.doc_names,
-         'doc_contents' : self.doc_contents
+         #'doc_titles'   : self.doc_names,
+         #'doc_contents' : self.doc_contents
         }
         
         json_rslt = json.dumps(data, ensure_ascii=False, #cls=PlayJSONMetadataEncoder, 
@@ -354,7 +355,6 @@ class GMMResult(ModelResult):
 #         self._docs_per_topic = None
 #         self._topics_per_doc = None
 
-
 class AffinityPropagationResult(ModelResult):
     def __init__(self, label, ctxt, model=None, ntopics=None, npasses=None):
         def init_model():
@@ -381,7 +381,6 @@ class AffinityPropagationResult(ModelResult):
             #n_labels = labels.max()
         # can do anything with Affinity Propagation
         super(AffinityPropagationResult, self).__init__(label, ctxt, model, init_model=init_model)
-
 
 class LDAResult(ModelResult):
     def __init__(self, label, lda_ctxt, lda=None, ntopics=None, npasses=None, *model_params):
@@ -461,11 +460,9 @@ class LDAResult(ModelResult):
     def perplexity(self):
         return perplexity_score(join(self.basedir, 'gensim.log'))
 
-
 def top_terms(df, term):
     term_col = df[term]
     return term_col[term_col > 1e-6]
-
 
 def perplexity_score(logfile):
     ppx_scores = []
@@ -477,7 +474,6 @@ def perplexity_score(logfile):
                 ppx_scores.append(m.group(2))
         # -12.572 per-word bound, 6088.5 perplexity
     return ppx_scores
-
 
 CACHED_MODEL_RSLTS = {}
 def get_lda_rslt(label, reload_ctx=False, cls=None):
@@ -618,7 +614,6 @@ def analyze_factors(mat, runs):
         tps, ptns = nmf.showfeatures(w, h, mat.index, mat.columns, out='output/features_%d.txt'%n)
         nmf.showarticles(mat.index, tps, ptns, out='output/articles_%d.txt'%n)
     # it would be good to be able to get the difference between different runs
-
 
 def make_matricesXXX(ngdf, min_cnt=2, max_threshold=1.0, ret_skipped=False):
     """ 
