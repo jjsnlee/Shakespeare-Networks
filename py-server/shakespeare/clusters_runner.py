@@ -18,212 +18,219 @@ logging.basicConfig(level=logging.DEBUG)
 # 2014-06-01 12:55:34.874782_20_50.lda
 
 def main(label=None, train_new=False):
-    """
-    maybe:
-        - reduce the sample size by removing characters with x # of lines
-    """
-    if train_new:
-        lda_rslt = doLDA(label, ntopics=50, npasses=50)
-    else:
-        #lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
-        # char_scene_2014-06-29 19.49.11.703618_100_50_lda
-        lda_key = '2014-05-13 00:50:36.652535_50_50.lda'
-        lda_rslt = get_lda_rslt(lda_key)
+	"""
+	maybe:
+	    - reduce the sample size by removing characters with x # of lines
+	"""
+	if train_new:
+		lda_rslt = doLDA(label, ntopics=50, npasses=50)
+	else:
+		#lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
+		# char_scene_2014-06-29 19.49.11.703618_100_50_lda
+		lda_key = '2014-05-13 00:50:36.652535_50_50.lda'
+		lda_rslt = get_lda_rslt(lda_key)
 
-    td = clusters_termite.TermiteData(lda_rslt)
-    #td.saliency
-    #td.similarity
-    #td.seriation
-    td.data_for_client()
-    return td
+	td = clusters_termite.TermiteData(lda_rslt)
+	#td.saliency
+	#td.similarity
+	#td.seriation
+	td.data_for_client()
+	return td
 
 def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=True):
-    play_ctx = png.get_plays_ctx(ctx)
-    prc_ctx = DocumentsCtxt(play_ctx, by=by)
-    #prc_ctx.preproc(by=by) # by='Char'
-    doc_titles, docs_content = prc_ctx.get_doc_content()
+	"""
+	import shakespeare.clusters_runner as scr
+	ldar=scr.doLDA(ntopics=10, npasses=20)
+	"""
+	
+	play_ctx = png.get_plays_ctx(ctx)
+	prc_ctx = DocumentsCtxt(play_ctx, by=by)
+	#prc_ctx.preproc(by=by) # by='Char'
+	doc_titles, docs_content = prc_ctx.get_doc_content()
+	
+	t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+	baselabel = 'char' if by=='Char' else 'char-scene'
+	baselabel += '-bow' if as_bow else '-tfidf'
+	
+	label = 'lda-%s_%s_%s_%s' % (baselabel, t, ntopics, npasses)
+	basedir = join(sc.get_models_base_dir(), label)
+	os.makedirs(basedir)
+	logfile = join(basedir, 'gensim.log')
+	
+	# Need this to analyze the perplexity
+	logger = logging.getLogger('gensim.models.ldamodel')
+	try:
+		fh = logging.FileHandler(logfile)
+		fh.setLevel(logging.DEBUG)
+		fh.setFormatter(logging.Formatter('%(asctime)s : %(levelname)s : %(message)s'))
+		logger.addHandler(fh)
+		#logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+		
+		lda_ctxt = LDAContext(doc_titles, docs_content, stopwds=_get_stopwords(), as_bow=as_bow)
+		#lda_ctxt.save_corpus()
+		
+		# Do this N number of times
+		lda_rslt = LDAResult(label, lda_ctxt, ntopics=ntopics, npasses=npasses)
+		lda_rslt.save()
+	finally:
+		logger.removeHandler(fh)
+		fh.close()
+	
+	return lda_rslt
 
-    t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-    baselabel = 'char' if by=='Char' else 'char-scene'
-    baselabel += '-bow' if as_bow else '-tfidf'
-    
-    label = 'lda-%s_%s_%s_%s' % (baselabel, t, ntopics, npasses)
-    basedir = join(sc.get_models_base_dir(), label)
-    os.makedirs(basedir)
-    logfile = join(basedir, 'gensim.log')
-    
-    # Need this to analyze the perplexity
-    logger = logging.getLogger('gensim.models.ldamodel')
-    try:
-        fh = logging.FileHandler(logfile)
-        fh.setLevel(logging.DEBUG)
-        fh.setFormatter(logging.Formatter('%(asctime)s : %(levelname)s : %(message)s'))
-        logger.addHandler(fh)
-        #logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-        
-        lda_ctxt = LDAContext(doc_titles, docs_content, stopwds=_get_stopwords(), as_bow=as_bow)
-        #lda_ctxt.save_corpus()
-        
-        # Do this N number of times
-        lda_rslt = LDAResult(label, lda_ctxt, ntopics=ntopics, npasses=npasses)
-        lda_rslt.save()
-    finally:
-        logger.removeHandler(fh)
-        fh.close()
-
-    return lda_rslt
-
-    #sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
+	#sc.print_lda_results(lda, lda_ctxt.corpus, doc_titles)
 #     doc_results = lda[corpus]
 #     from gensim.models.tfidfmodel import TfidfModel
 #     tfidf_model = TfidfModel( )
 
 from clusters import ModelContext
 def create_model_ctxt(ctx='shakespeare', by='Char'):
-    # by='Char', 'Char/Scene'
-    play_ctx = png.get_plays_ctx(ctx)
-    prc_ctx = DocumentsCtxt(play_ctx, by=by)
-    doc_titles, docs_content = prc_ctx.get_doc_content()
-    ctxt = ModelContext(doc_titles, docs_content, stopwds=_get_stopwords())
-    return ctxt
+	# by='Char', 'Char/Scene'
+	play_ctx = png.get_plays_ctx(ctx)
+	prc_ctx = DocumentsCtxt(play_ctx, by=by)
+	doc_titles, docs_content = prc_ctx.get_doc_content()
+	ctxt = ModelContext(doc_titles, docs_content, stopwds=_get_stopwords())
+	return ctxt
 
 def doNMF(ntopics=50, npasses=200):
-    from clusters import NMFResult
-    model_ctxt = create_model_ctxt(by='Char')
-    t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-    label = 'nmf-char-%s-%s-%s' % (t, ntopics, npasses)
-    print 'Label:', label
-    print 'Started', t
-    model_rslt = NMFResult(label, model_ctxt, ntopics=ntopics, npasses=npasses)
-    ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-    print 'Completed:', ended
-    return model_rslt
+	from clusters import NMFResult
+	model_ctxt = create_model_ctxt(by='Char')
+	t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+	label = 'nmf-char-%s-%s-%s' % (t, ntopics, npasses)
+	print 'Label:', label
+	print 'Started', t
+	model_rslt = NMFResult(label, model_ctxt, ntopics=ntopics, npasses=npasses)
+	ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+	print 'Completed:', ended
+	return model_rslt
 
 def doDBScan(by='Char'):
-    from sklearn import metrics, cluster
-    model_ctxt = create_model_ctxt(by=by)
-    X = model_ctxt.corpus
-    for r in np.arange(2, 20, 5):
-        #for n in range(5, 21, 15):
-        st = time.time()
-        db = cluster.DBSCAN(eps=r,
-                            #min_samples=n,
-                            algorithm='kd_tree')
-        db.fit(X)
-        end = time.time()
-
-        labels = db.labels_
-        silh_score = metrics.silhouette_score(X, labels, metric='euclidean')
-        print 'r: %s, sc: %s, took %s secs'  % (r, silh_score, end-st)
+	from sklearn import metrics, cluster
+	model_ctxt = create_model_ctxt(by=by)
+	X = model_ctxt.corpus
+	for r in np.arange(2, 20, 5):
+		#for n in range(5, 21, 15):
+		st = time.time()
+		db = cluster.DBSCAN(eps=r,
+		                    #min_samples=n,
+		                    algorithm='kd_tree')
+		db.fit(X)
+		end = time.time()
+		
+		labels = db.labels_
+		silh_score = metrics.silhouette_score(X, labels, metric='euclidean')
+		print 'r: %s, sc: %s, took %s secs'  % (r, silh_score, end-st)
 
 def doRBM(ntopics=50, npasses=200, verbose=True):
-    from clusters import RBMResult
-    model_ctxt = create_model_ctxt(by='Char')
-    t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-    label = 'rbm-char-%s-%s-%s' % (t, ntopics, npasses)
-    print 'Label:', label
-    print 'Started', t
-    model_rslt = RBMResult(label, model_ctxt, 
-                           ntopics=ntopics, 
-                           npasses=npasses, 
-                           verbose=verbose)
-    ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-    print 'Completed:', ended
-    return model_rslt
+	from clusters import RBMResult
+	model_ctxt = create_model_ctxt(by='Char')
+	t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+	label = 'rbm-char-%s-%s-%s' % (t, ntopics, npasses)
+	print 'Label:', label
+	print 'Started', t
+	model_rslt = RBMResult(label, model_ctxt, 
+	                       ntopics=ntopics, 
+	                       npasses=npasses, 
+	                       verbose=verbose)
+	ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+	print 'Completed:', ended
+	return model_rslt
 
 def doAffProp(ctx='shakespeare', by='Char/Scene', ):
-    #from clusters import AffinityPropagationResult
-    pass
+	#from clusters import AffinityPropagationResult
+	pass
 
 def _get_stopwords():
-    from nltk.corpus import stopwords
-    stopwds = set(stopwords.words('english'))
-    addl_stopwords_file = join(helper.get_root_dir(), 'data/stopwords')
-    with open(addl_stopwords_file) as fh:
-        more_stopwds = [s.strip() for s in fh.readlines() if not s.startswith('#')]
-        stopwds = stopwds.union(more_stopwds)
-    
-    addl_stopwds = set([
-        'thee', 'thy', 'thou', 'hath', 'shall', 'doth', 'dost', 'prithee', 'tis', 'ye', 'ay', 'hast',
-        'says', 'good', 'sir',
-        'give', 'put', #'speak', 'leave',
-        #"'s", '!', '?', ':', ';', 'i', '.', ',', "'", 
-        "ll", "d", "em", "n't",
-        'edward', 'henry', 'jack', 'john', 'richard', 'harry', 'anne', 'hal', 'kate',
-        #'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 
-        'ten'
-    ])
-
-    stopwds = stopwds.union(addl_stopwds)
-    return stopwds
+	from nltk.corpus import stopwords
+	stopwds = set(stopwords.words('english'))
+	addl_stopwords_file = join(helper.get_root_dir(), 'data/stopwords')
+	with open(addl_stopwords_file) as fh:
+		more_stopwds = [s.strip() for s in fh.readlines() if not s.startswith('#')]
+		stopwds = stopwds.union(more_stopwds)
+	
+	addl_stopwds = set([
+	    'thee', 'thy', 'thou', 'hath', 'shall', 'doth', 'dost', 'prithee', 'tis', 'ye', 'ay', 'hast',
+	    'says', 'good', 'sir',
+	    'give', 'put', #'speak', 'leave',
+	    #"'s", '!', '?', ':', ';', 'i', '.', ',', "'", 
+	    "ll", "d", "em", "n't",
+	    'edward', 'henry', 'jack', 'john', 'richard', 'harry', 'anne', 'hal', 'kate',
+	    #'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 
+	    'ten'
+	])
+	
+	stopwds = stopwds.union(addl_stopwds)
+	return stopwds
 
 class DocumentsCtxtI:
-    @property
-    def documents(self):
-        pass
+	@property
+	def documents(self):
+		pass
 
 import json
 class EEBODocumentsCtxt(object):
-    """
-    import shakespeare.clusters_runner as scr
-    import shakespeare.clusters as sc
-    c=scr.EEBODocumentsCtxt()
-    titles,itfn=c.get_doc_content(getmax=10)
-    ldac=sc.LDAContext(titles,itfn(),stopwds=scr._get_stopwords())
-    ldar=sc.LDAResult('eebo-test', ldac, ntopics=10, npasses=20)
-    ldar.save()
-    ldar.termite_data.data_for_client()    
-    """
-    def __init__(self):
-        self.pseudodoc_titles = None
-        self.basedir = join(helper.get_root_dir(), 
-                            '../RenaissanceNLP/data/Global Renaissance/raw/')
-    @property
-    def documents(self):
-        fname = join(self.basedir, 'all_entries_summary.json')
-        docs_json = json.loads(open(fname, 'r').read())
-        return docs_json.values()
-    
-    def get_doc_content(self, minlines=10, getmax=None):
-        docs = self.documents
-        docs = docs[:getmax] if getmax else docs 
+	"""
+	import shakespeare.clusters_runner as scr
+	import shakespeare.clusters as sc
+	c=scr.EEBODocumentsCtxt()
+	titles,itfn=c.get_doc_content(getmax=10)
+	ldac=sc.LDAContext(titles,itfn(),stopwds=scr._get_stopwords())
+	ldar=sc.LDAResult('eebo-test', ldac, ntopics=10, npasses=20)
+	ldar.termite_data.data_for_client()
+	
+	#ldar._ModelResult__termite_data=None
+	#ldar.save()
+	"""
+	def __init__(self):
+		self.pseudodoc_titles = None
+		self.basedir = join(helper.get_root_dir(), 
+		                    '../RenaissanceNLP/data/Global Renaissance/raw/')
+	@property
+	def documents(self):
+		fname = join(self.basedir, 'all_entries_summary.json')
+		docs_json = json.loads(open(fname, 'r').read())
+		return docs_json.values()
+	
+	def get_doc_content(self, minlines=10, getmax=None):
+		docs = self.documents
+		docs = docs[:getmax] if getmax else docs 
+		
+		def include_doc(d):
+			return True
+		def create_title(d):
+			return d['short_title']+''
+	
+		docs_titles = [create_title(doc) for doc in docs if include_doc(doc)]
 
-        def include_doc(d):
-            return True
-        def create_title(d):
-            return d['short_title']+''
-
-        docs_titles = [create_title(doc) for doc in docs if include_doc(doc)]
-        
-        def docs_content_iterator():
-            self.pseudodoc_titles = []
-            for doc in docs:
-                docpath = join(self.basedir, 
-                               doc['group_dir'], 
-                               doc['short_title']+'_content.json')
-                docjson = json.loads(open(docpath, 'r').read())
-                if not include_doc(doc):
-                    continue
-                for _i, section in enumerate(docjson):
-                    section_nm = section['section']
-                    section_content = ' '.join(section['content'])
-                    print 'Yielding [%s] - [%s]' % (doc['short_title'], section_nm)
-                    self.pseudodoc_titles.append('%s - %s'%(doc['short_title'], section_nm))
-                    yield section_content
-
-        return docs_titles, docs_content_iterator
+		def docs_content_iterator():
+			self.pseudodoc_titles = []
+			for doc in docs:
+				docpath = join(self.basedir, 
+				               doc['group_dir'], 
+				               doc['short_title']+'_content.json')
+				docjson = json.loads(open(docpath, 'r').read())
+				if not include_doc(doc):
+					continue
+				for _i, section in enumerate(docjson):
+					section_nm = section['section']
+					section_content = ' '.join(section['content'])
+					print 'Yielding [%s] - [%s]' % (doc['short_title'], section_nm)
+					self.pseudodoc_titles.append('%s - %s'%(doc['short_title'], section_nm))
+					yield section_content
+	
+		return docs_titles, docs_content_iterator
 
 class DocumentsCtxt(object):
-    def __init__(self, play_ctx, by='Play'):
-        from plays_n_graphs import RootPlayCtx
-        assert(isinstance(play_ctx, RootPlayCtx))
-        #self.plays = play_ctx.play_details
-        self.plays = dict([(p, play_ctx.get_play(p)) for p in play_ctx.map_by_alias.keys()])
-        #self.reset()
-        self._documents = None # plays, characters, etc
-        self.by = by
-        # remove documents: scenes/characters with very few lines
-        #self.min_lines_per_doc = 10
+	def __init__(self, play_ctx, by='Play'):
+		from plays_n_graphs import RootPlayCtx
+		assert(isinstance(play_ctx, RootPlayCtx))
+		#self.plays = play_ctx.play_details
+		self.plays = dict([(p, play_ctx.get_play(p)) for p in play_ctx.map_by_alias.keys()])
+		#self.reset()
+		self._documents = None # plays, characters, etc
+		self.by = by
+		# remove documents: scenes/characters with very few lines
+		#self.min_lines_per_doc = 10
 
 #     @property
 #     def chars_per_play(self):
@@ -239,67 +246,67 @@ class DocumentsCtxt(object):
 #         self.pruned_characters = {}
 #         self.pruned_max_terms = []
 
-    @property
-    def documents(self):
-        if self._documents is None:
-            self._preproc()
-        return self._documents
+	@property
+	def documents(self):
+		if self._documents is None:
+			self._preproc()
+		return self._documents
+	
+	def _preproc(self, plays_to_filter=None):
+		"""
+		get all the characters, the key should be name and play
+		then all their lines, and relationships?
+		it could be an interesting game of clustering
+		"""
+		assert(self.by in ['Play', 'Char', 'Char/Scene'])
+		plays = self.plays.values()
+		if plays_to_filter:
+			plays_to_filter = set(plays_to_filter)
+			plays = [k for k in plays if k.title in plays_to_filter]
+		#self.reset()
+		
+		if self.by == 'Play':
+			self._documents = plays
+		
+		elif self.by == 'Char':
+			clines = []
+			for p in plays:
+				clines.extend(p.characters.values())
+			self._documents = clines
+		
+		elif self.by == 'Char/Scene':
+			from plays_n_graphs import Character
+			clines = []
+			for p in plays:
+				chars = p.characters.values()
+				# create artificial characters
+				for c in chars:
+					char_lines = {}
+					for li in c.clean_lines:
+						char_lines.setdefault((li.act, li.scene), []).append(li)
+					for k in char_lines.keys():
+						char_name = '%s, Act %s, Sc %s' % (c.name, k[0], k[1])
+						artif_char = Character(char_name, c.play)
+						artif_char._cleaned_lines = char_lines[k] 
+						clines.append(artif_char)
+			self._documents = clines
 
-    def _preproc(self, plays_to_filter=None):
-        """
-        get all the characters, the key should be name and play
-        then all their lines, and relationships?
-        it could be an interesting game of clustering
-        """
-        assert(self.by in ['Play', 'Char', 'Char/Scene'])
-        plays = self.plays.values()
-        if plays_to_filter:
-            plays_to_filter = set(plays_to_filter)
-            plays = [k for k in plays if k.title in plays_to_filter]
-        #self.reset()
-        
-        if self.by == 'Play':
-            self._documents = plays
-        
-        elif self.by == 'Char':
-            clines = []
-            for p in plays:
-                clines.extend(p.characters.values())
-            self._documents = clines
-        
-        elif self.by == 'Char/Scene':
-            from plays_n_graphs import Character
-            clines = []
-            for p in plays:
-                chars = p.characters.values()
-                # create artificial characters
-                for c in chars:
-                    char_lines = {}
-                    for li in c.clean_lines:
-                        char_lines.setdefault((li.act, li.scene), []).append(li)
-                    for k in char_lines.keys():
-                        char_name = '%s, Act %s, Sc %s' % (c.name, k[0], k[1])
-                        artif_char = Character(char_name, c.play)
-                        artif_char._cleaned_lines = char_lines[k] 
-                        clines.append(artif_char)
-            self._documents = clines
-
-    def get_doc_content(self, minlines=10):
-        doc_titles   = []
-        docs_content = []
-        for doc in self.documents:
-            lines = doc.clean_lines
-            # remove documents: scenes/characters with very few lines
-            if len(lines) < minlines:
-                logger.info('Skipping [%s] since it had too few lines.', str(doc))
-                continue
-            lines = ' '.join([li.spoken_line for li in lines])
-            lines = lines.replace('--', ' ') # for now just replace these...
-            #print lines+"|"
-            lines = lines.lower()
-            docs_content.append(lines)
-            doc_titles.append(str(doc))
-        return doc_titles, docs_content
+	def get_doc_content(self, minlines=10):
+		doc_titles   = []
+		docs_content = []
+		for doc in self.documents:
+			lines = doc.clean_lines
+			# remove documents: scenes/characters with very few lines
+			if len(lines) < minlines:
+				logger.info('Skipping [%s] since it had too few lines.', str(doc))
+				continue
+			lines = ' '.join([li.spoken_line for li in lines])
+			lines = lines.replace('--', ' ') # for now just replace these...
+			#print lines+"|"
+			lines = lines.lower()
+			docs_content.append(lines)
+			doc_titles.append(str(doc))
+		return doc_titles, docs_content
 
 # def get_character_names(prc_ctx):
 #     #name_d = helper.init_name_dict()
@@ -318,24 +325,24 @@ class DocumentsCtxt(object):
 #     return all_c_in_play
 
 def doNMF2(prc_ctx):
-    from pcibook import nmf, clusters
-    #-- NMF
-    mat = process_data(prc_ctx, max_df=.8) # ngram data frame
-    #mat = sc.process_data(prc_ctx, max_df=.8, raw=True) # ngram data frame
-    clust = clusters.hcluster(mat.values)
-    # some error here
-    clusters.drawdendrogram(clust, map(str, mat.index), jpeg='shakespeare.jpg')
-    #rdata = clusters.rotatematrix(mat)
-    #wordclust = clusters.hcluster(rdata)
-    #w,h = nmf.factorize(a*b, pc=3, iters=100)
-    #-- 
-    w,h = nmf.factorize(mat.values, pc=16, iters=100)
-    tps, ptns = nmf.showfeatures(w, h, mat.index, mat.columns)
-    nmf.showarticles(mat.index, tps, ptns)
-    #-- 
-    _runs = sc.runs_multi_nmf(mat=mat, nruns=5)
-    #runs = sc.runs_lda(mat=mat, nruns=5)
-    
+	from pcibook import nmf, clusters
+	#-- NMF
+	mat = process_data(prc_ctx, max_df=.8) # ngram data frame
+	#mat = sc.process_data(prc_ctx, max_df=.8, raw=True) # ngram data frame
+	clust = clusters.hcluster(mat.values)
+	# some error here
+	clusters.drawdendrogram(clust, map(str, mat.index), jpeg='shakespeare.jpg')
+	#rdata = clusters.rotatematrix(mat)
+	#wordclust = clusters.hcluster(rdata)
+	#w,h = nmf.factorize(a*b, pc=3, iters=100)
+	#-- 
+	w,h = nmf.factorize(mat.values, pc=16, iters=100)
+	tps, ptns = nmf.showfeatures(w, h, mat.index, mat.columns)
+	nmf.showarticles(mat.index, tps, ptns)
+	#-- 
+	_runs = sc.runs_multi_nmf(mat=mat, nruns=5)
+	#runs = sc.runs_lda(mat=mat, nruns=5)
+
 if (__name__=="__main__"):
-    main()
+	main()
 
