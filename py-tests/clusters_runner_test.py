@@ -4,7 +4,7 @@ import numpy as np
 
 from shakespeare.clusters import ModelContext
 from shakespeare.clusters_termite import TermiteData
-from shakespeare.clusters_runner import DocumentsCtxt
+from shakespeare.clusters_documents import ShakespeareDocumentsCtxt
 from shakespeare.plays_n_graphs import Line, Character
 
 from termite import ComputeSimilarity, Tokens
@@ -59,7 +59,7 @@ class ShakespeareClustersRunnerTest(TestCase):
 
     def test_process_data(self):
         play_ctx = self.create_test_play()
-        prc_ctx = DocumentsCtxt(play_ctx)
+        prc_ctx = ShakespeareDocumentsCtxt(play_ctx)
         doc_titles, docs_content = prc_ctx.get_doc_content(minlines=1)
         model_ctx = ModelContext(doc_titles, docs_content, stopwds=['and'],
                                  min_df=1)
@@ -103,11 +103,11 @@ class ShakespeareClustersRunnerTest(TestCase):
         
         play_ctx = self.create_test_play(data_cllbk=data_cllbk)
         
-        prc_ctx = DocumentsCtxt(play_ctx, by='Char')
+        prc_ctx = ShakespeareDocumentsCtxt(play_ctx, by='Char')
         docs = set([repr(d) for d in prc_ctx.documents])
         self.assertEquals(docs, set(['Char A in Test Play', 'Char B in Test Play']))
         
-        prc_ctx = DocumentsCtxt(play_ctx, by='Char/Scene')
+        prc_ctx = ShakespeareDocumentsCtxt(play_ctx, by='Char/Scene')
         docs = set([repr(d) for d in prc_ctx.documents])
         
         expected = set([

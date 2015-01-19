@@ -160,6 +160,8 @@ class CorpusDataJsonHandler:
           'char-bow-LDA-50-200'          : 'lda-char-bow_2014-09-21_23.33.07_50_200',
           'char-bow-NMF-50-250'          : ('nmf-char-2014-09-20_02.06.43-50-250', clusters.NMFResult),
           'char-bow-NMF-50-200'          : ('nmf-char-2014-09-20_03.22.31-50-200', clusters.NMFResult),
+          
+          'eebo-test' : 'eebo-test'
         }
 
         if len(path_elmts)==3:

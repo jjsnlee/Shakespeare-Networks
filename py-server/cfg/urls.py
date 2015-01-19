@@ -18,11 +18,11 @@ def view_imgs(req):
     return HttpResponse(image_data, content_type="image/png")
     #return HttpResponse(image_data)
 
-def view_static(req):
-    filepath = req.path
-    filepath = filepath.replace('/', '', 1)
-    data = open(filepath, 'r').read()
-    return HttpResponse(data)
+# def view_static(req):
+#     filepath = req.path
+#     filepath = filepath.replace('/', '', 1)
+#     data = open(filepath, 'r').read()
+#     return HttpResponse(data)
 
 urlpatterns = patterns('',
     
@@ -34,7 +34,7 @@ urlpatterns = patterns('',
     ('^(shakespeare|chekhov)/play/', shakespeare_pages.get_play_data_json),
 
     ('^imgs/.*\.png$', view_imgs),
-    ('^lib/.*$', view_static),
+    #('^lib/.*$', view_static),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
