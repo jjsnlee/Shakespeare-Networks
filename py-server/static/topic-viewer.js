@@ -222,7 +222,7 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   $scope.colorAxis = {
     //colors: ['#', '#','#', '#', '#', '#'],
     //colors: ['#E7E0D9', '#E7CFB7','#E7B98A', '#FFCE9E', '#FFB164', '#FF7F00'],
-    colors: ['#A89D7D', '#A89049','#E7AD00', '#FFB164', '#FFFF00', '#DFFF00'],
+    colors: ['#E8E8E8', '#C0C0C0','#CC99CC', '#FFB164', '#FFFF00', '#DFFF00'],
     values: [0, 1, 10, 25, 50, 100]
   };
 
