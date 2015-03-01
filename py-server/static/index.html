@@ -8,13 +8,11 @@
 <link rel="stylesheet" type="text/css" href="termite/InteractionObjects.css" />
 
 <link rel="stylesheet" type="text/css" href="/static/lib/simplegrid.css" media="all">
-<!-- 
-<link rel="stylesheet" type="text/css" href="/static/lib/col.css" media="all">
-<link rel="stylesheet" type="text/css" href="/static/lib/8cols.css" media="all">
- -->
 <style>
 .div1     { width:100%; height:20px; }
-.charText { color: #666; font-family: Verdana; font-size: 8pt;padding:10px 5px 10px; }
+.charText { color: #666; font-family: Verdana; font-size: 8pt; padding:10px 5px 10px; }
+#clearTopicsBtn { font-family: Verdana; font-size: 10pt; }
+#topicSummary { font-family: Verdana; font-size: 10pt; }
 table { border:1px solid #ccc; border-collapse: collapse; width:100%; }
 tbody td, tbody th { vertical-align:top; padding:2px 3px; }
 thead th { padding:1px 6px 1px 3px; background:#fefefe; text-align:left; font-weight:normal; font-size:11px; border:1px solid #ddd; }
@@ -25,8 +23,8 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 <body ng-app="termiteTopicDisplay">
 <div id="pageFrame" ng-controller="msgCtrl">
 
-	<div id="pageControl" style="border:5px solid #ccc;">
-	  <div>
+	<div id="pageHeader" !style="border:5px solid #ccc;">
+	  <div align="right">
 	  	<b>Pick a topic model:</b>
 		   <select name="LDAModel" ng-model="LDAModel"
 		     ng-options="m for m in LDAModels"
@@ -34,26 +32,6 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 		   </select>
 	  </div>	
 	</div>
-<!-- 
-	<div id="pageControl">
-		<div class="section group" style="border:5px solid #ccc;">
-		  <div class="col span_2_of_8">
-		   <select name="LDAModel" ng-model="LDAModel"
-		     ng-options="m for m in LDAModels"
-		     ng-change="changeModel()" style="width:180px">
-		   </select>
-		  </div>
-		  <div class="col span_3_of_8">
-		     <button type="button" class="clearAll" 
-		     		ng-click="clearTopics()">Clear topic selections</button>
-		  </div>
-		  <div class="col span_3_of_8" align="right" style="vertical-align:middle">
-		     Currently showing
-		     <div class="TotalTermsView" style="display:inline">25</div> total terms.
-		  </div>        
-		</div>
-	</div>
- -->
   
 	<div id="pageContent" ng-controller="contentCtrl" class="grid grid-pad">
 	  <div>
@@ -91,12 +69,12 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 
 				<div>
 					<div>
-					   <button type="button" class="clearAll" 
+					   <button id="clearTopicsBtn" type="button" !class="clearAll" 
 					   		ng-click="clearTopics()">Clear topic selections</button>
 					</div>
-					<div align="right" style="vertical-align:middle">
-					   Currently showing
-					   <div class="TotalTermsView" style="display:inline">25</div> total terms.
+					<div id="topicSummary" style="vertical-align:middle">
+						Doc score median, Top scoring doc, Most similar topics<br/>
+						Currently showing <div class="TotalTermsView" style="display:inline">25</div> total terms.
 					</div>
 				</div>
 				

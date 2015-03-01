@@ -165,6 +165,10 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
   };
   
   $scope.clearTopics = function() {
+    $scope.$$childHead.topDocsForTopic = [];
+    $scope.$$childHead.selectedTopic = '';
+    $scope.$$childHead.docName    = '';
+    $scope.$$childHead.docContent = '';
     stateModel.clearAllSelectedTopics();
   };
 
@@ -172,12 +176,10 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
     console.log('$scope.LDAModel: '+$scope.LDAModel);
     $('.termTopicMatrixContainer').empty();
     $('.termFrequencyContainer').empty();
+    $scope.clearTopics();
+
     loadPage($scope.LDAModel);
     $scope.$$childHead.setModels($scope.getModels());
-
-    $scope.$$childHead.topDocsForTopic = [];
-      $scope.$$childHead.docName    = '';
-      $scope.$$childHead.docContent = '';
   };
 
   $http.get('/shakespeare/corpus/topicModels').success(function(data) {
