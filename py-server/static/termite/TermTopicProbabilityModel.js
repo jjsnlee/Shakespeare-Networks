@@ -74,13 +74,6 @@ TermTopicProbabilityModel.prototype.defaultSelection = function(){
  * @return { void }
  */
 TermTopicProbabilityModel.prototype.load = function() {
-//	var initRowIndexMap = function( termIndex ){
-//		this.rowIndexMap = {};
-//		for ( var i = 0; i < termIndex.length; i++ ){
-//			this.rowIndexMap[termIndex[i]] = i;
-//		}
-//	}.bind(this);
-	
 	var initTermSaliencyList = function( saliencyMap ){
 		termSaliencyList = [];
 		tempList = [];
@@ -98,7 +91,6 @@ TermTopicProbabilityModel.prototype.load = function() {
 		this.termRankMap = response.termRankMap;
 		this.termOrderMap = response.termOrderMap;
 		this.termDistinctivenessMap = response.termDistinctivenessMap;
-		//initRowIndexMap( this.parentModel.get("termIndex") );
 		initTermSaliencyList( response.termSaliencyMap );
 
 		this.initTopTermLists();
@@ -185,22 +177,13 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 	// For some reason this function is getting called twice every time
 	// the page is refreshed!!
 	
-	var userDefinedTerms = this.stateModel.get("visibleTerms").slice(0);
-	if(this.stateModel.get("addTopTwenty"))
-		this.addTopTerms();
-	else
-		this.visibleTopTerms = {};
+	this.visibleTopTerms = {};
 	
 	var affinityLimit = this.stateModel.get("numAffinityTerms");
 	var saliencyLimit = this.stateModel.get("numSalientTerms");
 	
-	var foundTerms = [];
 	// choose terms to keep
 	var chooseTerm = function(term){
-		if(userDefinedTerms.indexOf(term) >= 0){
-			foundTerms.push(term);
-			return true;
-		}
 		if(this.termRankMap[term] < affinityLimit){
 			return true;
 		}
@@ -252,11 +235,6 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 		}
 	}
 
-	// find out which user defined terms were found in the dataset
-	for( var i = 0; i < foundTerms.length; i++){
-		userDefinedTerms.splice(userDefinedTerms.indexOf(foundTerms[i]),1);
-	}
-
 	subset.sort(function(a, b) {
 	   if(isNaN(a[1]) || isNaN(b[1])) {
 	     if(!isNaN(a[1]))
@@ -287,8 +265,8 @@ TermTopicProbabilityModel.prototype.filter = function( keepQuiet ) {
 	this.set("matrix", matrix, { silent: keepQuiet} );
 	this.set("sparseMatrix", generateSparseMatrix.bind(this)(),  {silent: keepQuiet});
 	
-	this.stateModel.setFoundTerms(foundTerms, keepQuiet);
-	this.stateModel.setUnfoundTerms(userDefinedTerms, keepQuiet);
+	//this.stateModel.setFoundTerms(foundTerms, keepQuiet);
+	//this.stateModel.setUnfoundTerms(userDefinedTerms, keepQuiet);
 	this.stateModel.set("totalTerms", termIndex.length);
 };
 

@@ -2,12 +2,7 @@ var StateModel = Backbone.Model.extend({
 	defaults : {
 		"numAffinityTerms" : 25,
 		"numSalientTerms" : 0,
-		"visibleTerms" : [],
 		"totalTerms" : 25,
-		"foundTerms" : "",
-		"unfoundTerms" : "",
-		//"sortType": "",
-		"addTopTwenty": false,
 		"highlightedTerm" : "",
 		"highlightedTopic" : null,
 		"selectedTopics" : {},
@@ -29,29 +24,6 @@ StateModel.prototype.initModel = function ( matrix, histogram ){
 	this.matrixView = matrix;
 	this.termFreqView = histogram;
 };
-
-// User Defined Terms 
-/**
- * Set user defined control feedback views
- *
- * @this {state model}
- * @param { array } list of terms
- * @param { boolean } whether or not event should be silent
- */
-StateModel.prototype.setFoundTerms = function( termList, keepQuiet ) {
-	this.set( "foundTerms", termList.join(", "), {silent: keepQuiet});
-};
-StateModel.prototype.setUnfoundTerms = function( termList, keepQuiet ){
-	if( termList.length > 0 && termList[0] != "")
-		this.set( "unfoundTerms", termList.join(", "), {silent: keepQuiet});
-	else
-		this.set( "unfoundTerms", "", {silent: keepQuiet});
-};
-StateModel.prototype.setVisibleTerms = function ( userSpecifiedVisibleTerms ) {
-	this.set( "visibleTerms", userSpecifiedVisibleTerms.split(/[ ,;]+/g) );
-};
-/** end user defined control feedback **/
-
 
 /** 
  * Handles selecting topics using click event. Uses function freeColor and getColor that
@@ -85,44 +57,28 @@ StateModel.prototype.selectTopic = function( topicIndex ) {
 StateModel.prototype.clearAllSelectedTopics = function() {
 	console.log("clear all topics");
 	var selectedTopics = this.get("selectedTopics");
-	for( var i in selectedTopics){
+	
+	for(var i in selectedTopics) {
 		freeColor( selectedTopics[i] );
 		delete this.get("selectedTopics")[i];
-		this.trigger("color:topic", {"topic":i, "color":DEFAULT} );
+		//if(i < topicIndex.length) {
+		try {
+			this.trigger("color:topic", {"topic":i, "color":DEFAULT} );
+		}
+		catch(err) {
+			console.log('There was an error: '+i+': ['+err+']');
+		}
 	}
 };
-/** end topic selection code **/
 
-/** 
- * Handles sorting using double click on a topic label
- *
- * @this {state model}
- * @param { int } index of double clicked topic
- */
-//StateModel.prototype.getSortType = function ( topicIndex ){
-//	var sorts = ["desc", "asc", ""];
-//	if(this.get("doubleClickTopic") !== topicIndex)
-//		return sorts[0];
-//	else{
-//		var currentSort = this.get("sortType");
-//		var index = (sorts.indexOf(currentSort) + 1) % sorts.length;
-//		return sorts[index];
-//	}
-//};
+
 StateModel.prototype.setDoubleClickTopic = function ( topicIndex ){
-	//var type = this.getSortType(topicIndex);
-//	if( type === "")
-//		this.set( "doubleClickTopic", null);
-//	else
 	var type = "desc";
 	this.set( "doubleClickTopic", topicIndex);
-	//this.set( "sortType", type);
 };
 StateModel.prototype.clearSorting = function(){
 	this.set( "doubleClickTopic", null);
-	//this.set( "sortType", "");
 };
-/** end double click event code **/
 
 /**
  * Handles highlighting events triggered by mouseover and mouseout
@@ -132,23 +88,16 @@ StateModel.prototype.clearSorting = function(){
  */
 StateModel.prototype.setHighlightedTerm = function( term ) {
 	this.set("highlightedTerm", term );
+	//console.log( "Hello " + term + "!" );
 };
 StateModel.prototype.setHighlightedTopic = function( topic ) {
 	this.set("highlightedTopic", topic );
 };
-/** end highlight event code **/
 
-/**
- * load from query string including decoding some values
- *
- * @this {state model}
- */
 StateModel.prototype.loadStatesFromQueryString = function() {
-
 	var decodeString = function( str ){
 		var topicLabel = "#topic:";
 		var colorLabel = "#color:";
-				
 		// extract color and topic pairs
 		while( str.length > 0) {
 			var topicIndex = str.indexOf(topicLabel);
@@ -177,10 +126,7 @@ StateModel.prototype.loadStatesFromQueryString = function() {
 	var qs = new QueryString();
 	qs.addValueParameter( 'numAffinityTerms', 'na', 'int' );
 	qs.addValueParameter( 'numSalientTerms', 'ns', 'int' );
-	qs.addArrayParameter( 'visibleTerms', 't' );
-	//qs.addValueParameter( 'sortType', 'st', 'str');
 	qs.addValueParameter( 'doubleClickTopic', 'dct', 'int');
-	qs.addValueParameter( 'addTopTwenty', 'att', 'str');
 	qs.addValueParameter( 'selectedTopicsStr', 'tc', 'str');
 	
 	var states = qs.read();
@@ -207,11 +153,6 @@ StateModel.prototype.loadStatesFromQueryString = function() {
 	this.trigger( "sending:colors", this.get("selectedTopics"));
 };
 
-/**
- * save current state to query string
- *
- * @this {state model}
- */
 StateModel.prototype.saveStatesToQueryString = function() {
 	var qs = new QueryString();
 	qs.addValueParameter( 'numAffinityTerms', 'na', 'int' );

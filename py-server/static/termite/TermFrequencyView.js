@@ -42,7 +42,7 @@ var HISTOGRAM_CONTAINER_PADDING = {
 	fullHeight : function( numTopics, numTerms ) { return this.top 
 	   + this.bottom + HISTOGRAM_ENCODING_PARAMETERS.packing() * numTerms }
 };
-	
+
 var TermFrequencyView = Backbone.View.extend({
 	initialize : function() {
 		this.parentModel = null;
