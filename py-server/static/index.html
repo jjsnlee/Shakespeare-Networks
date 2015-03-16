@@ -23,8 +23,8 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 <body ng-app="termiteTopicDisplay">
 <div id="pageFrame" ng-controller="msgCtrl">
 
-	<div id="pageHeader" !style="border:5px solid #ccc;">
-	  <div align="right">
+	<div class="grid grid-pad">
+	  <div id="pageHeader" class="col-1-1" align="right">
 	  	<b>Pick a topic model:</b>
 		   <select name="LDAModel" ng-model="LDAModel"
 		     ng-options="m for m in LDAModels"
@@ -40,6 +40,9 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 	        <span style="color: #666; font-family: Verdana; font-size: 8pt;">
 	          {{selectedTopic}}
 	        </span>
+	      	<div ng-show="topDocsForTopicMsg!=null">
+	      		{{topDocsForTopicMsg}}
+	      	</div>
 		      <table border=1 cellpadding=1 cellspacing=0 width=200>
 	          <tr ng-repeat="doc in topDocsForTopic" style="color:#666; font-family:Verdana; font-size:8pt;">
 	              <td><a href="" ng-click="getDocContent(doc.char)">{{doc.char}}</a></td>
@@ -73,7 +76,7 @@ tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
 					   		ng-click="clearTopics()">Clear topic selections</button>
 					</div>
 					<div id="topicSummary" style="vertical-align:middle">
-						Doc score median, Top scoring doc, Most similar topics<br/>
+						{{analyticResults}}<br/>
 						Currently showing <div class="TotalTermsView" style="display:inline">25</div> total terms.
 					</div>
 				</div>

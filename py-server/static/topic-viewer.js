@@ -41,28 +41,42 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
 
   function loadPage(ldaModel) {
     // create backbone models and views
-    stateModel = new StateModel();
+    stateModel     = new StateModel();
     var ttProbView = new TermTopicMatrixView( {el:"div.termTopicMatrixContainer"} );
-    var tFreqView = new TermFrequencyView( {el:"div.termFrequencyContainer"} );
+    var tFreqView  = new TermFrequencyView( {el:"div.termFrequencyContainer"} );
   
     // Almost absolutely nothing here atm...  
     parentTTPModel = new ParentTermTopicProbabilityModel();
     // Model for the termTopicMatrixView
-    ttProbModel = new TermTopicProbabilityModel();
+    ttProbModel    = new TermTopicProbabilityModel();
     // Model for the term frequency column
-    tFreqModel = new TermFrequencyModel();  
+    tFreqModel     = new TermFrequencyModel();  
 
       // init user control views
     var totalTermsView = new TotalTermsView( {model: stateModel} );
+
+		function getModelSummary(basedir) {
+			$http.get(basedir+'/summary').success(
+		    function(data) {
+	      	$scope.analyticResults = 'Doc score median, Top scoring doc, Most similar topics';
+		    }
+		   ).error(
+		   	function(data) {
+		   		$scope.topDocsForTopicMsg = 'There was an error processing the topic!';
+		   	}
+		   );
+		}
 
     stateModel.set("numAffinityTerms", 70);
     stateModel.set("numSalientTerms", 70);
     stateModel.set("addTopTwenty", true);
 
-    var basedir = '/shakespeare/corpus/topicModels/'+ldaModel+'/termite'
-    parentTTPModel.url = basedir+"/seriated-parameters.json";
-    ttProbModel.url = basedir+"/filtered-parameters.json";
-    tFreqModel.url = basedir+"/global-term-freqs.json";
+    var basedir        = '/shakespeare/corpus/topicModels/'+ldaModel;
+    getModelSummary(basedir);
+    var termiteBase    = basedir + '/termite';
+    parentTTPModel.url = termiteBase+"/seriated-parameters.json";
+    ttProbModel.url    = termiteBase+"/filtered-parameters.json";
+    tFreqModel.url     = termiteBase+"/global-term-freqs.json";
 
     // Pretty msure don't need this parentTTPModel, the tFreqModel
     // should pretty much have the same data...
@@ -85,15 +99,10 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
     ttProbModel.once( "loaded:filtered", tFreqModel.load, tFreqModel );
     tFreqModel.once( "loaded:freqModel", tFreqView.load, tFreqView );
 
-    stateModel.once("sending:colors", ttProbView.receiveSelectedTopics, ttProbView);
+    stateModel.once( "sending:colors", ttProbView.receiveSelectedTopics, ttProbView);
 
     // initialize all events that listen to stateModel
     stateModel.once( "loaded:states", function() {
-      // can probably dump all of these 
-      ttProbModel.listenTo(stateModel, "change:numAffinityTerms", ttProbModel.update.bind( ttProbModel ));
-      ttProbModel.listenTo(stateModel, "change:numSalientTerms", ttProbModel.update.bind( ttProbModel ));
-      ttProbModel.listenTo(stateModel, "change:addTopTwenty", ttProbModel.update.bind( ttProbModel ));
-      
       ttProbView.listenTo(stateModel, "change:highlightedTerm", ttProbView.onSelectionTermChanged, ttProbView );
       ttProbView.listenTo(stateModel, "change:highlightedTopic", ttProbView.onSelectionTopicChanged, ttProbView );
       
@@ -166,6 +175,7 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
   
   $scope.clearTopics = function() {
     $scope.$$childHead.topDocsForTopic = [];
+    $scope.$$childHead.topDocsForTopicMsg = null;
     $scope.$$childHead.selectedTopic = '';
     $scope.$$childHead.docName    = '';
     $scope.$$childHead.docContent = '';
@@ -182,15 +192,18 @@ termiteTopics.controller('msgCtrl', function($scope, $http, $window, termiteMsgS
     $scope.$$childHead.setModels($scope.getModels());
   };
 
-  $http.get('/shakespeare/corpus/topicModels').success(function(data) {
-      $scope.LDAModels = data;
-      $scope.LDAModel = $scope.LDAModels[0];
-      loadPage($scope.LDAModel);
-      $scope.$$childHead.setModels($scope.getModels());
-    }).error(function(data) {
-      $scope.LDAModels = ['Error loading models...'];
-      $scope.LDAModel = $scope.LDAModels[0];
-    });
+	$http.get('/shakespeare/corpus/topicModels').success(function(data) {
+	  $scope.LDAModels = data;
+	  
+	  // FIXME change this to something from the query string
+	  $scope.LDAModel = $scope.LDAModels[0];
+	  
+	  loadPage($scope.LDAModel);
+	  $scope.$$childHead.setModels($scope.getModels());
+	}).error(function(data) {
+	  $scope.LDAModels = ['Error loading models...'];
+	  $scope.LDAModel = $scope.LDAModels[0];
+	});
 });
 
 termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsgService) {
@@ -200,8 +213,6 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   $scope.selectedTopic = null;
   // As an index
   var selectedTopicIndex = -1;
-  
-  //$scope.showTopicDetails = 1;
 
   $scope.setModels = function(m) {
     models = m;
@@ -223,7 +234,6 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
   
   $scope.colorAxis = {
     //colors: ['#', '#','#', '#', '#', '#'],
-    //colors: ['#E7E0D9', '#E7CFB7','#E7B98A', '#FFCE9E', '#FFB164', '#FF7F00'],
     colors: ['#E8E8E8', '#C0C0C0','#CC99CC', '#FFB164', '#FFFF00', '#DFFF00'],
     values: [0, 1, 10, 25, 50, 100]
   };
@@ -291,10 +301,10 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
     
   };
   
-  function getSelectedTopic(LdaModel, topicIndex, topicLabel) {
+	function getSelectedTopic(LdaModel, topicIndex, topicLabel) {
   
-    if(topicIndex==selectedTopicIndex)
-      return;
+		if(topicIndex==selectedTopicIndex)
+			return;
   
     // First reset the existing 
     $scope.topDocsForTopic = [];
@@ -304,17 +314,30 @@ termiteTopics.controller('contentCtrl', function($scope, $http, $sce, termiteMsg
     console.log('Will fetch data for topicIndex: ' + topicIndex);
     $scope.selectedTopic = topicLabel;
     selectedTopicIndex = topicIndex;
-    $http.get('/shakespeare/corpus/topicModels/'+LdaModel+'/'+topicIndex).success(function(data) {
-      data = data.map(function(c) {
-        return {
-          'char'  : c[0], 
-          'score' : c[1].toFixed(6)
-        }
-      });
-      $scope.topDocsForTopic = _.sortBy(data, function(c) { 
-        return -1*c.score; 
-      });
-    });
+
+    $http.get('/shakespeare/corpus/topicModels/'+LdaModel+'/'+topicIndex).success(
+	    function(dataIn) {
+	    	$scope.topDocsForTopicMsg = null;
+      	$scope.analyticResults = 'Doc score median, Top scoring doc, Most similar topics';
+      	var summary = dataIn['summary'];
+      	console.log("summary: " + summary);
+
+	      var data = dataIn['docs'].map(function(c) {
+	        return {
+	          'char'  : c[0], 
+	          'score' : c[1].toFixed(6)
+	        }
+	      });
+	      $scope.topDocsForTopic = _.sortBy(data, function(c) { 
+	        return -1*c.score; 
+	      });
+	    }
+	   ).error(
+	   	function(data) {
+	   		$scope.topDocsForTopicMsg = 'There was an error processing the topic!';
+	   		$scope.analyticResults = 'ERROR! Doc score median, Top scoring doc, Most similar topics';
+	   	}
+	   );
   };
   
   termiteMsgService.registerTopicHandler(getSelectedTopic);
