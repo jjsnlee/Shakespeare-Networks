@@ -35,9 +35,12 @@ class ComputeSimilarity( object ):
 		#self.logger.info( '    data_path = %s', data_path                                                    )
 		self.logger.info( '    sliding_window_size = %d', sliding_window_size                                )
 		
-		self.logger.info( 'Connecting to data...' )
+		self.logger.info( '!!! Connecting to data...' )
 		self.tokens = tokens #TokensAPI( data_path )
 		self.similarity = Similarity()
+
+		import helper
+		helper.add_bkpt()
 		
 		self.logger.info( 'Computing document co-occurrence...' )
 		self.computeDocumentCooccurrence()

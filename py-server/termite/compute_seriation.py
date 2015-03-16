@@ -12,6 +12,10 @@ from api_utils import Seriation
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger('termite')
 
+import sys
+sys.path.append('/Users/jason/Local/share/eclipse-4.3_kepler/plugins/org.python.pydev_3.9.0.201411111611/pysrc')
+import pydevd
+
 class ComputeSeriation( object ):
 	"""Seriation algorithm.
 
@@ -22,7 +26,8 @@ class ComputeSeriation( object ):
 	(i.e., the iteration in which a term was seriated).
 	"""
 	
-	DEFAULT_NUM_SERIATED_TERMS = 100
+	#DEFAULT_NUM_SERIATED_TERMS = 100
+	DEFAULT_NUM_SERIATED_TERMS = 10
 	
 	def __init__(self):
 		self.seriation = Seriation()
@@ -65,6 +70,8 @@ class ComputeSeriation( object ):
 		self.termDistinct = {}
 		self.termRank = {}
 		self.termVisibility = {}
+		#pydevd.settrace()
+		
 		for element in self.saliency.term_info:
 			term = element['term']
 			self.orderedTermList.append( term )
@@ -101,6 +108,7 @@ class ComputeSeriation( object ):
 			preBest, postBest, self.bestEnergies = \
 				self.getBestEnergies(preBest, postBest, addedTerm)
 
+			#print 'Aha!'
 			candidateTerms, self.seriation.term_ordering, self.seriation.term_iter_index, self.buffers = \
 				self.iterate_eff(candidateTerms, 
 								self.seriation.term_ordering, 
@@ -231,6 +239,8 @@ class ComputeSeriation( object ):
 			if (maxTerm, term_ordering[maxPosition]) in self.similarity.combined_g2:
 				buf_score = self.similarity.combined_g2[(maxTerm, term_ordering[maxPosition])]
 			buffers.insert(maxPosition+1, buf_score)
+
+		#pydevd.settrace()
 		
 		# update term ordering and ranking
 		if maxPosition >= len(term_ordering):
@@ -238,8 +248,7 @@ class ComputeSeriation( object ):
 		else:
 			term_ordering.insert(maxPosition, maxTerm)
 		term_iter_index.append(maxTerm)
-			
-		
+
 		return (candidateTerms, term_ordering, term_iter_index, buffers)
 	
 	def getEnergyChange(self, candidateTerm, position, term_list, currentBuffer, iteration_no):

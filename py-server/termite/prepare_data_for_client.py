@@ -76,7 +76,7 @@ class Client(object):
 # 				logger.info( 'ERROR: Term (%s) does not appear in the list of seriated terms', term )
 	
 		self.seriated_parameters = {
-			'termIndex'  : term_subindex,
+			'termIndex'  : term_subindex, # do i need this?
 			'topicIndex' : topic_index,
 			#'matrix'     : term_topic_submatrix
 			'matrix'     : topic_term_submatrix
