@@ -1,10 +1,8 @@
-from shakespeare import clusters as sc
-from shakespeare import clusters_termite
-from shakespeare.clusters import LDAContext, LDAResult, get_lda_rslt
-import plays_n_graphs as png
+from batch import clusters as sc
+import clusters_termite
+from batch.clusters import LDAContext, LDAResult, get_lda_rslt
 from os.path import join
 #import pandas as pd
-import numpy as np
 
 from datetime import datetime
 import time
@@ -14,7 +12,7 @@ import helper
 logger = helper.setup_sysout_handler(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
-from shakespeare.clusters_documents import ShakespeareDocumentsCtxt
+from clusters_documents import ShakespeareDocumentsCtxt
 
 # 2014-05-13 00:50:36.652535_50_50.lda
 # 2014-06-01 12:55:34.874782_20_50.lda
@@ -45,6 +43,7 @@ def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=Tru
 	ldar=scr.doLDA(ntopics=10, npasses=20)
 	"""
 	
+	import shakespeare.plays_n_graphs as png
 	play_ctx = png.get_plays_ctx(ctx)
 	prc_ctx = ShakespeareDocumentsCtxt(play_ctx, by=by)
 	#prc_ctx.preproc(by=by) # by='Char'
@@ -85,62 +84,15 @@ def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=Tru
 #     from gensim.models.tfidfmodel import TfidfModel
 #     tfidf_model = TfidfModel( )
 
-from clusters import ModelContext
+from batch.clusters import ModelContext
 def create_model_ctxt(ctx='shakespeare', by='Char'):
 	# by='Char', 'Char/Scene'
+	import shakespeare.plays_n_graphs as png
 	play_ctx = png.get_plays_ctx(ctx)
 	prc_ctx = ShakespeareDocumentsCtxt(play_ctx, by=by)
 	doc_titles, docs_content = prc_ctx.get_doc_content()
 	ctxt = ModelContext(doc_titles, docs_content, stopwds=_get_stopwords())
 	return ctxt
-
-def doNMF(ntopics=50, npasses=200):
-	from clusters import NMFResult
-	model_ctxt = create_model_ctxt(by='Char')
-	t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-	label = 'nmf-char-%s-%s-%s' % (t, ntopics, npasses)
-	print 'Label:', label
-	print 'Started', t
-	model_rslt = NMFResult(label, model_ctxt, ntopics=ntopics, npasses=npasses)
-	ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-	print 'Completed:', ended
-	return model_rslt
-
-def doDBScan(by='Char'):
-	from sklearn import metrics, cluster
-	model_ctxt = create_model_ctxt(by=by)
-	X = model_ctxt.corpus
-	for r in np.arange(2, 20, 5):
-		#for n in range(5, 21, 15):
-		st = time.time()
-		db = cluster.DBSCAN(eps=r,
-		                    #min_samples=n,
-		                    algorithm='kd_tree')
-		db.fit(X)
-		end = time.time()
-		
-		labels = db.labels_
-		silh_score = metrics.silhouette_score(X, labels, metric='euclidean')
-		print 'r: %s, sc: %s, took %s secs'  % (r, silh_score, end-st)
-
-def doRBM(ntopics=50, npasses=200, verbose=True):
-	from clusters import RBMResult
-	model_ctxt = create_model_ctxt(by='Char')
-	t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-	label = 'rbm-char-%s-%s-%s' % (t, ntopics, npasses)
-	print 'Label:', label
-	print 'Started', t
-	model_rslt = RBMResult(label, model_ctxt, 
-	                       ntopics=ntopics, 
-	                       npasses=npasses, 
-	                       verbose=verbose)
-	ended = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
-	print 'Completed:', ended
-	return model_rslt
-
-def doAffProp(ctx='shakespeare', by='Char/Scene', ):
-	#from clusters import AffinityPropagationResult
-	pass
 
 def _get_stopwords():
 	from nltk.corpus import stopwords
@@ -163,25 +115,6 @@ def _get_stopwords():
 	
 	stopwds = stopwds.union(addl_stopwds)
 	return stopwds
-
-def doNMF2(prc_ctx):
-	from pcibook import nmf, clusters
-	#-- NMF
-	mat = process_data(prc_ctx, max_df=.8) # ngram data frame
-	#mat = sc.process_data(prc_ctx, max_df=.8, raw=True) # ngram data frame
-	clust = clusters.hcluster(mat.values)
-	# some error here
-	clusters.drawdendrogram(clust, map(str, mat.index), jpeg='shakespeare.jpg')
-	#rdata = clusters.rotatematrix(mat)
-	#wordclust = clusters.hcluster(rdata)
-	#w,h = nmf.factorize(a*b, pc=3, iters=100)
-	#-- 
-	w,h = nmf.factorize(mat.values, pc=16, iters=100)
-	tps, ptns = nmf.showfeatures(w, h, mat.index, mat.columns)
-	nmf.showarticles(mat.index, tps, ptns)
-	#-- 
-	_runs = sc.runs_multi_nmf(mat=mat, nruns=5)
-	#runs = sc.runs_lda(mat=mat, nruns=5)
 
 if (__name__=="__main__"):
 	main()

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import plays_n_graphs
 import numpy as np
 import pandas as pd
-import clusters as sc
+from batch import clusters as sc
 from os.path import join
 import os
 

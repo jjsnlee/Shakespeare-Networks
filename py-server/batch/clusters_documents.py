@@ -14,7 +14,7 @@ class EEBODocumentsCtxt(object):
 	"""
 	import shakespeare.clusters_runner as scr
 	import shakespeare.clusters_documents as scd
-	import shakespeare.clusters as sc
+	import batch.clusters as sc
 	c=scd.EEBODocumentsCtxt()
 	titles,itfn=c.get_doc_content(getmax=10)
 	ldac=sc.LDAContext(titles,itfn(),stopwds=scr._get_stopwords())
@@ -51,7 +51,11 @@ class EEBODocumentsCtxt(object):
 				docpath = join(self.basedir, 
 				               doc['group_dir'], 
 				               doc['short_title']+'_content.json')
-				docjson = json.loads(open(docpath, 'r').read())
+				try:
+					docjson = json.loads(open(docpath, 'r').read())
+				except Exception, _e:
+					logger.error('Couldn\'t find document [%s]!'%docpath)
+
 				if not include_doc(doc):
 					continue
 				for _i, section in enumerate(docjson):
@@ -60,12 +64,12 @@ class EEBODocumentsCtxt(object):
 					print 'Yielding [%s] - [%s]' % (doc['short_title'], section_nm)
 					self.pseudodoc_titles.append('%s - %s'%(doc['short_title'], section_nm))
 					yield section_content
-	
+
 		return docs_titles, docs_content_iterator
 
 class ShakespeareDocumentsCtxt(object):
 	def __init__(self, play_ctx, by='Play'):
-		from plays_n_graphs import RootPlayCtx
+		from shakespeare.plays_n_graphs import RootPlayCtx
 		assert(isinstance(play_ctx, RootPlayCtx))
 		#self.plays = play_ctx.play_details
 		self.plays = dict([(p, play_ctx.get_play(p)) for p in play_ctx.map_by_alias.keys()])
@@ -118,7 +122,7 @@ class ShakespeareDocumentsCtxt(object):
 			self._documents = clines
 		
 		elif self.by == 'Char/Scene':
-			from plays_n_graphs import Character
+			from shakespeare.plays_n_graphs import Character
 			clines = []
 			for p in plays:
 				chars = p.characters.values()
