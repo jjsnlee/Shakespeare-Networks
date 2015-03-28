@@ -1,6 +1,6 @@
-from batch import clusters as sc
+#import clusters as sc
 import clusters_termite
-from batch.clusters import LDAContext, LDAResult, get_lda_rslt
+from clusters import LDAContext, LDAResult, get_lda_rslt, get_models_base_dir
 from os.path import join
 #import pandas as pd
 
@@ -54,7 +54,7 @@ def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=Tru
 	baselabel += '-bow' if as_bow else '-tfidf'
 	
 	label = 'lda-%s_%s_%s_%s' % (baselabel, t, ntopics, npasses)
-	basedir = join(sc.get_models_base_dir(), label)
+	basedir = join(get_models_base_dir(), label)
 	os.makedirs(basedir)
 	logfile = join(basedir, 'gensim.log')
 	

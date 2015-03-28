@@ -2,12 +2,12 @@ from unittest import TestCase
 import numpy as np
 #import pandas as pd
 
-from shakespeare.clusters import ModelContext
-from shakespeare.clusters_termite import TermiteData
-from shakespeare.clusters_documents import ShakespeareDocumentsCtxt
+from batch.clusters import ModelContext
+from batch.clusters_termite import TermiteData
+from batch.clusters_documents import ShakespeareDocumentsCtxt
 from shakespeare.plays_n_graphs import Line, Character
 
-from termite import ComputeSimilarity, Tokens
+from batch.termite import ComputeSimilarity, Tokens
 from gensim.utils import simple_preprocess
 
 class ShakespeareClustersRunnerTest(TestCase):

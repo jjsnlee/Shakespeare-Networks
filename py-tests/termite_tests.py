@@ -1,17 +1,18 @@
 from unittest import TestCase
 #from shakespeare import clusters as sc
 #import pandas as pd
-from shakespeare.clusters_termite import TermiteData
-from termite import Model, Client, Seriation, Saliency, Similarity, \
+from batch.clusters_termite import TermiteData
+from batch.termite import Model, Client, Seriation, Saliency, Similarity, \
     ComputeSaliency, ComputeSeriation
 import numpy as np
 
 class TermiteDataTest(TestCase):
 	
 	def test_data_for_client_with_eebo(self):
-		from shakespeare.clusters import ModelResult, LDAContext
-		#from shakespeare.clusters import ModelResult, ModelContext
-		from shakespeare.clusters_documents import EEBODocumentsCtxt
+		from batch.clusters import LDAContext
+		from batch.clusters_non_lda import ModelResult
+		#from batch.clusters import ModelResult, ModelContext
+		from batch.clusters_documents import EEBODocumentsCtxt
 
 		from collections import namedtuple
 		Model = namedtuple('Model', ['components_', 'n_components'], verbose=False)
