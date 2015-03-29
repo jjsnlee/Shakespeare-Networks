@@ -150,7 +150,7 @@ class CorpusDataJsonHandler:
 		    /shakespeare/corpus/topicModels/[Topic Model Name]/termite/*.json :
 		        static termite json info
 		"""
-		from batch import clusters
+		from batch import clusters_lda
 		from batch import clusters_non_lda
 		MODEL_KEYS = {
 		  'char-scene-bow-LDA-100-50'    : 'lda-char-scene-bow_2014-06-29_19.49.11_100_50',
@@ -207,7 +207,7 @@ class CorpusDataJsonHandler:
 				
 			elif topic_context=='termite':
 				json_file = path_elmts[5]
-				fname = join(clusters.get_models_base_dir(), 
+				fname = join(clusters_lda.get_models_base_dir(), 
 				             model_key, 'termite', 'public_html', json_file)
 				topic_json = open(fname, 'r').read()
 
@@ -216,7 +216,7 @@ class CorpusDataJsonHandler:
 				try:
 					which_topic = topic_context
 					logger.debug('which_topic: %s', which_topic)
-					model_rslt = clusters.get_lda_rslt(model_key, cls=cls)
+					model_rslt = clusters_lda.get_lda_rslt(model_key, cls=cls)
 					topic_info = {
 						'docs'    : model_rslt.docs_per_topic[int(which_topic)],
 						'summary' : {
@@ -286,7 +286,7 @@ class CorpusDataJsonHandler:
 				li = str(cl)
 				curr.append(li)
 			
-			except Exception as e:
+			except Exception as _e:
 				logger.error('Problem parsing [%s] [%s] [%s], [%s]', char_lines, prev, cl, cl.lineno)
 				li = '[Problem parsing: [%s] [%s]]' % (cl, cl.lineno)
 				curr.append(li)
