@@ -3,7 +3,7 @@ from os.path import join
 from termite import Model, Tokens, ComputeSaliency, ComputeSimilarity, ComputeSeriation, \
     ClientRWer, SaliencyRWer, SimilarityRWer, SeriationRWer
 
-from clusters import get_models_base_dir
+from clusters_lda import get_models_base_dir
 
 class TermiteData(object):
 	def __init__(self, model_rslt, from_cache=False):

@@ -1,5 +1,5 @@
 from unittest import TestCase, main
-import shakespeare.shakespeare_pages as sp
+import shakespeare.page_plays as sp
 
 class ShakespearePagesTest(TestCase):
 	

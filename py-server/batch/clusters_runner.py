@@ -4,14 +4,12 @@ from clusters_lda import LDAContext, LDAResult, ModelContext, \
 from os.path import join
 
 from datetime import datetime
-import time
-import os
-import logging
+import time, json, os, logging
 import helper
 logger = helper.setup_sysout_handler(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
-from clusters_documents import ShakespeareDocumentsCtxt
+from clusters_documents import ShakespeareDocumentsCtxt, EEBODocumentsCtxt
 
 # 2014-05-13 00:50:36.652535_50_50.lda
 # 2014-06-01 12:55:34.874782_20_50.lda
@@ -22,12 +20,12 @@ def main(label=None, train_new=False):
 	    - reduce the sample size by removing characters with x # of lines
 	"""
 	if train_new:
-		lda_rslt = doLDA(label, ntopics=50, npasses=50)
+		lda_rslt = doLDA_Plays(label, ntopics=50, npasses=50)
 	else:
 		#lda_key = '../data/dynamic/lda/2014-05-13 00:50:36.652535_50_50.lda'
 		# char_scene_2014-06-29 19.49.11.703618_100_50_lda
 		lda_key = '2014-05-13 00:50:36.652535_50_50.lda'
-		lda_rslt = get_lda_rslt(lda_key)
+		lda_rslt = get_lda_rslt('plays-shakespeare', lda_key)
 
 	td = clusters_termite.TermiteData(lda_rslt)
 	#td.saliency
@@ -36,7 +34,25 @@ def main(label=None, train_new=False):
 	td.data_for_client()
 	return td
 
-def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=True):
+def create_basedir(group, baselabel, ntopics, npasses):
+	t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
+	#baselabel = 'char' if by=='Char' else 'char-scene'
+	#baselabel += '-bow' if as_bow else '-tfidf'
+	label = '%s/lda-%s_%s_%s_%s' % (group, baselabel, t, ntopics, npasses)
+	basedir = join(get_models_base_dir(), label)
+	os.makedirs(basedir)
+	return basedir, label
+
+def doLDA_EEBO(ntopics=50, npasses=50, as_bow=True):
+	prc_ctx = EEBODocumentsCtxt()
+	#prc_ctx.preproc(by=by) # by='Char'
+	#doc_titles, docs_content = prc_ctx.get_doc_content()
+
+	baselabel = ''
+	#basedir, label = create_basedir(baselabel, ntopics, npasses)
+	return do_LDA(prc_ctx, 'eebo', baselabel, ntopics, npasses, as_bow=True)
+
+def doLDA_Plays(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=True):
 	"""
 	import batch.clusters_runner as scr
 	ldar=scr.doLDA(ntopics=10, npasses=20)
@@ -46,18 +62,27 @@ def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=Tru
 	play_ctx = png.get_plays_ctx(ctx)
 	prc_ctx = ShakespeareDocumentsCtxt(play_ctx, by=by)
 	#prc_ctx.preproc(by=by) # by='Char'
-	doc_titles, docs_content = prc_ctx.get_doc_content()
 	
-	t = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H.%M.%S')
 	baselabel = 'char' if by=='Char' else 'char-scene'
 	baselabel += '-bow' if as_bow else '-tfidf'
 	
-	label = 'lda-%s_%s_%s_%s' % (baselabel, t, ntopics, npasses)
-	basedir = join(get_models_base_dir(), label)
-	os.makedirs(basedir)
-	logfile = join(basedir, 'gensim.log')
+	return do_LDA(prc_ctx, 'plays-shakespeare', baselabel, ntopics, npasses, as_bow=True)
+
+def do_LDA(docs_process_context, group, baselabel, ntopics, npasses, as_bow=True):	
+	basedir, label = create_basedir(group, baselabel, ntopics, npasses)
 	
+	# add a metadata file
+	metadata = {
+		ntopics : ntopics,
+		npasses : npasses,
+		group : group,
+		label : label
+	}
+	metadata_json = json.dumps(metadata, ensure_ascii=False)
+	
+
 	# Need this to analyze the perplexity
+	logfile = join(basedir, 'gensim.log')
 	logger = logging.getLogger('gensim.models.ldamodel')
 	try:
 		fh = logging.FileHandler(logfile)
@@ -65,6 +90,8 @@ def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=Tru
 		fh.setFormatter(logging.Formatter('%(asctime)s : %(levelname)s : %(message)s'))
 		logger.addHandler(fh)
 		#logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+		
+		doc_titles, docs_content = docs_process_context.get_doc_content()
 		
 		lda_ctxt = LDAContext(doc_titles, docs_content, stopwds=_get_stopwords(), as_bow=as_bow)
 		#lda_ctxt.save_corpus()

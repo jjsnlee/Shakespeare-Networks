@@ -1,11 +1,6 @@
-import os, json, traceback
-from operator import itemgetter
-from os.path import join
 import helper
-from plays_n_graphs import get_plays_ctx, init_play_imgs
-from plays_transform import PlayJSONMetadataEncoder
-
-import logging
+from os.path import join
+import logging, traceback, os, json
 logging.basicConfig(level=logging.DEBUG)
 logger = helper.setup_sysout_handler(__name__)
 
@@ -13,51 +8,13 @@ try:
 	from django.http import HttpResponse
 except:
 	logger.warn("Couldn't find Django...")
-
-def get_page_html(req, play_set):
-	""" Basic HTML with interpolated values """
-	path = req.path
-	info = path.split('/')[-1]
-	print 'path:', path
 	
-	if play_set not in ['shakespeare', 'chekhov']:
-		raise Exception('Invalid content [%s].' % play_set)
-	
-	if info == 'otherCharts':
-		html = open('shakespeare/page_all_plays.html', 'r').read()
-	
-	else:
-		qry_str = req.REQUEST
-		logger.debug('REQUEST: %s', qry_str)
-		sld_play = qry_str.get('play', '')
-		logger.debug('play: %s', sld_play)
-		
-		data_ctx = get_plays_ctx(play_set)
-		
-		force_img_regen = False
-		if sld_play:
-			force_img_regen = qry_str.get('force_regen', False) == '1'
-			if force_img_regen:
-				play = data_ctx.get_play(sld_play)
-				_play_data = init_play_imgs(play, sld_play, 1)
-		
-		plays = sorted(data_ctx.plays, key=itemgetter(1))
-		all_plays = json.dumps([{'value':p[0],'label':p[1]} for p in plays])
-		html = open('shakespeare/page.html', 'r').read()
-		
-		# Should get rid of this...
-		html = html.replace('__ALL_PLAYS__', all_plays)
-	
-	return HttpResponse(html)
-
 class CorpusDataJsonHandler:
 
 	@classmethod
 	def dispatch_map(cls):
 		return {
 			'sceneSummary' : cls.handle_scene_summary,
-			#'sceneDetail'  : cls.handle_scene_detail,
-			#'lda'          : cls.handle_LDA,
 			'characters'   : cls.handle_chardata,
 			'topicModels'  : cls.handle_topic_models
 		}
@@ -152,6 +109,7 @@ class CorpusDataJsonHandler:
 		"""
 		from batch import clusters_lda
 		from batch import clusters_non_lda
+
 		MODEL_KEYS = {
 		  'char-scene-bow-LDA-100-50'    : 'lda-char-scene-bow_2014-06-29_19.49.11_100_50',
 		  'char-scene-bow-LDA-50-200'    : 'lda-char-scene-bow_2014-08-30_14.32.36_50_200',
@@ -305,66 +263,3 @@ class CorpusDataJsonHandler:
 		}
 		char_json = json.dumps(char_data, ensure_ascii=False)
 		return char_json
-
-DYNAMIC_ASSETS_BASEDIR = helper.get_dynamic_rootdir()
-
-def get_play_data_json(req, play_set):
-	""" 
-	JSON representation for the play. This is for the initial load of
-	the play and its scenes, and the scenes will have basic metadata.
-	
-	Expects format:
-	    /shakespeare/play/{play_alias}/{?act}/{?scene}/?content
-	"""
-	try:
-		path_elmts = filter(None, req.path.split('/'))
-		
-		play_alias = path_elmts[2] # i.e, '/shakespeare/play/hamlet' 
-		logger.debug('REQUEST: [%s], [%s]', play_alias, path_elmts)
-		
-		play_data_ctx = get_plays_ctx(play_set)
-		play = play_data_ctx.get_play(play_alias)
-		
-		if path_elmts[-1] == 'content':
-			act_num = path_elmts[-3]
-			scene_num = path_elmts[-2]
-			scene = play.get_scene(act_num, scene_num)
-			scene_data = \
-			{
-			 'title'    : play.title,
-			 'act'     : act_num, 
-			 'scene'   : scene_num,
-			 'content' : [{'speaker' : char_lines[0], 
-			               'lines'   : [str(line) for line in char_lines[1]]} for char_lines in scene.clean_lines]
-			}
-			json_rslt = json.dumps(scene_data, ensure_ascii=False)
-			return HttpResponse(json_rslt, content_type='application/json')
-		
-		else:
-			# Probably want to streamline this, so we take the existing files where possible...
-			init_play_imgs(play, play_alias, False)
-			json_rslt = json.dumps(play, ensure_ascii=False, cls=PlayJSONMetadataEncoder)
-			return HttpResponse(json_rslt, content_type='application/json')
-	
-	except Exception as e:
-		# Without the explicit error handling the JSON error gets swallowed
-		st = traceback.format_exc()
-		#print 'Problem parsing [%s]:\n%s\n%s' % (req, e, st)
-		logger.error('Problem parsing [%s]:\n%s\n%s', req, e, st)
-
-#def main():
-#    play = 'King Lear'
-#    #play = "A Midsummer Night's Dream"
-#    html = _create_html(play, basedir='../', absroot=False, force_img_regen=False, incl_hdr=False)
-#    #print 'HTML:', html
-#    tmpfile = 'tmp.html'
-#    with open(tmpfile, 'w') as fh:
-#        fh.writelines(html)
-#
-#    import webbrowser
-#    lcl_url = 'file://'+os.path.abspath(tmpfile)
-#    print 'Opening', lcl_url
-#    webbrowser.open_new_tab(lcl_url)
-#
-#if (__name__=="__main__"):
-#    main()
