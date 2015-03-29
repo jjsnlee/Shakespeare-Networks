@@ -9,7 +9,7 @@ import numpy as np
 class TermiteDataTest(TestCase):
 	
 	def test_data_for_client_with_eebo(self):
-		from batch.clusters import LDAContext
+		from batch.clusters_lda import LDAContext
 		from batch.clusters_non_lda import ModelResult
 		#from batch.clusters import ModelResult, ModelContext
 		from batch.clusters_documents import EEBODocumentsCtxt

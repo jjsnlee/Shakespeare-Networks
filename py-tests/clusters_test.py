@@ -1,6 +1,6 @@
 from unittest import TestCase
 import pandas as pd
-from batch import clusters as sc
+from batch import clusters_lda as sc
 
 class ShakespeareClustersTest(TestCase):
 

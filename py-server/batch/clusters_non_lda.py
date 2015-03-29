@@ -1,4 +1,4 @@
-from batch.clusters import ModelResult, get_models_base_dir
+from clusters_lda import ModelResult, get_models_base_dir
 from sklearn.externals import joblib
 from os.path import join
 

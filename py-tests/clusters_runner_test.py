@@ -2,7 +2,7 @@ from unittest import TestCase
 import numpy as np
 #import pandas as pd
 
-from batch.clusters import ModelContext
+from batch.clusters_lda import ModelContext
 from batch.clusters_termite import TermiteData
 from batch.clusters_documents import ShakespeareDocumentsCtxt
 from shakespeare.plays_n_graphs import Line, Character

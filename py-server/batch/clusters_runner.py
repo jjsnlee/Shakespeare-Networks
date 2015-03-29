@@ -1,8 +1,7 @@
-#import clusters as sc
 import clusters_termite
-from clusters import LDAContext, LDAResult, get_lda_rslt, get_models_base_dir
+from clusters_lda import LDAContext, LDAResult, ModelContext, \
+	get_lda_rslt, get_models_base_dir
 from os.path import join
-#import pandas as pd
 
 from datetime import datetime
 import time
@@ -39,7 +38,7 @@ def main(label=None, train_new=False):
 
 def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=True):
 	"""
-	import shakespeare.clusters_runner as scr
+	import batch.clusters_runner as scr
 	ldar=scr.doLDA(ntopics=10, npasses=20)
 	"""
 	
@@ -84,7 +83,6 @@ def doLDA(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=Tru
 #     from gensim.models.tfidfmodel import TfidfModel
 #     tfidf_model = TfidfModel( )
 
-from batch.clusters import ModelContext
 def create_model_ctxt(ctx='shakespeare', by='Char'):
 	# by='Char', 'Char/Scene'
 	import shakespeare.plays_n_graphs as png
