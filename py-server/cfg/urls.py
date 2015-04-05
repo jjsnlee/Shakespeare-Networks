@@ -1,7 +1,7 @@
 from django.conf.urls import patterns #, include, url
 from django.http import HttpResponse
 #from django.views.generic.simple import direct_to_template
-from shakespeare import shakespeare_pages
+from shakespeare import page_plays, page_eebo
 import helper
 from os.path import join
 
@@ -27,11 +27,13 @@ def view_imgs(req):
 urlpatterns = patterns('',
     
     # figure out how to do this right...
-    ('^(shakespeare|chekhov)/$', shakespeare_pages.get_page_html),
-    ('^(shakespeare|chekhov)/otherCharts$', shakespeare_pages.get_page_html),
+    ('^(shakespeare|chekhov)/$', page_plays.get_page_html),
+    ('^(shakespeare|chekhov)/otherCharts$', page_plays.get_page_html),
     
-    ('^(shakespeare|chekhov)/corpus/', shakespeare_pages.CorpusDataJsonHandler.dispatch),
-    ('^(shakespeare|chekhov)/play/', shakespeare_pages.get_play_data_json),
+    ('^(shakespeare|chekhov)/corpus/', page_plays.CorpusDataJsonHandler.dispatch),
+    ('^(shakespeare|chekhov)/play/', page_plays.get_play_data_json),
+    
+    ('^(eebo)/corpus/', page_eebo.CorpusDataJsonHandler.dispatch),
 
     ('^imgs/.*\.png$', view_imgs),
     #('^lib/.*$', view_static),
