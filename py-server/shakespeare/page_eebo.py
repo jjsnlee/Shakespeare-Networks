@@ -14,7 +14,6 @@ class CorpusDataJsonHandler:
 	@classmethod
 	def dispatch_map(cls):
 		return {
-			'sceneSummary' : cls.handle_scene_summary,
 			'characters'   : cls.handle_chardata,
 			'topicModels'  : cls.handle_topic_models
 		}
@@ -45,56 +44,6 @@ class CorpusDataJsonHandler:
 			return HttpResponse(errmsg, content_type='application/json', status=500)
 
 	@classmethod
-	def handle_scene_summary(cls, play_data_ctx, path_elmts):
-		import itertools
-		plays = play_data_ctx.plays
-		
-		def copy_d(d):
-			new_d = dict([(k,d[k]) for k in [
-			    'density','location','total_degrees','graph_img_f','total_lines',
-			    'closeness_vitality','avg_clustering','deg_assort_coeff','avg_shortest_path']])
-			new_d['scene'] ='Act %s, Sc %s' % (p['act'], p['scene'])
-			return new_d
-		
-		all_plays_json = {}
-		for play_alias, _ in plays:
-			fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
-			if not os.path.exists(fname):
-				logger.warn('File path [%s] doesn\'t exist!', fname)
-			play_json = json.loads(open(fname, 'r').read())
-			
-			scenes = [copy_d(p) for p in itertools.chain(*play_json['acts'])]
-			
-			all_plays_json[play_alias] = {
-				'chardata' : play_json['char_data'],
-				'scenes'   : scenes,
-				'title'    : play_json['title'],
-				'genre'    : play_json['type'],
-				'year'     : play_json['year']
-			}
-		
-		all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
-		return all_json_rslt
-
-#     @classmethod
-#     def handle_scene_detail(cls, play_data_ctx, path_elmts):
-#         plays = play_data_ctx.plays
-#         all_plays_json = {}
-#         for play_alias, _ in plays:
-#             fname = join(DYNAMIC_ASSETS_BASEDIR, 'json', play_alias+'_metadata.json')
-#             if not os.path.exists(fname):
-#                 logger.warn('File path [%s] doesn\'t exist!', fname)
-#             play_json = json.loads(open(fname, 'r').read())
-#             all_plays_json[play_alias] = {
-#                 'acts'   : play_json['acts'],
-#                 'title'  : play_json['title'],
-#                 'genre'  : play_json['type'],
-#                 'year'   : play_json['year']
-#             }
-#         all_json_rslt = json.dumps(all_plays_json, ensure_ascii=False)
-#         return all_json_rslt
-
-	@classmethod
 	def handle_topic_models(cls, play_data_ctx, path_elmts):
 		"""
 		    Expected format:
@@ -108,24 +57,15 @@ class CorpusDataJsonHandler:
 		        static termite json info
 		"""
 		from batch import clusters_lda
-		from batch import clusters_non_lda
 
 		MODEL_KEYS = {
 		  'char-scene-bow-LDA-100-50'    : 'lda-char-scene-bow_2014-06-29_19.49.11_100_50',
 		  'char-scene-bow-LDA-50-200'    : 'lda-char-scene-bow_2014-08-30_14.32.36_50_200',
 		  
-		  'char-scene-tfidf-LDA-50-50'   : 'lda-char-scene-tfidf_2014-08-24_23.04.15_50_50',
-		  'char-scene-tfidf-LDA-50-50-v2': 'lda-char-scene-tfidf_2014-08-26_00.43.50_50_50',
-		  'char-scene-tfidf-LDA-50-100'  : 'lda-char-scene-tfidf_2014-08-26_01.47.56_50_100',
-		  'char-scene-tfidf-LDA-50-200'  : 'lda-char-scene-tfidf_2014-08-29_23.00.09_50_200',
-		
-		  'char-bow-LDA-20-100'          : 'lda-char-bow_2014-11-01_02.22.42_20_100',          
-		  'char-bow-LDA-50-200'          : 'lda-char-bow_2014-09-21_23.33.07_50_200',
-		  'char-bow-NMF-50-250'          : ('nmf-char-2014-09-20_02.06.43-50-250', clusters_non_lda.NMFResult),
-		  'char-bow-NMF-50-200'          : ('nmf-char-2014-09-20_03.22.31-50-200', clusters_non_lda.NMFResult),
-		  
 		  'eebo-test' : 'eebo-test'
 		}
+
+		lda_group = 'eebo'
 	
 		if len(path_elmts)==3:
 			# list all the topic models
@@ -165,7 +105,8 @@ class CorpusDataJsonHandler:
 				
 			elif topic_context=='termite':
 				json_file = path_elmts[5]
-				fname = join(clusters_lda.get_models_base_dir(), 
+				fname = join(clusters_lda.get_models_base_dir(),
+										 lda_group, 
 				             model_key, 'termite', 'public_html', json_file)
 				topic_json = open(fname, 'r').read()
 
@@ -174,7 +115,7 @@ class CorpusDataJsonHandler:
 				try:
 					which_topic = topic_context
 					logger.debug('which_topic: %s', which_topic)
-					model_rslt = clusters_lda.get_lda_rslt(model_key, cls=cls)
+					model_rslt = clusters_lda.get_lda_rslt(lda_group, model_key, cls=cls)
 					topic_info = {
 						'docs'    : model_rslt.docs_per_topic[int(which_topic)],
 						'summary' : {

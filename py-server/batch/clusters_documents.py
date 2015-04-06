@@ -12,8 +12,8 @@ class DocumentsCtxtI:
 
 class EEBODocumentsCtxt(object):
 	"""
-	import shakespeare.clusters_runner as scr
-	import shakespeare.clusters_documents as scd
+	import batch.clusters_runner as scr
+	import batch.clusters_documents as scd
 	import batch.clusters as sc
 	c=scd.EEBODocumentsCtxt()
 	titles,itfn=c.get_doc_content(getmax=10)
@@ -24,15 +24,49 @@ class EEBODocumentsCtxt(object):
 	#ldar._ModelResult__termite_data=None
 	#ldar.save()
 	"""
-	def __init__(self):
+	def __init__(self, searchterm=None):
 		self.pseudodoc_titles = None
+		self.searchterm = searchterm
 		self.basedir = join(helper.get_root_dir(), 
-		                    '../RenaissanceNLP/data/Global Renaissance/raw/')
+		                    '../RenaissanceNLP/data/Global Renaissance/')
 	@property
 	def documents(self):
-		fname = join(self.basedir, 'all_entries_summary.json')
-		docs_json = json.loads(open(fname, 'r').read())
-		return docs_json.values()
+		if self.searchterm is not None:
+			helper.initPyLucene()
+	
+			from org.apache.lucene.index import DirectoryReader
+			from org.apache.lucene.search import IndexSearcher
+			from org.apache.lucene.queryparser.classic import QueryParser
+			from org.apache.lucene.analysis.standard import StandardAnalyzer
+			from org.apache.lucene.store import FSDirectory
+			from org.apache.lucene.util import Version
+			from java.io import File
+			
+			IDX_DIR = join(self.basedir, 'indexes')
+			reader = DirectoryReader.open(FSDirectory.open(File(IDX_DIR)))
+			searcher = IndexSearcher(reader)
+			analyzer = StandardAnalyzer(Version.LUCENE_40)
+	
+			field = 'contents'
+			parser = QueryParser(Version.LUCENE_40, field, analyzer);
+			query = parser.parse(self.searchterm);
+			print 'Searching for:', query.toString(field)
+			raw_results = searcher.search(query, 2000)
+			
+			hits = raw_results.scoreDocs
+			numTotalHits = raw_results.totalHits
+			print numTotalHits, 'total matching documents'
+			results = []
+			for hit in hits:
+				doc = searcher.doc(hit.doc)
+				results.append(doc)
+
+			return results
+
+		else:
+			fname = join(self.basedir, 'raw/all_entries_summary.json')
+			docs_json = json.loads(open(fname, 'r').read())
+			return docs_json.values()
 	
 	def get_doc_content(self, minlines=10, getmax=None):
 		docs = self.documents
@@ -88,7 +122,6 @@ class ShakespeareDocumentsCtxt(object):
 #                 chars_per_play[play_alias] = set(p.characters.keys())
 #             self._chars_per_play = chars_per_play 
 #         return self._chars_per_play
-
 #     def reset(self):
 #         self.pruned_characters = {}
 #         self.pruned_max_terms = []

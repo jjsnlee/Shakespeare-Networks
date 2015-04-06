@@ -43,29 +43,22 @@ def create_basedir(group, baselabel, ntopics, npasses):
 	os.makedirs(basedir)
 	return basedir, label
 
-def doLDA_EEBO(ntopics=50, npasses=50, as_bow=True):
-	prc_ctx = EEBODocumentsCtxt()
-	#prc_ctx.preproc(by=by) # by='Char'
-	#doc_titles, docs_content = prc_ctx.get_doc_content()
-
-	baselabel = ''
-	#basedir, label = create_basedir(baselabel, ntopics, npasses)
-	return do_LDA(prc_ctx, 'eebo', baselabel, ntopics, npasses, as_bow=True)
+def doLDA_EEBO(searchterm, ntopics=50, npasses=50, as_bow=True):
+	docs_ctx = EEBODocumentsCtxt(searchterm)
+	baselabel = searchterm
+	return do_LDA(docs_ctx, 'eebo', baselabel, ntopics, npasses, as_bow=True)
 
 def doLDA_Plays(ntopics=50, npasses=50, ctx='shakespeare', by='Char/Scene', as_bow=True):
 	"""
 	import batch.clusters_runner as scr
 	ldar=scr.doLDA(ntopics=10, npasses=20)
 	"""
-	
 	import shakespeare.plays_n_graphs as png
 	play_ctx = png.get_plays_ctx(ctx)
 	prc_ctx = ShakespeareDocumentsCtxt(play_ctx, by=by)
 	#prc_ctx.preproc(by=by) # by='Char'
-	
 	baselabel = 'char' if by=='Char' else 'char-scene'
 	baselabel += '-bow' if as_bow else '-tfidf'
-	
 	return do_LDA(prc_ctx, 'plays-shakespeare', baselabel, ntopics, npasses, as_bow=True)
 
 def do_LDA(docs_process_context, group, baselabel, ntopics, npasses, as_bow=True):	
@@ -79,7 +72,8 @@ def do_LDA(docs_process_context, group, baselabel, ntopics, npasses, as_bow=True
 		label : label
 	}
 	metadata_json = json.dumps(metadata, ensure_ascii=False)
-	
+	with open(join(basedir, 'metadata.json'), 'w') as fh:
+		fh.write(metadata_json)
 
 	# Need this to analyze the perplexity
 	logfile = join(basedir, 'gensim.log')

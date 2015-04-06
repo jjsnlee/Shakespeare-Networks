@@ -221,7 +221,7 @@ class CorpusDataJsonHandler:
 					logger.debug('which_topic: %s', which_topic)
 					model_rslt = clusters_lda.get_lda_rslt(lda_group, model_key, cls=cls)
 					topic_info = {
-						'docs'    : model_rslt.docs_per_topic[int(which_topic)],
+						'docs'    : model_rslt.docs_per_topic(int(which_topic)),
 						'summary' : {
 							'Doc score median' : 1, 
 							'Top scoring doc' : 1,
