@@ -1,6 +1,9 @@
+from __future__ import print_function
+from __future__ import unicode_literals
+from builtins import range
 from BeautifulSoup import BeautifulSoup
 from os.path import join
-import helper
+from gofp.tools import helper
 import re
 
 def transform_chekhov_plays():
@@ -26,7 +29,7 @@ def transform_chekhov_plays():
     for play in plays:
         hdrs = play.findAll('h2')
         title = hdrs[0].text
-        print 'title:', title
+        print('title:', title)
         content = []
         lineno = [1]
         if len(hdrs) > 1:

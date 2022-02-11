@@ -31,10 +31,10 @@ body {
 }
 </style>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-<script src="/static/lib/ext/angular-1.2.9/angular.js" type="text/javascript"></script>
-<script src="/static/lib/ang-dnd.js" type="text/javascript"></script>
-<script src="/static/plays.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/static/lib/ext/angular-1.2.9/angular.js"></script>
+<script src="/static/lib/ang-dnd.js"></script>
+<script src="/static/plays.js"></script>
 
 <script type="text/javascript">
 shPlays.controller('play', function($scope, $http, $location, $window) {
@@ -57,10 +57,10 @@ shPlays.controller('play', function($scope, $http, $location, $window) {
     $scope.showScenePopup = 1;
     $scope.selected_graph_img_f = evt.currentTarget.src;
   };
-    
+
   $scope.toggleChart = function(whichChart) {
     if($scope.allPlaysSceneSummary == null) {
-	    $http.get('/shakespeare/corpus/sceneSummary').success(function(data) {
+	    $http.get('/corpus/shakespeare/sceneSummary').success(function(data) {
 	      $scope.allPlaysSceneSummary = data;
 	      $scope.whichChart = whichChart;
 	    });
@@ -119,8 +119,8 @@ function enableSliderWidget(amtId) {
 <tr>
   <td width="20%" valign="top">
 
-	  <a ng-click="toggleChart('All Plays:Summary')" 
-	    style="text-decoration:underline; cursor:pointer">All Plays - Summary</a><br>
+    <a ng-click="toggleChart('All Plays:Summary')" 
+      style="text-decoration:underline; cursor:pointer">All Plays - Summary</a><br>
     
     <a ng-click="toggleChart('All Plays:Degrees')" 
         style="text-decoration:underline; cursor:pointer">All Plays - Degrees by Scene</a><br>
@@ -152,10 +152,10 @@ function enableSliderWidget(amtId) {
  
   </td>
   <td valign="top">
-		<div class="chartDiv"> 
-			<div all-plays-chart></div>
-		  &nbsp;<br>&nbsp;<br>
-		</div>
+    <div class="chartDiv"> 
+    	<div all-plays-chart></div>
+      &nbsp;<br>&nbsp;<br>
+    </div>
   </td>
 </tr>
 </table>
@@ -167,11 +167,11 @@ function enableSliderWidget(amtId) {
   </table>
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
-<script src="/static/lib/ext/Highcharts-3.0.10/highcharts.src.js" type="text/javascript"></script>
-<script src="/static/lib/ext/Highcharts-3.0.10/highcharts-more.src.js" type="text/javascript"></script>
-<script src="/static/lib/ext/underscore-min-1.5.0.js" type="text/javascript"></script>
-<script src="/static/lib/ext/wu-0.1.8.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script src="/static/lib/ext/Highcharts-3.0.10/highcharts.src.js"></script>
+<script src="/static/lib/ext/Highcharts-3.0.10/highcharts-more.src.js"></script>
+<script src="/static/lib/ext/underscore-min-1.5.0.js"></script>
+<script src="/static/lib/ext/wu-0.1.8.min.js"></script>
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 
 shakespeare_plays = [
     # Will use this as the key/value pair

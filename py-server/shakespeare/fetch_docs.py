@@ -1,13 +1,17 @@
-import httplib, re, os
+from __future__ import print_function
+from __future__ import unicode_literals
+from future import standard_library
+standard_library.install_aliases()
+import http.client, re, os
 #from BeautifulSoup import BeautifulSoup
 
 def get_homepage(fname):
-    conn = httplib.HTTPConnection('shakespeare.mit.edu')
+    conn = http.client.HTTPConnection('shakespeare.mit.edu')
     conn.request("GET", "/")
     rsp = conn.getresponse()
-    print rsp.status, rsp.reason
+    print(rsp.status, rsp.reason)
     data = rsp.read()
-    print data
+    print(data)
     conn.close()
     with open(fname, 'w') as f:
         f.writelines(data)
@@ -19,11 +23,11 @@ def do_get(conn, url):
     try:
         conn.request("GET", "/"+url)
         rsp = conn.getresponse()
-        print rsp.status, rsp.reason, url
+        print(rsp.status, rsp.reason, url)
         data = rsp.read()
         return data
     except Exception as e:
-        print e
+        print(e)
     
 def get_desturl(url):
     desturl = 'shakespeare_files/'+url
@@ -32,7 +36,8 @@ def get_desturl(url):
     if not os.path.exists(destdir):
         return desturl
 
-from plays_n_graphs import links_ptn
+from server.shakespeare.plays_n_graphs import links_ptn
+
 
 def parse_hp(fname):
     """ Get the HTML & parse it """
@@ -40,7 +45,7 @@ def parse_hp(fname):
         data = f.read()
     #links_ptn = '<a href="([^\"]+)">([^>]+)</a>'
     rslt = re.findall(links_ptn, data)
-    conn = httplib.HTTPConnection('shakespeare.mit.edu')
+    conn = http.client.HTTPConnection('shakespeare.mit.edu')
     index = {}
     for url, title in rslt:
         title = title.strip()
