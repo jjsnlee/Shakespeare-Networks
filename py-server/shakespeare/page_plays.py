@@ -26,9 +26,11 @@ def get_page_html(req, play_set):
 
     if play_set not in ['shakespeare', 'chekhov']:
         raise Exception('Invalid content [%s].' % play_set)
+    
+    content_dir = join(helper.get_root_dir(), "py-server")
 
     if info == 'otherCharts':
-        html = open('shakespeare/page_all_plays.html', 'r').read()
+        html = open(join(content_dir, 'shakespeare/page_all_plays.html'), 'r').read()
 
     else:
         qry_str = req.GET
@@ -47,7 +49,7 @@ def get_page_html(req, play_set):
 
         plays = sorted(data_ctx.plays, key=itemgetter(1))
         all_plays = json.dumps([{'value': p[0], 'label': p[1]} for p in plays])
-        html = open('shakespeare/page.html', 'r').read()
+        html = open(join(content_dir, 'shakespeare/page.html'), 'r').read()
 
         # Should get rid of this...
         html = html.replace('__ALL_PLAYS__', all_plays)
