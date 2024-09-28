@@ -1,9 +1,7 @@
-from __future__ import print_function
-from __future__ import unicode_literals
-from builtins import range
+
+# from builtins import range
 from BeautifulSoup import BeautifulSoup
 from os.path import join
-from gofp.tools import helper
 import re
 
 def transform_chekhov_plays():

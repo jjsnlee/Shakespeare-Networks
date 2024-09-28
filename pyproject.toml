@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "skpn-django"
+version = "0.1.0"
+description = ""
+authors = ["Jason Lee <jasonleebox-github@yahoo.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.12"
+
+# App
+Django = "^3.2.8"
+nltk = "^3.6.5"
+networkx = "^2.6.3"
+pandas = "^2.2.3"
+matplotlib = "^3.9.2"
+numpy = "<2.0"  # for networkx
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

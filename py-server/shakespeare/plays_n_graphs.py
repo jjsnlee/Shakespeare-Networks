@@ -8,6 +8,7 @@ import logging
 from pprint import pformat
 from os.path import join
 from collections import OrderedDict
+
 # http://stackoverflow.com/questions/4706451/how-to-save-a-figure-remotely-with-pylab/4706614#4706614
 # import matplotlib
 # matplotlib.use('Agg')
@@ -221,6 +222,7 @@ def init_play_imgs(play, play_alias, force_img_regen):
     logger.debug('%s\n\t%s', play.title, play.toc_as_str())
 
     img_root_dir = 'imgs/'
+    # check if the pregenerated images exist:
     server_basedir = helper.get_dynamic_rootdir()
     helper.ensure_path(join(server_basedir, img_root_dir))
 
@@ -262,7 +264,7 @@ def draw_graph(scene_title, G):
 
     # print 'json repr:', node_link_data(G)
     if logger.isEnabledFor(logging.DEBUG):
-        logger.debug('nlines: %s', [(n, G.node[n]['nlines']) for n in G])
+        logger.debug('nlines: %s', [(n, G.nodes[n]['nlines']) for n in G])
 
     plt.title(str(scene_title))
     plt.xticks([])
@@ -273,7 +275,7 @@ def draw_graph(scene_title, G):
     # pos = nx.shell_layout(G)
     # pos = nx.spectral_layout(G)
 
-    node_size = [int(G.node[n]['nlines']) ** 2 for n in G]
+    node_size = [int(G.nodes[n]['nlines']) ** 2 for n in G]
     # node_size = [int(G.node[n]['nlines']) for n in G]
 
     c = 'b'

@@ -330,7 +330,7 @@ function initDensityChart(scope, compile, allPlaysData, containerName) {
 			templ += '<tr><td style="font-size:10pt">'+play.title+'</td>';
 			$.each(play.scenes, function(idx, scene) {
 				if(scene.total_degrees > 10) {
-					templ += '<td><img src="/' + scene.graph_img_f + '" height="18%" '+
+					templ += '<td><img src="/' + scene.graph_img_f + '" style="height:200px" '+
 						'ng-click="sceneOpen($event,\''+ playName+'\','+idx+')"/></td>';
 				}
 			});

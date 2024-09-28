@@ -1,12 +1,11 @@
 from unittest import TestCase
 import networkx as nx
 
-import os
-print 'os.path.curdir:', os.path.abspath(os.path.curdir)
-
 from shakespeare.plays_n_graphs import ShakespearePlayCtx, Play, Scene, _init_graphs
 
+
 nolines = lambda c: ['Line %i' % (i+1) for i in range(c)]
+
 
 def plot_test_graph(key, graph):
     import matplotlib.pyplot as plt
@@ -14,6 +13,7 @@ def plot_test_graph(key, graph):
     plt.figure(figsize=(8,5))
     draw_graph(key, graph)
     plt.show()
+
 
 class PlaysAndGraphsTest(TestCase):
 
@@ -53,7 +53,7 @@ class PlaysAndGraphsTest(TestCase):
         self.assertEqual(G, scene1.graph, 'Make sure both graph instances reference the same object')
         #print nx.connected_components(G)
         
-        print G.degree(weight='weight')
+        print(G.degree(weight='weight'))
         chars = G.nodes()
         self.assertEqual(set(['Char 1', 'Char 2', 'Char 3', 'Char 4']), set(chars))
         self.assertEqual(G.node['Char 1']['nlines'], 6)
@@ -68,13 +68,13 @@ class PlaysAndGraphsTest(TestCase):
         self.assertEqual(cnxs['Char 4'], 1)
 
         edges = G.edges(data=True)
-        print 'edges:', edges
-        print 'Char 1 edges:', G.edges('Char 1', data=True)
+        # print 'edges:', edges
+        # print 'Char 1 edges:', G.edges('Char 1', data=True)
         
         #plot_test_graph(str(scene), scene.graph)
 
         tG = test_play.totalG
-        print tG
+        # print tG
         
         chars = tG.nodes()
         self.assertEqual(set(['Char 1', 'Char 2', 'Char 3', 'Char 4', 'Char 5']), set(chars))
@@ -86,7 +86,7 @@ class PlaysAndGraphsTest(TestCase):
         #plot_test_graph('totalG', tG)
         
         tCnxs = nx.degree(tG)
-        print 'degree:', tCnxs 
+        # print 'degree:', tCnxs
         self.assertEqual(tCnxs['Char 1'], 3)
         self.assertEqual(tCnxs['Char 2'], 1)
         self.assertEqual(tCnxs['Char 3'], 2)
